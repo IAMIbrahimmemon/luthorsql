@@ -1,0 +1,796 @@
+{"question_id": "bird_train_train_730", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_732", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_733", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_734", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_736", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_737", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_739", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_740", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_741", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_744", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_745", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_748", "pick": "NONE", "sql": "SELECT COUNT(*) FROM characters WHERE ActorID = (SELECT ActorID FROM actor ORDER BY CAST(REPLACE(REPLACE(NetWorth,',',''),'$','') AS REAL) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_749", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_750", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_752", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_753", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_754", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_758", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_759", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_760", "pick": "NONE", "sql": "SELECT COUNT(MovieID) FROM movie WHERE \"MPAA Rating\" = 'PG' AND \"Release Date\" BETWEEN '1990-06-01' AND '1990-06-30'", "submitted": true}
+{"question_id": "bird_train_train_762", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_763", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_764", "pick": "NONE", "sql": "SELECT T1.\"Height (Inches)\", T1.NetWorth FROM actor AS T1 INNER JOIN characters AS T2 ON T1.ActorID = T2.ActorID INNER JOIN movie AS T3 ON T2.MovieID = T3.MovieID WHERE T3.Title = 'Three Men and a Little Lady'", "submitted": true}
+{"question_id": "bird_train_train_765", "pick": "NONE", "sql": "SELECT T1.Genre FROM movie AS T1 INNER JOIN characters AS T2 ON T1.MovieID = T2.MovieID WHERE T1.\"MPAA Rating\" = 'PG' AND T2.ActorID = (SELECT ActorID FROM actor ORDER BY NetWorth DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_766", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_767", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_768", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_770", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_771", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_773", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_774", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T3.NetWorth > '$400,000,000.00' THEN 1 ELSE 0 END) AS REAL)*100/COUNT(*) FROM movie T1 JOIN characters T2 ON T1.MovieID=T2.MovieID JOIN actor T3 ON T2.ActorID=T3.ActorID WHERE T1.Genre='Drama'", "submitted": true}
+{"question_id": "bird_train_train_857", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_858", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_861", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_862", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_863", "pick": "NONE", "sql": "SELECT COUNT(*) FROM student T1 JOIN registration T2 ON T1.student_id=T2.student_id JOIN course T3 ON T2.course_id=T3.course_id WHERE T3.name='Machine Learning Theory' AND T2.grade='B' AND T1.gpa>3", "submitted": true}
+{"question_id": "bird_train_train_864", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_865", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_867", "pick": "NONE", "sql": "SELECT COUNT(*) FROM prof WHERE gender='Male' AND prof_id IN (SELECT prof_id FROM RA GROUP BY prof_id HAVING COUNT(student_id)>3)", "submitted": true}
+{"question_id": "bird_train_train_868", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_871", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_874", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_875", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_877", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_878", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_879", "pick": "NONE", "sql": "SELECT T1.first_name,T1.last_name FROM prof T1 JOIN RA T2 ON T1.prof_id=T2.prof_id GROUP BY T1.prof_id HAVING COUNT(T2.student_id)>2 ORDER BY T1.teachingability DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_881", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_882", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_883", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_884", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_886", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_888", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_890", "pick": "NONE", "sql": "SELECT name FROM course WHERE credit = (SELECT MAX(credit) FROM course) ORDER BY diff DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_891", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_892", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_894", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_895", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_896", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_897", "pick": "NONE", "sql": "SELECT COUNT(course_id) FROM registration WHERE student_id = (SELECT student_id FROM student ORDER BY gpa DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_898", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_899", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_900", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_901", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_903", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_904", "pick": "NONE", "sql": "SELECT COUNT(T1.student_id) FROM student AS T1 INNER JOIN registration AS T2 ON T1.student_id = T2.student_id WHERE T1.gpa BETWEEN 3 AND 4 AND (T2.grade IS NULL OR T2.grade = '')", "submitted": true}
+{"question_id": "bird_train_train_905", "pick": "NONE", "sql": "SELECT COUNT(*) FROM student s WHERE s.type='UG' AND EXISTS(SELECT 1 FROM registration r WHERE r.student_id=s.student_id) AND NOT EXISTS(SELECT 1 FROM registration r WHERE r.student_id=s.student_id AND (r.grade IS NULL OR r.grade<>'A'))", "submitted": true}
+{"question_id": "bird_train_train_906", "pick": "NONE", "sql": "SELECT AVG(T1.gpa), T1.f_name, T1.l_name FROM student AS T1 INNER JOIN RA AS T2 ON T1.student_id = T2.student_id WHERE T2.salary = 'high' AND T2.capability = 5", "submitted": true}
+{"question_id": "bird_train_train_908", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_911", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_912", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_913", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_915", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_916", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_917", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_918", "pick": "NONE", "sql": "SELECT T1.f_name, T1.l_name FROM student AS T1 INNER JOIN registration AS T2 ON T1.student_id = T2.student_id INNER JOIN course AS T3 ON T2.course_id = T3.course_id WHERE T3.name = 'Advanced Database Systems' AND T2.sat = (SELECT MAX(R.sat) FROM registration R INNER JOIN course C ON R.course_id=C.course_id WHERE C.name='Advanced Database Systems')", "submitted": true}
+{"question_id": "bird_train_train_919", "pick": "NONE", "sql": "select CAST(SUM(c.credit*CASE r.grade WHEN 'A' THEN 4 WHEN 'B' THEN 3 WHEN 'C' THEN 2 WHEN 'D' THEN 1 END) AS REAL)/SUM(c.credit) from student s join registration r on s.student_id=r.student_id join course c on c.course_id=r.course_id where s.f_name='Laughton' and s.l_name='Antonio'", "submitted": true}
+{"question_id": "bird_train_train_920", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_922", "pick": "NONE", "sql": "select s.f_name,s.l_name,s.email,s.intelligence from student s join RA ra on s.student_id=ra.student_id where ra.salary='high' and ra.capability=(select max(capability) from RA)", "submitted": true}
+{"question_id": "bird_train_train_924", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_925", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_926", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_927", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_928", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_929", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_930", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_931", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_934", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_935", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_937", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_938", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_940", "pick": "NONE", "sql": "select s.email from student s join registration r on s.student_id=r.student_id join course c on c.course_id=r.course_id where r.grade='B' and c.diff>(select avg(diff)*0.8 from course)", "submitted": true}
+{"question_id": "bird_train_train_941", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_942", "pick": "NONE", "sql": "select name from course where credit=(select max(credit) from course) and diff=(select max(diff) from course)", "submitted": true}
+{"question_id": "bird_train_train_943", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_945", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_946", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_949", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_950", "pick": "NONE", "sql": "select (select avg(s.gpa) from student s join registration r on s.student_id=r.student_id join course c on c.course_id=r.course_id where c.diff=(select max(diff) from course)) - (select avg(s.gpa) from student s join registration r on s.student_id=r.student_id join course c on c.course_id=r.course_id where c.diff=(select min(diff) from course))", "submitted": true}
+{"question_id": "bird_train_train_952", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_953", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_954", "pick": "NONE", "sql": "SELECT T1.name, T3.f_name, T3.l_name FROM course T1 JOIN registration T2 ON T1.course_id=T2.course_id JOIN student T3 ON T2.student_id=T3.student_id WHERE T2.grade='A' AND T1.course_id=(SELECT course_id FROM registration WHERE grade='A' GROUP BY course_id ORDER BY COUNT(student_id) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_955", "pick": "NONE", "sql": "SELECT AVG(CASE WHEN ra.salary='high' THEN r.sat END) - AVG(CASE WHEN ra.salary='free' THEN r.sat END) FROM RA ra JOIN registration r ON ra.student_id=r.student_id", "submitted": true}
+{"question_id": "bird_train_train_956", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_957", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_958", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN r.sat=(SELECT MAX(sat) FROM registration) THEN 1 ELSE 0 END)*100.0/COUNT(r.student_id) FROM registration r JOIN course c ON r.course_id=c.course_id WHERE c.name='Intro to Database 2'", "submitted": true}
+{"question_id": "bird_train_train_959", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_961", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_964", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_965", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1245", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1246", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1248", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1249", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1251", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1253", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1254", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1255", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1256", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1258", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1259", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1260", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1262", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1264", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1266", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1267", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1268", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1270", "pick": "NONE", "sql": "SELECT CAST(COUNT(*) AS REAL) / 9 FROM \"Credit\" AS T1 INNER JOIN \"Episode\" AS T2 ON T1.\"episode_id\" = T2.\"episode_id\" WHERE T1.\"category\" = 'Cast' AND T1.\"credited\" = 'true' AND T2.\"number_in_series\" BETWEEN 185 AND 193", "submitted": true}
+{"question_id": "bird_train_train_1271", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1272", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1273", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1274", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1275", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1276", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1277", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1279", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T2.stars = 1 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.episode_id) FROM Episode AS T1 INNER JOIN Vote AS T2 ON T1.episode_id = T2.episode_id WHERE T1.title = 'True North'", "submitted": true}
+{"question_id": "bird_train_train_1280", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1281", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1282", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1285", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1286", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1288", "pick": "NONE", "sql": "SELECT T1.name FROM Person AS T1 INNER JOIN Credit AS T2 ON T1.person_id = T2.person_id INNER JOIN Episode AS T3 ON T2.episode_id = T3.episode_id WHERE T2.role = 'stunt coordinator' AND T3.episode = 3", "submitted": true}
+{"question_id": "bird_train_train_1292", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1293", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1294", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1295", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1296", "pick": "NONE", "sql": "SELECT T2.name, CAST(COUNT(T1.person_id) AS REAL) * 100 / (SELECT COUNT(person_id) FROM Credit) FROM Credit AS T1 INNER JOIN Person AS T2 ON T1.person_id = T2.person_id GROUP BY T1.person_id ORDER BY COUNT(T1.person_id) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_1298", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1299", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1300", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1302", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1303", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1304", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1305", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1306", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1307", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1309", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1311", "pick": "NONE", "sql": "SELECT T2.role FROM Person T1 JOIN Credit T2 ON T1.person_id=T2.person_id WHERE T1.height_meters=(SELECT MAX(height_meters) FROM Person)", "submitted": true}
+{"question_id": "bird_train_train_1312", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1313", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1314", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1315", "pick": "NONE", "sql": "SELECT CAST(SUM(T1.stars) AS REAL)/COUNT(T1.episode_id) FROM Vote T1 JOIN Credit T2 ON T1.episode_id=T2.episode_id JOIN Person T3 ON T2.person_id=T3.person_id WHERE T3.name='Jim Bracchitta'", "submitted": true}
+{"question_id": "bird_train_train_1316", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1318", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1320", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1322", "pick": "NONE", "sql": "SELECT T1.name FROM Person T1 JOIN Award T2 ON T1.person_id=T2.person_id WHERE T2.role='writer' AND T2.result='Winner' AND T2.award='Television' AND T2.award_category='Silver Gavel Award' AND T2.organization='American Bar Association Silver Gavel Awards for Media and the Arts' GROUP BY T1.name HAVING COUNT(DISTINCT T2.year)=2", "submitted": true}
+{"question_id": "bird_train_train_1326", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1327", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1328", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1329", "pick": "NONE", "sql": "SELECT T2.title FROM Vote T1 JOIN Episode T2 ON T1.episode_id=T2.episode_id GROUP BY T2.episode_id ORDER BY SUM(T1.stars*T1.percent)/100 DESC LIMIT 3", "submitted": true}
+{"question_id": "bird_train_train_1331", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1332", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1334", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1335", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1336", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1339", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1341", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1343", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1344", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1345", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1347", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1348", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1349", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1351", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1352", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1354", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1355", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1356", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1358", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1359", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1362", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1365", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1369", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1370", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1371", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1372", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1374", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1357", "pick": "NONE", "sql": "SELECT DISTINCT T1.episode_id FROM Episode T1 INNER JOIN Award T2 ON T1.episode_id = T2.episode_id WHERE T2.award = 'Best Television Episode' AND T2.result = 'Winner' AND T1.rating = 8.5", "submitted": true}
+{"question_id": "bird_train_train_1360", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN T1.DATE LIKE '2009%' THEN T1.VALUE ELSE 0 END) - SUM(CASE WHEN T1.DATE LIKE '2008%' THEN T1.VALUE ELSE 0 END) FROM observations AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.first = 'Elly' AND T2.last = 'Koss' AND T1.DESCRIPTION = 'Body Weight'", "submitted": true}
+{"question_id": "bird_train_train_1364", "pick": "NONE", "sql": "SELECT 365 * (strftime('%Y', T1.STOP) - strftime('%Y', T1.START)) + 30 * (strftime('%m', T1.STOP) - strftime('%m', T1.START)) + (strftime('%d', T1.STOP) - strftime('%d', T1.START)) FROM medications AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.first = 'Elly' AND T2.last = 'Koss' AND T1.DESCRIPTION LIKE 'Acetaminophen%'", "submitted": true}
+{"question_id": "bird_train_train_1367", "pick": "NONE", "sql": "SELECT T1.DESCRIPTION FROM medications AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.first = 'Elly' AND T2.last = 'Koss' AND T1.REASONDESCRIPTION LIKE 'Streptococcal sore throat%'", "submitted": true}
+{"question_id": "bird_train_train_1375", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1377", "pick": "NONE", "sql": "SELECT \"PREVALENCE RATE\" FROM all_prevalences WHERE ITEM = (SELECT DISTINCT DESCRIPTION FROM conditions WHERE CODE = 368581000119106)", "submitted": true}
+{"question_id": "bird_train_train_1378", "pick": "NONE", "sql": "SELECT T1.DESCRIPTION FROM procedures T1 JOIN patients T2 ON T1.PATIENT=T2.patient WHERE T2.first='Jacquelyn' AND T2.last='Shanahan' AND T1.DATE='2009-08-09'", "submitted": true}
+{"question_id": "bird_train_train_1379", "pick": "NONE", "sql": "SELECT COUNT(T1.ID) FROM claims T1 JOIN patients T2 ON T1.PATIENT=T2.patient WHERE T2.first='Abbie' AND T2.last='Cole' AND T1.BILLABLEPERIOD BETWEEN '2010-12-31' AND '2012-01-01'", "submitted": true}
+{"question_id": "bird_train_train_1382", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1385", "pick": "NONE", "sql": "SELECT SUM(JULIANDAY(T1.STOP)-JULIANDAY(T1.START))/COUNT(T1.ID) FROM careplans T1 JOIN patients T2 ON T1.PATIENT=T2.patient WHERE T2.first='Wesley' AND T2.last='Lemke' AND T2.prefix='Mr.'", "submitted": true}
+{"question_id": "bird_train_train_1386", "pick": "NONE", "sql": "SELECT AVG(JULIANDAY(T1.STOP)-JULIANDAY(T1.START)) FROM careplans T1 JOIN patients T2 ON T1.PATIENT=T2.patient WHERE T2.first='Angelena' AND T2.last='Kertzmann' AND T2.prefix='Ms.' AND T1.REASONDESCRIPTION='Normal pregnancy'", "submitted": true}
+{"question_id": "bird_train_train_1387", "pick": "NONE", "sql": "SELECT PATIENT FROM allergies WHERE STOP IS NOT NULL ORDER BY (CASE WHEN SUBSTR(STOP,-2,1)!='9' THEN SUBSTR(STOP,LENGTH(STOP)-1)+2000 END) - (CASE WHEN SUBSTR(START,-2,1)='9' THEN SUBSTR(START,LENGTH(START)-1)+1900 ELSE SUBSTR(START,LENGTH(START)-1)+2000 END) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_1388", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1389", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1392", "pick": "NONE", "sql": "SELECT DISTINCT PATIENT FROM observations WHERE DESCRIPTION='Body Height' AND VALUE=(SELECT MAX(VALUE) FROM observations WHERE DESCRIPTION='Body Height')", "submitted": true}
+{"question_id": "bird_train_train_1393", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1395", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1396", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1398", "pick": "NONE", "sql": "SELECT COUNT(*) FROM immunizations WHERE PATIENT=(SELECT c.PATIENT FROM conditions c JOIN all_prevalences a ON LOWER(c.DESCRIPTION)=LOWER(a.ITEM) WHERE a.\"PREVALENCE RATE\"=(SELECT MAX(\"PREVALENCE RATE\") FROM all_prevalences) ORDER BY c.START DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_1399", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT c.PATIENT) FROM conditions c JOIN all_prevalences a ON LOWER(c.DESCRIPTION)=LOWER(a.ITEM) WHERE a.\"PREVALENCE RATE\"=(SELECT MAX(\"PREVALENCE RATE\") FROM all_prevalences)", "submitted": true}
+{"question_id": "bird_train_train_1400", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1403", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT c.PATIENT) FROM conditions c JOIN immunizations i ON i.PATIENT=c.PATIENT WHERE c.DESCRIPTION='Viral sinusitis (disorder)' AND i.DESCRIPTION='meningococcal MCV4P' AND c.START>i.DATE", "submitted": true}
+{"question_id": "bird_train_train_1404", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1405", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1408", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1409", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1411", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1412", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1413", "pick": "NONE", "sql": "SELECT DISTINCT p.first, p.last FROM careplans c JOIN patients p ON p.patient=c.PATIENT WHERE c.CODE=311791003", "submitted": true}
+{"question_id": "bird_train_train_1414", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1416", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1417", "pick": "NONE", "sql": "SELECT DISTINCT T1.ssn FROM patients T1 JOIN conditions T2 ON T1.patient=T2.PATIENT JOIN all_prevalences T3 ON T3.ITEM=T2.DESCRIPTION WHERE T3.\"PREVALENCE PERCENTAGE\" < 0.3*(SELECT AVG(\"PREVALENCE PERCENTAGE\") FROM all_prevalences) LIMIT 5", "submitted": true}
+{"question_id": "bird_train_train_1418", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T1.gender='F' AND T1.race='asian' THEN 1 ELSE 0 END) AS REAL)*100/COUNT(T1.patient) FROM patients T1 JOIN conditions T2 ON T1.patient=T2.PATIENT WHERE T2.DESCRIPTION='Acute bronchitis (disorder)'", "submitted": true}
+{"question_id": "bird_train_train_1420", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1421", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1422", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1423", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1426", "pick": "NONE", "sql": "SELECT T2.DESCRIPTION, T3.DESCRIPTION FROM conditions T1 JOIN procedures T2 ON T1.PATIENT=T2.PATIENT JOIN medications T3 ON T1.PATIENT=T3.PATIENT WHERE T1.DESCRIPTION='Third degree burn'", "submitted": true}
+{"question_id": "bird_train_train_1427", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1428", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1430", "pick": "NONE", "sql": "SELECT DISTINCT T2.first, T2.last, CASE WHEN T2.deathdate IS NULL THEN strftime('%Y',T1.DATE)-strftime('%Y',T2.birthdate) END FROM observations T1 JOIN patients T2 ON T1.PATIENT=T2.patient WHERE T1.DATE LIKE '2011%' AND T1.DESCRIPTION='Systolic Blood Pressure' AND T1.VALUE=200 AND T1.UNITS='mmHg'", "submitted": true}
+{"question_id": "bird_train_train_1432", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1434", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1435", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1436", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1438", "pick": "NONE", "sql": "SELECT T2.START FROM patients T1 JOIN allergies T2 ON T1.patient=T2.PATIENT WHERE T1.first='Angelo' AND T1.last='Buckridge'", "submitted": true}
+{"question_id": "bird_train_train_1439", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1440", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1443", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1444", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1445", "pick": "NONE", "sql": "SELECT CAST(SUM(strftime('%Y',T1.deathdate)-strftime('%Y',T1.birthdate)) AS REAL)/COUNT(T1.patient) FROM patients T1 JOIN careplans T2 ON T1.patient=T2.PATIENT WHERE T2.REASONDESCRIPTION='Prediabetes'", "submitted": true}
+{"question_id": "bird_train_train_1447", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1448", "pick": "NONE", "sql": "SELECT T1.first, T1.last FROM patients T1 JOIN allergies T2 ON T1.patient=T2.PATIENT GROUP BY T1.patient HAVING COUNT(T2.DESCRIPTION)>3", "submitted": true}
+{"question_id": "bird_train_train_1449", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1450", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT p.patient) FROM patients p JOIN observations o ON p.patient=o.PATIENT JOIN careplans c ON p.patient=c.PATIENT WHERE o.DESCRIPTION='Body Weight' AND o.VALUE>100 AND o.UNITS='kg' AND c.DESCRIPTION='Diabetes self management plan'", "submitted": true}
+{"question_id": "bird_train_train_1451", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1454", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT p.patient) FROM patients p JOIN medications m ON p.patient=m.PATIENT WHERE p.ethnicity='irish' AND m.REASONDESCRIPTION='Myocardial Infarction'", "submitted": true}
+{"question_id": "bird_train_train_1455", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1456", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT p.patient) FROM patients p JOIN careplans c ON p.patient=c.PATIENT JOIN immunizations i ON p.patient=i.PATIENT WHERE i.DESCRIPTION='rotavirus  monovalent' AND c.STOP='2013-11-23'", "submitted": true}
+{"question_id": "bird_train_train_1457", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1458", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1459", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1460", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1461", "pick": "NONE", "sql": "SELECT a.STOP - a.START, a.DESCRIPTION FROM patients p JOIN allergies a ON p.patient=a.PATIENT WHERE p.first='Isadora' AND p.last='Moen'", "submitted": true}
+{"question_id": "bird_train_train_1463", "pick": "NONE", "sql": "SELECT DISTINCT p.first,p.last FROM patients p JOIN careplans c ON p.patient=c.PATIENT WHERE p.marital='M' AND strftime('%Y',c.START)='2009' AND julianday(c.STOP)-julianday(c.START)>60", "submitted": true}
+{"question_id": "bird_train_train_1464", "pick": "NONE", "sql": "SELECT i.DATE FROM immunizations i JOIN patients p ON p.patient=i.PATIENT WHERE p.first='Elly' AND p.last='Koss' AND i.DESCRIPTION='Influenza  seasonal  injectable  preservative free'", "submitted": true}
+{"question_id": "bird_train_train_1465", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT p.patient) FROM patients p JOIN immunizations i ON p.patient=i.PATIENT WHERE p.race='black' AND i.DATE BETWEEN '2010-07-09' AND '2013-10-29' AND i.DESCRIPTION='meningococcal MCV4P'", "submitted": true}
+{"question_id": "bird_train_train_1466", "pick": "NONE", "sql": "SELECT i.CODE,i.DATE FROM immunizations i JOIN patients p ON p.patient=i.PATIENT WHERE p.first='Jacquelyn' AND p.last='Shanahan' AND i.DESCRIPTION='Influenza  seasonal  injectable  preservative free'", "submitted": true}
+{"question_id": "bird_train_train_1467", "pick": "NONE", "sql": "SELECT julianday(m.STOP)-julianday(m.START) FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE p.first='Berry' AND p.last='Keebler' AND m.DESCRIPTION='Acetaminophen 160 MG' AND m.REASONDESCRIPTION='Acute bronchitis (disorder)'", "submitted": true}
+{"question_id": "bird_train_train_1468", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT p.patient) FROM patients p JOIN medications m ON p.patient=m.PATIENT WHERE p.marital='S' AND m.DESCRIPTION='Nitrofurantoin 5 MG/ML [Furadantin]' AND m.REASONDESCRIPTION='Cystitis' AND substr(m.START,1,4)='2010' AND substr(m.STOP,1,4)='2010'", "submitted": true}
+{"question_id": "bird_train_train_1469", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1470", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1471", "pick": "NONE", "sql": "SELECT p.ssn,p.address FROM patients p JOIN encounters e ON p.patient=e.PATIENT WHERE e.REASONDESCRIPTION='Viral sinusitis (disorder)' AND e.DATE='2008-06-13'", "submitted": true}
+{"question_id": "bird_train_train_1472", "pick": "NONE", "sql": "SELECT m.REASONDESCRIPTION, m.DESCRIPTION, julianday(m.STOP)-julianday(m.START), CASE WHEN p.deathdate IS NULL THEN 'alive' ELSE 'not alive' END FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE m.ENCOUNTER='23c293ec-dbae-4a22-896e-f12cf3c8bac3'", "submitted": true}
+{"question_id": "bird_train_train_1473", "pick": "NONE", "sql": "SELECT DISTINCT p.first,p.last FROM patients p JOIN allergies a ON p.patient=a.PATIENT WHERE a.DESCRIPTION='Shellfish allergy' AND p.deathdate IS NOT NULL AND (julianday(p.deathdate)-julianday(p.birthdate))/365<12", "submitted": true}
+{"question_id": "bird_train_train_1474", "pick": "NONE", "sql": "SELECT julianday(m.STOP)-julianday(m.START) FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE p.first='Major' AND p.last='D''Amore' AND TRIM(m.DESCRIPTION)='Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]'", "submitted": true}
+{"question_id": "bird_train_train_1475", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT m.DESCRIPTION) FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE p.first='Major' AND p.last='D''Amore'", "submitted": true}
+{"question_id": "bird_train_train_1476", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1477", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1478", "pick": "NONE", "sql": "SELECT T2.DESCRIPTION FROM observations T1 JOIN conditions T2 ON T1.PATIENT=T2.PATIENT WHERE T1.DESCRIPTION='Body Mass Index' AND T1.VALUE=(SELECT MIN(VALUE) FROM observations WHERE DESCRIPTION='Body Mass Index') GROUP BY T2.DESCRIPTION ORDER BY COUNT(T2.DESCRIPTION) DESC LIMIT 5", "submitted": true}
+{"question_id": "bird_train_train_1480", "pick": "NONE", "sql": "SELECT DISTINCT T2.DESCRIPTION FROM careplans T2 JOIN patients p ON p.patient=T2.PATIENT WHERE p.first='Elly' AND p.last='Koss' AND substr(T2.START,1,4)='1970' AND substr(T2.STOP,1,4)='1970'", "submitted": true}
+{"question_id": "bird_train_train_1482", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1483", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1484", "pick": "NONE", "sql": "SELECT DISTINCT p.DESCRIPTION, m.DESCRIPTION FROM encounters e JOIN procedures p ON p.PATIENT=e.PATIENT JOIN medications m ON m.PATIENT=e.PATIENT WHERE e.REASONDESCRIPTION='Drug overdose'", "submitted": true}
+{"question_id": "bird_train_train_1485", "pick": "NONE", "sql": "SELECT SUM(o.VALUE)/COUNT(o.PATIENT) FROM observations o JOIN observations c ON c.PATIENT=o.PATIENT WHERE o.DESCRIPTION='Body Mass Index' AND c.DESCRIPTION='Total Cholesterol' AND c.VALUE>=200", "submitted": true}
+{"question_id": "bird_train_train_1487", "pick": "NONE", "sql": "SELECT 100.0*SUM(c.DESCRIPTION=(SELECT DESCRIPTION FROM conditions GROUP BY DESCRIPTION ORDER BY COUNT(*) DESC LIMIT 1))/COUNT(*) FROM conditions c JOIN patients p ON p.patient=c.PATIENT WHERE (julianday(c.START)-julianday(p.birthdate))/365 > 60", "submitted": true}
+{"question_id": "bird_train_train_1488", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1489", "pick": "NONE", "sql": "SELECT CAST(strftime('%Y', MIN(e.DATE)) AS INTEGER) - CAST(strftime('%Y', p.birthdate) AS INTEGER) FROM encounters e JOIN patients p ON p.patient=e.PATIENT WHERE p.first='Stacy' AND p.last='Morar' AND e.REASONDESCRIPTION='Drug overdose'", "submitted": true}
+{"question_id": "bird_train_train_1490", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1491", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1492", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1493", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1494", "pick": "NONE", "sql": "SELECT T1.START - T1.STOP, T1.DESCRIPTION FROM allergies T1 JOIN patients p ON p.patient=T1.PATIENT WHERE p.first='Isadora' AND p.last='Moen'", "submitted": true}
+{"question_id": "bird_train_train_1495", "pick": "NONE", "sql": "SELECT CAST(strftime('%Y', MIN(e.DATE)) AS INTEGER) - CAST(strftime('%Y', p.birthdate) AS INTEGER) FROM encounters e JOIN patients p ON p.patient=e.PATIENT WHERE p.first='Laronda' AND p.last='Bernier' AND p.prefix='Mrs.'", "submitted": true}
+{"question_id": "bird_train_train_1501", "pick": "NONE", "sql": "SELECT COUNT(e.ID), 100.0*SUM(CASE WHEN e.DESCRIPTION='Prenatal visit' THEN 1 ELSE 0 END)/COUNT(e.ID) FROM encounters e JOIN patients p ON p.patient=e.PATIENT WHERE p.first='Lorri' AND p.last='Simonis' AND substr(e.DATE,1,4) BETWEEN '2010' AND '2017'", "submitted": true}
+{"question_id": "bird_train_train_1504", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1505", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1506", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1507", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1509", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1510", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1512", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1513", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1514", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1515", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1516", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.patient) FROM patients T1 INNER JOIN conditions T2 ON T1.patient=T2.PATIENT WHERE T1.gender='M' AND T2.DESCRIPTION='Prediabetes'", "submitted": true}
+{"question_id": "bird_train_train_1517", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1518", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1519", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1521", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1522", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1523", "pick": "NONE", "sql": "SELECT T1.patient FROM patients AS T1 INNER JOIN conditions AS T2 ON T1.patient = T2.PATIENT INNER JOIN all_prevalences AS T3 ON T2.DESCRIPTION = T3.ITEM WHERE T3.OCCURRENCES = (SELECT MAX(OCCURRENCES) FROM all_prevalences)", "submitted": true}
+{"question_id": "bird_train_train_1525", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1526", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1530", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1532", "pick": "NONE", "sql": "SELECT T2.DESCRIPTION FROM patients T1 INNER JOIN allergies T2 ON T1.patient=T2.PATIENT WHERE T1.first='Dirk' AND T1.last='Langosh' AND T1.ethnicity='dominican'", "submitted": true}
+{"question_id": "bird_train_train_1533", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1534", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1535", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1536", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1539", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1542", "pick": "NONE", "sql": "SELECT DISTINCT T1.first, T1.last FROM patients T1 INNER JOIN conditions T2 ON T1.patient=T2.PATIENT INNER JOIN all_prevalences T3 ON T3.ITEM=T2.DESCRIPTION WHERE T1.ethnicity='irish' AND T3.OCCURRENCES>(SELECT AVG(OCCURRENCES)*0.96 FROM all_prevalences)", "submitted": true}
+{"question_id": "bird_train_train_1543", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1545", "pick": "NONE", "sql": "SELECT t.productVendor, SUM(t.MSRP-t.buyPrice) FROM products t INNER JOIN orderdetails d ON d.productCode=t.productCode GROUP BY t.productVendor ORDER BY SUM(d.quantityOrdered) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_1546", "pick": "NONE", "sql": "SELECT e.firstName, e.lastName FROM payments p JOIN customers c ON c.customerNumber=p.customerNumber JOIN employees e ON e.employeeNumber=c.salesRepEmployeeNumber WHERE strftime('%Y',p.paymentDate)='2004' ORDER BY p.amount DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_1547", "pick": "NONE", "sql": "SELECT SUM(T1.quantityOrdered*T1.priceEach) FROM orderdetails T1 INNER JOIN orders T2 ON T1.orderNumber=T2.orderNumber INNER JOIN customers T3 ON T2.customerNumber=T3.customerNumber WHERE T3.customerName='Mini Gifts Distributors Ltd.' AND T2.shippedDate BETWEEN '2003-01-01' AND '2003-12-31'", "submitted": true}
+{"question_id": "bird_train_train_1548", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1549", "pick": "NONE", "sql": "SELECT e.employeeNumber FROM employees e JOIN offices o ON o.officeCode=e.officeCode WHERE e.reportsTo=1143 AND o.city='NYC' AND e.jobTitle='Sales Rep'", "submitted": true}
+{"question_id": "bird_train_train_1550", "pick": "NONE", "sql": "SELECT SUM(amount)/3, MAX(amount), MIN(amount) FROM payments WHERE paymentDate BETWEEN '2003-01-01' AND '2005-12-31'", "submitted": true}
+{"question_id": "bird_train_train_1551", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1552", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1556", "pick": "NONE", "sql": "SELECT T1.productName, T2.quantityOrdered*T2.priceEach FROM products T1 JOIN orderdetails T2 USING(productCode) WHERE T1.productCode IN ((SELECT productCode FROM products ORDER BY MSRP-buyPrice DESC LIMIT 1),(SELECT productCode FROM products ORDER BY MSRP-buyPrice LIMIT 1)) AND T2.quantityOrdered=(SELECT MAX(quantityOrdered) FROM orderdetails o WHERE o.productCode=T1.productCode)", "submitted": true}
+{"question_id": "bird_train_train_1559", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1560", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1561", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1563", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1564", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1568", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1570", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1571", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1572", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1573", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1574", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1576", "pick": "NONE", "sql": "SELECT COUNT(T1.email), T1.email, T2.country FROM employees T1 INNER JOIN offices T2 ON T1.officeCode=T2.officeCode INNER JOIN customers T3 ON T1.employeeNumber=T3.salesRepEmployeeNumber WHERE T3.creditLimit<200000 AND T2.country='Australia'", "submitted": true}
+{"question_id": "bird_train_train_1577", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1581", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1582", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1583", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1584", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1585", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1586", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1587", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1588", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1589", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1590", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1592", "pick": "NONE", "sql": "SELECT SUM(d.quantityOrdered*d.priceEach) FROM orderdetails d JOIN orders o ON o.orderNumber=d.orderNumber JOIN products p ON p.productCode=d.productCode WHERE o.status='Shipped' AND p.productLine='Vintage Cars' AND strftime('%Y',o.orderDate) BETWEEN '2003' AND '2004'", "submitted": true}
+{"question_id": "bird_train_train_1596", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1599", "pick": "NONE", "sql": "SELECT 100.0*SUM(customerNumber=186)/COUNT(orderNumber) FROM orders WHERE status='Shipped' AND strftime('%Y',shippedDate)='2005'", "submitted": true}
+{"question_id": "bird_train_train_1600", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1601", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1603", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1605", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1606", "pick": "NONE", "sql": "SELECT SUM(p.MSRP-p.buyPrice) FROM products p JOIN productlines l USING(productLine) WHERE p.productVendor='Carousel DieCast Legends' AND l.textDescription LIKE '%The perfect holiday or anniversary gift for executives%'", "submitted": true}
+{"question_id": "bird_train_train_1607", "pick": "NONE", "sql": "SELECT c.customerName FROM customers c JOIN payments p USING(customerNumber) WHERE c.city='Boston' GROUP BY c.customerNumber ORDER BY AVG(p.amount) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_1609", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1610", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1611", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1612", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1613", "pick": "NONE", "sql": "SELECT SUM(d.quantityOrdered) FROM orderdetails d JOIN products p USING(productCode) WHERE p.MSRP-p.buyPrice=(SELECT MAX(MSRP-buyPrice) FROM products)", "submitted": true}
+{"question_id": "bird_train_train_1615", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1616", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1618", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1620", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1621", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1623", "pick": "NONE", "sql": "SELECT firstName,lastName FROM employees WHERE employeeNumber=(SELECT reportsTo FROM employees WHERE firstName='Steve' AND lastName='Patterson')", "submitted": true}
+{"question_id": "bird_train_train_1624", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1625", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1626", "pick": "NONE", "sql": "SELECT e2.email FROM customers c JOIN employees e ON e.employeeNumber=c.salesRepEmployeeNumber JOIN employees e2 ON e2.employeeNumber=e.reportsTo WHERE c.customerName='Muscle Machine Inc'", "submitted": true}
+{"question_id": "bird_train_train_1628", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1629", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1630", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1632", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1633", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1635", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1638", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1639", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1640", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1641", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1642", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1643", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1645", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1646", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1647", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1648", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1649", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1651", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1652", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1656", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1657", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1658", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1660", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1650", "pick": "NONE", "sql": "SELECT SUM(T1.quantityOrdered*(T1.priceEach-T2.buyPrice)) FROM orderdetails T1 JOIN products T2 ON T1.productCode=T2.productCode WHERE T1.orderNumber=10100", "submitted": true}
+{"question_id": "bird_train_train_1655", "pick": "NONE", "sql": "SELECT COUNT(T1.quantityOrdered) FROM orderdetails T1 JOIN products T2 ON T1.productCode=T2.productCode WHERE T2.productName='2003 Harley-Davidson Eagle Drag Bike'", "submitted": true}
+{"question_id": "bird_train_train_1659", "pick": "NONE", "sql": "SELECT T3.customerName, T1.quantityOrdered*(T1.priceEach-T2.buyPrice) FROM orderdetails T1 JOIN products T2 ON T1.productCode=T2.productCode JOIN orders T4 ON T1.orderNumber=T4.orderNumber JOIN customers T3 ON T4.customerNumber=T3.customerNumber ORDER BY 2 DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_1662", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1663", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1664", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_1665", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1666", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1668", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_1669", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4368", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4369", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4370", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4372", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4373", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4374", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4375", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4376", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_4377", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_4378", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4379", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4381", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4384", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4385", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4386", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4387", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4388", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4383", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN m.name IS NOT NULL THEN 1 ELSE 0 END) AS REAL)*100/COUNT(e.name) FROM enlist e LEFT JOIN male m ON e.name=m.name WHERE e.organ='navy'", "submitted": true}
+{"question_id": "bird_train_train_4389", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4390", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4393", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4394", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4395", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4398", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4399", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4401", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4402", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4403", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4404", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4405", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4407", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4408", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4409", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4410", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4417", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4421", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4423", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4391", "pick": "NONE", "sql": "SELECT CASE WHEN EXISTS(SELECT 1 FROM disabled WHERE name='student281') THEN 'YES' ELSE 'NO' END, school FROM enrolled WHERE name='student281'", "submitted": true}
+{"question_id": "bird_train_train_4396", "pick": "NONE", "sql": "SELECT T1.name FROM filed_for_bankrupcy AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'foreign_legion'", "submitted": true}
+{"question_id": "bird_train_train_4411", "pick": "NONE", "sql": "SELECT COUNT(*) FROM unemployed AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name INNER JOIN no_payment_due AS T3 ON T1.name = T3.name WHERE T3.bool = 'pos'", "submitted": true}
+{"question_id": "bird_train_train_4412", "pick": "NONE", "sql": "SELECT CASE WHEN EXISTS(SELECT 1 FROM disabled WHERE name='student124') THEN 'YES' ELSE 'NO' END AS disabled, CASE WHEN EXISTS(SELECT 1 FROM male WHERE name='student124') THEN 'YES' ELSE 'NO' END AS male", "submitted": true}
+{"question_id": "bird_train_train_4414", "pick": "NONE", "sql": "SELECT COUNT(*) FROM enlist WHERE organ IN ('marines','air_force') AND name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4422", "pick": "NONE", "sql": "SELECT organ FROM enlist WHERE name='student313'", "submitted": true}
+{"question_id": "bird_train_train_4424", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4425", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4426", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4427", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4430", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4431", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM enlist T1 WHERE T1.organ='air_force' AND T1.name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4432", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4433", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4434", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4435", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T3.month > 5 THEN 1 ELSE 0 END) AS REAL)*100/COUNT(T3.name) FROM unemployed T1 INNER JOIN longest_absense_from_school T3 ON T1.name=T3.name", "submitted": true}
+{"question_id": "bird_train_train_4437", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4438", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4439", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4440", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4441", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4442", "pick": "NONE", "sql": "SELECT CASE WHEN EXISTS(SELECT 1 FROM male WHERE name='student1000') THEN 'male' ELSE 'female' END", "submitted": true}
+{"question_id": "bird_train_train_4443", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4445", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4446", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4447", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4448", "pick": "NONE", "sql": "SELECT COUNT(*) FROM enlist WHERE organ IN ('foreign_legion','peace_corps','army')", "submitted": true}
+{"question_id": "bird_train_train_4450", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4451", "pick": "NONE", "sql": "SELECT name FROM longest_absense_from_school WHERE month=0 AND name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4453", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4454", "pick": "NONE", "sql": "SELECT COUNT(*) FROM (SELECT T1.name FROM enlist T1 INNER JOIN male T2 ON T1.name=T2.name GROUP BY T1.name HAVING COUNT(T1.organ)>1)", "submitted": true}
+{"question_id": "bird_train_train_4461", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4462", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4463", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4465", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4466", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4469", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4471", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4472", "pick": "C", "submitted": true}
+{"question_id": "bird_train_train_4474", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4475", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_4480", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4484", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4488", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4492", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4493", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4494", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4495", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4457", "pick": "NONE", "sql": "SELECT name FROM disabled WHERE name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4458", "pick": "NONE", "sql": "SELECT CAST((SELECT COUNT(name) FROM unemployed) AS REAL) / (SELECT COUNT(name) FROM disabled)", "submitted": true}
+{"question_id": "bird_train_train_4478", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T1.name NOT IN (SELECT name FROM male) THEN 1 ELSE 0 END) AS REAL) / COUNT(T1.name) FROM disabled AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'foreign_legion'", "submitted": true}
+{"question_id": "bird_train_train_4479", "pick": "NONE", "sql": "SELECT 100.0 * SUM(CASE WHEN name NOT IN (SELECT name FROM male) THEN 1 ELSE 0 END) / COUNT(name) AS FEMALE, 100.0 * SUM(CASE WHEN name IN (SELECT name FROM male) THEN 1 ELSE 0 END) / COUNT(name) AS MALE FROM enlist WHERE organ = 'fire_department'", "submitted": true}
+{"question_id": "bird_train_train_4486", "pick": "NONE", "sql": "SELECT 100.0 * COUNT(T2.name) / COUNT(T1.name) FROM person AS T1 LEFT JOIN disabled AS T2 ON T1.name = T2.name", "submitted": true}
+{"question_id": "bird_train_train_4489", "pick": "NONE", "sql": "SELECT name FROM enlist WHERE organ = 'air_force' AND name NOT IN (SELECT name FROM male) LIMIT 5", "submitted": true}
+{"question_id": "bird_train_train_4490", "pick": "NONE", "sql": "SELECT COUNT(name) FROM person WHERE name NOT IN (SELECT name FROM disabled)", "submitted": true}
+{"question_id": "bird_train_train_4491", "pick": "NONE", "sql": "SELECT CASE WHEN 'student995' IN (SELECT name FROM male) THEN 'male' ELSE 'female' END AS gender, school FROM enrolled WHERE name = 'student995'", "submitted": true}
+{"question_id": "bird_train_train_4496", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4497", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4499", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4501", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4502", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4503", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4504", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4505", "pick": "NONE", "sql": "SELECT e.organ, SUM(CASE WHEN m.name IS NOT NULL THEN 1 ELSE 0 END) AS male, SUM(CASE WHEN m.name IS NULL THEN 1 ELSE 0 END) AS female FROM enlist e LEFT JOIN male m ON e.name=m.name GROUP BY e.organ", "submitted": true}
+{"question_id": "bird_train_train_4508", "pick": "NONE", "sql": "SELECT e.school, (SELECT COUNT(*) FROM enrolled e2 JOIN filed_for_bankrupcy f ON e2.name=f.name WHERE e2.school=e.school) FROM enrolled e GROUP BY e.school ORDER BY COUNT(*) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_4509", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4512", "pick": "NONE", "sql": "SELECT name FROM enrolled WHERE school IN ('occ','ulca') AND name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4513", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4515", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4518", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4519", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4522", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4525", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4526", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4528", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4529", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4530", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4531", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4532", "pick": "NONE", "sql": "SELECT COUNT(*) FROM enlist WHERE organ='marines' AND name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4533", "pick": "NONE", "sql": "SELECT CAST(SUM(month) AS REAL)/COUNT(name) FROM longest_absense_from_school WHERE name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4534", "pick": "NONE", "sql": "SELECT name FROM filed_for_bankrupcy WHERE name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4536", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4538", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4541", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4543", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4544", "pick": "NONE", "sql": "SELECT CASE WHEN EXISTS (SELECT 1 FROM unemployed WHERE name='student110') THEN 'unemployed' ELSE 'employed' END AS employment, (SELECT bool FROM no_payment_due WHERE name='student110') AS payment", "submitted": true}
+{"question_id": "bird_train_train_4545", "pick": "NONE", "sql": "SELECT 100.0 * (SELECT COUNT(name) FROM male) / (SELECT COUNT(name) FROM person)", "submitted": true}
+{"question_id": "bird_train_train_4546", "pick": "NONE", "sql": "SELECT T1.school, CASE WHEN T2.name IS NULL THEN 'female' ELSE 'male' END FROM enrolled T1 LEFT JOIN male T2 ON T1.name=T2.name WHERE T1.name='student34'", "submitted": true}
+{"question_id": "bird_train_train_4547", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4548", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4549", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4550", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4553", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4556", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4557", "pick": "NONE", "sql": "SELECT organ FROM enlist GROUP BY organ ORDER BY COUNT(*) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_4558", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4560", "pick": "NONE", "sql": "SELECT COUNT(*) FROM enlist WHERE organ='army' AND name NOT IN (SELECT name FROM male)", "submitted": true}
+{"question_id": "bird_train_train_4561", "pick": "NONE", "sql": "SELECT organ FROM enlist WHERE name IN (SELECT name FROM male) GROUP BY organ ORDER BY COUNT(*) ASC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_4563", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4564", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4566", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_4568", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_4569", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM disabled T1 INNER JOIN longest_absense_from_school T3 ON T1.name=T3.name WHERE T3.month=0 AND T1.name NOT IN (SELECT name FROM unemployed)", "submitted": true}
+{"question_id": "bird_train_train_4570", "pick": "NONE", "sql": "SELECT organ, 100.0*SUM(CASE WHEN name IN (SELECT name FROM male) THEN 1 ELSE 0 END)/COUNT(name) FROM enlist WHERE organ=(SELECT organ FROM enlist WHERE name IN (SELECT name FROM male) GROUP BY organ ORDER BY COUNT(*) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_7613", "pick": "NONE", "sql": "SELECT nameGiven FROM Master WHERE shootCatch IS NULL AND pos='F'", "submitted": true}
+{"question_id": "bird_train_train_7614", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7615", "pick": "NONE", "sql": "SELECT nameGiven, birthYear, birthMon, birthDay FROM Master WHERE deathYear IS NULL AND birthYear IS NOT NULL ORDER BY CAST(birthYear AS INT) DESC, CAST(birthMon AS INT) DESC, CAST(birthDay AS INT) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7617", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7619", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7621", "pick": "NONE", "sql": "SELECT M.lastName, G.year FROM Master M JOIN Goalies G ON M.playerID=G.playerID WHERE M.deathYear IS NOT NULL AND CAST(G.Min AS INT)=(SELECT MAX(CAST(G2.Min AS INT)) FROM Goalies G2 WHERE G2.playerID=G.playerID)", "submitted": true}
+{"question_id": "bird_train_train_7622", "pick": "NONE", "sql": "SELECT DISTINCT M.nameGiven, M.height, M.weight, CAST(strftime(\"%Y\",\"now\") AS INT) - CAST(M.birthYear AS INT) FROM Master M JOIN Goalies G ON M.playerID=G.playerID WHERE G.tmID=\"COL\" AND G.year BETWEEN 2000 AND 2010", "submitted": true}
+{"question_id": "bird_train_train_7623", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7624", "pick": "NONE", "sql": "SELECT M.firstName, M.lastName, G.year FROM Master M JOIN Goalies G ON M.playerID=G.playerID WHERE G.SA IS NOT NULL AND CAST(G.SA AS INT)>0 AND G.GA IS NOT NULL AND CAST(G.GA AS REAL)/CAST(G.SA AS REAL) = (SELECT MIN(CAST(GA AS REAL)/CAST(SA AS REAL)) FROM Goalies WHERE SA IS NOT NULL AND CAST(SA AS INT)>0 AND GA IS NOT NULL)", "submitted": true}
+{"question_id": "bird_train_train_7625", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7626", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7628", "pick": "NONE", "sql": "SELECT M.firstName, M.lastName, G.year FROM Master M JOIN Goalies G ON M.playerID=G.playerID WHERE CAST(G.GA AS INT)>0 AND CAST(G.SHO AS REAL)/CAST(G.GA AS REAL)*100=5", "submitted": true}
+{"question_id": "bird_train_train_7629", "pick": "NONE", "sql": "SELECT firstName, lastName FROM Master WHERE deathYear IS NOT NULL AND birthCountry <> deathCountry ORDER BY birthYear", "submitted": true}
+{"question_id": "bird_train_train_7631", "pick": "NONE", "sql": "SELECT nameGiven, pos FROM Master WHERE deathYear IS NULL AND pos LIKE '%/%'", "submitted": true}
+{"question_id": "bird_train_train_7633", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7634", "pick": "NONE", "sql": "SELECT DISTINCT M.firstName, M.lastName, T.name FROM Master M JOIN Goalies G ON M.playerID=G.playerID JOIN Teams T ON T.year=G.year AND T.tmID=G.tmID WHERE M.shootCatch='L' AND M.pos='G' AND M.coachID IS NOT NULL", "submitted": true}
+{"question_id": "bird_train_train_7636", "pick": "NONE", "sql": "SELECT DISTINCT M.firstName, M.lastName, T.year FROM Master M JOIN Goalies G ON M.playerID=G.playerID JOIN Teams T ON T.year=G.year AND T.tmID=G.tmID WHERE M.pos='G' AND T.name='Boston Bruins' AND T.rank=1", "submitted": true}
+{"question_id": "bird_train_train_7637", "pick": "NONE", "sql": "SELECT DISTINCT T.name FROM Master M JOIN Goalies G ON M.playerID=G.playerID JOIN Teams T ON T.year=G.year AND T.tmID=G.tmID WHERE M.firstNHL < 1950 AND M.deathYear IS NOT NULL", "submitted": true}
+{"question_id": "bird_train_train_7639", "pick": "NONE", "sql": "SELECT M.nameGiven, C.tmID FROM Coaches C JOIN Master M ON M.coachID=C.coachID WHERE M.playerID IS NULL AND C.g>0 ORDER BY CAST(C.w AS REAL)/C.g DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7640", "pick": "NONE", "sql": "SELECT M.firstName, M.lastName, C.year, CAST(C.w AS REAL)*100/C.g FROM Coaches C JOIN Master M ON M.coachID=C.coachID WHERE C.tmID='DET' AND C.g>0 ORDER BY CAST(C.w AS REAL)/C.g DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7641", "pick": "NONE", "sql": "SELECT DISTINCT M.nameGiven, M.birthYear, M.birthMon, M.birthDay, C.tmID FROM Coaches C JOIN Master M ON M.coachID=C.coachID WHERE C.coachID=(SELECT coachID FROM Coaches WHERE tmID='MTL' GROUP BY coachID ORDER BY COUNT(DISTINCT year) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_7642", "pick": "NONE", "sql": "SELECT DISTINCT M.firstName, M.lastName, T.name FROM Goalies G JOIN Master M ON M.playerID=G.playerID JOIN Teams T ON T.year=G.year AND T.tmID=G.tmID WHERE CAST(G.L AS INT)>CAST(G.W AS INT) AND G.playerID IN (SELECT playerID FROM Goalies WHERE CAST(L AS INT)>CAST(W AS INT) GROUP BY playerID HAVING COUNT(DISTINCT year)>=2)", "submitted": true}
+{"question_id": "bird_train_train_7651", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7648", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7646", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7643", "pick": "NONE", "sql": "SELECT G.playerID, G.year, CAST(G.W AS REAL)*100/CAST(G.GP AS REAL) FROM Goalies G JOIN Master M ON M.playerID=G.playerID WHERE M.birthYear='1987' AND M.shootCatch IS NULL AND CAST(G.GP AS INT)>0", "submitted": true}
+{"question_id": "bird_train_train_7645", "pick": "NONE", "sql": "SELECT M.lastName, M.firstName FROM Goalies G JOIN Master M ON M.playerID=G.playerID WHERE M.deathYear IS NULL GROUP BY G.playerID HAVING SUM(CAST(G.GP AS REAL))>0 AND SUM(CAST(G.W AS REAL))/SUM(CAST(G.GP AS REAL))>0.5", "submitted": true}
+{"question_id": "bird_train_train_7652", "pick": "NONE", "sql": "SELECT COUNT(*) FROM TeamsPost WHERE W = L", "submitted": true}
+{"question_id": "bird_train_train_7653", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7654", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7655", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7656", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7657", "pick": "NONE", "sql": "SELECT T2.year FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID ORDER BY CAST(T1.height AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7658", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7660", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7663", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.coachID) FROM AwardsCoaches AS T1 INNER JOIN Master AS T2 ON T1.coachID = T2.coachID WHERE T1.year > 1940 AND T2.deathYear IS NOT NULL", "submitted": true}
+{"question_id": "bird_train_train_7664", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7665", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7667", "pick": "NONE", "sql": "SELECT COUNT(*) FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID WHERE T1.playerID IS NOT NULL AND T1.coachID IS NOT NULL", "submitted": true}
+{"question_id": "bird_train_train_7672", "pick": "NONE", "sql": "SELECT DISTINCT T2.award FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T1.deathCity = 'Arlington'", "submitted": true}
+{"question_id": "bird_train_train_7674", "pick": "NONE", "sql": "SELECT COUNT(*) FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID WHERE T1.birthMon IN ('7','8')", "submitted": true}
+{"question_id": "bird_train_train_7675", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7678", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7679", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7680", "pick": "NONE", "sql": "SELECT SUM(CAST(T1.weight AS REAL) / (CAST(T1.height AS REAL) * CAST(T1.height AS REAL))) / COUNT(T1.coachID) FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID WHERE T1.coachID IS NOT NULL", "submitted": true}
+{"question_id": "bird_train_train_7681", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T1.birthCountry = 'USA' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.hofID) FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID", "submitted": true}
+{"question_id": "bird_train_train_7682", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7683", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7684", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7685", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7687", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7689", "pick": "NONE", "sql": "SELECT CASE WHEN T2.note = 'posthumous' THEN 'NO' ELSE 'YES' END FROM Master AS T1 INNER JOIN AwardsMisc AS T2 ON T1.hofID = T2.ID WHERE T1.legendsID = 'P194502'", "submitted": true}
+{"question_id": "bird_train_train_7690", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7692", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7693", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7698", "pick": "NONE", "sql": "SELECT Pts FROM Teams WHERE year=1995 AND tmID=(SELECT tmID FROM Goalies WHERE year=1995 GROUP BY tmID ORDER BY SUM(CAST(PostSHO AS INTEGER)) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_7699", "pick": "NONE", "sql": "SELECT T1.coachID, T2.nameNick FROM Coaches T1 JOIN Master T2 ON T1.coachID=T2.coachID WHERE T1.year=2009 ORDER BY CAST(T1.w AS REAL)/(T1.w+T1.l) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7700", "pick": "NONE", "sql": "SELECT M.firstName, M.lastName FROM Coaches C JOIN Master M ON M.coachID=C.coachID WHERE C.year=2011 AND C.tmID=(SELECT tmID FROM Teams WHERE year=2011 ORDER BY CAST(PPG AS REAL)/PPC DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_7702", "pick": "NONE", "sql": "SELECT COUNT(year) FROM ScoringSC WHERE playerID='cleghsp01'", "submitted": true}
+{"question_id": "bird_train_train_7704", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7705", "pick": "NONE", "sql": "SELECT lgID FROM Scoring WHERE playerID='adamsja01' AND year=1920", "submitted": true}
+{"question_id": "bird_train_train_7707", "pick": "NONE", "sql": "SELECT T1.W FROM Teams T1 JOIN Goalies T2 ON T1.tmID=T2.tmID AND T1.year=T2.year WHERE T1.year=2011 AND T2.PostGP IS NOT NULL AND T2.PostGP<>'' GROUP BY T1.tmID HAVING COUNT(T2.playerID)=3", "submitted": true}
+{"question_id": "bird_train_train_7708", "pick": "NONE", "sql": "SELECT T1.birthYear FROM Master T1 JOIN Goalies T2 ON T1.playerID=T2.playerID WHERE T2.year=2008 ORDER BY CAST(T2.PostSA AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7709", "pick": "NONE", "sql": "SELECT MAX(C.year - CAST(M.lastNHL AS INTEGER)) FROM Coaches C JOIN Master M ON M.coachID=C.coachID WHERE M.firstName='Don' AND M.lastName='Waddell'", "submitted": true}
+{"question_id": "bird_train_train_7710", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7711", "pick": "NONE", "sql": "SELECT T1.birthYear, T1.birthMon, T1.birthDay FROM Master T1 JOIN Goalies T2 ON T1.playerID=T2.playerID WHERE T2.year=1965 ORDER BY CAST(T2.GA AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7712", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master T1 JOIN Scoring T2 ON T1.playerID=T2.playerID WHERE T2.year=1981 ORDER BY CAST(T2.\"+/-\" AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7713", "pick": "NONE", "sql": "SELECT T1.weight FROM Master T1 JOIN Scoring T2 ON T1.playerID=T2.playerID WHERE T2.year>2000 ORDER BY CAST(T2.PPG AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7714", "pick": "NONE", "sql": "SELECT DISTINCT T1.shootCatch FROM Master T1 JOIN Scoring T2 ON T1.playerID=T2.playerID WHERE T2.year=1989 AND CAST(T2.SHG AS INTEGER)=7", "submitted": true}
+{"question_id": "bird_train_train_7715", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master T1 JOIN Scoring T2 ON T1.playerID=T2.playerID WHERE T2.year=1986 ORDER BY CAST(T2.GWG AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7716", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7717", "pick": "NONE", "sql": "SELECT M.firstName, M.lastName FROM Coaches C JOIN Master M ON M.coachID=C.coachID WHERE C.year=2003 AND C.tmID=(SELECT tmID FROM Teams WHERE year=2003 ORDER BY CAST(BenchMinor AS INTEGER) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_7718", "pick": "NONE", "sql": "SELECT T1.playerID FROM Goalies T1 JOIN Master T2 ON T1.playerID=T2.playerID WHERE CAST(T2.weight AS INTEGER)>190 AND T1.year=1978 ORDER BY CAST(T1.GA AS INTEGER) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7719", "pick": "NONE", "sql": "SELECT ((SELECT CAST(W AS REAL)/(W+L) FROM Teams WHERE tmID='VAN' AND year=2006) - (SELECT CAST(W AS REAL)/(W+L) FROM Teams WHERE tmID='VAN' AND year=2005))*100", "submitted": true}
+{"question_id": "bird_train_train_7720", "pick": "NONE", "sql": "SELECT M.legendsID FROM Master M JOIN Goalies G ON M.playerID=G.playerID WHERE G.year=2011 AND CAST(G.PostSA AS INTEGER)>0 ORDER BY CAST(G.PostGA AS REAL)/CAST(G.PostSA AS REAL) ASC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7721", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_7723", "pick": "NONE", "sql": "SELECT award FROM AwardsCoaches WHERE coachID=(SELECT coachID FROM Coaches GROUP BY coachID ORDER BY SUM(w) DESC LIMIT 1) GROUP BY award ORDER BY COUNT(*) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7725", "pick": "NONE", "sql": "SELECT CAST(COUNT(hofID) AS REAL) / 30 FROM HOF WHERE year BETWEEN 1950 AND 1980", "submitted": true}
+{"question_id": "bird_train_train_7726", "pick": "C", "submitted": true}
+{"question_id": "bird_train_train_7727", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7728", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7729", "pick": "NONE", "sql": "SELECT pos FROM Master WHERE birthYear IS NOT NULL ORDER BY birthYear, birthMon, birthDay LIMIT 1 OFFSET 8", "submitted": true}
+{"question_id": "bird_train_train_7730", "pick": "NONE", "sql": "SELECT PostGA FROM Goalies WHERE lgID='WCHL' AND year=1924 ORDER BY CAST(PostGA AS INT) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7731", "pick": "NONE", "sql": "SELECT OctL, tmID FROM TeamSplits WHERE year=2006 ORDER BY CAST(OctL AS INT) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7733", "pick": "NONE", "sql": "SELECT S.year, S.year - CAST(M.birthYear AS INT) FROM Scoring S JOIN Master M ON S.playerID=M.playerID ORDER BY S.G DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7734", "pick": "NONE", "sql": "SELECT (SELECT AVG(CAST(height AS REAL)) FROM Master WHERE pos='G' AND birthYear BETWEEN '1970' AND '1979' AND shootCatch='L'), t.name FROM Master m JOIN Goalies g ON g.playerID=m.playerID JOIN Teams t ON t.year=g.year AND t.tmID=g.tmID WHERE m.pos='G' AND m.birthYear BETWEEN '1970' AND '1979' AND m.shootCatch='L' AND CAST(m.height AS INT)=(SELECT MAX(CAST(height AS INT)) FROM Master WHERE pos='G' AND birthYear BETWEEN '1970' AND '1979' AND shootCatch='L') ORDER BY t.year DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7735", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7736", "pick": "NONE", "sql": "SELECT CAST(p.PPG AS REAL)/p.PPC, CASE WHEN s.tmIDWinner=p.tmID THEN s.tmIDLoser ELSE s.tmIDWinner END, CASE WHEN s.tmIDWinner=p.tmID THEN 'victorious' ELSE 'lost' END FROM (SELECT * FROM TeamsPost WHERE PKC IS NOT NULL ORDER BY CAST(PKC AS INT) LIMIT 1) p JOIN SeriesPost s ON s.year=p.year AND (s.tmIDWinner=p.tmID OR s.tmIDLoser=p.tmID)", "submitted": true}
+{"question_id": "bird_train_train_7738", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_7739", "pick": "NONE", "sql": "SELECT S.year - CAST(M.firstNHL AS INT), M.nameGiven, M.lastName FROM Scoring S JOIN Master M ON S.playerID=M.playerID WHERE S.lgID='NHL' AND S.\"+/-\" IS NOT NULL ORDER BY CAST(S.\"+/-\" AS INT) ASC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7741", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7743", "pick": "NONE", "sql": "SELECT SUM(g) FROM Coaches WHERE coachID=(SELECT coachID FROM AwardsCoaches WHERE award='Second Team All-Star' ORDER BY year LIMIT 1) AND year <= (SELECT MIN(year) FROM AwardsCoaches WHERE award='Second Team All-Star')", "submitted": true}
+{"question_id": "bird_train_train_7745", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7746", "pick": "NONE", "sql": "SELECT SUM(c.l), c.coachID FROM Coaches c JOIN Teams t ON t.year=c.year AND t.tmID=c.tmID WHERE c.year=1997 AND c.notes='interim' AND t.name='Tampa Bay Lightning'", "submitted": true}
+{"question_id": "bird_train_train_7748", "pick": "NONE", "sql": "SELECT c.coachID FROM Coaches c JOIN Teams t ON t.year=c.year AND t.tmID=c.tmID WHERE c.year=1969 AND t.rank=4", "submitted": true}
+{"question_id": "bird_train_train_7749", "pick": "NONE", "sql": "SELECT T1.name FROM Teams T1 JOIN TeamsHalf T2 ON T1.tmID=T2.tmID AND T1.year=T2.year WHERE T2.half=1 AND T2.rank=1 AND T2.year BETWEEN 1917 AND 1920", "submitted": true}
+{"question_id": "bird_train_train_7750", "pick": "NONE", "sql": "SELECT M.nameGiven, M.lastName, S.year, S.tmID FROM Master M JOIN Scoring S ON M.playerID=S.playerID WHERE M.birthCountry='Canada' AND CAST(M.firstNHL AS INT) - CAST(M.birthYear AS INT) BETWEEN 18 AND 24 AND S.G < 5", "submitted": true}
+{"question_id": "bird_train_train_7751", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_7752", "pick": "NONE", "sql": "SELECT CAST(PPG AS REAL)/PPC FROM Teams WHERE name='New York Rangers' AND year=2009", "submitted": true}
+{"question_id": "bird_train_train_7753", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7755", "pick": "NONE", "sql": "SELECT name FROM Teams WHERE year=2006 ORDER BY BenchMinor DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7756", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7758", "pick": "NONE", "sql": "select T2.name from TeamsSC T1 JOIN Teams T2 ON T1.year=T2.year AND T1.tmID=T2.tmID where T1.year=1917 and T1.W>T1.L", "submitted": true}
+{"question_id": "bird_train_train_7759", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7760", "pick": "NONE", "sql": "select count(*) from TeamsSC T1 JOIN Teams T2 ON T1.year=T2.year AND T1.tmID=T2.tmID where T1.year=1922 and T2.Pts>20", "submitted": true}
+{"question_id": "bird_train_train_7761", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_7762", "pick": "NONE", "sql": "select T2.name from TeamsSC T1 JOIN Teams T2 ON T1.year=T2.year AND T1.tmID=T2.tmID order by T1.W desc limit 1", "submitted": true}
+{"question_id": "bird_train_train_7764", "pick": "NONE", "sql": "select name from Teams where year=1909 and T>0", "submitted": true}
+{"question_id": "bird_train_train_7765", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7766", "pick": "NONE", "sql": "select count(distinct c.coachID) from Coaches c join Teams t on c.tmID=t.tmID join Master m on m.coachID=c.coachID where t.name='Montreal Canadiens' and m.hofID is not null", "submitted": true}
+{"question_id": "bird_train_train_7767", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7768", "pick": "NONE", "sql": "select distinct m.firstName from Master m join Coaches c on c.coachID=m.coachID where c.year=1922 and c.tmID in (select tmID from TeamsSC where year=1922)", "submitted": true}
+{"question_id": "bird_train_train_7769", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7770", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_7771", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7772", "pick": "NONE", "sql": "select distinct m.nameNick from Master m join Coaches c on c.coachID=m.coachID join Teams t on t.tmID=c.tmID and t.year=c.year where t.name='Buffalo Sabres' and m.birthCountry='USA'", "submitted": true}
+{"question_id": "bird_train_train_7773", "pick": "NONE", "sql": "select count(distinct c.coachID) from Coaches c join Master m on m.coachID=c.coachID where c.year=1922 and m.birthCountry='USA' and c.tmID in (select tmID from TeamsSC where year=1922)", "submitted": true}
+{"question_id": "bird_train_train_7775", "pick": "NONE", "sql": "SELECT DISTINCT t2.name FROM Teams t1 JOIN TeamVsTeam v ON v.tmID=t1.tmID AND v.year=t1.year JOIN Teams t2 ON t2.tmID=v.oppID AND t2.year=v.year WHERE t1.name='Buffalo Sabres' ", "submitted": true}
+{"question_id": "bird_train_train_7778", "pick": "NONE", "sql": "select distinct t.year from TeamsSC s join Teams t on s.tmID=t.tmID and s.year=t.year where t.name='Montreal Canadiens' and s.PIM=49 and t.year in (1924,1923,1918)", "submitted": true}
+{"question_id": "bird_train_train_7779", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7780", "pick": "NONE", "sql": "select SUM(1.0*t.W/t.G)/COUNT(v.oppID) from Teams t join TeamVsTeam v on v.tmID=t.tmID and v.year=t.year where t.name='Buffalo Sabres' and t.year=2000", "submitted": true}
+{"question_id": "bird_train_train_7781", "pick": "NONE", "sql": "select CAST(SUM(T1.PIM) AS REAL)/COUNT(T1.G) from TeamsSC T1 JOIN Teams T2 ON T1.year=T2.year AND T1.tmID=T2.tmID where T2.name='Montreal Canadiens'", "submitted": true}
+{"question_id": "bird_train_train_7784", "pick": "NONE", "sql": "select name from HOF where category not in ('Player','Builder') order by year desc limit 1", "submitted": true}
+{"question_id": "bird_train_train_7785", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7786", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7787", "pick": "NONE", "sql": "select count(*) from Master where playerID is not null and coachID is not null and hofID is not null", "submitted": true}
+{"question_id": "bird_train_train_7789", "pick": "NONE", "sql": "select t.BenchMinor from Teams t join Coaches c on c.tmID=t.tmID and c.year=t.year join Master m on m.coachID=c.coachID where m.firstName='Scotty' and m.lastName='Bowman' and t.year=1982", "submitted": true}
+{"question_id": "bird_train_train_7791", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7794", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7796", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_7799", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7801", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7804", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7806", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7807", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7810", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7811", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7987", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7989", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7992", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7996", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7997", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_7795", "pick": "NONE", "sql": "SELECT M.firstName, M.lastName FROM Goalies G JOIN Teams T ON G.year=T.year AND G.tmID=T.tmID JOIN Master M ON M.playerID=G.playerID WHERE T.name='Quebec Bulldogs' GROUP BY G.playerID ORDER BY SUM(CAST(G.Min AS INT)) DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7798", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT M.playerID) FROM Goalies G JOIN Teams T ON G.year=T.year AND G.tmID=T.tmID JOIN Master M ON M.playerID=G.playerID WHERE T.name='Haileybury Hockey Club' AND M.hofID IS NOT NULL", "submitted": true}
+{"question_id": "bird_train_train_7808", "pick": "NONE", "sql": "SELECT SUM(S.G), 2026-CAST(M.birthYear AS INT) FROM Scoring S JOIN Master M ON M.playerID=S.playerID WHERE S.playerID='aaltoan01' GROUP BY M.birthYear", "submitted": true}
+{"question_id": "bird_train_train_7813", "pick": "NONE", "sql": "SELECT SUM(G) FROM Teams WHERE year=1976 AND tmID='BIR' AND divID='EW'", "submitted": true}
+{"question_id": "bird_train_train_7814", "pick": "NONE", "sql": "SELECT T.L, (SELECT SUM(A) FROM Scoring WHERE year=2010 AND tmID='BOS') FROM Teams T WHERE T.year=2010 AND T.tmID='BOS'", "submitted": true}
+{"question_id": "bird_train_train_7815", "pick": "NONE", "sql": "SELECT SUM(CAST(M.weight AS INT)) FROM Scoring S JOIN Master M ON M.playerID=S.playerID WHERE S.tmID='ANA' AND S.year=1997", "submitted": true}
+{"question_id": "bird_train_train_7817", "pick": "NONE", "sql": "SELECT DISTINCT T.tmID, M.birthCountry FROM Scoring S JOIN Master M ON M.playerID=S.playerID JOIN Teams T ON T.year=S.year AND T.tmID=S.tmID WHERE T.year=2000 AND T.tmID=(SELECT tmID FROM Teams WHERE year=2000 ORDER BY CAST(W AS REAL)/(W+L) DESC LIMIT 1)", "submitted": true}
+{"question_id": "bird_train_train_7990", "pick": "NONE", "sql": "SELECT MAX(student_staff_ratio) FROM university_year", "submitted": true}
+{"question_id": "bird_train_train_7995", "pick": "NONE", "sql": "SELECT U.university_name FROM university_ranking_year R JOIN ranking_criteria C ON C.id=R.ranking_criteria_id JOIN university U ON U.id=R.university_id WHERE R.year=2014 AND C.criteria_name='Publications Rank' ORDER BY R.score DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7998", "pick": "NONE", "sql": "SELECT U.university_name FROM university_ranking_year R JOIN ranking_criteria C ON C.id=R.ranking_criteria_id JOIN university U ON U.id=R.university_id JOIN country N ON N.id=U.country_id WHERE R.year=2016 AND C.criteria_name='Citations' AND N.country_name='Australia' ORDER BY R.score DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_7999", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_8000", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8001", "pick": "B", "submitted": true}
+{"question_id": "bird_train_train_8002", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8003", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8005", "pick": "NONE", "sql": "SELECT COUNT(*), SUM(CASE WHEN T2.country_name='United States of America' THEN 1 ELSE 0 END) FROM university_year T3 JOIN university T1 ON T1.id=T3.university_id JOIN country T2 ON T1.country_id=T2.id WHERE T3.year=2016 AND T3.pct_female_students*T3.num_students/100 > 20000", "submitted": true}
+{"question_id": "bird_train_train_8006", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8009", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8010", "pick": "NONE", "sql": "SELECT pct_international_students*num_students/100, num_students FROM university_year WHERE university_id=20 AND year=2013", "submitted": true}
+{"question_id": "bird_train_train_8011", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8012", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8014", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8015", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8016", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8018", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8019", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8020", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8021", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8023", "pick": "NONE", "sql": "SELECT DISTINCT T1.num_students FROM university_year T1 JOIN university_ranking_year T3 ON T1.university_id=T3.university_id WHERE T3.score=98 AND T3.year=2013 AND T1.year=2013", "submitted": true}
+{"question_id": "bird_train_train_8024", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8026", "pick": "NONE", "sql": "SELECT CAST(SUM(T1.pct_international_students*T1.num_students) AS REAL)/100/SUM(T1.num_students) FROM university_year T1 JOIN university_ranking_year T3 ON T1.university_id=T3.university_id WHERE T3.score<80 AND T3.year=2015", "submitted": true}
+{"question_id": "bird_train_train_8028", "pick": "NONE", "sql": "SELECT SUM(num_students*pct_female_students/100) FROM university_year WHERE year=2011", "submitted": true}
+{"question_id": "bird_train_train_8029", "pick": "NONE", "sql": "SELECT MAX(student_staff_ratio) FROM university_year", "submitted": true}
+{"question_id": "bird_train_train_8030", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8031", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8032", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8033", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8035", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8036", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8039", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8040", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8041", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8042", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8045", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8047", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8048", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8050", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8051", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8052", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8053", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8056", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8059", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8060", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8061", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8064", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8065", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8067", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8037", "pick": "NONE", "sql": "SELECT CAST(T1.pct_female_students * T1.num_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Stanford University' AND T1.year = 2011", "submitted": true}
+{"question_id": "bird_train_train_8058", "pick": "NONE", "sql": "SELECT CAST(T1.pct_female_students * T1.num_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Arizona State University' AND T1.year = 2014", "submitted": true}
+{"question_id": "bird_train_train_8063", "pick": "NONE", "sql": "SELECT (SELECT 100.0*SUM(T2.score>80)/COUNT(*) FROM university_ranking_year T2 JOIN ranking_criteria T3 ON T2.ranking_criteria_id=T3.id WHERE T3.criteria_name='International' AND T2.year=2016) AS pct, (SELECT T1.university_name FROM university T1 JOIN university_ranking_year T2 ON T1.id=T2.university_id JOIN ranking_criteria T3 ON T2.ranking_criteria_id=T3.id WHERE T3.criteria_name='International' AND T2.year=2016 ORDER BY T2.score DESC LIMIT 1) AS name", "submitted": true}
+{"question_id": "bird_train_train_8069", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8070", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8071", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8072", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8073", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8074", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8075", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8076", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8078", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8079", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8081", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8086", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8087", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8088", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8089", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8090", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8093", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8094", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8095", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8096", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8097", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8098", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8099", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8100", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8101", "pick": "NONE", "sql": "SELECT CAST(T1.pct_female_students * T1.num_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Pierre and Marie Curie University' AND T1.year = 2015", "submitted": true}
+{"question_id": "bird_train_train_8103", "pick": "NONE", "sql": "SELECT CAST(T1.num_students*T1.pct_international_students AS REAL)/100 FROM university_year T1 JOIN university T2 ON T1.university_id=T2.id WHERE T2.university_name='University of Wisconsin-Madison' AND T1.year=2013", "submitted": true}
+{"question_id": "bird_train_train_8104", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8106", "pick": "NONE", "sql": "SELECT CAST(SUM(id) AS REAL)/3 FROM ranking_system WHERE system_name IN ('Times Higher Education World University Ranking','Shanghai Ranking','Center for World University Rankings')", "submitted": true}
+{"question_id": "bird_train_train_8107", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8110", "pick": "NONE", "sql": "SELECT university_id FROM university_year ORDER BY pct_international_students DESC LIMIT 1", "submitted": true}
+{"question_id": "bird_train_train_8111", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8112", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8113", "pick": "NONE", "sql": "SELECT SUM(CAST(pct_female_students*num_students AS REAL)/100) FROM university_year WHERE year BETWEEN 2011 AND 2013 AND university_id=40", "submitted": true}
+{"question_id": "bird_train_train_8115", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8116", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8117", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8118", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8120", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8121", "pick": "NONE", "sql": "SELECT CAST(T1.num_students*T1.pct_female_students AS REAL)/100 FROM university_year T1 JOIN university T2 ON T1.university_id=T2.id WHERE T1.year=2011 AND T2.university_name='University of Pennsylvania'", "submitted": true}
+{"question_id": "bird_train_train_8123", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8125", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8127", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8128", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8130", "pick": "A", "submitted": true}
+{"question_id": "bird_train_train_8134", "pick": "E", "submitted": true}
+{"question_id": "bird_train_train_8135", "pick": "NONE", "sql": "SELECT SUM(T1.num_students) - SUM(CAST(T1.num_students*T1.pct_international_students AS REAL)/100) FROM university_year T1 JOIN university T2 ON T1.university_id=T2.id WHERE T2.university_name='University of Tokyo' AND T1.year BETWEEN 2011 AND 2014", "submitted": true}

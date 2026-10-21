@@ -1,0 +1,1016 @@
+{
+"_doc": "Hand labels for the 111 DECISION generator misses (read 2026-10-10 from `gen_misses.py report --dump dec`). labels: first = primary. fix: cheapest fix that plausibly recovers it. See docs/paper_notes/research/generator_misses_2026-10-10.md",
+"bird_train_train_766": {
+"labels": [
+"noise",
+"filt_missing"
+],
+"fix": "none",
+"note": "gold adds Gender='Male', not in question/evidence"
+},
+"bird_train_train_904": {
+"labels": [
+"filt_missing",
+"evidence",
+"null_pred"
+],
+"fix": "evidence_check",
+"note": "grade IS NULL (evidence: failed) never paired with gpa BETWEEN"
+},
+"bird_train_train_906": {
+"labels": [
+"lenient",
+"grouping"
+],
+"fix": "lenient",
+"note": "AVG,f_name,l_name present but column order differs"
+},
+"bird_train_train_920": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold selects student f_name for 'courses names'; BIRD-Verified fixes it"
+},
+"bird_train_train_942": {
+"labels": [
+"filt_missing"
+],
+"fix": "more_k",
+"note": "needs both credit=MAX and diff=MAX subqueries; pool has one or the other"
+},
+"bird_train_train_1270": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "evidence divide(count, 9); no candidate divides by a constant"
+},
+"bird_train_train_1318": {
+"labels": [
+"noise",
+"projection"
+],
+"fix": "none",
+"note": "gold omits the asked vote count"
+},
+"bird_train_train_1335": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold groups by role but returns names"
+},
+"bird_train_train_1336": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence: episode number = episode; gold returns episode_id"
+},
+"bird_train_train_1343": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold returns person_id for 'average star'"
+},
+"bird_train_train_1546": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "lastName,firstName vs firstName,lastName"
+},
+"bird_train_train_1549": {
+"labels": [
+"filt_extra",
+"empty"
+],
+"fix": "exec_feedback",
+"note": "every candidate adds the leader's name as a filter on the employee -> all 64 empty"
+},
+"bird_train_train_1550": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "evidence DIVIDE(SUM(amount),3); pool writes SUM or /100000"
+},
+"bird_train_train_1576": {
+"labels": [
+"noise",
+"projection"
+],
+"fix": "none",
+"note": "gold adds jobTitle filter, ignores 'how many'; Verified = COUNT"
+},
+"bird_train_train_1596": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold returns customer address, orders by one line quantity"
+},
+"bird_train_train_1605": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold returns customer addresses, ignores '4 people'"
+},
+"bird_train_train_1615": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence says contact name = customerName; gold uses contactFirst/LastName"
+},
+"bird_train_train_1640": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold is a count, question asks percentage"
+},
+"bird_train_train_1643": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold returns the max-numbered employee"
+},
+"bird_train_train_1665": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold SUM(orderNumber); Verified SUM(quantityOrdered) = top candidate"
+},
+"bird_train_train_1668": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold 'On Hold', question 'In Process'"
+},
+"bird_train_train_1359": {
+"labels": [
+"projection"
+],
+"fix": "extra_col",
+"note": "gold adds UNITS; pool never projects UNITS"
+},
+"bird_train_train_1364": {
+"labels": [
+"literal",
+"evidence",
+"empty"
+],
+"fix": "value_retrieval",
+"note": "= 'Acetaminophen' instead of LIKE 'Acetaminophen%' (evidence) -> all 58 empty"
+},
+"bird_train_train_1371": {
+"labels": [
+"projection"
+],
+"fix": "extra_col",
+"note": "gold adds UNITS (GROUP BY UNITS)"
+},
+"bird_train_train_1378": {
+"labels": [
+"join",
+"filt_missing"
+],
+"fix": "bigger_gen",
+"note": "spurious joins to encounters/observations with the date copied; name+prefix filters dropped"
+},
+"bird_train_train_1379": {
+"labels": [
+"evidence",
+"literal",
+"value_format",
+"zero"
+],
+"fix": "exec_feedback",
+"note": "BILLABLEPERIOD = 2011 vs evidence date range; all 64 candidates return 0"
+},
+"bird_train_train_1385": {
+"labels": [
+"arith",
+"value_format"
+],
+"fix": "bigger_gen",
+"note": "date difference needs STRFTIME('%J'); pool subtracts date strings"
+},
+"bird_train_train_1386": {
+"labels": [
+"schema",
+"join",
+"arith"
+],
+"fix": "schema_desc",
+"note": "pregnancy lives in conditions.DESCRIPTION; pool uses encounters.REASONDESCRIPTION"
+},
+"bird_train_train_1396": {
+"labels": [
+"noise",
+"projection"
+],
+"fix": "none",
+"note": "evidence: full name = first,last; gold adds suffix"
+},
+"bird_train_train_1416": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "DESCRIPTION,VALUE,UNITS order"
+},
+"bird_train_train_1418": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "CASE WHEN gender='F' drops AND race='asian' from the evidence"
+},
+"bird_train_train_1422": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "DESCRIPTION,VALUE,UNITS order"
+},
+"bird_train_train_1450": {
+"labels": [
+"join",
+"filt_missing",
+"evidence",
+"zero"
+],
+"fix": "exec_feedback",
+"note": "every candidate adds a spurious 4th table with the plan literal copied -> all 62 return 0; UNITS='kg' never written"
+},
+"bird_train_train_1466": {
+"labels": [
+"join",
+"filt_missing",
+"literal",
+"empty"
+],
+"fix": "exec_feedback",
+"note": "spurious allergies/medications joins with the vaccine literal copied -> all 64 empty; last/prefix filters dropped"
+},
+"bird_train_train_1467": {
+"labels": [
+"join",
+"filt_missing",
+"arith",
+"empty"
+],
+"fix": "bigger_gen",
+"note": "spurious joins (all empty) AND date diff needs %J"
+},
+"bird_train_train_1468": {
+"labels": [
+"filt_missing",
+"schema"
+],
+"fix": "schema_desc",
+"note": "'single' -> marital='S' never written"
+},
+"bird_train_train_1470": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence date '2011-09-01' contradicts gold '2011-01-09'; pool follows evidence"
+},
+"bird_train_train_1473": {
+"labels": [
+"filt_missing",
+"arith",
+"evidence"
+],
+"fix": "bigger_gen",
+"note": "age-at-death predicate (julian-day arithmetic) never written"
+},
+"bird_train_train_1475": {
+"labels": [
+"filt_extra",
+"zero"
+],
+"fix": "exec_feedback",
+"note": "every candidate adds birthdate='Major' -> all 55 live return 0; gold is the same SQL without it"
+},
+"bird_train_train_1478": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold returns BMI values, not conditions"
+},
+"bird_train_train_1489": {
+"labels": [
+"arith",
+"filt_missing",
+"evidence"
+],
+"fix": "bigger_gen",
+"note": "age = DATE - birthdate and DESCRIPTION='Emergency Room Admission' both missing"
+},
+"bird_train_train_1494": {
+"labels": [
+"projection",
+"value_format"
+],
+"fix": "bigger_gen",
+"note": "gold returns START,STOP; pool computes JULIANDAY on m/d/yy strings (NULL)"
+},
+"bird_train_train_1495": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "bigger_gen",
+"note": "age convention DATE - birthdate (years) vs JULIANDAY days"
+},
+"bird_train_train_1505": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence: ethnicity='hispanic'; gold uses race"
+},
+"bird_train_train_1519": {
+"labels": [
+"noise",
+"projection"
+],
+"fix": "none",
+"note": "answer-shape ambiguity: two SUM(CASE) columns vs GROUP BY gender (Verified uses GROUP BY)"
+},
+"bird_train_train_1534": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence: conditions.START; gold uses deathdate"
+},
+"bird_train_train_4381": {
+"labels": [
+"projection"
+],
+"fix": "extra_col",
+"note": "gold adds COUNT column to 'which department'"
+},
+"bird_train_train_4393": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "question asks 10; gold has no LIMIT"
+},
+"bird_train_train_4394": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "organ,name order"
+},
+"bird_train_train_4402": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "month,organ order"
+},
+"bird_train_train_4407": {
+"labels": [
+"projection"
+],
+"fix": "extra_col",
+"note": "gold adds name"
+},
+"bird_train_train_4414": {
+"labels": [
+"filt_missing",
+"schema",
+"in_list"
+],
+"fix": "schema_desc",
+"note": "female = NOT IN male (DB convention) + two-value IN"
+},
+"bird_train_train_4417": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "'organization' = enlist; gold uses enrolled"
+},
+"bird_train_train_4431": {
+"labels": [
+"filt_missing",
+"schema"
+],
+"fix": "schema_desc",
+"note": "female = NOT IN male never written"
+},
+"bird_train_train_4435": {
+"labels": [
+"evidence",
+"literal"
+],
+"fix": "evidence_check",
+"note": "month >= 5 vs evidence month > 5"
+},
+"bird_train_train_4448": {
+"labels": [
+"in_list",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "three-value IN never generated (pool: single-value IN only)"
+},
+"bird_train_train_4469": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold drops bool='neg' given in evidence"
+},
+"bird_train_train_4484": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold *100 on an average; Verified removes it = top candidate"
+},
+"bird_train_train_4504": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold omits school; Verified includes it = a candidate"
+},
+"bird_train_train_4519": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold bool='pos' for 'no payment due'"
+},
+"bird_train_train_4529": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold ratio without denominator"
+},
+"bird_train_train_7613": {
+"labels": [
+"filt_missing",
+"null_pred",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "shootCatch IS NULL (evidence) never written with pos='F'"
+},
+"bird_train_train_7619": {
+"labels": [
+"schema",
+"projection",
+"grouping"
+],
+"fix": "schema_desc",
+"note": "given name = nameGiven; pool uses firstName"
+},
+"bird_train_train_7621": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "'by last name' -> gold returns playerID"
+},
+"bird_train_train_7622": {
+"labels": [
+"arith",
+"projection",
+"evidence",
+"grouping"
+],
+"fix": "bigger_gen",
+"note": "age = STRFTIME('%Y', now) - birthYear; height column; GROUP BY playerID"
+},
+"bird_train_train_7624": {
+"labels": [
+"filt_missing",
+"null_pred"
+],
+"fix": "more_k",
+"note": "ORDER BY GA/SA ASC needs IS NOT NULL (NULL sorts first)"
+},
+"bird_train_train_7626": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold joins Teams on tmID only (all seasons)"
+},
+"bird_train_train_7633": {
+"labels": [
+"arith"
+],
+"fix": "bigger_gen",
+"note": "'compare' = difference in gold, ratio in pool (ambiguous)"
+},
+"bird_train_train_7637": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold joins Teams-Goalies on year only"
+},
+"bird_train_train_7643": {
+"labels": [
+"evidence",
+"filt_wrong",
+"arith",
+"projection"
+],
+"fix": "bigger_gen",
+"note": "shootCatch='L' instead of IS NULL; W/GP; 4 columns"
+},
+"bird_train_train_7674": {
+"labels": [
+"in_list",
+"literal",
+"value_format"
+],
+"fix": "value_retrieval",
+"note": "birthMon is TEXT '7','8'; pool writes IN (7,'12')"
+},
+"bird_train_train_7693": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "question/evidence ENG = 10; gold SUM(ENG) > 10"
+},
+"bird_train_train_7698": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "question asks Pts; gold SUM(SHO)"
+},
+"bird_train_train_7700": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "full name asked; gold returns coachID"
+},
+"bird_train_train_7702": {
+"labels": [
+"schema",
+"join"
+],
+"fix": "schema_desc",
+"note": "Stanley Cup finals years = ScoringSC rows; pool counts TeamsSC"
+},
+"bird_train_train_7705": {
+"labels": [
+"schema",
+"join"
+],
+"fix": "schema_desc",
+"note": "ScoringSC.lgID never used; pool joins Coaches/Teams"
+},
+"bird_train_train_7707": {
+"labels": [
+"noise",
+"grouping"
+],
+"fix": "none",
+"note": "gold joins Goalies on tmID without year"
+},
+"bird_train_train_7709": {
+"labels": [
+"arith"
+],
+"fix": "bigger_gen",
+"note": "MAX(year)-MIN(year) never written"
+},
+"bird_train_train_7713": {
+"labels": [
+"grouping",
+"evidence"
+],
+"fix": "more_k",
+"note": "SUM(PPG) per player; pool orders by Pts / groups by weight"
+},
+"bird_train_train_7715": {
+"labels": [
+"grouping",
+"aggregation"
+],
+"fix": "more_k",
+"note": "SUM(GWG) per player vs single-row ORDER BY GWG"
+},
+"bird_train_train_7720": {
+"labels": [
+"arith",
+"value_format"
+],
+"fix": "more_k",
+"note": "1 - CAST(PostGA AS REAL)/PostSA; pool integer-divides TEXT columns / wrong direction"
+},
+"bird_train_train_7725": {
+"labels": [
+"filt_missing",
+"arith",
+"evidence"
+],
+"fix": "bigger_gen",
+"note": "category='Player' missing and /30 (evidence) vs /31"
+},
+"bird_train_train_7730": {
+"labels": [
+"schema",
+"join",
+"filt_missing",
+"grouping"
+],
+"fix": "schema_desc",
+"note": "Goalies vs GoaliesSC; year=1924 missing"
+},
+"bird_train_train_7731": {
+"labels": [
+"projection"
+],
+"fix": "more_k",
+"note": "tmID asked explicitly; pool projects hW"
+},
+"bird_train_train_7733": {
+"labels": [
+"arith",
+"grouping"
+],
+"fix": "bigger_gen",
+"note": "age = year - birthYear in projection + GROUP BY"
+},
+"bird_train_train_7735": {
+"labels": [
+"lenient",
+"grouping"
+],
+"fix": "lenient",
+"note": "SUM(A),first,last vs first,last,SUM(A)"
+},
+"bird_train_train_7736": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold is 7735's SQL"
+},
+"bird_train_train_7741": {
+"labels": [
+"schema",
+"join",
+"grouping"
+],
+"fix": "schema_desc",
+"note": "Goalies vs GoaliesSC (gold arguably questionable)"
+},
+"bird_train_train_7745": {
+"labels": [
+"schema",
+"projection"
+],
+"fix": "schema_desc",
+"note": "nameGiven vs firstName"
+},
+"bird_train_train_7749": {
+"labels": [
+"filt_missing"
+],
+"fix": "more_k",
+"note": "rank = 1 missing"
+},
+"bird_train_train_7751": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold divides by 2 for no reason"
+},
+"bird_train_train_7752": {
+"labels": [
+"schema",
+"join",
+"arith",
+"evidence",
+"empty"
+],
+"fix": "exec_feedback",
+"note": "TeamsPost instead of Teams (all 64 empty) and PPG*PPC instead of DIVIDE"
+},
+"bird_train_train_7753": {
+"labels": [
+"projection",
+"grouping"
+],
+"fix": "extra_col",
+"note": "gold adds year and sums per (year,tmID)"
+},
+"bird_train_train_7756": {
+"labels": [
+"grouping",
+"value_format"
+],
+"fix": "schema_desc",
+"note": "PIM is TEXT: ORDER BY PIM is lexicographic; gold SUM(PIM) coerces"
+},
+"bird_train_train_7785": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "referees = 'Referee/Linesman'; gold uses 'Builder'"
+},
+"bird_train_train_7801": {
+"labels": [
+"filt_missing",
+"null_pred",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "playerID IS NOT NULL (evidence) dropped"
+},
+"bird_train_train_7808": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "bigger_gen",
+"note": "age from CURRENT_TIMESTAMP never written"
+},
+"bird_train_train_7815": {
+"labels": [
+"join",
+"filt_missing"
+],
+"fix": "more_k",
+"note": "spurious Goalies join; year=1997 dropped"
+},
+"bird_train_train_8005": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "num*pct/100 > 20000 (evidence) -> pool writes pct > 20000"
+},
+"bird_train_train_8006": {
+"labels": [
+"distinct",
+"order_limit"
+],
+"fix": "more_k",
+"note": "needs DISTINCT before LIMIT 5 (duplicates across years)"
+},
+"bird_train_train_8021": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold returns country_id; Verified country_name = top candidate"
+},
+"bird_train_train_8023": {
+"labels": [
+"noise",
+"aggregation"
+],
+"fix": "none",
+"note": "gold sums 60 rows for 'the university' (ambiguous)"
+},
+"bird_train_train_8026": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold /COUNT(*) contradicts evidence; Verified rewrites"
+},
+"bird_train_train_8028": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped (result x100)"
+},
+"bird_train_train_8037": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped"
+},
+"bird_train_train_8058": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped"
+},
+"bird_train_train_8101": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped"
+},
+"bird_train_train_8103": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped"
+},
+"bird_train_train_8113": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped"
+},
+"bird_train_train_8121": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped"
+},
+"bird_train_train_8135": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "arith_mutation",
+"note": "/100 dropped inside SUM"
+},
+"bird_train_train_2914": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold lists playerIDs for 'how many'; integer division"
+},
+"bird_train_train_2806": {
+"labels": [
+"projection",
+"schema"
+],
+"fix": "schema_desc",
+"note": "team = teams.name; pool projects tmID"
+},
+"bird_train_train_2834": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence o_fgm; gold SUM(PostPoints) from players_teams; Verified rewrites"
+},
+"bird_train_train_2843": {
+"labels": [
+"filt_missing"
+],
+"fix": "more_k",
+"note": "needs coachID IN (NBA award subquery); pool has the ABA half only"
+},
+"bird_train_train_2815": {
+"labels": [
+"filt_missing",
+"arith",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "d_rebounds*100/rebounds > 75 (evidence) dropped"
+},
+"bird_train_train_2833": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "evidence highSchool LIKE; gold birthCity"
+},
+"bird_train_train_2825": {
+"labels": [
+"in_list",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "pos IN ('F','F-C') never written"
+},
+"bird_train_train_2897": {
+"labels": [
+"arith",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "won/(won+lost) > 0.75 never written"
+},
+"bird_train_train_2891": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "name,coachID vs coachID,name"
+},
+"bird_train_train_2807": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "question asks percentage; gold a count"
+},
+"bird_train_train_2824": {
+"labels": [
+"in_list",
+"evidence"
+],
+"fix": "evidence_check",
+"note": "pos IN ('C','F-C') never written"
+},
+"bird_train_train_2882": {
+"labels": [
+"noise",
+"arith"
+],
+"fix": "none",
+"note": "gold drops year = 1950"
+},
+"bird_train_train_2946": {
+"labels": [
+"noise",
+"grouping"
+],
+"fix": "none",
+"note": "gold returns tmID for 'full name', SUM(PostMinutes)"
+},
+"bird_train_train_2808": {
+"labels": [
+"filt_missing"
+],
+"fix": "more_k",
+"note": "teams.year = 1976 dropped"
+},
+"bird_train_train_2802": {
+"labels": [
+"noise"
+],
+"fix": "none",
+"note": "gold ORDER BY stint; Verified rewrites"
+},
+"bird_train_train_4714": {
+"labels": [
+"lenient"
+],
+"fix": "lenient",
+"note": "voice-actor,hero vs hero,voice-actor"
+},
+"bird_train_train_4673": {
+"labels": [
+"projection"
+],
+"fix": "extra_col",
+"note": "gold adds the COUNT column"
+},
+"bird_train_train_4150": {
+"labels": [
+"noise",
+"in_list"
+],
+"fix": "none",
+"note": "'both' = intersection; gold IN = union"
+},
+"bird_train_train_4144": {
+"labels": [
+"noise",
+"arith"
+],
+"fix": "none",
+"note": "gold COUNT(DISTINCT CASE..); Verified changes it"
+}
+}

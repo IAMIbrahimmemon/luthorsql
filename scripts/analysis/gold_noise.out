@@ -1,0 +1,33 @@
+executed 9428 ORIGINAL BIRD-train golds in 534s (limit 30.0s per query, 6 workers)
+
+== all BIRD-train (reproduces run_all.log, which counted 8 s timeouts as non-errors): n=9428, BIRD-Verified covers 2463 ==
+category      count   rate verified n  P(wrong|cat)
+error           350   3.7%         41        100.0%
+timeout          15   0.2%          1          0.0%
+empty           283   3.0%         82         93.9%
+single_zero     156   1.7%         28         75.0%
+single_null      49   0.5%         12         83.3%
+all_null          5   0.1%          2         50.0%
+any_drop        853   9.0%        164         90.9%
+kept           8575  91.0%       2299         33.2%
+
+== BIRD-train outside the 9 held-out DBs (the drop list): n=7911, BIRD-Verified covers 2126 ==
+category      count   rate verified n  P(wrong|cat)
+error            20   0.3%          3        100.0%
+timeout          15   0.2%          1          0.0%
+empty           271   3.4%         81         95.1%
+single_zero     145   1.8%         28         75.0%
+single_null      44   0.6%         11         81.8%
+all_null          5   0.1%          2         50.0%
+any_drop        495   6.3%        124         88.7%
+kept           7416  93.7%       2002         33.2%
+
+label-study definitions on all train (reference: empty 2.8% / 98.6% (n 73), sql error 3.7% / 100% (n 41), single 0 1.6% / 80.8% (n 26); reports/fanout_r1/labels/r1/run_all.log):
+  empty result     3.0%  P(wrong)  93.9% (n 82)
+  sql error        3.7%  P(wrong) 100.0% (n 41)
+  single 0 value   1.7%  P(wrong)  75.0% (n 28)
+
+top error messages (train, outside held-out): {'no such table: PersonPhone': 10, 'no such column: T1.grand_jury_dispositio': 2, 'no such column: T1.Last Updated': 2, 'no such column: T1.Current Ver': 2, 'no such column: officer_count': 1, 'no such column: grand_jury_disposition': 1, 'no such column: Last Updated': 1, 'no such column: Android Ver': 1}
+drops per DB (top 12): {'movie_3': 60, 'talkingdata': 59, 'works_cycles': 41, 'mondial_geo': 35, 'codebase_comments': 25, 'restaurant': 21, 'retails': 21, 'public_review_platform': 17, 'legislator': 16, 'donor': 12, 'shakespeare': 10, 'authors': 10}
+
+wrote data/sys1/gold_noise_drop.json: 495 ids {'empty': 271, 'single_zero': 145, 'single_null': 44, 'timeout': 15, 'error': 20}

@@ -1,0 +1,65 @@
+{"transcript": "a7afb9f3c171f6b2d.output", "tools": {"Bash": 6, "Read": 1, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "acc35e0bcf55c7e4f.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a8bf5c114d3ca9405.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "a5015fb20e6c5f742.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "af5fa32a185f898cb.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a5b13d35e750111c1.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a687494b7877ef81d.output", "tools": {"Bash": 11, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true}
+{"transcript": "aed7fe1ba74161555.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": ["outside path /tmp/x_c20.py"], "clean": false}
+{"transcript": "a6dfea4532ee1e89a.output", "tools": {"Bash": 7, "Read": 1, "SubagentHandback": 1}, "sql_executions": 9, "flags": ["outside path /private/tmp/claude-501/-Users-ibrahimmemon-Documents-GitHub/1555fb05-f5b6-4c07-82bb-2c3833dc5ab7/tasks/bhdezkjwf.output", "outside path /tmp/x"], "clean": false}
+{"transcript": "a6066f58d13c0bc50.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 6, "flags": ["outside path /tmp/x.py"], "clean": false}
+{"transcript": "aae8ac5c4d625a68b.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 18, "flags": [], "clean": true}
+{"transcript": "a02aca11b9c03292b.output", "tools": {"Bash": 12, "Write": 1, "SubagentHandback": 1}, "sql_executions": 13, "flags": ["outside path /private/tmp/claude-501/-Users-ibrahimmemon-Documents-GitHub/1555fb05-f5b6-4c07-82bb-2c3833dc5ab7/tasks/b43zds3ld.output", "outside path /tmp/dummy", "pattern /answers/"], "clean": false}
+{"transcript": "ae22b82fc27332c31.output", "tools": {"Bash": 22, "Read": 2, "SubagentHandback": 1}, "sql_executions": 20, "flags": [], "clean": true}
+{"transcript": "a5d72577134cd1147.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": ["outside path /tmp/x.py"], "clean": false}
+{"transcript": "a5daeb389d0b37b75.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a6a20c5b1d391c88c.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a8dea17b78445d87c.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "ad5e8c1267ceb6481.output", "tools": {"Bash": 25, "SubagentHandback": 1}, "sql_executions": 31, "flags": ["outside path /tmp/w22.py", "outside path /tmp/x_c22.txt"], "clean": false}
+{"transcript": "a27dca2d97a40be59.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "afeecf998f08e45c4.output", "tools": {"Bash": 15, "TaskStop": 1, "SubagentHandback": 1}, "sql_executions": 10, "flags": ["outside path /tmp/x"], "clean": false}
+{"transcript": "abd943fc31ad68051.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 10, "flags": [], "clean": true}
+{"transcript": "a056b2ae6e389936b.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a0869b6528a22dcbe.output", "tools": {"Bash": 10, "SubagentHandback": 1}, "sql_executions": 3, "flags": ["outside path /tmp/q"], "clean": false}
+{"transcript": "a6b7c36c74d0227a0.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "a2849a2e37418f867.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "abc785b4c25dc6fa4.output", "tools": {"Bash": 16, "SubagentHandback": 1}, "sql_executions": 9, "flags": [], "clean": true}
+{"transcript": "a806a0a777e42e51f.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": ["outside path /tmp/x_c29.py"], "clean": false}
+{"transcript": "a2fbf0ab502443f61.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 12, "flags": [], "clean": true}
+{"transcript": "a4aae86476474470c.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a4b415f8ae6558038.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "ac9943907ed64c026.output", "tools": {"Bash": 11, "SubagentHandback": 1}, "sql_executions": 9, "flags": ["outside path /tmp/w12.py"], "clean": false}
+{"transcript": "a1b125918f73ea9f9.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 13, "flags": ["outside path /tmp/x.py"], "clean": false}
+{"transcript": "aa746ea9666561160.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "afe4f5246c3ac09ac.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 0, "flags": [], "clean": true}
+{"transcript": "a98bf7d5d396b815c.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a98d1018fc420c53f.output", "tools": {"Bash": 11, "TaskStop": 1, "Write": 1, "SubagentHandback": 1}, "sql_executions": 19, "flags": ["outside path /private/tmp/claude-501/-Users-ibrahimmemon-Documents-GitHub/1555fb05-f5b6-4c07-82bb-2c3833dc5ab7/tasks/b0a8fdsce.output", "outside path /tmp/x"], "clean": false}
+{"transcript": "aa0d7f4fe33fd810f.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a7a577e61c466604e.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a2224ffa72097a799.output", "tools": {"Bash": 9, "Read": 1, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a1c76984ce7f962e2.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 6, "flags": ["outside path /tmp/x.py"], "clean": false}
+{"transcript": "ad4d2ffab2a5edbeb.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true}
+{"transcript": "ac30ebcfb3fec4292.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "aa713b035c1435418.output", "tools": {"Bash": 2, "SubagentHandback": 1}, "sql_executions": 0, "flags": [], "clean": true}
+{"transcript": "a9c45bb07725e2248.output", "tools": {"Bash": 23, "SubagentHandback": 1}, "sql_executions": 18, "flags": [], "clean": true}
+{"transcript": "ae1297d3281fba903.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a1d56caf17d642619.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a90b90e2ce38603dc.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 10, "flags": [], "clean": true}
+{"transcript": "aae29c1e99ad0fdcd.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a246e04f253016569.output", "tools": {"Bash": 3, "Read": 1, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "aae68b1d5c2672399.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "af47c365d952c8c7c.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 9, "flags": [], "clean": true}
+{"transcript": "ae1e6eb327bc53dc8.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "ad03290a731b70c6c.output", "tools": {"Bash": 12, "TaskStop": 1, "SubagentHandback": 1}, "sql_executions": 9, "flags": ["outside path /tmp/x"], "clean": false}
+{"transcript": "a480dec47d1c0860d.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a56e403411e56813d.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": ["outside path /tmp/x"], "clean": false}
+{"transcript": "af8166a90d73ac644.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "aa957941c76b3bbe5.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a446e25b36f01a11e.output", "tools": {"Bash": 19, "SubagentHandback": 1}, "sql_executions": 15, "flags": [], "clean": true}
+{"transcript": "af7005823d7874d7f.output", "tools": {"Bash": 13, "SubagentHandback": 1}, "sql_executions": 23, "flags": [], "clean": true}
+{"transcript": "aa1e0f8e15fd71437.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a2e8d1d3075bfe346.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "a8e133f227f221803.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 8, "flags": ["outside path /tmp/x.py"], "clean": false}
+{"transcript": "a64d503d3ef0d156d.output", "tools": {"Bash": 14, "SubagentHandback": 1}, "sql_executions": 12, "flags": [], "clean": true}
+{"transcript": "a495a78858f4df485.output", "tools": {"Bash": 12, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a468d58bb9dc18f14.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}

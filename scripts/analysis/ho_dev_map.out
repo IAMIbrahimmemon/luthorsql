@@ -1,0 +1,77 @@
+Held-out -> ORIGINAL-dev mapping (research problems 06-11, 08-07): every system with both a held-out number and an
+
+== provenance check: rows recomputed from files on disk (table value vs recomputed) ==
+  r1 HO first                      table  59.70  recomputed  59.70  OK
+  r1 HO oracle@8                   table  70.30  recomputed  70.30  OK
+  r1 dev first (n=1534, /1534)     table  48.44  recomputed  48.44  OK
+  r1 dev oracle@8 (/1534)          table  59.45  recomputed  59.45  OK
+  r1 dev validator (/1534)         table  55.28  recomputed  55.28  OK
+  r1 dev VAL+DROP (/1534)          table  56.78  recomputed  56.78  OK
+  r2 HO first                      table  60.60  recomputed  60.60  OK
+  r2 HO oracle@8                   table  71.20  recomputed  71.20  OK
+  r2 dev first (n=1534, /1534)     table  48.83  recomputed  48.83  OK
+  r2 dev oracle@8 (/1534)          table  60.23  recomputed  60.23  OK
+  r2 dev validator (/1534)         table  55.28  recomputed  55.28  OK
+  r2 dev VAL+DROP (/1534)          table  56.71  recomputed  56.71  OK
+
+== pairs: HO1000 (v3-covered only, plan-rendered gold, retail_world in) vs ORIGINAL dev, all 1,534 ==
+  system metric                     held-out     dev  dev-ho  prov
+  D0    first pick                    57.90   43.42  -14.48  rc
+  D0    exec fallback                 59.90   45.96  -13.94  new(dev)
+  D0    fallback+VAL+DROP             62.70   51.83  -10.87  new
+  D0    validator                     64.70   51.30  -13.40  rc
+  D0    validator+VAL+DROP            66.10   55.08  -11.02  new(ho)
+  D0    validator+VAL+ADD+W+DROP      67.00   55.41  -11.59  rc
+  D0    oracle@8                      69.10   54.69  -14.41  rc
+  R1    first pick                    59.70   48.44  -11.26  rc
+  R1    exec fallback                 60.80   50.59  -10.21  rc
+  R1    fallback+VAL+DROP             61.70   52.80   -8.90  new
+  R1    validator                     67.40   55.28  -12.12  rc
+  R1    validator+VAL+DROP            68.40   56.78  -11.62  new(ho)
+  R1    validator+VAL+ADD+W+DROP      69.10   56.91  -12.19  new(ho)
+  R1    oracle@8                      70.30   59.45  -10.85  rc
+  R2    first pick                    60.60   48.83  -11.77  rc
+  R2    exec fallback                 61.30   51.37   -9.93  rc
+  R2    fallback+VAL+DROP             62.50   53.13   -9.37  new(ho)
+  R2    validator                     67.40   55.28  -12.12  rc
+  R2    validator+VAL+DROP            68.80   56.71  -12.09  new(ho)
+  R2    validator+VAL+ADD+W+DROP      69.00   56.58  -12.42  new(ho)
+  R2    oracle@8                      71.20   60.23  -10.97  rc
+  ENS1  validator (sum_z)             70.10   58.21  -11.89  rc
+  ENS1  validator+VAL+DROP            71.00   59.06  -11.94  new(ho)
+  ENS1  validator+VAL+ADD+W+DROP      71.30   58.93  -12.37  new(ho)
+
+== fits over all 24 pairs (points are NOT independent: 4 systems x nested metrics) ==
+  linear: dev = -9.37 + 0.964 * heldout   residual SD 1.44  max |res| 3.02
+  offset: dev = heldout -11.74                 residual SD 1.41  max |res| 2.84
+
+  leave-one-system-out prediction error (fit on the other systems, predict this one's rows):
+    D0    n=7  linear mean err -1.92 (RMSE 2.59)   offset mean err -1.52 (RMSE 2.13)
+    ENS1  n=3  linear mean err -0.21 (RMSE 0.30)   offset mean err -0.37 (RMSE 0.43)
+    R1    n=7  linear mean err +1.02 (RMSE 1.52)   offset mean err +1.01 (RMSE 1.48)
+    R2    n=7  linear mean err +0.71 (RMSE 1.31)   offset mean err +0.71 (RMSE 1.31)
+  slope b: system-cluster bootstrap 95% range [0.83, 1.11] (only 4 clusters: a rough range, not a CI)
+
+== per metric across systems: does a held-out DIFFERENCE carry over? (dev delta / held-out delta) ==
+  exec fallback              D0->R1 ho +0.90 dev +4.63 | R1->R2 ho +0.50 dev +0.78 | D0->R2 ho +1.40 dev +5.41
+  fallback+VAL+DROP          D0->R1 ho -1.00 dev +0.97 | R1->R2 ho +0.80 dev +0.33 | D0->R2 ho -0.20 dev +1.30
+  first pick                 D0->R1 ho +1.80 dev +5.02 | R1->R2 ho +0.90 dev +0.39 | D0->R2 ho +2.70 dev +5.41
+  oracle@8                   D0->R1 ho +1.20 dev +4.76 | R1->R2 ho +0.90 dev +0.78 | D0->R2 ho +2.10 dev +5.54
+  validator                  D0->R1 ho +2.70 dev +3.98 | R1->R2 ho +0.00 dev +0.00 | D0->R2 ho +2.70 dev +3.98
+  validator (sum_z)          
+  validator+VAL+ADD+W+DROP   D0->R1 ho +2.10 dev +1.50 | R1->R2 ho -0.10 dev -0.33 | D0->R2 ho +2.00 dev +1.17 | R2->ENS1 ho +2.30 dev +2.35
+  validator+VAL+DROP         D0->R1 ho +2.30 dev +1.70 | R1->R2 ho +0.40 dev -0.07 | D0->R2 ho +2.70 dev +1.63 | R2->ENS1 ho +2.20 dev +2.35
+  dev/held-out delta ratio over system pairs with |held-out delta| >= 1: median 1.27, range [-0.97, 3.97], n=14
+  sign agreement: R1->R2 first pick ho +0.90 / dev +0.39; validator ho 0.00 / dev 0.00; VAL+DROP ho +0.40 / dev -0.07 (sign flips at sub-point deltas)
+
+== within one system: D0 repair configs (HO1000 default VAL vs DEV1534u0, proxies.out:11-22) ==
+  linear: dev = -70.71 + 1.86 * heldout   residual SD 0.87;  mean gain over V:- held-out +1.22, dev +2.38 (ratio 1.95)
+
+== held-out definitions in the repo (which set each number used) ==
+  HO1000  runs/*/rr/dev_scored.jsonl: 1,000 v3-covered, plan-rendered gold, retail_world (40) in. All rows above.
+  HO960   HO1000 minus retail_world: R2 first 59.58, validator 66.46, oracle 70.31 (about -1.0 vs HO1000).
+  HO-train1455 / HO-A1395  training-time greedy evals (train_sq2.py), paired only with the training GATE (first pick on 1,297 covered dev, uncovered wrong); 5-checkpoint Spearman +0.70 mixes three definitions.
+  ho200 / ho154  ORIGINAL train gold, Mac int8 decode: R2 greedy 53.90 on 154 valid vs dev200 46.94 on 196.
+  v2 decision/reserved (data/sys1/heldout_v2): ORIGINAL gold, all executable questions incl. 16% v3-uncovered, no retail_world. A System-1 pipeline with no fallback scores 0 on uncovered items, so v2 ~= HO960 x 960/1144 (= 0.839 x HO960) for such systems: R2 first pick 48.74 on the decision set (scripts/analysis/heldout_v2.py score).
+
+Reading: on HO1000 the plain offset (dev ~= held-out -11.74, residual SD 1.41) is as good as the line (slope 0.96); predicting a new system's dev level from held-out carries about +-2 points (leave-one-system-out RMSE up to 2.1 for the offset, worst on D0, whose dev rows mix GPU and Mac-int8 decodes). Across systems, held-out deltas map to dev deltas with a median ratio near 1.3 but a range that includes sign flips; a held-out delta below ~1 point does not predict the sign of the dev delta. Re-fit on v2 once systems are scored on it.

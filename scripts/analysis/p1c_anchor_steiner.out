@@ -1,0 +1,116 @@
+Phase 1, test 1c — research problem 03-03 (same-named columns across tables, anchor-table errors).
+
+PRE-DECLARED VARIANT (the only one; written before any run):
+  A decode-time join-coherence term on the dumped pointer scores, applied only WITHIN a name class, so it changes
+  which table copy of a column is taken, never which column name is taken.
+
+  1. Context. Replay the unchanged greedy decoder once (targets._TRACE via headdump.decisions) and read, per pointer
+     slot s, the options it chose. C_s = the anchor tables of every option chosen by the OTHER pointer decisions
+     (column options give their table; require / via row options give theirs).
+  2. Name classes. N(o) = the options of the question whose column name equals o's (case-insensitive), row
+     pseudo-options excluded. Only classes with >= 2 members are touched.
+  3. Term. For option o=(t,c) in such a class at slot s:
+        b(o) = -lambda * [ST(C_s + {t}) - ST(C_s)] + gamma * 1[t named in question or evidence]
+     ST = greedy Steiner weight over the FK graph of the dump's schema card (Graph.path costs: declared FK 1,
+     inferred 3; an unreachable table costs 10). Table "named": its name (underscores -> spaces, optional plural s)
+     occurs as a whole word in the lower-cased question + evidence.
+  4. Within-class renormalisation: x'_o = x_o + b(o) - max_{o' in N}(x_o' + b(o')) + max_{o' in N} x_o', so each
+     class keeps its best raw score (the name ranking across classes is unchanged) and the copy order inside the
+     class follows x + b.
+  5. Slots touched: every column pointer slot (projections, filter, group, order, time, conditions, having, x)
+     of every block; not plan / require / via / join. The modified scores feed the unchanged decoders (greedy, the
+     flip pool, lazy k-best-8), so the whole list is coherent, not just the pick.
+  Parameters: lambda in {0, 0.5, 1, 2, 4, 8}, gamma in {0, 0.5, 1, 2, 4} (pointer-logit units; median top-1 gap
+  of a pointer slot is ~2.5). Chosen by leave-one-database-out over the 8 DECISION DBs on greedy accuracy of the
+  same model; ties to the smallest lambda+gamma. (0, 0) is the baseline itself.
+  Gate (frozen): keep if R2 first pick or oracle@8 improves >= +0.5 with DB sign-flip p < 0.10; else drop, and no
+  second variant on this split.
+
+run 2026-10-09 00:32:57; Mac CPU; grid 30 points; exec time limit 30.0s
+[r2] decoded baseline lists + 30 grid greedy for 670 DECISION questions in dump (82s)
+
+== R2 (DECISION n=796, 670 in dump; the rest count wrong) ==
+  GPU recorded greedy (reference) 48.74;  Mac replay baseline greedy 48.74
+  grid (in-sample greedy acc on all 8 DBs; for information only, the arm uses LODO):
+    lambda=0 gamma=0                    48.74
+    lambda=0 gamma=0.5                  48.99
+    lambda=0.5 gamma=0                  49.12
+    lambda=0 gamma=1                    49.25
+    lambda=0.5 gamma=0.5                49.12
+    lambda=1 gamma=0                    48.99
+    lambda=0.5 gamma=1                  49.25
+    lambda=1 gamma=0.5                  48.87
+    lambda=0 gamma=2                    49.37
+    lambda=1 gamma=1                    49.12
+    lambda=2 gamma=0                    49.37
+    lambda=0.5 gamma=2                  49.12
+    lambda=2 gamma=0.5                  49.25
+    lambda=1 gamma=2                    48.87
+    lambda=2 gamma=1                    49.37
+    lambda=0 gamma=4                    49.12
+    lambda=2 gamma=2                    48.87
+    lambda=4 gamma=0                    49.25
+    lambda=0.5 gamma=4                  49.25
+    lambda=4 gamma=0.5                  49.12
+    lambda=1 gamma=4                    48.99
+    lambda=4 gamma=1                    49.12
+    lambda=2 gamma=4                    49.12
+    lambda=4 gamma=2                    48.74
+    lambda=4 gamma=4                    48.99
+    lambda=8 gamma=0                    49.37
+    lambda=8 gamma=0.5                  49.25
+    lambda=8 gamma=1                    49.25
+    lambda=8 gamma=2                    48.87
+    lambda=8 gamma=4                    48.99
+  LODO choice per held-out DB: car_retails=lambda=0 gamma=2, cs_semester=lambda=0 gamma=2, hockey=lambda=0 gamma=2, law_episode=lambda=2 gamma=0, movie=lambda=0 gamma=2, student_loan=lambda=2 gamma=0, synthea=lambda=0.5 gamma=0, university=lambda=0.5 gamma=4
+  first pick (greedy)    base  48.74  arm  48.24  delta -0.50  DB sign-flip p=0.500 CI [-1.82, +0.67]  McNemar p=0.344 (+3/-7)
+  oracle@8 k-best-8      base  60.18  arm  60.05  delta -0.13  DB sign-flip p=1.000 CI [-1.33, +0.86]  McNemar p=1.000 (+4/-5)
+  oracle@8 flip pool     base  57.66  arm  57.41  delta -0.25  DB sign-flip p=0.750 CI [-1.09, +0.67]  McNemar p=0.727 (+3/-5)
+  per-DB greedy base: car_retails:46.6 cs_semester:65.4 hockey:20.1 law_episode:66.2 movie:77.4 student_loan:42.6 synthea:40.0 university:75.0
+  per-DB greedy arm : car_retails:47.7 cs_semester:65.4 hockey:18.8 law_episode:65.0 movie:77.4 student_loan:42.6 synthea:40.8 university:72.1
+  questions whose greedy SQL changed 35, k-best-8 list changed 192; runtime 151s
+[r1] decoded baseline lists + 30 grid greedy for 670 DECISION questions in dump (78s)
+
+== R1 (DECISION n=796, 670 in dump; the rest count wrong) ==
+  GPU recorded greedy (reference) 48.99;  Mac replay baseline greedy 48.99
+  grid (in-sample greedy acc on all 8 DBs; for information only, the arm uses LODO):
+    lambda=0 gamma=0                    48.99
+    lambda=0 gamma=0.5                  49.25
+    lambda=0.5 gamma=0                  49.37
+    lambda=0 gamma=1                    49.50
+    lambda=0.5 gamma=0.5                49.50
+    lambda=1 gamma=0                    49.62
+    lambda=0.5 gamma=1                  49.50
+    lambda=1 gamma=0.5                  49.62
+    lambda=0 gamma=2                    49.75
+    lambda=1 gamma=1                    49.75
+    lambda=2 gamma=0                    49.50
+    lambda=0.5 gamma=2                  49.62
+    lambda=2 gamma=0.5                  49.37
+    lambda=1 gamma=2                    49.62
+    lambda=2 gamma=1                    49.37
+    lambda=0 gamma=4                    49.37
+    lambda=2 gamma=2                    49.37
+    lambda=4 gamma=0                    49.50
+    lambda=0.5 gamma=4                  49.37
+    lambda=4 gamma=0.5                  49.50
+    lambda=1 gamma=4                    49.50
+    lambda=4 gamma=1                    49.50
+    lambda=2 gamma=4                    49.25
+    lambda=4 gamma=2                    49.50
+    lambda=4 gamma=4                    49.25
+    lambda=8 gamma=0                    49.37
+    lambda=8 gamma=0.5                  49.37
+    lambda=8 gamma=1                    49.37
+    lambda=8 gamma=2                    49.37
+    lambda=8 gamma=4                    49.12
+  LODO choice per held-out DB: car_retails=lambda=0 gamma=2, cs_semester=lambda=0 gamma=2, hockey=lambda=0 gamma=2, law_episode=lambda=1 gamma=0, movie=lambda=0 gamma=2, student_loan=lambda=1 gamma=0, synthea=lambda=1 gamma=0, university=lambda=0 gamma=2
+  first pick (greedy)    base  48.99  arm  48.99  delta +0.00  DB sign-flip p=1.000 CI [-1.56, +1.37]  McNemar p=1.000 (+5/-5)
+  oracle@8 k-best-8      base  61.18  arm  62.06  delta +0.88  DB sign-flip p=0.500 CI [-0.00, +1.98]  McNemar p=0.065 (+9/-2)
+  oracle@8 flip pool     base  57.04  arm  57.66  delta +0.63  DB sign-flip p=0.375 CI [-0.46, +1.83]  McNemar p=0.180 (+7/-2)
+  per-DB greedy base: car_retails:47.7 cs_semester:57.7 hockey:24.3 law_episode:70.0 movie:71.0 student_loan:44.7 synthea:37.7 university:75.0
+  per-DB greedy arm : car_retails:47.7 cs_semester:57.7 hockey:23.6 law_episode:70.0 movie:71.0 student_loan:45.4 synthea:40.0 university:72.1
+  questions whose greedy SQL changed 50, k-best-8 list changed 177; runtime 160s
+
+GATE (R2 primary; first pick or oracle@8 k-best-8 >= +0.5 with DB sign-flip p < 0.10): DROP
+total runtime 312s

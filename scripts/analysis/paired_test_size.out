@@ -1,0 +1,15 @@
+N1 question-level sign-flip null on real pairs (rejection %, nominal 5):
+  R2_val vs R2_valdrop: {'pct_boot': 13.2, 'cluster_flip': 2.2, 'mcnemar': 4.8}
+  R1_valdrop vs R2_valdrop: {'pct_boot': 8.0, 'cluster_flip': 3.2, 'mcnemar': 3.5}
+  R1_val vs R2_val: {'pct_boot': 6.8, 'cluster_flip': 3.2, 'mcnemar': 4.0}
+N2 heterogeneous null, per-DB effects +/-2.0 pts with random signs: {'pct_boot': 4.7, 'cluster_flip': 2.0, 'mcnemar': 4.3}
+N2 heterogeneous null, per-DB effects +/-4.0 pts with random signs: {'pct_boot': 6.7, 'cluster_flip': 3.7, 'mcnemar': 25.0}
+power, true gain spread at random, 2% churn (detection %):
+  +0.5 pts: {'pct_boot': 0.3, 'cluster_flip': 0.0, 'mcnemar': 0.0}
+  +1.0 pts: {'pct_boot': 12.0, 'cluster_flip': 1.3, 'mcnemar': 0.0}
+  +2.0 pts: {'pct_boot': 95.3, 'cluster_flip': 65.7, 'mcnemar': 100.0}
+  +3.0 pts: {'pct_boot': 100.0, 'cluster_flip': 99.3, 'mcnemar': 100.0}
+power with per-DB heterogeneity +/-2 pts on top of the gain:
+  +1.0 pts: {'pct_boot': 10.7, 'cluster_flip': 3.7, 'mcnemar': 21.7}
+  +2.0 pts: {'pct_boot': 59.0, 'cluster_flip': 35.0, 'mcnemar': 79.3}
+  +3.0 pts: {'pct_boot': 93.0, 'cluster_flip': 74.3, 'mcnemar': 99.0}

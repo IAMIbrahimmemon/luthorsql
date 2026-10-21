@@ -1,0 +1,57 @@
+reference: ORIGINAL BIRD dev (2024-06-27), 1534 questions; query: BIRD-train 9428 questions
+shingles: normalised character 5-grams (default) and word 3-grams; Jaccard; exact (prefix-filtered) search
+
+== 1. BIRD-train vs dev: questions flagged (no train DB is a dev DB, so these are false positives) ==
+  q+evidence, char5      >=0.4:   13  >=0.5:    3  >=0.6:    1  >=0.7:    0  >=0.8:    0  >=0.9:    0   (13.4s)
+  question only, char5   >=0.4:   48  >=0.5:   13  >=0.6:    4  >=0.7:    0  >=0.8:    0  >=0.9:    0   (3.3s)
+  q+evidence, word3      >=0.4:    1  >=0.5:    0  >=0.6:    0  >=0.7:    0  >=0.8:    0  >=0.9:    0   (0.3s)
+  question only, word3   >=0.4:   26  >=0.5:    6  >=0.6:    0  >=0.7:    0  >=0.8:    0  >=0.9:    0   (0.2s)
+
+  highest-similarity BIRD-train/dev pairs (q+evidence, char5):
+   J=0.656  train[1044] talkingdata: 'What is the gender of the youngest user?'
+            dev[663] codebase_community: 'What is the id of the youngest user?'
+   J=0.565  train[1137] talkingdata: 'What is the ID of the device used by the youngest user?'
+            dev[663] codebase_community: 'What is the id of the youngest user?'
+   J=0.545  train[6918] ice_hockey_draft: 'What is the name of the tallest player?'
+            dev[1021] european_football_2: 'What is the height of the tallest player? Indicate his name.'
+   J=0.483  train[1112] talkingdata: "What is the brand of the youngest user's device?"
+            dev[663] codebase_community: 'What is the id of the youngest user?'
+   J=0.462  train[1104] talkingdata: 'What is the age of the youngest female user of the app?'
+            dev[663] codebase_community: 'What is the id of the youngest user?'
+   J=0.452  train[5118] address: 'How many counties are there in Virginia State?'
+            dev[1362] student_club: 'How many cities are there in Orange County, Virginia?'
+   J=0.447  train[6283] coinmarketcap: 'What is the name of the coin with the highest price?'
+            dev[1123] european_football_2: 'What is the name of players with the highest potential?'
+   J=0.422  train[2839] professional_basketball: 'Which player from "AFS" team has the tallest height?'
+            dev[1079] european_football_2: 'Which player is the tallest?'
+
+  examples near 0.5 (q+evidence, char5):
+   J=0.462  train: 'What is the age of the youngest female user of the app? youngest user refers to MIN(age); female ref'
+            dev:   'What is the id of the youngest user? the youngest user refers to MIN(Age);'
+   J=0.483  train: "What is the brand of the youngest user's device? brand of the device refers to phone_brand; youngest"
+            dev:   'What is the id of the youngest user? the youngest user refers to MIN(Age);'
+   J=0.452  train: 'How many counties are there in Virginia State? "Virginia" is the state'
+            dev:   'How many cities are there in Orange County, Virginia? Orange County is the county name, Virginia is '
+
+== 2. recall on synthetic near-copies of all 1,534 dev questions (question only vs question-only ref; 'no_evidence' = q-only query vs q+evidence ref) ==
+  exact        >=0.4: 100.0%  >=0.5: 100.0%  >=0.6: 100.0%  >=0.7: 100.0%  >=0.8: 100.0%  >=0.9: 100.0%
+  case_punct   >=0.4: 100.0%  >=0.5: 100.0%  >=0.6: 100.0%  >=0.7: 100.0%  >=0.8: 100.0%  >=0.9: 100.0%
+  drop1        >=0.4: 100.0%  >=0.5:  99.7%  >=0.6:  98.8%  >=0.7:  95.9%  >=0.8:  79.9%  >=0.9:  27.1%
+  drop2        >=0.4:  98.8%  >=0.5:  96.2%  >=0.6:  87.7%  >=0.7:  66.1%  >=0.8:  28.9%  >=0.9:   2.8%
+  swap1        >=0.4:  99.6%  >=0.5:  98.1%  >=0.6:  92.5%  >=0.7:  72.8%  >=0.8:  33.6%  >=0.9:   2.8%
+  prefix       >=0.4: 100.0%  >=0.5: 100.0%  >=0.6:  99.5%  >=0.7:  94.1%  >=0.8:  60.5%  >=0.9:   2.0%
+  no_evidence  >=0.4:  95.2%  >=0.5:  83.4%  >=0.6:  60.0%  >=0.7:  31.9%  >=0.8:  15.1%  >=0.9:  10.0%
+
+== 3. System-1 training sources vs dev at the default threshold 0.6 (q+evidence 'context' where present) ==
+  spider_train  rows    9779  near-dup    0  dev db_id   107 ({'formula_1': 107})  2.5s (253 us/row)
+  synsql_train  rows  166112  near-dup    1  dev db_id     0 ({})  77.2s (465 us/row)
+     flagged synsql_train_data_1411298 formula_1_race_data_management_907508: 'Which constructor has the highest total points?'
+  bird_train    rows   11320  near-dup    1  dev db_id     0 ({})  3.0s (264 us/row)
+     flagged bird_train_train_1044 talkingdata: 'What is the gender of the youngest user?'
+  BIRD-train schemas with table-name Jaccard >= 0.5 to a dev schema: []
+  Spider schemas (tables.json) named like a dev DB: ['formula_1']; table-name Jaccard >= 0.5: [('soccer_1', 'european_football_2'), ('formula_1', 'formula_1')]
+    Spider soccer_1 ~ dev european_football_2: table-name Jaccard 0.75, 19 rows in data/sys1/spider_train/plans.jsonl (a System-1 training source)
+    Spider formula_1 ~ dev formula_1: table-name Jaccard 1.00, 107 rows in data/sys1/spider_train/plans.jsonl (a System-1 training source)
+  SynSQL training schemas (16328 DBs) with table-name Jaccard >= 0.4 to a dev schema: [('online_forum_and_blog_post_management', 'codebase_community')]
+
+total 135s

@@ -1,0 +1,25 @@
+01-07 MAP decoding under an execution constraint (k-best-64 first-live on zero-live questions)
+held-out v2 DECISION (796 q, 8 DBs); baseline = Mac replay, unmodified decoder; arm = same replay with the change (paired)
+
+== R2 (primary): 670 of 796 DECISION questions in the dump (rest count wrong for both)
+  first pick (greedy)    base  47.74  arm  47.86  delta +0.13  DB sign-flip p=1.0000 CI95 [-0.00, +0.52]  question sign-flip p=1.0000 (wins 1, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +1, movie +0, student_loan +0, synthea +0, university +0
+  oracle@8 flip pool     base  56.03  arm  56.16  delta +0.13  DB sign-flip p=1.0000 CI95 [-0.00, +0.52]  question sign-flip p=1.0000 (wins 1, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +1, movie +0, student_loan +0, synthea +0, university +0
+  oracle@8 k-best-8      base  58.67  arm  58.79  delta +0.13  DB sign-flip p=1.0000 CI95 [-0.00, +0.52]  question sign-flip p=1.0000 (wins 1, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +1, movie +0, student_loan +0, synthea +0, university +0
+  greedy live 623/670; zero-live (flips U kbest8) 13/670; deep k-best-64 found a live plan for 4; of those correct 1; baseline greedy correct on zero-live 2
+  deep list length mean 38.1; SQL executions (calls to g) on zero-live: mean 27.8, max 56; found ranks [10, 13, 17, 22]
+
+== R1 (secondary): 670 of 796 DECISION questions in the dump (rest count wrong for both)
+  first pick (greedy)    base  48.12  arm  48.12  delta +0.00  DB sign-flip p=1.0000 CI95 [-0.58, +0.36]  question sign-flip p=1.0000 (wins 1, losses 1)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +0, movie -1, student_loan +0, synthea +1, university +0
+  oracle@8 flip pool     base  55.90  arm  56.03  delta +0.13  DB sign-flip p=1.0000 CI95 [-0.00, +0.42]  question sign-flip p=1.0000 (wins 1, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +0, movie +0, student_loan +0, synthea +1, university +0
+  oracle@8 k-best-8      base  59.55  arm  59.67  delta +0.13  DB sign-flip p=1.0000 CI95 [-0.00, +0.42]  question sign-flip p=1.0000 (wins 1, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +0, movie +0, student_loan +0, synthea +1, university +0
+  greedy live 625/670; zero-live (flips U kbest8) 20/670; deep k-best-64 found a live plan for 11; of those correct 1; baseline greedy correct on zero-live 2
+  deep list length mean 42.9; SQL executions (calls to g) on zero-live: mean 21.3, max 56; found ranks [2, 6, 8, 8, 17, 18, 27, 27, 29, 32, 42]
+
+runtime (both arms, both runs, wall): 74 s
+GATE (R2, frozen: >= +0.5 and DB p < 0.10 on first pick or oracle@8): DROP  [first +0.13 p=1.0000; flips +0.13 p=1.0000; kbest8 +0.13 p=1.0000]

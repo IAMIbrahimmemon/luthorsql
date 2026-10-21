@@ -1,0 +1,23 @@
+03-08 value provenance mask (decode-time, text '='/'in' literals must occur in the column)
+held-out v2 DECISION (796 q, 8 DBs); baseline = Mac replay, unmodified decoder; arm = same replay with the change (paired)
+
+== R2 (primary): 670 of 796 DECISION questions in the dump (rest count wrong for both)
+  first pick (greedy)    base  47.74  arm  47.61  delta -0.13  DB sign-flip p=1.0000 CI95 [-0.52, -0.00]  question sign-flip p=1.0000 (wins 0, losses 1)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode -1, movie +0, student_loan +0, synthea +0, university +0
+  oracle@8 flip pool     base  56.03  arm  56.16  delta +0.13  DB sign-flip p=1.0000 CI95 [-0.00, +0.50]  question sign-flip p=1.0000 (wins 1, losses 0)
+      per-DB D_g: car_retails +1, cs_semester +0, hockey +0, law_episode +0, movie +0, student_loan +0, synthea +0, university +0
+  oracle@8 k-best-8      base  58.67  arm  58.67  delta +0.00  DB sign-flip p=1.0000 CI95 [-0.52, +0.39]  question sign-flip p=1.0000 (wins 1, losses 1)
+      per-DB D_g: car_retails +0, cs_semester -1, hockey +1, law_episode +0, movie +0, student_loan +0, synthea +0, university +0
+  questions with >=1 masked value vector 474/670; greedy SQL changed 23; flips changed 40; kbest8 changed 64; greedy live base 623 -> arm 624
+
+== R1 (secondary): 670 of 796 DECISION questions in the dump (rest count wrong for both)
+  first pick (greedy)    base  48.12  arm  48.12  delta +0.00  DB sign-flip p=1.0000 CI95 [-0.00, -0.00]  question sign-flip p=1.0000 (wins 0, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +0, movie +0, student_loan +0, synthea +0, university +0
+  oracle@8 flip pool     base  55.90  arm  55.90  delta +0.00  DB sign-flip p=1.0000 CI95 [-0.00, -0.00]  question sign-flip p=1.0000 (wins 0, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +0, movie +0, student_loan +0, synthea +0, university +0
+  oracle@8 k-best-8      base  59.55  arm  59.55  delta +0.00  DB sign-flip p=1.0000 CI95 [-0.00, -0.00]  question sign-flip p=1.0000 (wins 0, losses 0)
+      per-DB D_g: car_retails +0, cs_semester +0, hockey +0, law_episode +0, movie +0, student_loan +0, synthea +0, university +0
+  questions with >=1 masked value vector 475/670; greedy SQL changed 25; flips changed 46; kbest8 changed 83; greedy live base 625 -> arm 626
+
+runtime (both arms, both runs, wall): 74 s
+GATE (R2, frozen: >= +0.5 and DB p < 0.10 on first pick or oracle@8): DROP  [first -0.13 p=1.0000; flips +0.13 p=1.0000; kbest8 +0.00 p=1.0000]
