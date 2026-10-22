@@ -1,0 +1,10 @@
+{"question_id": "spider_realistic_320", "db_id": "poker_player", "question": "List the mony made by each poker players in descending order.", "evidence": ""}
+{"question_id": "spider_realistic_321", "db_id": "poker_player", "question": "What is the money rank of the tallest poker player?", "evidence": ""}
+{"question_id": "spider_realistic_322", "db_id": "poker_player", "question": "Return the money rank of the tallest poker player.", "evidence": ""}
+{"question_id": "spider_realistic_323", "db_id": "poker_player", "question": "What is the average earnings of poker players taller than 200?", "evidence": ""}
+{"question_id": "spider_realistic_324", "db_id": "poker_player", "question": "Give average earnings of poker players who are taller than 200.", "evidence": ""}
+{"question_id": "spider_realistic_325", "db_id": "poker_player", "question": "What are different nationalities of people and the corresponding number of people from each country?", "evidence": ""}
+{"question_id": "spider_realistic_326", "db_id": "poker_player", "question": "How many people are there of each country?", "evidence": ""}
+{"question_id": "spider_realistic_327", "db_id": "poker_player", "question": "Return the countries for which there are two or more people from.", "evidence": ""}
+{"question_id": "spider_realistic_328", "db_id": "poker_player", "question": "Show names of people who  is not  from Russia.", "evidence": ""}
+{"question_id": "spider_realistic_329", "db_id": "poker_player", "question": "What are the names of people who are not from Russia?", "evidence": ""}

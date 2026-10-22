@@ -1,0 +1,16 @@
+{"question_id": "q1366", "pick": "A"}
+{"question_id": "q1373", "pick": "NONE", "sql": "SELECT r.narrative, r.amount, r.measures FROM readings r JOIN subjects s ON s.person=r.person WHERE s.title='Mr.' AND s.given='Vincent' AND s.surname='Wyman' AND r.narrative='Body Height' AND r.day='2010-08-02'"}
+{"question_id": "q1376", "pick": "NONE", "sql": "SELECT DISTINCT r.commonness_share FROM rate_rollup r JOIN diagnoses d ON lower(r.element)=lower(d.narrative) WHERE d.token=64859006"}
+{"question_id": "q1380", "pick": "A"}
+{"question_id": "q1383", "pick": "A"}
+{"question_id": "q1384", "pick": "A"}
+{"question_id": "q1394", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT s.person) FROM drugs d JOIN subjects s ON s.person=d.person WHERE d.narrative='Ibuprofen 200 MG Oral Tablet' AND d.onset LIKE '2016%' AND s.culture='dominican' AND strftime('%m', d.finish)-strftime('%m', d.onset)=1"}
+{"question_id": "q1397", "pick": "A"}
+{"question_id": "q1401", "pick": "NONE", "sql": "SELECT DISTINCT d.person FROM diagnoses d JOIN rate_rollup r ON lower(r.element)=lower(d.narrative) WHERE r.commonness_share=18.8"}
+{"question_id": "q1406", "pick": "A"}
+{"question_id": "q1407", "pick": "B"}
+{"question_id": "q1410", "pick": "A"}
+{"question_id": "q1424", "pick": "B"}
+{"question_id": "q1425", "pick": "NONE", "sql": "SELECT DISTINCT s.given, s.surname FROM drugs d JOIN subjects s ON s.person=d.person WHERE d.narrative='Clopidogrel 75 MG Oral Tablet' AND strftime('%Y', d.finish)-strftime('%Y', d.onset)>10"}
+{"question_id": "q1429", "pick": "NONE", "sql": "SELECT r.commonness_proportion FROM diagnoses d JOIN rate_rollup r ON lower(r.element)=lower(d.narrative) WHERE d.onset='2014-05-09'"}
+{"question_id": "q1431", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN t.narrative='Influenza  seasonal  injectable  preservative free' THEN 1 ELSE 0 END) AS REAL)*100/COUNT(t.person), SUM(CASE WHEN s.culture='english' THEN 1 ELSE 0 END) FROM shots t JOIN subjects s ON s.person=t.person WHERE strftime('%Y', t.day)='2017'"}

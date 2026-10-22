@@ -1,0 +1,23 @@
+{"question_id": "bird_train_train_7988", "pick": "A"}
+{"question_id": "bird_train_train_7991", "pick": "A"}
+{"question_id": "bird_train_train_7993", "pick": "A"}
+{"question_id": "bird_train_train_7994", "pick": "A"}
+{"question_id": "bird_train_train_8004", "pick": "A"}
+{"question_id": "bird_train_train_8007", "pick": "A"}
+{"question_id": "bird_train_train_8008", "pick": "A"}
+{"question_id": "bird_train_train_8013", "pick": "A"}
+{"question_id": "bird_train_train_8017", "pick": "A"}
+{"question_id": "bird_train_train_8022", "pick": "NONE", "sql": "SELECT T2.score, CAST(T1.num_students * T1.pct_international_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university_ranking_year AS T2 ON T1.university_id = T2.university_id WHERE T2.year = 2015 AND T1.university_id = 100"}
+{"question_id": "bird_train_train_8025", "pick": "NONE", "sql": "SELECT DISTINCT T1.country_name FROM country AS T1 INNER JOIN university AS T2 ON T1.id = T2.country_id INNER JOIN university_year AS T3 ON T2.id = T3.university_id WHERE T3.year = 2013 AND T3.num_students * 100 > (SELECT AVG(num_students) FROM university_year) * 98"}
+{"question_id": "bird_train_train_8027", "pick": "C"}
+{"question_id": "bird_train_train_8034", "pick": "A"}
+{"question_id": "bird_train_train_8038", "pick": "A"}
+{"question_id": "bird_train_train_8043", "pick": "A"}
+{"question_id": "bird_train_train_8044", "pick": "A"}
+{"question_id": "bird_train_train_8046", "pick": "NONE", "sql": "SELECT SUM(T1.num_students) - SUM(CAST(T1.num_students * T1.pct_international_students AS REAL) / 100) FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Harvard University' AND T1.year BETWEEN 2011 AND 2012"}
+{"question_id": "bird_train_train_8049", "pick": "A"}
+{"question_id": "bird_train_train_8054", "pick": "A"}
+{"question_id": "bird_train_train_8055", "pick": "A"}
+{"question_id": "bird_train_train_8057", "pick": "NONE", "sql": "SELECT CAST(T1.num_students * T1.pct_international_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Harvard University' AND T1.year = 2012"}
+{"question_id": "bird_train_train_8062", "pick": "A"}
+{"question_id": "bird_train_train_8066", "pick": "A"}

@@ -1,0 +1,21 @@
+{"question_id": "bird_train_train_7742", "pick": "NONE", "sql": "SELECT T1.pos, T1.award, T2.nameGiven, T2.lastName FROM AwardsPlayers AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T1.pos = (SELECT pos FROM AwardsPlayers WHERE pos IS NOT NULL GROUP BY pos ORDER BY COUNT(award) DESC LIMIT 1) ORDER BY T1.year DESC LIMIT 1"}
+{"question_id": "bird_train_train_7744", "pick": "NONE", "sql": "SELECT COUNT(T2.oppID), T2.tmID, T2.oppID FROM Teams AS T1 INNER JOIN TeamVsTeam AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID WHERE T2.year = 1915 GROUP BY T2.tmID, T2.oppID ORDER BY SUM(T2.W) DESC LIMIT 1"}
+{"question_id": "bird_train_train_7747", "pick": "NONE", "sql": "SELECT T2.rank, T2.year, T2.name FROM Scoring AS T1 INNER JOIN Teams AS T2 ON T2.tmID = T1.tmID AND T2.year = T1.year WHERE T1.SHA >= 7 ORDER BY T1.A DESC LIMIT 1"}
+{"question_id": "bird_train_train_7754", "pick": "A"}
+{"question_id": "bird_train_train_7757", "pick": "B"}
+{"question_id": "bird_train_train_7774", "pick": "NONE", "sql": "SELECT T3.name FROM TeamVsTeam AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Teams AS T3 ON T1.year = T3.year AND T1.oppID = T3.tmID WHERE T2.name = 'Buffalo Sabres' AND T1.year = 2000 GROUP BY T3.name ORDER BY SUM(T1.W + T1.L + IFNULL(T1.T, 0) + IFNULL(T1.OTL, 0)) DESC LIMIT 1"}
+{"question_id": "bird_train_train_7776", "pick": "NONE", "sql": "SELECT T2.PIM FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens' AND T1.year = 1918"}
+{"question_id": "bird_train_train_7777", "pick": "A"}
+{"question_id": "bird_train_train_7782", "pick": "NONE", "sql": "SELECT SUM(CAST(T2.W AS REAL) / T2.G) / COUNT(T2.G) FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens'"}
+{"question_id": "bird_train_train_7788", "pick": "A"}
+{"question_id": "bird_train_train_7792", "pick": "A"}
+{"question_id": "bird_train_train_7793", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.tmID = 'BOS' AND T2.year = 1972 AND T1.coachID IS NOT NULL AND T1.hofID IS NULL"}
+{"question_id": "bird_train_train_7797", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID INNER JOIN Teams AS T3 ON T2.tmID = T3.tmID AND T2.year = T3.year WHERE T3.name = 'Minnesota North Stars' GROUP BY T2.playerID ORDER BY SUM(T2.GA) DESC LIMIT 1"}
+{"question_id": "bird_train_train_7800", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T1.year = 2005 THEN T1.GP ELSE 0 END) - SUM(CASE WHEN T1.year = 2006 THEN T1.GP ELSE 0 END) AS REAL) * 100 / SUM(CASE WHEN T1.year = 2005 THEN T1.GP ELSE 0 END) FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T2.firstName = 'David' AND T2.lastName = 'Aebischer'"}
+{"question_id": "bird_train_train_7802", "pick": "A"}
+{"question_id": "bird_train_train_7803", "pick": "A"}
+{"question_id": "bird_train_train_7805", "pick": "A"}
+{"question_id": "bird_train_train_7809", "pick": "NONE", "sql": "SELECT DISTINCT T1.coachID FROM Master AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.coachID = T2.coachID WHERE T1.playerID IS NULL"}
+{"question_id": "bird_train_train_7812", "pick": "NONE", "sql": "SELECT SUM(T1.Pts), T2.coachID FROM Teams AS T1 INNER JOIN Coaches AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T2.tmID = 'ANA' GROUP BY T2.coachID"}
+{"question_id": "bird_train_train_7816", "pick": "NONE", "sql": "SELECT DISTINCT T1.firstName, T1.lastName, T2.tmID FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T2.year BETWEEN 1925 AND 1936 AND T1.height = (SELECT MIN(CAST(M.height AS INTEGER)) FROM Master AS M INNER JOIN Scoring AS S ON M.playerID = S.playerID WHERE S.year BETWEEN 1925 AND 1936 AND M.height IS NOT NULL)"}
+{"question_id": "bird_train_train_7818", "pick": "NONE", "sql": "SELECT CAST(T1.W AS REAL) / T1.G, T2.playerID FROM Teams AS T1 INNER JOIN Scoring AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.tmID = 'CAR' AND T1.year = 1998 ORDER BY T2.G DESC LIMIT 1"}

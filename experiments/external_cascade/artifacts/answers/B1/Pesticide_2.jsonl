@@ -1,0 +1,17 @@
+{"question_id": "kaggledbqa_test_57", "pick": "A"}
+{"question_id": "kaggledbqa_test_58", "pick": "A"}
+{"question_id": "kaggledbqa_test_59", "pick": "A"}
+{"question_id": "kaggledbqa_test_60", "pick": "A"}
+{"question_id": "kaggledbqa_test_61", "pick": "A"}
+{"question_id": "kaggledbqa_test_62", "pick": "A"}
+{"question_id": "kaggledbqa_test_63", "pick": "A"}
+{"question_id": "kaggledbqa_test_64", "pick": "A"}
+{"question_id": "kaggledbqa_test_65", "pick": "A"}
+{"question_id": "kaggledbqa_test_66", "pick": "A"}
+{"question_id": "kaggledbqa_test_67", "pick": "A"}
+{"question_id": "kaggledbqa_test_68", "pick": "NONE", "sql": "SELECT COUNT(*) FROM sampledata15 WHERE origin = '2'"}
+{"question_id": "kaggledbqa_test_69", "pick": "B"}
+{"question_id": "kaggledbqa_test_70", "pick": "A"}
+{"question_id": "kaggledbqa_test_71", "pick": "A"}
+{"question_id": "kaggledbqa_test_72", "pick": "B"}
+{"question_id": "kaggledbqa_test_73", "pick": "B"}

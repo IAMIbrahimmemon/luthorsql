@@ -1,0 +1,13 @@
+{"question_id": "spider_realistic_205", "db_id": "museum_visit", "question": "How many visitors below  30 years old are there?", "evidence": ""}
+{"question_id": "spider_realistic_206", "db_id": "museum_visit", "question": "Find the names of the visitors that is higher than lv 4, and order the results by the level from high to low.", "evidence": ""}
+{"question_id": "spider_realistic_207", "db_id": "museum_visit", "question": "What is the average age of the visitors not higher than lv 4?", "evidence": ""}
+{"question_id": "spider_realistic_208", "db_id": "museum_visit", "question": "Find the id and name of the museum that has the most employees?", "evidence": ""}
+{"question_id": "spider_realistic_209", "db_id": "museum_visit", "question": "Find the average number of staff working for the museums that were open before 2009.", "evidence": ""}
+{"question_id": "spider_realistic_210", "db_id": "museum_visit", "question": "What are the opening year and staff number of Plaza Museum?", "evidence": ""}
+{"question_id": "spider_realistic_211", "db_id": "museum_visit", "question": "find the names of museums which have more staff than the minimum of all museums opened after 2010.", "evidence": ""}
+{"question_id": "spider_realistic_212", "db_id": "museum_visit", "question": "find the id, name and age for people who visited some museums more than once.", "evidence": ""}
+{"question_id": "spider_realistic_213", "db_id": "museum_visit", "question": "What are the id, name and membership level of people who have paid the largest amount of money overall in all museum tickets?", "evidence": ""}
+{"question_id": "spider_realistic_214", "db_id": "museum_visit", "question": "What are the id and name of the museum that has people come most times?", "evidence": ""}
+{"question_id": "spider_realistic_215", "db_id": "museum_visit", "question": "What is the name of the museum that had no person come yet?", "evidence": ""}
+{"question_id": "spider_realistic_216", "db_id": "museum_visit", "question": "Find the name and age of the people who bought the most tickets at once.", "evidence": ""}
+{"question_id": "spider_realistic_217", "db_id": "museum_visit", "question": "What is the total ticket expense of the lv 1 visitors?", "evidence": ""}

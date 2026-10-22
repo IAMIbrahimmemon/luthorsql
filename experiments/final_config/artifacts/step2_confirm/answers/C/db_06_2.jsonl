@@ -1,0 +1,13 @@
+{"question_id": "q4506", "pick": "NONE", "sql": "SELECT r.label FROM recruit r JOIN registered g ON r.label=g.label GROUP BY r.label HAVING COUNT(DISTINCT g.academy)=2 AND COUNT(DISTINCT r.body_part)=2"}
+{"question_id": "q4507", "pick": "NONE", "sql": "SELECT CAST(SUM(period=0)-SUM(period=9) AS REAL)*100/SUM(period=0) FROM maximum_truancy_span"}
+{"question_id": "q4511", "pick": "NONE", "sql": "SELECT i.label FROM impaired i JOIN masculine m ON i.label=m.label JOIN jobless j ON j.label=i.label JOIN maximum_truancy_span t ON t.label=i.label WHERE t.period=5"}
+{"question_id": "q4514", "pick": "NONE", "sql": "SELECT SUM(m.label IS NOT NULL)-SUM(m.label IS NULL) FROM insolvency_record i LEFT JOIN masculine m ON i.label=m.label"}
+{"question_id": "q4516", "pick": "NONE", "sql": "SELECT CAST(SUM(i.label IS NOT NULL)-SUM(i.label IS NULL) AS REAL)*100/COUNT(t.label), CASE WHEN SUM(i.label IS NOT NULL) < SUM(i.label IS NULL) THEN 'YES' ELSE 'NO' END FROM maximum_truancy_span t LEFT JOIN impaired i ON i.label=t.label"}
+{"question_id": "q4520", "pick": "B"}
+{"question_id": "q4523", "pick": "B"}
+{"question_id": "q4539", "pick": "A"}
+{"question_id": "q4542", "pick": "A"}
+{"question_id": "q4551", "pick": "NONE", "sql": "SELECT CAST(COUNT(DISTINCT t.label) AS REAL)*100/(SELECT COUNT(*) FROM registered WHERE academy='ucla') FROM registered g JOIN masculine m ON g.label=m.label JOIN recruit t ON t.label=g.label WHERE g.academy='ucla' AND t.body_part='air_force'"}
+{"question_id": "q4552", "pick": "NONE", "sql": "SELECT CAST(SUM(g.academy='uci' AND m.label IS NULL) AS REAL)/COUNT(g.label) FROM registered g JOIN impaired i ON i.label=g.label LEFT JOIN masculine m ON m.label=g.label"}
+{"question_id": "q4562", "pick": "A"}
+{"question_id": "q4567", "pick": "A"}

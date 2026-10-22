@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_397", "pick": "NONE", "sql": "SELECT count(DISTINCT T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE IndepYear < 1930 AND T2.IsOfficial = 'T'"}
+{"question_id": "spider_realistic_398", "pick": "A"}
+{"question_id": "spider_realistic_399", "pick": "A"}
+{"question_id": "spider_realistic_400", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Africa' AND Population < (SELECT max(Population) FROM country WHERE Continent = 'Asia')"}
+{"question_id": "spider_realistic_401", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Africa' AND Population < (SELECT max(Population) FROM country WHERE Continent = 'Asia')"}
+{"question_id": "spider_realistic_402", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' AND Population > (SELECT min(Population) FROM country WHERE Continent = 'Africa')"}
+{"question_id": "spider_realistic_403", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' AND Population > (SELECT min(Population) FROM country WHERE Continent = 'Africa')"}
+{"question_id": "spider_realistic_404", "pick": "B"}
+{"question_id": "spider_realistic_405", "pick": "NONE", "sql": "SELECT CountryCode FROM countrylanguage EXCEPT SELECT CountryCode FROM countrylanguage WHERE Language = 'English'"}
+{"question_id": "spider_realistic_406", "pick": "A"}
+{"question_id": "spider_realistic_407", "pick": "C"}
+{"question_id": "spider_realistic_408", "pick": "A"}
+{"question_id": "spider_realistic_409", "pick": "A"}
+{"question_id": "spider_realistic_410", "pick": "NONE", "sql": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T4.CountryCode = T3.Code WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')"}
+{"question_id": "spider_realistic_411", "pick": "A"}
+{"question_id": "spider_realistic_412", "pick": "A"}
+{"question_id": "spider_realistic_413", "pick": "B"}
+{"question_id": "spider_realistic_414", "pick": "A"}
+{"question_id": "spider_realistic_415", "pick": "F"}
+{"question_id": "spider_realistic_416", "pick": "C"}
+{"question_id": "spider_realistic_417", "pick": "C"}

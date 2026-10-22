@@ -41,6 +41,23 @@ Many other scripts are from earlier rounds of the project (described in the pape
 - **Fresh set:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower cost.
 - **Not yet measured:** the cascade has not been run on BIRD's hidden test set.
 
+## Re-scoring the experiments
+
+Each new experiment folder has an `artifacts/` directory with everything needed to recompute its numbers. Gold SQL is
+not in it; it comes from BIRD train, KaggleDBQA, Spider-Realistic or `splits/fresh_unseen/`.
+- `chunks/<arm>/*.jsonl`: the exact inputs each agent saw, with System 1's candidates.
+- `answers/<arm>/*.jsonl`: the agents' answers.
+- `usage.json`: per agent session, token usage (input, cache write, cache read, output, plus a characters/4 output
+  estimate), wall seconds, and dollars at Opus 5.5 list prices. These are the inputs to every cost and time figure.
+  Full transcripts are not included.
+- `s1_*.jsonl` (cost_confirmation, external_cascade, fresh_unseen): System 1's gold-free outputs per question (pick,
+  margin, top-8 candidate groups with result previews).
+
+To re-score, point a scorer's `--box` at the matching `artifacts/` folder. The scorers rebuild each question's SQL from
+the answer's pick label and the chunk's candidates, then execute it against the gold. Accuracy needs only the databases.
+Cost and time come from `usage.json`. The fresh-set databases are in the private Hugging Face dataset
+`IAMIbrahim/luthorsql-fresh-unseen`; BIRD-train, KaggleDBQA and Spider databases come from their official releases.
+
 ## Weights
 
 Hugging Face (private for now):

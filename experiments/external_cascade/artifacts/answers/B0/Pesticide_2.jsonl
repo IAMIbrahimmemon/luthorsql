@@ -1,0 +1,17 @@
+{"question_id": "kaggledbqa_test_57", "sql": "SELECT quantity FROM sampledata15 WHERE sample_pk = 9628"}
+{"question_id": "kaggledbqa_test_58", "sql": "SELECT testclass FROM resultsdata15 WHERE sample_pk = 7498"}
+{"question_id": "kaggledbqa_test_59", "sql": "SELECT T2.confmethod FROM sampledata15 AS T1 JOIN resultsdata15 AS T2 ON T1.sample_pk = T2.sample_pk ORDER BY T1.year DESC, T1.month DESC, T1.day DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_60", "sql": "SELECT lab FROM resultsdata15 GROUP BY lab ORDER BY COUNT(DISTINCT sample_pk) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_61", "sql": "SELECT testclass FROM resultsdata15 GROUP BY testclass ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_62", "sql": "SELECT conunit FROM resultsdata15 WHERE sample_pk = 3879"}
+{"question_id": "kaggledbqa_test_63", "sql": "SELECT conunit FROM resultsdata15 WHERE commod = 'PO'"}
+{"question_id": "kaggledbqa_test_64", "sql": "SELECT mean FROM resultsdata15 WHERE commod = 'AP'"}
+{"question_id": "kaggledbqa_test_65", "sql": "SELECT extract FROM resultsdata15 GROUP BY extract ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_66", "sql": "SELECT lab FROM resultsdata15 GROUP BY lab ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_67", "sql": "SELECT lab FROM resultsdata15 WHERE commod = 'AP'"}
+{"question_id": "kaggledbqa_test_68", "sql": "SELECT COUNT(*) FROM sampledata15 WHERE origin = '2'"}
+{"question_id": "kaggledbqa_test_69", "sql": "SELECT commod FROM resultsdata15 WHERE concen > 0 GROUP BY commod ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_70", "sql": "SELECT state FROM sampledata15 WHERE claim = 'PO' GROUP BY state ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_71", "sql": "SELECT country FROM sampledata15 WHERE origin = '2' GROUP BY country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_72", "sql": "SELECT commod FROM resultsdata15 GROUP BY commod ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_73", "sql": "SELECT pestcode FROM resultsdata15 GROUP BY pestcode ORDER BY MIN(lod) ASC LIMIT 1"}

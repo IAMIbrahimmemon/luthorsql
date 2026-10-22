@@ -1,0 +1,4 @@
+{"question_id": "q1308", "pick": "NONE", "sql": "SELECT DISTINCT t1.natal_zone FROM individual t1 JOIN recognition t2 ON t1.individual_ref=t2.individual_ref WHERE t2.capacity='assistant location manager'"}
+{"question_id": "q1323", "pick": "NONE", "sql": "SELECT COUNT(*) FROM accolade a JOIN installment i ON a.installment_ref=i.installment_ref WHERE a.annum=1999 AND a.body='Primetime Emmy Awards' AND a.outcome='Nominee' AND a.franchise='Law and Order' AND i.installment_ordinal=20"}
+{"question_id": "q1324", "pick": "NONE", "sql": "SELECT r.installment_ref, r.capacity FROM accolade a JOIN recognition r ON a.individual_ref=r.individual_ref JOIN individual p ON p.individual_ref=a.individual_ref WHERE a.annum=1999 AND a.prize='Outstanding Guest Actress in a Drama Series' AND a.body='Primetime Emmy Awards' AND p.moniker='Julia Roberts'"}
+{"question_id": "q1342", "pick": "B"}

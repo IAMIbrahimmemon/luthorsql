@@ -1,0 +1,21 @@
+{"question_id": "bird_train_train_7616", "pick": "NONE", "sql": "SELECT firstName, lastName, deathYear - birthYear FROM Master WHERE shootCatch IS NULL AND deathYear IS NOT NULL"}
+{"question_id": "bird_train_train_7620", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.lgID IN ('PCHA', 'NHL') GROUP BY T1.playerID HAVING COUNT(DISTINCT T2.lgID) = 2"}
+{"question_id": "bird_train_train_7627", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName, T2.year, CAST(SUM(T2.Min) AS REAL) / COUNT(T2.playerID) FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T1.playerID = (SELECT playerID FROM Goalies GROUP BY playerID ORDER BY COUNT(playerID) DESC LIMIT 1) GROUP BY T2.year"}
+{"question_id": "bird_train_train_7630", "pick": "A"}
+{"question_id": "bird_train_train_7632", "pick": "A"}
+{"question_id": "bird_train_train_7635", "pick": "NONE", "sql": "SELECT DISTINCT T1.firstName, T1.lastName, T3.name FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID INNER JOIN Teams AS T3 ON T2.tmID = T3.tmID AND T2.year = T3.year WHERE T1.deathYear IS NOT NULL AND T1.birthCountry = 'Canada' AND T1.pos = 'G'"}
+{"question_id": "bird_train_train_7638", "pick": "NONE", "sql": "SELECT DISTINCT T1.nameGiven, T3.name, T2.year FROM Master AS T1 INNER JOIN Coaches AS T2 ON T1.coachID = T2.coachID INNER JOIN Teams AS T3 ON T2.tmID = T3.tmID AND T2.year = T3.year WHERE T1.playerID IS NOT NULL"}
+{"question_id": "bird_train_train_7644", "pick": "NONE", "sql": "SELECT T1.nameGiven, CAST(SUM(T2.Min) AS REAL) / SUM(T2.GP) FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T1.playerID = 'aebisda01' GROUP BY T1.nameGiven"}
+{"question_id": "bird_train_train_7659", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.coachID) FROM Coaches AS T1 INNER JOIN Master AS T2 ON T1.coachID = T2.coachID WHERE T1.w > 30 AND T2.birthCountry = 'USA'"}
+{"question_id": "bird_train_train_7666", "pick": "NONE", "sql": "SELECT firstName FROM Master WHERE hofID IS NOT NULL AND shootCatch IS NULL"}
+{"question_id": "bird_train_train_7676", "pick": "A"}
+{"question_id": "bird_train_train_7686", "pick": "NONE", "sql": "SELECT W FROM Goalies WHERE playerID = 'vanbijo01' AND year = 1990"}
+{"question_id": "bird_train_train_7688", "pick": "NONE", "sql": "SELECT T1.w FROM Coaches AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.coachID = T2.coachID AND T1.year = T2.year WHERE T2.year = 1933 AND T2.award = 'Second Team All-Star'"}
+{"question_id": "bird_train_train_7695", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 2002 AND T2.GA > 150 ORDER BY T1.birthYear DESC, T1.birthMon DESC, T1.birthDay DESC LIMIT 1"}
+{"question_id": "bird_train_train_7697", "pick": "A"}
+{"question_id": "bird_train_train_7701", "pick": "NONE", "sql": "SELECT GP FROM ScoringSC WHERE playerID = 'broadpu01' AND year = 1922"}
+{"question_id": "bird_train_train_7722", "pick": "NONE", "sql": "SELECT BenchMinor, name FROM Teams ORDER BY T DESC LIMIT 1"}
+{"question_id": "bird_train_train_7724", "pick": "NONE", "sql": "SELECT CAST(SUM(PPG) AS REAL) * 100 / SUM(PPC) FROM Teams GROUP BY tmID ORDER BY SUM(L) DESC LIMIT 1"}
+{"question_id": "bird_train_train_7732", "pick": "NONE", "sql": "SELECT COUNT(playerID) FROM Master WHERE firstNHL = '2011' AND shootCatch IS NULL"}
+{"question_id": "bird_train_train_7737", "pick": "D"}
+{"question_id": "bird_train_train_7740", "pick": "A"}

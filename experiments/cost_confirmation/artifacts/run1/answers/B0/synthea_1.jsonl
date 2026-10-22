@@ -1,0 +1,19 @@
+{"question_id": "bird_train_train_1361", "sql": "SELECT MAX(o.VALUE) FROM observations o JOIN patients p ON p.patient=o.PATIENT WHERE p.first='Elly' AND p.last='Koss' AND o.DESCRIPTION='Systolic Blood Pressure'"}
+{"question_id": "bird_train_train_1363", "sql": "SELECT p.first, p.last FROM observations o JOIN patients p ON p.patient=o.PATIENT WHERE o.DESCRIPTION='Systolic Blood Pressure' ORDER BY o.VALUE DESC LIMIT 1"}
+{"question_id": "bird_train_train_1366", "sql": "SELECT m.REASONDESCRIPTION FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE p.first='Elly' AND p.last='Koss' AND m.DESCRIPTION LIKE 'Acetaminophen%'"}
+{"question_id": "bird_train_train_1368", "sql": "SELECT DISTINCT p.first, p.last FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE m.DESCRIPTION LIKE 'Acetaminophen%'"}
+{"question_id": "bird_train_train_1373", "sql": "SELECT o.VALUE, o.UNITS FROM observations o JOIN patients p ON p.patient=o.PATIENT WHERE p.first='Vincent' AND p.last='Wyman' AND o.DESCRIPTION='Body Height' AND o.DATE='2010-08-02'"}
+{"question_id": "bird_train_train_1376", "sql": "SELECT DISTINCT a.\"PREVALENCE PERCENTAGE\" FROM conditions c JOIN all_prevalences a ON lower(a.ITEM)=lower(c.DESCRIPTION) WHERE c.CODE='64859006'"}
+{"question_id": "bird_train_train_1380", "sql": "SELECT COUNT(a.PATIENT) FROM allergies a JOIN patients p ON p.patient=a.PATIENT WHERE p.prefix='Mrs.' AND p.first='Saundra' AND p.last='Monahan'"}
+{"question_id": "bird_train_train_1381", "sql": "SELECT p.first, p.last FROM claims c JOIN patients p ON p.patient=c.PATIENT WHERE c.BILLABLEPERIOD='1947-09-11'"}
+{"question_id": "bird_train_train_1383", "sql": "SELECT c.DESCRIPTION FROM conditions c JOIN patients p ON p.patient=c.PATIENT WHERE p.first='Keven' AND p.last='Kuhn' AND c.START='2016-09-24' AND c.STOP='2016-10-10'"}
+{"question_id": "bird_train_train_1384", "sql": "SELECT pr.DATE FROM procedures pr JOIN patients p ON p.patient=pr.PATIENT WHERE p.prefix='Mrs.' AND p.first='Ira' AND p.last='Deckow' AND pr.DESCRIPTION='Standard pregnancy test'"}
+{"question_id": "bird_train_train_1390", "sql": "SELECT PATIENT FROM conditions WHERE DESCRIPTION='Hypertension' ORDER BY START DESC LIMIT 1"}
+{"question_id": "bird_train_train_1391", "sql": "SELECT DESCRIPTION FROM allergies GROUP BY DESCRIPTION ORDER BY COUNT(DESCRIPTION) DESC LIMIT 1"}
+{"question_id": "bird_train_train_1394", "sql": "SELECT COUNT(DISTINCT p.patient) FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE m.DESCRIPTION='Ibuprofen 200 MG Oral Tablet' AND m.START LIKE '2016%' AND p.ethnicity='dominican' AND strftime('%m', m.STOP)-strftime('%m', m.START)=1"}
+{"question_id": "bird_train_train_1397", "sql": "SELECT COUNT(DISTINCT p.patient) FROM immunizations i JOIN patients p ON p.patient=i.PATIENT WHERE p.race='black' AND i.DESCRIPTION='DTaP' AND i.DATE LIKE '2013%'"}
+{"question_id": "bird_train_train_1401", "sql": "SELECT DISTINCT c.PATIENT FROM conditions c JOIN all_prevalences a ON lower(a.ITEM)=lower(c.DESCRIPTION) WHERE a.\"PREVALENCE PERCENTAGE\"=18.8"}
+{"question_id": "bird_train_train_1402", "sql": "SELECT COUNT(c.DESCRIPTION) FROM conditions c JOIN patients p ON p.patient=c.PATIENT WHERE p.first='Tyree' AND p.last='Eichmann'"}
+{"question_id": "bird_train_train_1406", "sql": "SELECT DISTINCT strftime('%Y', p.deathdate)-strftime('%Y', p.birthdate) FROM patients p JOIN conditions c ON c.PATIENT=p.patient WHERE p.first='Giovanni' AND p.last='Russel' AND c.DESCRIPTION='Hypertension'"}
+{"question_id": "bird_train_train_1407", "sql": "SELECT COUNT(DISTINCT p.patient) FROM medications m JOIN patients p ON p.patient=m.PATIENT WHERE p.race='asian' AND p.gender='F' AND m.DESCRIPTION='oxaliplatin 5 MG/ML [Eloxatin]'"}
+{"question_id": "bird_train_train_1410", "sql": "SELECT AVG(o.VALUE) FROM observations o WHERE o.DESCRIPTION='Diastolic Blood Pressure' AND o.PATIENT IN (SELECT PATIENT FROM conditions WHERE DESCRIPTION='Hypertension')"}

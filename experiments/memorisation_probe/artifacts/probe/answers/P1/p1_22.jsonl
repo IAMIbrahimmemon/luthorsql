@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_400", "sql": "SELECT Name FROM country WHERE Continent = 'Africa' AND Population < (SELECT min(Population) FROM country WHERE Continent = 'Asia')"}
+{"item_id": "spider_realistic_401", "sql": "SELECT Name FROM country WHERE Continent = 'Africa' AND Population < (SELECT min(Population) FROM country WHERE Continent = 'Asia')"}
+{"item_id": "spider_realistic_402", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' AND Population > (SELECT max(Population) FROM country WHERE Continent = 'Africa')"}
+{"item_id": "spider_realistic_403", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' AND Population > (SELECT max(Population) FROM country WHERE Continent = 'Africa')"}
+{"item_id": "spider_realistic_404", "sql": "SELECT CountryCode FROM countrylanguage EXCEPT SELECT CountryCode FROM countrylanguage WHERE Language = 'English'"}
+{"item_id": "spider_realistic_405", "sql": "SELECT CountryCode FROM countrylanguage EXCEPT SELECT CountryCode FROM countrylanguage WHERE Language = 'English'"}
+{"item_id": "spider_realistic_406", "sql": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE Language != 'English'"}
+{"item_id": "spider_realistic_407", "sql": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE Language != 'English'"}
+{"item_id": "spider_realistic_408", "sql": "SELECT Code FROM country WHERE GovernmentForm != 'Republic' EXCEPT SELECT CountryCode FROM countrylanguage WHERE Language = 'English'"}
+{"item_id": "spider_realistic_409", "sql": "SELECT Code FROM country WHERE GovernmentForm != 'Republic' EXCEPT SELECT CountryCode FROM countrylanguage WHERE Language = 'English'"}
+{"item_id": "spider_realistic_410", "sql": "SELECT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')"}
+{"item_id": "spider_realistic_411", "sql": "SELECT DISTINCT T3.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode JOIN city AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' AND T2.Language = 'Chinese' AND T1.Continent = 'Asia'"}
+{"item_id": "spider_realistic_412", "sql": "SELECT DISTINCT T3.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode JOIN city AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' AND T2.Language = 'Chinese' AND T1.Continent = 'Asia'"}
+{"item_id": "spider_realistic_413", "sql": "SELECT Name, IndepYear, SurfaceArea FROM country ORDER BY Population LIMIT 1"}
+{"item_id": "spider_realistic_414", "sql": "SELECT Name, IndepYear, SurfaceArea FROM country ORDER BY Population LIMIT 1"}
+{"item_id": "spider_realistic_415", "sql": "SELECT Population, Name, HeadOfState FROM country ORDER BY SurfaceArea DESC LIMIT 1"}
+{"item_id": "spider_realistic_416", "sql": "SELECT count(*), District FROM city WHERE Population > (SELECT avg(Population) FROM city) GROUP BY District"}
+{"item_id": "spider_realistic_417", "sql": "SELECT count(*), District FROM city WHERE Population > (SELECT avg(Population) FROM city) GROUP BY District"}
+{"item_id": "spider_realistic_418", "sql": "SELECT Name, SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5"}
+{"item_id": "spider_realistic_419", "sql": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"}
+{"item_id": "spider_realistic_420", "sql": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"}
+{"item_id": "spider_realistic_421", "sql": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"}
+{"item_id": "spider_realistic_422", "sql": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"}
+{"item_id": "spider_realistic_423", "sql": "SELECT count(*) FROM country WHERE Continent = 'Asia'"}
+{"item_id": "spider_realistic_424", "sql": "SELECT count(*) FROM country WHERE Continent = 'Asia'"}
+{"item_id": "spider_realistic_425", "sql": "SELECT Name FROM country WHERE Continent = 'Europe' AND Population = 80000"}
+{"item_id": "spider_realistic_426", "sql": "SELECT Name FROM country WHERE Continent = 'Europe' AND Population = 80000"}
+{"item_id": "spider_realistic_427", "sql": "SELECT sum(Population), avg(SurfaceArea) FROM country WHERE Continent = 'North America' AND SurfaceArea > 3000"}
+{"item_id": "spider_realistic_428", "sql": "SELECT sum(Population), avg(SurfaceArea) FROM country WHERE Continent = 'North America' AND SurfaceArea > 3000"}
+{"item_id": "spider_realistic_429", "sql": "SELECT Name FROM city WHERE Population BETWEEN 160000 AND 900000"}
+{"item_id": "spider_realistic_430", "sql": "SELECT Name FROM city WHERE Population BETWEEN 160000 AND 900000"}
+{"item_id": "spider_realistic_431", "sql": "SELECT Language, CountryCode, max(Percentage) FROM countrylanguage GROUP BY CountryCode"}
+{"item_id": "spider_realistic_432", "sql": "SELECT Language, CountryCode, max(Percentage) FROM countrylanguage GROUP BY CountryCode"}
+{"item_id": "spider_realistic_433", "sql": "SELECT count(*), max(Percentage) FROM countrylanguage WHERE Language = 'Spanish' GROUP BY CountryCode"}
+{"item_id": "spider_realistic_434", "sql": "SELECT count(*), max(Percentage) FROM countrylanguage WHERE Language = 'Spanish' GROUP BY CountryCode"}
+{"item_id": "spider_realistic_435", "sql": "SELECT CountryCode, max(Percentage) FROM countrylanguage WHERE Language = 'Spanish' GROUP BY CountryCode"}
+{"item_id": "spider_realistic_436", "sql": "SELECT CountryCode, max(Percentage) FROM countrylanguage WHERE Language = 'Spanish' GROUP BY CountryCode"}
+{"item_id": "spider_realistic_437", "sql": "SELECT Name FROM conductor ORDER BY Age ASC"}
+{"item_id": "spider_realistic_438", "sql": "SELECT Name FROM conductor ORDER BY Age ASC"}
+{"item_id": "spider_realistic_439", "sql": "SELECT Name FROM conductor WHERE Nationality != 'USA'"}
+{"item_id": "spider_realistic_440", "sql": "SELECT Name FROM conductor WHERE Nationality != 'USA'"}
+{"item_id": "spider_realistic_441", "sql": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC"}
+{"item_id": "spider_realistic_442", "sql": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC"}
+{"item_id": "spider_realistic_443", "sql": "SELECT count(*) FROM orchestra WHERE Major_Record_Format = 'CD' OR Major_Record_Format = 'DVD'"}
+{"item_id": "spider_realistic_444", "sql": "SELECT grade FROM Highschooler WHERE name = 'Kyle'"}
+{"item_id": "spider_realistic_445", "sql": "SELECT grade FROM Highschooler WHERE name = 'Kyle'"}
+{"item_id": "spider_realistic_446", "sql": "SELECT name FROM Highschooler WHERE grade = 10"}
+{"item_id": "spider_realistic_447", "sql": "SELECT name FROM Highschooler WHERE grade = 10"}
+{"item_id": "spider_realistic_448", "sql": "SELECT ID FROM Highschooler WHERE name = 'Kyle'"}
+{"item_id": "spider_realistic_449", "sql": "SELECT ID FROM Highschooler WHERE name = 'Kyle'"}

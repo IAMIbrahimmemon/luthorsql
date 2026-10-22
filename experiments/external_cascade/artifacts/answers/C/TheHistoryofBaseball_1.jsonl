@@ -1,0 +1,22 @@
+{"question_id": "kaggledbqa_test_94", "pick": "A"}
+{"question_id": "kaggledbqa_test_95", "pick": "NONE", "sql": "SELECT player_id FROM player_award WHERE year = 2010 AND award_id = 'Rookie of the Year'"}
+{"question_id": "kaggledbqa_test_96", "pick": "A"}
+{"question_id": "kaggledbqa_test_97", "pick": "B"}
+{"question_id": "kaggledbqa_test_99", "pick": "A"}
+{"question_id": "kaggledbqa_test_100", "pick": "A"}
+{"question_id": "kaggledbqa_test_101", "pick": "NONE", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id GROUP BY T1.birth_country ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_102", "pick": "NONE", "sql": "SELECT T1.birth_country FROM hall_of_fame AS T2 JOIN player AS T1 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' AND T2.yearid >= 1871"}
+{"question_id": "kaggledbqa_test_103", "pick": "NONE", "sql": "SELECT T1.award_id FROM player_award AS T1 JOIN salary AS T2 ON T1.player_id = T2.player_id GROUP BY T1.award_id ORDER BY avg(T2.salary) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_104", "pick": "A"}
+{"question_id": "kaggledbqa_test_105", "pick": "A"}
+{"question_id": "kaggledbqa_test_106", "pick": "NONE", "sql": "SELECT T1.player_id, T1.award_id, min(T1.year - T2.birth_year) FROM player_award AS T1 JOIN player AS T2 ON T1.player_id = T2.player_id GROUP BY T1.award_id"}
+{"question_id": "kaggledbqa_test_107", "pick": "NONE", "sql": "SELECT T1.player_id, T1.award_id, max(T1.year - T2.birth_year) FROM player_award AS T1 JOIN player AS T2 ON T1.player_id = T2.player_id GROUP BY T1.award_id"}
+{"question_id": "kaggledbqa_test_108", "pick": "A"}
+{"question_id": "kaggledbqa_test_109", "pick": "NONE", "sql": "SELECT avg(T1.death_year - T1.birth_year) FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y'"}
+{"question_id": "kaggledbqa_test_110", "pick": "NONE", "sql": "SELECT T2.notes, avg(T1.weight) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id GROUP BY T2.notes"}
+{"question_id": "kaggledbqa_test_111", "pick": "NONE", "sql": "SELECT T2.notes FROM hall_of_fame AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id WHERE T1.inducted = 'Y' GROUP BY T2.notes ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_114", "pick": "A"}
+{"question_id": "kaggledbqa_test_115", "pick": "NONE", "sql": "SELECT DISTINCT notes FROM player_award WHERE player_id = 'willite01' AND notes != ''"}
+{"question_id": "kaggledbqa_test_116", "pick": "A"}
+{"question_id": "kaggledbqa_test_117", "pick": "A"}
+{"question_id": "kaggledbqa_test_118", "pick": "NONE", "sql": "SELECT avg(T1.weight) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id WHERE T2.award_id = 'TSN All-Star' AND T2.notes = '3B'"}

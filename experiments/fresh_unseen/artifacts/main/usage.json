@@ -1,0 +1,213 @@
+{
+ "B0": {
+  "fda_recalls_2026_2": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 67738,
+   "cache_read_input_tokens": 485754,
+   "output_tokens": 124,
+   "output_est": 2153,
+   "seconds": 58.811,
+   "dollars_opus55_list": 0.478973
+  },
+  "uk_house_prices_2026_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 47954,
+   "cache_read_input_tokens": 248605,
+   "output_tokens": 72,
+   "output_est": 1439,
+   "seconds": 32.734,
+   "dollars_opus55_list": 0.318311
+  },
+  "chicago_crashes_2026_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 74974,
+   "cache_read_input_tokens": 451574,
+   "output_tokens": 95,
+   "output_est": 1918,
+   "seconds": 52.19,
+   "dollars_opus55_list": 0.503609
+  },
+  "quakes_2026_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 64579,
+   "cache_read_input_tokens": 229079,
+   "output_tokens": 67,
+   "output_est": 1084,
+   "seconds": 31.568,
+   "dollars_opus55_list": 0.390431
+  },
+  "chicago_crime_2026_2": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 72673,
+   "cache_read_input_tokens": 626710,
+   "output_tokens": 136,
+   "output_est": 3036,
+   "seconds": 195.257,
+   "dollars_opus55_list": 0.549515
+  },
+  "f1_2026_2": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 70709,
+   "cache_read_input_tokens": 429872,
+   "output_tokens": 100,
+   "output_est": 2426,
+   "seconds": 58.475,
+   "dollars_opus55_list": 0.488103
+  },
+  "wc2026_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 48542,
+   "cache_read_input_tokens": 373563,
+   "output_tokens": 103,
+   "output_est": 1686,
+   "seconds": 44.518,
+   "dollars_opus55_list": 0.351199
+  },
+  "wc2026_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 46450,
+   "cache_read_input_tokens": 246724,
+   "output_tokens": 63,
+   "output_est": 953,
+   "seconds": 28.631,
+   "dollars_opus55_list": 0.300695
+  },
+  "nws_alerts_2026_2": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 72924,
+   "cache_read_input_tokens": 434843,
+   "output_tokens": 103,
+   "output_est": 2249,
+   "seconds": 58.521,
+   "dollars_opus55_list": 0.496633
+  },
+  "fda_recalls_2026_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 64467,
+   "cache_read_input_tokens": 291759,
+   "output_tokens": 87,
+   "output_est": 1070,
+   "seconds": 32.849,
+   "dollars_opus55_list": 0.402135
+  },
+  "uk_house_prices_2026_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 64885,
+   "cache_read_input_tokens": 293497,
+   "output_tokens": 100,
+   "output_est": 1640,
+   "seconds": 37.582,
+   "dollars_opus55_list": 0.415972
+  },
+  "chicago_crime_2026_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 66013,
+   "cache_read_input_tokens": 290669,
+   "output_tokens": 69,
+   "output_est": 1192,
+   "seconds": 35.502,
+   "dollars_opus55_list": 0.412087
+  },
+  "f1_2026_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 68441,
+   "cache_read_input_tokens": 361817,
+   "output_tokens": 91,
+   "output_est": 1288,
+   "seconds": 40.288,
+   "dollars_opus55_list": 0.440384
+  },
+  "nws_alerts_2026_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 66183,
+   "cache_read_input_tokens": 293293,
+   "output_tokens": 88,
+   "output_est": 1262,
+   "seconds": 35.983,
+   "dollars_opus55_list": 0.414862
+  },
+  "quakes_2026_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 64000,
+   "cache_read_input_tokens": 289998,
+   "output_tokens": 89,
+   "output_est": 1419,
+   "seconds": 35.804,
+   "dollars_opus55_list": 0.406428
+  }
+ },
+ "C": {
+  "uk_house_prices_2026_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 86283,
+   "cache_read_input_tokens": 630149,
+   "output_tokens": 112,
+   "output_est": 2707,
+   "seconds": 65.241,
+   "dollars_opus55_list": 0.611665
+  },
+  "nws_alerts_2026_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 88083,
+   "cache_read_input_tokens": 497843,
+   "output_tokens": 228,
+   "output_est": 1892,
+   "seconds": 57.499,
+   "dollars_opus55_list": 0.577888
+  },
+  "chicago_crashes_2026_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 81102,
+   "cache_read_input_tokens": 355056,
+   "output_tokens": 76,
+   "output_est": 1321,
+   "seconds": 41.639,
+   "dollars_opus55_list": 0.502989
+  },
+  "wc2026_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 89341,
+   "cache_read_input_tokens": 500892,
+   "output_tokens": 144,
+   "output_est": 1892,
+   "seconds": 54.611,
+   "dollars_opus55_list": 0.584787
+  },
+  "f1_2026_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 93539,
+   "cache_read_input_tokens": 645594,
+   "output_tokens": 89,
+   "output_est": 2699,
+   "seconds": 71.759,
+   "dollars_opus55_list": 0.650874
+  },
+  "quakes_2026_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 93316,
+   "cache_read_input_tokens": 666521,
+   "output_tokens": 140,
+   "output_est": 2388,
+   "seconds": 67.439,
+   "dollars_opus55_list": 0.647724
+  },
+  "fda_recalls_2026_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 90268,
+   "cache_read_input_tokens": 668930,
+   "output_tokens": 141,
+   "output_est": 2482,
+   "seconds": 74.784,
+   "dollars_opus55_list": 0.634846
+  },
+  "chicago_crime_2026_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 90425,
+   "cache_read_input_tokens": 669078,
+   "output_tokens": 242,
+   "output_est": 2645,
+   "seconds": 70.757,
+   "dollars_opus55_list": 0.638921
+  }
+ }
+}

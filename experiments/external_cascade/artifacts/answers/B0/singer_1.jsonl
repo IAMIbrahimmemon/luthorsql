@@ -1,0 +1,17 @@
+{"question_id": "spider_realistic_490", "sql": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC"}
+{"question_id": "spider_realistic_491", "sql": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC"}
+{"question_id": "spider_realistic_492", "sql": "SELECT Name FROM singer WHERE Citizenship != 'France'"}
+{"question_id": "spider_realistic_493", "sql": "SELECT Name FROM singer WHERE Citizenship != 'France'"}
+{"question_id": "spider_realistic_494", "sql": "SELECT Name FROM singer WHERE Birth_Year = 1948 OR Birth_Year = 1949"}
+{"question_id": "spider_realistic_495", "sql": "SELECT Name FROM singer WHERE Birth_Year = 1948 OR Birth_Year = 1949"}
+{"question_id": "spider_realistic_496", "sql": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1"}
+{"question_id": "spider_realistic_497", "sql": "SELECT Citizenship, COUNT(*) FROM singer GROUP BY Citizenship"}
+{"question_id": "spider_realistic_498", "sql": "SELECT Citizenship, COUNT(*) FROM singer GROUP BY Citizenship"}
+{"question_id": "spider_realistic_499", "sql": "SELECT Citizenship FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_500", "sql": "SELECT Citizenship FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_501", "sql": "SELECT Citizenship, MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship"}
+{"question_id": "spider_realistic_502", "sql": "SELECT Citizenship, MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship"}
+{"question_id": "spider_realistic_503", "sql": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID = T2.Singer_ID WHERE T2.Sales > 300000"}
+{"question_id": "spider_realistic_504", "sql": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID = T2.Singer_ID WHERE T2.Sales > 300000"}
+{"question_id": "spider_realistic_505", "sql": "SELECT Citizenship FROM singer WHERE Birth_Year < 1945 INTERSECT SELECT Citizenship FROM singer WHERE Birth_Year > 1955"}
+{"question_id": "spider_realistic_506", "sql": "SELECT Citizenship FROM singer WHERE Birth_Year < 1945 INTERSECT SELECT Citizenship FROM singer WHERE Birth_Year > 1955"}

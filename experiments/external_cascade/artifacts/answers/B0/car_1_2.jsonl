@@ -1,0 +1,18 @@
+{"question_id": "spider_realistic_77", "sql": "SELECT count(*) FROM model_list AS T1 JOIN car_makers AS T2 ON T1.Maker = T2.Id JOIN countries AS T3 ON T2.Country = T3.CountryId WHERE T3.CountryName = 'usa'"}
+{"question_id": "spider_realistic_78", "sql": "SELECT avg(MPG) FROM cars_data WHERE Cylinders = 4"}
+{"question_id": "spider_realistic_79", "sql": "SELECT min(Weight) FROM cars_data WHERE Cylinders = 8 AND Year = 1974"}
+{"question_id": "spider_realistic_80", "sql": "SELECT T1.CountryName, T1.CountryId FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) >= 1"}
+{"question_id": "spider_realistic_81", "sql": "SELECT T1.CountryName, T1.CountryId FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) >= 1"}
+{"question_id": "spider_realistic_82", "sql": "SELECT count(*) FROM cars_data WHERE Horsepower > 150"}
+{"question_id": "spider_realistic_83", "sql": "SELECT count(*) FROM cars_data WHERE Horsepower > 150"}
+{"question_id": "spider_realistic_84", "sql": "SELECT T1.CountryName FROM countries AS T1 JOIN continents AS T2 ON T1.Continent = T2.ContId JOIN car_makers AS T3 ON T1.CountryId = T3.Country WHERE T2.Continent = 'europe' GROUP BY T1.CountryName HAVING count(*) >= 3"}
+{"question_id": "spider_realistic_85", "sql": "SELECT T1.CountryName FROM countries AS T1 JOIN continents AS T2 ON T1.Continent = T2.ContId JOIN car_makers AS T3 ON T1.CountryId = T3.Country WHERE T2.Continent = 'europe' GROUP BY T1.CountryName HAVING count(*) >= 3"}
+{"question_id": "spider_realistic_86", "sql": "SELECT T1.Model FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id ORDER BY T2.MPG DESC LIMIT 1"}
+{"question_id": "spider_realistic_87", "sql": "SELECT T1.Model FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id ORDER BY T2.MPG DESC LIMIT 1"}
+{"question_id": "spider_realistic_88", "sql": "SELECT avg(Horsepower) FROM cars_data WHERE Year < 1980"}
+{"question_id": "spider_realistic_89", "sql": "SELECT avg(Horsepower) FROM cars_data WHERE Year < 1980"}
+{"question_id": "spider_realistic_90", "sql": "SELECT avg(T2.Edispl) FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id WHERE T1.Model = 'volvo'"}
+{"question_id": "spider_realistic_91", "sql": "SELECT avg(T2.Edispl) FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id WHERE T1.Model = 'volvo'"}
+{"question_id": "spider_realistic_92", "sql": "SELECT Model FROM car_names GROUP BY Model ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_93", "sql": "SELECT count(*) FROM cars_data WHERE Year = 1980"}
+{"question_id": "spider_realistic_94", "sql": "SELECT count(*) FROM cars_data WHERE Year = 1980"}

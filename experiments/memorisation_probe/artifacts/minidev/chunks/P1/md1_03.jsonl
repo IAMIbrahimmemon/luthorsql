@@ -1,0 +1,50 @@
+{"item_id": "md_1205", "db_id": "thrombosis_prediction", "question": "Was the patient with the number 57266's uric acid within a normal range?"}
+{"item_id": "md_1208", "db_id": "thrombosis_prediction", "question": "Provide IDs for male patients with ALT glutamic pylvic transaminase (GPT) that have history of ALT glutamic pylvic transaminase (GPT) exceed the normal range."}
+{"item_id": "md_1209", "db_id": "thrombosis_prediction", "question": "Please provide the diagnosis of patients with ALT glutamic pylvic transaminase beyond the normal range by ascending order of their date of birth."}
+{"item_id": "md_1220", "db_id": "thrombosis_prediction", "question": "Provide all ID, sex and birthday of patients whose urea nitrogen (UN) just within the borderline of passing?"}
+{"item_id": "md_1225", "db_id": "thrombosis_prediction", "question": "List and group all patients by sex for total bilirubin (T-BIL) level not within the normal range."}
+{"item_id": "md_1227", "db_id": "thrombosis_prediction", "question": "What is the average age of the male patient with high cholesterol?"}
+{"item_id": "md_1229", "db_id": "thrombosis_prediction", "question": "For all patients with triglyceride (TG) level beyond the normal range, how many are age more than 50 years?"}
+{"item_id": "md_1231", "db_id": "thrombosis_prediction", "question": "For patient born between 1936-1956, how many male patients have creatinine phosphokinase beyond the normal range?"}
+{"item_id": "md_1232", "db_id": "thrombosis_prediction", "question": "Provide ID, sex and age of patient who has blood glucose (GLU) not within normal range but with total cholesterol(T-CHO) within normal range."}
+{"item_id": "md_1235", "db_id": "thrombosis_prediction", "question": "What are the patient's diagnosis for those who has lower red blood blood cell? State their ID and age."}
+{"item_id": "md_1238", "db_id": "thrombosis_prediction", "question": "Among the patients who were diagnosed with SLE, who is the oldest with normal hemoglobin level. Provide the ID and sex."}
+{"item_id": "md_1239", "db_id": "thrombosis_prediction", "question": "Name the ID and age of patient with two or more laboratory examinations which show their hematoclit level exceeded the normal range."}
+{"item_id": "md_1241", "db_id": "thrombosis_prediction", "question": "For patients with abnormal platelet level, state the number of patients with lower than normal range. How is it compare to the number of patients with higher than normal range?"}
+{"item_id": "md_1242", "db_id": "thrombosis_prediction", "question": "For laboratory examinations take in 1984, list all patients below 50 years old with normal platelet level."}
+{"item_id": "md_1243", "db_id": "thrombosis_prediction", "question": "For all patients who are older than 55 years old, what is the percentage of female who has abnormal prothrombin time (PT)?"}
+{"item_id": "md_1247", "db_id": "thrombosis_prediction", "question": "Among the male patients who have a normal level of white blood cells, how many of them have an abnormal fibrinogen level?"}
+{"item_id": "md_1251", "db_id": "thrombosis_prediction", "question": "How many patients with an Ig G higher than normal?"}
+{"item_id": "md_1252", "db_id": "thrombosis_prediction", "question": "Among the patients with a normal Ig G level, how many of them have symptoms?"}
+{"item_id": "md_1254", "db_id": "thrombosis_prediction", "question": "How many patients with a normal Ig A level came to the hospital after 1990/1/1?"}
+{"item_id": "md_1255", "db_id": "thrombosis_prediction", "question": "For the patients with an abnormal Ig M level, what is the most common disease they are diagnosed with?"}
+{"item_id": "md_1256", "db_id": "thrombosis_prediction", "question": "How many patients with a abnormal C-reactive protein don't have their data recorded?"}
+{"item_id": "md_1257", "db_id": "thrombosis_prediction", "question": "Among the patients whose creatinine level is abnormal, how many of them aren't 70 yet?"}
+{"item_id": "md_1265", "db_id": "thrombosis_prediction", "question": "How many patients have a normal level of anti-ribonuclear protein and have been admitted to the hospital?"}
+{"item_id": "md_1267", "db_id": "thrombosis_prediction", "question": "Among the patients with normal anti-SM, how many of them does not have thrombosis?"}
+{"item_id": "md_1270", "db_id": "thrombosis_prediction", "question": "Among the patients who has a normal anti-scl70, how many of them are female and does not have any symptom?"}
+{"item_id": "md_1275", "db_id": "thrombosis_prediction", "question": "Among the patients who has a normal level of anti-centromere and a normal level of anti-SSB, how many of them are male?"}
+{"item_id": "md_1281", "db_id": "thrombosis_prediction", "question": "Among the patients who have an abnormal level of glutamic oxaloacetic transaminase, when was the youngest of them born?"}
+{"item_id": "md_1302", "db_id": "thrombosis_prediction", "question": "For the patients with a normal range of creatinine phosphokinase, how many of them have a positive measure of degree of coagulation?"}
+{"item_id": "md_1025", "db_id": "european_football_2", "question": "Give the name of the league had the most goals in the 2016 season?"}
+{"item_id": "md_1028", "db_id": "european_football_2", "question": "In Scotland Premier League, which away team won the most during the 2010 season?"}
+{"item_id": "md_1029", "db_id": "european_football_2", "question": "What are the speed in which attacks are put together of the top 4 teams with the highest build Up Play Speed?"}
+{"item_id": "md_1030", "db_id": "european_football_2", "question": "Give the name of the league had the most matches end as draw in the 2016 season?"}
+{"item_id": "md_1031", "db_id": "european_football_2", "question": "At present, calculate for the player's age who have a sprint speed of no less than 97 between 2013 to 2015."}
+{"item_id": "md_1032", "db_id": "european_football_2", "question": "Give the name of the league with the highest matches of all time and how many matches were played in the said league."}
+{"item_id": "md_1035", "db_id": "european_football_2", "question": "Give the team_fifa_api_id of teams with more than 50 but less than 60 build-up play speed."}
+{"item_id": "md_1036", "db_id": "european_football_2", "question": "List the long name of teams with above-average build-up play passing in 2012."}
+{"item_id": "md_1037", "db_id": "european_football_2", "question": "Calculate the percentage of players who prefer left foot, who were born between 1987 and 1992."}
+{"item_id": "md_1039", "db_id": "european_football_2", "question": "Find the average number of long-shot done by Ahmed Samir Farag."}
+{"item_id": "md_1040", "db_id": "european_football_2", "question": "List the top 10 players' names whose heights are above 180 in descending order of average heading accuracy."}
+{"item_id": "md_1042", "db_id": "european_football_2", "question": "List the name of leagues in which the average goals by the home team is higher than the away team in the 2009/2010 season."}
+{"item_id": "md_1044", "db_id": "european_football_2", "question": "List the football players with a birthyear of 1970 and a birthmonth of October."}
+{"item_id": "md_1048", "db_id": "european_football_2", "question": "What is the overall rating of the football player Gabriel Tamas in year 2011?"}
+{"item_id": "md_1057", "db_id": "european_football_2", "question": "Calculate the average home team goal in the 2010/2011 season in the country of Poland."}
+{"item_id": "md_1058", "db_id": "european_football_2", "question": "Who has the highest average finishing rate between the highest and shortest football player?"}
+{"item_id": "md_1068", "db_id": "european_football_2", "question": "From 2010 to 2015, what was the average overall rating of players who are higher than 170?"}
+{"item_id": "md_1076", "db_id": "european_football_2", "question": "What is the difference of the average ball control score between Abdou Diallo and Aaron Appindangoye\n?"}
+{"item_id": "md_1078", "db_id": "european_football_2", "question": "Which player is older, Aaron Lennon or Abdelaziz Barrada?"}
+{"item_id": "md_1079", "db_id": "european_football_2", "question": "Which player is the tallest?"}
+{"item_id": "md_1080", "db_id": "european_football_2", "question": "Among the players whose preferred foot was the left foot when attacking, how many of them would remain in his position when the team attacked?"}
+{"item_id": "md_1084", "db_id": "european_football_2", "question": "Among the players born before the year 1986, how many of them would remain in his position and defense while the team attacked?"}

@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_400", "db_id": "world_1", "question": "What are the African countries that have less people than any country in Asia?"}
+{"item_id": "spider_realistic_401", "db_id": "world_1", "question": "Which African countries have fewer people than that of any country in Asia?"}
+{"item_id": "spider_realistic_402", "db_id": "world_1", "question": "Which Asian countries have more people than any country in Africa?"}
+{"item_id": "spider_realistic_403", "db_id": "world_1", "question": "What are the Asian countries have more people than that of any country in Africa?"}
+{"item_id": "spider_realistic_404", "db_id": "world_1", "question": "What are the country codes for countries that do not speak English?"}
+{"item_id": "spider_realistic_405", "db_id": "world_1", "question": "Return the country codes for countries that do not speak English."}
+{"item_id": "spider_realistic_406", "db_id": "world_1", "question": "What are the country codes of countries where people speak other than English?"}
+{"item_id": "spider_realistic_407", "db_id": "world_1", "question": "Give the country codes for countries in which people does not speak English."}
+{"item_id": "spider_realistic_408", "db_id": "world_1", "question": "What are the codes of the countries that do not speak English and are not Republic?"}
+{"item_id": "spider_realistic_409", "db_id": "world_1", "question": "Return the codes of non republic countries that do not speak Englishs."}
+{"item_id": "spider_realistic_410", "db_id": "world_1", "question": "Which cities are in European countries where English is not spoken officially?"}
+{"item_id": "spider_realistic_411", "db_id": "world_1", "question": "Whic`h unique cities are in  Asian countries where Chinese is the official ?"}
+{"item_id": "spider_realistic_412", "db_id": "world_1", "question": "Return the different names of cities that are in Asia and for which Chinese is used officially ."}
+{"item_id": "spider_realistic_413", "db_id": "world_1", "question": "What are the name, independence year, and surface area of the country with the least number of nationalities?"}
+{"item_id": "spider_realistic_414", "db_id": "world_1", "question": "Give the name, year of independence, and surface area of the country that has the fewest people."}
+{"item_id": "spider_realistic_415", "db_id": "world_1", "question": "What are the population, name and leader of the largest country by land?"}
+{"item_id": "spider_realistic_416", "db_id": "world_1", "question": "Find the number of cities in each district who have more people than average?"}
+{"item_id": "spider_realistic_417", "db_id": "world_1", "question": "How many cities in each district have more number of people than average?"}
+{"item_id": "spider_realistic_418", "db_id": "world_1", "question": "Return the names and surface areas of the 5 largest countries."}
+{"item_id": "spider_realistic_419", "db_id": "world_1", "question": "What are names of top 3 countries with most people?"}
+{"item_id": "spider_realistic_420", "db_id": "world_1", "question": "Return the names of the 3 most populated countries."}
+{"item_id": "spider_realistic_421", "db_id": "world_1", "question": "What are the names of the nations with the 3 lowest number of citizens?"}
+{"item_id": "spider_realistic_422", "db_id": "world_1", "question": "Return the names of the 3 countries with the fewest people."}
+{"item_id": "spider_realistic_423", "db_id": "world_1", "question": "how many countries are in Asia?"}
+{"item_id": "spider_realistic_424", "db_id": "world_1", "question": "Count the number of countries in Asia."}
+{"item_id": "spider_realistic_425", "db_id": "world_1", "question": "What are the names of the countries that are in Europe and have 80000 people?"}
+{"item_id": "spider_realistic_426", "db_id": "world_1", "question": "Give the names of countries that are in Europe and have 80000 people."}
+{"item_id": "spider_realistic_427", "db_id": "world_1", "question": "What is the total population and average area of countries in North America who is bigger than 3000 square miles"}
+{"item_id": "spider_realistic_428", "db_id": "world_1", "question": "Give the total population and average  corresponding to countries in Noth America that is bigger than 3000 square miles."}
+{"item_id": "spider_realistic_429", "db_id": "world_1", "question": "What are the cities who have more than 160000 people and less than 900000 people?"}
+{"item_id": "spider_realistic_430", "db_id": "world_1", "question": "Return the names of cities that have between 160000 and 900000 people."}
+{"item_id": "spider_realistic_431", "db_id": "world_1", "question": "What is the language spoken by the largest percentage of people in each nation?"}
+{"item_id": "spider_realistic_432", "db_id": "world_1", "question": "What are the codes of the different nations, and what are the languages spoken by the greatest percentage of people for each?"}
+{"item_id": "spider_realistic_433", "db_id": "world_1", "question": "What is the total number of countries where Spanish is spoken by the largest percentage of people?"}
+{"item_id": "spider_realistic_434", "db_id": "world_1", "question": "Count the number of countries for which Spanish is predominantly spoken ."}
+{"item_id": "spider_realistic_435", "db_id": "world_1", "question": "What are the codes of countries where Spanish is spoken by the largest percentage of people?"}
+{"item_id": "spider_realistic_436", "db_id": "world_1", "question": "Return the codes of countries for which Spanish is predominantly spoken ."}
+{"item_id": "spider_realistic_437", "db_id": "orchestra", "question": "List the names of conductors from youngest to oldest."}
+{"item_id": "spider_realistic_438", "db_id": "orchestra", "question": "What are the names of conductors, ordered by how old they are?"}
+{"item_id": "spider_realistic_439", "db_id": "orchestra", "question": "What are the names of conductors who are not from \"\"USA\"\"?"}
+{"item_id": "spider_realistic_440", "db_id": "orchestra", "question": "Return the names of non USA conductors."}
+{"item_id": "spider_realistic_441", "db_id": "orchestra", "question": "What are the record companies of orchestras in descending order of time in which they started?"}
+{"item_id": "spider_realistic_442", "db_id": "orchestra", "question": "Return the record companies of orchestras, sorted ascending by the time they have existed."}
+{"item_id": "spider_realistic_443", "db_id": "orchestra", "question": "Find the number of orchestras recorded in \"\"\"\"CD\"\"\"\" or \"\"\"\"DVD\"\"\"\"."}
+{"item_id": "spider_realistic_444", "db_id": "network_1", "question": "What grade is Kyle in?"}
+{"item_id": "spider_realistic_445", "db_id": "network_1", "question": "Return the grade for Kyle."}
+{"item_id": "spider_realistic_446", "db_id": "network_1", "question": "Show the names of all high schoolers in  10."}
+{"item_id": "spider_realistic_447", "db_id": "network_1", "question": "What are the names of all high schoolers in  10?"}
+{"item_id": "spider_realistic_448", "db_id": "network_1", "question": "Show the ID of Kyle."}
+{"item_id": "spider_realistic_449", "db_id": "network_1", "question": "What is Kyle's id?"}

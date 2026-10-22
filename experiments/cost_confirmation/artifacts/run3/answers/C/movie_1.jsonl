@@ -1,0 +1,6 @@
+{"question_id": "bird_train_train_743", "pick": "NONE", "sql": "SELECT (MAX(CAST(SUBSTR(T2.screentime, 3, 2) AS REAL)) - MIN(CAST(SUBSTR(T2.screentime, 3, 2) AS REAL))) * 100 / MIN(CAST(SUBSTR(T2.screentime, 3, 2) AS REAL)) FROM movie AS T1 INNER JOIN characters AS T2 ON T1.MovieID = T2.MovieID WHERE T1.Title = 'Batman'"}
+{"question_id": "bird_train_train_746", "pick": "A"}
+{"question_id": "bird_train_train_755", "pick": "A"}
+{"question_id": "bird_train_train_756", "pick": "NONE", "sql": "SELECT T3.Name FROM movie AS T1 INNER JOIN characters AS T2 ON T1.MovieID = T2.MovieID INNER JOIN actor AS T3 ON T3.ActorID = T2.ActorID WHERE T1.\"Release Date\" = '2015-10-26' AND T2.creditOrder = 1"}
+{"question_id": "bird_train_train_772", "pick": "A"}
+{"question_id": "bird_train_train_775", "pick": "NONE", "sql": "SELECT T1.\"Character Name\" FROM characters AS T1 INNER JOIN actor AS T2 ON T1.ActorID = T2.ActorID INNER JOIN movie AS T3 ON T1.MovieID = T3.MovieID WHERE T2.Gender = 'Female' AND T3.Title = 'Bruce Almighty' AND T2.\"Birth City\" = 'Sherman Oaks' AND T2.\"Height (Inches)\" > (SELECT AVG(\"Height (Inches)\") * 0.5 FROM actor)"}

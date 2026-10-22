@@ -1,0 +1,19 @@
+{"question_id": "q1250", "pick": "A"}
+{"question_id": "q1261", "pick": "A"}
+{"question_id": "q1265", "pick": "A"}
+{"question_id": "q1269", "pick": "A"}
+{"question_id": "q1283", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t1.installment_ref), CAST(SUM(CASE WHEN t2.type = 'Cast' THEN 1 ELSE 0 END) AS REAL) / COUNT(DISTINCT t1.installment_ref) FROM installment AS t1 INNER JOIN recognition AS t2 ON t1.installment_ref = t2.installment_ref WHERE t1.cycle = 9 AND t1.franchise = 'Law and Order'"}
+{"question_id": "q1284", "pick": "NONE", "sql": "SELECT t1.label FROM tag AS t1 INNER JOIN installment AS t2 ON t1.installment_ref = t2.installment_ref WHERE t2.ballot_count NOT IN (SELECT MAX(ballot_count) FROM installment) ORDER BY t2.ballot_count DESC LIMIT 1"}
+{"question_id": "q1290", "pick": "A"}
+{"question_id": "q1297", "pick": "A"}
+{"question_id": "q1301", "pick": "A"}
+{"question_id": "q1308", "pick": "NONE", "sql": "SELECT DISTINCT t1.natal_zone FROM individual AS t1 INNER JOIN recognition AS t2 ON t1.individual_ref = t2.individual_ref WHERE t2.capacity = 'assistant location manager'"}
+{"question_id": "q1319", "pick": "A"}
+{"question_id": "q1321", "pick": "A"}
+{"question_id": "q1323", "pick": "NONE", "sql": "SELECT COUNT(t1.accolade_ref) FROM accolade AS t1 INNER JOIN installment AS t2 ON t1.installment_ref = t2.installment_ref WHERE t1.annum = 1999 AND t1.body = 'Primetime Emmy Awards' AND t1.outcome = 'Nominee' AND t2.installment_ordinal = 20 AND t2.franchise = 'Law and Order'"}
+{"question_id": "q1324", "pick": "NONE", "sql": "SELECT t2.installment_ref, t2.capacity FROM individual AS t1 INNER JOIN accolade AS t2 ON t1.individual_ref = t2.individual_ref WHERE t2.annum = 1999 AND t2.prize = 'Outstanding Guest Actress in a Drama Series' AND t2.body = 'Primetime Emmy Awards' AND t1.moniker = 'Julia Roberts' AND t2.outcome = 'Nominee'"}
+{"question_id": "q1330", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN t1.natal_nation = 'USA' THEN 1 ELSE 0 END) AS REAL) / COUNT(*), t2.capacity FROM individual AS t1 INNER JOIN recognition AS t2 ON t1.individual_ref = t2.individual_ref INNER JOIN installment AS t3 ON t2.installment_ref = t3.installment_ref WHERE t2.type = 'Cast' AND t3.installment_ordinal = 2"}
+{"question_id": "q1333", "pick": "A"}
+{"question_id": "q1342", "pick": "A"}
+{"question_id": "q1346", "pick": "A"}
+{"question_id": "q1353", "pick": "A"}

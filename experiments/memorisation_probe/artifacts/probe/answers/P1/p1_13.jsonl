@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_450", "sql": "SELECT count(*) FROM Highschooler WHERE grade = 9 OR grade = 10"}
+{"item_id": "spider_realistic_451", "sql": "SELECT count(*) FROM Highschooler WHERE grade = 9 OR grade = 10"}
+{"item_id": "spider_realistic_452", "sql": "SELECT grade, count(*) FROM Highschooler GROUP BY grade"}
+{"item_id": "spider_realistic_453", "sql": "SELECT grade, count(*) FROM Highschooler GROUP BY grade"}
+{"item_id": "spider_realistic_454", "sql": "SELECT grade FROM Highschooler GROUP BY grade ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_455", "sql": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id JOIN Highschooler AS T3 ON T1.friend_id = T3.id WHERE T2.name = 'Kyle'"}
+{"item_id": "spider_realistic_456", "sql": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id JOIN Highschooler AS T3 ON T1.friend_id = T3.id WHERE T2.name = 'Kyle'"}
+{"item_id": "spider_realistic_457", "sql": "SELECT count(*) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id WHERE T2.name = 'Kyle'"}
+{"item_id": "spider_realistic_458", "sql": "SELECT count(*) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id WHERE T2.name = 'Kyle'"}
+{"item_id": "spider_realistic_459", "sql": "SELECT count(*) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id WHERE T2.name = 'Kyle'"}
+{"item_id": "spider_realistic_460", "sql": "SELECT count(*) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id WHERE T2.name = 'Kyle'"}
+{"item_id": "spider_realistic_461", "sql": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id)"}
+{"item_id": "spider_realistic_462", "sql": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id)"}
+{"item_id": "spider_realistic_463", "sql": "SELECT min(grade) FROM Highschooler WHERE id NOT IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id)"}
+{"item_id": "spider_realistic_464", "sql": "SELECT min(grade) FROM Highschooler WHERE id NOT IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id)"}
+{"item_id": "spider_realistic_465", "sql": "SELECT professional_id, last_name, cell_number FROM Professionals WHERE state = 'Indiana' UNION SELECT T1.professional_id, T1.last_name, T1.cell_number FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count(*) > 2"}
+{"item_id": "spider_realistic_466", "sql": "SELECT professional_id, last_name, cell_number FROM Professionals WHERE state = 'Indiana' UNION SELECT T1.professional_id, T1.last_name, T1.cell_number FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count(*) > 2"}
+{"item_id": "spider_realistic_467", "sql": "SELECT name FROM Dogs WHERE dog_id IN (SELECT dog_id FROM Treatments GROUP BY dog_id HAVING sum(cost_of_treatment) > 1000)"}
+{"item_id": "spider_realistic_468", "sql": "SELECT T1.owner_id, T2.first_name, T2.last_name FROM Dogs AS T1 JOIN Owners AS T2 ON T1.owner_id = T2.owner_id GROUP BY T1.owner_id ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_469", "sql": "SELECT T1.owner_id, T2.first_name, T2.last_name FROM Dogs AS T1 JOIN Owners AS T2 ON T1.owner_id = T2.owner_id GROUP BY T1.owner_id ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_470", "sql": "SELECT T1.professional_id, T1.role_code, T1.first_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count(*) >= 2"}
+{"item_id": "spider_realistic_471", "sql": "SELECT T1.professional_id, T1.role_code, T1.first_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count(*) >= 2"}
+{"item_id": "spider_realistic_472", "sql": "SELECT T1.treatment_type_description FROM Treatment_Types AS T1 JOIN Treatments AS T2 ON T1.treatment_type_code = T2.treatment_type_code GROUP BY T1.treatment_type_code ORDER BY sum(T2.cost_of_treatment) ASC LIMIT 1"}
+{"item_id": "spider_realistic_473", "sql": "SELECT T1.treatment_type_description FROM Treatment_Types AS T1 JOIN Treatments AS T2 ON T1.treatment_type_code = T2.treatment_type_code GROUP BY T1.treatment_type_code ORDER BY sum(T2.cost_of_treatment) ASC LIMIT 1"}
+{"item_id": "spider_realistic_474", "sql": "SELECT T1.owner_id, T1.zip_code FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id JOIN Treatments AS T3 ON T2.dog_id = T3.dog_id GROUP BY T1.owner_id ORDER BY sum(T3.cost_of_treatment) DESC LIMIT 1"}
+{"item_id": "spider_realistic_475", "sql": "SELECT T1.owner_id, T1.zip_code FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id JOIN Treatments AS T3 ON T2.dog_id = T3.dog_id GROUP BY T1.owner_id ORDER BY sum(T3.cost_of_treatment) DESC LIMIT 1"}
+{"item_id": "spider_realistic_476", "sql": "SELECT DISTINCT T1.first_name, T1.last_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id WHERE T2.cost_of_treatment < (SELECT avg(cost_of_treatment) FROM Treatments)"}
+{"item_id": "spider_realistic_477", "sql": "SELECT DISTINCT T1.first_name, T1.last_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id WHERE T2.cost_of_treatment < (SELECT avg(cost_of_treatment) FROM Treatments)"}
+{"item_id": "spider_realistic_478", "sql": "SELECT T1.first_name, T2.name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id WHERE T1.state = 'Virginia'"}
+{"item_id": "spider_realistic_479", "sql": "SELECT T1.first_name, T2.name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id WHERE T1.state = 'Virginia'"}
+{"item_id": "spider_realistic_480", "sql": "SELECT T1.last_name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id WHERE T2.age = (SELECT min(age) FROM Dogs)"}
+{"item_id": "spider_realistic_481", "sql": "SELECT T1.last_name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id WHERE T2.age = (SELECT min(age) FROM Dogs)"}
+{"item_id": "spider_realistic_482", "sql": "SELECT email_address FROM Professionals WHERE state = 'Hawaii' OR state = 'Wisconsin'"}
+{"item_id": "spider_realistic_483", "sql": "SELECT email_address FROM Professionals WHERE state = 'Hawaii' OR state = 'Wisconsin'"}
+{"item_id": "spider_realistic_484", "sql": "SELECT count(*) FROM Dogs WHERE age < (SELECT avg(age) FROM Dogs)"}
+{"item_id": "spider_realistic_485", "sql": "SELECT count(*) FROM Dogs WHERE age < (SELECT avg(age) FROM Dogs)"}
+{"item_id": "spider_realistic_486", "sql": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1"}
+{"item_id": "spider_realistic_487", "sql": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1"}
+{"item_id": "spider_realistic_488", "sql": "SELECT name, age, weight FROM Dogs WHERE abandoned_yn = 1"}
+{"item_id": "spider_realistic_489", "sql": "SELECT name, age, weight FROM Dogs WHERE abandoned_yn = 1"}
+{"item_id": "spider_realistic_490", "sql": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC"}
+{"item_id": "spider_realistic_491", "sql": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC"}
+{"item_id": "spider_realistic_492", "sql": "SELECT Name FROM singer WHERE Citizenship != 'France'"}
+{"item_id": "spider_realistic_493", "sql": "SELECT Name FROM singer WHERE Citizenship != 'France'"}
+{"item_id": "spider_realistic_494", "sql": "SELECT Name FROM singer WHERE Birth_Year = 1948 OR Birth_Year = 1949"}
+{"item_id": "spider_realistic_495", "sql": "SELECT Name FROM singer WHERE Birth_Year = 1948 OR Birth_Year = 1949"}
+{"item_id": "spider_realistic_496", "sql": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1"}
+{"item_id": "spider_realistic_497", "sql": "SELECT Citizenship, count(*) FROM singer GROUP BY Citizenship"}
+{"item_id": "spider_realistic_498", "sql": "SELECT Citizenship, count(*) FROM singer GROUP BY Citizenship"}
+{"item_id": "spider_realistic_499", "sql": "SELECT Citizenship FROM singer GROUP BY Citizenship ORDER BY count(*) DESC LIMIT 1"}

@@ -1,0 +1,17 @@
+{"question_id": "fresh_wc2026_3", "pick": "NONE", "sql": "SELECT h.team_name, a.team_name FROM matches m JOIN teams h ON h.team_id=m.home_team_id JOIN teams a ON a.team_id=m.away_team_id WHERE m.match_id=80"}
+{"question_id": "fresh_wc2026_5", "pick": "A"}
+{"question_id": "fresh_wc2026_6", "pick": "A"}
+{"question_id": "fresh_wc2026_7", "pick": "A"}
+{"question_id": "fresh_wc2026_8", "pick": "NONE", "sql": "WITH c AS (SELECT t.team_name, COUNT(*) n FROM goals g JOIN matches m ON g.match_id=m.match_id JOIN teams t ON t.team_id=g.scoring_team_id WHERE m.went_to_extra_time=1 GROUP BY t.team_name) SELECT team_name, n FROM c WHERE n=(SELECT MAX(n) FROM c) ORDER BY team_name"}
+{"question_id": "fresh_wc2026_9", "pick": "NONE", "sql": "SELECT ROUND(CAST(COUNT(g.goal_id) AS REAL)/COUNT(DISTINCT m.match_id),2) FROM matches m JOIN stadiums s ON s.stadium_id=m.stadium_id LEFT JOIN goals g ON g.match_id=m.match_id WHERE s.country='USA'"}
+{"question_id": "fresh_wc2026_12", "pick": "A"}
+{"question_id": "fresh_wc2026_14", "pick": "A"}
+{"question_id": "fresh_wc2026_15", "pick": "A"}
+{"question_id": "fresh_wc2026_17", "pick": "NONE", "sql": "SELECT ROUND(100.0*SUM(went_to_penalties=1)/COUNT(*),1) FROM matches WHERE stage='Round of 32'"}
+{"question_id": "fresh_wc2026_18", "pick": "B"}
+{"question_id": "fresh_wc2026_19", "pick": "NONE", "sql": "SELECT match_id, home_ft+away_ft AS total, RANK() OVER (ORDER BY home_ft+away_ft DESC) rk FROM matches ORDER BY rk, match_id"}
+{"question_id": "fresh_wc2026_24", "pick": "A"}
+{"question_id": "fresh_wc2026_25", "pick": "A"}
+{"question_id": "fresh_wc2026_27", "pick": "NONE", "sql": "SELECT s.country, ROUND(100.0*SUM(m.went_to_extra_time=1)/COUNT(*),1) p FROM matches m JOIN stadiums s ON s.stadium_id=m.stadium_id GROUP BY s.country ORDER BY p DESC, s.country"}
+{"question_id": "fresh_wc2026_28", "pick": "NONE", "sql": "SELECT t.team_name, ROUND(100.0*SUM(g.is_penalty=1)/COUNT(*),1) p FROM goals g JOIN teams t ON t.team_id=g.scoring_team_id GROUP BY t.team_name ORDER BY p DESC, t.team_name"}
+{"question_id": "fresh_wc2026_29", "pick": "NONE", "sql": "WITH c AS (SELECT t.team_name, COUNT(*) n FROM goals g JOIN matches m ON g.match_id=m.match_id JOIN stadiums s ON s.stadium_id=m.stadium_id JOIN teams t ON t.team_id=g.scoring_team_id WHERE s.stadium_name='Atlanta Stadium' GROUP BY t.team_name) SELECT team_name, n, RANK() OVER (ORDER BY n DESC) rk FROM c ORDER BY rk, team_name"}

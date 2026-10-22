@@ -1,0 +1,17 @@
+{"question_id": "bird_train_train_909", "pick": "A"}
+{"question_id": "bird_train_train_910", "pick": "A"}
+{"question_id": "bird_train_train_914", "pick": "A"}
+{"question_id": "bird_train_train_921", "pick": "A"}
+{"question_id": "bird_train_train_923", "pick": "B"}
+{"question_id": "bird_train_train_932", "pick": "NONE", "sql": "SELECT T1.capability FROM RA AS T1 INNER JOIN student AS T2 ON T1.student_id = T2.student_id WHERE T2.type = 'RPG' AND T2.intelligence >= 4"}
+{"question_id": "bird_train_train_933", "pick": "A"}
+{"question_id": "bird_train_train_936", "pick": "A"}
+{"question_id": "bird_train_train_939", "pick": "A"}
+{"question_id": "bird_train_train_944", "pick": "A"}
+{"question_id": "bird_train_train_947", "pick": "A"}
+{"question_id": "bird_train_train_948", "pick": "A"}
+{"question_id": "bird_train_train_951", "pick": "A"}
+{"question_id": "bird_train_train_960", "pick": "A"}
+{"question_id": "bird_train_train_962", "pick": "A"}
+{"question_id": "bird_train_train_963", "pick": "A"}
+{"question_id": "bird_train_train_966", "pick": "A"}

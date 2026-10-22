@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_444", "sql": "SELECT grade FROM Highschooler WHERE name = 'Kyle'"}
+{"question_id": "spider_realistic_445", "sql": "SELECT grade FROM Highschooler WHERE name = 'Kyle'"}
+{"question_id": "spider_realistic_446", "sql": "SELECT name FROM Highschooler WHERE grade = 10"}
+{"question_id": "spider_realistic_447", "sql": "SELECT name FROM Highschooler WHERE grade = 10"}
+{"question_id": "spider_realistic_448", "sql": "SELECT ID FROM Highschooler WHERE name = 'Kyle'"}
+{"question_id": "spider_realistic_449", "sql": "SELECT ID FROM Highschooler WHERE name = 'Kyle'"}
+{"question_id": "spider_realistic_450", "sql": "SELECT count(*) FROM Highschooler WHERE grade = 9 OR grade = 10"}
+{"question_id": "spider_realistic_451", "sql": "SELECT count(*) FROM Highschooler WHERE grade = 9 OR grade = 10"}
+{"question_id": "spider_realistic_452", "sql": "SELECT grade, count(*) FROM Highschooler GROUP BY grade"}
+{"question_id": "spider_realistic_453", "sql": "SELECT grade, count(*) FROM Highschooler GROUP BY grade"}
+{"question_id": "spider_realistic_454", "sql": "SELECT grade FROM Highschooler GROUP BY grade ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_455", "sql": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID JOIN Highschooler AS T3 ON T1.friend_id = T3.ID WHERE T2.name = 'Kyle'"}
+{"question_id": "spider_realistic_456", "sql": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID JOIN Highschooler AS T3 ON T1.friend_id = T3.ID WHERE T2.name = 'Kyle'"}
+{"question_id": "spider_realistic_457", "sql": "SELECT count(*) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID WHERE T2.name = 'Kyle'"}
+{"question_id": "spider_realistic_458", "sql": "SELECT count(*) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID WHERE T2.name = 'Kyle'"}
+{"question_id": "spider_realistic_459", "sql": "SELECT count(*) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID WHERE T2.name = 'Kyle'"}
+{"question_id": "spider_realistic_460", "sql": "SELECT count(*) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID WHERE T2.name = 'Kyle'"}
+{"question_id": "spider_realistic_461", "sql": "SELECT avg(grade) FROM Highschooler WHERE ID IN (SELECT student_id FROM Friend)"}
+{"question_id": "spider_realistic_462", "sql": "SELECT avg(grade) FROM Highschooler WHERE ID IN (SELECT student_id FROM Friend)"}
+{"question_id": "spider_realistic_463", "sql": "SELECT min(grade) FROM Highschooler WHERE ID NOT IN (SELECT student_id FROM Friend)"}
+{"question_id": "spider_realistic_464", "sql": "SELECT min(grade) FROM Highschooler WHERE ID NOT IN (SELECT student_id FROM Friend)"}

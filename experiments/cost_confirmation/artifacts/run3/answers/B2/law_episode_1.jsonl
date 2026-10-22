@@ -1,0 +1,17 @@
+{"question_id": "bird_train_train_1247", "pick": "NONE", "sql": "SELECT T1.title FROM Episode T1 JOIN Keyword T2 ON T1.episode_id=T2.episode_id WHERE T2.keyword='laundering money'"}
+{"question_id": "bird_train_train_1250", "pick": "NONE", "sql": "SELECT SUM(T2.votes) FROM Episode T1 JOIN Vote T2 ON T1.episode_id=T2.episode_id WHERE T1.title='Cherished'"}
+{"question_id": "bird_train_train_1252", "pick": "NONE", "sql": "SELECT T1.role FROM Credit T1 JOIN Person T2 ON T1.person_id=T2.person_id JOIN Episode T3 ON T1.episode_id=T3.episode_id WHERE T2.name='Park Dietz' AND T3.title='Cherished' AND T1.credited='true'"}
+{"question_id": "bird_train_train_1257", "pick": "NONE", "sql": "SELECT T1.credited FROM Credit T1 JOIN Person T2 ON T1.person_id=T2.person_id WHERE T2.name='Anthony Azzara' AND T1.episode_id='tt0629204'"}
+{"question_id": "bird_train_train_1261", "pick": "NONE", "sql": "SELECT COUNT(T1.role) FROM Credit T1 JOIN Episode T2 ON T1.episode_id=T2.episode_id WHERE T2.series='Law and Order' AND T2.season=9 AND T2.episode=17 AND T1.credited='true'"}
+{"question_id": "bird_train_train_1263", "pick": "NONE", "sql": "SELECT T1.role FROM Credit T1 JOIN Person T2 ON T1.person_id=T2.person_id WHERE T2.name='Joseph Blair'"}
+{"question_id": "bird_train_train_1265", "pick": "NONE", "sql": "SELECT air_date FROM Episode ORDER BY votes DESC LIMIT 1"}
+{"question_id": "bird_train_train_1269", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T1.title='Refuge: Part 1' THEN 1 ELSE 0 END) AS REAL)/SUM(CASE WHEN T1.title='Shield' THEN 1 ELSE 0 END) FROM Episode T1 JOIN Keyword T2 ON T1.episode_id=T2.episode_id"}
+{"question_id": "bird_train_train_1278", "pick": "NONE", "sql": "SELECT T2.keyword FROM Episode T1 JOIN Keyword T2 ON T1.episode_id=T2.episode_id WHERE T1.title='Shield'"}
+{"question_id": "bird_train_train_1283", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T2.episode_id), CAST(COUNT(T1.person_id) AS REAL)/COUNT(DISTINCT T2.episode_id) FROM Credit T1 JOIN Episode T2 ON T1.episode_id=T2.episode_id WHERE T1.category='Cast' AND T2.season=9 AND T2.series='Law and Order'"}
+{"question_id": "bird_train_train_1284", "pick": "NONE", "sql": "SELECT T2.keyword FROM Episode T1 JOIN Keyword T2 ON T1.episode_id=T2.episode_id ORDER BY T1.votes DESC LIMIT 1 OFFSET 1"}
+{"question_id": "bird_train_train_1287", "pick": "NONE", "sql": "SELECT T1.organization FROM Award T1 JOIN Person T2 ON T1.person_id=T2.person_id WHERE T2.name='Constantine Makris' AND T1.result='Winner' GROUP BY T1.organization ORDER BY COUNT(T1.award_id) DESC LIMIT 1"}
+{"question_id": "bird_train_train_1289", "pick": "NONE", "sql": "SELECT COUNT(T2.person_id) FROM Episode T1 JOIN Credit T2 ON T1.episode_id=T2.episode_id WHERE T1.title='Admissions' AND T2.credited=''"}
+{"question_id": "bird_train_train_1290", "pick": "NONE", "sql": "SELECT T1.title FROM Episode T1 JOIN Credit T2 ON T1.episode_id=T2.episode_id WHERE T2.category='Art Department' GROUP BY T1.episode_id ORDER BY COUNT(T2.person_id) DESC LIMIT 1"}
+{"question_id": "bird_train_train_1291", "pick": "NONE", "sql": "SELECT COUNT(T1.role) FROM Credit T1 JOIN Person T2 ON T1.person_id=T2.person_id WHERE T2.name='Julia Roberts'"}
+{"question_id": "bird_train_train_1297", "pick": "NONE", "sql": "SELECT DISTINCT episode_id FROM Award WHERE series='Law and Order' AND award_category LIKE 'Primetime Emmy' AND result='Nominee'"}
+{"question_id": "bird_train_train_1301", "pick": "NONE", "sql": "SELECT birth_place, birth_region FROM Person WHERE birth_name='Rene Chenevert Balcer'"}

@@ -1,0 +1,19 @@
+{"question_id": "q1250", "pick": "A"}
+{"question_id": "q1261", "pick": "A"}
+{"question_id": "q1265", "pick": "A"}
+{"question_id": "q1269", "pick": "A"}
+{"question_id": "q1283", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT i.installment_ref), CAST(COUNT(r.individual_ref) AS REAL)/COUNT(DISTINCT i.installment_ref) FROM installment i JOIN recognition r ON r.installment_ref=i.installment_ref WHERE i.cycle=9 AND i.franchise='Law and Order' AND r.type='Cast'"}
+{"question_id": "q1284", "pick": "NONE", "sql": "SELECT t.label FROM tag t WHERE t.installment_ref = (SELECT i.installment_ref FROM installment i WHERE i.installment_ref IN (SELECT installment_ref FROM tag) ORDER BY i.ballot_count DESC LIMIT 1 OFFSET 1)"}
+{"question_id": "q1290", "pick": "A"}
+{"question_id": "q1297", "pick": "A"}
+{"question_id": "q1301", "pick": "A"}
+{"question_id": "q1308", "pick": "NONE", "sql": "SELECT i.natal_zone FROM individual i JOIN recognition r ON r.individual_ref=i.individual_ref WHERE r.capacity='assistant location manager'"}
+{"question_id": "q1319", "pick": "A"}
+{"question_id": "q1321", "pick": "NONE", "sql": "SELECT DISTINCT a.annum, a.installment_ref FROM accolade a JOIN individual p ON a.individual_ref=p.individual_ref WHERE p.moniker='Constantine Makris' AND a.outcome='Winner' AND a.prize='Television' AND a.accolade_class='Silver Gavel Award' AND a.body='American Bar Association Silver Gavel Awards for Media and the Arts'"}
+{"question_id": "q1323", "pick": "NONE", "sql": "SELECT COUNT(*) FROM accolade a JOIN installment i ON a.installment_ref=i.installment_ref WHERE a.annum=1999 AND a.body='Primetime Emmy Awards' AND a.outcome='Nominee' AND a.franchise='Law and Order' AND i.installment_ordinal=20"}
+{"question_id": "q1324", "pick": "A"}
+{"question_id": "q1330", "pick": "NONE", "sql": "SELECT CAST(SUM(p.natal_nation='USA') AS REAL)/COUNT(*), r.capacity FROM recognition r JOIN individual p ON r.individual_ref=p.individual_ref JOIN installment i ON r.installment_ref=i.installment_ref WHERE i.installment_ordinal=2 AND r.type='Cast'"}
+{"question_id": "q1333", "pick": "A"}
+{"question_id": "q1342", "pick": "B"}
+{"question_id": "q1346", "pick": "A"}
+{"question_id": "q1353", "pick": "A"}

@@ -1,0 +1,4 @@
+{"question_id": "spider_realistic_330", "sql": "SELECT max(created) FROM votes WHERE state = 'CA'"}
+{"question_id": "spider_realistic_331", "sql": "SELECT count(*) FROM votes WHERE state = 'NY' OR state = 'CA'"}
+{"question_id": "spider_realistic_332", "sql": "SELECT T2.created, T2.state, T2.phone_number FROM contestants AS T1 JOIN votes AS T2 ON T1.contestant_number = T2.contestant_number WHERE T1.contestant_name = 'Tabatha Gehling'"}
+{"question_id": "spider_realistic_333", "sql": "SELECT T3.area_code FROM contestants AS T1 JOIN votes AS T2 ON T1.contestant_number = T2.contestant_number JOIN area_code_state AS T3 ON T2.state = T3.state WHERE T1.contestant_name = 'Tabatha Gehling' INTERSECT SELECT T3.area_code FROM contestants AS T1 JOIN votes AS T2 ON T1.contestant_number = T2.contestant_number JOIN area_code_state AS T3 ON T2.state = T3.state WHERE T1.contestant_name = 'Kelly Clauss'"}

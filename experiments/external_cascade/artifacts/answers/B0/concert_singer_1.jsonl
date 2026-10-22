@@ -1,0 +1,17 @@
+{"question_id": "spider_realistic_0", "sql": "SELECT name, country, age FROM singer ORDER BY age DESC"}
+{"question_id": "spider_realistic_1", "sql": "SELECT avg(age), min(age), max(age) FROM singer WHERE country = 'France'"}
+{"question_id": "spider_realistic_2", "sql": "SELECT avg(age), min(age), max(age) FROM singer WHERE country = 'France'"}
+{"question_id": "spider_realistic_3", "sql": "SELECT song_name, song_release_year FROM singer ORDER BY age LIMIT 1"}
+{"question_id": "spider_realistic_4", "sql": "SELECT song_name, song_release_year FROM singer ORDER BY age LIMIT 1"}
+{"question_id": "spider_realistic_5", "sql": "SELECT DISTINCT country FROM singer WHERE age > 20"}
+{"question_id": "spider_realistic_6", "sql": "SELECT DISTINCT country FROM singer WHERE age > 20"}
+{"question_id": "spider_realistic_7", "sql": "SELECT country, count(*) FROM singer GROUP BY country"}
+{"question_id": "spider_realistic_8", "sql": "SELECT country, count(*) FROM singer GROUP BY country"}
+{"question_id": "spider_realistic_9", "sql": "SELECT song_name FROM singer WHERE age > (SELECT avg(age) FROM singer)"}
+{"question_id": "spider_realistic_10", "sql": "SELECT song_name FROM singer WHERE age > (SELECT avg(age) FROM singer)"}
+{"question_id": "spider_realistic_11", "sql": "SELECT location, name FROM stadium WHERE capacity BETWEEN 5000 AND 10000"}
+{"question_id": "spider_realistic_12", "sql": "SELECT location, name FROM stadium WHERE capacity BETWEEN 5000 AND 10000"}
+{"question_id": "spider_realistic_13", "sql": "SELECT count(*) FROM concert WHERE year = 2014 OR year = 2015"}
+{"question_id": "spider_realistic_14", "sql": "SELECT count(*) FROM concert WHERE year = 2014 OR year = 2015"}
+{"question_id": "spider_realistic_15", "sql": "SELECT T2.name, T2.capacity FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id WHERE T1.year >= 2014 GROUP BY T2.stadium_id ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_16", "sql": "SELECT T2.name, T2.capacity FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id WHERE T1.year > 2013 GROUP BY T2.stadium_id ORDER BY count(*) DESC LIMIT 1"}

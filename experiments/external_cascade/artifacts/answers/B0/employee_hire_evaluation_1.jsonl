@@ -1,0 +1,20 @@
+{"question_id": "spider_realistic_169", "sql": "SELECT Name FROM employee ORDER BY Age"}
+{"question_id": "spider_realistic_170", "sql": "SELECT Name FROM employee ORDER BY Age"}
+{"question_id": "spider_realistic_171", "sql": "SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING count(*) > 1"}
+{"question_id": "spider_realistic_172", "sql": "SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING count(*) > 1"}
+{"question_id": "spider_realistic_173", "sql": "SELECT count(*), Location FROM shop GROUP BY Location"}
+{"question_id": "spider_realistic_174", "sql": "SELECT count(*), Location FROM shop GROUP BY Location"}
+{"question_id": "spider_realistic_175", "sql": "SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1"}
+{"question_id": "spider_realistic_176", "sql": "SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1"}
+{"question_id": "spider_realistic_177", "sql": "SELECT Name, Location, District FROM shop ORDER BY Number_products DESC"}
+{"question_id": "spider_realistic_178", "sql": "SELECT Name, Location, District FROM shop ORDER BY Number_products DESC"}
+{"question_id": "spider_realistic_179", "sql": "SELECT Name FROM shop WHERE Number_products > (SELECT avg(Number_products) FROM shop)"}
+{"question_id": "spider_realistic_180", "sql": "SELECT Name FROM shop WHERE Number_products > (SELECT avg(Number_products) FROM shop)"}
+{"question_id": "spider_realistic_181", "sql": "SELECT t1.Name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID = t2.Employee_ID ORDER BY t2.Bonus DESC LIMIT 1"}
+{"question_id": "spider_realistic_182", "sql": "SELECT t1.Name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID = t2.Employee_ID ORDER BY t2.Bonus DESC LIMIT 1"}
+{"question_id": "spider_realistic_183", "sql": "SELECT t2.Name FROM hiring AS t1 JOIN shop AS t2 ON t1.Shop_ID = t2.Shop_ID GROUP BY t1.Shop_ID ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_184", "sql": "SELECT t2.Name FROM hiring AS t1 JOIN shop AS t2 ON t1.Shop_ID = t2.Shop_ID GROUP BY t1.Shop_ID ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_185", "sql": "SELECT Name FROM shop WHERE Shop_ID NOT IN (SELECT Shop_ID FROM hiring)"}
+{"question_id": "spider_realistic_186", "sql": "SELECT Name FROM shop WHERE Shop_ID NOT IN (SELECT Shop_ID FROM hiring)"}
+{"question_id": "spider_realistic_187", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}
+{"question_id": "spider_realistic_188", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}

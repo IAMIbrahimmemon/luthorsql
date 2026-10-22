@@ -1,0 +1,17 @@
+{"question_id": "kaggledbqa_test_40", "sql": "SELECT DISTINCT commod FROM sampledata15"}
+{"question_id": "kaggledbqa_test_41", "sql": "SELECT count(*) FROM sampledata15 WHERE origin = '3'"}
+{"question_id": "kaggledbqa_test_42", "sql": "SELECT T1.commod FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk WHERE T2.year = '15' GROUP BY T1.commod ORDER BY sum(T1.concen) DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_43", "sql": "SELECT DISTINCT commod FROM sampledata15 WHERE origin = '2' AND commod NOT IN (SELECT commod FROM sampledata15 WHERE origin = '1')"}
+{"question_id": "kaggledbqa_test_44", "sql": "SELECT T2.growst, avg(T1.concen) FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk GROUP BY T2.growst"}
+{"question_id": "kaggledbqa_test_45", "sql": "SELECT T2.variety FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk WHERE T2.commod = 'AP' GROUP BY T2.variety ORDER BY avg(T1.concen) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_46", "sql": "SELECT DISTINCT commod FROM resultsdata15 WHERE concen > lod"}
+{"question_id": "kaggledbqa_test_47", "sql": "SELECT lab FROM resultsdata15 GROUP BY lab ORDER BY count(*) DESC LIMIT 5"}
+{"question_id": "kaggledbqa_test_48", "sql": "SELECT T2.country FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk WHERE T2.origin = '2' GROUP BY T2.country ORDER BY sum(T1.concen) LIMIT 1"}
+{"question_id": "kaggledbqa_test_49", "sql": "SELECT distst FROM sampledata15 GROUP BY distst ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_50", "sql": "SELECT max(concen) FROM resultsdata15"}
+{"question_id": "kaggledbqa_test_51", "sql": "SELECT year, month, day FROM sampledata15 WHERE sample_pk = 3763"}
+{"question_id": "kaggledbqa_test_52", "sql": "SELECT state FROM sampledata15 WHERE commod = 'AP' GROUP BY state ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_53", "sql": "SELECT growst FROM sampledata15 WHERE commod = 'AP' GROUP BY growst ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_54", "sql": "SELECT count(DISTINCT variety) FROM sampledata15"}
+{"question_id": "kaggledbqa_test_55", "sql": "SELECT site FROM sampledata15 WHERE sample_pk = 3763"}
+{"question_id": "kaggledbqa_test_56", "sql": "SELECT country FROM sampledata15 WHERE sample_pk = 6480"}

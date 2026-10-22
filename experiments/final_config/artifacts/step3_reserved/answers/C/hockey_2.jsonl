@@ -1,0 +1,17 @@
+{"question_id": "bird_train_train_7695", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 2002 AND T2.GA > 150 ORDER BY T1.birthYear DESC, T1.birthMon DESC, T1.birthDay DESC LIMIT 1"}
+{"question_id": "bird_train_train_7696", "pick": "A"}
+{"question_id": "bird_train_train_7697", "pick": "A"}
+{"question_id": "bird_train_train_7701", "pick": "NONE", "sql": "SELECT GP FROM ScoringSC WHERE playerID = 'broadpu01' AND year = 1922"}
+{"question_id": "bird_train_train_7703", "pick": "A"}
+{"question_id": "bird_train_train_7722", "pick": "NONE", "sql": "SELECT BenchMinor, name FROM Teams ORDER BY T DESC LIMIT 1"}
+{"question_id": "bird_train_train_7724", "pick": "A"}
+{"question_id": "bird_train_train_7732", "pick": "NONE", "sql": "SELECT COUNT(playerID) FROM Master WHERE shootCatch IS NULL AND firstNHL = '2011'"}
+{"question_id": "bird_train_train_7737", "pick": "B"}
+{"question_id": "bird_train_train_7740", "pick": "A"}
+{"question_id": "bird_train_train_7742", "pick": "NONE", "sql": "SELECT A.pos, A.award, M.nameGiven, M.lastName FROM AwardsPlayers AS A INNER JOIN Master AS M ON A.playerID = M.playerID WHERE A.pos = (SELECT pos FROM AwardsPlayers WHERE pos IS NOT NULL GROUP BY pos ORDER BY COUNT(award) DESC LIMIT 1) ORDER BY A.year DESC LIMIT 1"}
+{"question_id": "bird_train_train_7744", "pick": "NONE", "sql": "SELECT (SELECT COUNT(DISTINCT oppID) FROM TeamVsTeam WHERE year = 1915 AND tmID = T1.tmID) AS n, T1.name, T3.name FROM Teams AS T1 INNER JOIN TeamVsTeam AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN Teams AS T3 ON T3.tmID = T2.oppID AND T3.year = T2.year WHERE T1.year = 1915 AND T1.W = (SELECT MAX(W) FROM Teams WHERE year = 1915)"}
+{"question_id": "bird_train_train_7747", "pick": "NONE", "sql": "SELECT T1.rank, T1.year, T1.name FROM Teams AS T1 INNER JOIN Scoring AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T2.SHA >= 7 ORDER BY T2.A DESC LIMIT 1"}
+{"question_id": "bird_train_train_7754", "pick": "A"}
+{"question_id": "bird_train_train_7757", "pick": "B"}
+{"question_id": "bird_train_train_7763", "pick": "NONE", "sql": "SELECT T1.W FROM TeamVsTeam AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = 1985 AND T1.oppID = 'BOS' AND T2.name = 'Philadelphia Flyers'"}
+{"question_id": "bird_train_train_7774", "pick": "NONE", "sql": "SELECT T3.name FROM Teams AS T1 INNER JOIN TeamVsTeam AS T2 ON T1.tmID = T2.oppID AND T1.year = T2.year INNER JOIN Teams AS T3 ON T3.tmID = T2.tmID AND T3.year = T2.year WHERE T2.year = 2000 AND T1.name = 'Buffalo Sabres' ORDER BY T2.W + T2.L + COALESCE(T2.T, 0) + COALESCE(T2.OTL, 0) DESC LIMIT 1"}

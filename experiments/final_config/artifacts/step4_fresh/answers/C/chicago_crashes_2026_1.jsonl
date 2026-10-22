@@ -1,0 +1,19 @@
+{"question_id": "fresh_chicago_crashes_2026_0", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_1", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_3", "pick": "B"}
+{"question_id": "fresh_chicago_crashes_2026_4", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_5", "pick": "B"}
+{"question_id": "fresh_chicago_crashes_2026_7", "pick": "NONE", "sql": "SELECT ROUND(100.0*SUM(CASE WHEN hit_and_run_i='Y' THEN 1 ELSE 0 END)/COUNT(*),2) FROM crashes WHERE date(crash_date)='2026-07-01'"}
+{"question_id": "fresh_chicago_crashes_2026_8", "pick": "NONE", "sql": "SELECT cc.category, CAST(SUM(CASE WHEN c.crash_type='INJURY AND / OR TOW DUE TO CRASH' THEN 1 ELSE 0 END) AS REAL)/COUNT(*) AS rate FROM crashes c JOIN contributory_causes cc ON c.prim_contributory_cause=cc.cause GROUP BY cc.category ORDER BY rate DESC, cc.category"}
+{"question_id": "fresh_chicago_crashes_2026_10", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_11", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_13", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_16", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_20", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_22", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_23", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_24", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_25", "pick": "B"}
+{"question_id": "fresh_chicago_crashes_2026_26", "pick": "NONE", "sql": "SELECT street_name, ROUND(100.0*SUM(CASE WHEN hit_and_run_i='Y' THEN 1 ELSE 0 END)/COUNT(*),2) AS hit_and_run_pct FROM crashes GROUP BY street_name HAVING COUNT(*)>=2 ORDER BY hit_and_run_pct DESC, street_name"}
+{"question_id": "fresh_chicago_crashes_2026_28", "pick": "NONE", "sql": "WITH s AS (SELECT street_name, SUM(injuries_total) t FROM crashes GROUP BY street_name) SELECT street_name, t FROM s WHERE t > (SELECT AVG(t) FROM s) ORDER BY t DESC, street_name"}
+{"question_id": "fresh_chicago_crashes_2026_29", "pick": "A"}

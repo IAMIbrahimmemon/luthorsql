@@ -1,0 +1,25 @@
+{"question_id": "kaggledbqa_test_120", "sql": "SELECT * FROM Fires WHERE STAT_CAUSE_DESCR = 'Campfire' AND STATE = 'TX'"}
+{"question_id": "kaggledbqa_test_121", "sql": "SELECT OWNER_DESCR FROM Fires WHERE STATE = 'OR' AND FIRE_YEAR = 2015 ORDER BY FIRE_SIZE DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_122", "sql": "SELECT DISTINCT COUNTY FROM Fires WHERE STATE = 'WA' AND FIRE_YEAR = 2012"}
+{"question_id": "kaggledbqa_test_123", "sql": "SELECT count(*) FROM Fires WHERE STAT_CAUSE_DESCR = 'Arson' AND FIRE_YEAR = 2010"}
+{"question_id": "kaggledbqa_test_124", "sql": "SELECT max(FIRE_YEAR) - min(FIRE_YEAR) FROM Fires"}
+{"question_id": "kaggledbqa_test_125", "sql": "SELECT avg(DISCOVERY_DOY) FROM Fires WHERE FIRE_YEAR BETWEEN 2000 AND 2004"}
+{"question_id": "kaggledbqa_test_126", "sql": "SELECT STAT_CAUSE_CODE FROM Fires GROUP BY STAT_CAUSE_CODE ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_127", "sql": "SELECT FIRE_YEAR FROM Fires GROUP BY FIRE_YEAR ORDER BY sum(FIRE_SIZE) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_128", "sql": "SELECT count(*) FROM Fires WHERE OWNER_DESCR = 'MISSING/NOT SPECIFIED'"}
+{"question_id": "kaggledbqa_test_129", "sql": "SELECT COUNTY FROM Fires WHERE FIRE_YEAR = 2000 GROUP BY COUNTY ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_130", "sql": "SELECT count(DISTINCT STAT_CAUSE_DESCR) FROM Fires"}
+{"question_id": "kaggledbqa_test_131", "sql": "SELECT sum(FIRE_SIZE) FROM Fires WHERE STATE = 'NC' AND FIRE_YEAR = 2006"}
+{"question_id": "kaggledbqa_test_132", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires WHERE STATE = 'UT' AND FIRE_YEAR = 1997 ORDER BY FIRE_SIZE DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_133", "sql": "SELECT count(*) FROM Fires WHERE COUNTY = 'Gloucester' AND FIRE_SIZE > 10"}
+{"question_id": "kaggledbqa_test_134", "sql": "SELECT STATE FROM Fires GROUP BY STATE ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_135", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires GROUP BY STAT_CAUSE_DESCR ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_136", "sql": "SELECT OWNER_DESCR FROM Fires GROUP BY OWNER_DESCR ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_137", "sql": "SELECT count(*) FROM Fires WHERE FIRE_YEAR = 2014 AND STAT_CAUSE_DESCR = 'Campfire'"}
+{"question_id": "kaggledbqa_test_138", "sql": "SELECT sum(FIRE_SIZE) FROM Fires WHERE STATE = 'TX' AND FIRE_YEAR BETWEEN 2000 AND 2010"}
+{"question_id": "kaggledbqa_test_139", "sql": "SELECT STATE FROM Fires GROUP BY STATE ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_140", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires GROUP BY STAT_CAUSE_DESCR ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_141", "sql": "SELECT sum(FIRE_SIZE) FROM Fires"}
+{"question_id": "kaggledbqa_test_142", "sql": "SELECT sum(FIRE_SIZE) FROM Fires WHERE FIRE_YEAR BETWEEN 1990 AND 2009"}
+{"question_id": "kaggledbqa_test_143", "sql": "SELECT count(*) FROM Fires WHERE OWNER_DESCR = 'MISSING/NOT SPECIFIED'"}
+{"question_id": "kaggledbqa_test_144", "sql": "SELECT LATITUDE FROM Fires GROUP BY LATITUDE ORDER BY count(*) DESC LIMIT 1"}

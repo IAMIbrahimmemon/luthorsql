@@ -1,0 +1,18 @@
+{"question_id": "kaggledbqa_test_22", "sql": "SELECT CrimeTS FROM GreaterManchesterCrime GROUP BY CrimeTS ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_23", "sql": "SELECT Outcome FROM GreaterManchesterCrime WHERE Location LIKE '%Street%' GROUP BY Outcome ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_24", "sql": "SELECT Type FROM GreaterManchesterCrime WHERE LSOA LIKE '%Salford%' GROUP BY Type ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_25", "sql": "SELECT count(*) FROM GreaterManchesterCrime WHERE Outcome LIKE '%Under investigation%'"}
+{"question_id": "kaggledbqa_test_26", "sql": "SELECT count(*) FROM GreaterManchesterCrime"}
+{"question_id": "kaggledbqa_test_27", "sql": "SELECT Location FROM GreaterManchesterCrime GROUP BY Location ORDER BY count(*) DESC LIMIT 3"}
+{"question_id": "kaggledbqa_test_28", "sql": "SELECT Type FROM GreaterManchesterCrime WHERE Outcome LIKE '%Investigation complete%' GROUP BY Type ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_29", "sql": "SELECT count(*) FROM GreaterManchesterCrime WHERE Type LIKE '%Drugs%'"}
+{"question_id": "kaggledbqa_test_30", "sql": "SELECT count(*) FROM GreaterManchesterCrime WHERE Outcome LIKE '%Under investigation%'"}
+{"question_id": "kaggledbqa_test_31", "sql": "SELECT Location FROM GreaterManchesterCrime WHERE Type LIKE '%Drugs%' GROUP BY Location ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_32", "sql": "SELECT Type FROM GreaterManchesterCrime GROUP BY Type ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_33", "sql": "SELECT Location FROM GreaterManchesterCrime GROUP BY Location ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_34", "sql": "SELECT Location FROM GreaterManchesterCrime GROUP BY Location ORDER BY count(*) ASC LIMIT 1"}
+{"question_id": "kaggledbqa_test_35", "sql": "SELECT Location FROM GreaterManchesterCrime WHERE Type LIKE '%Sexual offences%' GROUP BY Location ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_36", "sql": "SELECT Location FROM GreaterManchesterCrime GROUP BY Location ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_37", "sql": "SELECT Type FROM GreaterManchesterCrime WHERE Outcome LIKE '%prosecut%' GROUP BY Type ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_38", "sql": "SELECT Type FROM GreaterManchesterCrime WHERE Outcome LIKE '%Investigation complete%' GROUP BY Type ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_39", "sql": "SELECT Outcome FROM GreaterManchesterCrime WHERE CrimeID = '6B:E2:54:C6:58:D2'"}

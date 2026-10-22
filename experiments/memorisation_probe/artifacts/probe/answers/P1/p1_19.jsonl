@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_250", "sql": "SELECT count(*) FROM ship WHERE disposition_of_ship = 'Captured'"}
+{"item_id": "spider_realistic_251", "sql": "SELECT T1.id, T1.name FROM battle AS T1 JOIN ship AS T2 ON T2.lost_in_battle = T1.id JOIN death AS T3 ON T2.id = T3.caused_by_ship_id GROUP BY T1.id HAVING sum(T3.killed) > 10"}
+{"item_id": "spider_realistic_252", "sql": "SELECT T2.id, T2.name FROM death AS T1 JOIN ship AS T2 ON T1.caused_by_ship_id = T2.id GROUP BY T2.id ORDER BY sum(T1.injured) DESC LIMIT 1"}
+{"item_id": "spider_realistic_253", "sql": "SELECT T1.name, T1.date FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.name = 'Lettice' INTERSECT SELECT T1.name, T1.date FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.name = 'HMS Atalanta'"}
+{"item_id": "spider_realistic_254", "sql": "SELECT name, result, bulgarian_commander FROM battle EXCEPT SELECT T1.name, T1.result, T1.bulgarian_commander FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.location = 'English Channel'"}
+{"item_id": "spider_realistic_255", "sql": "SELECT course_description FROM Courses WHERE course_name = 'math'"}
+{"item_id": "spider_realistic_256", "sql": "SELECT course_description FROM Courses WHERE course_name = 'math'"}
+{"item_id": "spider_realistic_257", "sql": "SELECT zip_postcode FROM Addresses WHERE city = 'Port Chelsea'"}
+{"item_id": "spider_realistic_258", "sql": "SELECT zip_postcode FROM Addresses WHERE city = 'Port Chelsea'"}
+{"item_id": "spider_realistic_259", "sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id"}
+{"item_id": "spider_realistic_260", "sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id"}
+{"item_id": "spider_realistic_261", "sql": "SELECT cell_mobile_number FROM Students WHERE first_name = 'Timmothy' AND last_name = 'Ward'"}
+{"item_id": "spider_realistic_262", "sql": "SELECT cell_mobile_number FROM Students WHERE first_name = 'Timmothy' AND last_name = 'Ward'"}
+{"item_id": "spider_realistic_263", "sql": "SELECT first_name, middle_name, last_name FROM Students ORDER BY date_first_registered ASC LIMIT 1"}
+{"item_id": "spider_realistic_264", "sql": "SELECT first_name, middle_name, last_name FROM Students ORDER BY date_left ASC LIMIT 1"}
+{"item_id": "spider_realistic_265", "sql": "SELECT first_name, middle_name, last_name FROM Students ORDER BY date_left ASC LIMIT 1"}
+{"item_id": "spider_realistic_266", "sql": "SELECT T1.address_id, T1.line_1, T1.line_2 FROM Addresses AS T1 JOIN Students AS T2 ON T1.address_id = T2.current_address_id GROUP BY T1.address_id ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_267", "sql": "SELECT T1.address_id, T1.line_1, T1.line_2 FROM Addresses AS T1 JOIN Students AS T2 ON T1.address_id = T2.current_address_id GROUP BY T1.address_id ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_268", "sql": "SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE T1.degree_summary_name = 'Master' INTERSECT SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE T1.degree_summary_name = 'Bachelor'"}
+{"item_id": "spider_realistic_269", "sql": "SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE T1.degree_summary_name = 'Master' INTERSECT SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE T1.degree_summary_name = 'Bachelor'"}
+{"item_id": "spider_realistic_270", "sql": "SELECT T1.first_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.permanent_address_id = T2.address_id WHERE T2.country = 'Haiti' OR T1.cell_mobile_number = '09700166582'"}
+{"item_id": "spider_realistic_271", "sql": "SELECT T1.first_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.permanent_address_id = T2.address_id WHERE T2.country = 'Haiti' OR T1.cell_mobile_number = '09700166582'"}
+{"item_id": "spider_realistic_272", "sql": "SELECT Title FROM Cartoon ORDER BY Title"}
+{"item_id": "spider_realistic_273", "sql": "SELECT Title FROM Cartoon ORDER BY Title"}
+{"item_id": "spider_realistic_274", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones'"}
+{"item_id": "spider_realistic_275", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones'"}
+{"item_id": "spider_realistic_276", "sql": "SELECT count(*) FROM Cartoon WHERE Written_by = 'Joseph Kuhr'"}
+{"item_id": "spider_realistic_277", "sql": "SELECT count(*) FROM Cartoon WHERE Written_by = 'Joseph Kuhr'"}
+{"item_id": "spider_realistic_278", "sql": "SELECT Title, Directed_by FROM Cartoon ORDER BY Original_air_date"}
+{"item_id": "spider_realistic_279", "sql": "SELECT Title, Directed_by FROM Cartoon ORDER BY Original_air_date"}
+{"item_id": "spider_realistic_280", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones' OR Directed_by = 'Brandon Vietti'"}
+{"item_id": "spider_realistic_281", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones' OR Directed_by = 'Brandon Vietti'"}
+{"item_id": "spider_realistic_282", "sql": "SELECT Country, count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_283", "sql": "SELECT Country, count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_284", "sql": "SELECT Content FROM TV_Channel WHERE series_name = 'Sky Radio'"}
+{"item_id": "spider_realistic_285", "sql": "SELECT Content FROM TV_Channel WHERE series_name = 'Sky Radio'"}
+{"item_id": "spider_realistic_286", "sql": "SELECT Package_Option FROM TV_Channel WHERE series_name = 'Sky Radio'"}
+{"item_id": "spider_realistic_287", "sql": "SELECT count(*) FROM TV_Channel WHERE Language = 'English'"}
+{"item_id": "spider_realistic_288", "sql": "SELECT count(*) FROM TV_Channel WHERE Language = 'English'"}
+{"item_id": "spider_realistic_289", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Title = 'The Rise of the Blue Beetle!'"}
+{"item_id": "spider_realistic_290", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Title = 'The Rise of the Blue Beetle!'"}
+{"item_id": "spider_realistic_291", "sql": "SELECT T2.Title FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}
+{"item_id": "spider_realistic_292", "sql": "SELECT T2.Title FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}
+{"item_id": "spider_realistic_293", "sql": "SELECT Air_Date FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"item_id": "spider_realistic_294", "sql": "SELECT Air_Date FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"item_id": "spider_realistic_295", "sql": "SELECT Weekly_Rank FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"item_id": "spider_realistic_296", "sql": "SELECT Weekly_Rank FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"item_id": "spider_realistic_297", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T2.Episode = 'A Love of a Lifetime'"}
+{"item_id": "spider_realistic_298", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T2.Episode = 'A Love of a Lifetime'"}
+{"item_id": "spider_realistic_299", "sql": "SELECT T2.Episode FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}

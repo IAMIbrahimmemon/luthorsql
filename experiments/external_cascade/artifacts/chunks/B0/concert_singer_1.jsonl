@@ -1,0 +1,17 @@
+{"question_id": "spider_realistic_0", "db_id": "concert_singer", "question": "Show name, country, age for all singers from the oldest to the youngest.", "evidence": ""}
+{"question_id": "spider_realistic_1", "db_id": "concert_singer", "question": "What is the average, minimum, and maximum age of all singers from France?", "evidence": ""}
+{"question_id": "spider_realistic_2", "db_id": "concert_singer", "question": "What is the average, minimum, and maximum age for all French singers?", "evidence": ""}
+{"question_id": "spider_realistic_3", "db_id": "concert_singer", "question": "Show the name and the release year of the song by the youngest singer.", "evidence": ""}
+{"question_id": "spider_realistic_4", "db_id": "concert_singer", "question": "What are the names and release years for all the songs of the youngest singer?", "evidence": ""}
+{"question_id": "spider_realistic_5", "db_id": "concert_singer", "question": "What are all distinct countries where singers older than 20 are from?", "evidence": ""}
+{"question_id": "spider_realistic_6", "db_id": "concert_singer", "question": "What are  the different countries with singers  older than 20?", "evidence": ""}
+{"question_id": "spider_realistic_7", "db_id": "concert_singer", "question": "Show all countries and the number of singers in each nation.", "evidence": ""}
+{"question_id": "spider_realistic_8", "db_id": "concert_singer", "question": "How many singers are from each nation?", "evidence": ""}
+{"question_id": "spider_realistic_9", "db_id": "concert_singer", "question": "List all song names by singers older than average .", "evidence": ""}
+{"question_id": "spider_realistic_10", "db_id": "concert_singer", "question": "What are all the song names by singers who are older than average?", "evidence": ""}
+{"question_id": "spider_realistic_11", "db_id": "concert_singer", "question": "Show location and name for all stadiums that can fit between 5000 and 10000 people.", "evidence": ""}
+{"question_id": "spider_realistic_12", "db_id": "concert_singer", "question": "What are the locations and names of all stations that can accommodate between 5000 and 10000 fans?", "evidence": ""}
+{"question_id": "spider_realistic_13", "db_id": "concert_singer", "question": "How many concerts are there in  2014 or 2015?", "evidence": ""}
+{"question_id": "spider_realistic_14", "db_id": "concert_singer", "question": "How many concerts occurred in 2014 or 2015?", "evidence": ""}
+{"question_id": "spider_realistic_15", "db_id": "concert_singer", "question": "Show the stadium name and capacity with most number of concerts in  2014 or after.", "evidence": ""}
+{"question_id": "spider_realistic_16", "db_id": "concert_singer", "question": "What is the name and capacity of the stadium  with the most concerts after 2013?", "evidence": ""}

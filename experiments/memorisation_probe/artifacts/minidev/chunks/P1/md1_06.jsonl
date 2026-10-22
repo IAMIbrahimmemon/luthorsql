@@ -1,0 +1,50 @@
+{"item_id": "md_728", "db_id": "superhero", "question": "Rank superheroes from Marvel Comics by their eye color popularity, starting with the most common color."}
+{"item_id": "md_730", "db_id": "superhero", "question": "List the superheroes from Marvel Comics who have the super power of 'Super Strength'."}
+{"item_id": "md_732", "db_id": "superhero", "question": "Which publisher published the slowest superhero?"}
+{"item_id": "md_733", "db_id": "superhero", "question": "How many gold-eyed superheroes did Marvel Comics publish?"}
+{"item_id": "md_736", "db_id": "superhero", "question": "Who is the dumbest superhero?"}
+{"item_id": "md_737", "db_id": "superhero", "question": "What is Copycat's race?"}
+{"item_id": "md_738", "db_id": "superhero", "question": "Which superheroes have a durability attribute value of less than 50?"}
+{"item_id": "md_739", "db_id": "superhero", "question": "What are the names of the superheroes with the power of death touch?"}
+{"item_id": "md_740", "db_id": "superhero", "question": "How many female superheroes have a strength value of 100?"}
+{"item_id": "md_743", "db_id": "superhero", "question": "What is the percentage of superheroes who act in their own self-interest or make decisions based on their own moral code? Indicate how many of the said superheroes were published by Marvel Comics."}
+{"item_id": "md_744", "db_id": "superhero", "question": "Between DC and Marvel Comics, which publisher has published more superheroes? Find the difference in the number of superheroes they have published."}
+{"item_id": "md_745", "db_id": "superhero", "question": "Give the publisher ID of Star Trek."}
+{"item_id": "md_747", "db_id": "superhero", "question": "What is the total number of superheroes without full name?"}
+{"item_id": "md_750", "db_id": "superhero", "question": "What is the average weight of all female superheroes?"}
+{"item_id": "md_751", "db_id": "superhero", "question": "List down at least five superpowers of male superheroes."}
+{"item_id": "md_753", "db_id": "superhero", "question": "Among the superheroes with height from 170 to 190, list the names of the superheroes with no eye color."}
+{"item_id": "md_758", "db_id": "superhero", "question": "Provide the hair colour of the human superhero who is 185 cm tall."}
+{"item_id": "md_760", "db_id": "superhero", "question": "In superheroes with height between 150 to 180, what is the percentage of heroes published by Marvel Comics?"}
+{"item_id": "md_761", "db_id": "superhero", "question": "Among the male superheroes, list the super hero names of superheroes with weight greater than the 79% average weight of all superheroes."}
+{"item_id": "md_764", "db_id": "superhero", "question": "What are the superpowers of heroes with ID 1?"}
+{"item_id": "md_765", "db_id": "superhero", "question": "How many heroes have stealth power?"}
+{"item_id": "md_766", "db_id": "superhero", "question": "What is the hero's full name with the highest attribute in strength?"}
+{"item_id": "md_769", "db_id": "superhero", "question": "Which superhero has the most durability published by Dark Horse Comics?"}
+{"item_id": "md_772", "db_id": "superhero", "question": "List the eyes, hair and skin colour of all female superheroes published by Dark Horse Comics."}
+{"item_id": "md_773", "db_id": "superhero", "question": "Which superhero has the same eyes, hair and skin colour? Indicate the publisher of the superhero."}
+{"item_id": "md_775", "db_id": "superhero", "question": "What is the percentage of blue female superheroes among all female superheroes?"}
+{"item_id": "md_779", "db_id": "superhero", "question": "How many powers does Amazo hero have?"}
+{"item_id": "md_781", "db_id": "superhero", "question": "Provide the heights of the heroes whose eye colours are amber."}
+{"item_id": "md_782", "db_id": "superhero", "question": "List the heroes' names whose eyes and hair colours are both black."}
+{"item_id": "md_785", "db_id": "superhero", "question": "Describe the names of neutral alignment superheroes."}
+{"item_id": "md_786", "db_id": "superhero", "question": "How many heroes have the highest attribute value in strength?"}
+{"item_id": "md_788", "db_id": "superhero", "question": "How many percent of female heroes were published by Marvel Comics?"}
+{"item_id": "md_790", "db_id": "superhero", "question": "Calculate the difference between Emil Blonsky's weight and Charles Chandler's weight."}
+{"item_id": "md_791", "db_id": "superhero", "question": "Calculate the average height for all superhero."}
+{"item_id": "md_792", "db_id": "superhero", "question": "What is Abomination's superpower?"}
+{"item_id": "md_794", "db_id": "superhero", "question": "Which hero was the fastest?"}
+{"item_id": "md_796", "db_id": "superhero", "question": "State all of 3-D Man's attributes along with their values."}
+{"item_id": "md_797", "db_id": "superhero", "question": "Which superheroes have blue eyes with brown hair?"}
+{"item_id": "md_798", "db_id": "superhero", "question": "What is the publisher for Hawkman, Karate Kid and Speedy?"}
+{"item_id": "md_800", "db_id": "superhero", "question": "Calculate the percentage of superheroes with blue eyes."}
+{"item_id": "md_801", "db_id": "superhero", "question": "Find the ratio between male superheroes and female superheroes."}
+{"item_id": "md_806", "db_id": "superhero", "question": "Provide the eye colour of the superhero who has Karen Beecher-Duncan as their full name."}
+{"item_id": "md_819", "db_id": "superhero", "question": "In superheroes with missing weight data, calculate the difference between the number of superheroes with blue eyes and no eye color."}
+{"item_id": "md_822", "db_id": "superhero", "question": "How many green-skinned villains are there in the superhero universe?"}
+{"item_id": "md_824", "db_id": "superhero", "question": "Identify superheroes who can control wind and list their names in alphabetical order."}
+{"item_id": "md_825", "db_id": "superhero", "question": "Identify the gender of the superhero who has the ability of Phoenix Force."}
+{"item_id": "md_829", "db_id": "superhero", "question": "Which publisher created more superheroes: DC or Marvel Comics? Find the difference in the number of superheroes."}
+{"item_id": "md_531", "db_id": "codebase_community", "question": "Which user has a higher reputation, Harlan or Jarrod Dixon?"}
+{"item_id": "md_532", "db_id": "codebase_community", "question": "Please list the display names of all the users whose accounts were created in the year 2011."}
+{"item_id": "md_533", "db_id": "codebase_community", "question": "How many users last accessed the website after 2014/9/1?"}

@@ -1,0 +1,20 @@
+{"question_id": "bird_train_train_1442", "pick": "B"}
+{"question_id": "bird_train_train_1446", "pick": "A"}
+{"question_id": "bird_train_train_1479", "pick": "A"}
+{"question_id": "bird_train_train_1481", "pick": "NONE", "sql": "SELECT c.DESCRIPTION, pr.DESCRIPTION, m.DESCRIPTION, p.first, p.last FROM encounters e JOIN patients p ON p.patient=e.PATIENT JOIN careplans c ON c.ENCOUNTER=e.ID JOIN procedures pr ON pr.ENCOUNTER=e.ID JOIN medications m ON m.ENCOUNTER=e.ID WHERE e.ID='6f2e3935-b203-493e-a9c0-f23e847b9798'"}
+{"question_id": "bird_train_train_1486", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN ROUND((strftime('%J', T2.DATE) - strftime('%J', T1.birthdate)) / 365) BETWEEN 20 AND 30 THEN T2.VALUE ELSE 0 END) / COUNT(CASE WHEN ROUND((strftime('%J', T2.DATE) - strftime('%J', T1.birthdate)) / 365) BETWEEN 20 AND 30 THEN T2.PATIENT END) - SUM(CASE WHEN ROUND((strftime('%J', T2.DATE) - strftime('%J', T1.birthdate)) / 365) BETWEEN 50 AND 60 THEN T2.VALUE ELSE 0 END) / COUNT(CASE WHEN ROUND((strftime('%J', T2.DATE) - strftime('%J', T1.birthdate)) / 365) BETWEEN 50 AND 60 THEN T2.PATIENT END) FROM patients AS T1 INNER JOIN observations AS T2 ON T1.patient = T2.PATIENT WHERE T2.DESCRIPTION = 'Glucose'"}
+{"question_id": "bird_train_train_1496", "pick": "NONE", "sql": "SELECT DISTINCT c.DESCRIPTION FROM conditions c JOIN patients p ON c.PATIENT=p.patient WHERE p.first='Joye' AND p.last='Homenick' AND substr(c.START,1,4)='2017'"}
+{"question_id": "bird_train_train_1497", "pick": "NONE", "sql": "SELECT MAX(i.DATE) FROM immunizations i JOIN patients p ON i.PATIENT=p.patient WHERE p.first='Joye' AND p.last='Homenick' AND i.DESCRIPTION='Influenza  seasonal  injectable  preservative free'"}
+{"question_id": "bird_train_train_1498", "pick": "A"}
+{"question_id": "bird_train_train_1499", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT e.PATIENT), c.DESCRIPTION FROM encounters e JOIN careplans c ON e.PATIENT=c.PATIENT WHERE e.REASONDESCRIPTION='Second degree burn' AND c.REASONDESCRIPTION='Second degree burn' GROUP BY c.DESCRIPTION"}
+{"question_id": "bird_train_train_1502", "pick": "A"}
+{"question_id": "bird_train_train_1503", "pick": "A"}
+{"question_id": "bird_train_train_1508", "pick": "A"}
+{"question_id": "bird_train_train_1511", "pick": "A"}
+{"question_id": "bird_train_train_1520", "pick": "A"}
+{"question_id": "bird_train_train_1528", "pick": "A"}
+{"question_id": "bird_train_train_1531", "pick": "A"}
+{"question_id": "bird_train_train_1537", "pick": "A"}
+{"question_id": "bird_train_train_1538", "pick": "NONE", "sql": "SELECT AVG(CASE WHEN p.deathdate IS NULL THEN (julianday(substr(datetime('now'),1,10)) - julianday(p.birthdate))/365 ELSE (julianday(p.deathdate)-julianday(p.birthdate))/365 END) FROM patients p JOIN conditions c ON p.patient=c.PATIENT WHERE p.gender='M' AND c.DESCRIPTION='Hypertension'"}
+{"question_id": "bird_train_train_1540", "pick": "B"}
+{"question_id": "bird_train_train_1541", "pick": "A"}

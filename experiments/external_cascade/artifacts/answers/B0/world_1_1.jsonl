@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_334", "sql": "SELECT Name FROM country WHERE IndepYear > 1950"}
+{"question_id": "spider_realistic_335", "sql": "SELECT Name FROM country WHERE IndepYear > 1950"}
+{"question_id": "spider_realistic_336", "sql": "SELECT count(*) FROM country WHERE GovernmentForm = 'Republic'"}
+{"question_id": "spider_realistic_337", "sql": "SELECT count(*) FROM country WHERE GovernmentForm = 'Republic'"}
+{"question_id": "spider_realistic_338", "sql": "SELECT sum(SurfaceArea) FROM country WHERE Region = 'Caribbean'"}
+{"question_id": "spider_realistic_339", "sql": "SELECT sum(SurfaceArea) FROM country WHERE Region = 'Caribbean'"}
+{"question_id": "spider_realistic_340", "sql": "SELECT Continent FROM country WHERE Name = 'Anguilla'"}
+{"question_id": "spider_realistic_341", "sql": "SELECT Continent FROM country WHERE Name = 'Anguilla'"}
+{"question_id": "spider_realistic_342", "sql": "SELECT T1.Region FROM country AS T1 JOIN city AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Kabul'"}
+{"question_id": "spider_realistic_343", "sql": "SELECT T1.Region FROM country AS T1 JOIN city AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Kabul'"}
+{"question_id": "spider_realistic_344", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba' ORDER BY T2.Percentage DESC LIMIT 1"}
+{"question_id": "spider_realistic_345", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba' ORDER BY T2.Percentage DESC LIMIT 1"}
+{"question_id": "spider_realistic_346", "sql": "SELECT Population, LifeExpectancy FROM country WHERE Name = 'Brazil'"}
+{"question_id": "spider_realistic_347", "sql": "SELECT Population, LifeExpectancy FROM country WHERE Name = 'Brazil'"}
+{"question_id": "spider_realistic_348", "sql": "SELECT Region, Population FROM country WHERE Name = 'Angola'"}
+{"question_id": "spider_realistic_349", "sql": "SELECT Region, Population FROM country WHERE Name = 'Angola'"}
+{"question_id": "spider_realistic_350", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Region = 'Central Africa'"}
+{"question_id": "spider_realistic_351", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Region = 'Central Africa'"}
+{"question_id": "spider_realistic_352", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' ORDER BY LifeExpectancy LIMIT 1"}
+{"question_id": "spider_realistic_353", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' ORDER BY LifeExpectancy LIMIT 1"}
+{"question_id": "spider_realistic_354", "sql": "SELECT sum(Population), max(GNP) FROM country WHERE Continent = 'Asia'"}

@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_0", "db_id": "concert_singer", "question": "Show name, country, age for all singers from the oldest to the youngest."}
+{"item_id": "spider_realistic_1", "db_id": "concert_singer", "question": "What is the average, minimum, and maximum age of all singers from France?"}
+{"item_id": "spider_realistic_2", "db_id": "concert_singer", "question": "What is the average, minimum, and maximum age for all French singers?"}
+{"item_id": "spider_realistic_3", "db_id": "concert_singer", "question": "Show the name and the release year of the song by the youngest singer."}
+{"item_id": "spider_realistic_4", "db_id": "concert_singer", "question": "What are the names and release years for all the songs of the youngest singer?"}
+{"item_id": "spider_realistic_5", "db_id": "concert_singer", "question": "What are all distinct countries where singers older than 20 are from?"}
+{"item_id": "spider_realistic_6", "db_id": "concert_singer", "question": "What are  the different countries with singers  older than 20?"}
+{"item_id": "spider_realistic_7", "db_id": "concert_singer", "question": "Show all countries and the number of singers in each nation."}
+{"item_id": "spider_realistic_8", "db_id": "concert_singer", "question": "How many singers are from each nation?"}
+{"item_id": "spider_realistic_9", "db_id": "concert_singer", "question": "List all song names by singers older than average ."}
+{"item_id": "spider_realistic_10", "db_id": "concert_singer", "question": "What are all the song names by singers who are older than average?"}
+{"item_id": "spider_realistic_11", "db_id": "concert_singer", "question": "Show location and name for all stadiums that can fit between 5000 and 10000 people."}
+{"item_id": "spider_realistic_12", "db_id": "concert_singer", "question": "What are the locations and names of all stations that can accommodate between 5000 and 10000 fans?"}
+{"item_id": "spider_realistic_13", "db_id": "concert_singer", "question": "How many concerts are there in  2014 or 2015?"}
+{"item_id": "spider_realistic_14", "db_id": "concert_singer", "question": "How many concerts occurred in 2014 or 2015?"}
+{"item_id": "spider_realistic_15", "db_id": "concert_singer", "question": "Show the stadium name and capacity with most number of concerts in  2014 or after."}
+{"item_id": "spider_realistic_16", "db_id": "concert_singer", "question": "What is the name and capacity of the stadium  with the most concerts after 2013?"}
+{"item_id": "spider_realistic_17", "db_id": "concert_singer", "question": "Show the stadium names without any concert."}
+{"item_id": "spider_realistic_18", "db_id": "concert_singer", "question": "What are the names of the stadiums without any concerts?"}
+{"item_id": "spider_realistic_19", "db_id": "concert_singer", "question": "Show countries where a singer older than 40 and a singer younger than 30 are from."}
+{"item_id": "spider_realistic_20", "db_id": "concert_singer", "question": "Show names for all stadiums except for stadiums having a concert in  2014."}
+{"item_id": "spider_realistic_21", "db_id": "concert_singer", "question": "What are the names of all stadiums that did not have a concert in 2014?"}
+{"item_id": "spider_realistic_22", "db_id": "concert_singer", "question": "Show the name and theme for all concerts and the number of singers in each."}
+{"item_id": "spider_realistic_23", "db_id": "concert_singer", "question": "List singer names and number of concerts for each person."}
+{"item_id": "spider_realistic_24", "db_id": "concert_singer", "question": "What are the names and number of concerts for each person?"}
+{"item_id": "spider_realistic_25", "db_id": "concert_singer", "question": "List all singer names in concerts in  2014."}
+{"item_id": "spider_realistic_26", "db_id": "concert_singer", "question": "What are the names of the singers who performed in a concert in 2014?"}
+{"item_id": "spider_realistic_27", "db_id": "concert_singer", "question": "what is the name and nation of the singer who have a song having 'Hey' in its title?"}
+{"item_id": "spider_realistic_28", "db_id": "concert_singer", "question": "What is the name and country of origin of every singer who has a song with the word 'Hey' in its title?"}
+{"item_id": "spider_realistic_29", "db_id": "concert_singer", "question": "Find the name and location of the stadiums which some concerts happened in both 2014 and 2015."}
+{"item_id": "spider_realistic_30", "db_id": "concert_singer", "question": "What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?"}
+{"item_id": "spider_realistic_31", "db_id": "concert_singer", "question": "Find the number of concerts happened in the stadium that can accommodate the most people."}
+{"item_id": "spider_realistic_32", "db_id": "concert_singer", "question": "What are the number of concerts that occurred in the stadium with space for the most people?"}
+{"item_id": "spider_realistic_33", "db_id": "pets_1", "question": "Find the number of pets that is heavier than 10."}
+{"item_id": "spider_realistic_34", "db_id": "pets_1", "question": "How many pets are over 10 lbs?"}
+{"item_id": "spider_realistic_35", "db_id": "pets_1", "question": "Find the weight of the youngest dog."}
+{"item_id": "spider_realistic_36", "db_id": "pets_1", "question": "How much does the youngest dog weigh?"}
+{"item_id": "spider_realistic_37", "db_id": "pets_1", "question": "Find number of pets owned by students who are older than 20."}
+{"item_id": "spider_realistic_38", "db_id": "pets_1", "question": "How many pets are owned by students that are older than 20?"}
+{"item_id": "spider_realistic_39", "db_id": "pets_1", "question": "Find the number of dogs that are raised by female students."}
+{"item_id": "spider_realistic_40", "db_id": "pets_1", "question": "How many dogs are raised by female students?"}
+{"item_id": "spider_realistic_41", "db_id": "pets_1", "question": "Find the first name of students who have cat or dog."}
+{"item_id": "spider_realistic_42", "db_id": "pets_1", "question": "What are the first names of every student who has a cat or dog?"}
+{"item_id": "spider_realistic_43", "db_id": "pets_1", "question": "Find the name of students who have both cat and dog."}
+{"item_id": "spider_realistic_44", "db_id": "pets_1", "question": "What are the students' first names who have both cats and dogs?"}
+{"item_id": "spider_realistic_45", "db_id": "pets_1", "question": "Find the major and age of students who do not have a cat."}
+{"item_id": "spider_realistic_46", "db_id": "pets_1", "question": "What major is every student who does not own a cat, and also how old are they?"}
+{"item_id": "spider_realistic_47", "db_id": "pets_1", "question": "Find the id of students who do not have a cat."}
+{"item_id": "spider_realistic_48", "db_id": "pets_1", "question": "What are the ids of the students who do not own cats?"}
+{"item_id": "spider_realistic_49", "db_id": "pets_1", "question": "Find the first name and age of students who have a dog but do not have a cat."}

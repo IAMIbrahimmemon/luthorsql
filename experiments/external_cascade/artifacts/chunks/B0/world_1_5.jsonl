@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_418", "db_id": "world_1", "question": "Return the names and surface areas of the 5 largest countries.", "evidence": ""}
+{"question_id": "spider_realistic_419", "db_id": "world_1", "question": "What are names of top 3 countries with most people?", "evidence": ""}
+{"question_id": "spider_realistic_420", "db_id": "world_1", "question": "Return the names of the 3 most populated countries.", "evidence": ""}
+{"question_id": "spider_realistic_421", "db_id": "world_1", "question": "What are the names of the nations with the 3 lowest number of citizens?", "evidence": ""}
+{"question_id": "spider_realistic_422", "db_id": "world_1", "question": "Return the names of the 3 countries with the fewest people.", "evidence": ""}
+{"question_id": "spider_realistic_423", "db_id": "world_1", "question": "how many countries are in Asia?", "evidence": ""}
+{"question_id": "spider_realistic_424", "db_id": "world_1", "question": "Count the number of countries in Asia.", "evidence": ""}
+{"question_id": "spider_realistic_425", "db_id": "world_1", "question": "What are the names of the countries that are in Europe and have 80000 people?", "evidence": ""}
+{"question_id": "spider_realistic_426", "db_id": "world_1", "question": "Give the names of countries that are in Europe and have 80000 people.", "evidence": ""}
+{"question_id": "spider_realistic_427", "db_id": "world_1", "question": "What is the total population and average area of countries in North America who is bigger than 3000 square miles", "evidence": ""}
+{"question_id": "spider_realistic_428", "db_id": "world_1", "question": "Give the total population and average  corresponding to countries in Noth America that is bigger than 3000 square miles.", "evidence": ""}
+{"question_id": "spider_realistic_429", "db_id": "world_1", "question": "What are the cities who have more than 160000 people and less than 900000 people?", "evidence": ""}
+{"question_id": "spider_realistic_430", "db_id": "world_1", "question": "Return the names of cities that have between 160000 and 900000 people.", "evidence": ""}
+{"question_id": "spider_realistic_431", "db_id": "world_1", "question": "What is the language spoken by the largest percentage of people in each nation?", "evidence": ""}
+{"question_id": "spider_realistic_432", "db_id": "world_1", "question": "What are the codes of the different nations, and what are the languages spoken by the greatest percentage of people for each?", "evidence": ""}
+{"question_id": "spider_realistic_433", "db_id": "world_1", "question": "What is the total number of countries where Spanish is spoken by the largest percentage of people?", "evidence": ""}
+{"question_id": "spider_realistic_434", "db_id": "world_1", "question": "Count the number of countries for which Spanish is predominantly spoken .", "evidence": ""}
+{"question_id": "spider_realistic_435", "db_id": "world_1", "question": "What are the codes of countries where Spanish is spoken by the largest percentage of people?", "evidence": ""}
+{"question_id": "spider_realistic_436", "db_id": "world_1", "question": "Return the codes of countries for which Spanish is predominantly spoken .", "evidence": ""}

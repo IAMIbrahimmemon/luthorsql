@@ -1,0 +1,21 @@
+{"question_id": "q7742", "pick": "NONE", "sql": "SELECT r.role, h.honor, r.primary_label, r.family_label FROM registry r JOIN honors_athletes h ON h.athlete_pointer=r.athlete_pointer GROUP BY r.role ORDER BY COUNT(h.honor) DESC LIMIT 1"}
+{"question_id": "q7744", "pick": "NONE", "sql": "SELECT COUNT(*) OVER (), t.label, o.label FROM clubs t JOIN club_duels d ON d.club_pointer=t.club_pointer AND d.season=t.season JOIN clubs o ON o.club_pointer=d.rival_pointer AND o.season=d.season WHERE t.season=1915 AND t.victories=(SELECT MAX(victories) FROM clubs WHERE season=1915)"}
+{"question_id": "q7747", "pick": "A"}
+{"question_id": "q7754", "pick": "A"}
+{"question_id": "q7757", "pick": "B"}
+{"question_id": "q7774", "pick": "NONE", "sql": "SELECT t3.label FROM clubs t1 JOIN club_duels t2 ON t1.club_pointer=t2.club_pointer AND t1.season=t2.season JOIN clubs t3 ON t3.season=t2.season AND t3.club_pointer=t2.rival_pointer WHERE t2.season=2000 AND t1.label='Buffalo Sabres' GROUP BY t3.label ORDER BY SUM(t2.victories+t2.defeats+COALESCE(t2.draws,0)+COALESCE(CAST(t2.extra_defeats AS INT),0)) DESC LIMIT 1"}
+{"question_id": "q7776", "pick": "NONE", "sql": "SELECT t1.penalty_minutes FROM club_cup AS t1 INNER JOIN clubs AS t2 ON t1.club_pointer = t2.club_pointer AND t1.season = t2.season WHERE t2.label = 'Montreal Canadiens' AND t1.season = 1918"}
+{"question_id": "q7777", "pick": "NONE", "sql": "SELECT t2.victories FROM club_cup t1 JOIN clubs t2 ON t1.club_pointer=t2.club_pointer AND t1.season=t2.season WHERE t2.label='Montreal Canadiens' AND t1.penalty_minutes=24"}
+{"question_id": "q7782", "pick": "NONE", "sql": "SELECT SUM(CAST(c.victories AS REAL)/c.contests)/COUNT(*) FROM club_cup c JOIN clubs t ON t.club_pointer=c.club_pointer AND t.season=c.season WHERE t.label='Montreal Canadiens'"}
+{"question_id": "q7788", "pick": "A"}
+{"question_id": "q7792", "pick": "A"}
+{"question_id": "q7793", "pick": "NONE", "sql": "SELECT DISTINCT r.given_label, r.family_label FROM netminders n JOIN registry r ON r.athlete_pointer=n.athlete_pointer WHERE n.club_pointer='BOS' AND n.season=1972 AND r.mentor_pointer IS NOT NULL AND r.hall_pointer IS NULL"}
+{"question_id": "q7797", "pick": "NONE", "sql": "SELECT n.athlete_pointer FROM netminders n JOIN clubs c ON c.club_pointer=n.club_pointer AND c.season=n.season WHERE c.label='Minnesota North Stars' GROUP BY n.athlete_pointer ORDER BY SUM(CAST(n.goals_against AS INT)) DESC LIMIT 1"}
+{"question_id": "q7800", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN n.season=2005 THEN CAST(n.contests AS INT) ELSE 0 END) - SUM(CASE WHEN n.season=2006 THEN CAST(n.contests AS INT) ELSE 0 END) AS REAL)*100/SUM(CASE WHEN n.season=2005 THEN CAST(n.contests AS INT) ELSE 0 END) FROM netminders n JOIN registry r ON r.athlete_pointer=n.athlete_pointer WHERE r.given_label='David' AND r.family_label='Aebischer'"}
+{"question_id": "q7802", "pick": "A"}
+{"question_id": "q7803", "pick": "A"}
+{"question_id": "q7805", "pick": "NONE", "sql": "SELECT athlete_pointer FROM registry WHERE demise_season IS NOT NULL AND athlete_pointer IS NOT NULL"}
+{"question_id": "q7809", "pick": "NONE", "sql": "SELECT DISTINCT r.mentor_pointer FROM registry r JOIN honors_mentors h ON h.mentor_pointer=r.mentor_pointer WHERE r.athlete_pointer IS NULL AND r.mentor_pointer IS NOT NULL"}
+{"question_id": "q7812", "pick": "NONE", "sql": "SELECT (SELECT SUM(points) FROM clubs WHERE club_pointer='ANA'), m.mentor_pointer FROM mentors m WHERE m.club_pointer='ANA' GROUP BY m.mentor_pointer"}
+{"question_id": "q7816", "pick": "NONE", "sql": "SELECT DISTINCT r.given_label, r.family_label, n.club_pointer FROM registry r JOIN netminders n ON n.athlete_pointer=r.athlete_pointer WHERE n.season BETWEEN 1925 AND 1936 AND r.athlete_pointer=(SELECT athlete_pointer FROM registry WHERE stature IS NOT NULL AND athlete_pointer IS NOT NULL ORDER BY CAST(stature AS INT) LIMIT 1)"}
+{"question_id": "q7818", "pick": "NONE", "sql": "SELECT CAST(c.victories AS REAL)/c.contests, t.athlete_pointer FROM clubs c JOIN tallies t ON t.club_pointer=c.club_pointer AND t.season=c.season WHERE c.club_pointer='CAR' AND c.season=1998 ORDER BY t.goals DESC LIMIT 1"}

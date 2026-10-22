@@ -1,0 +1,17 @@
+{"question_id": "spider_realistic_0", "pick": "A"}
+{"question_id": "spider_realistic_1", "pick": "A"}
+{"question_id": "spider_realistic_2", "pick": "A"}
+{"question_id": "spider_realistic_3", "pick": "B"}
+{"question_id": "spider_realistic_4", "pick": "A"}
+{"question_id": "spider_realistic_5", "pick": "A"}
+{"question_id": "spider_realistic_6", "pick": "A"}
+{"question_id": "spider_realistic_7", "pick": "A"}
+{"question_id": "spider_realistic_8", "pick": "A"}
+{"question_id": "spider_realistic_9", "pick": "A"}
+{"question_id": "spider_realistic_10", "pick": "A"}
+{"question_id": "spider_realistic_11", "pick": "NONE", "sql": "SELECT Location, Name FROM stadium WHERE Capacity BETWEEN 5000 AND 10000"}
+{"question_id": "spider_realistic_12", "pick": "NONE", "sql": "SELECT Location, Name FROM stadium WHERE Capacity BETWEEN 5000 AND 10000"}
+{"question_id": "spider_realistic_13", "pick": "A"}
+{"question_id": "spider_realistic_14", "pick": "A"}
+{"question_id": "spider_realistic_15", "pick": "A"}
+{"question_id": "spider_realistic_16", "pick": "A"}

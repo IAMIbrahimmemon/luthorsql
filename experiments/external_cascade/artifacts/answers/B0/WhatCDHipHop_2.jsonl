@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_159", "sql": "SELECT groupYear FROM torrents GROUP BY groupYear ORDER BY count(groupName) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_160", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY count(groupName) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_161", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY avg(totalSnatched) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_162", "sql": "SELECT groupYear FROM torrents WHERE releaseType = 'album' GROUP BY groupYear ORDER BY count(groupName) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_163", "sql": "SELECT groupName FROM torrents ORDER BY totalSnatched DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_164", "sql": "SELECT releaseType FROM torrents GROUP BY releaseType ORDER BY sum(totalSnatched) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_165", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY sum(totalSnatched) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_166", "sql": "SELECT sum(totalSnatched), releaseType FROM torrents GROUP BY releaseType"}
+{"question_id": "kaggledbqa_test_167", "sql": "SELECT sum(totalSnatched) FROM torrents WHERE groupYear BETWEEN 2000 AND 2009 UNION SELECT sum(totalSnatched) FROM torrents WHERE groupYear < 2000"}
+{"question_id": "kaggledbqa_test_168", "sql": "SELECT count(*) FROM (SELECT groupName FROM torrents GROUP BY groupName HAVING count(*) > 1)"}
+{"question_id": "kaggledbqa_test_169", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY count(groupName) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_170", "sql": "SELECT sum(totalSnatched) FROM torrents WHERE releaseType = 'ep' UNION SELECT sum(totalSnatched) FROM torrents WHERE releaseType = 'album'"}
+{"question_id": "kaggledbqa_test_171", "sql": "SELECT artist FROM torrents GROUP BY artist HAVING count(*) = 1"}
+{"question_id": "kaggledbqa_test_172", "sql": "SELECT DISTINCT artist FROM torrents WHERE groupYear > 2010"}

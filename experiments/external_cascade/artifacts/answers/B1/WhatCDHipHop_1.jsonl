@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_145", "pick": "B"}
+{"question_id": "kaggledbqa_test_146", "pick": "NONE", "sql": "SELECT groupName, artist FROM torrents"}
+{"question_id": "kaggledbqa_test_147", "pick": "B"}
+{"question_id": "kaggledbqa_test_148", "pick": "A"}
+{"question_id": "kaggledbqa_test_149", "pick": "A"}
+{"question_id": "kaggledbqa_test_150", "pick": "A"}
+{"question_id": "kaggledbqa_test_151", "pick": "A"}
+{"question_id": "kaggledbqa_test_152", "pick": "NONE", "sql": "SELECT groupName FROM torrents WHERE artist = 'lasean camry' AND (totalSnatched = (SELECT MAX(totalSnatched) FROM torrents WHERE artist = 'lasean camry') OR totalSnatched = (SELECT MIN(totalSnatched) FROM torrents WHERE artist = 'lasean camry'))"}
+{"question_id": "kaggledbqa_test_153", "pick": "A"}
+{"question_id": "kaggledbqa_test_154", "pick": "A"}
+{"question_id": "kaggledbqa_test_155", "pick": "A"}
+{"question_id": "kaggledbqa_test_156", "pick": "A"}
+{"question_id": "kaggledbqa_test_157", "pick": "A"}
+{"question_id": "kaggledbqa_test_158", "pick": "A"}

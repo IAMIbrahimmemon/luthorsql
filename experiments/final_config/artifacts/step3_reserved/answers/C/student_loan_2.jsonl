@@ -1,0 +1,18 @@
+{"question_id": "bird_train_train_4476", "pick": "A"}
+{"question_id": "bird_train_train_4482", "pick": "A"}
+{"question_id": "bird_train_train_4506", "pick": "NONE", "sql": "SELECT T1.name FROM enlist T1 JOIN enrolled T2 ON T1.name=T2.name GROUP BY T1.name HAVING COUNT(DISTINCT T2.school)=2 AND COUNT(DISTINCT T1.organ)=2"}
+{"question_id": "bird_train_train_4507", "pick": "NONE", "sql": "SELECT CAST(SUM(month=0)-SUM(month=9) AS REAL)*100/SUM(month=0) FROM longest_absense_from_school"}
+{"question_id": "bird_train_train_4511", "pick": "NONE", "sql": "SELECT T1.name FROM male T1 JOIN unemployed T2 ON T1.name=T2.name JOIN disabled T3 ON T1.name=T3.name JOIN longest_absense_from_school T4 ON T1.name=T4.name WHERE T4.month=5"}
+{"question_id": "bird_train_train_4514", "pick": "NONE", "sql": "SELECT SUM(m.name IS NOT NULL)-SUM(m.name IS NULL) FROM filed_for_bankrupcy f LEFT JOIN male m ON f.name=m.name"}
+{"question_id": "bird_train_train_4516", "pick": "NONE", "sql": "SELECT CAST(SUM(T2.name IS NOT NULL AND T1.month=0)-SUM(T2.name IS NULL AND T1.month=0) AS REAL)*100/COUNT(T1.name), IIF(SUM(T2.name IS NOT NULL AND T1.month=0)-SUM(T2.name IS NULL AND T1.month=0)>0,'YES','NO') FROM longest_absense_from_school T1 LEFT JOIN disabled T2 ON T1.name=T2.name"}
+{"question_id": "bird_train_train_4517", "pick": "A"}
+{"question_id": "bird_train_train_4520", "pick": "B"}
+{"question_id": "bird_train_train_4523", "pick": "A"}
+{"question_id": "bird_train_train_4524", "pick": "A"}
+{"question_id": "bird_train_train_4535", "pick": "A"}
+{"question_id": "bird_train_train_4539", "pick": "A"}
+{"question_id": "bird_train_train_4542", "pick": "A"}
+{"question_id": "bird_train_train_4551", "pick": "NONE", "sql": "SELECT CAST(COUNT(m.name) AS REAL)*100/COUNT(e.name) FROM enrolled e JOIN enlist l ON e.name=l.name LEFT JOIN male m ON e.name=m.name WHERE e.school='ucla' AND l.organ='air_force'"}
+{"question_id": "bird_train_train_4552", "pick": "NONE", "sql": "SELECT CAST(SUM(e.school='uci' AND m.name IS NULL) AS REAL)/COUNT(e.name) FROM enrolled e JOIN disabled d ON e.name=d.name LEFT JOIN male m ON e.name=m.name"}
+{"question_id": "bird_train_train_4562", "pick": "A"}
+{"question_id": "bird_train_train_4567", "pick": "B"}

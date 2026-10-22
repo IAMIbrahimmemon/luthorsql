@@ -1,0 +1,18 @@
+{"question_id": "spider_realistic_151", "pick": "NONE", "sql": "SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'APG' INTERSECT SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'CVO'"}
+{"question_id": "spider_realistic_152", "pick": "NONE", "sql": "SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'APG' INTERSECT SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'CVO'"}
+{"question_id": "spider_realistic_153", "pick": "NONE", "sql": "SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'CVO' EXCEPT SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'APG'"}
+{"question_id": "spider_realistic_154", "pick": "NONE", "sql": "SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'CVO' EXCEPT SELECT a.Airline FROM airlines a JOIN flights f ON a.uid = f.Airline WHERE trim(f.SourceAirport) = 'APG'"}
+{"question_id": "spider_realistic_155", "pick": "A"}
+{"question_id": "spider_realistic_156", "pick": "A"}
+{"question_id": "spider_realistic_157", "pick": "A"}
+{"question_id": "spider_realistic_158", "pick": "A"}
+{"question_id": "spider_realistic_159", "pick": "A"}
+{"question_id": "spider_realistic_160", "pick": "A"}
+{"question_id": "spider_realistic_161", "pick": "NONE", "sql": "SELECT f.FlightNo FROM flights f JOIN airports a ON trim(f.SourceAirport) = a.AirportCode WHERE trim(a.City) = 'Aberdeen'"}
+{"question_id": "spider_realistic_162", "pick": "NONE", "sql": "SELECT f.FlightNo FROM flights f JOIN airports a ON trim(f.SourceAirport) = a.AirportCode WHERE trim(a.City) = 'Aberdeen'"}
+{"question_id": "spider_realistic_163", "pick": "NONE", "sql": "SELECT f.FlightNo FROM flights f JOIN airports a ON trim(f.DestAirport) = a.AirportCode WHERE trim(a.City) = 'Aberdeen'"}
+{"question_id": "spider_realistic_164", "pick": "NONE", "sql": "SELECT f.FlightNo FROM flights f JOIN airports a ON trim(f.DestAirport) = a.AirportCode WHERE trim(a.City) = 'Aberdeen'"}
+{"question_id": "spider_realistic_165", "pick": "NONE", "sql": "SELECT COUNT(*) FROM flights f JOIN airports a ON trim(f.DestAirport) = a.AirportCode WHERE trim(a.City) IN ('Aberdeen', 'Abilene')"}
+{"question_id": "spider_realistic_166", "pick": "NONE", "sql": "SELECT COUNT(*) FROM flights f JOIN airports a ON trim(f.DestAirport) = a.AirportCode WHERE trim(a.City) IN ('Aberdeen', 'Abilene')"}
+{"question_id": "spider_realistic_167", "pick": "NONE", "sql": "SELECT AirportName FROM airports WHERE AirportCode NOT IN (SELECT trim(SourceAirport) FROM flights UNION SELECT trim(DestAirport) FROM flights)"}
+{"question_id": "spider_realistic_168", "pick": "NONE", "sql": "SELECT AirportName FROM airports WHERE AirportCode NOT IN (SELECT trim(SourceAirport) FROM flights UNION SELECT trim(DestAirport) FROM flights)"}

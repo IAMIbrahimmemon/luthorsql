@@ -1,0 +1,50 @@
+{"item_id": "bird_train_train_731", "db_id": "movie", "question": "Which character has the longest screen time in the movie Batman?"}
+{"item_id": "bird_train_train_735", "db_id": "movie", "question": "Please list the names of the movies starring Tom Cruise."}
+{"item_id": "bird_train_train_738", "db_id": "movie", "question": "What is the name of the character played by Tom Cruise in the movie Born on the Fourth of July?"}
+{"item_id": "bird_train_train_742", "db_id": "movie", "question": "What is the average rating of all the movies starring Tom Cruise?"}
+{"item_id": "bird_train_train_743", "db_id": "movie", "question": "How much longer in percentage is the screen time of the most important character in Batman than the least important one?"}
+{"item_id": "bird_train_train_746", "db_id": "movie", "question": "Give the name of the No.1 character in the credit list from the highest rating thriller movie."}
+{"item_id": "bird_train_train_747", "db_id": "movie", "question": "Who was the actor that played in the movie \"Batman\" with the longest screentime?"}
+{"item_id": "bird_train_train_751", "db_id": "movie", "question": "Show the birth city of the actor who played \"Gabriel Martin\"."}
+{"item_id": "bird_train_train_755", "db_id": "movie", "question": "Who played the No.2 character in the credit list of the movie \"American Hustle\"?"}
+{"item_id": "bird_train_train_756", "db_id": "movie", "question": "Who played the No.1 character in the credit list of the movie which was released on \"2015/10/26\"?"}
+{"item_id": "bird_train_train_757", "db_id": "movie", "question": "What is the percentage of the USA actors that showed up in the credit list of movie \"Mrs. Doubtfire\"?"}
+{"item_id": "bird_train_train_761", "db_id": "movie", "question": "What is the name of male and white actor with actor ID 439?"}
+{"item_id": "bird_train_train_769", "db_id": "movie", "question": "Among the actors starred in Die Hard 2, list their net worth and birth date of actors with a height between 60 to 65."}
+{"item_id": "bird_train_train_772", "db_id": "movie", "question": "What is the gross of a comedy movie with a rating lower than 7 and starred by an actor with a net worth greater than $375,000,000.00?"}
+{"item_id": "bird_train_train_775", "db_id": "movie", "question": "List the character's name of actress born in Sherman Oaks and starred in the movie Bruce Almighty with height greater than the 50% of average height of all actors listed."}
+{"item_id": "bird_train_train_854", "db_id": "cs_semester", "question": "Which course is more difficult, Intro to BlockChain or Computer Network?"}
+{"item_id": "bird_train_train_855", "db_id": "cs_semester", "question": "Please list the names of the courses that are less important than Machine Learning Theory."}
+{"item_id": "bird_train_train_856", "db_id": "cs_semester", "question": "How many professors are more popular than Zhou Zhihua?"}
+{"item_id": "bird_train_train_859", "db_id": "cs_semester", "question": "How many research assistants does Sauveur Skyme have?"}
+{"item_id": "bird_train_train_860", "db_id": "cs_semester", "question": "Please list the full names of all the students who are research assistants with the highest research capability."}
+{"item_id": "bird_train_train_866", "db_id": "cs_semester", "question": "Which student is more satisfied with the course Machine Learning Theory, Willie Rechert or Laughton Antonio?"}
+{"item_id": "bird_train_train_869", "db_id": "cs_semester", "question": "Which professor advised Willie Rechert to work as a research assistant? Please give his or her full name."}
+{"item_id": "bird_train_train_870", "db_id": "cs_semester", "question": "What is the average gpa of Ogdon Zywicki's research assistants?"}
+{"item_id": "bird_train_train_872", "db_id": "cs_semester", "question": "Give the number of research postgraduate students."}
+{"item_id": "bird_train_train_873", "db_id": "cs_semester", "question": "Which student has the highest gpa? Give the full name."}
+{"item_id": "bird_train_train_876", "db_id": "cs_semester", "question": "Which professor is Oliy Spratling working with? Give the full name."}
+{"item_id": "bird_train_train_880", "db_id": "cs_semester", "question": "Give the grade score for Rik Unsworth in \"Computer Network\"."}
+{"item_id": "bird_train_train_885", "db_id": "cs_semester", "question": "Give the phone number of the only student who obtained \"A\" in the course \"Intro to BlockChain\"."}
+{"item_id": "bird_train_train_887", "db_id": "cs_semester", "question": "What is the percentage of students who get a \"B\" in the course \"Computer Network\"?"}
+{"item_id": "bird_train_train_889", "db_id": "cs_semester", "question": "What is the full name of the professor who graduated from an Ivy League School?"}
+{"item_id": "bird_train_train_893", "db_id": "cs_semester", "question": "How many research postgraduate students are there?"}
+{"item_id": "bird_train_train_902", "db_id": "cs_semester", "question": "What is the popularity of the professor who advises the highest number of students with the highest research ability?"}
+{"item_id": "bird_train_train_907", "db_id": "cs_semester", "question": "List the professors' IDs and students' IDs with the lowest research ability."}
+{"item_id": "bird_train_train_909", "db_id": "cs_semester", "question": "List the courses' IDs and students' IDs who failed to pass the course."}
+{"item_id": "bird_train_train_910", "db_id": "cs_semester", "question": "What is the male and female ratio among the professors?"}
+{"item_id": "bird_train_train_914", "db_id": "cs_semester", "question": "List the research assistants' full names, capabilities and GPAs who were under the supervision of Merwyn Conkay."}
+{"item_id": "bird_train_train_921", "db_id": "cs_semester", "question": "Describe the names and capability of the students who were advised by professors from the University of Washington."}
+{"item_id": "bird_train_train_923", "db_id": "cs_semester", "question": "Mention the names and credits of course registered by the students who were under the supervision of female professor with the highest teaching ability."}
+{"item_id": "bird_train_train_932", "db_id": "cs_semester", "question": "List the capability of research postgraduate students with an intellegence level of 4 and above."}
+{"item_id": "bird_train_train_933", "db_id": "cs_semester", "question": "In students with a grade of B, how many of them have an intellegence level of 3?"}
+{"item_id": "bird_train_train_936", "db_id": "cs_semester", "question": "List the course's name where students acquired a grade of D."}
+{"item_id": "bird_train_train_939", "db_id": "cs_semester", "question": "Among students with low salary, how many of them have a gpa of 3.5?"}
+{"item_id": "bird_train_train_944", "db_id": "cs_semester", "question": "Calculate the average satisfaction of the good students with their courses."}
+{"item_id": "bird_train_train_947", "db_id": "cs_semester", "question": "For the students with an intelligence of 5, list the full name and courses taken by them who have less than a 3 GPA."}
+{"item_id": "bird_train_train_948", "db_id": "cs_semester", "question": "What is the average capability of students with less than a 2.5 GPA?"}
+{"item_id": "bird_train_train_951", "db_id": "cs_semester", "question": "Give the full name and capability of students who failed in any courses."}
+{"item_id": "bird_train_train_960", "db_id": "cs_semester", "question": "Among professors with the highest teachability, how many of their students have high salary?"}
+{"item_id": "bird_train_train_962", "db_id": "cs_semester", "question": "Among students that gave satisfaction of value 4 for the course named \"Statistical Learning\", how many of them have a gpa of 3.8?"}
+{"item_id": "bird_train_train_963", "db_id": "cs_semester", "question": "Among courses with difficulty of 3, how many students have intellegence level of 2?"}
+{"item_id": "bird_train_train_966", "db_id": "cs_semester", "question": "Among the students with a capability below 3, what is the difference of undergraduate students from research postgraduate students?"}

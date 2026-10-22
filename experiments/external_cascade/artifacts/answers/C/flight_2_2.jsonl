@@ -1,0 +1,13 @@
+{"question_id": "spider_realistic_149", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}
+{"question_id": "spider_realistic_150", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}
+{"question_id": "spider_realistic_151", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG' INTERSECT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO'"}
+{"question_id": "spider_realistic_152", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG' INTERSECT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO'"}
+{"question_id": "spider_realistic_153", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO' EXCEPT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG'"}
+{"question_id": "spider_realistic_154", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO' EXCEPT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG'"}
+{"question_id": "spider_realistic_159", "pick": "NONE", "sql": "SELECT FlightNo FROM flights WHERE DestAirport = 'APG'"}
+{"question_id": "spider_realistic_160", "pick": "NONE", "sql": "SELECT FlightNo FROM flights WHERE DestAirport = 'APG'"}
+{"question_id": "spider_realistic_161", "pick": "NONE", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_162", "pick": "NONE", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_163", "pick": "NONE", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_164", "pick": "NONE", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_168", "pick": "NONE", "sql": "SELECT AirportName FROM airports WHERE AirportCode NOT IN (SELECT SourceAirport FROM flights UNION SELECT DestAirport FROM flights)"}

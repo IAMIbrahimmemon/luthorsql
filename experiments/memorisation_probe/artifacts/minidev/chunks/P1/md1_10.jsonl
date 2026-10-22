@@ -1,0 +1,50 @@
+{"item_id": "md_37", "db_id": "california_schools", "question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State."}
+{"item_id": "md_36", "db_id": "california_schools", "question": "Under whose administration is the school with the highest number of students scoring 1500 or more on the SAT? Indicate their full names."}
+{"item_id": "md_39", "db_id": "california_schools", "question": "What is the average number of test takers from Fresno schools that opened between 1/1/1980 and 12/31/1980?"}
+{"item_id": "md_40", "db_id": "california_schools", "question": "What is the telephone number for the school with the lowest average score in reading in Fresno Unified?"}
+{"item_id": "md_41", "db_id": "california_schools", "question": "List the names of virtual schools that are among the top 5 in their respective counties based on average reading scores."}
+{"item_id": "md_45", "db_id": "california_schools", "question": "What is the average writing score of each of the schools managed by Ricci Ulrich? List the schools and the corresponding average writing scores."}
+{"item_id": "md_46", "db_id": "california_schools", "question": "Which state special schools have the highest number of enrollees from grades 1 through 12?"}
+{"item_id": "md_47", "db_id": "california_schools", "question": "What is the monthly average number of schools that opened in Alameda County under the jurisdiction of the Elementary School District in 1980?"}
+{"item_id": "md_48", "db_id": "california_schools", "question": "What is the ratio of merged Unified School District schools in Orange County to merged Elementary School District schools?"}
+{"item_id": "md_50", "db_id": "california_schools", "question": "What is the postal street address for the school with the 7th highest Math average? Indicate the school's name."}
+{"item_id": "md_62", "db_id": "california_schools", "question": "What is the total number of non-chartered schools in the county of Los Angeles with a percent (%) of eligible free meals for grades 1 through 12 that is less than 0.18%?"}
+{"item_id": "md_72", "db_id": "california_schools", "question": "How many students from the ages of 5 to 17 are enrolled at the State Special School school in Fremont for the 2014-2015 academic year?"}
+{"item_id": "md_77", "db_id": "california_schools", "question": "Which schools served a grade span of Kindergarten to 9th grade in the county of Los Angeles and what is its Percent (%) Eligible FRPM (Ages 5-17)?"}
+{"item_id": "md_79", "db_id": "california_schools", "question": "Between San Diego and Santa Barbara, which county offers the most number of schools that does not offer physical building? Indicate the amount."}
+{"item_id": "md_82", "db_id": "california_schools", "question": "What is the grade span offered in the school with the highest longitude?"}
+{"item_id": "md_83", "db_id": "california_schools", "question": "Of the schools that offers a magnet program serving a grade span of Kindergarten to 8th grade, how many offers Multiple Provision Types? List the number of cities that offers a Kindergarten to 8th grade span and indicate how many schools are there serving such grade span for each city."}
+{"item_id": "md_85", "db_id": "california_schools", "question": "What is the Percent (%) Eligible Free (K-12) in the school administered by an administrator whose first name is Alusine. List the district code of the school."}
+{"item_id": "md_87", "db_id": "california_schools", "question": "What are the valid e-mail addresses of the administrator of the school located in the San Bernardino county, City of San Bernardino City Unified that opened between 1/1/2009 to 12/31/2010 whose school types are public Intermediate/Middle Schools and Unified Schools?"}
+{"item_id": "md_89", "db_id": "financial", "question": "How many accounts who choose issuance after transaction are staying in East Bohemia region?"}
+{"item_id": "md_92", "db_id": "financial", "question": "List out the no. of districts that have female average salary is more than 6000 but less than 10000?"}
+{"item_id": "md_93", "db_id": "financial", "question": "How many male customers who are living in North Bohemia have average salary greater than 8000?"}
+{"item_id": "md_94", "db_id": "financial", "question": "List out the account numbers of female clients who are oldest and has lowest average salary, calculate the gap between this lowest average salary with the highest average salary?"}
+{"item_id": "md_95", "db_id": "financial", "question": "List out the account numbers of clients who are youngest and have highest average salary?"}
+{"item_id": "md_98", "db_id": "financial", "question": "Among the accounts who have approved loan date in 1997, list out the accounts that have the lowest approved amount and choose weekly issuance statement."}
+{"item_id": "md_99", "db_id": "financial", "question": "Among the accounts who have loan validity more than 12 months, list out the accounts that have the highest approved amount and have account opening date in 1993."}
+{"item_id": "md_100", "db_id": "financial", "question": "Among the account opened, how many female customers who were born before 1950 and stayed in Sokolov?"}
+{"item_id": "md_112", "db_id": "financial", "question": "For the female client who was born in 1976/1/29, which district did she opened her account?"}
+{"item_id": "md_115", "db_id": "financial", "question": "For the branch which located in the south Bohemia with biggest number of inhabitants, what is the percentage of the male clients?"}
+{"item_id": "md_116", "db_id": "financial", "question": "For the client whose loan was approved first in 1993/7/5, what is the increase rate of his/her account balance from 1993/3/22 to 1998/12/27?"}
+{"item_id": "md_117", "db_id": "financial", "question": "What is the percentage of loan amount that has been fully paid with no issue."}
+{"item_id": "md_118", "db_id": "financial", "question": "For loan amount less than USD100,000, what is the percentage of accounts that is still running with no issue."}
+{"item_id": "md_125", "db_id": "financial", "question": "For loans contracts which are still running where client are in debt, list the district of the and the state the percentage unemployment rate increment from year 1995 to 1996."}
+{"item_id": "md_128", "db_id": "financial", "question": "List the top nine districts, by descending order, from the highest to the lowest, the number of female account holders."}
+{"item_id": "md_136", "db_id": "financial", "question": "Between 1/1/1995 and 12/31/1997, how many loans in the amount of at least 250,000 per account that chose monthly statement issuance were approved?"}
+{"item_id": "md_129", "db_id": "financial", "question": "Which are the top ten withdrawals (non-credit card) by district names for the month of January 1996?"}
+{"item_id": "md_137", "db_id": "financial", "question": "How many accounts have running contracts in Branch location 1?"}
+{"item_id": "md_138", "db_id": "financial", "question": "In the branch where the second-highest number of crimes were committed in 1995 occurred, how many male clients are there?"}
+{"item_id": "md_145", "db_id": "financial", "question": "Who are the account holder identification numbers whose who have transactions on the credit card with the amount is less than the average, in 1998?"}
+{"item_id": "md_149", "db_id": "financial", "question": "Please list the account types that are not eligible for loans, and the average income of residents in the district where the account is located exceeds $8000 but is no more than $9000."}
+{"item_id": "md_152", "db_id": "financial", "question": "What is the average number of crimes committed in 1995 in regions where the number exceeds 4000 and the region has accounts that are opened starting from the year 1997?"}
+{"item_id": "md_159", "db_id": "financial", "question": "List all the withdrawals in cash transactions that the client with the id 3356 makes."}
+{"item_id": "md_168", "db_id": "financial", "question": "What percentage of clients who opened their accounts in the district with an average salary of over 10000 are women?"}
+{"item_id": "md_169", "db_id": "financial", "question": "What was the growth rate of the total amount of loans across all accounts for a male client between 1996 and 1997?"}
+{"item_id": "md_173", "db_id": "financial", "question": "How often does account number 3 request an account statement to be released? What was the aim of debiting 3539 in total?"}
+{"item_id": "md_186", "db_id": "financial", "question": "What percentage of male clients request for weekly statements to be issued?"}
+{"item_id": "md_189", "db_id": "financial", "question": "Name the account numbers of female clients who are oldest and have lowest average salary?"}
+{"item_id": "md_192", "db_id": "financial", "question": "What is the average amount of loan which are still on running contract with statement issuance after each transaction?"}
+{"item_id": "md_194", "db_id": "financial", "question": "Provide the IDs and age of the client with high level credit card, which is eligible for loans."}
+{"item_id": "md_119", "db_id": "financial", "question": "For accounts in 1993 with statement issued after transaction, list the account ID, district name and district region."}
+{"item_id": "md_120", "db_id": "financial", "question": "From Year 1995 to 2000, who are the accounts holders from 'east Bohemia'. State the account ID the frequency of statement issuance."}

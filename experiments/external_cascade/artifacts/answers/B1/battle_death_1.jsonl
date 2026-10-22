@@ -1,0 +1,5 @@
+{"question_id": "spider_realistic_250", "pick": "A"}
+{"question_id": "spider_realistic_251", "pick": "A"}
+{"question_id": "spider_realistic_252", "pick": "A"}
+{"question_id": "spider_realistic_253", "pick": "NONE", "sql": "SELECT T1.name, T1.date FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.name = 'Lettice' INTERSECT SELECT T1.name, T1.date FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.name = 'HMS Atalanta'"}
+{"question_id": "spider_realistic_254", "pick": "NONE", "sql": "SELECT name, result, bulgarian_commander FROM battle EXCEPT SELECT T1.name, T1.result, T1.bulgarian_commander FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.location = 'English Channel'"}

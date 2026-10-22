@@ -1,0 +1,25 @@
+{"question_id": "spider_realistic_465", "pick": "NONE", "sql": "SELECT professional_id, last_name, cell_number FROM Professionals WHERE state = 'Indiana' UNION SELECT T1.professional_id, T1.last_name, T1.cell_number FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count(*) > 2"}
+{"question_id": "spider_realistic_466", "pick": "NONE", "sql": "SELECT professional_id, last_name, cell_number FROM Professionals WHERE state = 'Indiana' UNION SELECT T1.professional_id, T1.last_name, T1.cell_number FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count(*) > 2"}
+{"question_id": "spider_realistic_467", "pick": "NONE", "sql": "SELECT T1.name FROM Dogs AS T1 JOIN Treatments AS T2 ON T1.dog_id = T2.dog_id GROUP BY T1.dog_id HAVING sum(T2.cost_of_treatment) > 1000"}
+{"question_id": "spider_realistic_468", "pick": "A"}
+{"question_id": "spider_realistic_469", "pick": "A"}
+{"question_id": "spider_realistic_470", "pick": "A"}
+{"question_id": "spider_realistic_471", "pick": "A"}
+{"question_id": "spider_realistic_472", "pick": "A"}
+{"question_id": "spider_realistic_473", "pick": "A"}
+{"question_id": "spider_realistic_474", "pick": "A"}
+{"question_id": "spider_realistic_475", "pick": "A"}
+{"question_id": "spider_realistic_476", "pick": "NONE", "sql": "SELECT DISTINCT T1.first_name, T1.last_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id WHERE T2.cost_of_treatment < (SELECT AVG(cost_of_treatment) FROM Treatments)"}
+{"question_id": "spider_realistic_477", "pick": "NONE", "sql": "SELECT DISTINCT T1.first_name, T1.last_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id WHERE T2.cost_of_treatment < (SELECT AVG(cost_of_treatment) FROM Treatments)"}
+{"question_id": "spider_realistic_478", "pick": "A"}
+{"question_id": "spider_realistic_479", "pick": "A"}
+{"question_id": "spider_realistic_480", "pick": "A"}
+{"question_id": "spider_realistic_481", "pick": "A"}
+{"question_id": "spider_realistic_482", "pick": "NONE", "sql": "SELECT email_address FROM Professionals WHERE state = 'Hawaii' OR state = 'Wisconsin'"}
+{"question_id": "spider_realistic_483", "pick": "NONE", "sql": "SELECT email_address FROM Professionals WHERE state = 'Hawaii' OR state = 'Wisconsin'"}
+{"question_id": "spider_realistic_484", "pick": "A"}
+{"question_id": "spider_realistic_485", "pick": "A"}
+{"question_id": "spider_realistic_486", "pick": "A"}
+{"question_id": "spider_realistic_487", "pick": "A"}
+{"question_id": "spider_realistic_488", "pick": "A"}
+{"question_id": "spider_realistic_489", "pick": "A"}

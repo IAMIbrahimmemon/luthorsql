@@ -1,0 +1,17 @@
+{"question_id": "bird_train_train_1247", "pick": "A"}
+{"question_id": "bird_train_train_1250", "pick": "A"}
+{"question_id": "bird_train_train_1252", "pick": "A"}
+{"question_id": "bird_train_train_1257", "pick": "A"}
+{"question_id": "bird_train_train_1261", "pick": "A"}
+{"question_id": "bird_train_train_1263", "pick": "A"}
+{"question_id": "bird_train_train_1265", "pick": "A"}
+{"question_id": "bird_train_train_1269", "pick": "A"}
+{"question_id": "bird_train_train_1278", "pick": "A"}
+{"question_id": "bird_train_train_1283", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.episode_id), CAST(COUNT(T2.person_id) AS REAL) / COUNT(DISTINCT T1.episode_id) FROM Episode AS T1 INNER JOIN Credit AS T2 ON T1.episode_id = T2.episode_id WHERE T1.season = 9 AND T1.series = 'Law and Order' AND T2.category = 'Cast'"}
+{"question_id": "bird_train_train_1284", "pick": "NONE", "sql": "SELECT T2.keyword FROM Episode AS T1 INNER JOIN Keyword AS T2 ON T1.episode_id = T2.episode_id WHERE T1.episode_id NOT IN (SELECT episode_id FROM Episode ORDER BY votes DESC LIMIT 1) ORDER BY T1.votes DESC LIMIT 1"}
+{"question_id": "bird_train_train_1287", "pick": "A"}
+{"question_id": "bird_train_train_1289", "pick": "A"}
+{"question_id": "bird_train_train_1290", "pick": "A"}
+{"question_id": "bird_train_train_1291", "pick": "A"}
+{"question_id": "bird_train_train_1297", "pick": "A"}
+{"question_id": "bird_train_train_1301", "pick": "A"}

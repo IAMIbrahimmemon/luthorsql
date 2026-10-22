@@ -1,0 +1,4 @@
+{"question_id": "spider_realistic_173", "pick": "B"}
+{"question_id": "spider_realistic_174", "pick": "B"}
+{"question_id": "spider_realistic_187", "pick": "NONE", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}
+{"question_id": "spider_realistic_188", "pick": "NONE", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}

@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_397", "db_id": "world_1", "question": "For the countries founded before 1930, what is the total number of distinct official languages?", "evidence": ""}
+{"question_id": "spider_realistic_398", "db_id": "world_1", "question": "What are the countries that have greater surface area than any country in Europe?", "evidence": ""}
+{"question_id": "spider_realistic_399", "db_id": "world_1", "question": "Which countries larger than that of any country in Europe by land?", "evidence": ""}
+{"question_id": "spider_realistic_400", "db_id": "world_1", "question": "What are the African countries that have less people than any country in Asia?", "evidence": ""}
+{"question_id": "spider_realistic_401", "db_id": "world_1", "question": "Which African countries have fewer people than that of any country in Asia?", "evidence": ""}
+{"question_id": "spider_realistic_402", "db_id": "world_1", "question": "Which Asian countries have more people than any country in Africa?", "evidence": ""}
+{"question_id": "spider_realistic_403", "db_id": "world_1", "question": "What are the Asian countries have more people than that of any country in Africa?", "evidence": ""}
+{"question_id": "spider_realistic_404", "db_id": "world_1", "question": "What are the country codes for countries that do not speak English?", "evidence": ""}
+{"question_id": "spider_realistic_405", "db_id": "world_1", "question": "Return the country codes for countries that do not speak English.", "evidence": ""}
+{"question_id": "spider_realistic_406", "db_id": "world_1", "question": "What are the country codes of countries where people speak other than English?", "evidence": ""}
+{"question_id": "spider_realistic_407", "db_id": "world_1", "question": "Give the country codes for countries in which people does not speak English.", "evidence": ""}
+{"question_id": "spider_realistic_408", "db_id": "world_1", "question": "What are the codes of the countries that do not speak English and are not Republic?", "evidence": ""}
+{"question_id": "spider_realistic_409", "db_id": "world_1", "question": "Return the codes of non republic countries that do not speak Englishs.", "evidence": ""}
+{"question_id": "spider_realistic_410", "db_id": "world_1", "question": "Which cities are in European countries where English is not spoken officially?", "evidence": ""}
+{"question_id": "spider_realistic_411", "db_id": "world_1", "question": "Whic`h unique cities are in  Asian countries where Chinese is the official ?", "evidence": ""}
+{"question_id": "spider_realistic_412", "db_id": "world_1", "question": "Return the different names of cities that are in Asia and for which Chinese is used officially .", "evidence": ""}
+{"question_id": "spider_realistic_413", "db_id": "world_1", "question": "What are the name, independence year, and surface area of the country with the least number of nationalities?", "evidence": ""}
+{"question_id": "spider_realistic_414", "db_id": "world_1", "question": "Give the name, year of independence, and surface area of the country that has the fewest people.", "evidence": ""}
+{"question_id": "spider_realistic_415", "db_id": "world_1", "question": "What are the population, name and leader of the largest country by land?", "evidence": ""}
+{"question_id": "spider_realistic_416", "db_id": "world_1", "question": "Find the number of cities in each district who have more people than average?", "evidence": ""}
+{"question_id": "spider_realistic_417", "db_id": "world_1", "question": "How many cities in each district have more number of people than average?", "evidence": ""}

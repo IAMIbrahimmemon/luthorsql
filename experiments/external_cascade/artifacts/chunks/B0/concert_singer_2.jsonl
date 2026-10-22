@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_17", "db_id": "concert_singer", "question": "Show the stadium names without any concert.", "evidence": ""}
+{"question_id": "spider_realistic_18", "db_id": "concert_singer", "question": "What are the names of the stadiums without any concerts?", "evidence": ""}
+{"question_id": "spider_realistic_19", "db_id": "concert_singer", "question": "Show countries where a singer older than 40 and a singer younger than 30 are from.", "evidence": ""}
+{"question_id": "spider_realistic_20", "db_id": "concert_singer", "question": "Show names for all stadiums except for stadiums having a concert in  2014.", "evidence": ""}
+{"question_id": "spider_realistic_21", "db_id": "concert_singer", "question": "What are the names of all stadiums that did not have a concert in 2014?", "evidence": ""}
+{"question_id": "spider_realistic_22", "db_id": "concert_singer", "question": "Show the name and theme for all concerts and the number of singers in each.", "evidence": ""}
+{"question_id": "spider_realistic_23", "db_id": "concert_singer", "question": "List singer names and number of concerts for each person.", "evidence": ""}
+{"question_id": "spider_realistic_24", "db_id": "concert_singer", "question": "What are the names and number of concerts for each person?", "evidence": ""}
+{"question_id": "spider_realistic_25", "db_id": "concert_singer", "question": "List all singer names in concerts in  2014.", "evidence": ""}
+{"question_id": "spider_realistic_26", "db_id": "concert_singer", "question": "What are the names of the singers who performed in a concert in 2014?", "evidence": ""}
+{"question_id": "spider_realistic_27", "db_id": "concert_singer", "question": "what is the name and nation of the singer who have a song having 'Hey' in its title?", "evidence": ""}
+{"question_id": "spider_realistic_28", "db_id": "concert_singer", "question": "What is the name and country of origin of every singer who has a song with the word 'Hey' in its title?", "evidence": ""}
+{"question_id": "spider_realistic_29", "db_id": "concert_singer", "question": "Find the name and location of the stadiums which some concerts happened in both 2014 and 2015.", "evidence": ""}
+{"question_id": "spider_realistic_30", "db_id": "concert_singer", "question": "What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?", "evidence": ""}
+{"question_id": "spider_realistic_31", "db_id": "concert_singer", "question": "Find the number of concerts happened in the stadium that can accommodate the most people.", "evidence": ""}
+{"question_id": "spider_realistic_32", "db_id": "concert_singer", "question": "What are the number of concerts that occurred in the stadium with space for the most people?", "evidence": ""}

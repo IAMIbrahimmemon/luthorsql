@@ -1,0 +1,50 @@
+{"item_id": "kaggledbqa_test_50", "sql": "SELECT max(concen) FROM resultsdata15"}
+{"item_id": "kaggledbqa_test_51", "sql": "SELECT year, month, day FROM sampledata15 WHERE sample_pk = 3763"}
+{"item_id": "kaggledbqa_test_52", "sql": "SELECT state FROM sampledata15 WHERE commod = 'AP' GROUP BY state ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_53", "sql": "SELECT growst FROM sampledata15 WHERE commod = 'AP' GROUP BY growst ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_54", "sql": "SELECT count(DISTINCT variety) FROM sampledata15"}
+{"item_id": "kaggledbqa_test_55", "sql": "SELECT site FROM sampledata15 WHERE sample_pk = 3763"}
+{"item_id": "kaggledbqa_test_56", "sql": "SELECT country FROM sampledata15 WHERE sample_pk = 6480"}
+{"item_id": "kaggledbqa_test_57", "sql": "SELECT quantity FROM sampledata15 WHERE sample_pk = 9628"}
+{"item_id": "kaggledbqa_test_58", "sql": "SELECT testclass FROM resultsdata15 WHERE sample_pk = 7498"}
+{"item_id": "kaggledbqa_test_59", "sql": "SELECT T1.confmethod FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk ORDER BY T2.year DESC, T2.month DESC, T2.day DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_60", "sql": "SELECT lab FROM resultsdata15 GROUP BY lab ORDER BY count(DISTINCT sample_pk) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_61", "sql": "SELECT testclass FROM resultsdata15 GROUP BY testclass ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_62", "sql": "SELECT conunit FROM resultsdata15 WHERE sample_pk = 3879"}
+{"item_id": "kaggledbqa_test_63", "sql": "SELECT DISTINCT conunit FROM resultsdata15 WHERE commod = 'PO'"}
+{"item_id": "kaggledbqa_test_64", "sql": "SELECT mean FROM resultsdata15 WHERE commod = 'AP' GROUP BY mean ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_65", "sql": "SELECT extract FROM resultsdata15 GROUP BY extract ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_66", "sql": "SELECT lab FROM resultsdata15 GROUP BY lab ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_67", "sql": "SELECT DISTINCT lab FROM resultsdata15 WHERE commod = 'AP'"}
+{"item_id": "kaggledbqa_test_68", "sql": "SELECT count(*) FROM sampledata15 WHERE origin = 2"}
+{"item_id": "kaggledbqa_test_69", "sql": "SELECT commod FROM resultsdata15 WHERE concen > 0 GROUP BY commod ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_70", "sql": "SELECT state FROM sampledata15 WHERE claim = 'PO' GROUP BY state ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_71", "sql": "SELECT country FROM sampledata15 WHERE origin = 2 GROUP BY country ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_72", "sql": "SELECT commod FROM resultsdata15 GROUP BY commod ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_73", "sql": "SELECT pestcode FROM resultsdata15 GROUP BY pestcode ORDER BY avg(lod) ASC LIMIT 1"}
+{"item_id": "kaggledbqa_test_74", "sql": "SELECT T2.school_district FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code WHERE T1.State = 'Wisconsin' ORDER BY T2.t_fed_rev DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_75", "sql": "SELECT avg(T2.c14) FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code WHERE T1.State = 'Virginia'"}
+{"item_id": "kaggledbqa_test_76", "sql": "SELECT T1.State, T3.average_scale_score, sum(T2.c14), sum(T2.c25) FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state GROUP BY T1.State ORDER BY T3.average_scale_score DESC LIMIT 10"}
+{"item_id": "kaggledbqa_test_77", "sql": "SELECT T2.school_district, max(T2.c14), T3.average_scale_score FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state UNION SELECT T2.school_district, max(T2.c25), T3.average_scale_score FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state"}
+{"item_id": "kaggledbqa_test_78", "sql": "SELECT state FROM NDECoreExcel_Math_Grade8 ORDER BY average_scale_score DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_79", "sql": "SELECT T2.school_district, T2.t_fed_rev / T3.average_scale_score FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state ORDER BY T2.t_fed_rev / T3.average_scale_score DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_80", "sql": "SELECT T1.State, T3.average_scale_score FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state GROUP BY T1.State ORDER BY sum(T2.t_fed_rev) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_81", "sql": "SELECT T2.school_district, T2.t_fed_rev / T3.average_scale_score FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state ORDER BY T2.t_fed_rev / T3.average_scale_score ASC LIMIT 1"}
+{"item_id": "kaggledbqa_test_82", "sql": "SELECT T1.State, T3.average_scale_score FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code JOIN NDECoreExcel_Math_Grade8 AS T3 ON T1.State = T3.state GROUP BY T1.State ORDER BY sum(T2.t_fed_rev) ASC LIMIT 1"}
+{"item_id": "kaggledbqa_test_83", "sql": "SELECT state FROM NDECoreExcel_Math_Grade8 ORDER BY average_scale_score DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_84", "sql": "SELECT average_scale_score FROM NDECoreExcel_Math_Grade8 WHERE state = 'California'"}
+{"item_id": "kaggledbqa_test_85", "sql": "SELECT count(DISTINCT T2.school_district) FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code WHERE T1.State = 'Indiana'"}
+{"item_id": "kaggledbqa_test_86", "sql": "SELECT State_Code FROM FINREV_FED_KEY_17 WHERE State = 'Virginia'"}
+{"item_id": "kaggledbqa_test_87", "sql": "SELECT T1.State FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code GROUP BY T1.State ORDER BY sum(T2.t_fed_rev) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_88", "sql": "SELECT sum(T2.c14), sum(T2.c25) FROM FINREV_FED_KEY_17 AS T1 JOIN FINREV_FED_17 AS T2 ON T1.State_Code = T2.state_code WHERE T1.State = 'Colorado'"}
+{"item_id": "kaggledbqa_test_89", "sql": "SELECT t_fed_rev FROM FINREV_FED_17 WHERE school_district LIKE '%Pecatonia Area%'"}
+{"item_id": "kaggledbqa_test_90", "sql": "SELECT state, average_scale_score FROM NDECoreExcel_Math_Grade8 WHERE state = 'North Carolina' OR state = 'South Carolina'"}
+{"item_id": "kaggledbqa_test_91", "sql": "SELECT state, average_scale_score FROM NDECoreExcel_Math_Grade8 WHERE state = 'North Carolina' OR state = 'New York'"}
+{"item_id": "kaggledbqa_test_92", "sql": "SELECT count(*) FROM FINREV_FED_17 WHERE c25 > c14"}
+{"item_id": "kaggledbqa_test_93", "sql": "SELECT votedby FROM hall_of_fame WHERE yearid = 2000 GROUP BY votedby ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_94", "sql": "SELECT count(*) FROM player WHERE weight > 200"}
+{"item_id": "kaggledbqa_test_95", "sql": "SELECT player_id FROM player_award WHERE year = 2010 AND award_id = 'Rookie of the Year'"}
+{"item_id": "kaggledbqa_test_96", "sql": "SELECT player_id FROM salary WHERE year >= 2010 ORDER BY salary DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_97", "sql": "SELECT T2.salary FROM hall_of_fame AS T1 JOIN salary AS T2 ON T1.player_id = T2.player_id WHERE T1.inducted = 'Y'"}
+{"item_id": "kaggledbqa_test_98", "sql": "SELECT yearid, min(votes) FROM hall_of_fame WHERE inducted = 'Y' AND yearid >= 1871 GROUP BY yearid"}
+{"item_id": "kaggledbqa_test_99", "sql": "SELECT salary FROM salary WHERE league_id = 'NL'"}

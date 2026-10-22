@@ -1,0 +1,35 @@
+{"item_id": "kaggledbqa_test_150", "sql": "SELECT groupName FROM torrents WHERE totalSnatched > 100 AND releaseType = 'album'"}
+{"item_id": "kaggledbqa_test_151", "sql": "SELECT T2.groupName FROM torrents AS T2 JOIN tags AS T1 ON T1.id = T2.id WHERE T1.tag = 'houston' ORDER BY T2.totalSnatched DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_152", "sql": "SELECT groupName FROM torrents WHERE artist LIKE 'lasean camry' AND totalSnatched = (SELECT max(totalSnatched) FROM torrents WHERE artist LIKE 'lasean camry') UNION SELECT groupName FROM torrents WHERE artist LIKE 'lasean camry' AND totalSnatched = (SELECT min(totalSnatched) FROM torrents WHERE artist LIKE 'lasean camry')"}
+{"item_id": "kaggledbqa_test_153", "sql": "SELECT groupName FROM torrents WHERE releaseType = 'album' ORDER BY totalSnatched DESC LIMIT 10"}
+{"item_id": "kaggledbqa_test_154", "sql": "SELECT T1.tag FROM torrents AS T2 JOIN tags AS T1 ON T1.id = T2.id WHERE T2.groupYear >= 2010 GROUP BY T1.tag ORDER BY T2.totalSnatched DESC LIMIT 10"}
+{"item_id": "kaggledbqa_test_155", "sql": "SELECT groupYear FROM torrents GROUP BY groupYear ORDER BY count(groupName) LIMIT 1"}
+{"item_id": "kaggledbqa_test_156", "sql": "SELECT groupName FROM torrents ORDER BY totalSnatched DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_157", "sql": "SELECT artist FROM torrents WHERE groupYear = 2015 GROUP BY artist ORDER BY totalSnatched DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_158", "sql": "SELECT T1.tag, T2.groupName FROM torrents AS T2 JOIN tags AS T1 ON T1.id = T2.id"}
+{"item_id": "kaggledbqa_test_159", "sql": "SELECT groupYear FROM torrents GROUP BY groupYear ORDER BY count(groupName) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_160", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY count(groupName) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_161", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY avg(totalSnatched) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_162", "sql": "SELECT groupYear FROM torrents GROUP BY groupYear ORDER BY count(groupName) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_163", "sql": "SELECT groupName FROM torrents ORDER BY totalSnatched DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_164", "sql": "SELECT releaseType FROM torrents GROUP BY releaseType ORDER BY sum(totalSnatched) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_165", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY sum(totalSnatched) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_166", "sql": "SELECT sum(totalSnatched), releaseType FROM torrents GROUP BY releaseType"}
+{"item_id": "kaggledbqa_test_167", "sql": "SELECT sum(totalSnatched) FROM torrents WHERE groupYear BETWEEN 2000 AND 2010 UNION SELECT sum(totalSnatched) FROM torrents WHERE groupYear < 2000"}
+{"item_id": "kaggledbqa_test_168", "sql": "SELECT count(*) FROM (SELECT groupName FROM torrents GROUP BY groupName HAVING count(*) > 1)"}
+{"item_id": "kaggledbqa_test_169", "sql": "SELECT artist FROM torrents GROUP BY artist ORDER BY count(groupName) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_170", "sql": "SELECT sum(totalSnatched) FROM torrents WHERE releaseType = 'ep' UNION SELECT sum(totalSnatched) FROM torrents WHERE releaseType = 'album'"}
+{"item_id": "kaggledbqa_test_171", "sql": "SELECT artist FROM torrents GROUP BY artist HAVING count(*) = 1"}
+{"item_id": "kaggledbqa_test_172", "sql": "SELECT artist FROM torrents WHERE groupYear > 2010 GROUP BY artist"}
+{"item_id": "kaggledbqa_test_173", "sql": "SELECT AwayTeam FROM football_data WHERE HomeTeam = 'Omiya Ardija' AND Season LIKE '%2018%'"}
+{"item_id": "kaggledbqa_test_174", "sql": "SELECT count(*) FROM football_data WHERE Season LIKE '%2010%' AND Country = 'Spain'"}
+{"item_id": "kaggledbqa_test_175", "sql": "SELECT MATCH FROM betfront ORDER BY DRAW_OPENING DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_176", "sql": "SELECT Season FROM football_data GROUP BY Season ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_177", "sql": "SELECT count(*) FROM football_data WHERE PSH IS NOT NULL AND PSD IS NOT NULL AND PSA IS NOT NULL"}
+{"item_id": "kaggledbqa_test_178", "sql": "SELECT count(*) FROM football_data WHERE B365H > PSH"}
+{"item_id": "kaggledbqa_test_179", "sql": "SELECT count(*) FROM football_data WHERE (FTHG + FTAG) > 5"}
+{"item_id": "kaggledbqa_test_180", "sql": "SELECT max(B365A) FROM football_data"}
+{"item_id": "kaggledbqa_test_181", "sql": "SELECT count(*) FROM football_data WHERE FTHG = 0 AND FTAG = 0"}
+{"item_id": "kaggledbqa_test_182", "sql": "SELECT count(DISTINCT League) FROM football_data"}
+{"item_id": "kaggledbqa_test_183", "sql": "SELECT count(*) FROM football_data WHERE Country != 'Scotland' AND Country != 'England' AND Referee != ''"}
+{"item_id": "kaggledbqa_test_184", "sql": "SELECT B365D FROM football_data WHERE HomeTeam = 'Swindon' AND AwayTeam = 'Millwall' AND Season = '2016/2017'"}

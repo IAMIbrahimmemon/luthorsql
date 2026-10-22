@@ -1,0 +1,23 @@
+{"question_id": "bird_train_train_8068", "pick": "A"}
+{"question_id": "bird_train_train_8077", "pick": "A"}
+{"question_id": "bird_train_train_8080", "pick": "A"}
+{"question_id": "bird_train_train_8082", "pick": "A"}
+{"question_id": "bird_train_train_8083", "pick": "A"}
+{"question_id": "bird_train_train_8084", "pick": "A"}
+{"question_id": "bird_train_train_8085", "pick": "NONE", "sql": "SELECT CAST(T1.num_students * T1.pct_female_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 AND T2.university_name = 'Stanford University'"}
+{"question_id": "bird_train_train_8091", "pick": "A"}
+{"question_id": "bird_train_train_8092", "pick": "A"}
+{"question_id": "bird_train_train_8102", "pick": "A"}
+{"question_id": "bird_train_train_8105", "pick": "A"}
+{"question_id": "bird_train_train_8108", "pick": "A"}
+{"question_id": "bird_train_train_8109", "pick": "A"}
+{"question_id": "bird_train_train_8114", "pick": "A"}
+{"question_id": "bird_train_train_8119", "pick": "A"}
+{"question_id": "bird_train_train_8122", "pick": "NONE", "sql": "SELECT DISTINCT T1.university_name FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id WHERE T2.score < 50"}
+{"question_id": "bird_train_train_8124", "pick": "A"}
+{"question_id": "bird_train_train_8126", "pick": "NONE", "sql": "SELECT T1.num_students - CAST(T1.num_students * T1.pct_female_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Emory University' AND T1.year = 2011"}
+{"question_id": "bird_train_train_8129", "pick": "A"}
+{"question_id": "bird_train_train_8131", "pick": "A"}
+{"question_id": "bird_train_train_8132", "pick": "NONE", "sql": "SELECT T1.country_name, CAST(T3.num_students * T3.pct_female_students AS REAL) / 100 FROM country AS T1 INNER JOIN university AS T2 ON T1.id = T2.country_id INNER JOIN university_year AS T3 ON T2.id = T3.university_id WHERE T3.year = 2011 AND T3.university_id = 23"}
+{"question_id": "bird_train_train_8133", "pick": "B"}
+{"question_id": "bird_train_train_8136", "pick": "NONE", "sql": "SELECT DISTINCT T1.university_name FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id WHERE T2.year = 2015 AND T2.score < (SELECT AVG(score) * 0.28 FROM university_ranking_year WHERE year = 2015)"}

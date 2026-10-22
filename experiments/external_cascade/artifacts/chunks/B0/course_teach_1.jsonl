@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_189", "db_id": "course_teach", "question": "List the names of teachers from youngest to oldest.", "evidence": ""}
+{"question_id": "spider_realistic_190", "db_id": "course_teach", "question": "What are the names of the teachers  from youngest to oldest?", "evidence": ""}
+{"question_id": "spider_realistic_191", "db_id": "course_teach", "question": "List the name of teachers who are not from Little Lever Urban District.", "evidence": ""}
+{"question_id": "spider_realistic_192", "db_id": "course_teach", "question": "What are the names of the teachers who do not come from Little Lever Urban District?", "evidence": ""}
+{"question_id": "spider_realistic_193", "db_id": "course_teach", "question": "Show the name of teachers who are either 32 or 33 years old?", "evidence": ""}
+{"question_id": "spider_realistic_194", "db_id": "course_teach", "question": "What are the names of the teachers who are either 32 or 33?", "evidence": ""}
+{"question_id": "spider_realistic_195", "db_id": "course_teach", "question": "What is the hometown of the youngest teacher?", "evidence": ""}
+{"question_id": "spider_realistic_196", "db_id": "course_teach", "question": "Where is the youngest teacher from?", "evidence": ""}
+{"question_id": "spider_realistic_197", "db_id": "course_teach", "question": "Show different hometown of teachers and the number of teachers from each place.", "evidence": ""}
+{"question_id": "spider_realistic_198", "db_id": "course_teach", "question": "For each place, how many teachers are from there?", "evidence": ""}
+{"question_id": "spider_realistic_199", "db_id": "course_teach", "question": "List the most common place that the teachers come from", "evidence": ""}
+{"question_id": "spider_realistic_200", "db_id": "course_teach", "question": "What are the towns from which at least two teachers come from?", "evidence": ""}
+{"question_id": "spider_realistic_201", "db_id": "course_teach", "question": "Show the name of the teacher who teaches math .", "evidence": ""}
+{"question_id": "spider_realistic_202", "db_id": "course_teach", "question": "What are the names of the people who teach math?", "evidence": ""}
+{"question_id": "spider_realistic_203", "db_id": "course_teach", "question": "List the names of teachers who have not been assigned to teach courses.", "evidence": ""}
+{"question_id": "spider_realistic_204", "db_id": "course_teach", "question": "What are the names of the teachers whose courses have not been assigned?", "evidence": ""}

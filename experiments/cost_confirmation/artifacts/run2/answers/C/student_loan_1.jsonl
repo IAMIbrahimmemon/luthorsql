@@ -1,0 +1,14 @@
+{"question_id": "bird_train_train_4371", "pick": "B"}
+{"question_id": "bird_train_train_4382", "pick": "A"}
+{"question_id": "bird_train_train_4392", "pick": "A"}
+{"question_id": "bird_train_train_4397", "pick": "A"}
+{"question_id": "bird_train_train_4406", "pick": "B"}
+{"question_id": "bird_train_train_4413", "pick": "NONE", "sql": "SELECT p.name, CASE WHEN u.name IS NULL THEN 'employed' ELSE 'unemployed' END, CASE WHEN d.name IS NULL THEN 'not disabled' ELSE 'disabled' END, CASE WHEN m.name IS NULL THEN 'female' ELSE 'male' END, n.bool FROM person p LEFT JOIN unemployed u ON p.name=u.name LEFT JOIN disabled d ON p.name=d.name LEFT JOIN male m ON p.name=m.name LEFT JOIN no_payment_due n ON p.name=n.name WHERE p.name IN ('student180','student117')"}
+{"question_id": "bird_train_train_4415", "pick": "A"}
+{"question_id": "bird_train_train_4416", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T2.name IS NULL THEN 1 ELSE 0 END) AS REAL)/COUNT(T2.name) FROM disabled T1 LEFT JOIN male T2 ON T1.name=T2.name"}
+{"question_id": "bird_train_train_4418", "pick": "NONE", "sql": "SELECT T1.name FROM filed_for_bankrupcy T1 JOIN no_payment_due T2 ON T1.name=T2.name WHERE T2.bool='neg'"}
+{"question_id": "bird_train_train_4420", "pick": "A"}
+{"question_id": "bird_train_train_4436", "pick": "NONE", "sql": "SELECT COUNT(*) FROM unemployed T1 JOIN disabled T2 ON T1.name=T2.name JOIN longest_absense_from_school T3 ON T1.name=T3.name WHERE T3.month=8"}
+{"question_id": "bird_train_train_4464", "pick": "A"}
+{"question_id": "bird_train_train_4468", "pick": "A"}
+{"question_id": "bird_train_train_4482", "pick": "A"}

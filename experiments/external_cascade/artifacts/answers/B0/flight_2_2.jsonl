@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_132", "sql": "SELECT count(*) FROM flights WHERE DestAirport = 'ATO'"}
+{"question_id": "spider_realistic_133", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_134", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_135", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_136", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_137", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airports AS T3 ON T1.SourceAirport = T3.AirportCode WHERE T2.City = 'Ashley' AND T3.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_138", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airports AS T3 ON T1.SourceAirport = T3.AirportCode WHERE T2.City = 'Ashley' AND T3.City = 'Aberdeen'"}
+{"question_id": "spider_realistic_139", "sql": "SELECT count(*) FROM flights AS T1 JOIN airlines AS T2 ON T1.Airline = T2.uid WHERE T2.Airline = 'JetBlue Airways'"}
+{"question_id": "spider_realistic_140", "sql": "SELECT count(*) FROM flights AS T1 JOIN airlines AS T2 ON T1.Airline = T2.uid WHERE T2.Airline = 'JetBlue Airways'"}
+{"question_id": "spider_realistic_141", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.DestAirport = 'ASY'"}
+{"question_id": "spider_realistic_142", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.DestAirport = 'ASY'"}
+{"question_id": "spider_realistic_143", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.SourceAirport = 'AHD'"}
+{"question_id": "spider_realistic_144", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.SourceAirport = 'AHD'"}
+{"question_id": "spider_realistic_145", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airlines AS T3 ON T3.uid = T1.Airline WHERE T2.City = 'Aberdeen' AND T3.Airline = 'United Airlines'"}
+{"question_id": "spider_realistic_146", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airlines AS T3 ON T3.uid = T1.Airline WHERE T2.City = 'Aberdeen' AND T3.Airline = 'United Airlines'"}
+{"question_id": "spider_realistic_147", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'AHD'"}
+{"question_id": "spider_realistic_148", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'AHD'"}
+{"question_id": "spider_realistic_149", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}
+{"question_id": "spider_realistic_150", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}

@@ -1,0 +1,18 @@
+{"question_id": "spider_realistic_1", "pick": "A"}
+{"question_id": "spider_realistic_2", "pick": "A"}
+{"question_id": "spider_realistic_3", "pick": "B"}
+{"question_id": "spider_realistic_4", "pick": "A"}
+{"question_id": "spider_realistic_7", "pick": "A"}
+{"question_id": "spider_realistic_8", "pick": "A"}
+{"question_id": "spider_realistic_11", "pick": "NONE", "sql": "SELECT \"Location\", \"Name\" FROM \"stadium\" WHERE \"Capacity\" BETWEEN 5000 AND 10000"}
+{"question_id": "spider_realistic_12", "pick": "NONE", "sql": "SELECT \"Location\", \"Name\" FROM \"stadium\" WHERE \"Capacity\" BETWEEN 5000 AND 10000"}
+{"question_id": "spider_realistic_15", "pick": "A"}
+{"question_id": "spider_realistic_17", "pick": "A"}
+{"question_id": "spider_realistic_18", "pick": "A"}
+{"question_id": "spider_realistic_20", "pick": "A"}
+{"question_id": "spider_realistic_21", "pick": "A"}
+{"question_id": "spider_realistic_23", "pick": "A"}
+{"question_id": "spider_realistic_24", "pick": "B"}
+{"question_id": "spider_realistic_29", "pick": "A"}
+{"question_id": "spider_realistic_30", "pick": "A"}
+{"question_id": "spider_realistic_32", "pick": "A"}

@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_418", "sql": "SELECT Name, SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5"}
+{"question_id": "spider_realistic_419", "sql": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"}
+{"question_id": "spider_realistic_420", "sql": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"}
+{"question_id": "spider_realistic_421", "sql": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"}
+{"question_id": "spider_realistic_422", "sql": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"}
+{"question_id": "spider_realistic_423", "sql": "SELECT count(*) FROM country WHERE Continent = 'Asia'"}
+{"question_id": "spider_realistic_424", "sql": "SELECT count(*) FROM country WHERE Continent = 'Asia'"}
+{"question_id": "spider_realistic_425", "sql": "SELECT Name FROM country WHERE Continent = 'Europe' AND Population = 80000"}
+{"question_id": "spider_realistic_426", "sql": "SELECT Name FROM country WHERE Continent = 'Europe' AND Population = 80000"}
+{"question_id": "spider_realistic_427", "sql": "SELECT sum(Population), avg(SurfaceArea) FROM country WHERE Continent = 'North America' AND SurfaceArea > 3000"}
+{"question_id": "spider_realistic_428", "sql": "SELECT sum(Population), avg(SurfaceArea) FROM country WHERE Continent = 'North America' AND SurfaceArea > 3000"}
+{"question_id": "spider_realistic_429", "sql": "SELECT Name FROM city WHERE Population BETWEEN 160000 AND 900000"}
+{"question_id": "spider_realistic_430", "sql": "SELECT Name FROM city WHERE Population BETWEEN 160000 AND 900000"}
+{"question_id": "spider_realistic_431", "sql": "SELECT Language, CountryCode, max(Percentage) FROM countrylanguage GROUP BY CountryCode"}
+{"question_id": "spider_realistic_432", "sql": "SELECT CountryCode, Language FROM (SELECT CountryCode, Language, max(Percentage) FROM countrylanguage GROUP BY CountryCode)"}
+{"question_id": "spider_realistic_433", "sql": "SELECT count(*) FROM countrylanguage T WHERE Language = 'Spanish' AND Percentage = (SELECT max(Percentage) FROM countrylanguage WHERE CountryCode = T.CountryCode)"}
+{"question_id": "spider_realistic_434", "sql": "SELECT count(*) FROM countrylanguage T WHERE Language = 'Spanish' AND Percentage = (SELECT max(Percentage) FROM countrylanguage WHERE CountryCode = T.CountryCode)"}
+{"question_id": "spider_realistic_435", "sql": "SELECT CountryCode FROM countrylanguage T WHERE Language = 'Spanish' AND Percentage = (SELECT max(Percentage) FROM countrylanguage WHERE CountryCode = T.CountryCode)"}
+{"question_id": "spider_realistic_436", "sql": "SELECT CountryCode FROM countrylanguage T WHERE Language = 'Spanish' AND Percentage = (SELECT max(Percentage) FROM countrylanguage WHERE CountryCode = T.CountryCode)"}

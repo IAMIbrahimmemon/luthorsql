@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_234", "sql": "SELECT winner_name, winner_rank_points FROM matches GROUP BY winner_name ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_235", "sql": "SELECT winner_name, winner_rank_points FROM matches GROUP BY winner_name ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_236", "sql": "SELECT winner_name FROM matches WHERE tourney_name = 'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1"}
+{"question_id": "spider_realistic_237", "sql": "SELECT winner_name FROM matches WHERE tourney_name = 'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1"}
+{"question_id": "spider_realistic_238", "sql": "SELECT winner_name, loser_name FROM matches ORDER BY minutes DESC LIMIT 1"}
+{"question_id": "spider_realistic_239", "sql": "SELECT winner_name, loser_name FROM matches ORDER BY minutes DESC LIMIT 1"}
+{"question_id": "spider_realistic_240", "sql": "SELECT count(*), country_code FROM players GROUP BY country_code"}
+{"question_id": "spider_realistic_241", "sql": "SELECT count(*), country_code FROM players GROUP BY country_code"}
+{"question_id": "spider_realistic_242", "sql": "SELECT country_code FROM players GROUP BY country_code ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_243", "sql": "SELECT country_code FROM players GROUP BY country_code ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_244", "sql": "SELECT country_code FROM players GROUP BY country_code HAVING count(*) > 50"}
+{"question_id": "spider_realistic_245", "sql": "SELECT country_code FROM players GROUP BY country_code HAVING count(*) > 50"}
+{"question_id": "spider_realistic_246", "sql": "SELECT winner_name, winner_rank FROM matches ORDER BY winner_age LIMIT 3"}
+{"question_id": "spider_realistic_247", "sql": "SELECT winner_name, winner_rank FROM matches ORDER BY winner_age LIMIT 3"}
+{"question_id": "spider_realistic_248", "sql": "SELECT count(DISTINCT winner_name) FROM matches WHERE tourney_name = 'WTA Championships' AND winner_hand = 'L'"}
+{"question_id": "spider_realistic_249", "sql": "SELECT count(DISTINCT winner_name) FROM matches WHERE tourney_name = 'WTA Championships' AND winner_hand = 'L'"}

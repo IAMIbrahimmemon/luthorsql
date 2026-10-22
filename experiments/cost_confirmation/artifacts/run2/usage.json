@@ -1,0 +1,595 @@
+{
+ "B2": {
+  "hockey_3": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 65974,
+   "cache_read_input_tokens": 644735,
+   "output_tokens": 90,
+   "output_est": 2878,
+   "seconds": 94.749,
+   "dollars_opus55_list": 0.516457
+  },
+  "student_loan_3": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 47745,
+   "cache_read_input_tokens": 307390,
+   "output_tokens": 88,
+   "output_est": 1655,
+   "seconds": 43.499,
+   "dollars_opus55_list": 0.333351
+  },
+  "university_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 50903,
+   "cache_read_input_tokens": 438336,
+   "output_tokens": 99,
+   "output_est": 2676,
+   "seconds": 61.739,
+   "dollars_opus55_list": 0.395766
+  },
+  "synthea_3": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 59768,
+   "cache_read_input_tokens": 679759,
+   "output_tokens": 110,
+   "output_est": 2759,
+   "seconds": 77.572,
+   "dollars_opus55_list": 0.49006
+  },
+  "movie_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 50121,
+   "cache_read_input_tokens": 437150,
+   "output_tokens": 111,
+   "output_est": 2373,
+   "seconds": 54.357,
+   "dollars_opus55_list": 0.385559
+  },
+  "hockey_1": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 60475,
+   "cache_read_input_tokens": 694755,
+   "output_tokens": 90,
+   "output_est": 2525,
+   "seconds": 79.761,
+   "dollars_opus55_list": 0.491914
+  },
+  "law_episode_2": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 51762,
+   "cache_read_input_tokens": 504039,
+   "output_tokens": 99,
+   "output_est": 2540,
+   "seconds": 61.001,
+   "dollars_opus55_list": 0.41049
+  },
+  "law_episode_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 51339,
+   "cache_read_input_tokens": 501711,
+   "output_tokens": 108,
+   "output_est": 2418,
+   "seconds": 65.305,
+   "dollars_opus55_list": 0.405469
+  },
+  "cs_semester_2": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 49707,
+   "cache_read_input_tokens": 434440,
+   "output_tokens": 90,
+   "output_est": 2233,
+   "seconds": 56.07,
+   "dollars_opus55_list": 0.380147
+  },
+  "hockey_2": {
+   "input_tokens": 32,
+   "cache_creation_input_tokens": 63606,
+   "cache_read_input_tokens": 1069469,
+   "output_tokens": 160,
+   "output_est": 3330,
+   "seconds": 100.441,
+   "dollars_opus55_list": 0.598652
+  },
+  "car_retails_2": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 62746,
+   "cache_read_input_tokens": 617050,
+   "output_tokens": 128,
+   "output_est": 4030,
+   "seconds": 208.721,
+   "dollars_opus55_list": 0.51782
+  },
+  "student_loan_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 48583,
+   "cache_read_input_tokens": 370166,
+   "output_tokens": 77,
+   "output_est": 1811,
+   "seconds": 52.464,
+   "dollars_opus55_list": 0.353224
+  },
+  "cs_semester_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 49772,
+   "cache_read_input_tokens": 372308,
+   "output_tokens": 82,
+   "output_est": 2376,
+   "seconds": 56.001,
+   "dollars_opus55_list": 0.370898
+  },
+  "car_retails_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 72532,
+   "cache_read_input_tokens": 500347,
+   "output_tokens": 108,
+   "output_est": 3268,
+   "seconds": 77.374,
+   "dollars_opus55_list": 0.528161
+  },
+  "synthea_2": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 59789,
+   "cache_read_input_tokens": 678474,
+   "output_tokens": 110,
+   "output_est": 3346,
+   "seconds": 99.868,
+   "dollars_opus55_list": 0.501648
+  },
+  "synthea_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 56683,
+   "cache_read_input_tokens": 462531,
+   "output_tokens": 102,
+   "output_est": 2883,
+   "seconds": 66.852,
+   "dollars_opus55_list": 0.433645
+  },
+  "university_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 47989,
+   "cache_read_input_tokens": 248899,
+   "output_tokens": 74,
+   "output_est": 1673,
+   "seconds": 35.538,
+   "dollars_opus55_list": 0.323225
+  },
+  "student_loan_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 47442,
+   "cache_read_input_tokens": 307063,
+   "output_tokens": 83,
+   "output_est": 1579,
+   "seconds": 43.244,
+   "dollars_opus55_list": 0.330251
+  }
+ },
+ "B1": {
+  "synthea_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 55392,
+   "cache_read_input_tokens": 333397,
+   "output_tokens": 76,
+   "output_est": 1201,
+   "seconds": 41.398,
+   "dollars_opus55_list": 0.367707
+  },
+  "student_loan_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 60560,
+   "cache_read_input_tokens": 348833,
+   "output_tokens": 72,
+   "output_est": 1223,
+   "seconds": 38.87,
+   "dollars_opus55_list": 0.397075
+  },
+  "car_retails_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 85249,
+   "cache_read_input_tokens": 490574,
+   "output_tokens": 228,
+   "output_est": 1584,
+   "seconds": 50.726,
+   "dollars_opus55_list": 0.556104
+  },
+  "student_loan_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 60080,
+   "cache_read_input_tokens": 346786,
+   "output_tokens": 67,
+   "output_est": 977,
+   "seconds": 36.052,
+   "dollars_opus55_list": 0.389345
+  },
+  "law_episode_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 56356,
+   "cache_read_input_tokens": 406129,
+   "output_tokens": 94,
+   "output_est": 1206,
+   "seconds": 41.915,
+   "dollars_opus55_list": 0.387182
+  },
+  "student_loan_3": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 62660,
+   "cache_read_input_tokens": 337283,
+   "output_tokens": 201,
+   "output_est": 851,
+   "seconds": 30.929,
+   "dollars_opus55_list": 0.397825
+  },
+  "synthea_2": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 69821,
+   "cache_read_input_tokens": 669146,
+   "output_tokens": 249,
+   "output_est": 2395,
+   "seconds": 86.209,
+   "dollars_opus55_list": 0.530914
+  },
+  "movie_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 58221,
+   "cache_read_input_tokens": 359654,
+   "output_tokens": 71,
+   "output_est": 1008,
+   "seconds": 28.711,
+   "dollars_opus55_list": 0.383244
+  },
+  "hockey_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 76724,
+   "cache_read_input_tokens": 543361,
+   "output_tokens": 87,
+   "output_est": 1659,
+   "seconds": 68.254,
+   "dollars_opus55_list": 0.525536
+  },
+  "car_retails_2": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 64553,
+   "cache_read_input_tokens": 565257,
+   "output_tokens": 110,
+   "output_est": 1269,
+   "seconds": 47.257,
+   "dollars_opus55_list": 0.461268
+  },
+  "synthea_3": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 66822,
+   "cache_read_input_tokens": 504731,
+   "output_tokens": 225,
+   "output_est": 1546,
+   "seconds": 51.928,
+   "dollars_opus55_list": 0.46604
+  },
+  "university_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 62252,
+   "cache_read_input_tokens": 566044,
+   "output_tokens": 122,
+   "output_est": 1735,
+   "seconds": 46.986,
+   "dollars_opus55_list": 0.459241
+  },
+  "hockey_3": {
+   "input_tokens": 34,
+   "cache_creation_input_tokens": 86087,
+   "cache_read_input_tokens": 1423516,
+   "output_tokens": 143,
+   "output_est": 3200,
+   "seconds": 133.504,
+   "dollars_opus55_list": 0.779274
+  },
+  "cs_semester_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 64738,
+   "cache_read_input_tokens": 341964,
+   "output_tokens": 195,
+   "output_est": 692,
+   "seconds": 31.139,
+   "dollars_opus55_list": 0.405971
+  },
+  "university_2": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 65818,
+   "cache_read_input_tokens": 563460,
+   "output_tokens": 96,
+   "output_est": 1338,
+   "seconds": 54.495,
+   "dollars_opus55_list": 0.468614
+  },
+  "cs_semester_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 58072,
+   "cache_read_input_tokens": 270363,
+   "output_tokens": 69,
+   "output_est": 603,
+   "seconds": 23.445,
+   "dollars_opus55_list": 0.356533
+  },
+  "law_episode_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 57414,
+   "cache_read_input_tokens": 354523,
+   "output_tokens": 74,
+   "output_est": 944,
+   "seconds": 38.748,
+   "dollars_opus55_list": 0.376903
+  },
+  "hockey_2": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 70790,
+   "cache_read_input_tokens": 1002005,
+   "output_tokens": 118,
+   "output_est": 2336,
+   "seconds": 101.283,
+   "dollars_opus55_list": 0.601183
+  }
+ },
+ "C": {
+  "synthea_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 64908,
+   "cache_read_input_tokens": 446689,
+   "output_tokens": 81,
+   "output_est": 2094,
+   "seconds": 70.347,
+   "dollars_opus55_list": 0.455814
+  },
+  "movie_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 47910,
+   "cache_read_input_tokens": 317635,
+   "output_tokens": 100,
+   "output_est": 990,
+   "seconds": 27.446,
+   "dollars_opus55_list": 0.322925
+  },
+  "student_loan_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 58605,
+   "cache_read_input_tokens": 355363,
+   "output_tokens": 72,
+   "output_est": 1260,
+   "seconds": 42.717,
+   "dollars_opus55_list": 0.389346
+  },
+  "hockey_1": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 84093,
+   "cache_read_input_tokens": 1130061,
+   "output_tokens": 153,
+   "output_est": 2733,
+   "seconds": 116.251,
+   "dollars_opus55_list": 0.701249
+  },
+  "student_loan_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 56589,
+   "cache_read_input_tokens": 349306,
+   "output_tokens": 74,
+   "output_est": 1210,
+   "seconds": 37.705,
+   "dollars_opus55_list": 0.377054
+  },
+  "hockey_2": {
+   "input_tokens": 26,
+   "cache_creation_input_tokens": 83831,
+   "cache_read_input_tokens": 1016551,
+   "output_tokens": 249,
+   "output_est": 2716,
+   "seconds": 107.676,
+   "dollars_opus55_list": 0.676889
+  },
+  "university_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 59848,
+   "cache_read_input_tokens": 414898,
+   "output_tokens": 89,
+   "output_est": 2085,
+   "seconds": 52.32,
+   "dollars_opus55_list": 0.423976
+  },
+  "car_retails_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 91021,
+   "cache_read_input_tokens": 530705,
+   "output_tokens": 232,
+   "output_est": 1967,
+   "seconds": 58.655,
+   "dollars_opus55_list": 0.60065
+  },
+  "law_episode_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 62608,
+   "cache_read_input_tokens": 499966,
+   "output_tokens": 103,
+   "output_est": 1726,
+   "seconds": 62.787,
+   "dollars_opus55_list": 0.447617
+  },
+  "cs_semester_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 53325,
+   "cache_read_input_tokens": 203665,
+   "output_tokens": 53,
+   "output_est": 497,
+   "seconds": 20.805,
+   "dollars_opus55_list": 0.31733
+  },
+  "synthea_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 62481,
+   "cache_read_input_tokens": 445390,
+   "output_tokens": 94,
+   "output_est": 1795,
+   "seconds": 53.877,
+   "dollars_opus55_list": 0.437439
+  }
+ },
+ "B0": {
+  "university_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 48560,
+   "cache_read_input_tokens": 312282,
+   "output_tokens": 73,
+   "output_est": 2201,
+   "seconds": 43.576,
+   "dollars_opus55_list": 0.349324
+  },
+  "student_loan_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 45854,
+   "cache_read_input_tokens": 184315,
+   "output_tokens": 53,
+   "output_est": 1309,
+   "seconds": 34.354,
+   "dollars_opus55_list": 0.292345
+  },
+  "university_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 49656,
+   "cache_read_input_tokens": 496803,
+   "output_tokens": 98,
+   "output_est": 2475,
+   "seconds": 58.614,
+   "dollars_opus55_list": 0.397213
+  },
+  "car_retails_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 72321,
+   "cache_read_input_tokens": 439490,
+   "output_tokens": 84,
+   "output_est": 3077,
+   "seconds": 72.88,
+   "dollars_opus55_list": 0.511107
+  },
+  "hockey_2": {
+   "input_tokens": 42,
+   "cache_creation_input_tokens": 63644,
+   "cache_read_input_tokens": 1457222,
+   "output_tokens": 244,
+   "output_est": 3235,
+   "seconds": 102.226,
+   "dollars_opus55_list": 0.674532
+  },
+  "synthea_2": {
+   "input_tokens": 26,
+   "cache_creation_input_tokens": 58546,
+   "cache_read_input_tokens": 808124,
+   "output_tokens": 153,
+   "output_est": 3317,
+   "seconds": 88.403,
+   "dollars_opus55_list": 0.520799
+  },
+  "synthea_3": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 56941,
+   "cache_read_input_tokens": 610719,
+   "output_tokens": 120,
+   "output_est": 2772,
+   "seconds": 70.847,
+   "dollars_opus55_list": 0.462369
+  },
+  "synthea_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 56644,
+   "cache_read_input_tokens": 533000,
+   "output_tokens": 94,
+   "output_est": 2798,
+   "seconds": 68.968,
+   "dollars_opus55_list": 0.445852
+  },
+  "movie_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 49196,
+   "cache_read_input_tokens": 561353,
+   "output_tokens": 110,
+   "output_est": 1985,
+   "seconds": 51.436,
+   "dollars_opus55_list": 0.398031
+  },
+  "hockey_1": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 62940,
+   "cache_read_input_tokens": 724788,
+   "output_tokens": 96,
+   "output_est": 2924,
+   "seconds": 202.724,
+   "dollars_opus55_list": 0.518226
+  },
+  "cs_semester_2": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 57533,
+   "cache_read_input_tokens": 930428,
+   "output_tokens": 192,
+   "output_est": 3518,
+   "seconds": 212.76,
+   "dollars_opus55_list": 0.544231
+  },
+  "car_retails_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 49671,
+   "cache_read_input_tokens": 253283,
+   "output_tokens": 69,
+   "output_est": 1837,
+   "seconds": 42.755,
+   "dollars_opus55_list": 0.335792
+  },
+  "student_loan_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 47189,
+   "cache_read_input_tokens": 188305,
+   "output_tokens": 28,
+   "output_est": 1148,
+   "seconds": 35.875,
+   "dollars_opus55_list": 0.296598
+  },
+  "student_loan_3": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 46409,
+   "cache_read_input_tokens": 246081,
+   "output_tokens": 70,
+   "output_est": 1400,
+   "seconds": 35.425,
+   "dollars_opus55_list": 0.309301
+  },
+  "hockey_3": {
+   "input_tokens": 26,
+   "cache_creation_input_tokens": 63388,
+   "cache_read_input_tokens": 861088,
+   "output_tokens": 129,
+   "output_est": 3196,
+   "seconds": 98.11,
+   "dollars_opus55_list": 0.553182
+  },
+  "cs_semester_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 47701,
+   "cache_read_input_tokens": 247357,
+   "output_tokens": 73,
+   "output_est": 1849,
+   "seconds": 41.326,
+   "dollars_opus55_list": 0.324996
+  },
+  "law_episode_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 51593,
+   "cache_read_input_tokens": 381557,
+   "output_tokens": 98,
+   "output_est": 2057,
+   "seconds": 54.178,
+   "dollars_opus55_list": 0.375472
+  },
+  "law_episode_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 49183,
+   "cache_read_input_tokens": 375992,
+   "output_tokens": 72,
+   "output_est": 2127,
+   "seconds": 47.645,
+   "dollars_opus55_list": 0.363709
+  }
+ }
+}

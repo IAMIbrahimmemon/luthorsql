@@ -1,0 +1,19 @@
+{"question_id": "bird_train_train_1415", "pick": "NONE", "sql": "SELECT T2.CODE FROM all_prevalences AS T1 INNER JOIN conditions AS T2 ON lower(T1.ITEM) = lower(T2.DESCRIPTION) ORDER BY T1.OCCURRENCES DESC LIMIT 1"}
+{"question_id": "bird_train_train_1419", "pick": "A"}
+{"question_id": "bird_train_train_1424", "pick": "B"}
+{"question_id": "bird_train_train_1425", "pick": "NONE", "sql": "SELECT T1.first, T1.last FROM patients AS T1 INNER JOIN medications AS T2 ON T1.patient = T2.PATIENT WHERE T2.DESCRIPTION = 'Clopidogrel 75 MG Oral Tablet' AND CAST(strftime('%Y', T2.STOP) AS INT) - CAST(strftime('%Y', T2.START) AS INT) > 10"}
+{"question_id": "bird_train_train_1429", "pick": "NONE", "sql": "SELECT T1.\"PREVALENCE RATE\" FROM all_prevalences AS T1 INNER JOIN conditions AS T2 ON lower(T1.ITEM) = lower(T2.DESCRIPTION) WHERE T2.START = '2014-05-09'"}
+{"question_id": "bird_train_train_1431", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T2.DESCRIPTION = 'Influenza  seasonal  injectable  preservative free' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T2.PATIENT), SUM(CASE WHEN T1.ethnicity = 'english' THEN 1 ELSE 0 END) FROM patients AS T1 INNER JOIN immunizations AS T2 ON T1.patient = T2.PATIENT WHERE strftime('%Y', T2.DATE) = '2017'"}
+{"question_id": "bird_train_train_1433", "pick": "B"}
+{"question_id": "bird_train_train_1437", "pick": "A"}
+{"question_id": "bird_train_train_1441", "pick": "A"}
+{"question_id": "bird_train_train_1442", "pick": "B"}
+{"question_id": "bird_train_train_1446", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.patient) FROM patients AS T1 INNER JOIN medications AS T2 ON T1.patient = T2.PATIENT WHERE T2.REASONDESCRIPTION = 'Coronary Heart Disease' AND T2.STOP IS NOT NULL AND T1.deathdate IS NULL"}
+{"question_id": "bird_train_train_1452", "pick": "A"}
+{"question_id": "bird_train_train_1453", "pick": "A"}
+{"question_id": "bird_train_train_1462", "pick": "A"}
+{"question_id": "bird_train_train_1479", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T2.PATIENT) FROM encounters AS T1 INNER JOIN immunizations AS T2 ON T1.PATIENT = T2.PATIENT WHERE T1.REASONDESCRIPTION = 'Normal pregnancy' AND T1.DATE = T2.DATE"}
+{"question_id": "bird_train_train_1481", "pick": "NONE", "sql": "SELECT T1.DESCRIPTION, T3.DESCRIPTION, T4.DESCRIPTION, T5.first, T5.last FROM encounters AS T0 INNER JOIN careplans AS T1 ON T1.ENCOUNTER = T0.ID INNER JOIN procedures AS T3 ON T3.ENCOUNTER = T0.ID INNER JOIN medications AS T4 ON T4.ENCOUNTER = T0.ID INNER JOIN patients AS T5 ON T5.patient = T0.PATIENT WHERE T0.ID = '6f2e3935-b203-493e-a9c0-f23e847b9798'"}
+{"question_id": "bird_train_train_1486", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN T2.DATE - T1.birthdate BETWEEN 20 AND 29 THEN T2.VALUE ELSE 0 END) / COUNT(CASE WHEN T2.DATE - T1.birthdate BETWEEN 20 AND 29 THEN T2.PATIENT ELSE NULL END) - SUM(CASE WHEN T2.DATE - T1.birthdate BETWEEN 50 AND 59 THEN T2.VALUE ELSE 0 END) / COUNT(CASE WHEN T2.DATE - T1.birthdate BETWEEN 50 AND 59 THEN T2.PATIENT ELSE NULL END) FROM patients AS T1 INNER JOIN observations AS T2 ON T1.patient = T2.PATIENT WHERE T2.DESCRIPTION = 'Glucose'"}
+{"question_id": "bird_train_train_1496", "pick": "NONE", "sql": "SELECT T1.DESCRIPTION FROM conditions AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.prefix = 'Mrs.' AND T2.first = 'Joye' AND T2.last = 'Homenick' AND substr(T1.START, 1, 4) = '2017'"}
+{"question_id": "bird_train_train_1497", "pick": "NONE", "sql": "SELECT MAX(T1.DATE) FROM immunizations AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.prefix = 'Mrs.' AND T2.first = 'Joye' AND T2.last = 'Homenick' AND T1.DESCRIPTION = 'Influenza  seasonal  injectable  preservative free'"}

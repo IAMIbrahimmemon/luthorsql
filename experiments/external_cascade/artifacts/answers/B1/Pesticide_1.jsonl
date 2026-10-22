@@ -1,0 +1,17 @@
+{"question_id": "kaggledbqa_test_40", "pick": "A"}
+{"question_id": "kaggledbqa_test_41", "pick": "B"}
+{"question_id": "kaggledbqa_test_42", "pick": "B"}
+{"question_id": "kaggledbqa_test_43", "pick": "NONE", "sql": "SELECT DISTINCT commod FROM sampledata15 WHERE origin = '2' AND commod NOT IN (SELECT commod FROM sampledata15 WHERE origin = '1')"}
+{"question_id": "kaggledbqa_test_44", "pick": "A"}
+{"question_id": "kaggledbqa_test_45", "pick": "NONE", "sql": "SELECT T1.variety FROM sampledata15 AS T1 JOIN resultsdata15 AS T2 ON T1.sample_pk = T2.sample_pk WHERE T1.commod = 'AP' GROUP BY T1.variety ORDER BY SUM(T2.concen) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_46", "pick": "NONE", "sql": "SELECT DISTINCT commod FROM resultsdata15 WHERE concen > lod"}
+{"question_id": "kaggledbqa_test_47", "pick": "A"}
+{"question_id": "kaggledbqa_test_48", "pick": "A"}
+{"question_id": "kaggledbqa_test_49", "pick": "A"}
+{"question_id": "kaggledbqa_test_50", "pick": "A"}
+{"question_id": "kaggledbqa_test_51", "pick": "A"}
+{"question_id": "kaggledbqa_test_52", "pick": "NONE", "sql": "SELECT state FROM sampledata15 WHERE commod = 'AP' GROUP BY state ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_53", "pick": "NONE", "sql": "SELECT growst FROM sampledata15 WHERE commod = 'AP' GROUP BY growst ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_54", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT variety) FROM sampledata15"}
+{"question_id": "kaggledbqa_test_55", "pick": "A"}
+{"question_id": "kaggledbqa_test_56", "pick": "A"}

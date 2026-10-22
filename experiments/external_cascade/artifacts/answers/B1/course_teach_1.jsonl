@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_189", "pick": "A"}
+{"question_id": "spider_realistic_190", "pick": "A"}
+{"question_id": "spider_realistic_191", "pick": "A"}
+{"question_id": "spider_realistic_192", "pick": "A"}
+{"question_id": "spider_realistic_193", "pick": "A"}
+{"question_id": "spider_realistic_194", "pick": "A"}
+{"question_id": "spider_realistic_195", "pick": "A"}
+{"question_id": "spider_realistic_196", "pick": "A"}
+{"question_id": "spider_realistic_197", "pick": "A"}
+{"question_id": "spider_realistic_198", "pick": "A"}
+{"question_id": "spider_realistic_199", "pick": "A"}
+{"question_id": "spider_realistic_200", "pick": "NONE", "sql": "SELECT \"Hometown\" FROM \"teacher\" GROUP BY \"Hometown\" HAVING COUNT(*) >= 2"}
+{"question_id": "spider_realistic_201", "pick": "A"}
+{"question_id": "spider_realistic_202", "pick": "A"}
+{"question_id": "spider_realistic_203", "pick": "A"}
+{"question_id": "spider_realistic_204", "pick": "A"}

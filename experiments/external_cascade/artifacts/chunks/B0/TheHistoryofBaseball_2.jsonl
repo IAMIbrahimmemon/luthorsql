@@ -1,0 +1,13 @@
+{"question_id": "kaggledbqa_test_107", "db_id": "TheHistoryofBaseball", "question": "For every award, who is the oldest winner?", "evidence": ""}
+{"question_id": "kaggledbqa_test_108", "db_id": "TheHistoryofBaseball", "question": "Top 10 teams with the most hall of fame players", "evidence": ""}
+{"question_id": "kaggledbqa_test_109", "db_id": "TheHistoryofBaseball", "question": "Average lifespan of hall of fame players", "evidence": ""}
+{"question_id": "kaggledbqa_test_110", "db_id": "TheHistoryofBaseball", "question": "For award winners, what's average weight for each position", "evidence": ""}
+{"question_id": "kaggledbqa_test_111", "db_id": "TheHistoryofBaseball", "question": "For award winners, which position that has the most hall of fame players?", "evidence": ""}
+{"question_id": "kaggledbqa_test_112", "db_id": "TheHistoryofBaseball", "question": "Which player get the highest score in 1971?", "evidence": ""}
+{"question_id": "kaggledbqa_test_113", "db_id": "TheHistoryofBaseball", "question": "Which month that players were born has the highest likelihood to be elected as hall of fame?", "evidence": ""}
+{"question_id": "kaggledbqa_test_114", "db_id": "TheHistoryofBaseball", "question": "Which league has the most player awarded in 2006?", "evidence": ""}
+{"question_id": "kaggledbqa_test_115", "db_id": "TheHistoryofBaseball", "question": "What defense position the player ID willite01 is?", "evidence": ""}
+{"question_id": "kaggledbqa_test_116", "db_id": "TheHistoryofBaseball", "question": "How many players were awarded more than ten times?", "evidence": ""}
+{"question_id": "kaggledbqa_test_117", "db_id": "TheHistoryofBaseball", "question": "Which city the most players were born?", "evidence": ""}
+{"question_id": "kaggledbqa_test_118", "db_id": "TheHistoryofBaseball", "question": "What is the average weight of players who were awarded third-base man in TSN all-star award?", "evidence": ""}
+{"question_id": "kaggledbqa_test_119", "db_id": "TheHistoryofBaseball", "question": "Who is the player had the highest salary in 2015?", "evidence": ""}

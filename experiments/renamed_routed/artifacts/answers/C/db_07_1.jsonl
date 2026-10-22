@@ -1,0 +1,16 @@
+{"question_id": "q1366", "pick": "A"}
+{"question_id": "q1373", "pick": "NONE", "sql": "SELECT t2.narrative, t2.amount, t2.measures FROM subjects t1 JOIN readings t2 ON t1.person=t2.person WHERE t1.given='Vincent' AND t1.surname='Wyman' AND t2.day='2010-08-02' AND t2.narrative='Body Height'"}
+{"question_id": "q1376", "pick": "NONE", "sql": "SELECT DISTINCT t1.commonness_share FROM rate_rollup t1 JOIN diagnoses t2 ON lower(t1.element)=lower(t2.narrative) WHERE t2.token=64859006"}
+{"question_id": "q1380", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t2.narrative) FROM subjects t1 JOIN reactions t2 ON t1.person=t2.person WHERE t1.title='Mrs.' AND t1.given='Saundra' AND t1.surname='Monahan'"}
+{"question_id": "q1383", "pick": "A"}
+{"question_id": "q1384", "pick": "A"}
+{"question_id": "q1394", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t1.person) FROM drugs t1 JOIN subjects t2 ON t1.person=t2.person WHERE t1.narrative='Ibuprofen 200 MG Oral Tablet' AND t2.culture='dominican' AND strftime('%Y',t1.onset)='2016' AND strftime('%m',t1.finish)-strftime('%m',t1.onset)=1"}
+{"question_id": "q1397", "pick": "B"}
+{"question_id": "q1401", "pick": "NONE", "sql": "SELECT t1.person FROM diagnoses t1 JOIN rate_rollup t2 ON lower(t1.narrative)=lower(t2.element) WHERE t2.commonness_share=18.8"}
+{"question_id": "q1406", "pick": "A"}
+{"question_id": "q1407", "pick": "A"}
+{"question_id": "q1410", "pick": "A"}
+{"question_id": "q1424", "pick": "NONE", "sql": "SELECT COUNT(*) FROM shots t1 JOIN subjects t2 ON t1.person=t2.person WHERE t2.given='Keven' AND t2.surname='Kuhn' AND t1.narrative='DTaP'"}
+{"question_id": "q1425", "pick": "NONE", "sql": "SELECT t1.given, t1.surname FROM subjects t1 JOIN drugs t2 ON t1.person=t2.person WHERE t2.narrative='Clopidogrel 75 MG Oral Tablet' AND strftime('%Y',t2.finish)-strftime('%Y',t2.onset)>10"}
+{"question_id": "q1429", "pick": "NONE", "sql": "SELECT t1.commonness_proportion FROM rate_rollup t1 JOIN diagnoses t2 ON lower(t1.element)=lower(t2.narrative) WHERE t2.onset='2014-05-09'"}
+{"question_id": "q1431", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN t2.narrative='Influenza  seasonal  injectable  preservative free' THEN 1 ELSE 0 END) AS REAL)*100/COUNT(t2.person), SUM(CASE WHEN t1.culture='english' THEN 1 ELSE 0 END) FROM subjects t1 JOIN shots t2 ON t1.person=t2.person WHERE strftime('%Y',t2.day)='2017'"}

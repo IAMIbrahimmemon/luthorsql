@@ -1,0 +1,15 @@
+{"question_id": "fresh_chicago_crashes_2026_0", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_3", "pick": "B"}
+{"question_id": "fresh_chicago_crashes_2026_4", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_5", "pick": "B"}
+{"question_id": "fresh_chicago_crashes_2026_8", "pick": "NONE", "sql": "SELECT cc.category, 1.0*SUM(CASE WHEN c.crash_type='INJURY AND / OR TOW DUE TO CRASH' THEN 1 ELSE 0 END)/COUNT(*) AS injury_crash_rate FROM crashes c JOIN contributory_causes cc ON cc.cause=c.prim_contributory_cause GROUP BY cc.category ORDER BY injury_crash_rate DESC, cc.category"}
+{"question_id": "fresh_chicago_crashes_2026_10", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_11", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_13", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_16", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_22", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_23", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_24", "pick": "A"}
+{"question_id": "fresh_chicago_crashes_2026_25", "pick": "B"}
+{"question_id": "fresh_chicago_crashes_2026_26", "pick": "NONE", "sql": "SELECT street_name, ROUND(100.0*SUM(CASE WHEN hit_and_run_i='Y' THEN 1 ELSE 0 END)/COUNT(*),2) AS hit_and_run_pct FROM crashes GROUP BY street_name HAVING COUNT(*)>=2 ORDER BY hit_and_run_pct DESC, street_name"}
+{"question_id": "fresh_chicago_crashes_2026_28", "pick": "NONE", "sql": "SELECT street_name, SUM(injuries_total) AS total_injuries FROM crashes GROUP BY street_name HAVING SUM(injuries_total) > (SELECT AVG(s) FROM (SELECT SUM(injuries_total) AS s FROM crashes GROUP BY street_name)) ORDER BY total_injuries DESC, street_name"}

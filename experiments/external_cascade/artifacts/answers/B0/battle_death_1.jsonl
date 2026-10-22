@@ -1,0 +1,5 @@
+{"question_id": "spider_realistic_250", "sql": "SELECT count(*) FROM ship WHERE disposition_of_ship = 'Captured'"}
+{"question_id": "spider_realistic_251", "sql": "SELECT T1.id, T1.name FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle JOIN death AS T3 ON T2.id = T3.caused_by_ship_id GROUP BY T1.id HAVING sum(T3.killed) > 10"}
+{"question_id": "spider_realistic_252", "sql": "SELECT T2.id, T2.name FROM death AS T1 JOIN ship AS T2 ON T1.caused_by_ship_id = T2.id GROUP BY T2.id ORDER BY sum(T1.injured) DESC LIMIT 1"}
+{"question_id": "spider_realistic_253", "sql": "SELECT T1.name, T1.date FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.name = 'Lettice' INTERSECT SELECT T1.name, T1.date FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.name = 'HMS Atalanta'"}
+{"question_id": "spider_realistic_254", "sql": "SELECT name, result, bulgarian_commander FROM battle EXCEPT SELECT T1.name, T1.result, T1.bulgarian_commander FROM battle AS T1 JOIN ship AS T2 ON T1.id = T2.lost_in_battle WHERE T2.location = 'English Channel'"}

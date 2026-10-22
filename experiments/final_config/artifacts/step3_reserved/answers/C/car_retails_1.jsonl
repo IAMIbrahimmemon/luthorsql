@@ -1,0 +1,15 @@
+{"question_id": "bird_train_train_1544", "pick": "A"}
+{"question_id": "bird_train_train_1553", "pick": "A"}
+{"question_id": "bird_train_train_1554", "pick": "NONE", "sql": "SELECT (SELECT COUNT(customerNumber) FROM customers WHERE creditLimit <= 100000 AND customerNumber IN (SELECT customerNumber FROM payments WHERE STRFTIME('%Y', paymentDate) = '2004')), T1.customerName FROM customers T1 JOIN payments T2 ON T1.customerNumber=T2.customerNumber WHERE T1.creditLimit <= 100000 AND STRFTIME('%Y', T2.paymentDate)='2004' GROUP BY T1.customerNumber, T1.customerName ORDER BY SUM(T2.amount) DESC LIMIT 1"}
+{"question_id": "bird_train_train_1555", "pick": "A"}
+{"question_id": "bird_train_train_1557", "pick": "A"}
+{"question_id": "bird_train_train_1558", "pick": "A"}
+{"question_id": "bird_train_train_1562", "pick": "NONE", "sql": "SELECT COUNT(T1.productCode) FROM orderdetails T1 JOIN products T2 ON T1.productCode=T2.productCode WHERE T2.MSRP - T2.buyPrice > 100"}
+{"question_id": "bird_train_train_1565", "pick": "A"}
+{"question_id": "bird_train_train_1566", "pick": "A"}
+{"question_id": "bird_train_train_1567", "pick": "NONE", "sql": "SELECT SUM(T1.amount) FROM payments T1 JOIN customers T2 ON T1.customerNumber=T2.customerNumber WHERE STRFTIME('%Y', T1.paymentDate)='2003' AND T2.creditLimit = 0"}
+{"question_id": "bird_train_train_1569", "pick": "NONE", "sql": "SELECT COUNT(*) FROM (SELECT T2.customerNumber FROM orders T1 JOIN customers T2 ON T1.customerNumber=T2.customerNumber WHERE T1.status='Shipped' AND T2.country='France' GROUP BY T2.customerNumber HAVING COUNT(*)=2)"}
+{"question_id": "bird_train_train_1575", "pick": "NONE", "sql": "SELECT T1.email FROM employees T1 JOIN offices T2 ON T1.officeCode=T2.officeCode WHERE T2.city='Sydney' AND T1.jobTitle LIKE '%Sales Manager%'"}
+{"question_id": "bird_train_train_1579", "pick": "A"}
+{"question_id": "bird_train_train_1580", "pick": "A"}
+{"question_id": "bird_train_train_1591", "pick": "A"}

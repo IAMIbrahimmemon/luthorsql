@@ -1,0 +1,5 @@
+{"question_id": "kaggledbqa_test_177", "pick": "B"}
+{"question_id": "kaggledbqa_test_178", "pick": "NONE", "sql": "SELECT count(*) FROM football_data WHERE B365H > PSH"}
+{"question_id": "kaggledbqa_test_180", "pick": "C"}
+{"question_id": "kaggledbqa_test_182", "pick": "A"}
+{"question_id": "kaggledbqa_test_183", "pick": "NONE", "sql": "SELECT count(*) FROM football_data WHERE Country != 'Scotland' AND Country != 'England' AND Referee != ''"}

@@ -1,0 +1,17 @@
+{"question_id": "kaggledbqa_test_40", "db_id": "Pesticide", "question": "which foods are captured in the data set?", "evidence": ""}
+{"question_id": "kaggledbqa_test_41", "db_id": "Pesticide", "question": "how many samples have unknown countries of origin?", "evidence": ""}
+{"question_id": "kaggledbqa_test_42", "db_id": "Pesticide", "question": "Which are the top 10 commodities that have the highest residue during 2015?", "evidence": ""}
+{"question_id": "kaggledbqa_test_43", "db_id": "Pesticide", "question": "Name some imported commodities that are not found in the US.", "evidence": ""}
+{"question_id": "kaggledbqa_test_44", "db_id": "Pesticide", "question": "Tell me the average pesticide residue for each state in the US where food is grown.", "evidence": ""}
+{"question_id": "kaggledbqa_test_45", "db_id": "Pesticide", "question": "Which varieties of apple typically have higher pesticide levels?", "evidence": ""}
+{"question_id": "kaggledbqa_test_46", "db_id": "Pesticide", "question": "Which commodities have the pesticides concentration much higher than their limit for detection?", "evidence": ""}
+{"question_id": "kaggledbqa_test_47", "db_id": "Pesticide", "question": "Name top 5 labs with the maximum number of testing.", "evidence": ""}
+{"question_id": "kaggledbqa_test_48", "db_id": "Pesticide", "question": "Which country is the safest in terms of the pesticide concentration found in imported foods?", "evidence": ""}
+{"question_id": "kaggledbqa_test_49", "db_id": "Pesticide", "question": "Which is the most popular state in the US in terms of commodities distribution?", "evidence": ""}
+{"question_id": "kaggledbqa_test_50", "db_id": "Pesticide", "question": "What is the maximum pesticide concentration ever found in a commodity?", "evidence": ""}
+{"question_id": "kaggledbqa_test_51", "db_id": "Pesticide", "question": "When is sample 3763 collected?", "evidence": ""}
+{"question_id": "kaggledbqa_test_52", "db_id": "Pesticide", "question": "Which state has the most apple collected?", "evidence": ""}
+{"question_id": "kaggledbqa_test_53", "db_id": "Pesticide", "question": "Which state has grow the most apples?", "evidence": ""}
+{"question_id": "kaggledbqa_test_54", "db_id": "Pesticide", "question": "How many class of products are there?", "evidence": ""}
+{"question_id": "kaggledbqa_test_55", "db_id": "Pesticide", "question": "what's the 4 digit collection code of sample 3763?", "evidence": ""}
+{"question_id": "kaggledbqa_test_56", "db_id": "Pesticide", "question": "If sample 6480 is imported, which country is it originally from?", "evidence": ""}

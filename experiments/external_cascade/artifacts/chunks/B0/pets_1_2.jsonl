@@ -1,0 +1,13 @@
+{"question_id": "spider_realistic_46", "db_id": "pets_1", "question": "What major is every student who does not own a cat, and also how old are they?", "evidence": ""}
+{"question_id": "spider_realistic_47", "db_id": "pets_1", "question": "Find the id of students who do not have a cat.", "evidence": ""}
+{"question_id": "spider_realistic_48", "db_id": "pets_1", "question": "What are the ids of the students who do not own cats?", "evidence": ""}
+{"question_id": "spider_realistic_49", "db_id": "pets_1", "question": "Find the first name and age of students who have a dog but do not have a cat.", "evidence": ""}
+{"question_id": "spider_realistic_50", "db_id": "pets_1", "question": "What is the first name of every student who has a dog but does not have a cat?", "evidence": ""}
+{"question_id": "spider_realistic_51", "db_id": "pets_1", "question": "Find the type and weight of the youngest pet.", "evidence": ""}
+{"question_id": "spider_realistic_52", "db_id": "pets_1", "question": "What type of pet is the youngest animal, and how much does it weigh?", "evidence": ""}
+{"question_id": "spider_realistic_53", "db_id": "pets_1", "question": "Find the id and weight of all pets that is older than 1.", "evidence": ""}
+{"question_id": "spider_realistic_54", "db_id": "pets_1", "question": "What is the id and weight of every pet who is over 1 year old?", "evidence": ""}
+{"question_id": "spider_realistic_55", "db_id": "pets_1", "question": "Find the last name of the student who has a cat that is 3 years old.", "evidence": ""}
+{"question_id": "spider_realistic_56", "db_id": "pets_1", "question": "What is the last name of the student who has a cat that is 3 years old?", "evidence": ""}
+{"question_id": "spider_realistic_57", "db_id": "pets_1", "question": "Find the average age of students who do not have any pet.", "evidence": ""}
+{"question_id": "spider_realistic_58", "db_id": "pets_1", "question": "What is the average age for all students who do not own any pets?", "evidence": ""}

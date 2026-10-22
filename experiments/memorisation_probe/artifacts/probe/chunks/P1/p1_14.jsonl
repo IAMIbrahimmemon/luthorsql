@@ -1,0 +1,8 @@
+{"item_id": "spider_realistic_500", "db_id": "singer", "question": "What is the msot common country for singer?"}
+{"item_id": "spider_realistic_501", "db_id": "singer", "question": "Show different nationalities and the maximum net worth of singers of country."}
+{"item_id": "spider_realistic_502", "db_id": "singer", "question": "For each country, what is the maximum net worth?"}
+{"item_id": "spider_realistic_503", "db_id": "singer", "question": "Show distinct names of singers that have songs sell  more than 300000."}
+{"item_id": "spider_realistic_504", "db_id": "singer", "question": "what are the different names of the singers that have  sold than 300000 copies?"}
+{"item_id": "spider_realistic_505", "db_id": "singer", "question": "Show the citizenship shared by singers born  before 1945 and after 1955."}
+{"item_id": "spider_realistic_506", "db_id": "singer", "question": "What are the citizenships that are shared by singers born  before 1945 and after 1955?"}
+{"item_id": "spider_realistic_507", "db_id": "real_estate_properties", "question": "What are the names of properties that are either houses or apartments with more than 1 room?"}

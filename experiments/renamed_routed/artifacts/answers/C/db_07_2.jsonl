@@ -1,0 +1,16 @@
+{"question_id": "q1433", "pick": "NONE", "sql": "SELECT DISTINCT t1.natal_day FROM subjects AS t1 INNER JOIN visits AS t2 ON t1.person = t2.person WHERE t2.narrative = 'Outpatient Encounter'"}
+{"question_id": "q1441", "pick": "NONE", "sql": "SELECT DISTINCT t1.given FROM subjects AS t1 INNER JOIN shots AS t2 ON t1.person = t2.person WHERE t2.narrative = 'Influenza  seasonal  injectable  preservative free'"}
+{"question_id": "q1442", "pick": "B"}
+{"question_id": "q1479", "pick": "A"}
+{"question_id": "q1481", "pick": "NONE", "sql": "SELECT DISTINCT t3.narrative, t4.narrative, t5.narrative, t1.given, t1.surname FROM subjects AS t1 INNER JOIN visits AS t2 ON t1.person = t2.person INNER JOIN therapy_schedule AS t3 ON t1.person = t3.person INNER JOIN operations AS t4 ON t1.person = t4.person INNER JOIN drugs AS t5 ON t1.person = t5.person WHERE t2.identifier = '6f2e3935-b203-493e-a9c0-f23e847b9798'"}
+{"question_id": "q1486", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN ROUND((julianday(t2.day)-julianday(t1.natal_day))/365) BETWEEN 20 AND 29 THEN t2.amount ELSE 0 END)/COUNT(CASE WHEN ROUND((julianday(t2.day)-julianday(t1.natal_day))/365) BETWEEN 20 AND 29 THEN t2.person END) - SUM(CASE WHEN ROUND((julianday(t2.day)-julianday(t1.natal_day))/365) BETWEEN 50 AND 59 THEN t2.amount ELSE 0 END)/COUNT(CASE WHEN ROUND((julianday(t2.day)-julianday(t1.natal_day))/365) BETWEEN 50 AND 59 THEN t2.person END) AS difference FROM subjects AS t1 INNER JOIN readings AS t2 ON t1.person = t2.person WHERE t2.narrative = 'Glucose'"}
+{"question_id": "q1496", "pick": "NONE", "sql": "SELECT DISTINCT t1.narrative FROM diagnoses AS t1 INNER JOIN subjects AS t2 ON t1.person = t2.person WHERE t2.title = 'Mrs.' AND t2.given = 'Joye' AND t2.surname = 'Homenick' AND substr(t1.onset, 1, 4) = '2017'"}
+{"question_id": "q1497", "pick": "NONE", "sql": "SELECT MAX(t1.day) FROM shots AS t1 INNER JOIN subjects AS t2 ON t1.person = t2.person WHERE t2.title = 'Mrs.' AND t2.given = 'Joye' AND t2.surname = 'Homenick' AND t1.narrative = 'Influenza  seasonal  injectable  preservative free'"}
+{"question_id": "q1499", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t2.person), t2.narrative FROM visits AS t1 INNER JOIN therapy_schedule AS t2 ON t1.person = t2.person WHERE t1.cause_narrative = 'Second degree burn'"}
+{"question_id": "q1502", "pick": "NONE", "sql": "SELECT DISTINCT t1.narrative FROM drugs AS t1 INNER JOIN subjects AS t2 ON t1.person = t2.person WHERE t2.given = 'Joye' AND t2.surname = 'Homenick'"}
+{"question_id": "q1503", "pick": "A"}
+{"question_id": "q1508", "pick": "NONE", "sql": "SELECT DISTINCT t1.identifier FROM therapy_schedule AS t1 INNER JOIN subjects AS t2 ON t1.person = t2.person WHERE t2.origin = 'Pembroke MA US'"}
+{"question_id": "q1531", "pick": "A"}
+{"question_id": "q1538", "pick": "NONE", "sql": "SELECT AVG(CASE WHEN t1.expiry_day IS NULL THEN (julianday(substr(datetime('now'), 1, 10)) - julianday(t1.natal_day)) / 365 ELSE (julianday(t1.expiry_day) - julianday(t1.natal_day)) / 365 END) FROM subjects AS t1 INNER JOIN diagnoses AS t2 ON t1.person = t2.person WHERE t2.narrative = 'Hypertension' AND t1.sex = 'M'"}
+{"question_id": "q1540", "pick": "B"}
+{"question_id": "q1541", "pick": "A"}

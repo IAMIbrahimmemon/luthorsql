@@ -1,0 +1,121 @@
+{
+ "C": {
+  "synthea_2": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 77329,
+   "cache_read_input_tokens": 603313,
+   "output_tokens": 99,
+   "output_est": 2716,
+   "seconds": 100.417,
+   "dollars_opus55_list": 0.561708
+  },
+  "hockey_2": {
+   "input_tokens": 40,
+   "cache_creation_input_tokens": 84497,
+   "cache_read_input_tokens": 1393311,
+   "output_tokens": 146,
+   "output_est": 2850,
+   "seconds": 140.782,
+   "dollars_opus55_list": 0.758307
+  },
+  "hockey_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 71619,
+   "cache_read_input_tokens": 373763,
+   "output_tokens": 81,
+   "output_est": 1659,
+   "seconds": 73.006,
+   "dollars_opus55_list": 0.466084
+  },
+  "car_retails_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 67363,
+   "cache_read_input_tokens": 237736,
+   "output_tokens": 66,
+   "output_est": 1232,
+   "seconds": 43.573,
+   "dollars_opus55_list": 0.409042
+  },
+  "synthea_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 74725,
+   "cache_read_input_tokens": 457436,
+   "output_tokens": 91,
+   "output_est": 2377,
+   "seconds": 76.694,
+   "dollars_opus55_list": 0.512716
+  },
+  "cs_semester_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 70674,
+   "cache_read_input_tokens": 312479,
+   "output_tokens": 75,
+   "output_est": 1245,
+   "seconds": 49.144,
+   "dollars_opus55_list": 0.440814
+  },
+  "hockey_3": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 76863,
+   "cache_read_input_tokens": 946009,
+   "output_tokens": 160,
+   "output_est": 2656,
+   "seconds": 110.156,
+   "dollars_opus55_list": 0.626757
+  },
+  "law_episode_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 76167,
+   "cache_read_input_tokens": 542185,
+   "output_tokens": 78,
+   "output_est": 2099,
+   "seconds": 85.023,
+   "dollars_opus55_list": 0.531324
+  },
+  "student_loan_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 70905,
+   "cache_read_input_tokens": 312949,
+   "output_tokens": 72,
+   "output_est": 1657,
+   "seconds": 54.978,
+   "dollars_opus55_list": 0.450303
+  },
+  "student_loan_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 68069,
+   "cache_read_input_tokens": 303792,
+   "output_tokens": 77,
+   "output_est": 1411,
+   "seconds": 50.606,
+   "dollars_opus55_list": 0.429371
+  },
+  "car_retails_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 68497,
+   "cache_read_input_tokens": 305652,
+   "output_tokens": 75,
+   "output_est": 1477,
+   "seconds": 48.476,
+   "dollars_opus55_list": 0.433203
+  },
+  "university_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 75637,
+   "cache_read_input_tokens": 452738,
+   "output_tokens": 97,
+   "output_est": 2354,
+   "seconds": 73.517,
+   "dollars_opus55_list": 0.515877
+  },
+  "movie_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 62015,
+   "cache_read_input_tokens": 458108,
+   "output_tokens": 107,
+   "output_est": 1438,
+   "seconds": 52.568,
+   "dollars_opus55_list": 0.430529
+  }
+ }
+}

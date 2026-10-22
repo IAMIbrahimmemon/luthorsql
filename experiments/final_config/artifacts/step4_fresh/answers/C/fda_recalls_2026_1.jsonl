@@ -1,0 +1,22 @@
+{"question_id": "fresh_fda_recalls_2026_0", "pick": "NONE", "sql": "SELECT firm_name, city FROM firms WHERE state='CA' ORDER BY firm_name, firm_id"}
+{"question_id": "fresh_fda_recalls_2026_1", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_3", "pick": "NONE", "sql": "SELECT f.firm_name, COUNT(*) c FROM firms f JOIN recalls r ON f.firm_id=r.firm_id GROUP BY f.firm_id ORDER BY c DESC, f.firm_name, f.firm_id"}
+{"question_id": "fresh_fda_recalls_2026_4", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_5", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_7", "pick": "NONE", "sql": "SELECT f.firm_name, ROUND(100.0*SUM(r.classification='Class I')/COUNT(*),1) p FROM firms f JOIN recalls r ON f.firm_id=r.firm_id GROUP BY f.firm_id ORDER BY p DESC, f.firm_name, f.firm_id"}
+{"question_id": "fresh_fda_recalls_2026_8", "pick": "NONE", "sql": "SELECT recall_number, julianday(report_date)-julianday(recall_initiation_date) d FROM recalls WHERE classification='Class II' AND termination_date IS NULL ORDER BY d DESC, recall_number LIMIT 1"}
+{"question_id": "fresh_fda_recalls_2026_9", "pick": "NONE", "sql": "SELECT f.state, COUNT(*) c, ROUND(100.0*COUNT(*)/(SELECT COUNT(*) FROM recalls),1) FROM firms f JOIN recalls r ON f.firm_id=r.firm_id GROUP BY f.state ORDER BY c DESC, f.state"}
+{"question_id": "fresh_fda_recalls_2026_11", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_14", "pick": "NONE", "sql": "SELECT r.classification, ROUND(AVG(julianday(r.report_date)-julianday(r.recall_initiation_date)),1) FROM recalls r JOIN classifications c ON r.classification=c.classification GROUP BY r.classification ORDER BY c.severity_rank IS NULL, c.severity_rank"}
+{"question_id": "fresh_fda_recalls_2026_15", "pick": "NONE", "sql": "SELECT e.event_id, e.product_category, COUNT(r.recall_number) FROM events e LEFT JOIN recalls r ON r.event_id=e.event_id GROUP BY e.event_id ORDER BY e.event_id"}
+{"question_id": "fresh_fda_recalls_2026_16", "pick": "NONE", "sql": "WITH c AS (SELECT f.state, f.firm_name, f.firm_id, COUNT(*) n FROM firms f JOIN recalls r ON f.firm_id=r.firm_id GROUP BY f.firm_id), k AS (SELECT *, ROW_NUMBER() OVER (PARTITION BY state ORDER BY n DESC, firm_name, firm_id) rn FROM c) SELECT state, firm_name FROM k WHERE rn=1 ORDER BY state"}
+{"question_id": "fresh_fda_recalls_2026_17", "pick": "NONE", "sql": "WITH k AS (SELECT recall_number, classification, julianday(center_classification_date)-julianday(recall_initiation_date) d, ROW_NUMBER() OVER (PARTITION BY classification ORDER BY julianday(center_classification_date)-julianday(recall_initiation_date) DESC, recall_number) rn FROM recalls) SELECT recall_number, classification, d FROM k WHERE rn=1"}
+{"question_id": "fresh_fda_recalls_2026_18", "pick": "NONE", "sql": "SELECT product_category, ROUND(100.0*SUM(classification IN ('Class I','Class II'))/COUNT(*),1) p FROM recalls GROUP BY product_category ORDER BY p DESC, product_category"}
+{"question_id": "fresh_fda_recalls_2026_19", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_22", "pick": "NONE", "sql": "SELECT f.state, COUNT(DISTINCT f.firm_id), COUNT(r.recall_number) FROM firms f LEFT JOIN recalls r ON f.firm_id=r.firm_id WHERE f.state IS NOT NULL GROUP BY f.state ORDER BY f.state"}
+{"question_id": "fresh_fda_recalls_2026_23", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_24", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_26", "pick": "NONE", "sql": "WITH x AS (SELECT r.recall_number, r.classification, julianday(r.report_date)-julianday(r.center_classification_date) d, c.severity_rank s, AVG(julianday(r.report_date)-julianday(r.center_classification_date)) OVER (PARTITION BY r.classification) a FROM recalls r LEFT JOIN classifications c ON r.classification=c.classification) SELECT recall_number, classification, d FROM x WHERE d>a ORDER BY s IS NULL, s, d DESC, recall_number"}
+{"question_id": "fresh_fda_recalls_2026_27", "pick": "NONE", "sql": "SELECT r.product_category, ROUND(100.0*SUM(r.classification='Class I')/COUNT(*),1) p FROM products p JOIN recalls r ON p.recall_number=r.recall_number GROUP BY r.product_category ORDER BY p DESC, r.product_category"}
+{"question_id": "fresh_fda_recalls_2026_28", "pick": "A"}
+{"question_id": "fresh_fda_recalls_2026_29", "pick": "A"}

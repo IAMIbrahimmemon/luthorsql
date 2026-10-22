@@ -1,0 +1,24 @@
+{"question_id": "spider_realistic_272", "sql": "SELECT Title FROM Cartoon ORDER BY Title"}
+{"question_id": "spider_realistic_273", "sql": "SELECT Title FROM Cartoon ORDER BY Title"}
+{"question_id": "spider_realistic_274", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones'"}
+{"question_id": "spider_realistic_275", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones'"}
+{"question_id": "spider_realistic_276", "sql": "SELECT count(*) FROM Cartoon WHERE Written_by = 'Joseph Kuhr'"}
+{"question_id": "spider_realistic_277", "sql": "SELECT count(*) FROM Cartoon WHERE Written_by = 'Joseph Kuhr'"}
+{"question_id": "spider_realistic_278", "sql": "SELECT Title, Directed_by FROM Cartoon ORDER BY Original_air_date"}
+{"question_id": "spider_realistic_279", "sql": "SELECT Title, Directed_by FROM Cartoon ORDER BY Original_air_date"}
+{"question_id": "spider_realistic_280", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones' OR Directed_by = 'Brandon Vietti'"}
+{"question_id": "spider_realistic_281", "sql": "SELECT Title FROM Cartoon WHERE Directed_by = 'Ben Jones' OR Directed_by = 'Brandon Vietti'"}
+{"question_id": "spider_realistic_282", "sql": "SELECT Country, count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_283", "sql": "SELECT Country, count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_284", "sql": "SELECT Content FROM TV_Channel WHERE series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_285", "sql": "SELECT Content FROM TV_Channel WHERE series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_286", "sql": "SELECT Package_Option FROM TV_Channel WHERE series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_287", "sql": "SELECT count(*) FROM TV_Channel WHERE Language = 'English'"}
+{"question_id": "spider_realistic_288", "sql": "SELECT count(*) FROM TV_Channel WHERE Language = 'English'"}
+{"question_id": "spider_realistic_289", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Title = 'The Rise of the Blue Beetle!'"}
+{"question_id": "spider_realistic_290", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Title = 'The Rise of the Blue Beetle!'"}
+{"question_id": "spider_realistic_291", "sql": "SELECT T2.Title FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_292", "sql": "SELECT T2.Title FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_293", "sql": "SELECT Air_Date FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"question_id": "spider_realistic_294", "sql": "SELECT Air_Date FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"question_id": "spider_realistic_295", "sql": "SELECT Weekly_Rank FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}

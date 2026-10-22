@@ -1,0 +1,22 @@
+{"question_id": "kaggledbqa_test_0", "db_id": "GeoNuclearData", "question": "Which country has the most capacities of nuclear power plants?", "evidence": ""}
+{"question_id": "kaggledbqa_test_1", "db_id": "GeoNuclearData", "question": "Which country has the least capacities of nuclear power plants?", "evidence": ""}
+{"question_id": "kaggledbqa_test_2", "db_id": "GeoNuclearData", "question": "What are the top 3 countries which have the most nuclear power plants?", "evidence": ""}
+{"question_id": "kaggledbqa_test_3", "db_id": "GeoNuclearData", "question": "Which country has the most nuclear station?", "evidence": ""}
+{"question_id": "kaggledbqa_test_4", "db_id": "GeoNuclearData", "question": "Which county has the most nuclear station shut down?", "evidence": ""}
+{"question_id": "kaggledbqa_test_5", "db_id": "GeoNuclearData", "question": "What nuclear station has the largest nuclear power plant capacity?", "evidence": ""}
+{"question_id": "kaggledbqa_test_6", "db_id": "GeoNuclearData", "question": "How many operating nuclear station in France?", "evidence": ""}
+{"question_id": "kaggledbqa_test_7", "db_id": "GeoNuclearData", "question": "How many nuclear station are under construction?", "evidence": ""}
+{"question_id": "kaggledbqa_test_8", "db_id": "GeoNuclearData", "question": "What nuclear reactor model is the most popular?", "evidence": ""}
+{"question_id": "kaggledbqa_test_9", "db_id": "GeoNuclearData", "question": "Which country is Chinon-A3 in?", "evidence": ""}
+{"question_id": "kaggledbqa_test_10", "db_id": "GeoNuclearData", "question": "What are operational nuclear power plants in Japan called?", "evidence": ""}
+{"question_id": "kaggledbqa_test_11", "db_id": "GeoNuclearData", "question": "Which country first started using nuclear power plant(s)?", "evidence": ""}
+{"question_id": "kaggledbqa_test_12", "db_id": "GeoNuclearData", "question": "How many nuclear power plants are in preparation to be used in Japan?", "evidence": ""}
+{"question_id": "kaggledbqa_test_13", "db_id": "GeoNuclearData", "question": "What is the current situation of the nuclear power plant in the United States with the maximum capacity?", "evidence": ""}
+{"question_id": "kaggledbqa_test_14", "db_id": "GeoNuclearData", "question": "What is the maximum capacity of existing pressurized water reactor?", "evidence": ""}
+{"question_id": "kaggledbqa_test_15", "db_id": "GeoNuclearData", "question": "Which nation has the most nuclear plants under construction?", "evidence": ""}
+{"question_id": "kaggledbqa_test_16", "db_id": "GeoNuclearData", "question": "Which country has the most under constriction power plants to date?", "evidence": ""}
+{"question_id": "kaggledbqa_test_17", "db_id": "GeoNuclearData", "question": "Where is the first BWR type power plant built and located?", "evidence": ""}
+{"question_id": "kaggledbqa_test_18", "db_id": "GeoNuclearData", "question": "Which country lead the total capacity of the power plants it held?", "evidence": ""}
+{"question_id": "kaggledbqa_test_19", "db_id": "GeoNuclearData", "question": "What is the main source of the information for this table?", "evidence": ""}
+{"question_id": "kaggledbqa_test_20", "db_id": "GeoNuclearData", "question": "Which reactor type has the largest average capacity?", "evidence": ""}
+{"question_id": "kaggledbqa_test_21", "db_id": "GeoNuclearData", "question": "Which country is Kursk-1 in?", "evidence": ""}

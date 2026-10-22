@@ -1,0 +1,10 @@
+{"question_id": "spider_realistic_320", "sql": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC"}
+{"question_id": "spider_realistic_321", "sql": "SELECT T2.Money_Rank FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID = T2.People_ID ORDER BY T1.Height DESC LIMIT 1"}
+{"question_id": "spider_realistic_322", "sql": "SELECT T2.Money_Rank FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID = T2.People_ID ORDER BY T1.Height DESC LIMIT 1"}
+{"question_id": "spider_realistic_323", "sql": "SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID = T2.People_ID WHERE T1.Height > 200"}
+{"question_id": "spider_realistic_324", "sql": "SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID = T2.People_ID WHERE T1.Height > 200"}
+{"question_id": "spider_realistic_325", "sql": "SELECT Nationality, COUNT(*) FROM people GROUP BY Nationality"}
+{"question_id": "spider_realistic_326", "sql": "SELECT Nationality, COUNT(*) FROM people GROUP BY Nationality"}
+{"question_id": "spider_realistic_327", "sql": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*) >= 2"}
+{"question_id": "spider_realistic_328", "sql": "SELECT Name FROM people WHERE Nationality != 'Russia'"}
+{"question_id": "spider_realistic_329", "sql": "SELECT Name FROM people WHERE Nationality != 'Russia'"}

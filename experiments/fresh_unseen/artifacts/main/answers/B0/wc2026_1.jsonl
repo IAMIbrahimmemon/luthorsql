@@ -1,0 +1,15 @@
+{"question_id": "fresh_wc2026_0", "sql": "SELECT COUNT(*) FROM goals WHERE match_id = 80 AND player_name = 'Harry KANE'"}
+{"question_id": "fresh_wc2026_1", "sql": "SELECT attendance FROM matches WHERE match_id = 80"}
+{"question_id": "fresh_wc2026_2", "sql": "SELECT COUNT(*) FROM cards WHERE match_id = 80 AND card_type = 'Y'"}
+{"question_id": "fresh_wc2026_3", "sql": "SELECT h.team_name, a.team_name FROM matches m JOIN teams h ON m.home_team_id = h.team_id JOIN teams a ON m.away_team_id = a.team_id WHERE m.match_id = 80"}
+{"question_id": "fresh_wc2026_4", "sql": "SELECT COUNT(*) FROM cards c JOIN matches m ON c.match_id = m.match_id JOIN stadiums s ON m.stadium_id = s.stadium_id WHERE s.stadium_name = 'Atlanta Stadium' AND c.card_type = 'Y'"}
+{"question_id": "fresh_wc2026_5", "sql": "SELECT stage, COUNT(*) FROM matches GROUP BY stage"}
+{"question_id": "fresh_wc2026_6", "sql": "SELECT t.team_name, COUNT(*) FROM goals g JOIN teams t ON g.scoring_team_id = t.team_id WHERE g.match_id = 81 GROUP BY t.team_name ORDER BY t.team_name"}
+{"question_id": "fresh_wc2026_7", "sql": "SELECT ROUND(100.0 * SUM(m.went_to_extra_time) / COUNT(*), 1) FROM matches m JOIN stadiums s ON m.stadium_id = s.stadium_id WHERE s.stadium_name = 'Atlanta Stadium'"}
+{"question_id": "fresh_wc2026_8", "sql": "WITH c AS (SELECT t.team_name, COUNT(*) AS n FROM goals g JOIN matches m ON g.match_id = m.match_id JOIN teams t ON g.scoring_team_id = t.team_id WHERE m.went_to_extra_time = 1 GROUP BY t.team_id, t.team_name) SELECT team_name, n FROM c WHERE n = (SELECT MAX(n) FROM c) ORDER BY team_name"}
+{"question_id": "fresh_wc2026_9", "sql": "SELECT ROUND(CAST(COUNT(g.goal_id) AS REAL) / COUNT(DISTINCT m.match_id), 2) FROM matches m JOIN stadiums s ON m.stadium_id = s.stadium_id LEFT JOIN goals g ON g.match_id = m.match_id WHERE s.country = 'USA'"}
+{"question_id": "fresh_wc2026_10", "sql": "SELECT COUNT(*) FROM goals WHERE match_id = 82"}
+{"question_id": "fresh_wc2026_11", "sql": "SELECT COUNT(*) FROM lineups WHERE match_id = 80 AND is_starter = 1"}
+{"question_id": "fresh_wc2026_12", "sql": "SELECT ROUND(AVG(attendance)) FROM matches WHERE stage = 'Round of 32'"}
+{"question_id": "fresh_wc2026_13", "sql": "SELECT t.team_name, COUNT(*) FROM cards c JOIN teams t ON c.team_id = t.team_id WHERE c.match_id = 81 AND c.card_type = 'Y' GROUP BY t.team_name ORDER BY t.team_name"}
+{"question_id": "fresh_wc2026_14", "sql": "SELECT s.stadium_name, COUNT(*) AS cnt FROM matches m JOIN stadiums s ON m.stadium_id = s.stadium_id WHERE s.country = 'USA' GROUP BY s.stadium_name ORDER BY cnt DESC, s.stadium_name"}

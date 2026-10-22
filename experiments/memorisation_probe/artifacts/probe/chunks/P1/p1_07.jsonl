@@ -1,0 +1,50 @@
+{"item_id": "bird_train_train_1406", "db_id": "synthea", "question": "What is the age of the patient with hypertension named Giovanni Russel?"}
+{"item_id": "bird_train_train_1407", "db_id": "synthea", "question": "How many Asian female patients take oxaliplatin 5 MG/ML [Eloxatin]?"}
+{"item_id": "bird_train_train_1410", "db_id": "synthea", "question": "Among the patients with hypertension, what is the average of their diastolic blood pressure?"}
+{"item_id": "bird_train_train_1415", "db_id": "synthea", "question": "What is the code of the prevalent disease with the highest occurrences?"}
+{"item_id": "bird_train_train_1419", "db_id": "synthea", "question": "Provide the number of encounters for Major D'Amore."}
+{"item_id": "bird_train_train_1424", "db_id": "synthea", "question": "How many times did Keven Kuhn receive DTaP immunization?"}
+{"item_id": "bird_train_train_1425", "db_id": "synthea", "question": "Who had to take Clopidogrel 75 MG Oral Tablet for over 10 years?"}
+{"item_id": "bird_train_train_1429", "db_id": "synthea", "question": "What is the prevalence rate of the patients' diseases started on 9th May 2014?"}
+{"item_id": "bird_train_train_1431", "db_id": "synthea", "question": "Among the immunizations in 2017, calculate the percentage of patients who received the Influenza seasonal injectable preservative free. Among them, how many patients are English?"}
+{"item_id": "bird_train_train_1433", "db_id": "synthea", "question": "What are the birth date of patients who took outpatient encounter care plan?"}
+{"item_id": "bird_train_train_1437", "db_id": "synthea", "question": "List down the last name of patients who are allergic to dairy products."}
+{"item_id": "bird_train_train_1441", "db_id": "synthea", "question": "List down the first name of patients who received \"Influenza seasonal injectable preservative free\" immunization."}
+{"item_id": "bird_train_train_1442", "db_id": "synthea", "question": "Calculate the number of female patients who accepted \"HPV quadrivalent\" immunization."}
+{"item_id": "bird_train_train_1446", "db_id": "synthea", "question": "How many of the patients who have stopped taking medication for 'coronary heart disease' are still alive?"}
+{"item_id": "bird_train_train_1452", "db_id": "synthea", "question": "On what dates did the billable period begin for patients with the last name Dickinson?"}
+{"item_id": "bird_train_train_1453", "db_id": "synthea", "question": "List the full name of all patients with 'otitis media'."}
+{"item_id": "bird_train_train_1462", "db_id": "synthea", "question": "How many times was Elly Koss given a care plan between 1/11/2009 and 10/23/2010?"}
+{"item_id": "bird_train_train_1479", "db_id": "synthea", "question": "How many mothers have taken immunization during prenatal visit?"}
+{"item_id": "bird_train_train_1481", "db_id": "synthea", "question": "What is the care plan, procedure, medication and the patient's full name for encounter 6f2e3935-b203-493e-a9c0-f23e847b9798?"}
+{"item_id": "bird_train_train_1486", "db_id": "synthea", "question": "What is the difference between average glucose reading for patients in the 20s and 50s?"}
+{"item_id": "bird_train_train_1496", "db_id": "synthea", "question": "What condition forced Mrs. Joye Homenick to seek medical attention in 2017?"}
+{"item_id": "bird_train_train_1497", "db_id": "synthea", "question": "When did Mrs. Joye Homenick receive her most recent influenza seasonal vaccine?"}
+{"item_id": "bird_train_train_1498", "db_id": "synthea", "question": "How long did Elly Koss have to take Acetaminophen 160 MG?"}
+{"item_id": "bird_train_train_1499", "db_id": "synthea", "question": "How many patients sought medical attention due to a second-degree burn? Describe the care plan recommended to them."}
+{"item_id": "bird_train_train_1500", "db_id": "synthea", "question": "Among all patients who sought medical attention in 2010 due to contact dermatitis, identify the percentage of females."}
+{"item_id": "bird_train_train_1502", "db_id": "synthea", "question": "State description of medication taken by Joe Homenick."}
+{"item_id": "bird_train_train_1503", "db_id": "synthea", "question": "What is the start date of the care plan of the patient whose maiden name is Adams?"}
+{"item_id": "bird_train_train_1508", "db_id": "synthea", "question": "What are the medical encounter ids of patients who were born in Pembroke MA US?"}
+{"item_id": "bird_train_train_1511", "db_id": "synthea", "question": "List out full name of patients who have \"Diabetic diet\" in the description of the care plan."}
+{"item_id": "bird_train_train_1520", "db_id": "synthea", "question": "Provide the full names of patients who have been taking Penicillin V Potassium 250 MG since 1948."}
+{"item_id": "bird_train_train_1524", "db_id": "synthea", "question": "List all the full names of patients with a condition described as cystitis."}
+{"item_id": "bird_train_train_1527", "db_id": "synthea", "question": "Describe the care plans of patient Major D'Amore's plan of care."}
+{"item_id": "bird_train_train_1528", "db_id": "synthea", "question": "Calculate the percentage of male patients with viral sinusitis condition."}
+{"item_id": "bird_train_train_1529", "db_id": "synthea", "question": "Among the patients who have been using Penicillin V Potassium 250 MG, what percentage of patients are female?"}
+{"item_id": "bird_train_train_1531", "db_id": "synthea", "question": "Indicate the care plan needed for the patient living at 179 Sydni Roads, Taunton, MA 02780 US."}
+{"item_id": "bird_train_train_1537", "db_id": "synthea", "question": "What is the care plan for the patient with social security number 999-15-3685?"}
+{"item_id": "bird_train_train_1538", "db_id": "synthea", "question": "Calculate the average age of the male patients that have hypertension."}
+{"item_id": "bird_train_train_1540", "db_id": "synthea", "question": "Who is the patient with a body weight of 61.97 kg?"}
+{"item_id": "bird_train_train_1541", "db_id": "synthea", "question": "Among the male patients, list down 5 birth dates of patients taking the medication \"Penicillin V Potassium 250 MG\"."}
+{"item_id": "bird_train_train_1544", "db_id": "car_retails", "question": "List the country and how many customers are there."}
+{"item_id": "bird_train_train_1553", "db_id": "car_retails", "question": "Of all the classic cars, with a product scale of 1:18, which product is the most ordered product by customers?"}
+{"item_id": "bird_train_train_1554", "db_id": "car_retails", "question": "How many customers have a credit limit of not more than 100,000 and which customer made the highest total payment amount for the year 2004?"}
+{"item_id": "bird_train_train_1555", "db_id": "car_retails", "question": "Which of the customers, whose Tokyo-based sales representative reports to the Vice President of Sales whose employee number is 1056, has paid the highest payment? List the customer's name, the contact person and calculate the total amount of that customer's total payments."}
+{"item_id": "bird_train_train_1557", "db_id": "car_retails", "question": "How many different orders with a total price greater than 4000 are cancelled?"}
+{"item_id": "bird_train_train_1558", "db_id": "car_retails", "question": "How many distinct orders were there in 2003 when the quantity ordered was less than 30?"}
+{"item_id": "bird_train_train_1562", "db_id": "car_retails", "question": "How many orders which expected profits greater than 100?"}
+{"item_id": "bird_train_train_1565", "db_id": "car_retails", "question": "Please list different customer names with the payment amount of over 50,000."}
+{"item_id": "bird_train_train_1566", "db_id": "car_retails", "question": "Please calculate the total payment amount of customers who come from the USA."}
+{"item_id": "bird_train_train_1567", "db_id": "car_retails", "question": "What are the total payments of customers with no credit limit in 2003?"}
+{"item_id": "bird_train_train_1569", "db_id": "car_retails", "question": "How many French customers shipped 2 orders which have been cancelled?"}

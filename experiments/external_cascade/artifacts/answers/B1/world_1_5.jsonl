@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_418", "pick": "A"}
+{"question_id": "spider_realistic_419", "pick": "A"}
+{"question_id": "spider_realistic_420", "pick": "A"}
+{"question_id": "spider_realistic_421", "pick": "A"}
+{"question_id": "spider_realistic_422", "pick": "A"}
+{"question_id": "spider_realistic_423", "pick": "A"}
+{"question_id": "spider_realistic_424", "pick": "A"}
+{"question_id": "spider_realistic_425", "pick": "NONE", "sql": "SELECT \"Name\" FROM \"country\" WHERE \"Continent\" = 'Europe' AND \"Population\" = 80000"}
+{"question_id": "spider_realistic_426", "pick": "NONE", "sql": "SELECT \"Name\" FROM \"country\" WHERE \"Continent\" = 'Europe' AND \"Population\" = 80000"}
+{"question_id": "spider_realistic_427", "pick": "A"}
+{"question_id": "spider_realistic_428", "pick": "E"}
+{"question_id": "spider_realistic_429", "pick": "A"}
+{"question_id": "spider_realistic_430", "pick": "A"}
+{"question_id": "spider_realistic_431", "pick": "NONE", "sql": "SELECT \"Language\", \"CountryCode\", MAX(\"Percentage\") FROM \"countrylanguage\" GROUP BY \"CountryCode\""}
+{"question_id": "spider_realistic_432", "pick": "NONE", "sql": "SELECT \"CountryCode\", \"Language\", MAX(\"Percentage\") FROM \"countrylanguage\" GROUP BY \"CountryCode\""}
+{"question_id": "spider_realistic_433", "pick": "NONE", "sql": "SELECT COUNT(*) FROM \"countrylanguage\" AS T1 WHERE T1.\"Language\" = 'Spanish' AND T1.\"Percentage\" = (SELECT MAX(T2.\"Percentage\") FROM \"countrylanguage\" AS T2 WHERE T2.\"CountryCode\" = T1.\"CountryCode\")"}
+{"question_id": "spider_realistic_434", "pick": "NONE", "sql": "SELECT COUNT(*) FROM \"countrylanguage\" AS T1 WHERE T1.\"Language\" = 'Spanish' AND T1.\"Percentage\" = (SELECT MAX(T2.\"Percentage\") FROM \"countrylanguage\" AS T2 WHERE T2.\"CountryCode\" = T1.\"CountryCode\")"}
+{"question_id": "spider_realistic_435", "pick": "NONE", "sql": "SELECT T1.\"CountryCode\" FROM \"countrylanguage\" AS T1 WHERE T1.\"Language\" = 'Spanish' AND T1.\"Percentage\" = (SELECT MAX(T2.\"Percentage\") FROM \"countrylanguage\" AS T2 WHERE T2.\"CountryCode\" = T1.\"CountryCode\")"}
+{"question_id": "spider_realistic_436", "pick": "NONE", "sql": "SELECT T1.\"CountryCode\" FROM \"countrylanguage\" AS T1 WHERE T1.\"Language\" = 'Spanish' AND T1.\"Percentage\" = (SELECT MAX(T2.\"Percentage\") FROM \"countrylanguage\" AS T2 WHERE T2.\"CountryCode\" = T1.\"CountryCode\")"}

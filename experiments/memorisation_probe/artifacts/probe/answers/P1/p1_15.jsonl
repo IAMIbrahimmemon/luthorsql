@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_50", "sql": "SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.PetType = 'dog' AND T1.StuID NOT IN (SELECT T1.StuID FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.PetType = 'cat')"}
+{"item_id": "spider_realistic_51", "sql": "SELECT PetType, weight FROM Pets ORDER BY pet_age LIMIT 1"}
+{"item_id": "spider_realistic_52", "sql": "SELECT PetType, weight FROM Pets ORDER BY pet_age LIMIT 1"}
+{"item_id": "spider_realistic_53", "sql": "SELECT PetID, weight FROM Pets WHERE pet_age > 1"}
+{"item_id": "spider_realistic_54", "sql": "SELECT PetID, weight FROM Pets WHERE pet_age > 1"}
+{"item_id": "spider_realistic_55", "sql": "SELECT T1.LName FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.pet_age = 3 AND T3.PetType = 'cat'"}
+{"item_id": "spider_realistic_56", "sql": "SELECT T1.LName FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.pet_age = 3 AND T3.PetType = 'cat'"}
+{"item_id": "spider_realistic_57", "sql": "SELECT AVG(Age) FROM Student WHERE StuID NOT IN (SELECT StuID FROM Has_Pet)"}
+{"item_id": "spider_realistic_58", "sql": "SELECT AVG(Age) FROM Student WHERE StuID NOT IN (SELECT StuID FROM Has_Pet)"}
+{"item_id": "spider_realistic_59", "sql": "SELECT T1.FullName, T1.Id, COUNT(*) FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker GROUP BY T1.Id"}
+{"item_id": "spider_realistic_60", "sql": "SELECT T1.FullName, T1.Id, COUNT(*) FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker GROUP BY T1.Id"}
+{"item_id": "spider_realistic_61", "sql": "SELECT T1.Model FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id WHERE T2.Weight < (SELECT AVG(Weight) FROM cars_data)"}
+{"item_id": "spider_realistic_62", "sql": "SELECT T1.Model FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id WHERE T2.Weight < (SELECT AVG(Weight) FROM cars_data)"}
+{"item_id": "spider_realistic_63", "sql": "SELECT DISTINCT T1.Maker FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker JOIN car_names AS T3 ON T2.Model = T3.Model JOIN cars_data AS T4 ON T3.MakeId = T4.Id WHERE T4.Year = '1970'"}
+{"item_id": "spider_realistic_64", "sql": "SELECT DISTINCT T1.Maker FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker JOIN car_names AS T3 ON T2.Model = T3.Model JOIN cars_data AS T4 ON T3.MakeId = T4.Id WHERE T4.Year = '1970'"}
+{"item_id": "spider_realistic_65", "sql": "SELECT T2.Make, T1.Year FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T1.Year = (SELECT MIN(Year) FROM cars_data)"}
+{"item_id": "spider_realistic_66", "sql": "SELECT T2.Make, T1.Year FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T1.Year = (SELECT MIN(Year) FROM cars_data)"}
+{"item_id": "spider_realistic_67", "sql": "SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id WHERE T3.Year > 1980"}
+{"item_id": "spider_realistic_68", "sql": "SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id WHERE T3.Year > 1980"}
+{"item_id": "spider_realistic_69", "sql": "SELECT T2.CountryName FROM car_makers AS T1 JOIN countries AS T2 ON T1.Country = T2.CountryId GROUP BY T1.Country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_70", "sql": "SELECT T2.CountryName FROM car_makers AS T1 JOIN countries AS T2 ON T1.Country = T2.CountryId GROUP BY T1.Country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_71", "sql": "SELECT COUNT(*), T2.FullName FROM model_list AS T1 JOIN car_makers AS T2 ON T1.Maker = T2.Id GROUP BY T2.Id"}
+{"item_id": "spider_realistic_72", "sql": "SELECT COUNT(*), T2.FullName, T2.Id FROM model_list AS T1 JOIN car_makers AS T2 ON T1.Maker = T2.Id GROUP BY T2.Id"}
+{"item_id": "spider_realistic_73", "sql": "SELECT T1.Accelerate FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T2.Make = 'amc hornet sportabout (sw)'"}
+{"item_id": "spider_realistic_74", "sql": "SELECT COUNT(*) FROM car_makers AS T1 JOIN countries AS T2 ON T1.Country = T2.CountryId WHERE T2.CountryName = 'france'"}
+{"item_id": "spider_realistic_75", "sql": "SELECT COUNT(*) FROM car_makers AS T1 JOIN countries AS T2 ON T1.Country = T2.CountryId WHERE T2.CountryName = 'france'"}
+{"item_id": "spider_realistic_76", "sql": "SELECT COUNT(*) FROM model_list AS T1 JOIN car_makers AS T2 ON T1.Maker = T2.Id JOIN countries AS T3 ON T2.Country = T3.CountryId WHERE T3.CountryName = 'usa'"}
+{"item_id": "spider_realistic_77", "sql": "SELECT COUNT(*) FROM model_list AS T1 JOIN car_makers AS T2 ON T1.Maker = T2.Id JOIN countries AS T3 ON T2.Country = T3.CountryId WHERE T3.CountryName = 'usa'"}
+{"item_id": "spider_realistic_78", "sql": "SELECT AVG(MPG) FROM cars_data WHERE Cylinders = 4"}
+{"item_id": "spider_realistic_79", "sql": "SELECT MIN(Weight) FROM cars_data WHERE Cylinders = 8 AND Year = 1974"}
+{"item_id": "spider_realistic_80", "sql": "SELECT T1.CountryName, T1.CountryId FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING COUNT(*) >= 1"}
+{"item_id": "spider_realistic_81", "sql": "SELECT T1.CountryName, T1.CountryId FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING COUNT(*) >= 1"}
+{"item_id": "spider_realistic_82", "sql": "SELECT COUNT(*) FROM cars_data WHERE Horsepower > 150"}
+{"item_id": "spider_realistic_83", "sql": "SELECT COUNT(*) FROM cars_data WHERE Horsepower > 150"}
+{"item_id": "spider_realistic_84", "sql": "SELECT T1.CountryName FROM countries AS T1 JOIN continents AS T2 ON T1.Continent = T2.ContId JOIN car_makers AS T3 ON T1.CountryId = T3.Country WHERE T2.Continent = 'europe' GROUP BY T1.CountryName HAVING COUNT(*) >= 3"}
+{"item_id": "spider_realistic_85", "sql": "SELECT T1.CountryName FROM countries AS T1 JOIN continents AS T2 ON T1.Continent = T2.ContId JOIN car_makers AS T3 ON T1.CountryId = T3.Country WHERE T2.Continent = 'europe' GROUP BY T1.CountryName HAVING COUNT(*) >= 3"}
+{"item_id": "spider_realistic_86", "sql": "SELECT T1.Model FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id ORDER BY T2.MPG DESC LIMIT 1"}
+{"item_id": "spider_realistic_87", "sql": "SELECT T1.Model FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id ORDER BY T2.MPG DESC LIMIT 1"}
+{"item_id": "spider_realistic_88", "sql": "SELECT AVG(Horsepower) FROM cars_data WHERE Year < 1980"}
+{"item_id": "spider_realistic_89", "sql": "SELECT AVG(Horsepower) FROM cars_data WHERE Year < 1980"}
+{"item_id": "spider_realistic_90", "sql": "SELECT AVG(T2.Edispl) FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id WHERE T1.Model = 'volvo'"}
+{"item_id": "spider_realistic_91", "sql": "SELECT AVG(T2.Edispl) FROM car_names AS T1 JOIN cars_data AS T2 ON T1.MakeId = T2.Id WHERE T1.Model = 'volvo'"}
+{"item_id": "spider_realistic_92", "sql": "SELECT Model FROM car_names GROUP BY Model ORDER BY COUNT(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_93", "sql": "SELECT COUNT(*) FROM cars_data WHERE Year = 1980"}
+{"item_id": "spider_realistic_94", "sql": "SELECT COUNT(*) FROM cars_data WHERE Year = 1980"}
+{"item_id": "spider_realistic_95", "sql": "SELECT COUNT(*) FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker WHERE T1.FullName = 'American Motor Company'"}
+{"item_id": "spider_realistic_96", "sql": "SELECT COUNT(*) FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker WHERE T1.FullName = 'American Motor Company'"}
+{"item_id": "spider_realistic_97", "sql": "SELECT T1.FullName, T1.Id FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker GROUP BY T1.Id HAVING COUNT(*) > 3"}
+{"item_id": "spider_realistic_98", "sql": "SELECT T1.FullName, T1.Id FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker GROUP BY T1.Id HAVING COUNT(*) > 3"}
+{"item_id": "spider_realistic_99", "sql": "SELECT DISTINCT T2.Model FROM car_names AS T1 JOIN model_list AS T2 ON T1.Model = T2.Model JOIN car_makers AS T3 ON T2.Maker = T3.Id JOIN cars_data AS T4 ON T1.MakeId = T4.Id WHERE T3.FullName = 'General Motors' OR T4.Weight > 3500"}

@@ -1,0 +1,9 @@
+{"question_id": "spider_realistic_255", "pick": "B"}
+{"question_id": "spider_realistic_256", "pick": "NONE", "sql": "SELECT course_description FROM Courses WHERE course_name = 'math'"}
+{"question_id": "spider_realistic_259", "pick": "NONE", "sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id"}
+{"question_id": "spider_realistic_260", "pick": "NONE", "sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id"}
+{"question_id": "spider_realistic_261", "pick": "A"}
+{"question_id": "spider_realistic_262", "pick": "A"}
+{"question_id": "spider_realistic_266", "pick": "NONE", "sql": "SELECT T1.address_id, T1.line_1, T1.line_2 FROM Addresses AS T1 JOIN Students AS T2 ON T1.address_id = T2.current_address_id GROUP BY T1.address_id ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_270", "pick": "NONE", "sql": "SELECT T1.first_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.permanent_address_id = T2.address_id WHERE T2.country = 'Haiti' UNION SELECT first_name FROM Students WHERE cell_mobile_number = '09700166582'"}
+{"question_id": "spider_realistic_271", "pick": "NONE", "sql": "SELECT T1.first_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.permanent_address_id = T2.address_id WHERE T2.country = 'Haiti' UNION SELECT first_name FROM Students WHERE cell_mobile_number = '09700166582'"}

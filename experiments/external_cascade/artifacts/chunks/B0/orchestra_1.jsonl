@@ -1,0 +1,7 @@
+{"question_id": "spider_realistic_437", "db_id": "orchestra", "question": "List the names of conductors from youngest to oldest.", "evidence": ""}
+{"question_id": "spider_realistic_438", "db_id": "orchestra", "question": "What are the names of conductors, ordered by how old they are?", "evidence": ""}
+{"question_id": "spider_realistic_439", "db_id": "orchestra", "question": "What are the names of conductors who are not from \"\"USA\"\"?", "evidence": ""}
+{"question_id": "spider_realistic_440", "db_id": "orchestra", "question": "Return the names of non USA conductors.", "evidence": ""}
+{"question_id": "spider_realistic_441", "db_id": "orchestra", "question": "What are the record companies of orchestras in descending order of time in which they started?", "evidence": ""}
+{"question_id": "spider_realistic_442", "db_id": "orchestra", "question": "Return the record companies of orchestras, sorted ascending by the time they have existed.", "evidence": ""}
+{"question_id": "spider_realistic_443", "db_id": "orchestra", "question": "Find the number of orchestras recorded in \"\"\"\"CD\"\"\"\" or \"\"\"\"DVD\"\"\"\".", "evidence": ""}

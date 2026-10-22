@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_100", "sql": "SELECT DISTINCT T2.Model FROM car_names AS T1 JOIN model_list AS T2 ON T1.Model = T2.Model JOIN car_makers AS T3 ON T2.Maker = T3.Id JOIN cars_data AS T4 ON T1.MakeId = T4.Id WHERE T3.FullName = 'General Motors' OR T4.Weight > 3500"}
+{"item_id": "spider_realistic_101", "sql": "SELECT DISTINCT Year FROM cars_data WHERE Weight BETWEEN 3000 AND 4000"}
+{"item_id": "spider_realistic_102", "sql": "SELECT DISTINCT Year FROM cars_data WHERE Weight BETWEEN 3000 AND 4000"}
+{"item_id": "spider_realistic_103", "sql": "SELECT T1.Cylinders FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T2.Model = 'volvo' ORDER BY T1.Accelerate ASC LIMIT 1"}
+{"item_id": "spider_realistic_104", "sql": "SELECT T1.Cylinders FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T2.Model = 'volvo' ORDER BY T1.Accelerate ASC LIMIT 1"}
+{"item_id": "spider_realistic_105", "sql": "SELECT count(*) FROM (SELECT T1.CountryId FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) > 2)"}
+{"item_id": "spider_realistic_106", "sql": "SELECT count(*) FROM (SELECT T1.CountryId FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) > 2)"}
+{"item_id": "spider_realistic_107", "sql": "SELECT T2.Model FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T1.Cylinders = 4 ORDER BY T1.Horsepower DESC LIMIT 1"}
+{"item_id": "spider_realistic_108", "sql": "SELECT max(MPG) FROM cars_data WHERE Cylinders = 8 OR Year < 1980"}
+{"item_id": "spider_realistic_109", "sql": "SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id JOIN car_makers AS T4 ON T1.Maker = T4.Id WHERE T3.Weight < 3500 AND T4.FullName != 'Ford Motor Company'"}
+{"item_id": "spider_realistic_110", "sql": "SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id JOIN car_makers AS T4 ON T1.Maker = T4.Id WHERE T3.Weight < 3500 AND T4.FullName != 'Ford Motor Company'"}
+{"item_id": "spider_realistic_111", "sql": "SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) > 3 UNION SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country JOIN model_list AS T3 ON T2.Id = T3.Maker WHERE T3.Model = 'fiat'"}
+{"item_id": "spider_realistic_112", "sql": "SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) > 3 UNION SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country JOIN model_list AS T3 ON T2.Id = T3.Maker WHERE T3.Model = 'fiat'"}
+{"item_id": "spider_realistic_113", "sql": "SELECT Country FROM airlines WHERE Airline = 'JetBlue Airways'"}
+{"item_id": "spider_realistic_114", "sql": "SELECT Country FROM airlines WHERE Airline = 'JetBlue Airways'"}
+{"item_id": "spider_realistic_115", "sql": "SELECT Abbreviation FROM airlines WHERE Airline = 'JetBlue Airways'"}
+{"item_id": "spider_realistic_116", "sql": "SELECT Abbreviation FROM airlines WHERE Airline = 'JetBlue Airways'"}
+{"item_id": "spider_realistic_117", "sql": "SELECT Airline, Abbreviation FROM airlines WHERE Country = 'USA'"}
+{"item_id": "spider_realistic_118", "sql": "SELECT Airline, Abbreviation FROM airlines WHERE Country = 'USA'"}
+{"item_id": "spider_realistic_119", "sql": "SELECT AirportCode, AirportName FROM airports WHERE City = 'Anthony'"}
+{"item_id": "spider_realistic_120", "sql": "SELECT AirportCode, AirportName FROM airports WHERE City = 'Anthony'"}
+{"item_id": "spider_realistic_121", "sql": "SELECT Airline FROM airlines WHERE Abbreviation = 'UAL'"}
+{"item_id": "spider_realistic_122", "sql": "SELECT Airline FROM airlines WHERE Abbreviation = 'UAL'"}
+{"item_id": "spider_realistic_123", "sql": "SELECT count(*) FROM airlines WHERE Country = 'USA'"}
+{"item_id": "spider_realistic_124", "sql": "SELECT count(*) FROM airlines WHERE Country = 'USA'"}
+{"item_id": "spider_realistic_125", "sql": "SELECT AirportName FROM airports WHERE AirportCode = 'AKO'"}
+{"item_id": "spider_realistic_126", "sql": "SELECT AirportName FROM airports WHERE AirportCode = 'AKO'"}
+{"item_id": "spider_realistic_127", "sql": "SELECT AirportName FROM airports WHERE City = 'Aberdeen'"}
+{"item_id": "spider_realistic_128", "sql": "SELECT AirportName FROM airports WHERE City = 'Aberdeen'"}
+{"item_id": "spider_realistic_129", "sql": "SELECT count(*) FROM flights WHERE SourceAirport = 'APG'"}
+{"item_id": "spider_realistic_130", "sql": "SELECT count(*) FROM flights WHERE SourceAirport = 'APG'"}
+{"item_id": "spider_realistic_131", "sql": "SELECT count(*) FROM flights WHERE DestAirport = 'ATO'"}
+{"item_id": "spider_realistic_132", "sql": "SELECT count(*) FROM flights WHERE DestAirport = 'ATO'"}
+{"item_id": "spider_realistic_133", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_134", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_135", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_136", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_137", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airports AS T3 ON T1.SourceAirport = T3.AirportCode WHERE T2.City = 'Ashley' AND T3.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_138", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airports AS T3 ON T1.SourceAirport = T3.AirportCode WHERE T2.City = 'Ashley' AND T3.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_139", "sql": "SELECT count(*) FROM flights AS T1 JOIN airlines AS T2 ON T1.Airline = T2.uid WHERE T2.Airline = 'JetBlue Airways'"}
+{"item_id": "spider_realistic_140", "sql": "SELECT count(*) FROM flights AS T1 JOIN airlines AS T2 ON T1.Airline = T2.uid WHERE T2.Airline = 'JetBlue Airways'"}
+{"item_id": "spider_realistic_141", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.DestAirport = 'ASY'"}
+{"item_id": "spider_realistic_142", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.DestAirport = 'ASY'"}
+{"item_id": "spider_realistic_143", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.SourceAirport = 'AHD'"}
+{"item_id": "spider_realistic_144", "sql": "SELECT count(*) FROM airlines AS T1 JOIN flights AS T2 ON T2.Airline = T1.uid WHERE T1.Airline = 'United Airlines' AND T2.SourceAirport = 'AHD'"}
+{"item_id": "spider_realistic_145", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airlines AS T3 ON T3.uid = T1.Airline WHERE T2.City = 'Aberdeen' AND T3.Airline = 'United Airlines'"}
+{"item_id": "spider_realistic_146", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode JOIN airlines AS T3 ON T3.uid = T1.Airline WHERE T2.City = 'Aberdeen' AND T3.Airline = 'United Airlines'"}
+{"item_id": "spider_realistic_147", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'AHD'"}
+{"item_id": "spider_realistic_148", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'AHD'"}
+{"item_id": "spider_realistic_149", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}

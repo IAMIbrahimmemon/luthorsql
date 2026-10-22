@@ -1,0 +1,21 @@
+{"question_id": "kaggledbqa_test_40", "pick": "A"}
+{"question_id": "kaggledbqa_test_41", "pick": "B"}
+{"question_id": "kaggledbqa_test_42", "pick": "B"}
+{"question_id": "kaggledbqa_test_43", "pick": "NONE", "sql": "SELECT DISTINCT commod FROM sampledata15 WHERE origin = '2' AND commod NOT IN (SELECT commod FROM sampledata15 WHERE origin = '1')"}
+{"question_id": "kaggledbqa_test_44", "pick": "NONE", "sql": "SELECT T2.growst, AVG(T1.concen) FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk GROUP BY T2.growst"}
+{"question_id": "kaggledbqa_test_45", "pick": "NONE", "sql": "SELECT T2.variety FROM resultsdata15 AS T1 JOIN sampledata15 AS T2 ON T1.sample_pk = T2.sample_pk WHERE T1.commod = 'AP' GROUP BY T2.variety ORDER BY SUM(T1.concen) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_46", "pick": "NONE", "sql": "SELECT DISTINCT commod FROM resultsdata15 WHERE typeof(concen) = 'real' AND concen > lod"}
+{"question_id": "kaggledbqa_test_48", "pick": "A"}
+{"question_id": "kaggledbqa_test_51", "pick": "A"}
+{"question_id": "kaggledbqa_test_52", "pick": "NONE", "sql": "SELECT state FROM sampledata15 WHERE commod = 'AP' GROUP BY state ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_53", "pick": "NONE", "sql": "SELECT growst FROM sampledata15 WHERE commod = 'AP' GROUP BY growst ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_54", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT variety) FROM sampledata15"}
+{"question_id": "kaggledbqa_test_56", "pick": "A"}
+{"question_id": "kaggledbqa_test_58", "pick": "A"}
+{"question_id": "kaggledbqa_test_64", "pick": "A"}
+{"question_id": "kaggledbqa_test_68", "pick": "NONE", "sql": "SELECT COUNT(*) FROM sampledata15 WHERE origin = '2'"}
+{"question_id": "kaggledbqa_test_69", "pick": "NONE", "sql": "SELECT commod FROM resultsdata15 WHERE typeof(concen) = 'real' AND concen > 0 GROUP BY commod ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_70", "pick": "NONE", "sql": "SELECT state FROM sampledata15 WHERE claim = 'PO' GROUP BY state ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_71", "pick": "A"}
+{"question_id": "kaggledbqa_test_72", "pick": "B"}
+{"question_id": "kaggledbqa_test_73", "pick": "B"}

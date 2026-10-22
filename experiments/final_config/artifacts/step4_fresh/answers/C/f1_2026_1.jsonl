@@ -1,0 +1,22 @@
+{"question_id": "fresh_f1_2026_2", "pick": "A"}
+{"question_id": "fresh_f1_2026_3", "pick": "A"}
+{"question_id": "fresh_f1_2026_4", "pick": "NONE", "sql": "SELECT constructor_id, MIN(q3_time) FROM qualifying WHERE round=9 GROUP BY constructor_id"}
+{"question_id": "fresh_f1_2026_5", "pick": "A"}
+{"question_id": "fresh_f1_2026_6", "pick": "NONE", "sql": "SELECT s.driver_id, s.finish_position, r.finish_position FROM sprint_results s JOIN results r ON s.round=r.round AND s.driver_id=r.driver_id WHERE s.round=9"}
+{"question_id": "fresh_f1_2026_7", "pick": "NONE", "sql": "SELECT constructor_id, ROUND(SUM(points)*100.0/(SELECT SUM(points) FROM results WHERE round=9),2) FROM results WHERE round=9 GROUP BY constructor_id HAVING SUM(points)>0"}
+{"question_id": "fresh_f1_2026_8", "pick": "NONE", "sql": "SELECT driver_id, finish_position, RANK() OVER (ORDER BY grid_position-finish_position DESC, driver_id) FROM results WHERE round=9"}
+{"question_id": "fresh_f1_2026_10", "pick": "A"}
+{"question_id": "fresh_f1_2026_11", "pick": "A"}
+{"question_id": "fresh_f1_2026_13", "pick": "A"}
+{"question_id": "fresh_f1_2026_15", "pick": "NONE", "sql": "SELECT r.constructor_id, ROUND(AVG(p.duration_seconds),2) FROM pit_stops p JOIN results r ON p.round=r.round AND p.driver_id=r.driver_id WHERE p.round=9 GROUP BY r.constructor_id ORDER BY AVG(p.duration_seconds)"}
+{"question_id": "fresh_f1_2026_16", "pick": "NONE", "sql": "SELECT d.driver_code, q.quali_position, r.finish_position FROM qualifying q JOIN results r ON q.round=r.round AND q.driver_id=r.driver_id JOIN drivers d ON d.driver_id=q.driver_id WHERE q.round=9 AND q.quali_position<=5 ORDER BY q.quali_position"}
+{"question_id": "fresh_f1_2026_17", "pick": "NONE", "sql": "SELECT d.driver_code, r.constructor_id, r.points, ROUND(100.0*r.points/SUM(r.points) OVER (PARTITION BY r.constructor_id),2) pct FROM results r JOIN drivers d ON d.driver_id=r.driver_id WHERE r.round=9 AND r.points>0 ORDER BY r.constructor_id, pct DESC"}
+{"question_id": "fresh_f1_2026_18", "pick": "NONE", "sql": "SELECT d.driver_code, r.fastest_lap_seconds-(SELECT MIN(fastest_lap_seconds) FROM results WHERE round=9) gap FROM results r JOIN drivers d ON d.driver_id=r.driver_id WHERE r.round=9 AND r.fastest_lap_seconds-(SELECT MIN(fastest_lap_seconds) FROM results WHERE round=9)<=1.5 ORDER BY gap, d.driver_code"}
+{"question_id": "fresh_f1_2026_19", "pick": "NONE", "sql": "SELECT driver_id, SUM(points) tot FROM (SELECT driver_id, points FROM results WHERE round=9 UNION ALL SELECT driver_id, points FROM sprint_results WHERE round=9) GROUP BY driver_id HAVING SUM(points)>0 ORDER BY tot DESC, driver_id"}
+{"question_id": "fresh_f1_2026_20", "pick": "A"}
+{"question_id": "fresh_f1_2026_21", "pick": "A"}
+{"question_id": "fresh_f1_2026_22", "pick": "A"}
+{"question_id": "fresh_f1_2026_26", "pick": "A"}
+{"question_id": "fresh_f1_2026_27", "pick": "NONE", "sql": "WITH t AS (SELECT r.constructor_id, p.driver_id, SUM(p.duration_seconds) s, COUNT(*) n FROM pit_stops p JOIN results r ON r.round=p.round AND r.driver_id=p.driver_id WHERE p.round=9 GROUP BY r.constructor_id, p.driver_id HAVING COUNT(*)>=2) SELECT c.constructor_name, d.driver_code, ROUND(t.s,2), RANK() OVER (PARTITION BY t.constructor_id ORDER BY t.s DESC) FROM t JOIN constructors c ON c.constructor_id=t.constructor_id JOIN drivers d ON d.driver_id=t.driver_id"}
+{"question_id": "fresh_f1_2026_28", "pick": "NONE", "sql": "SELECT constructor_name, driver_code, standing_position, points FROM (SELECT c.constructor_name, d.driver_code, ds.standing_position, ds.points, ROW_NUMBER() OVER (PARTITION BY ds.constructor_id ORDER BY ds.standing_position, ds.driver_id) rn FROM driver_standings ds JOIN constructors c ON c.constructor_id=ds.constructor_id JOIN drivers d ON d.driver_id=ds.driver_id WHERE ds.round=9) WHERE rn=1"}
+{"question_id": "fresh_f1_2026_29", "pick": "NONE", "sql": "WITH sp AS (SELECT round, SUM(points) s FROM sprint_results GROUP BY round), rp AS (SELECT round, SUM(points) r FROM results GROUP BY round) SELECT ra.round, ra.race_name, sp.s, rp.r, ROUND(sp.s*100.0/(sp.s+rp.r),2) FROM races ra JOIN sp ON sp.round=ra.round JOIN rp ON rp.round=ra.round WHERE ra.has_sprint=1 ORDER BY ra.round"}

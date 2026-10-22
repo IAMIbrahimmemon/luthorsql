@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_355", "sql": "SELECT sum(Population), max(GNP) FROM country WHERE Continent = 'Asia'"}
+{"question_id": "spider_realistic_356", "sql": "SELECT sum(Population), max(GNP) FROM country WHERE Continent = 'Asia'"}
+{"question_id": "spider_realistic_357", "sql": "SELECT sum(Population), max(GNP) FROM country WHERE Continent = 'Asia'"}
+{"question_id": "spider_realistic_358", "sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = 'Asia' OR Continent = 'Europe'"}
+{"question_id": "spider_realistic_359", "sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = 'Asia' OR Continent = 'Europe'"}
+{"question_id": "spider_realistic_360", "sql": "SELECT sum(Population) FROM city WHERE District = 'Gelderland'"}
+{"question_id": "spider_realistic_361", "sql": "SELECT sum(Population) FROM city WHERE District = 'Gelderland'"}
+{"question_id": "spider_realistic_362", "sql": "SELECT avg(GNP), sum(Population) FROM country WHERE GovernmentForm = 'US Territory'"}
+{"question_id": "spider_realistic_363", "sql": "SELECT avg(GNP), sum(Population) FROM country WHERE GovernmentForm = 'US Territory'"}
+{"question_id": "spider_realistic_364", "sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = 'Africa'"}
+{"question_id": "spider_realistic_365", "sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = 'Africa'"}
+{"question_id": "spider_realistic_366", "sql": "SELECT count(T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba'"}
+{"question_id": "spider_realistic_367", "sql": "SELECT count(T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba'"}
+{"question_id": "spider_realistic_368", "sql": "SELECT count(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Afghanistan' AND T2.IsOfficial = 'T'"}
+{"question_id": "spider_realistic_369", "sql": "SELECT count(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Afghanistan' AND T2.IsOfficial = 'T'"}
+{"question_id": "spider_realistic_370", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Name ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_371", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Name ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_372", "sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_373", "sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_374", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French'"}
+{"question_id": "spider_realistic_375", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French'"}

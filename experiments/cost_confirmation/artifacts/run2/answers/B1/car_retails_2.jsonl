@@ -1,0 +1,19 @@
+{"question_id": "bird_train_train_1597", "pick": "NONE", "sql": "SELECT phone FROM customers WHERE contactLastName LIKE 'M%' AND country != 'Germany'"}
+{"question_id": "bird_train_train_1598", "pick": "NONE", "sql": "SELECT SUM(amount) / COUNT(customerNumber) FROM payments WHERE paymentDate >= '2004-01-01' AND paymentDate < '2004-07-01'"}
+{"question_id": "bird_train_train_1602", "pick": "B"}
+{"question_id": "bird_train_train_1604", "pick": "A"}
+{"question_id": "bird_train_train_1608", "pick": "A"}
+{"question_id": "bird_train_train_1614", "pick": "A"}
+{"question_id": "bird_train_train_1617", "pick": "A"}
+{"question_id": "bird_train_train_1619", "pick": "A"}
+{"question_id": "bird_train_train_1622", "pick": "NONE", "sql": "SELECT (T2.MSRP - T1.priceEach) / T2.MSRP FROM orderdetails AS T1 INNER JOIN products AS T2 ON T1.productCode = T2.productCode WHERE T1.productCode = 'S18_3482' AND T1.orderNumber = 10108"}
+{"question_id": "bird_train_train_1627", "pick": "A"}
+{"question_id": "bird_train_train_1631", "pick": "A"}
+{"question_id": "bird_train_train_1634", "pick": "A"}
+{"question_id": "bird_train_train_1636", "pick": "A"}
+{"question_id": "bird_train_train_1637", "pick": "NONE", "sql": "SELECT CAST(COUNT(T2.customerNumber) AS REAL) / 12 FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber INNER JOIN products AS T3 ON T1.productCode = T3.productCode WHERE T3.productName = '1957 Chevy Pickup'"}
+{"question_id": "bird_train_train_1644", "pick": "B"}
+{"question_id": "bird_train_train_1653", "pick": "A"}
+{"question_id": "bird_train_train_1654", "pick": "A"}
+{"question_id": "bird_train_train_1661", "pick": "B"}
+{"question_id": "bird_train_train_1667", "pick": "A"}

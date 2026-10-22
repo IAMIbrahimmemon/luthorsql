@@ -1,0 +1,25 @@
+{"question_id": "fresh_chicago_crashes_2026_0", "sql": "SELECT COUNT(*) FROM crashes WHERE date(crash_date) = '2026-07-01' AND weather_condition = 'CLEAR'"}
+{"question_id": "fresh_chicago_crashes_2026_1", "sql": "SELECT AVG(posted_speed_limit) FROM crashes WHERE street_name = 'WESTERN AVE'"}
+{"question_id": "fresh_chicago_crashes_2026_2", "sql": "SELECT DISTINCT prim_contributory_cause FROM crashes WHERE hit_and_run_i = 'Y'"}
+{"question_id": "fresh_chicago_crashes_2026_3", "sql": "SELECT v.make, COUNT(*) FROM vehicles v JOIN crashes c ON v.crash_record_id = c.crash_record_id WHERE c.posted_speed_limit = 30 GROUP BY v.make"}
+{"question_id": "fresh_chicago_crashes_2026_4", "sql": "SELECT COUNT(*) FROM people p JOIN vehicles v ON p.vehicle_id = v.vehicle_id WHERE p.person_type = 'DRIVER' AND v.make = 'TOYOTA'"}
+{"question_id": "fresh_chicago_crashes_2026_5", "sql": "SELECT c.crash_date, COUNT(v.crash_unit_id) FROM crashes c LEFT JOIN vehicles v ON c.crash_record_id = v.crash_record_id WHERE c.street_name = 'WESTERN AVE' GROUP BY c.crash_record_id, c.crash_date ORDER BY c.crash_date"}
+{"question_id": "fresh_chicago_crashes_2026_7", "sql": "SELECT ROUND(100.0 * SUM(CASE WHEN hit_and_run_i = 'Y' THEN 1 ELSE 0 END) / COUNT(*), 2) FROM crashes WHERE date(crash_date) = '2026-07-01'"}
+{"question_id": "fresh_chicago_crashes_2026_8", "sql": "SELECT cc.category, CAST(SUM(CASE WHEN c.crash_type = 'INJURY AND / OR TOW DUE TO CRASH' THEN 1 ELSE 0 END) AS REAL) / COUNT(*) AS injury_crash_rate FROM crashes c JOIN contributory_causes cc ON c.prim_contributory_cause = cc.cause GROUP BY cc.category ORDER BY injury_crash_rate DESC, cc.category"}
+{"question_id": "fresh_chicago_crashes_2026_10", "sql": "SELECT COUNT(*) FROM crashes WHERE traffic_control_device = 'TRAFFIC SIGNAL' AND device_condition = 'FUNCTIONING PROPERLY'"}
+{"question_id": "fresh_chicago_crashes_2026_11", "sql": "SELECT SUM(injuries_total) FROM crashes WHERE street_name = 'FULLERTON AVE'"}
+{"question_id": "fresh_chicago_crashes_2026_12", "sql": "SELECT DISTINCT make FROM vehicles WHERE vehicle_year = 2011"}
+{"question_id": "fresh_chicago_crashes_2026_13", "sql": "SELECT crash_type, COUNT(*) FROM crashes WHERE lighting_condition = 'DARKNESS, LIGHTED ROAD' GROUP BY crash_type"}
+{"question_id": "fresh_chicago_crashes_2026_15", "sql": "SELECT prim_contributory_cause, COUNT(*) FROM crashes WHERE injuries_incapacitating > 0 GROUP BY prim_contributory_cause"}
+{"question_id": "fresh_chicago_crashes_2026_16", "sql": "SELECT p.person_type, COUNT(*) FROM people p JOIN crashes c ON p.crash_record_id = c.crash_record_id WHERE c.street_name = 'WESTERN AVE' GROUP BY p.person_type"}
+{"question_id": "fresh_chicago_crashes_2026_17", "sql": "SELECT ROUND(100.0 * SUM(CASE WHEN EXISTS (SELECT 1 FROM vehicles v WHERE v.crash_record_id = c.crash_record_id AND v.towed_i = 'Y') THEN 1 ELSE 0 END) / COUNT(*), 2) FROM crashes c WHERE c.street_name = 'FULLERTON AVE'"}
+{"question_id": "fresh_chicago_crashes_2026_19", "sql": "SELECT COUNT(*) FROM crashes WHERE street_name = 'WESTERN AVE' AND lighting_condition = 'DARKNESS, LIGHTED ROAD'"}
+{"question_id": "fresh_chicago_crashes_2026_20", "sql": "SELECT MAX(posted_speed_limit) FROM crashes WHERE street_name = 'FULLERTON AVE'"}
+{"question_id": "fresh_chicago_crashes_2026_21", "sql": "SELECT DISTINCT model FROM vehicles WHERE make = 'TOYOTA' ORDER BY model"}
+{"question_id": "fresh_chicago_crashes_2026_22", "sql": "SELECT roadway_surface_cond, COUNT(*) AS cnt FROM crashes WHERE posted_speed_limit = 30 GROUP BY roadway_surface_cond ORDER BY cnt DESC, roadway_surface_cond"}
+{"question_id": "fresh_chicago_crashes_2026_23", "sql": "SELECT make, COUNT(*) AS cnt FROM vehicles WHERE occupant_cnt = 1 GROUP BY make ORDER BY cnt DESC, make"}
+{"question_id": "fresh_chicago_crashes_2026_24", "sql": "SELECT person_type, COUNT(*) FROM people WHERE age < 30 GROUP BY person_type ORDER BY person_type"}
+{"question_id": "fresh_chicago_crashes_2026_25", "sql": "SELECT crash_type, COUNT(*) AS cnt FROM crashes WHERE injuries_total > 0 GROUP BY crash_type ORDER BY cnt DESC, crash_type"}
+{"question_id": "fresh_chicago_crashes_2026_26", "sql": "SELECT street_name, ROUND(100.0 * SUM(CASE WHEN hit_and_run_i = 'Y' THEN 1 ELSE 0 END) / COUNT(*), 2) AS hit_and_run_pct FROM crashes GROUP BY street_name HAVING COUNT(*) >= 2 ORDER BY hit_and_run_pct DESC, street_name"}
+{"question_id": "fresh_chicago_crashes_2026_28", "sql": "WITH s AS (SELECT street_name, SUM(injuries_total) AS total_injuries FROM crashes GROUP BY street_name) SELECT street_name, total_injuries FROM s WHERE total_injuries > (SELECT AVG(total_injuries) FROM s) ORDER BY total_injuries DESC, street_name"}
+{"question_id": "fresh_chicago_crashes_2026_29", "sql": "SELECT COUNT(*) FROM crashes WHERE damage = 'OVER $1,500'"}

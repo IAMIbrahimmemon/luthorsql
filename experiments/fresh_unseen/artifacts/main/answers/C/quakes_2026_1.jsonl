@@ -1,0 +1,19 @@
+{"question_id": "fresh_quakes_2026_0", "pick": "A"}
+{"question_id": "fresh_quakes_2026_4", "pick": "A"}
+{"question_id": "fresh_quakes_2026_5", "pick": "NONE", "sql": "SELECT r.region_name, AVG(i.felt_reports) AS avg_felt_reports FROM regions r JOIN events e ON r.region_id=e.region_id JOIN event_impacts i ON e.event_id=i.event_id WHERE i.felt_reports>0 GROUP BY r.region_name ORDER BY avg_felt_reports DESC, r.region_name ASC"}
+{"question_id": "fresh_quakes_2026_6", "pick": "A"}
+{"question_id": "fresh_quakes_2026_7", "pick": "NONE", "sql": "SELECT r.region_name, ROUND(100.0*SUM(CASE WHEN e.review_status='reviewed' AND e.tsunami_flag=1 THEN 1 ELSE 0 END)/COUNT(*),1) AS pct_reviewed_tsunami FROM regions r JOIN events e ON r.region_id=e.region_id GROUP BY r.region_name HAVING COUNT(*)>=5 ORDER BY pct_reviewed_tsunami DESC, r.region_name ASC"}
+{"question_id": "fresh_quakes_2026_8", "pick": "NONE", "sql": "SELECT region_name, event_id, magnitude, significance FROM (SELECT r.region_name, e.event_id, e.magnitude, e.significance, ROW_NUMBER() OVER (PARTITION BY e.region_id ORDER BY e.significance DESC, e.event_id ASC) AS rn FROM regions r JOIN events e ON r.region_id=e.region_id) WHERE rn=1 ORDER BY region_name ASC"}
+{"question_id": "fresh_quakes_2026_9", "pick": "NONE", "sql": "SELECT e.event_id, r.region_name, e.magnitude, a.avg_mag FROM events e JOIN regions r ON e.region_id=r.region_id JOIN (SELECT region_id, AVG(magnitude) AS avg_mag FROM events GROUP BY region_id) a ON a.region_id=e.region_id WHERE e.magnitude >= a.avg_mag + 0.5 ORDER BY r.region_name ASC, e.magnitude DESC, e.event_id ASC"}
+{"question_id": "fresh_quakes_2026_12", "pick": "A"}
+{"question_id": "fresh_quakes_2026_13", "pick": "A"}
+{"question_id": "fresh_quakes_2026_14", "pick": "A"}
+{"question_id": "fresh_quakes_2026_15", "pick": "A"}
+{"question_id": "fresh_quakes_2026_16", "pick": "NONE", "sql": "SELECT n.network_name, ROUND(AVG(e.significance),1) AS avg_significance FROM networks n JOIN events e ON n.net_code=e.net_code WHERE e.review_status='reviewed' AND e.magnitude>=3.0 GROUP BY n.network_name ORDER BY avg_significance DESC, n.network_name ASC"}
+{"question_id": "fresh_quakes_2026_17", "pick": "NONE", "sql": "SELECT e.event_id, r.region_name, e.magnitude, i.felt_reports FROM events e JOIN regions r ON e.region_id=r.region_id JOIN event_impacts i ON e.event_id=i.event_id WHERE i.felt_reports >= (SELECT AVG(felt_reports) FROM event_impacts WHERE felt_reports IS NOT NULL) + 2 ORDER BY i.felt_reports DESC, e.event_id ASC"}
+{"question_id": "fresh_quakes_2026_18", "pick": "NONE", "sql": "SELECT m.description, ROUND(CAST(SUM(CASE WHEN e.tsunami_flag=1 THEN 1 ELSE 0 END) AS REAL)/COUNT(*),3) AS tsunami_ratio FROM magnitude_types m JOIN events e ON m.mag_type_code=e.mag_type_code WHERE e.review_status='reviewed' GROUP BY m.description HAVING COUNT(*)>=3 ORDER BY tsunami_ratio DESC, m.description ASC"}
+{"question_id": "fresh_quakes_2026_22", "pick": "A"}
+{"question_id": "fresh_quakes_2026_23", "pick": "A"}
+{"question_id": "fresh_quakes_2026_24", "pick": "NONE", "sql": "SELECT m.description, ROUND(AVG(e.num_stations),1) AS avg_num_stations FROM magnitude_types m JOIN events e ON m.mag_type_code=e.mag_type_code WHERE e.review_status='reviewed' AND e.num_stations IS NOT NULL GROUP BY m.description ORDER BY avg_num_stations DESC, m.description ASC"}
+{"question_id": "fresh_quakes_2026_25", "pick": "NONE", "sql": "SELECT r.region_name, ROUND(100.0*SUM(CASE WHEN e.num_stations>=50 THEN 1 ELSE 0 END)/COUNT(*),1) AS pct_high_stations FROM regions r JOIN events e ON r.region_id=e.region_id WHERE e.num_stations IS NOT NULL GROUP BY r.region_name HAVING COUNT(*)>=2 ORDER BY pct_high_stations DESC, r.region_name ASC"}
+{"question_id": "fresh_quakes_2026_29", "pick": "A"}

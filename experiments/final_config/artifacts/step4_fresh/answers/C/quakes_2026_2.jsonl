@@ -1,0 +1,14 @@
+{"question_id": "fresh_quakes_2026_16", "pick": "NONE", "sql": "SELECT n.network_name, ROUND(AVG(e.significance),1) AS avg_significance FROM networks n JOIN events e ON n.net_code=e.net_code WHERE e.review_status='reviewed' AND e.magnitude>=3.0 GROUP BY n.network_name ORDER BY avg_significance DESC, n.network_name"}
+{"question_id": "fresh_quakes_2026_17", "pick": "NONE", "sql": "SELECT e.event_id, r.region_name, e.magnitude, i.felt_reports FROM events e JOIN regions r ON e.region_id=r.region_id JOIN event_impacts i ON i.event_id=e.event_id WHERE i.felt_reports >= (SELECT AVG(felt_reports) FROM event_impacts WHERE felt_reports IS NOT NULL)+2 ORDER BY i.felt_reports DESC, e.event_id"}
+{"question_id": "fresh_quakes_2026_18", "pick": "NONE", "sql": "SELECT m.description, ROUND(CAST(SUM(CASE WHEN e.tsunami_flag=1 THEN 1 ELSE 0 END) AS REAL)/COUNT(*),3) AS tsunami_ratio FROM magnitude_types m JOIN events e ON m.mag_type_code=e.mag_type_code WHERE e.review_status='reviewed' GROUP BY m.description HAVING COUNT(*)>=3 ORDER BY tsunami_ratio DESC, m.description"}
+{"question_id": "fresh_quakes_2026_19", "pick": "A"}
+{"question_id": "fresh_quakes_2026_20", "pick": "A"}
+{"question_id": "fresh_quakes_2026_21", "pick": "A"}
+{"question_id": "fresh_quakes_2026_22", "pick": "A"}
+{"question_id": "fresh_quakes_2026_23", "pick": "A"}
+{"question_id": "fresh_quakes_2026_24", "pick": "NONE", "sql": "SELECT m.description, ROUND(AVG(e.num_stations),1) AS avg_num_stations FROM magnitude_types m JOIN events e ON m.mag_type_code=e.mag_type_code WHERE e.review_status='reviewed' AND e.num_stations IS NOT NULL GROUP BY m.description ORDER BY avg_num_stations DESC, m.description"}
+{"question_id": "fresh_quakes_2026_25", "pick": "NONE", "sql": "SELECT r.region_name, ROUND(CAST(SUM(CASE WHEN e.num_stations>=50 THEN 1 ELSE 0 END) AS REAL)*100/COUNT(*),1) AS pct_high_stations FROM regions r JOIN events e ON r.region_id=e.region_id WHERE e.num_stations IS NOT NULL GROUP BY r.region_name HAVING COUNT(*)>=2 ORDER BY pct_high_stations DESC, r.region_name"}
+{"question_id": "fresh_quakes_2026_26", "pick": "A"}
+{"question_id": "fresh_quakes_2026_27", "pick": "A"}
+{"question_id": "fresh_quakes_2026_28", "pick": "A"}
+{"question_id": "fresh_quakes_2026_29", "pick": "A"}

@@ -1,0 +1,20 @@
+{"question_id": "spider_realistic_169", "pick": "A"}
+{"question_id": "spider_realistic_170", "pick": "A"}
+{"question_id": "spider_realistic_171", "pick": "A"}
+{"question_id": "spider_realistic_172", "pick": "A"}
+{"question_id": "spider_realistic_173", "pick": "B"}
+{"question_id": "spider_realistic_174", "pick": "B"}
+{"question_id": "spider_realistic_175", "pick": "A"}
+{"question_id": "spider_realistic_176", "pick": "A"}
+{"question_id": "spider_realistic_177", "pick": "A"}
+{"question_id": "spider_realistic_178", "pick": "A"}
+{"question_id": "spider_realistic_179", "pick": "A"}
+{"question_id": "spider_realistic_180", "pick": "A"}
+{"question_id": "spider_realistic_181", "pick": "A"}
+{"question_id": "spider_realistic_182", "pick": "A"}
+{"question_id": "spider_realistic_183", "pick": "A"}
+{"question_id": "spider_realistic_184", "pick": "A"}
+{"question_id": "spider_realistic_185", "pick": "A"}
+{"question_id": "spider_realistic_186", "pick": "A"}
+{"question_id": "spider_realistic_187", "pick": "NONE", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}
+{"question_id": "spider_realistic_188", "pick": "NONE", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}

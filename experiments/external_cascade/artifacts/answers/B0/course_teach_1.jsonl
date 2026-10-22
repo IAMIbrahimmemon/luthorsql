@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_189", "sql": "SELECT Name FROM teacher ORDER BY Age ASC"}
+{"question_id": "spider_realistic_190", "sql": "SELECT Name FROM teacher ORDER BY Age ASC"}
+{"question_id": "spider_realistic_191", "sql": "SELECT Name FROM teacher WHERE Hometown != 'Little Lever Urban District'"}
+{"question_id": "spider_realistic_192", "sql": "SELECT Name FROM teacher WHERE Hometown != 'Little Lever Urban District'"}
+{"question_id": "spider_realistic_193", "sql": "SELECT Name FROM teacher WHERE Age = 32 OR Age = 33"}
+{"question_id": "spider_realistic_194", "sql": "SELECT Name FROM teacher WHERE Age = 32 OR Age = 33"}
+{"question_id": "spider_realistic_195", "sql": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1"}
+{"question_id": "spider_realistic_196", "sql": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1"}
+{"question_id": "spider_realistic_197", "sql": "SELECT Hometown, COUNT(*) FROM teacher GROUP BY Hometown"}
+{"question_id": "spider_realistic_198", "sql": "SELECT Hometown, COUNT(*) FROM teacher GROUP BY Hometown"}
+{"question_id": "spider_realistic_199", "sql": "SELECT Hometown FROM teacher GROUP BY Hometown ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "spider_realistic_200", "sql": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*) >= 2"}
+{"question_id": "spider_realistic_201", "sql": "SELECT T3.Name FROM course_arrange T1 JOIN course T2 ON T1.Course_ID = T2.Course_ID JOIN teacher T3 ON T1.Teacher_ID = T3.Teacher_ID WHERE T2.Course = 'Math'"}
+{"question_id": "spider_realistic_202", "sql": "SELECT T3.Name FROM course_arrange T1 JOIN course T2 ON T1.Course_ID = T2.Course_ID JOIN teacher T3 ON T1.Teacher_ID = T3.Teacher_ID WHERE T2.Course = 'Math'"}
+{"question_id": "spider_realistic_203", "sql": "SELECT Name FROM teacher WHERE Teacher_ID NOT IN (SELECT Teacher_ID FROM course_arrange)"}
+{"question_id": "spider_realistic_204", "sql": "SELECT Name FROM teacher WHERE Teacher_ID NOT IN (SELECT Teacher_ID FROM course_arrange)"}

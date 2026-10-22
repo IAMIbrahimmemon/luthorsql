@@ -1,0 +1,18 @@
+{"question_id": "spider_realistic_95", "pick": "A"}
+{"question_id": "spider_realistic_96", "pick": "A"}
+{"question_id": "spider_realistic_97", "pick": "A"}
+{"question_id": "spider_realistic_98", "pick": "B"}
+{"question_id": "spider_realistic_99", "pick": "NONE", "sql": "SELECT DISTINCT T2.Model FROM car_names AS T1 JOIN model_list AS T2 ON T1.Model = T2.Model JOIN car_makers AS T3 ON T2.Maker = T3.Id JOIN cars_data AS T4 ON T1.MakeId = T4.Id WHERE T3.FullName = 'General Motors' OR T4.Weight > 3500"}
+{"question_id": "spider_realistic_100", "pick": "NONE", "sql": "SELECT DISTINCT T2.Model FROM car_names AS T1 JOIN model_list AS T2 ON T1.Model = T2.Model JOIN car_makers AS T3 ON T2.Maker = T3.Id JOIN cars_data AS T4 ON T1.MakeId = T4.Id WHERE T3.FullName = 'General Motors' OR T4.Weight > 3500"}
+{"question_id": "spider_realistic_101", "pick": "A"}
+{"question_id": "spider_realistic_102", "pick": "A"}
+{"question_id": "spider_realistic_103", "pick": "A"}
+{"question_id": "spider_realistic_104", "pick": "A"}
+{"question_id": "spider_realistic_105", "pick": "A"}
+{"question_id": "spider_realistic_106", "pick": "A"}
+{"question_id": "spider_realistic_107", "pick": "B"}
+{"question_id": "spider_realistic_108", "pick": "A"}
+{"question_id": "spider_realistic_109", "pick": "NONE", "sql": "SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id JOIN car_makers AS T4 ON T1.Maker = T4.Id WHERE T3.Weight < 3500 EXCEPT SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id JOIN car_makers AS T4 ON T1.Maker = T4.Id WHERE T4.FullName = 'Ford Motor Company'"}
+{"question_id": "spider_realistic_110", "pick": "NONE", "sql": "SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id JOIN car_makers AS T4 ON T1.Maker = T4.Id WHERE T3.Weight < 3500 EXCEPT SELECT DISTINCT T1.Model FROM model_list AS T1 JOIN car_names AS T2 ON T1.Model = T2.Model JOIN cars_data AS T3 ON T2.MakeId = T3.Id JOIN car_makers AS T4 ON T1.Maker = T4.Id WHERE T4.FullName = 'Ford Motor Company'"}
+{"question_id": "spider_realistic_111", "pick": "NONE", "sql": "SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) > 3 UNION SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country JOIN model_list AS T3 ON T2.Id = T3.Maker WHERE T3.Model = 'fiat'"}
+{"question_id": "spider_realistic_112", "pick": "NONE", "sql": "SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country GROUP BY T1.CountryId HAVING count(*) > 3 UNION SELECT T1.CountryId, T1.CountryName FROM countries AS T1 JOIN car_makers AS T2 ON T1.CountryId = T2.Country JOIN model_list AS T3 ON T2.Id = T3.Maker WHERE T3.Model = 'fiat'"}

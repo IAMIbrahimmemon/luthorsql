@@ -1,0 +1,18 @@
+{"question_id": "spider_realistic_151", "db_id": "flight_2", "question": "Find all airlines that have flights from both APG and CVO.", "evidence": ""}
+{"question_id": "spider_realistic_152", "db_id": "flight_2", "question": "Which airlines have departing flights from both APG and CVO ?", "evidence": ""}
+{"question_id": "spider_realistic_153", "db_id": "flight_2", "question": "Find all airlines that have flights from 'CVO' but not from 'APG'.", "evidence": ""}
+{"question_id": "spider_realistic_154", "db_id": "flight_2", "question": "Which airlines have departures from CVO but not from APG?", "evidence": ""}
+{"question_id": "spider_realistic_155", "db_id": "flight_2", "question": "What are flight numbers of \"\"United Airlines\"\"?", "evidence": ""}
+{"question_id": "spider_realistic_156", "db_id": "flight_2", "question": "Which flight numbers correspond to United Airlines flights?", "evidence": ""}
+{"question_id": "spider_realistic_157", "db_id": "flight_2", "question": "What are flight numbers of flights departing from APG?", "evidence": ""}
+{"question_id": "spider_realistic_158", "db_id": "flight_2", "question": "Give the flight numbers of flights leaving from APG.", "evidence": ""}
+{"question_id": "spider_realistic_159", "db_id": "flight_2", "question": "What are flight numbers of flights arriving at APG?", "evidence": ""}
+{"question_id": "spider_realistic_160", "db_id": "flight_2", "question": "Give the flight numbers of flights landing at APG.", "evidence": ""}
+{"question_id": "spider_realistic_161", "db_id": "flight_2", "question": "What are flight numbers of flights departing from Aberdeen?", "evidence": ""}
+{"question_id": "spider_realistic_162", "db_id": "flight_2", "question": "Give the flight numbers of flights leaving from Aberdeen.", "evidence": ""}
+{"question_id": "spider_realistic_163", "db_id": "flight_2", "question": "What are flight numbers of flights arriving at Aberdeen?", "evidence": ""}
+{"question_id": "spider_realistic_164", "db_id": "flight_2", "question": "Give the flight numbers of flights arriving in Aberdeen.", "evidence": ""}
+{"question_id": "spider_realistic_165", "db_id": "flight_2", "question": "Find the number of flights landing in Aberdeen or Abilene.", "evidence": ""}
+{"question_id": "spider_realistic_166", "db_id": "flight_2", "question": "How many flights land in Aberdeen or Abilene?", "evidence": ""}
+{"question_id": "spider_realistic_167", "db_id": "flight_2", "question": "Find the name of airports which do not have any flight in and out.", "evidence": ""}
+{"question_id": "spider_realistic_168", "db_id": "flight_2", "question": "Which airports do not have departing or arriving flights?", "evidence": ""}

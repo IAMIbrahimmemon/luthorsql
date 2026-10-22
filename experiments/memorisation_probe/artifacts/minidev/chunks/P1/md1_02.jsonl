@@ -1,0 +1,50 @@
+{"item_id": "md_1371", "db_id": "student_club", "question": "How many members attended the \"Women's Soccer\" event?"}
+{"item_id": "md_1375", "db_id": "student_club", "question": "List all the members of the \"School of Applied Sciences, Technology and Education\" department."}
+{"item_id": "md_1376", "db_id": "student_club", "question": "Among all the closed events, which event has the highest spend-to-budget ratio?"}
+{"item_id": "md_1378", "db_id": "student_club", "question": "What is the highest amount of budget spend for an event?"}
+{"item_id": "md_1380", "db_id": "student_club", "question": "What is the total amount of money spent for food?"}
+{"item_id": "md_1381", "db_id": "student_club", "question": "List the name of students that have attended more than 7 events."}
+{"item_id": "md_1387", "db_id": "student_club", "question": "Which student has been entrusted to manage the budget for the Yearly Kickoff?"}
+{"item_id": "md_1389", "db_id": "student_club", "question": "Which event has the lowest cost?"}
+{"item_id": "md_1390", "db_id": "student_club", "question": "Based on the total cost for all event, what is the percentage of cost for Yearly Kickoff event?"}
+{"item_id": "md_1392", "db_id": "student_club", "question": "Indicate the top source of funds received in September 2019 based on their amount."}
+{"item_id": "md_1394", "db_id": "student_club", "question": "How many members of the Student_Club have major in 'Physics Teaching'?"}
+{"item_id": "md_1398", "db_id": "student_club", "question": "Name the event with the highest amount spent on advertisement."}
+{"item_id": "md_1399", "db_id": "student_club", "question": "Did Maya Mclean attend the 'Women's Soccer' event?"}
+{"item_id": "md_1401", "db_id": "student_club", "question": "Indicate the cost of posters for 'September Speaker' event."}
+{"item_id": "md_1403", "db_id": "student_club", "question": "Indicate the name of the closed event whose cost has exceeded the budget the most."}
+{"item_id": "md_1404", "db_id": "student_club", "question": "Identify the type of expenses and their total value approved for 'October Meeting' event."}
+{"item_id": "md_1405", "db_id": "student_club", "question": "Calculate the amount budgeted for 'April Speaker' event. List all the budgeted categories for said event in an ascending order based on their amount budgeted."}
+{"item_id": "md_1409", "db_id": "student_club", "question": "Mention the total expense used on 8/20/2019."}
+{"item_id": "md_1410", "db_id": "student_club", "question": "List out the full name and total cost that member id \"rec4BLdZHS2Blfp4v\" incurred?"}
+{"item_id": "md_1411", "db_id": "student_club", "question": "State what kind of expenses that Sacha Harrison incurred?"}
+{"item_id": "md_1422", "db_id": "student_club", "question": "State the category of events were held at MU 215."}
+{"item_id": "md_1426", "db_id": "student_club", "question": "List the last name of members with a major in environmental engineering and include its department and college name."}
+{"item_id": "md_1427", "db_id": "student_club", "question": "What are the budget category of the events located at MU 215 and a guest speaker type with a 0 budget spent?"}
+{"item_id": "md_1432", "db_id": "student_club", "question": "Among the members with t-shirt size of medium, what is the percentage of the amount 50 received by the Student_Club?"}
+{"item_id": "md_1435", "db_id": "student_club", "question": "List the names of closed event as \"game\" that was closed from 3/15/2019 to 3/20/2020."}
+{"item_id": "md_1457", "db_id": "student_club", "question": "Give the full name and contact number of members who had to spend more than average on each expense."}
+{"item_id": "md_1460", "db_id": "student_club", "question": "Write the full name of the member who spent money for water, veggie tray and supplies and include the cost of it."}
+{"item_id": "md_1464", "db_id": "student_club", "question": "Write the full names of students who received funds on the date of 9/9/2019 and include the amount received."}
+{"item_id": "md_1149", "db_id": "thrombosis_prediction", "question": "Are there more in-patient or outpatient who were male? What is the deviation in percentage?"}
+{"item_id": "md_1150", "db_id": "thrombosis_prediction", "question": "What is the percentage of female patient were born after 1930?"}
+{"item_id": "md_1152", "db_id": "thrombosis_prediction", "question": "What is the ratio of outpatient to inpatient followed up treatment among all the 'SLE' diagnosed patient?"}
+{"item_id": "md_1153", "db_id": "thrombosis_prediction", "question": "What is the disease patient '30609' diagnosed with. List all the date of laboratory tests done for this patient."}
+{"item_id": "md_1155", "db_id": "thrombosis_prediction", "question": "List the patient ID, sex and birthday of patient with LDH beyond normal range."}
+{"item_id": "md_1156", "db_id": "thrombosis_prediction", "question": "State the ID and age of patient with positive degree of coagulation."}
+{"item_id": "md_1157", "db_id": "thrombosis_prediction", "question": "For patients with severe degree of thrombosis, list their ID, sex and disease the patient is diagnosed with."}
+{"item_id": "md_1162", "db_id": "thrombosis_prediction", "question": "How many female patients who came at the hospital in 1997 was immediately followed at the outpatient clinic?"}
+{"item_id": "md_1164", "db_id": "thrombosis_prediction", "question": "How many of the patients with the most serious thrombosis cases examined in 1997 are women?"}
+{"item_id": "md_1166", "db_id": "thrombosis_prediction", "question": "What are the symptoms observed by the youngest patient to ever did a medical examination? Identify their diagnosis."}
+{"item_id": "md_1168", "db_id": "thrombosis_prediction", "question": "The oldest SJS patient's medical laboratory work was completed on what date, and what age was the patient when they initially arrived at the hospital?"}
+{"item_id": "md_1169", "db_id": "thrombosis_prediction", "question": "What is the ratio of male to female patients among all those with abnormal uric acid counts?"}
+{"item_id": "md_1171", "db_id": "thrombosis_prediction", "question": "How many underage patients were examined during the course of the three-year period from 1990 to 1993?"}
+{"item_id": "md_1175", "db_id": "thrombosis_prediction", "question": "How old was the patient who had the highest hemoglobin count at the time of the examination, and what is the doctor's diagnosis?"}
+{"item_id": "md_1179", "db_id": "thrombosis_prediction", "question": "For the patient who was diagnosed with SLE on 1994/2/19, what was his/her anti-Cardiolipin antibody concentration status on 1993/11/12?"}
+{"item_id": "md_1185", "db_id": "thrombosis_prediction", "question": "For the patient who was born on 1959/2/18, what is the decrease rate for his/her total cholesterol from November to December in 1981?"}
+{"item_id": "md_1187", "db_id": "thrombosis_prediction", "question": "How many patients who were examined between 1987/7/6 and 1996/1/31 had a GPT level greater than 30 and an ALB level less than 4? List them by their ID."}
+{"item_id": "md_1189", "db_id": "thrombosis_prediction", "question": "What number of patients with a degree of thrombosis level 2 and ANA pattern of only S, have a level of anti-Cardiolip in antibody (IgM) 20% higher than average?"}
+{"item_id": "md_1192", "db_id": "thrombosis_prediction", "question": "List all patients who were followed up at the outpatient clinic who underwent a laboratory test in October 1991 and had a total blood bilirubin level within the normal range."}
+{"item_id": "md_1195", "db_id": "thrombosis_prediction", "question": "What is the average blood albumin level for female patients with a PLT greater than 400 who have been diagnosed with SLE?"}
+{"item_id": "md_1198", "db_id": "thrombosis_prediction", "question": "How many female patients were given an APS diagnosis?"}
+{"item_id": "md_1201", "db_id": "thrombosis_prediction", "question": "What percentage of patients who were born in 1980 and were diagnosed with RA are women?"}

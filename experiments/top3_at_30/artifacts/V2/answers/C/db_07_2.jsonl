@@ -1,0 +1,16 @@
+{"question_id": "q1433", "pick": "B"}
+{"question_id": "q1441", "pick": "A"}
+{"question_id": "q1442", "pick": "B"}
+{"question_id": "q1479", "pick": "A"}
+{"question_id": "q1481", "pick": "NONE", "sql": "SELECT DISTINCT t1.narrative, t3.narrative, t5.narrative, t2.given, t2.surname FROM therapy_schedule AS t1 INNER JOIN subjects AS t2 ON t1.person = t2.person INNER JOIN operations AS t3 ON t2.person = t3.person INNER JOIN visits AS t4 ON t2.person = t4.person INNER JOIN drugs AS t5 ON t2.person = t5.person WHERE t4.identifier = '6f2e3935-b203-493e-a9c0-f23e847b9798'"}
+{"question_id": "q1486", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN t2.day - t1.natal_day BETWEEN 20 AND 29 THEN t2.amount ELSE 0 END) / COUNT(CASE WHEN t2.day - t1.natal_day BETWEEN 20 AND 29 THEN t2.person ELSE NULL END) - SUM(CASE WHEN t2.day - t1.natal_day BETWEEN 50 AND 59 THEN t2.amount ELSE 0 END) / COUNT(CASE WHEN t2.day - t1.natal_day BETWEEN 50 AND 59 THEN t2.person ELSE NULL END) FROM subjects t1 JOIN readings t2 ON t1.person=t2.person WHERE t2.narrative='Glucose'"}
+{"question_id": "q1496", "pick": "NONE", "sql": "SELECT d.narrative FROM diagnoses d JOIN subjects s ON s.person=d.person WHERE s.title='Mrs.' AND s.given='Joye' AND s.surname='Homenick' AND substr(d.onset,1,4)='2017'"}
+{"question_id": "q1497", "pick": "NONE", "sql": "SELECT MAX(t.day) FROM shots t JOIN subjects s ON s.person=t.person WHERE s.title='Mrs.' AND s.given='Joye' AND s.surname='Homenick' AND t.narrative='Influenza  seasonal  injectable  preservative free'"}
+{"question_id": "q1499", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t2.person), t2.narrative FROM visits t1 JOIN therapy_schedule t2 ON t1.person=t2.person WHERE t1.cause_narrative='Second degree burn'"}
+{"question_id": "q1502", "pick": "NONE", "sql": "SELECT DISTINCT d.narrative FROM drugs d JOIN subjects s ON s.person=d.person WHERE s.given='Joye' AND s.surname='Homenick'"}
+{"question_id": "q1503", "pick": "A"}
+{"question_id": "q1508", "pick": "NONE", "sql": "SELECT DISTINCT t.identifier FROM therapy_schedule t JOIN subjects s ON s.person=t.person WHERE s.origin='Pembroke MA US'"}
+{"question_id": "q1531", "pick": "A"}
+{"question_id": "q1538", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN s.expiry_day IS NULL THEN ROUND((julianday(substr(datetime('now'),1,10)) - julianday(s.natal_day))/365) ELSE ROUND((julianday(s.expiry_day)-julianday(s.natal_day))/365) END)/COUNT(s.person) FROM diagnoses d JOIN subjects s ON s.person=d.person WHERE d.narrative='Hypertension' AND s.sex='M'"}
+{"question_id": "q1540", "pick": "B"}
+{"question_id": "q1541", "pick": "B"}

@@ -1,0 +1,15 @@
+{"question_id": "bird_train_train_731", "pick": "A"}
+{"question_id": "bird_train_train_735", "pick": "A"}
+{"question_id": "bird_train_train_738", "pick": "A"}
+{"question_id": "bird_train_train_742", "pick": "A"}
+{"question_id": "bird_train_train_743", "pick": "NONE", "sql": "SELECT (MAX(CAST(SUBSTR(T2.screentime, 3, 2) AS REAL)) - MIN(CAST(SUBSTR(T2.screentime, 3, 2) AS REAL))) * 100 / MIN(CAST(SUBSTR(T2.screentime, 3, 2) AS REAL)) FROM movie AS T1 INNER JOIN characters AS T2 ON T1.MovieID = T2.MovieID WHERE T1.Title = 'Batman'"}
+{"question_id": "bird_train_train_746", "pick": "A"}
+{"question_id": "bird_train_train_747", "pick": "A"}
+{"question_id": "bird_train_train_751", "pick": "A"}
+{"question_id": "bird_train_train_755", "pick": "A"}
+{"question_id": "bird_train_train_756", "pick": "NONE", "sql": "SELECT T1.Name FROM actor AS T1 INNER JOIN characters AS T2 ON T1.ActorID = T2.ActorID INNER JOIN movie AS T3 ON T2.MovieID = T3.MovieID WHERE T3.\"Release Date\" = '2015-10-26' AND T2.creditOrder = '1'"}
+{"question_id": "bird_train_train_757", "pick": "A"}
+{"question_id": "bird_train_train_761", "pick": "A"}
+{"question_id": "bird_train_train_769", "pick": "A"}
+{"question_id": "bird_train_train_772", "pick": "NONE", "sql": "SELECT T1.Gross FROM movie AS T1 INNER JOIN characters AS T2 ON T1.MovieID = T2.MovieID INNER JOIN actor AS T3 ON T2.ActorID = T3.ActorID WHERE T1.Rating < 7 AND T1.Genre = 'Comedy' AND CAST(REPLACE(REPLACE(T3.NetWorth, ',', ''), '$', '') AS REAL) > 375000000"}
+{"question_id": "bird_train_train_775", "pick": "A"}

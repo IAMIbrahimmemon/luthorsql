@@ -1,0 +1,22 @@
+{"question_id": "kaggledbqa_test_0", "sql": "SELECT Country FROM nuclear_power_plants GROUP BY Country ORDER BY SUM(CAST(Capacity AS REAL)) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_1", "sql": "SELECT Country FROM nuclear_power_plants GROUP BY Country ORDER BY SUM(CAST(Capacity AS REAL)) ASC LIMIT 1"}
+{"question_id": "kaggledbqa_test_2", "sql": "SELECT Country FROM nuclear_power_plants GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 3"}
+{"question_id": "kaggledbqa_test_3", "sql": "SELECT Country FROM nuclear_power_plants GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_4", "sql": "SELECT Country FROM nuclear_power_plants WHERE Status = 'Shutdown' GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_5", "sql": "SELECT Name FROM nuclear_power_plants ORDER BY CAST(Capacity AS REAL) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_6", "sql": "SELECT COUNT(*) FROM nuclear_power_plants WHERE Country = 'France' AND Status = 'Operational'"}
+{"question_id": "kaggledbqa_test_7", "sql": "SELECT COUNT(*) FROM nuclear_power_plants WHERE Status = 'Under Construction'"}
+{"question_id": "kaggledbqa_test_8", "sql": "SELECT ReactorModel FROM nuclear_power_plants GROUP BY ReactorModel ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_9", "sql": "SELECT Country FROM nuclear_power_plants WHERE Name = 'Chinon-A3'"}
+{"question_id": "kaggledbqa_test_10", "sql": "SELECT Name FROM nuclear_power_plants WHERE Country = 'Japan' AND Status = 'Operational'"}
+{"question_id": "kaggledbqa_test_11", "sql": "SELECT Country FROM nuclear_power_plants WHERE OperationalFrom <> '' AND OperationalFrom IS NOT NULL ORDER BY OperationalFrom ASC LIMIT 1"}
+{"question_id": "kaggledbqa_test_12", "sql": "SELECT COUNT(*) FROM nuclear_power_plants WHERE Country = 'Japan' AND Status = 'Planned'"}
+{"question_id": "kaggledbqa_test_13", "sql": "SELECT Status FROM nuclear_power_plants WHERE Country = 'United States' ORDER BY CAST(Capacity AS REAL) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_14", "sql": "SELECT MAX(CAST(Capacity AS REAL)) FROM nuclear_power_plants WHERE ReactorType = 'PWR' AND Status = 'Operational'"}
+{"question_id": "kaggledbqa_test_15", "sql": "SELECT Country FROM nuclear_power_plants WHERE Status = 'Under Construction' GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_16", "sql": "SELECT Country FROM nuclear_power_plants WHERE Status = 'Under Construction' GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_17", "sql": "SELECT Country FROM nuclear_power_plants WHERE ReactorType = 'BWR' AND OperationalFrom <> '' AND OperationalFrom IS NOT NULL ORDER BY OperationalFrom ASC LIMIT 1"}
+{"question_id": "kaggledbqa_test_18", "sql": "SELECT Country FROM nuclear_power_plants GROUP BY Country ORDER BY SUM(CAST(Capacity AS REAL)) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_19", "sql": "SELECT Source FROM nuclear_power_plants GROUP BY Source ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_20", "sql": "SELECT ReactorType FROM nuclear_power_plants GROUP BY ReactorType ORDER BY AVG(CAST(Capacity AS REAL)) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_21", "sql": "SELECT Country FROM nuclear_power_plants WHERE Name = 'Kursk-1'"}

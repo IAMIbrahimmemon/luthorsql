@@ -1,0 +1,6 @@
+{"question_id": "spider_realistic_193", "pick": "A"}
+{"question_id": "spider_realistic_194", "pick": "A"}
+{"question_id": "spider_realistic_198", "pick": "A"}
+{"question_id": "spider_realistic_200", "pick": "NONE", "sql": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*) >= 2"}
+{"question_id": "spider_realistic_203", "pick": "A"}
+{"question_id": "spider_realistic_204", "pick": "A"}

@@ -1,0 +1,21 @@
+{"question_id": "bird_train_train_4459", "pick": "NONE", "sql": "SELECT CAST(COUNT(T2.name) AS REAL) * 100 / COUNT(T1.name) FROM enlist AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name WHERE T1.organ = 'fire_department'"}
+{"question_id": "bird_train_train_4460", "pick": "A"}
+{"question_id": "bird_train_train_4464", "pick": "A"}
+{"question_id": "bird_train_train_4467", "pick": "A"}
+{"question_id": "bird_train_train_4468", "pick": "A"}
+{"question_id": "bird_train_train_4470", "pick": "A"}
+{"question_id": "bird_train_train_4473", "pick": "A"}
+{"question_id": "bird_train_train_4476", "pick": "A"}
+{"question_id": "bird_train_train_4477", "pick": "A"}
+{"question_id": "bird_train_train_4481", "pick": "A"}
+{"question_id": "bird_train_train_4482", "pick": "A"}
+{"question_id": "bird_train_train_4483", "pick": "A"}
+{"question_id": "bird_train_train_4485", "pick": "A"}
+{"question_id": "bird_train_train_4487", "pick": "A"}
+{"question_id": "bird_train_train_4498", "pick": "NONE", "sql": "SELECT CAST(SUM(IIF(T2.name IS NULL, 1, 0)) AS REAL) * 100 / COUNT(T1.name) FROM person AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name"}
+{"question_id": "bird_train_train_4500", "pick": "A"}
+{"question_id": "bird_train_train_4506", "pick": "NONE", "sql": "SELECT name FROM enlist WHERE name IN (SELECT name FROM enrolled GROUP BY name HAVING COUNT(school) = 2) GROUP BY name HAVING COUNT(organ) = 2"}
+{"question_id": "bird_train_train_4507", "pick": "NONE", "sql": "SELECT CAST((SUM(IIF(month = 0, 1, 0)) - SUM(IIF(month = 9, 1, 0))) AS REAL) * 100 / SUM(IIF(month = 0, 1, 0)) FROM longest_absense_from_school"}
+{"question_id": "bird_train_train_4510", "pick": "A"}
+{"question_id": "bird_train_train_4511", "pick": "NONE", "sql": "SELECT T1.name FROM male AS T1 INNER JOIN unemployed AS T2 ON T1.name = T2.name INNER JOIN disabled AS T3 ON T1.name = T3.name INNER JOIN longest_absense_from_school AS T4 ON T1.name = T4.name WHERE T4.month = 5"}
+{"question_id": "bird_train_train_4514", "pick": "NONE", "sql": "SELECT SUM(IIF(T2.name IS NOT NULL, 1, 0)) - SUM(IIF(T2.name IS NULL, 1, 0)) FROM filed_for_bankrupcy AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name"}

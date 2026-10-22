@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_234", "db_id": "wta_1", "question": "Find the name and rank points of the person who won the most times.", "evidence": ""}
+{"question_id": "spider_realistic_235", "db_id": "wta_1", "question": "What is the name of the player who has won the most matches, and how many rank points does this player have?", "evidence": ""}
+{"question_id": "spider_realistic_236", "db_id": "wta_1", "question": "Find the name of the winner who has the highest rank points and participated in the Australian Open.", "evidence": ""}
+{"question_id": "spider_realistic_237", "db_id": "wta_1", "question": "What is the name of the winner with the most rank points who participated in the Australian Open?", "evidence": ""}
+{"question_id": "spider_realistic_238", "db_id": "wta_1", "question": "find the names of loser and winner who played in the match that last for the longest of time.", "evidence": ""}
+{"question_id": "spider_realistic_239", "db_id": "wta_1", "question": "What are the names of the winner and loser who played in the longest match?", "evidence": ""}
+{"question_id": "spider_realistic_240", "db_id": "wta_1", "question": "find the number of players for each nation.", "evidence": ""}
+{"question_id": "spider_realistic_241", "db_id": "wta_1", "question": "How many players are from each nation?", "evidence": ""}
+{"question_id": "spider_realistic_242", "db_id": "wta_1", "question": "find the code of the nation where has the greatest number of players.", "evidence": ""}
+{"question_id": "spider_realistic_243", "db_id": "wta_1", "question": "What is the code of the nation with the most players?", "evidence": ""}
+{"question_id": "spider_realistic_244", "db_id": "wta_1", "question": "Find the codes of nations that have more than 50 players.", "evidence": ""}
+{"question_id": "spider_realistic_245", "db_id": "wta_1", "question": "What are the codes of nations with more than 50 players?", "evidence": ""}
+{"question_id": "spider_realistic_246", "db_id": "wta_1", "question": "Find the name and rank of the 3 youngest victors across all matches.", "evidence": ""}
+{"question_id": "spider_realistic_247", "db_id": "wta_1", "question": "What are the names and ranks of the three youngest victors across all matches?", "evidence": ""}
+{"question_id": "spider_realistic_248", "db_id": "wta_1", "question": "How many different winners both participated in the WTA Championships and were left handed?", "evidence": ""}
+{"question_id": "spider_realistic_249", "db_id": "wta_1", "question": "Find the number of left handed winners who participated in the WTA Championships.", "evidence": ""}

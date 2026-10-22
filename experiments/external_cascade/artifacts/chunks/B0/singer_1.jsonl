@@ -1,0 +1,17 @@
+{"question_id": "spider_realistic_490", "db_id": "singer", "question": "List the name of singers in ascending order of wealth.", "evidence": ""}
+{"question_id": "spider_realistic_491", "db_id": "singer", "question": "What are the names of singers ordered by ascending wealth?", "evidence": ""}
+{"question_id": "spider_realistic_492", "db_id": "singer", "question": "List the name of singers whose  is not French.", "evidence": ""}
+{"question_id": "spider_realistic_493", "db_id": "singer", "question": "What are the names of the singers who are not French?", "evidence": ""}
+{"question_id": "spider_realistic_494", "db_id": "singer", "question": "Show the name of singers who were born either 1948 or 1949?", "evidence": ""}
+{"question_id": "spider_realistic_495", "db_id": "singer", "question": "What are the names of the singers who born in either 1948 or 1949?", "evidence": ""}
+{"question_id": "spider_realistic_496", "db_id": "singer", "question": "What is the name of the singer with the largest wealth?", "evidence": ""}
+{"question_id": "spider_realistic_497", "db_id": "singer", "question": "Show different nationalities of singers and the number of singers of each.", "evidence": ""}
+{"question_id": "spider_realistic_498", "db_id": "singer", "question": "how many singers are from each country?", "evidence": ""}
+{"question_id": "spider_realistic_499", "db_id": "singer", "question": "Please show the most common nationality of singers.", "evidence": ""}
+{"question_id": "spider_realistic_500", "db_id": "singer", "question": "What is the msot common country for singer?", "evidence": ""}
+{"question_id": "spider_realistic_501", "db_id": "singer", "question": "Show different nationalities and the maximum net worth of singers of country.", "evidence": ""}
+{"question_id": "spider_realistic_502", "db_id": "singer", "question": "For each country, what is the maximum net worth?", "evidence": ""}
+{"question_id": "spider_realistic_503", "db_id": "singer", "question": "Show distinct names of singers that have songs sell  more than 300000.", "evidence": ""}
+{"question_id": "spider_realistic_504", "db_id": "singer", "question": "what are the different names of the singers that have  sold than 300000 copies?", "evidence": ""}
+{"question_id": "spider_realistic_505", "db_id": "singer", "question": "Show the citizenship shared by singers born  before 1945 and after 1955.", "evidence": ""}
+{"question_id": "spider_realistic_506", "db_id": "singer", "question": "What are the citizenships that are shared by singers born  before 1945 and after 1955?", "evidence": ""}

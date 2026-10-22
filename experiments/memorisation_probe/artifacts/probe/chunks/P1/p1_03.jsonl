@@ -1,0 +1,50 @@
+{"item_id": "kaggledbqa_test_100", "db_id": "TheHistoryofBaseball", "question": "What are the salaries in American League?"}
+{"item_id": "kaggledbqa_test_101", "db_id": "TheHistoryofBaseball", "question": "Which birth place has the most player awards?"}
+{"item_id": "kaggledbqa_test_102", "db_id": "TheHistoryofBaseball", "question": "What are the birth places of players won on hall of fame since 1871?"}
+{"item_id": "kaggledbqa_test_103", "db_id": "TheHistoryofBaseball", "question": "Which award has the highest player's salary?"}
+{"item_id": "kaggledbqa_test_104", "db_id": "TheHistoryofBaseball", "question": "What were the years when any special elections happened in hall of fame?"}
+{"item_id": "kaggledbqa_test_105", "db_id": "TheHistoryofBaseball", "question": "Top 10 countries with the most hall of fame players"}
+{"item_id": "kaggledbqa_test_106", "db_id": "TheHistoryofBaseball", "question": "For every award, who is the youngest winner?"}
+{"item_id": "kaggledbqa_test_107", "db_id": "TheHistoryofBaseball", "question": "For every award, who is the oldest winner?"}
+{"item_id": "kaggledbqa_test_108", "db_id": "TheHistoryofBaseball", "question": "Top 10 teams with the most hall of fame players"}
+{"item_id": "kaggledbqa_test_109", "db_id": "TheHistoryofBaseball", "question": "Average lifespan of hall of fame players"}
+{"item_id": "kaggledbqa_test_110", "db_id": "TheHistoryofBaseball", "question": "For award winners, what's average weight for each position"}
+{"item_id": "kaggledbqa_test_111", "db_id": "TheHistoryofBaseball", "question": "For award winners, which position that has the most hall of fame players?"}
+{"item_id": "kaggledbqa_test_112", "db_id": "TheHistoryofBaseball", "question": "Which player get the highest score in 1971?"}
+{"item_id": "kaggledbqa_test_113", "db_id": "TheHistoryofBaseball", "question": "Which month that players were born has the highest likelihood to be elected as hall of fame?"}
+{"item_id": "kaggledbqa_test_114", "db_id": "TheHistoryofBaseball", "question": "Which league has the most player awarded in 2006?"}
+{"item_id": "kaggledbqa_test_115", "db_id": "TheHistoryofBaseball", "question": "What defense position the player ID willite01 is?"}
+{"item_id": "kaggledbqa_test_116", "db_id": "TheHistoryofBaseball", "question": "How many players were awarded more than ten times?"}
+{"item_id": "kaggledbqa_test_117", "db_id": "TheHistoryofBaseball", "question": "Which city the most players were born?"}
+{"item_id": "kaggledbqa_test_118", "db_id": "TheHistoryofBaseball", "question": "What is the average weight of players who were awarded third-base man in TSN all-star award?"}
+{"item_id": "kaggledbqa_test_119", "db_id": "TheHistoryofBaseball", "question": "Who is the player had the highest salary in 2015?"}
+{"item_id": "kaggledbqa_test_120", "db_id": "USWildFires", "question": "Show all fires caused by campfires in Texas."}
+{"item_id": "kaggledbqa_test_121", "db_id": "USWildFires", "question": "Who was responsible for the land of the biggest fire in Oregon in 2015?"}
+{"item_id": "kaggledbqa_test_122", "db_id": "USWildFires", "question": "Which counties in Washington had fires in 2012?"}
+{"item_id": "kaggledbqa_test_123", "db_id": "USWildFires", "question": "How many arson-related fires were there in 2010?"}
+{"item_id": "kaggledbqa_test_124", "db_id": "USWildFires", "question": "How many years of data are recorded in this database?"}
+{"item_id": "kaggledbqa_test_125", "db_id": "USWildFires", "question": "Average date of year that fire was discovered from 2000~2004?"}
+{"item_id": "kaggledbqa_test_126", "db_id": "USWildFires", "question": "What\u2019s the most common cause of the fire (code) in the database?"}
+{"item_id": "kaggledbqa_test_127", "db_id": "USWildFires", "question": "What\u2019s the year that have the largest acres in the fire area?"}
+{"item_id": "kaggledbqa_test_128", "db_id": "USWildFires", "question": "How many missing / not specified name of the owner are there in the database?"}
+{"item_id": "kaggledbqa_test_129", "db_id": "USWildFires", "question": "What\u2019s the county that contains most recorded burns in 2000 according to the database?"}
+{"item_id": "kaggledbqa_test_130", "db_id": "USWildFires", "question": "How many distinct cause of the fire descriptions are there in the database?"}
+{"item_id": "kaggledbqa_test_131", "db_id": "USWildFires", "question": "Sum of the acres burned in NC state in 2006?"}
+{"item_id": "kaggledbqa_test_132", "db_id": "USWildFires", "question": "What was the cause of the largest wildfire in Utah in the year 1997?"}
+{"item_id": "kaggledbqa_test_133", "db_id": "USWildFires", "question": "How many wildfires in Gloucester county have been larger than 10 acres?"}
+{"item_id": "kaggledbqa_test_134", "db_id": "USWildFires", "question": "Which state experiences the most wildfires?"}
+{"item_id": "kaggledbqa_test_135", "db_id": "USWildFires", "question": "What is the leading cause of wildfires?"}
+{"item_id": "kaggledbqa_test_136", "db_id": "USWildFires", "question": "On what type of land (public or private) do more wildfires occur?"}
+{"item_id": "kaggledbqa_test_137", "db_id": "USWildFires", "question": "In 2014, how many wildfires were the result of mismanaged campfires?"}
+{"item_id": "kaggledbqa_test_138", "db_id": "USWildFires", "question": "How many total acres of land in Texas have seen a wildfire in the decade between 2000-2010?"}
+{"item_id": "kaggledbqa_test_139", "db_id": "USWildFires", "question": "Which state has the most number of fires being recorded?"}
+{"item_id": "kaggledbqa_test_140", "db_id": "USWildFires", "question": "What is the most common reason that causes a fire?"}
+{"item_id": "kaggledbqa_test_141", "db_id": "USWildFires", "question": "What is the total area that has been burned until now?"}
+{"item_id": "kaggledbqa_test_142", "db_id": "USWildFires", "question": "How many acres burned in 2000s and 1990s?"}
+{"item_id": "kaggledbqa_test_143", "db_id": "USWildFires", "question": "How many fire cases occur on the land without any owner?"}
+{"item_id": "kaggledbqa_test_144", "db_id": "USWildFires", "question": "What is the latitudinal band that is most likely to experience wildfires in the USA?"}
+{"item_id": "kaggledbqa_test_145", "db_id": "WhatCDHipHop", "question": "what year was each specific entry released?"}
+{"item_id": "kaggledbqa_test_146", "db_id": "WhatCDHipHop", "question": "what are the entries by each specific artist/group?"}
+{"item_id": "kaggledbqa_test_147", "db_id": "WhatCDHipHop", "question": "which tags exist?"}
+{"item_id": "kaggledbqa_test_148", "db_id": "WhatCDHipHop", "question": "what release types are captured in this data set?"}
+{"item_id": "kaggledbqa_test_149", "db_id": "WhatCDHipHop", "question": "Find me top 5 most popular releases after 2000?"}

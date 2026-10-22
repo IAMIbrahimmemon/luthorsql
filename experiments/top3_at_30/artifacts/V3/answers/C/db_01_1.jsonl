@@ -1,0 +1,23 @@
+{"question_id": "q1553", "pick": "B"}
+{"question_id": "q1554", "pick": "NONE", "sql": "SELECT (SELECT COUNT(*) FROM clients WHERE borrowing_cap<=100000 AND client_identifier IN (SELECT client_identifier FROM remittances WHERE STRFTIME('%Y',remittance_moment)='2004')), t1.client_label FROM clients t1 JOIN remittances t2 ON t1.client_identifier=t2.client_identifier WHERE t1.borrowing_cap<=100000 AND STRFTIME('%Y',t2.remittance_moment)='2004' GROUP BY t1.client_identifier ORDER BY SUM(t2.total_value) DESC LIMIT 1"}
+{"question_id": "q1555", "pick": "A"}
+{"question_id": "q1557", "pick": "A"}
+{"question_id": "q1558", "pick": "A"}
+{"question_id": "q1562", "pick": "NONE", "sql": "SELECT COUNT(t1.purchase_identifier) FROM purchase_lines t1 JOIN merchandise t2 ON t1.item_identifier=t2.item_identifier WHERE t2.suggested_retail - t2.acquisition_cost > 100"}
+{"question_id": "q1567", "pick": "NONE", "sql": "SELECT SUM(total_value) FROM remittances WHERE STRFTIME('%Y',remittance_moment)='2003' AND client_identifier IN (SELECT client_identifier FROM clients WHERE borrowing_cap=0)"}
+{"question_id": "q1569", "pick": "A"}
+{"question_id": "q1575", "pick": "NONE", "sql": "SELECT COUNT(*), t1.network_address FROM staff t1 JOIN branches t2 ON t1.branch_identifier=t2.branch_identifier WHERE t2.municipality='Sydney' AND t1.role_designation LIKE '%Sales Manager%'"}
+{"question_id": "q1579", "pick": "A"}
+{"question_id": "q1580", "pick": "A"}
+{"question_id": "q1591", "pick": "A"}
+{"question_id": "q1593", "pick": "A"}
+{"question_id": "q1594", "pick": "NONE", "sql": "SELECT m.item_label, pl.requested_count*pl.unit_cost FROM purchase_lines pl JOIN merchandise m ON pl.item_identifier=m.item_identifier JOIN purchases p ON pl.purchase_identifier=p.purchase_identifier JOIN clients c ON p.client_identifier=c.client_identifier JOIN staff s ON c.commerce_agent_staff_identifier=s.staff_identifier JOIN branches b ON s.branch_identifier=b.branch_identifier WHERE b.municipality='Boston' AND s.role_designation='Sales Rep' ORDER BY 2 DESC LIMIT 1"}
+{"question_id": "q1597", "pick": "NONE", "sql": "SELECT dial_number FROM clients WHERE liaison_family_surname LIKE 'M%' AND nation<>'Germany'"}
+{"question_id": "q1598", "pick": "NONE", "sql": "SELECT AVG(total_value) FROM remittances WHERE remittance_moment >= '2004-01-01' AND remittance_moment < '2004-07-01'"}
+{"question_id": "q1602", "pick": "B"}
+{"question_id": "q1622", "pick": "NONE", "sql": "SELECT (m.suggested_retail - pl.unit_cost)/m.suggested_retail FROM merchandise m JOIN purchase_lines pl ON m.item_identifier=pl.item_identifier WHERE m.item_identifier='S18_3482' AND pl.purchase_identifier=10108"}
+{"question_id": "q1627", "pick": "A"}
+{"question_id": "q1637", "pick": "NONE", "sql": "SELECT CAST(COUNT(t1.client_identifier) AS REAL)/12 FROM purchases t1 JOIN purchase_lines t2 ON t1.purchase_identifier=t2.purchase_identifier JOIN merchandise t3 ON t2.item_identifier=t3.item_identifier WHERE t3.item_label='1957 Chevy Pickup'"}
+{"question_id": "q1644", "pick": "B"}
+{"question_id": "q1653", "pick": "A"}
+{"question_id": "q1661", "pick": "B"}

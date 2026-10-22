@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_93", "sql": "SELECT votedby FROM hall_of_fame WHERE yearid = 2000 GROUP BY votedby ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_94", "sql": "SELECT count(*) FROM player WHERE CAST(weight AS REAL) > 200"}
+{"question_id": "kaggledbqa_test_95", "sql": "SELECT player_id FROM player_award WHERE year = 2010 AND award_id = 'Rookie of the Year'"}
+{"question_id": "kaggledbqa_test_96", "sql": "SELECT player_id FROM salary WHERE year >= 2010 ORDER BY salary DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_97", "sql": "SELECT T2.salary FROM salary AS T2 JOIN hall_of_fame AS T1 ON T1.player_id = T2.player_id WHERE T1.inducted = 'Y'"}
+{"question_id": "kaggledbqa_test_98", "sql": "SELECT yearid, min(needed) FROM hall_of_fame WHERE yearid >= 1871 GROUP BY yearid"}
+{"question_id": "kaggledbqa_test_99", "sql": "SELECT salary FROM salary WHERE league_id = 'NL'"}
+{"question_id": "kaggledbqa_test_100", "sql": "SELECT salary FROM salary WHERE league_id = 'AL'"}
+{"question_id": "kaggledbqa_test_101", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id GROUP BY T1.birth_country ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_102", "sql": "SELECT DISTINCT T1.birth_country FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' AND T2.yearid >= 1871"}
+{"question_id": "kaggledbqa_test_103", "sql": "SELECT T1.award_id FROM player_award AS T1 JOIN salary AS T2 ON T1.player_id = T2.player_id ORDER BY T2.salary DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_104", "sql": "SELECT DISTINCT yearid FROM hall_of_fame WHERE votedby = 'Special Election'"}
+{"question_id": "kaggledbqa_test_105", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' GROUP BY T1.birth_country ORDER BY count(*) DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_106", "sql": "SELECT T2.award_id, T1.player_id, max(CAST(T1.birth_year AS REAL)) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id GROUP BY T2.award_id"}

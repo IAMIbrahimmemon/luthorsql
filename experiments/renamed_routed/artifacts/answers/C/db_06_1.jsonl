@@ -1,0 +1,14 @@
+{"question_id": "q4371", "pick": "B"}
+{"question_id": "q4382", "pick": "A"}
+{"question_id": "q4392", "pick": "A"}
+{"question_id": "q4397", "pick": "A"}
+{"question_id": "q4406", "pick": "A"}
+{"question_id": "q4413", "pick": "NONE", "sql": "SELECT (SELECT COUNT(label) FROM jobless WHERE label IN ('student180','student117')), (SELECT COUNT(label) FROM impaired WHERE label IN ('student180','student117')), (SELECT COUNT(label) FROM masculine WHERE label IN ('student180','student117')), (SELECT COUNT(label) FROM zero_balance WHERE label IN ('student180','student117') AND flag = 'pos')"}
+{"question_id": "q4415", "pick": "A"}
+{"question_id": "q4416", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN m.label IS NULL THEN 1 ELSE 0 END) AS REAL) / COUNT(m.label) FROM impaired AS i LEFT JOIN masculine AS m ON i.label = m.label"}
+{"question_id": "q4418", "pick": "NONE", "sql": "SELECT b.label FROM insolvency_record AS b INNER JOIN zero_balance AS z ON b.label = z.label WHERE z.flag = 'neg'"}
+{"question_id": "q4420", "pick": "A"}
+{"question_id": "q4436", "pick": "NONE", "sql": "SELECT COUNT(j.label) FROM jobless AS j INNER JOIN impaired AS i ON j.label = i.label INNER JOIN maximum_truancy_span AS s ON j.label = s.label WHERE s.period = 8"}
+{"question_id": "q4464", "pick": "A"}
+{"question_id": "q4468", "pick": "A"}
+{"question_id": "q4482", "pick": "A"}

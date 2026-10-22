@@ -1,0 +1,50 @@
+{"item_id": "bird_train_train_1575", "db_id": "car_retails", "question": "How many Sales Manager who are working in Sydney? List out their email."}
+{"item_id": "bird_train_train_1578", "db_id": "car_retails", "question": "How many Australian customers who have credit line under 220000?"}
+{"item_id": "bird_train_train_1579", "db_id": "car_retails", "question": "List out 3 customer numbers who have highest amount payment"}
+{"item_id": "bird_train_train_1580", "db_id": "car_retails", "question": "Determine the email and Code of employee who are working at United State, state CA"}
+{"item_id": "bird_train_train_1591", "db_id": "car_retails", "question": "For the planes which has the hightest total price, how much it exceeds the average?"}
+{"item_id": "bird_train_train_1593", "db_id": "car_retails", "question": "Who is the sales agent of the customer who has made the highest payment? Include the full names of employee and his/her supervisor."}
+{"item_id": "bird_train_train_1594", "db_id": "car_retails", "question": "What is the highest amount of order made by the sales representative in Boston? Please give the name of the product and amount."}
+{"item_id": "bird_train_train_1595", "db_id": "car_retails", "question": "What is the total actual profit gained from orders made by American customers from 2003-01-06 to 2005-05-09?"}
+{"item_id": "bird_train_train_1597", "db_id": "car_retails", "question": "What is the phone number of all companies where the last name of the contact person starts with the letter M and are not from Germany?"}
+{"item_id": "bird_train_train_1598", "db_id": "car_retails", "question": "Calculate the average amount of payments made by customers during the first half of 2004."}
+{"item_id": "bird_train_train_1602", "db_id": "car_retails", "question": "To whom does the employee have to inform that is the sales representative of the French customer?"}
+{"item_id": "bird_train_train_1604", "db_id": "car_retails", "question": "What is the full address of the office where the employee who is a sales representative for the customer whose business is located in the city of New York works?"}
+{"item_id": "bird_train_train_1608", "db_id": "car_retails", "question": "Calculate the total quantity ordered for 18th Century Vintage Horse Carriage and the average price."}
+{"item_id": "bird_train_train_1614", "db_id": "car_retails", "question": "How much did Petit Auto pay on 2004-08-09?"}
+{"item_id": "bird_train_train_1617", "db_id": "car_retails", "question": "Where was the order No. 10383 shipped to? Show me the address."}
+{"item_id": "bird_train_train_1619", "db_id": "car_retails", "question": "If Dragon Souveniers, Ltd. aren't satisfied with their order and want to send a complain e-mail, which e-mail address should they send to?"}
+{"item_id": "bird_train_train_1622", "db_id": "car_retails", "question": "For the product No. S18_3482 in the Order No.10108, how much discount did the customer have?"}
+{"item_id": "bird_train_train_1627", "db_id": "car_retails", "question": "Please list all the customers that have Steve Patterson as their sales representitive."}
+{"item_id": "bird_train_train_1631", "db_id": "car_retails", "question": "Where can I find the office of the President of the company?"}
+{"item_id": "bird_train_train_1634", "db_id": "car_retails", "question": "Which product did Cruz & Sons Co. order on 2003/3/3?"}
+{"item_id": "bird_train_train_1636", "db_id": "car_retails", "question": "When were the products ordered by Cruz & Sons Co. on 2003-03-03 shipped?"}
+{"item_id": "bird_train_train_1637", "db_id": "car_retails", "question": "What is the amount of customers of 1957 Chevy Pickup by customers in a month?"}
+{"item_id": "bird_train_train_1644", "db_id": "car_retails", "question": "List all customer names with orders that are disputed."}
+{"item_id": "bird_train_train_1653", "db_id": "car_retails", "question": "Please list the top three product names with the highest unit price."}
+{"item_id": "bird_train_train_1654", "db_id": "car_retails", "question": "Among the customers of empolyee 1370, who has the highest credit limit?Please list the full name of the contact person."}
+{"item_id": "bird_train_train_1661", "db_id": "car_retails", "question": "List out 3 best seller products during year 2003 with their total quantity sold during 2003."}
+{"item_id": "bird_train_train_1667", "db_id": "car_retails", "question": "List down the customer names with a disputed order status."}
+{"item_id": "bird_train_train_4371", "db_id": "student_loan", "question": "Among the students that have been absent from school for more than 5 months, how many of them are male?"}
+{"item_id": "bird_train_train_4380", "db_id": "student_loan", "question": "Please list the departments the students are absent from school for 9 months are in."}
+{"item_id": "bird_train_train_4382", "db_id": "student_loan", "question": "Please list all the female students that have filed for bankruptcy."}
+{"item_id": "bird_train_train_4392", "db_id": "student_loan", "question": "List all students in the air force and which school they were enrolled at."}
+{"item_id": "bird_train_train_4397", "db_id": "student_loan", "question": "How many male students have no due payments?"}
+{"item_id": "bird_train_train_4400", "db_id": "student_loan", "question": "How many unemployed students are there that have been absent for 6 months?"}
+{"item_id": "bird_train_train_4406", "db_id": "student_loan", "question": "What is the total number of students in the school?"}
+{"item_id": "bird_train_train_4413", "db_id": "student_loan", "question": "What is the employment, disability, gender and school debt status for student180 and student117?"}
+{"item_id": "bird_train_train_4415", "db_id": "student_loan", "question": "List out the organization joined and school enrolled by student27, student17 and student101?"}
+{"item_id": "bird_train_train_4416", "db_id": "student_loan", "question": "What is the ratio of disable female to male students?"}
+{"item_id": "bird_train_train_4418", "db_id": "student_loan", "question": "List out all bankrupt students that are able to make payment before due?"}
+{"item_id": "bird_train_train_4419", "db_id": "student_loan", "question": "What is the average absence period of a student?"}
+{"item_id": "bird_train_train_4420", "db_id": "student_loan", "question": "What is the average of absence for an employed students?"}
+{"item_id": "bird_train_train_4428", "db_id": "student_loan", "question": "Mention the name of disabled students who have never been absent from school."}
+{"item_id": "bird_train_train_4429", "db_id": "student_loan", "question": "How many unemployed students are enlisted in the navy organization?"}
+{"item_id": "bird_train_train_4436", "db_id": "student_loan", "question": "How many unemployed disabled students have been absent for 8 months from school?"}
+{"item_id": "bird_train_train_4444", "db_id": "student_loan", "question": "How many students have been absents for more than 6 months?"}
+{"item_id": "bird_train_train_4449", "db_id": "student_loan", "question": "Among the students enlisted in marines, how many of them are disabled?"}
+{"item_id": "bird_train_train_4452", "db_id": "student_loan", "question": "Which school has the highest number of disabled students?"}
+{"item_id": "bird_train_train_4455", "db_id": "student_loan", "question": "List all the navy students who are disabled."}
+{"item_id": "bird_train_train_4456", "db_id": "student_loan", "question": "How many SMC's students that absent for 7 months?"}
+{"item_id": "bird_train_train_4459", "db_id": "student_loan", "question": "Find the percentage of male students enlisted in the fire department."}
+{"item_id": "bird_train_train_4460", "db_id": "student_loan", "question": "How many students has the longest absense from school for 5 months?"}

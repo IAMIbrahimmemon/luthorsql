@@ -1,0 +1,50 @@
+{"item_id": "kaggledbqa_test_100", "sql": "SELECT salary FROM salary WHERE league_id = 'AL'"}
+{"item_id": "kaggledbqa_test_101", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id GROUP BY T1.birth_country ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_102", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' AND T2.yearid >= 1871"}
+{"item_id": "kaggledbqa_test_103", "sql": "SELECT T1.award_id FROM player_award AS T1 JOIN salary AS T2 ON T1.player_id = T2.player_id GROUP BY T1.award_id ORDER BY max(T2.salary) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_104", "sql": "SELECT DISTINCT yearid FROM hall_of_fame WHERE needed_note LIKE '%Special Election%'"}
+{"item_id": "kaggledbqa_test_105", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' GROUP BY T1.birth_country ORDER BY count(*) DESC LIMIT 10"}
+{"item_id": "kaggledbqa_test_106", "sql": "SELECT T1.award_id, T2.name_first, T2.name_last, min(T1.year - T2.birth_year) FROM player_award AS T1 JOIN player AS T2 ON T1.player_id = T2.player_id GROUP BY T1.award_id"}
+{"item_id": "kaggledbqa_test_107", "sql": "SELECT T1.award_id, T2.name_first, T2.name_last, max(T1.year - T2.birth_year) FROM player_award AS T1 JOIN player AS T2 ON T1.player_id = T2.player_id GROUP BY T1.award_id"}
+{"item_id": "kaggledbqa_test_108", "sql": "SELECT T2.team_id FROM hall_of_fame AS T1 JOIN salary AS T2 ON T1.player_id = T2.player_id WHERE T1.inducted = 'Y' GROUP BY T2.team_id ORDER BY count(DISTINCT T1.player_id) DESC LIMIT 10"}
+{"item_id": "kaggledbqa_test_109", "sql": "SELECT avg(T1.death_year - T1.birth_year) FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' AND T1.death_year IS NOT NULL AND T1.death_year != ''"}
+{"item_id": "kaggledbqa_test_110", "sql": "SELECT T1.notes, avg(T2.weight) FROM player_award AS T1 JOIN player AS T2 ON T1.player_id = T2.player_id GROUP BY T1.notes"}
+{"item_id": "kaggledbqa_test_111", "sql": "SELECT T2.notes FROM hall_of_fame AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id WHERE T1.inducted = 'Y' GROUP BY T2.notes ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_112", "sql": "SELECT player_id FROM player_award_vote WHERE year = 1971 ORDER BY points_won DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_113", "sql": "SELECT T1.birth_month FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' GROUP BY T1.birth_month ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_114", "sql": "SELECT league_id FROM player_award WHERE year = 2006 GROUP BY league_id ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_115", "sql": "SELECT notes FROM player_award WHERE player_id = 'willite01'"}
+{"item_id": "kaggledbqa_test_116", "sql": "SELECT count(*) FROM (SELECT player_id FROM player_award GROUP BY player_id HAVING count(*) > 10)"}
+{"item_id": "kaggledbqa_test_117", "sql": "SELECT birth_city FROM player GROUP BY birth_city ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_118", "sql": "SELECT avg(T1.weight) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id WHERE T2.award_id = 'TSN All-Star' AND T2.notes = '3B'"}
+{"item_id": "kaggledbqa_test_119", "sql": "SELECT player_id FROM salary WHERE year = 2015 ORDER BY salary DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_120", "sql": "SELECT * FROM Fires WHERE STAT_CAUSE_DESCR = 'Campfire' AND STATE = 'TX'"}
+{"item_id": "kaggledbqa_test_121", "sql": "SELECT OWNER_DESCR FROM Fires WHERE STATE = 'OR' AND FIRE_YEAR = 2015 ORDER BY FIRE_SIZE DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_122", "sql": "SELECT DISTINCT COUNTY FROM Fires WHERE STATE = 'WA' AND FIRE_YEAR = 2012"}
+{"item_id": "kaggledbqa_test_123", "sql": "SELECT count(*) FROM Fires WHERE STAT_CAUSE_DESCR = 'Arson' AND FIRE_YEAR = 2010"}
+{"item_id": "kaggledbqa_test_124", "sql": "SELECT count(DISTINCT FIRE_YEAR) FROM Fires"}
+{"item_id": "kaggledbqa_test_125", "sql": "SELECT avg(DISCOVERY_DOY) FROM Fires WHERE FIRE_YEAR BETWEEN 2000 AND 2004"}
+{"item_id": "kaggledbqa_test_126", "sql": "SELECT STAT_CAUSE_CODE FROM Fires GROUP BY STAT_CAUSE_CODE ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_127", "sql": "SELECT FIRE_YEAR FROM Fires GROUP BY FIRE_YEAR ORDER BY sum(FIRE_SIZE) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_128", "sql": "SELECT count(*) FROM Fires WHERE OWNER_DESCR = 'MISSING/NOT SPECIFIED'"}
+{"item_id": "kaggledbqa_test_129", "sql": "SELECT COUNTY FROM Fires WHERE FIRE_YEAR = 2000 AND COUNTY IS NOT NULL GROUP BY COUNTY ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_130", "sql": "SELECT count(DISTINCT STAT_CAUSE_DESCR) FROM Fires"}
+{"item_id": "kaggledbqa_test_131", "sql": "SELECT sum(FIRE_SIZE) FROM Fires WHERE STATE = 'NC' AND FIRE_YEAR = 2006"}
+{"item_id": "kaggledbqa_test_132", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires WHERE STATE = 'UT' AND FIRE_YEAR = 1997 ORDER BY FIRE_SIZE DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_133", "sql": "SELECT count(*) FROM Fires WHERE COUNTY = 'Gloucester' AND FIRE_SIZE > 10"}
+{"item_id": "kaggledbqa_test_134", "sql": "SELECT STATE FROM Fires GROUP BY STATE ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_135", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires GROUP BY STAT_CAUSE_DESCR ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_136", "sql": "SELECT CASE WHEN OWNER_DESCR = 'PRIVATE' THEN 'private' ELSE 'public' END AS land_type, count(*) FROM Fires GROUP BY land_type ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_137", "sql": "SELECT count(*) FROM Fires WHERE FIRE_YEAR = 2014 AND STAT_CAUSE_DESCR = 'Campfire'"}
+{"item_id": "kaggledbqa_test_138", "sql": "SELECT sum(FIRE_SIZE) FROM Fires WHERE STATE = 'TX' AND FIRE_YEAR BETWEEN 2000 AND 2010"}
+{"item_id": "kaggledbqa_test_139", "sql": "SELECT STATE FROM Fires GROUP BY STATE ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_140", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires GROUP BY STAT_CAUSE_DESCR ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_141", "sql": "SELECT sum(FIRE_SIZE) FROM Fires"}
+{"item_id": "kaggledbqa_test_142", "sql": "SELECT sum(CASE WHEN FIRE_YEAR BETWEEN 2000 AND 2009 THEN FIRE_SIZE ELSE 0 END), sum(CASE WHEN FIRE_YEAR BETWEEN 1990 AND 1999 THEN FIRE_SIZE ELSE 0 END) FROM Fires"}
+{"item_id": "kaggledbqa_test_143", "sql": "SELECT count(*) FROM Fires WHERE OWNER_DESCR = 'MISSING/NOT SPECIFIED'"}
+{"item_id": "kaggledbqa_test_144", "sql": "SELECT ROUND(LATITUDE) FROM Fires GROUP BY ROUND(LATITUDE) ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "kaggledbqa_test_145", "sql": "SELECT groupName, groupYear FROM torrents"}
+{"item_id": "kaggledbqa_test_146", "sql": "SELECT artist, groupName FROM torrents ORDER BY artist"}
+{"item_id": "kaggledbqa_test_147", "sql": "SELECT DISTINCT tag FROM tags"}
+{"item_id": "kaggledbqa_test_148", "sql": "SELECT DISTINCT releaseType FROM torrents"}
+{"item_id": "kaggledbqa_test_149", "sql": "SELECT groupName FROM torrents WHERE groupYear > 2000 ORDER BY totalSnatched DESC LIMIT 5"}

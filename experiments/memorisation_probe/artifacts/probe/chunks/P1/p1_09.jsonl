@@ -1,0 +1,50 @@
+{"item_id": "bird_train_train_4464", "db_id": "student_loan", "question": "How many of the students joined two organization?"}
+{"item_id": "bird_train_train_4467", "db_id": "student_loan", "question": "How many students are enlisted in the Peace Corps organization are enrolled in UCSD school?"}
+{"item_id": "bird_train_train_4468", "db_id": "student_loan", "question": "Among the unemployed students, how many of them have no payment due?"}
+{"item_id": "bird_train_train_4470", "db_id": "student_loan", "question": "How many unemployed students have never been absent?"}
+{"item_id": "bird_train_train_4473", "db_id": "student_loan", "question": "How many unemployed students are enlisted in the Army organization?"}
+{"item_id": "bird_train_train_4476", "db_id": "student_loan", "question": "How many disabled students are female?"}
+{"item_id": "bird_train_train_4477", "db_id": "student_loan", "question": "How many disabled students have payment due?"}
+{"item_id": "bird_train_train_4481", "db_id": "student_loan", "question": "Calculate the percentage of students who have never been absent."}
+{"item_id": "bird_train_train_4482", "db_id": "student_loan", "question": "What is the ratio of students who have payment due and those who do not have payment due?"}
+{"item_id": "bird_train_train_4483", "db_id": "student_loan", "question": "Provide the students' names and schools who enrolled for 15 months."}
+{"item_id": "bird_train_train_4485", "db_id": "student_loan", "question": "List down the enrolled schools and duration of student214."}
+{"item_id": "bird_train_train_4487", "db_id": "student_loan", "question": "Among students who have been absent for nine months, how many of them are disabled?"}
+{"item_id": "bird_train_train_4498", "db_id": "student_loan", "question": "Calculate the percentage of female students."}
+{"item_id": "bird_train_train_4500", "db_id": "student_loan", "question": "How many students are enrolled in smc during month 1?"}
+{"item_id": "bird_train_train_4506", "db_id": "student_loan", "question": "List out student names that enrolled in two schools and two organizations?"}
+{"item_id": "bird_train_train_4507", "db_id": "student_loan", "question": "What is the percentage difference between month 0 absence and month 9 absence?"}
+{"item_id": "bird_train_train_4510", "db_id": "student_loan", "question": "List out students that enrolled in occ school and enlisted in a fire department."}
+{"item_id": "bird_train_train_4511", "db_id": "student_loan", "question": "Which male students are unemployed, disable and were absent for 5 month?"}
+{"item_id": "bird_train_train_4514", "db_id": "student_loan", "question": "How many male students filed for bankruptcy as compare to female students?"}
+{"item_id": "bird_train_train_4516", "db_id": "student_loan", "question": "What is the percentage difference between the attendence of disabled and non-disable students? Do the disable students show better attendance than non-disable students?"}
+{"item_id": "bird_train_train_4517", "db_id": "student_loan", "question": "Calculate the average duration of absense of disabled male students."}
+{"item_id": "bird_train_train_4520", "db_id": "student_loan", "question": "State the number of students who filed for bankruptcy and have payment due."}
+{"item_id": "bird_train_train_4521", "db_id": "student_loan", "question": "What is the status of payment of student 124?"}
+{"item_id": "bird_train_train_4523", "db_id": "student_loan", "question": "State name of students who have the longest duration of absense from school and do not have payment due."}
+{"item_id": "bird_train_train_4524", "db_id": "student_loan", "question": "State name of students who have been absent for 5 months from school and do not have payment due."}
+{"item_id": "bird_train_train_4527", "db_id": "student_loan", "question": "List out the number of students who filed for bankruptcy and enlisted in navy."}
+{"item_id": "bird_train_train_4535", "db_id": "student_loan", "question": "Mention the status of payment of student 299."}
+{"item_id": "bird_train_train_4537", "db_id": "student_loan", "question": "How many students have absent from school?"}
+{"item_id": "bird_train_train_4539", "db_id": "student_loan", "question": "How many disabled students have payment due?"}
+{"item_id": "bird_train_train_4540", "db_id": "student_loan", "question": "Among the students that filed for bankruptcy, how many of them have been enrolled in OCC?"}
+{"item_id": "bird_train_train_4542", "db_id": "student_loan", "question": "List the names of disabled students enlisted in the navy."}
+{"item_id": "bird_train_train_4551", "db_id": "student_loan", "question": "Among the students enrolled in UCLA, what is the percentage of male students in the air force department?"}
+{"item_id": "bird_train_train_4552", "db_id": "student_loan", "question": "Calculate the average number of disabled female students enrolled in UCI."}
+{"item_id": "bird_train_train_4554", "db_id": "student_loan", "question": "What are the names of the students who joined the Marines?"}
+{"item_id": "bird_train_train_4555", "db_id": "student_loan", "question": "How many students enlisted in the Navy?"}
+{"item_id": "bird_train_train_4559", "db_id": "student_loan", "question": "Among the students that have a payment due, how many students are unemployed?"}
+{"item_id": "bird_train_train_4562", "db_id": "student_loan", "question": "How many disabled students have zero absences?"}
+{"item_id": "bird_train_train_4565", "db_id": "student_loan", "question": "How many bankrupt students are there in the Marines?"}
+{"item_id": "bird_train_train_4567", "db_id": "student_loan", "question": "How many months did a student in the Air Force miss school the most?"}
+{"item_id": "bird_train_train_7612", "db_id": "hockey", "question": "List the first Name and last name of all players not from USA and who are born in 1990 ."}
+{"item_id": "bird_train_train_7616", "db_id": "hockey", "question": "For all the deceased players who are good at both left and right hand, list the player's name and the age when he died."}
+{"item_id": "bird_train_train_7618", "db_id": "hockey", "question": "What is the average weight of players who have height greater than 72 inches."}
+{"item_id": "bird_train_train_7620", "db_id": "hockey", "question": "Name the goaltenders who had played in both PCHA and NHL league."}
+{"item_id": "bird_train_train_7627", "db_id": "hockey", "question": "Name the goalies with the most seasons played. State the average time he played for each season."}
+{"item_id": "bird_train_train_7630", "db_id": "hockey", "question": "Who are the players played both in NHL and WHA. List the given name and first year they were in NHL and first year in WHA."}
+{"item_id": "bird_train_train_7632", "db_id": "hockey", "question": "State the nick name of the tallest player? If the player had left NHL, mention the last season he was with NHL."}
+{"item_id": "bird_train_train_7635", "db_id": "hockey", "question": "List all the deceased goalies and the teams he had played whose birth country was in Canada."}
+{"item_id": "bird_train_train_7638", "db_id": "hockey", "question": "For all players who becomes coach after retirement, state the given name of coach and which teams and years did they coach?"}
+{"item_id": "bird_train_train_7644", "db_id": "hockey", "question": "What is given name for player 'aebisda01'. Calculate the average time in minutes for the all his games played as goaltender."}
+{"item_id": "bird_train_train_7647", "db_id": "hockey", "question": "Among the players who won an award in the year 1983, how many of them play the position of goalie?"}

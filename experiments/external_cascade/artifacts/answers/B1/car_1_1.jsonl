@@ -1,0 +1,18 @@
+{"question_id": "spider_realistic_59", "pick": "A"}
+{"question_id": "spider_realistic_60", "pick": "A"}
+{"question_id": "spider_realistic_61", "pick": "A"}
+{"question_id": "spider_realistic_62", "pick": "A"}
+{"question_id": "spider_realistic_63", "pick": "A"}
+{"question_id": "spider_realistic_64", "pick": "B"}
+{"question_id": "spider_realistic_65", "pick": "NONE", "sql": "SELECT T2.Make, T1.Year FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T1.Year = (SELECT MIN(Year) FROM cars_data)"}
+{"question_id": "spider_realistic_66", "pick": "NONE", "sql": "SELECT T2.Make, T1.Year FROM cars_data AS T1 JOIN car_names AS T2 ON T1.Id = T2.MakeId WHERE T1.Year = (SELECT MIN(Year) FROM cars_data)"}
+{"question_id": "spider_realistic_67", "pick": "B"}
+{"question_id": "spider_realistic_68", "pick": "A"}
+{"question_id": "spider_realistic_69", "pick": "A"}
+{"question_id": "spider_realistic_70", "pick": "A"}
+{"question_id": "spider_realistic_71", "pick": "A"}
+{"question_id": "spider_realistic_72", "pick": "NONE", "sql": "SELECT COUNT(*), T1.Id, T1.FullName FROM car_makers AS T1 JOIN model_list AS T2 ON T1.Id = T2.Maker GROUP BY T1.Id"}
+{"question_id": "spider_realistic_73", "pick": "A"}
+{"question_id": "spider_realistic_74", "pick": "A"}
+{"question_id": "spider_realistic_75", "pick": "A"}
+{"question_id": "spider_realistic_76", "pick": "A"}

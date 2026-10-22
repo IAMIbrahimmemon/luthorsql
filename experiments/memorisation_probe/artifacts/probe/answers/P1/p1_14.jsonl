@@ -1,0 +1,8 @@
+{"item_id": "spider_realistic_500", "sql": "SELECT Citizenship FROM singer GROUP BY Citizenship ORDER BY COUNT(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_501", "sql": "SELECT Citizenship, MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship"}
+{"item_id": "spider_realistic_502", "sql": "SELECT Citizenship, MAX(Net_Worth_Millions) FROM singer GROUP BY Citizenship"}
+{"item_id": "spider_realistic_503", "sql": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID = T2.Singer_ID WHERE T2.Sales > 300000"}
+{"item_id": "spider_realistic_504", "sql": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID = T2.Singer_ID WHERE T2.Sales > 300000"}
+{"item_id": "spider_realistic_505", "sql": "SELECT Citizenship FROM singer WHERE Birth_Year < 1945 INTERSECT SELECT Citizenship FROM singer WHERE Birth_Year > 1955"}
+{"item_id": "spider_realistic_506", "sql": "SELECT Citizenship FROM singer WHERE Birth_Year < 1945 INTERSECT SELECT Citizenship FROM singer WHERE Birth_Year > 1955"}
+{"item_id": "spider_realistic_507", "sql": "SELECT property_name FROM Properties WHERE property_type_code = 'House' UNION SELECT property_name FROM Properties WHERE property_type_code = 'Apartment' AND room_count > 1"}

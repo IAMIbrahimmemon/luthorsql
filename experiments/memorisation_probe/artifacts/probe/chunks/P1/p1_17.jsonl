@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_150", "db_id": "flight_2", "question": "Which airlines have a flight to  AHD?"}
+{"item_id": "spider_realistic_151", "db_id": "flight_2", "question": "Find all airlines that have flights from both APG and CVO."}
+{"item_id": "spider_realistic_152", "db_id": "flight_2", "question": "Which airlines have departing flights from both APG and CVO ?"}
+{"item_id": "spider_realistic_153", "db_id": "flight_2", "question": "Find all airlines that have flights from 'CVO' but not from 'APG'."}
+{"item_id": "spider_realistic_154", "db_id": "flight_2", "question": "Which airlines have departures from CVO but not from APG?"}
+{"item_id": "spider_realistic_155", "db_id": "flight_2", "question": "What are flight numbers of \"\"United Airlines\"\"?"}
+{"item_id": "spider_realistic_156", "db_id": "flight_2", "question": "Which flight numbers correspond to United Airlines flights?"}
+{"item_id": "spider_realistic_157", "db_id": "flight_2", "question": "What are flight numbers of flights departing from APG?"}
+{"item_id": "spider_realistic_158", "db_id": "flight_2", "question": "Give the flight numbers of flights leaving from APG."}
+{"item_id": "spider_realistic_159", "db_id": "flight_2", "question": "What are flight numbers of flights arriving at APG?"}
+{"item_id": "spider_realistic_160", "db_id": "flight_2", "question": "Give the flight numbers of flights landing at APG."}
+{"item_id": "spider_realistic_161", "db_id": "flight_2", "question": "What are flight numbers of flights departing from Aberdeen?"}
+{"item_id": "spider_realistic_162", "db_id": "flight_2", "question": "Give the flight numbers of flights leaving from Aberdeen."}
+{"item_id": "spider_realistic_163", "db_id": "flight_2", "question": "What are flight numbers of flights arriving at Aberdeen?"}
+{"item_id": "spider_realistic_164", "db_id": "flight_2", "question": "Give the flight numbers of flights arriving in Aberdeen."}
+{"item_id": "spider_realistic_165", "db_id": "flight_2", "question": "Find the number of flights landing in Aberdeen or Abilene."}
+{"item_id": "spider_realistic_166", "db_id": "flight_2", "question": "How many flights land in Aberdeen or Abilene?"}
+{"item_id": "spider_realistic_167", "db_id": "flight_2", "question": "Find the name of airports which do not have any flight in and out."}
+{"item_id": "spider_realistic_168", "db_id": "flight_2", "question": "Which airports do not have departing or arriving flights?"}
+{"item_id": "spider_realistic_169", "db_id": "employee_hire_evaluation", "question": "Sort employee names from youngest to oldest."}
+{"item_id": "spider_realistic_170", "db_id": "employee_hire_evaluation", "question": "List the names of employees and sort from youngest to oldest"}
+{"item_id": "spider_realistic_171", "db_id": "employee_hire_evaluation", "question": "Which cities do more than one employee younger than 30 come from?"}
+{"item_id": "spider_realistic_172", "db_id": "employee_hire_evaluation", "question": "Find the cities that have more than one employee under  30 year old."}
+{"item_id": "spider_realistic_173", "db_id": "employee_hire_evaluation", "question": "Find the number of shops in each place."}
+{"item_id": "spider_realistic_174", "db_id": "employee_hire_evaluation", "question": "How many shops are there in each place?"}
+{"item_id": "spider_realistic_175", "db_id": "employee_hire_evaluation", "question": "Find the manager name and district of the shop with the most goods."}
+{"item_id": "spider_realistic_176", "db_id": "employee_hire_evaluation", "question": "What are the manager name and district of the shop that sells the most merchandise?"}
+{"item_id": "spider_realistic_177", "db_id": "employee_hire_evaluation", "question": "Return the name, location and district of all shops odered by the amount of goods they sell from the most to the least."}
+{"item_id": "spider_realistic_178", "db_id": "employee_hire_evaluation", "question": "Sort all the shops by amount of merchandise in descending order, and return the name, location and district of each shop."}
+{"item_id": "spider_realistic_179", "db_id": "employee_hire_evaluation", "question": "Find the names of stores that have more than average goods."}
+{"item_id": "spider_realistic_180", "db_id": "employee_hire_evaluation", "question": "Which shops have more than average merchandise? Give me the shop names."}
+{"item_id": "spider_realistic_181", "db_id": "employee_hire_evaluation", "question": "Find the name of the employee who got the highest one time incentive."}
+{"item_id": "spider_realistic_182", "db_id": "employee_hire_evaluation", "question": "Which employee received the biggest incentive? Give me the employee name."}
+{"item_id": "spider_realistic_183", "db_id": "employee_hire_evaluation", "question": "What is the name of the shop that is recruiting the largest number of employees?"}
+{"item_id": "spider_realistic_184", "db_id": "employee_hire_evaluation", "question": "Which shop has the most employees? Give me the shop name."}
+{"item_id": "spider_realistic_185", "db_id": "employee_hire_evaluation", "question": "Find the name of the shops that do not recruit any employee."}
+{"item_id": "spider_realistic_186", "db_id": "employee_hire_evaluation", "question": "Which shops run with no employees? Find the shop names"}
+{"item_id": "spider_realistic_187", "db_id": "employee_hire_evaluation", "question": "Which district has both stores with less than 3000 goods and stores with more than 10000 goods?"}
+{"item_id": "spider_realistic_188", "db_id": "employee_hire_evaluation", "question": "Find the districts in which there are both shops selling less than 3000 and more than 10000 merchandise."}
+{"item_id": "spider_realistic_189", "db_id": "course_teach", "question": "List the names of teachers from youngest to oldest."}
+{"item_id": "spider_realistic_190", "db_id": "course_teach", "question": "What are the names of the teachers  from youngest to oldest?"}
+{"item_id": "spider_realistic_191", "db_id": "course_teach", "question": "List the name of teachers who are not from Little Lever Urban District."}
+{"item_id": "spider_realistic_192", "db_id": "course_teach", "question": "What are the names of the teachers who do not come from Little Lever Urban District?"}
+{"item_id": "spider_realistic_193", "db_id": "course_teach", "question": "Show the name of teachers who are either 32 or 33 years old?"}
+{"item_id": "spider_realistic_194", "db_id": "course_teach", "question": "What are the names of the teachers who are either 32 or 33?"}
+{"item_id": "spider_realistic_195", "db_id": "course_teach", "question": "What is the hometown of the youngest teacher?"}
+{"item_id": "spider_realistic_196", "db_id": "course_teach", "question": "Where is the youngest teacher from?"}
+{"item_id": "spider_realistic_197", "db_id": "course_teach", "question": "Show different hometown of teachers and the number of teachers from each place."}
+{"item_id": "spider_realistic_198", "db_id": "course_teach", "question": "For each place, how many teachers are from there?"}
+{"item_id": "spider_realistic_199", "db_id": "course_teach", "question": "List the most common place that the teachers come from"}

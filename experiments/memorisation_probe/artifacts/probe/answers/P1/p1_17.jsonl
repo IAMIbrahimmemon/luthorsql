@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_150", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}
+{"item_id": "spider_realistic_151", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG' INTERSECT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO'"}
+{"item_id": "spider_realistic_152", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG' INTERSECT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO'"}
+{"item_id": "spider_realistic_153", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO' EXCEPT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG'"}
+{"item_id": "spider_realistic_154", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'CVO' EXCEPT SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.SourceAirport = 'APG'"}
+{"item_id": "spider_realistic_155", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airlines AS T2 ON T2.uid = T1.Airline WHERE T2.Airline = 'United Airlines'"}
+{"item_id": "spider_realistic_156", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airlines AS T2 ON T2.uid = T1.Airline WHERE T2.Airline = 'United Airlines'"}
+{"item_id": "spider_realistic_157", "sql": "SELECT FlightNo FROM flights WHERE SourceAirport = 'APG'"}
+{"item_id": "spider_realistic_158", "sql": "SELECT FlightNo FROM flights WHERE SourceAirport = 'APG'"}
+{"item_id": "spider_realistic_159", "sql": "SELECT FlightNo FROM flights WHERE DestAirport = 'APG'"}
+{"item_id": "spider_realistic_160", "sql": "SELECT FlightNo FROM flights WHERE DestAirport = 'APG'"}
+{"item_id": "spider_realistic_161", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_162", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.SourceAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_163", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_164", "sql": "SELECT T1.FlightNo FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen'"}
+{"item_id": "spider_realistic_165", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen' OR T2.City = 'Abilene'"}
+{"item_id": "spider_realistic_166", "sql": "SELECT count(*) FROM flights AS T1 JOIN airports AS T2 ON T1.DestAirport = T2.AirportCode WHERE T2.City = 'Aberdeen' OR T2.City = 'Abilene'"}
+{"item_id": "spider_realistic_167", "sql": "SELECT AirportName FROM airports WHERE AirportCode NOT IN (SELECT SourceAirport FROM flights UNION SELECT DestAirport FROM flights)"}
+{"item_id": "spider_realistic_168", "sql": "SELECT AirportName FROM airports WHERE AirportCode NOT IN (SELECT SourceAirport FROM flights UNION SELECT DestAirport FROM flights)"}
+{"item_id": "spider_realistic_169", "sql": "SELECT Name FROM employee ORDER BY Age"}
+{"item_id": "spider_realistic_170", "sql": "SELECT Name FROM employee ORDER BY Age"}
+{"item_id": "spider_realistic_171", "sql": "SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING count(*) > 1"}
+{"item_id": "spider_realistic_172", "sql": "SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING count(*) > 1"}
+{"item_id": "spider_realistic_173", "sql": "SELECT count(*), Location FROM shop GROUP BY Location"}
+{"item_id": "spider_realistic_174", "sql": "SELECT count(*), Location FROM shop GROUP BY Location"}
+{"item_id": "spider_realistic_175", "sql": "SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1"}
+{"item_id": "spider_realistic_176", "sql": "SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1"}
+{"item_id": "spider_realistic_177", "sql": "SELECT Name, Location, District FROM shop ORDER BY Number_products DESC"}
+{"item_id": "spider_realistic_178", "sql": "SELECT Name, Location, District FROM shop ORDER BY Number_products DESC"}
+{"item_id": "spider_realistic_179", "sql": "SELECT Name FROM shop WHERE Number_products > (SELECT avg(Number_products) FROM shop)"}
+{"item_id": "spider_realistic_180", "sql": "SELECT Name FROM shop WHERE Number_products > (SELECT avg(Number_products) FROM shop)"}
+{"item_id": "spider_realistic_181", "sql": "SELECT T1.Name FROM employee AS T1 JOIN evaluation AS T2 ON T1.Employee_ID = T2.Employee_ID ORDER BY T2.Bonus DESC LIMIT 1"}
+{"item_id": "spider_realistic_182", "sql": "SELECT T1.Name FROM employee AS T1 JOIN evaluation AS T2 ON T1.Employee_ID = T2.Employee_ID ORDER BY T2.Bonus DESC LIMIT 1"}
+{"item_id": "spider_realistic_183", "sql": "SELECT T2.Name FROM hiring AS T1 JOIN shop AS T2 ON T1.Shop_ID = T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_184", "sql": "SELECT T2.Name FROM hiring AS T1 JOIN shop AS T2 ON T1.Shop_ID = T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_185", "sql": "SELECT Name FROM shop WHERE Shop_ID NOT IN (SELECT Shop_ID FROM hiring)"}
+{"item_id": "spider_realistic_186", "sql": "SELECT Name FROM shop WHERE Shop_ID NOT IN (SELECT Shop_ID FROM hiring)"}
+{"item_id": "spider_realistic_187", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}
+{"item_id": "spider_realistic_188", "sql": "SELECT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT District FROM shop WHERE Number_products > 10000"}
+{"item_id": "spider_realistic_189", "sql": "SELECT Name FROM teacher ORDER BY Age ASC"}
+{"item_id": "spider_realistic_190", "sql": "SELECT Name FROM teacher ORDER BY Age ASC"}
+{"item_id": "spider_realistic_191", "sql": "SELECT Name FROM teacher WHERE Hometown != 'Little Lever Urban District'"}
+{"item_id": "spider_realistic_192", "sql": "SELECT Name FROM teacher WHERE Hometown != 'Little Lever Urban District'"}
+{"item_id": "spider_realistic_193", "sql": "SELECT Name FROM teacher WHERE Age = 32 OR Age = 33"}
+{"item_id": "spider_realistic_194", "sql": "SELECT Name FROM teacher WHERE Age = 32 OR Age = 33"}
+{"item_id": "spider_realistic_195", "sql": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1"}
+{"item_id": "spider_realistic_196", "sql": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1"}
+{"item_id": "spider_realistic_197", "sql": "SELECT Hometown, count(*) FROM teacher GROUP BY Hometown"}
+{"item_id": "spider_realistic_198", "sql": "SELECT Hometown, count(*) FROM teacher GROUP BY Hometown"}
+{"item_id": "spider_realistic_199", "sql": "SELECT Hometown FROM teacher GROUP BY Hometown ORDER BY count(*) DESC LIMIT 1"}

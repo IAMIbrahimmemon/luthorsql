@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_93", "pick": "A"}
+{"question_id": "kaggledbqa_test_94", "pick": "A"}
+{"question_id": "kaggledbqa_test_95", "pick": "NONE", "sql": "SELECT player_id FROM player_award WHERE year = 2010 AND award_id = 'Rookie of the Year'"}
+{"question_id": "kaggledbqa_test_96", "pick": "A"}
+{"question_id": "kaggledbqa_test_97", "pick": "B"}
+{"question_id": "kaggledbqa_test_98", "pick": "NONE", "sql": "SELECT MIN(votes), yearid FROM hall_of_fame WHERE inducted = 'Y' AND yearid >= 1871 GROUP BY yearid"}
+{"question_id": "kaggledbqa_test_99", "pick": "A"}
+{"question_id": "kaggledbqa_test_100", "pick": "A"}
+{"question_id": "kaggledbqa_test_101", "pick": "A"}
+{"question_id": "kaggledbqa_test_102", "pick": "NONE", "sql": "SELECT T1.birth_country FROM player AS T1 JOIN hall_of_fame AS T2 ON T1.player_id = T2.player_id WHERE T2.inducted = 'Y' AND T2.yearid >= 1871"}
+{"question_id": "kaggledbqa_test_103", "pick": "NONE", "sql": "SELECT T1.award_id FROM player_award AS T1 JOIN salary AS T2 ON T1.player_id = T2.player_id ORDER BY T2.salary DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_104", "pick": "A"}
+{"question_id": "kaggledbqa_test_105", "pick": "A"}
+{"question_id": "kaggledbqa_test_106", "pick": "NONE", "sql": "SELECT T2.award_id, T1.name_first, T1.name_last, MAX(T1.birth_year) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id GROUP BY T2.award_id"}

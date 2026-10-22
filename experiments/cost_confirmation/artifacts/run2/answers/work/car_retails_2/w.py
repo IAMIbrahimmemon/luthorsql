@@ -1,0 +1,26 @@
+import json
+A = {
+"bird_train_train_1597": "SELECT phone FROM customers WHERE contactLastName LIKE 'M%' AND country != 'Germany'",
+"bird_train_train_1598": "SELECT SUM(amount) / COUNT(customerNumber) FROM payments WHERE paymentDate >= '2004-01-01' AND paymentDate < '2004-07-01'",
+"bird_train_train_1602": "SELECT DISTINCT T2.reportsTo FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber WHERE T1.country = 'France'",
+"bird_train_train_1604": "SELECT T3.addressLine1, T3.addressLine2 FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber INNER JOIN offices AS T3 ON T2.officeCode = T3.officeCode WHERE T1.city = 'NYC' AND T2.jobTitle = 'Sales Rep'",
+"bird_train_train_1608": "SELECT SUM(T2.quantityOrdered), AVG(T2.priceEach) FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode WHERE T1.productName = '18th Century Vintage Horse Carriage'",
+"bird_train_train_1614": "SELECT T1.amount FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T2.customerName = 'Petit Auto' AND T1.paymentDate = '2004-08-09'",
+"bird_train_train_1617": "SELECT T1.addressLine1, T1.addressLine2 FROM customers AS T1 INNER JOIN orders AS T2 ON T1.customerNumber = T2.customerNumber WHERE T2.orderNumber = 10383",
+"bird_train_train_1619": "SELECT T2.email FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber WHERE T1.customerName = 'Dragon Souveniers, Ltd.'",
+"bird_train_train_1622": "SELECT (T1.MSRP - T2.priceEach) / T1.MSRP FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode WHERE T1.productCode = 'S18_3482' AND T2.orderNumber = 10108",
+"bird_train_train_1627": "SELECT T1.customerName FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber WHERE T2.firstName = 'Steve' AND T2.lastName = 'Patterson'",
+"bird_train_train_1631": "SELECT T2.addressLine1, T2.addressLine2 FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T1.jobTitle = 'President'",
+"bird_train_train_1634": "SELECT T3.productName FROM customers AS T1 INNER JOIN orders AS T2 ON T1.customerNumber = T2.customerNumber INNER JOIN orderdetails AS T4 ON T2.orderNumber = T4.orderNumber INNER JOIN products AS T3 ON T4.productCode = T3.productCode WHERE T1.customerName = 'Cruz & Sons Co.' AND T2.orderDate = '2003-03-03'",
+"bird_train_train_1636": "SELECT T2.shippedDate FROM customers AS T1 INNER JOIN orders AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.customerName = 'Cruz & Sons Co.' AND T2.orderDate = '2003-03-03'",
+"bird_train_train_1637": "SELECT COUNT(T2.customerNumber) FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber WHERE T1.productCode IN (SELECT productCode FROM products WHERE productName = '1957 Chevy Pickup')",
+"bird_train_train_1644": "SELECT T3.firstName, T3.lastName FROM orders AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber INNER JOIN employees AS T3 ON T2.salesRepEmployeeNumber = T3.employeeNumber WHERE T1.status = 'Disputed'",
+"bird_train_train_1653": "SELECT T1.productName FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode ORDER BY T2.priceEach DESC LIMIT 3",
+"bird_train_train_1654": "SELECT contactFirstName, contactLastName FROM customers WHERE salesRepEmployeeNumber = 1370 ORDER BY creditLimit DESC LIMIT 1",
+"bird_train_train_1661": "SELECT T2.productName, SUM(T1.quantityOrdered) FROM orderdetails AS T1 INNER JOIN products AS T2 ON T1.productCode = T2.productCode INNER JOIN orders AS T3 ON T1.orderNumber = T3.orderNumber WHERE STRFTIME('%Y', T3.orderDate) = '2003' GROUP BY T2.productName ORDER BY SUM(T1.quantityOrdered) DESC LIMIT 3",
+"bird_train_train_1667": "SELECT T1.customerName FROM customers AS T1 INNER JOIN orders AS T2 ON T1.customerNumber = T2.customerNumber WHERE T2.status = 'Disputed'",
+}
+ids=[json.loads(l)["question_id"] for l in open("chunks/B2/car_retails_2.jsonl")]
+assert set(ids)==set(A) and len(ids)==len(A)
+with open("answers/B2/car_retails_2.jsonl","a") as f:
+    for q in ids: f.write(json.dumps({"question_id":q,"pick":"NONE","sql":A[q]})+"\n")

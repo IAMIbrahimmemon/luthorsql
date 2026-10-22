@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_145", "db_id": "WhatCDHipHop", "question": "what year was each specific entry released?", "evidence": ""}
+{"question_id": "kaggledbqa_test_146", "db_id": "WhatCDHipHop", "question": "what are the entries by each specific artist/group?", "evidence": ""}
+{"question_id": "kaggledbqa_test_147", "db_id": "WhatCDHipHop", "question": "which tags exist?", "evidence": ""}
+{"question_id": "kaggledbqa_test_148", "db_id": "WhatCDHipHop", "question": "what release types are captured in this data set?", "evidence": ""}
+{"question_id": "kaggledbqa_test_149", "db_id": "WhatCDHipHop", "question": "Find me top 5 most popular releases after 2000?", "evidence": ""}
+{"question_id": "kaggledbqa_test_150", "db_id": "WhatCDHipHop", "question": "Which albums have been downloaded more than 100 times?", "evidence": ""}
+{"question_id": "kaggledbqa_test_151", "db_id": "WhatCDHipHop", "question": "Name the most popular release on houston.", "evidence": ""}
+{"question_id": "kaggledbqa_test_152", "db_id": "WhatCDHipHop", "question": "Name the most popular and least popular releases of lasean camry?", "evidence": ""}
+{"question_id": "kaggledbqa_test_153", "db_id": "WhatCDHipHop", "question": "Find me top 10 albums ranked by their popularity.", "evidence": ""}
+{"question_id": "kaggledbqa_test_154", "db_id": "WhatCDHipHop", "question": "Find me the most popular topics since 2010.", "evidence": ""}
+{"question_id": "kaggledbqa_test_155", "db_id": "WhatCDHipHop", "question": "Which year had the minimum number of releases?", "evidence": ""}
+{"question_id": "kaggledbqa_test_156", "db_id": "WhatCDHipHop", "question": "Which release is being downloaded the most?", "evidence": ""}
+{"question_id": "kaggledbqa_test_157", "db_id": "WhatCDHipHop", "question": "Who or which group is most popular in 2015?", "evidence": ""}
+{"question_id": "kaggledbqa_test_158", "db_id": "WhatCDHipHop", "question": "Which tag is used for which release title?", "evidence": ""}

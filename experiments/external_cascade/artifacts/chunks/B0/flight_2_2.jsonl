@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_132", "db_id": "flight_2", "question": "Count the number of flights into ATO.", "evidence": ""}
+{"question_id": "spider_realistic_133", "db_id": "flight_2", "question": "How many flights depart from Aberdeen?", "evidence": ""}
+{"question_id": "spider_realistic_134", "db_id": "flight_2", "question": "Return the number of flights departing from Aberdeen.", "evidence": ""}
+{"question_id": "spider_realistic_135", "db_id": "flight_2", "question": "How many flights arriving in Aberdeen ?", "evidence": ""}
+{"question_id": "spider_realistic_136", "db_id": "flight_2", "question": "Return the number of flights arriving in Aberdeen.", "evidence": ""}
+{"question_id": "spider_realistic_137", "db_id": "flight_2", "question": "How many flights depart from Aberdeen and arrive at Ashley?", "evidence": ""}
+{"question_id": "spider_realistic_138", "db_id": "flight_2", "question": "How many flights fly from Aberdeen to Ashley?", "evidence": ""}
+{"question_id": "spider_realistic_139", "db_id": "flight_2", "question": "How many flights does 'JetBlue Airways' have?", "evidence": ""}
+{"question_id": "spider_realistic_140", "db_id": "flight_2", "question": "Give the number of Jetblue Airways flights.", "evidence": ""}
+{"question_id": "spider_realistic_141", "db_id": "flight_2", "question": "How many 'United Airlines' flights go to 'ASY'?", "evidence": ""}
+{"question_id": "spider_realistic_142", "db_id": "flight_2", "question": "Count the number of United Airlines flights arriving in ASY.", "evidence": ""}
+{"question_id": "spider_realistic_143", "db_id": "flight_2", "question": "How many 'United Airlines' flights depart from 'AHD'?", "evidence": ""}
+{"question_id": "spider_realistic_144", "db_id": "flight_2", "question": "Return the number of United Airlines flights leaving from AHD.", "evidence": ""}
+{"question_id": "spider_realistic_145", "db_id": "flight_2", "question": "How many United Airlines flights go to 'Aberdeen'?", "evidence": ""}
+{"question_id": "spider_realistic_146", "db_id": "flight_2", "question": "Count the number of United Airlines flights that arrive in Aberdeen.", "evidence": ""}
+{"question_id": "spider_realistic_147", "db_id": "flight_2", "question": "What are airlines that have some flight departing from AHD?", "evidence": ""}
+{"question_id": "spider_realistic_148", "db_id": "flight_2", "question": "Which airlines have a flight from  AHD?", "evidence": ""}
+{"question_id": "spider_realistic_149", "db_id": "flight_2", "question": "What are airlines that have flights arriving at AHD?", "evidence": ""}
+{"question_id": "spider_realistic_150", "db_id": "flight_2", "question": "Which airlines have a flight to  AHD?", "evidence": ""}

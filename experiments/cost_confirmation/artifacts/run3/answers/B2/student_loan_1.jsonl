@@ -1,0 +1,21 @@
+{"question_id": "bird_train_train_4371", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN male AS T2 ON T1.name = T2.name WHERE T1.month >= 5"}
+{"question_id": "bird_train_train_4380", "pick": "NONE", "sql": "SELECT T2.organ FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T1.month = 9"}
+{"question_id": "bird_train_train_4382", "pick": "NONE", "sql": "SELECT name FROM filed_for_bankrupcy WHERE name NOT IN (SELECT name FROM male)"}
+{"question_id": "bird_train_train_4392", "pick": "NONE", "sql": "SELECT T1.name, T1.school FROM enrolled AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'air_force'"}
+{"question_id": "bird_train_train_4397", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN male AS T2 ON T1.name = T2.name WHERE T1.bool = 'neg'"}
+{"question_id": "bird_train_train_4400", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.name = T2.name WHERE T2.month = 6"}
+{"question_id": "bird_train_train_4406", "pick": "NONE", "sql": "SELECT COUNT(name) FROM person"}
+{"question_id": "bird_train_train_4413", "pick": "NONE", "sql": "SELECT CASE WHEN p.name IN (SELECT name FROM unemployed) THEN 'unemployed' ELSE 'employed' END, CASE WHEN p.name IN (SELECT name FROM disabled) THEN 'disabled' ELSE 'not disabled' END, CASE WHEN p.name IN (SELECT name FROM male) THEN 'male' ELSE 'female' END, n.bool FROM person AS p LEFT JOIN no_payment_due AS n ON p.name = n.name WHERE p.name IN ('student180', 'student117')"}
+{"question_id": "bird_train_train_4415", "pick": "NONE", "sql": "SELECT T1.organ, T2.school FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T1.name = T2.name WHERE T1.name IN ('student27', 'student17', 'student101')"}
+{"question_id": "bird_train_train_4416", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T2.name IS NULL THEN 1 ELSE 0 END) AS REAL) / SUM(CASE WHEN T2.name IS NOT NULL THEN 1 ELSE 0 END) FROM disabled AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name"}
+{"question_id": "bird_train_train_4418", "pick": "NONE", "sql": "SELECT T1.name FROM filed_for_bankrupcy AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T2.bool = 'neg'"}
+{"question_id": "bird_train_train_4419", "pick": "NONE", "sql": "SELECT AVG(month) FROM longest_absense_from_school"}
+{"question_id": "bird_train_train_4420", "pick": "NONE", "sql": "SELECT AVG(month) FROM longest_absense_from_school WHERE name NOT IN (SELECT name FROM unemployed)"}
+{"question_id": "bird_train_train_4428", "pick": "NONE", "sql": "SELECT T1.name FROM disabled AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.name = T2.name WHERE T2.month = 0"}
+{"question_id": "bird_train_train_4429", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'navy'"}
+{"question_id": "bird_train_train_4436", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name INNER JOIN longest_absense_from_school AS T3 ON T1.name = T3.name WHERE T3.month = 8"}
+{"question_id": "bird_train_train_4444", "pick": "NONE", "sql": "SELECT COUNT(name) FROM longest_absense_from_school WHERE month > 6"}
+{"question_id": "bird_train_train_4449", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.organ = 'marines'"}
+{"question_id": "bird_train_train_4452", "pick": "NONE", "sql": "SELECT T1.school FROM enrolled AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name GROUP BY T1.school ORDER BY COUNT(T1.name) DESC LIMIT 1"}
+{"question_id": "bird_train_train_4455", "pick": "NONE", "sql": "SELECT T1.name FROM enlist AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.organ = 'navy'"}
+{"question_id": "bird_train_train_4456", "pick": "NONE", "sql": "SELECT COUNT(name) FROM enrolled WHERE school = 'smc' AND month = 7"}

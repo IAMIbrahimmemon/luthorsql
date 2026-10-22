@@ -1,0 +1,8 @@
+{"question_id": "kaggledbqa_test_22", "pick": "A"}
+{"question_id": "kaggledbqa_test_23", "pick": "A"}
+{"question_id": "kaggledbqa_test_28", "pick": "A"}
+{"question_id": "kaggledbqa_test_33", "pick": "A"}
+{"question_id": "kaggledbqa_test_34", "pick": "A"}
+{"question_id": "kaggledbqa_test_35", "pick": "NONE", "sql": "SELECT Location FROM GreaterManchesterCrime WHERE Type LIKE '%sexual%' GROUP BY Location ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_36", "pick": "A"}
+{"question_id": "kaggledbqa_test_38", "pick": "B"}

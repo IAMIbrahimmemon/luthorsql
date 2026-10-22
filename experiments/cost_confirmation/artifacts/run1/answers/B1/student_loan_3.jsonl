@@ -1,0 +1,20 @@
+{"question_id": "bird_train_train_4516", "pick": "NONE", "sql": "SELECT CAST((SUM(IIF(T2.name IS NOT NULL, 1, 0)) - SUM(IIF(T2.name IS NULL, 1, 0))) AS REAL) * 100 / COUNT(T1.name), IIF(SUM(IIF(T2.name IS NOT NULL, 1, 0)) - SUM(IIF(T2.name IS NULL, 1, 0)) > 0, 'YES', 'NO') AS isHigh FROM longest_absense_from_school AS T1 LEFT JOIN disabled AS T2 ON T2.name = T1.name"}
+{"question_id": "bird_train_train_4517", "pick": "A"}
+{"question_id": "bird_train_train_4520", "pick": "A"}
+{"question_id": "bird_train_train_4521", "pick": "A"}
+{"question_id": "bird_train_train_4523", "pick": "A"}
+{"question_id": "bird_train_train_4524", "pick": "A"}
+{"question_id": "bird_train_train_4527", "pick": "A"}
+{"question_id": "bird_train_train_4535", "pick": "A"}
+{"question_id": "bird_train_train_4537", "pick": "A"}
+{"question_id": "bird_train_train_4539", "pick": "A"}
+{"question_id": "bird_train_train_4540", "pick": "A"}
+{"question_id": "bird_train_train_4542", "pick": "A"}
+{"question_id": "bird_train_train_4551", "pick": "NONE", "sql": "SELECT CAST(COUNT(T4.name) AS REAL) * 100 / COUNT(T2.name) FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T2.name = T1.name LEFT JOIN male AS T4 ON T2.name = T4.name WHERE T2.school = 'ucla' AND T1.organ = 'air_force'"}
+{"question_id": "bird_train_train_4552", "pick": "NONE", "sql": "SELECT CAST(SUM(IIF(T1.name NOT IN (SELECT name FROM male) AND T2.school = 'uci', 1, 0)) AS REAL) / COUNT(T2.name) FROM disabled AS T1 INNER JOIN enrolled AS T2 ON T1.name = T2.name"}
+{"question_id": "bird_train_train_4554", "pick": "A"}
+{"question_id": "bird_train_train_4555", "pick": "A"}
+{"question_id": "bird_train_train_4559", "pick": "A"}
+{"question_id": "bird_train_train_4562", "pick": "A"}
+{"question_id": "bird_train_train_4565", "pick": "A"}
+{"question_id": "bird_train_train_4567", "pick": "A"}

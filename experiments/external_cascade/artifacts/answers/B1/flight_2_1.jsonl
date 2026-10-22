@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_113", "pick": "A"}
+{"question_id": "spider_realistic_114", "pick": "A"}
+{"question_id": "spider_realistic_115", "pick": "A"}
+{"question_id": "spider_realistic_116", "pick": "A"}
+{"question_id": "spider_realistic_117", "pick": "A"}
+{"question_id": "spider_realistic_118", "pick": "A"}
+{"question_id": "spider_realistic_119", "pick": "NONE", "sql": "SELECT AirportCode, AirportName FROM airports WHERE City = 'Anthony'"}
+{"question_id": "spider_realistic_120", "pick": "NONE", "sql": "SELECT AirportCode, AirportName FROM airports WHERE City = 'Anthony'"}
+{"question_id": "spider_realistic_121", "pick": "A"}
+{"question_id": "spider_realistic_122", "pick": "A"}
+{"question_id": "spider_realistic_123", "pick": "A"}
+{"question_id": "spider_realistic_124", "pick": "A"}
+{"question_id": "spider_realistic_125", "pick": "A"}
+{"question_id": "spider_realistic_126", "pick": "A"}
+{"question_id": "spider_realistic_127", "pick": "NONE", "sql": "SELECT AirportName FROM airports WHERE City = 'Aberdeen'"}
+{"question_id": "spider_realistic_128", "pick": "NONE", "sql": "SELECT AirportName FROM airports WHERE City = 'Aberdeen'"}
+{"question_id": "spider_realistic_129", "pick": "NONE", "sql": "SELECT count(*) FROM flights WHERE SourceAirport = 'APG'"}
+{"question_id": "spider_realistic_130", "pick": "NONE", "sql": "SELECT count(*) FROM flights WHERE SourceAirport = 'APG'"}
+{"question_id": "spider_realistic_131", "pick": "NONE", "sql": "SELECT count(*) FROM flights WHERE DestAirport = 'ATO'"}

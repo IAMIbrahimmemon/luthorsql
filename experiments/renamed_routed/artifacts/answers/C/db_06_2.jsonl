@@ -1,0 +1,13 @@
+{"question_id": "q4506", "pick": "E"}
+{"question_id": "q4507", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN period = 0 THEN 1 ELSE 0 END) - SUM(CASE WHEN period = 9 THEN 1 ELSE 0 END) AS REAL) * 100 / SUM(CASE WHEN period = 0 THEN 1 ELSE 0 END) FROM maximum_truancy_span"}
+{"question_id": "q4511", "pick": "NONE", "sql": "SELECT t1.label FROM jobless t1 JOIN impaired t2 ON t1.label=t2.label JOIN maximum_truancy_span t3 ON t1.label=t3.label JOIN masculine t4 ON t1.label=t4.label WHERE t3.period=5"}
+{"question_id": "q4514", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN t2.label IS NOT NULL THEN 1 ELSE 0 END) - SUM(CASE WHEN t2.label IS NULL THEN 1 ELSE 0 END) FROM insolvency_record t1 LEFT JOIN masculine t2 ON t1.label=t2.label"}
+{"question_id": "q4516", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN t2.label IS NOT NULL THEN 1 ELSE 0 END) - SUM(CASE WHEN t2.label IS NULL THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(t1.label), CASE WHEN SUM(CASE WHEN t2.label IS NOT NULL THEN 1 ELSE 0 END) < SUM(CASE WHEN t2.label IS NULL THEN 1 ELSE 0 END) THEN 'YES' ELSE 'NO' END FROM maximum_truancy_span t1 LEFT JOIN impaired t2 ON t1.label=t2.label"}
+{"question_id": "q4520", "pick": "B"}
+{"question_id": "q4523", "pick": "A"}
+{"question_id": "q4539", "pick": "A"}
+{"question_id": "q4542", "pick": "A"}
+{"question_id": "q4551", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN t2.label IS NOT NULL AND t3.body_part='air_force' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(t1.label) FROM registered t1 LEFT JOIN masculine t2 ON t1.label=t2.label LEFT JOIN recruit t3 ON t1.label=t3.label WHERE t1.academy='ucla'"}
+{"question_id": "q4552", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN t1.academy='uci' AND t3.label IS NULL THEN 1 ELSE 0 END) AS REAL) / COUNT(t1.label) FROM registered t1 JOIN impaired t2 ON t1.label=t2.label LEFT JOIN masculine t3 ON t1.label=t3.label"}
+{"question_id": "q4562", "pick": "A"}
+{"question_id": "q4567", "pick": "A"}

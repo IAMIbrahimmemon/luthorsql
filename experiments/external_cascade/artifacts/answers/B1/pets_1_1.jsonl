@@ -1,0 +1,13 @@
+{"question_id": "spider_realistic_33", "pick": "A"}
+{"question_id": "spider_realistic_34", "pick": "A"}
+{"question_id": "spider_realistic_35", "pick": "A"}
+{"question_id": "spider_realistic_36", "pick": "A"}
+{"question_id": "spider_realistic_37", "pick": "A"}
+{"question_id": "spider_realistic_38", "pick": "A"}
+{"question_id": "spider_realistic_39", "pick": "A"}
+{"question_id": "spider_realistic_40", "pick": "A"}
+{"question_id": "spider_realistic_41", "pick": "A"}
+{"question_id": "spider_realistic_42", "pick": "A"}
+{"question_id": "spider_realistic_43", "pick": "NONE", "sql": "SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.PetType = 'cat' INTERSECT SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_44", "pick": "NONE", "sql": "SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.PetType = 'cat' INTERSECT SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T3.PetID = T2.PetID WHERE T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_45", "pick": "A"}

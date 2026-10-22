@@ -1,0 +1,13 @@
+{"question_id": "spider_realistic_33", "sql": "SELECT count(*) FROM Pets WHERE weight > 10"}
+{"question_id": "spider_realistic_34", "sql": "SELECT count(*) FROM Pets WHERE weight > 10"}
+{"question_id": "spider_realistic_35", "sql": "SELECT weight FROM Pets WHERE PetType = 'dog' ORDER BY pet_age LIMIT 1"}
+{"question_id": "spider_realistic_36", "sql": "SELECT weight FROM Pets WHERE PetType = 'dog' ORDER BY pet_age LIMIT 1"}
+{"question_id": "spider_realistic_37", "sql": "SELECT count(*) FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID WHERE T1.Age > 20"}
+{"question_id": "spider_realistic_38", "sql": "SELECT count(*) FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID WHERE T1.Age > 20"}
+{"question_id": "spider_realistic_39", "sql": "SELECT count(*) FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T1.Sex = 'F' AND T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_40", "sql": "SELECT count(*) FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T1.Sex = 'F' AND T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_41", "sql": "SELECT DISTINCT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'cat' OR T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_42", "sql": "SELECT DISTINCT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'cat' OR T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_43", "sql": "SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'cat' INTERSECT SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_44", "sql": "SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'cat' INTERSECT SELECT T1.Fname FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'dog'"}
+{"question_id": "spider_realistic_45", "sql": "SELECT Major, Age FROM Student WHERE StuID NOT IN (SELECT T1.StuID FROM Student AS T1 JOIN Has_Pet AS T2 ON T1.StuID = T2.StuID JOIN Pets AS T3 ON T2.PetID = T3.PetID WHERE T3.PetType = 'cat')"}

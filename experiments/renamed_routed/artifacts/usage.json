@@ -1,0 +1,103 @@
+{
+ "C": {
+  "db_08_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 84847,
+   "cache_read_input_tokens": 555781,
+   "output_tokens": 223,
+   "output_est": 1907,
+   "seconds": 71.128,
+   "dollars_opus55_list": 0.573603
+  },
+  "db_07_2": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 84375,
+   "cache_read_input_tokens": 645225,
+   "output_tokens": 112,
+   "output_est": 2472,
+   "seconds": 95.328,
+   "dollars_opus55_list": 0.60044
+  },
+  "db_06_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 74751,
+   "cache_read_input_tokens": 328425,
+   "output_tokens": 67,
+   "output_est": 1395,
+   "seconds": 50.508,
+   "dollars_opus55_list": 0.467388
+  },
+  "db_06_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 71952,
+   "cache_read_input_tokens": 255486,
+   "output_tokens": 58,
+   "output_est": 808,
+   "seconds": 40.626,
+   "dollars_opus55_list": 0.427057
+  },
+  "db_01_1": {
+   "input_tokens": 24,
+   "cache_creation_input_tokens": 97161,
+   "cache_read_input_tokens": 842797,
+   "output_tokens": 130,
+   "output_est": 2673,
+   "seconds": 98.794,
+   "dollars_opus55_list": 0.70792
+  },
+  "db_03_1": {
+   "input_tokens": 24,
+   "cache_creation_input_tokens": 103537,
+   "cache_read_input_tokens": 888362,
+   "output_tokens": 101,
+   "output_est": 2843,
+   "seconds": 116.571,
+   "dollars_opus55_list": 0.752313
+  },
+  "db_07_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 82252,
+   "cache_read_input_tokens": 350485,
+   "output_tokens": 75,
+   "output_est": 1722,
+   "seconds": 54.417,
+   "dollars_opus55_list": 0.515845
+  },
+  "db_03_2": {
+   "input_tokens": 38,
+   "cache_creation_input_tokens": 107175,
+   "cache_read_input_tokens": 1485513,
+   "output_tokens": 182,
+   "output_est": 3803,
+   "seconds": 144.779,
+   "dollars_opus55_list": 0.90919
+  },
+  "db_04_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 80391,
+   "cache_read_input_tokens": 548995,
+   "output_tokens": 100,
+   "output_est": 1988,
+   "seconds": 78.887,
+   "dollars_opus55_list": 0.551586
+  },
+  "db_05_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 63289,
+   "cache_read_input_tokens": 231317,
+   "output_tokens": 57,
+   "output_est": 879,
+   "seconds": 25.605,
+   "dollars_opus55_list": 0.380328
+  },
+  "db_02_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 70552,
+   "cache_read_input_tokens": 184009,
+   "output_tokens": 55,
+   "output_est": 502,
+   "seconds": 25.272,
+   "dollars_opus55_list": 0.399634
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{"question_id": "bird_train_train_4371", "pick": "B"}
+{"question_id": "bird_train_train_4382", "pick": "A"}
+{"question_id": "bird_train_train_4392", "pick": "A"}
+{"question_id": "bird_train_train_4397", "pick": "A"}
+{"question_id": "bird_train_train_4406", "pick": "B"}
+{"question_id": "bird_train_train_4413", "pick": "NONE", "sql": "SELECT T2.name, T3.name, T4.name, T5.bool FROM person T1 LEFT JOIN unemployed T2 ON T1.name = T2.name LEFT JOIN disabled T3 ON T1.name = T3.name LEFT JOIN male T4 ON T1.name = T4.name LEFT JOIN no_payment_due T5 ON T1.name = T5.name WHERE T1.name IN ('student180', 'student117')"}
+{"question_id": "bird_train_train_4415", "pick": "A"}
+{"question_id": "bird_train_train_4416", "pick": "NONE", "sql": "SELECT CAST((SELECT COUNT(*) FROM disabled WHERE name NOT IN (SELECT name FROM male)) AS REAL) / (SELECT COUNT(*) FROM disabled WHERE name IN (SELECT name FROM male))"}
+{"question_id": "bird_train_train_4418", "pick": "NONE", "sql": "SELECT T1.name FROM filed_for_bankrupcy T1 INNER JOIN no_payment_due T2 ON T1.name = T2.name WHERE T2.bool = 'neg'"}
+{"question_id": "bird_train_train_4420", "pick": "A"}
+{"question_id": "bird_train_train_4436", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM unemployed T1 INNER JOIN disabled T2 ON T1.name = T2.name INNER JOIN longest_absense_from_school T3 ON T1.name = T3.name WHERE T3.month = 8"}
+{"question_id": "bird_train_train_4464", "pick": "A"}
+{"question_id": "bird_train_train_4468", "pick": "A"}
+{"question_id": "bird_train_train_4482", "pick": "A"}

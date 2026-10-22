@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_350", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Region = 'Central Africa'"}
+{"item_id": "spider_realistic_351", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Region = 'Central Africa'"}
+{"item_id": "spider_realistic_352", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' ORDER BY LifeExpectancy LIMIT 1"}
+{"item_id": "spider_realistic_353", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' ORDER BY LifeExpectancy LIMIT 1"}
+{"item_id": "spider_realistic_354", "sql": "SELECT sum(Population), max(GNP) FROM country WHERE Continent = 'Asia'"}
+{"item_id": "spider_realistic_355", "sql": "SELECT sum(Population), max(GNP) FROM country WHERE Continent = 'Asia'"}
+{"item_id": "spider_realistic_356", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Continent = 'Africa' AND GovernmentForm = 'Republic'"}
+{"item_id": "spider_realistic_357", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Continent = 'Africa' AND GovernmentForm = 'Republic'"}
+{"item_id": "spider_realistic_358", "sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = 'Asia' OR Continent = 'Europe'"}
+{"item_id": "spider_realistic_359", "sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = 'Asia' OR Continent = 'Europe'"}
+{"item_id": "spider_realistic_360", "sql": "SELECT sum(Population) FROM city WHERE District = 'Gelderland'"}
+{"item_id": "spider_realistic_361", "sql": "SELECT sum(Population) FROM city WHERE District = 'Gelderland'"}
+{"item_id": "spider_realistic_362", "sql": "SELECT avg(GNP), sum(Population) FROM country WHERE GovernmentForm = 'US Territory'"}
+{"item_id": "spider_realistic_363", "sql": "SELECT avg(GNP), sum(Population) FROM country WHERE GovernmentForm = 'US Territory'"}
+{"item_id": "spider_realistic_364", "sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = 'Africa'"}
+{"item_id": "spider_realistic_365", "sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = 'Africa'"}
+{"item_id": "spider_realistic_366", "sql": "SELECT count(T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba'"}
+{"item_id": "spider_realistic_367", "sql": "SELECT count(T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba'"}
+{"item_id": "spider_realistic_368", "sql": "SELECT count(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Afghanistan' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_369", "sql": "SELECT count(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Afghanistan' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_370", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Name ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_371", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Name ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_372", "sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_373", "sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_374", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French'"}
+{"item_id": "spider_realistic_375", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French'"}
+{"item_id": "spider_realistic_376", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_377", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_378", "sql": "SELECT count(DISTINCT T1.Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Chinese'"}
+{"item_id": "spider_realistic_379", "sql": "SELECT count(DISTINCT T1.Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Chinese'"}
+{"item_id": "spider_realistic_380", "sql": "SELECT DISTINCT T1.Region FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' OR T2.Language = 'Dutch'"}
+{"item_id": "spider_realistic_381", "sql": "SELECT DISTINCT T1.Region FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' OR T2.Language = 'Dutch'"}
+{"item_id": "spider_realistic_382", "sql": "SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' UNION SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Dutch' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_383", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = 'Asia' GROUP BY T2.Language ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_384", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = 'Asia' GROUP BY T2.Language ORDER BY count(*) DESC LIMIT 1"}
+{"item_id": "spider_realistic_385", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = 'Republic' GROUP BY T2.Language HAVING count(*) = 1"}
+{"item_id": "spider_realistic_386", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = 'Republic' GROUP BY T2.Language HAVING count(*) = 1"}
+{"item_id": "spider_realistic_387", "sql": "SELECT T1.Name, T1.Population FROM city AS T1 JOIN countrylanguage AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.Language = 'English' ORDER BY T1.Population DESC LIMIT 1"}
+{"item_id": "spider_realistic_388", "sql": "SELECT T1.Name, T1.Population FROM city AS T1 JOIN countrylanguage AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.Language = 'English' ORDER BY T1.Population DESC LIMIT 1"}
+{"item_id": "spider_realistic_389", "sql": "SELECT Name, Population, LifeExpectancy FROM country WHERE Continent = 'Asia' ORDER BY SurfaceArea DESC LIMIT 1"}
+{"item_id": "spider_realistic_390", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Name NOT IN (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T')"}
+{"item_id": "spider_realistic_391", "sql": "SELECT avg(LifeExpectancy) FROM country WHERE Name NOT IN (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T')"}
+{"item_id": "spider_realistic_392", "sql": "SELECT sum(Population) FROM country WHERE Name NOT IN (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English')"}
+{"item_id": "spider_realistic_393", "sql": "SELECT sum(Population) FROM country WHERE Name NOT IN (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English')"}
+{"item_id": "spider_realistic_394", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.HeadOfState = 'Beatrix' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_395", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.HeadOfState = 'Beatrix' AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_396", "sql": "SELECT count(DISTINCT T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE IndepYear < 1930 AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_397", "sql": "SELECT count(DISTINCT T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE IndepYear < 1930 AND T2.IsOfficial = 'T'"}
+{"item_id": "spider_realistic_398", "sql": "SELECT Name FROM country WHERE SurfaceArea > (SELECT min(SurfaceArea) FROM country WHERE Continent = 'Europe')"}
+{"item_id": "spider_realistic_399", "sql": "SELECT Name FROM country WHERE SurfaceArea > (SELECT min(SurfaceArea) FROM country WHERE Continent = 'Europe')"}

@@ -1,0 +1,21 @@
+{"question_id": "bird_train_train_4371", "pick": "B"}
+{"question_id": "bird_train_train_4380", "pick": "A"}
+{"question_id": "bird_train_train_4382", "pick": "A"}
+{"question_id": "bird_train_train_4392", "pick": "A"}
+{"question_id": "bird_train_train_4397", "pick": "A"}
+{"question_id": "bird_train_train_4400", "pick": "A"}
+{"question_id": "bird_train_train_4406", "pick": "A"}
+{"question_id": "bird_train_train_4413", "pick": "NONE", "sql": "SELECT (SELECT COUNT(name) FROM unemployed WHERE name IN ('student180','student117')), (SELECT COUNT(name) FROM disabled WHERE name IN ('student180','student117')), (SELECT COUNT(name) FROM male WHERE name IN ('student180','student117')), (SELECT COUNT(name) FROM no_payment_due WHERE name IN ('student180','student117') AND bool = 'neg')"}
+{"question_id": "bird_train_train_4415", "pick": "A"}
+{"question_id": "bird_train_train_4416", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T2.name IS NULL THEN 1 ELSE 0 END) AS REAL) / COUNT(T2.name) FROM disabled AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name"}
+{"question_id": "bird_train_train_4418", "pick": "NONE", "sql": "SELECT T1.name FROM filed_for_bankrupcy AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T2.bool = 'neg'"}
+{"question_id": "bird_train_train_4419", "pick": "A"}
+{"question_id": "bird_train_train_4420", "pick": "A"}
+{"question_id": "bird_train_train_4428", "pick": "A"}
+{"question_id": "bird_train_train_4429", "pick": "A"}
+{"question_id": "bird_train_train_4436", "pick": "NONE", "sql": "SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name INNER JOIN longest_absense_from_school AS T3 ON T1.name = T3.name WHERE T3.month = 8"}
+{"question_id": "bird_train_train_4444", "pick": "A"}
+{"question_id": "bird_train_train_4449", "pick": "A"}
+{"question_id": "bird_train_train_4452", "pick": "A"}
+{"question_id": "bird_train_train_4455", "pick": "A"}
+{"question_id": "bird_train_train_4456", "pick": "A"}

@@ -1,0 +1,50 @@
+{"item_id": "md_1471", "db_id": "debit_card_specializing", "question": "What is the ratio of customers who pay in EUR against customers who pay in CZK?"}
+{"item_id": "md_1472", "db_id": "debit_card_specializing", "question": "In 2012, who had the least consumption in LAM?"}
+{"item_id": "md_1473", "db_id": "debit_card_specializing", "question": "What was the average monthly consumption of customers in SME for the year 2013?"}
+{"item_id": "md_1476", "db_id": "debit_card_specializing", "question": "What was the difference in gas consumption between CZK-paying customers and EUR-paying customers in 2012?"}
+{"item_id": "md_1479", "db_id": "debit_card_specializing", "question": "Which year recorded the most consumption of gas paid in CZK?"}
+{"item_id": "md_1480", "db_id": "debit_card_specializing", "question": "What was the gas consumption peak month for SME customers in 2013?"}
+{"item_id": "md_1481", "db_id": "debit_card_specializing", "question": "What is the difference in the annual average consumption of the customers with the least amount of consumption paid in CZK for 2013 between SME and LAM, LAM and KAM, and KAM and SME?"}
+{"item_id": "md_1482", "db_id": "debit_card_specializing", "question": "Which of the three segments\u2014SME, LAM and KAM\u2014has the biggest and lowest percentage increases in consumption paid in EUR between 2012 and 2013?"}
+{"item_id": "md_1483", "db_id": "debit_card_specializing", "question": "How much did customer 6 consume in total between August and November 2013?"}
+{"item_id": "md_1484", "db_id": "debit_card_specializing", "question": "How many more \"discount\" gas stations does the Czech Republic have compared to Slovakia?"}
+{"item_id": "md_1486", "db_id": "debit_card_specializing", "question": "Is it true that more SMEs pay in Czech koruna than in euros? If so, how many more?"}
+{"item_id": "md_1490", "db_id": "debit_card_specializing", "question": "How many percent of LAM customer consumed more than 46.73?"}
+{"item_id": "md_1493", "db_id": "debit_card_specializing", "question": "In February 2012, what percentage of customers consumed more than 528.3?"}
+{"item_id": "md_1498", "db_id": "debit_card_specializing", "question": "What is the highest monthly consumption in the year 2012?"}
+{"item_id": "md_1500", "db_id": "debit_card_specializing", "question": "Please list the product description of the products consumed in September, 2013."}
+{"item_id": "md_1501", "db_id": "debit_card_specializing", "question": "Please list the countries of the gas stations with transactions taken place in June, 2013."}
+{"item_id": "md_1505", "db_id": "debit_card_specializing", "question": "Among the customers who paid in euro, how many of them have a monthly consumption of over 1000?"}
+{"item_id": "md_1506", "db_id": "debit_card_specializing", "question": "Please list the product descriptions of the transactions taken place in the gas stations in the Czech Republic."}
+{"item_id": "md_1507", "db_id": "debit_card_specializing", "question": "Please list the disparate time of the transactions taken place in the gas stations from chain no. 11."}
+{"item_id": "md_1509", "db_id": "debit_card_specializing", "question": "Among the transactions made in the gas stations in the Czech Republic, how many of them are taken place after 2012/1/1?"}
+{"item_id": "md_1514", "db_id": "debit_card_specializing", "question": "What kind of currency did the customer paid at 16:25:00 in 2012/8/24?"}
+{"item_id": "md_1515", "db_id": "debit_card_specializing", "question": "What segment did the customer have at 2012/8/23 21:20:00?"}
+{"item_id": "md_1521", "db_id": "debit_card_specializing", "question": "For all the transactions happened during 8:00-9:00 in 2012/8/26, how many happened in CZE?"}
+{"item_id": "md_1524", "db_id": "debit_card_specializing", "question": "What's the nationality of the customer who spent 548.4 in 2012/8/24?"}
+{"item_id": "md_1525", "db_id": "debit_card_specializing", "question": "What is the percentage of the customers who used EUR in 2012/8/25?"}
+{"item_id": "md_1526", "db_id": "debit_card_specializing", "question": "For the customer who paid 634.8 in 2012/8/25, what was the consumption decrease rate from Year 2012 to 2013?"}
+{"item_id": "md_1528", "db_id": "debit_card_specializing", "question": "What is the percentage of \"premium\" against the overall segment in Country = \"SVK\"?"}
+{"item_id": "md_1529", "db_id": "debit_card_specializing", "question": "What is the amount spent by customer \"38508\" at the gas stations? How much had the customer spent in January 2012?"}
+{"item_id": "md_1531", "db_id": "debit_card_specializing", "question": "Who is the top spending customer and how much is the average price per single item purchased by this customer? What currency was being used?"}
+{"item_id": "md_1533", "db_id": "debit_card_specializing", "question": "For all the people who paid more than 29.00 per unit of product id No.5. Give their consumption status in the August of 2012."}
+{"item_id": "md_1312", "db_id": "student_club", "question": "What's Angela Sanders's major?"}
+{"item_id": "md_1317", "db_id": "student_club", "question": "Among the students from the Student_Club who attended the event \"Women's Soccer\", how many of them want a T-shirt that's in medium size?"}
+{"item_id": "md_1322", "db_id": "student_club", "question": "Among the events attended by more than 10 members of the Student_Club, how many of them are meetings?"}
+{"item_id": "md_1323", "db_id": "student_club", "question": "List all the names of events that had an attendance of over 20 students but were not fundraisers."}
+{"item_id": "md_1331", "db_id": "student_club", "question": "What is the amount of the funds that the Vice President received?"}
+{"item_id": "md_1334", "db_id": "student_club", "question": "List the full name of the Student_Club members that grew up in Illinois state."}
+{"item_id": "md_1338", "db_id": "student_club", "question": "Was each expense in October Meeting on October 8, 2019 approved?"}
+{"item_id": "md_1339", "db_id": "student_club", "question": "Calculate the total average cost that Elijah Allen spent in the events on September and October."}
+{"item_id": "md_1340", "db_id": "student_club", "question": "Calculate the difference of the total amount spent in all events by the Student_Club in year 2019 and 2020."}
+{"item_id": "md_1344", "db_id": "student_club", "question": "What was the notes of the fundraising on 2019/9/14?"}
+{"item_id": "md_1346", "db_id": "student_club", "question": "Tell the phone number of \"Carlo Jacobs\"."}
+{"item_id": "md_1350", "db_id": "student_club", "question": "What is the status of the event which bought \"Post Cards, Posters\" on 2019/8/20?"}
+{"item_id": "md_1351", "db_id": "student_club", "question": "What was Brent Thomason's major?"}
+{"item_id": "md_1352", "db_id": "student_club", "question": "For all the club members from \"Business\" major, how many of them wear medium size t-shirt?"}
+{"item_id": "md_1356", "db_id": "student_club", "question": "Which department was the President of the club in?"}
+{"item_id": "md_1357", "db_id": "student_club", "question": "State the date Connor Hilton paid his/her dues."}
+{"item_id": "md_1359", "db_id": "student_club", "question": "How many times was the budget in Advertisement for \"Yearly Kickoff\" meeting more than \"October Meeting\"?"}
+{"item_id": "md_1361", "db_id": "student_club", "question": "What is the total cost of the pizzas for all the events?"}
+{"item_id": "md_1362", "db_id": "student_club", "question": "How many cities are there in Orange County, Virginia?"}
+{"item_id": "md_1368", "db_id": "student_club", "question": "What does the person with the phone number \"809-555-3360\" major in?"}

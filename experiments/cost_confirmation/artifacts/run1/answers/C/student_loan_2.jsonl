@@ -1,0 +1,13 @@
+{"question_id": "bird_train_train_4506", "pick": "E"}
+{"question_id": "bird_train_train_4507", "pick": "NONE", "sql": "SELECT CAST(SUM(month=0)-SUM(month=9) AS REAL)*100/SUM(month=0) FROM longest_absense_from_school"}
+{"question_id": "bird_train_train_4511", "pick": "NONE", "sql": "SELECT T1.name FROM unemployed T1 JOIN disabled T2 ON T1.name=T2.name JOIN longest_absense_from_school T3 ON T3.name=T1.name JOIN male T4 ON T4.name=T1.name WHERE T3.month=5"}
+{"question_id": "bird_train_train_4514", "pick": "NONE", "sql": "SELECT COUNT(T2.name) - SUM(IIF(T2.name IS NULL,1,0)) FROM filed_for_bankrupcy T1 LEFT JOIN male T2 ON T2.name=T1.name"}
+{"question_id": "bird_train_train_4516", "pick": "NONE", "sql": "SELECT CAST(SUM(IIF(T2.name IS NOT NULL,1,0)) - SUM(IIF(T2.name IS NULL,1,0)) AS REAL)*100/COUNT(T1.name) FROM longest_absense_from_school T1 LEFT JOIN disabled T2 ON T2.name=T1.name"}
+{"question_id": "bird_train_train_4520", "pick": "B"}
+{"question_id": "bird_train_train_4523", "pick": "A"}
+{"question_id": "bird_train_train_4539", "pick": "A"}
+{"question_id": "bird_train_train_4542", "pick": "A"}
+{"question_id": "bird_train_train_4551", "pick": "NONE", "sql": "SELECT CAST(COUNT(T3.name) AS REAL)*100/COUNT(T1.name) FROM enrolled T1 JOIN enlist T2 ON T1.name=T2.name LEFT JOIN male T3 ON T3.name=T1.name WHERE T1.school='ucla' AND T2.organ='air_force'"}
+{"question_id": "bird_train_train_4552", "pick": "NONE", "sql": "SELECT CAST(SUM(IIF(T1.school='uci' AND T3.name IS NULL,1,0)) AS REAL)/COUNT(T1.name) FROM enrolled T1 JOIN disabled T2 ON T1.name=T2.name LEFT JOIN male T3 ON T3.name=T1.name"}
+{"question_id": "bird_train_train_4562", "pick": "A"}
+{"question_id": "bird_train_train_4567", "pick": "A"}

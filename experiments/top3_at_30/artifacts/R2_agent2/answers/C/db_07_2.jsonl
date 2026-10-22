@@ -1,0 +1,12 @@
+{"question_id": "q1433", "pick": "NONE", "sql": "SELECT DISTINCT t1.natal_day FROM subjects AS t1 INNER JOIN visits AS t2 ON t1.person = t2.person WHERE t2.narrative = 'Outpatient Encounter'"}
+{"question_id": "q1442", "pick": "B"}
+{"question_id": "q1481", "pick": "NONE", "sql": "SELECT DISTINCT t3.narrative, t4.narrative, t5.narrative, t1.given, t1.surname FROM subjects t1 JOIN visits t2 ON t1.person=t2.person JOIN therapy_schedule t3 ON t1.person=t3.person JOIN operations t4 ON t1.person=t4.person JOIN drugs t5 ON t1.person=t5.person WHERE t2.identifier='6f2e3935-b203-493e-a9c0-f23e847b9798'"}
+{"question_id": "q1486", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN t2.day-t1.natal_day BETWEEN 20 AND 29 THEN t2.amount ELSE 0 END)/COUNT(CASE WHEN t2.day-t1.natal_day BETWEEN 20 AND 29 THEN t2.person END) - SUM(CASE WHEN t2.day-t1.natal_day BETWEEN 50 AND 59 THEN t2.amount ELSE 0 END)/COUNT(CASE WHEN t2.day-t1.natal_day BETWEEN 50 AND 59 THEN t2.person END) FROM subjects t1 JOIN readings t2 ON t1.person=t2.person WHERE t2.narrative='Glucose'"}
+{"question_id": "q1496", "pick": "NONE", "sql": "SELECT t2.narrative FROM subjects t1 JOIN diagnoses t2 ON t1.person=t2.person WHERE t1.title='Mrs.' AND t1.given='Joye' AND t1.surname='Homenick' AND substr(t2.onset,1,4)='2017'"}
+{"question_id": "q1497", "pick": "NONE", "sql": "SELECT MAX(t2.day) FROM subjects t1 JOIN shots t2 ON t1.person=t2.person WHERE t1.title='Mrs.' AND t1.given='Joye' AND t1.surname='Homenick' AND t2.narrative = 'Influenza  seasonal  injectable  preservative free'"}
+{"question_id": "q1499", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t2.person), t2.narrative FROM visits t1 JOIN therapy_schedule t2 ON t1.person=t2.person WHERE t1.cause_narrative='Second degree burn'"}
+{"question_id": "q1502", "pick": "A"}
+{"question_id": "q1508", "pick": "NONE", "sql": "SELECT DISTINCT t1.visit FROM therapy_schedule t1 JOIN subjects t2 ON t1.person=t2.person WHERE t2.origin='Pembroke MA US'"}
+{"question_id": "q1538", "pick": "NONE", "sql": "SELECT AVG((julianday(COALESCE(s.expiry_day, date('now'))) - julianday(s.natal_day))/365) FROM subjects s JOIN diagnoses d ON s.person=d.person WHERE s.sex='M' AND d.narrative='Hypertension'"}
+{"question_id": "q1540", "pick": "B"}
+{"question_id": "q1541", "pick": "B"}

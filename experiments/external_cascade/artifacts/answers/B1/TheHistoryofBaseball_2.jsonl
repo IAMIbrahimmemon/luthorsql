@@ -1,0 +1,13 @@
+{"question_id": "kaggledbqa_test_107", "pick": "NONE", "sql": "SELECT T1.award_id, T2.name_first, T2.name_last FROM player_award AS T1 JOIN player AS T2 ON T1.player_id = T2.player_id WHERE T2.birth_year != '' GROUP BY T1.award_id HAVING CAST(T2.birth_year AS REAL) = MIN(CAST(T2.birth_year AS REAL))"}
+{"question_id": "kaggledbqa_test_108", "pick": "A"}
+{"question_id": "kaggledbqa_test_109", "pick": "NONE", "sql": "SELECT AVG(CAST(death_year AS REAL) - CAST(birth_year AS REAL)) FROM player WHERE death_year != '' AND birth_year != '' AND player_id IN (SELECT player_id FROM hall_of_fame WHERE inducted = 'Y')"}
+{"question_id": "kaggledbqa_test_110", "pick": "NONE", "sql": "SELECT T2.notes, AVG(T1.weight) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id WHERE T2.notes != '' GROUP BY T2.notes"}
+{"question_id": "kaggledbqa_test_111", "pick": "NONE", "sql": "SELECT T2.notes FROM player_award AS T2 JOIN hall_of_fame AS T1 ON T1.player_id = T2.player_id WHERE T1.inducted = 'Y' AND T2.notes != '' GROUP BY T2.notes ORDER BY COUNT(DISTINCT T2.player_id) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_112", "pick": "A"}
+{"question_id": "kaggledbqa_test_113", "pick": "NONE", "sql": "SELECT birth_month FROM player WHERE birth_month != '' GROUP BY birth_month ORDER BY CAST(SUM(player_id IN (SELECT player_id FROM hall_of_fame WHERE inducted = 'Y')) AS REAL) / COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_114", "pick": "A"}
+{"question_id": "kaggledbqa_test_115", "pick": "NONE", "sql": "SELECT DISTINCT notes FROM player_award WHERE player_id = 'willite01' AND notes != ''"}
+{"question_id": "kaggledbqa_test_116", "pick": "A"}
+{"question_id": "kaggledbqa_test_117", "pick": "A"}
+{"question_id": "kaggledbqa_test_118", "pick": "NONE", "sql": "SELECT AVG(T1.weight) FROM player AS T1 JOIN player_award AS T2 ON T1.player_id = T2.player_id WHERE T2.notes = '3B' AND T2.award_id = 'TSN All-Star'"}
+{"question_id": "kaggledbqa_test_119", "pick": "A"}

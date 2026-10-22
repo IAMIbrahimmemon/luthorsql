@@ -1,0 +1,25 @@
+{"question_id": "kaggledbqa_test_120", "pick": "NONE", "sql": "SELECT * FROM Fires WHERE STATE = 'TX' AND STAT_CAUSE_DESCR = 'Campfire'"}
+{"question_id": "kaggledbqa_test_121", "pick": "NONE", "sql": "SELECT OWNER_DESCR FROM Fires WHERE STATE = 'OR' AND FIRE_YEAR = 2015 ORDER BY FIRE_SIZE DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_122", "pick": "NONE", "sql": "SELECT DISTINCT COUNTY FROM Fires WHERE STATE = 'WA' AND FIRE_YEAR = 2012"}
+{"question_id": "kaggledbqa_test_123", "pick": "A"}
+{"question_id": "kaggledbqa_test_124", "pick": "A"}
+{"question_id": "kaggledbqa_test_125", "pick": "B"}
+{"question_id": "kaggledbqa_test_126", "pick": "A"}
+{"question_id": "kaggledbqa_test_127", "pick": "A"}
+{"question_id": "kaggledbqa_test_128", "pick": "A"}
+{"question_id": "kaggledbqa_test_129", "pick": "A"}
+{"question_id": "kaggledbqa_test_130", "pick": "A"}
+{"question_id": "kaggledbqa_test_131", "pick": "A"}
+{"question_id": "kaggledbqa_test_132", "pick": "NONE", "sql": "SELECT STAT_CAUSE_DESCR FROM Fires WHERE STATE = 'UT' AND FIRE_YEAR = 1997 ORDER BY FIRE_SIZE DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_133", "pick": "A"}
+{"question_id": "kaggledbqa_test_134", "pick": "A"}
+{"question_id": "kaggledbqa_test_135", "pick": "A"}
+{"question_id": "kaggledbqa_test_136", "pick": "A"}
+{"question_id": "kaggledbqa_test_137", "pick": "A"}
+{"question_id": "kaggledbqa_test_138", "pick": "NONE", "sql": "SELECT SUM(FIRE_SIZE) FROM Fires WHERE STATE = 'TX' AND FIRE_YEAR BETWEEN 2000 AND 2010"}
+{"question_id": "kaggledbqa_test_139", "pick": "A"}
+{"question_id": "kaggledbqa_test_140", "pick": "A"}
+{"question_id": "kaggledbqa_test_141", "pick": "A"}
+{"question_id": "kaggledbqa_test_142", "pick": "NONE", "sql": "SELECT SUM(FIRE_SIZE) FROM Fires WHERE FIRE_YEAR BETWEEN 1990 AND 2009"}
+{"question_id": "kaggledbqa_test_143", "pick": "NONE", "sql": "SELECT COUNT(*) FROM Fires WHERE OWNER_DESCR = 'MISSING/NOT SPECIFIED'"}
+{"question_id": "kaggledbqa_test_144", "pick": "A"}

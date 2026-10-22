@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_376", "pick": "NONE", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French' AND T2.IsOfficial = 'T'"}
+{"question_id": "spider_realistic_377", "pick": "NONE", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French' AND T2.IsOfficial = 'T'"}
+{"question_id": "spider_realistic_378", "pick": "A"}
+{"question_id": "spider_realistic_379", "pick": "A"}
+{"question_id": "spider_realistic_380", "pick": "NONE", "sql": "SELECT DISTINCT T1.Region FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' OR T2.Language = 'Dutch'"}
+{"question_id": "spider_realistic_382", "pick": "NONE", "sql": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' UNION SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Dutch' AND T2.IsOfficial = 'T'"}
+{"question_id": "spider_realistic_383", "pick": "B"}
+{"question_id": "spider_realistic_386", "pick": "NONE", "sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = 'Republic' GROUP BY T2.Language HAVING COUNT(*) = 1"}
+{"question_id": "spider_realistic_390", "pick": "NONE", "sql": "SELECT AVG(LifeExpectancy) FROM country WHERE Name NOT IN (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T')"}
+{"question_id": "spider_realistic_391", "pick": "NONE", "sql": "SELECT AVG(LifeExpectancy) FROM country WHERE Name NOT IN (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T')"}
+{"question_id": "spider_realistic_392", "pick": "A"}
+{"question_id": "spider_realistic_393", "pick": "B"}
+{"question_id": "spider_realistic_394", "pick": "A"}
+{"question_id": "spider_realistic_395", "pick": "A"}
+{"question_id": "spider_realistic_396", "pick": "A"}
+{"question_id": "spider_realistic_398", "pick": "A"}
+{"question_id": "spider_realistic_399", "pick": "A"}
+{"question_id": "spider_realistic_400", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Africa' AND Population < (SELECT MIN(Population) FROM country WHERE Continent = 'Asia')"}
+{"question_id": "spider_realistic_401", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Africa' AND Population < (SELECT MIN(Population) FROM country WHERE Continent = 'Asia')"}
+{"question_id": "spider_realistic_402", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' AND Population > (SELECT MAX(Population) FROM country WHERE Continent = 'Africa')"}
+{"question_id": "spider_realistic_403", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Asia' AND Population > (SELECT MAX(Population) FROM country WHERE Continent = 'Africa')"}

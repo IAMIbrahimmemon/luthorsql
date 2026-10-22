@@ -1,0 +1,13 @@
+{"question_id": "kaggledbqa_test_107", "sql": "SELECT award_id, name_first, name_last FROM (SELECT T1.award_id, T2.name_first, T2.name_last, max(T1.year - cast(T2.birth_year as real)) FROM player_award T1 JOIN player T2 ON T1.player_id = T2.player_id WHERE T2.birth_year != '' GROUP BY T1.award_id)"}
+{"question_id": "kaggledbqa_test_108", "sql": "SELECT T2.team_id FROM hall_of_fame T1 JOIN salary T2 ON T1.player_id = T2.player_id GROUP BY T2.team_id ORDER BY count(*) DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_109", "sql": "SELECT avg(cast(T1.death_year as real) - cast(T1.birth_year as real)) FROM player T1 JOIN hall_of_fame T2 ON T1.player_id = T2.player_id WHERE T1.death_year != '' AND T1.birth_year != ''"}
+{"question_id": "kaggledbqa_test_110", "sql": "SELECT T1.notes, avg(T2.weight) FROM player_award T1 JOIN player T2 ON T1.player_id = T2.player_id GROUP BY T1.notes"}
+{"question_id": "kaggledbqa_test_111", "sql": "SELECT T1.notes FROM player_award T1 JOIN hall_of_fame T2 ON T1.player_id = T2.player_id WHERE T1.notes != '' GROUP BY T1.notes ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_112", "sql": "SELECT player_id FROM player_award_vote WHERE year = 1971 ORDER BY points_won DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_113", "sql": "SELECT p.birth_month FROM player p LEFT JOIN hall_of_fame h ON p.player_id = h.player_id AND h.inducted = 'Y' WHERE p.birth_month != '' GROUP BY p.birth_month ORDER BY cast(count(DISTINCT h.player_id) as real) / count(DISTINCT p.player_id) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_114", "sql": "SELECT league_id FROM player_award WHERE year = 2006 GROUP BY league_id ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_115", "sql": "SELECT DISTINCT notes FROM player_award WHERE player_id = 'willite01' AND notes != ''"}
+{"question_id": "kaggledbqa_test_116", "sql": "SELECT count(*) FROM (SELECT player_id FROM player_award GROUP BY player_id HAVING count(*) > 10)"}
+{"question_id": "kaggledbqa_test_117", "sql": "SELECT birth_city FROM player WHERE birth_city != '' GROUP BY birth_city ORDER BY count(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_118", "sql": "SELECT avg(T2.weight) FROM player_award T1 JOIN player T2 ON T1.player_id = T2.player_id WHERE T1.award_id = 'TSN All-Star' AND T1.notes = '3B'"}
+{"question_id": "kaggledbqa_test_119", "sql": "SELECT player_id FROM salary WHERE year = 2015 ORDER BY salary DESC LIMIT 1"}

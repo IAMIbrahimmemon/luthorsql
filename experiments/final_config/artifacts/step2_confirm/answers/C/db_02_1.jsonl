@@ -1,0 +1,10 @@
+{"question_id": "q866", "pick": "NONE", "sql": "SELECT t1.given, t1.family FROM learner AS t1 INNER JOIN enrollment AS t2 ON t1.learner_id = t2.learner_id INNER JOIN module AS t3 ON t2.module_id = t3.module_id WHERE ((t1.given = 'Willie' AND t1.family = 'Rechert') OR (t1.given = 'Laughton' AND t1.family = 'Antonio')) AND t3.title = 'Machine Learning Theory' ORDER BY t2.score DESC LIMIT 1"}
+{"question_id": "q872", "pick": "A"}
+{"question_id": "q876", "pick": "A"}
+{"question_id": "q889", "pick": "A"}
+{"question_id": "q902", "pick": "B"}
+{"question_id": "q907", "pick": "A"}
+{"question_id": "q923", "pick": "C"}
+{"question_id": "q933", "pick": "A"}
+{"question_id": "q962", "pick": "A"}
+{"question_id": "q963", "pick": "A"}

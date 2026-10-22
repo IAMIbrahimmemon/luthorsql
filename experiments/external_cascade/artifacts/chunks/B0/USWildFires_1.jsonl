@@ -1,0 +1,25 @@
+{"question_id": "kaggledbqa_test_120", "db_id": "USWildFires", "question": "Show all fires caused by campfires in Texas.", "evidence": ""}
+{"question_id": "kaggledbqa_test_121", "db_id": "USWildFires", "question": "Who was responsible for the land of the biggest fire in Oregon in 2015?", "evidence": ""}
+{"question_id": "kaggledbqa_test_122", "db_id": "USWildFires", "question": "Which counties in Washington had fires in 2012?", "evidence": ""}
+{"question_id": "kaggledbqa_test_123", "db_id": "USWildFires", "question": "How many arson-related fires were there in 2010?", "evidence": ""}
+{"question_id": "kaggledbqa_test_124", "db_id": "USWildFires", "question": "How many years of data are recorded in this database?", "evidence": ""}
+{"question_id": "kaggledbqa_test_125", "db_id": "USWildFires", "question": "Average date of year that fire was discovered from 2000~2004?", "evidence": ""}
+{"question_id": "kaggledbqa_test_126", "db_id": "USWildFires", "question": "What\u2019s the most common cause of the fire (code) in the database?", "evidence": ""}
+{"question_id": "kaggledbqa_test_127", "db_id": "USWildFires", "question": "What\u2019s the year that have the largest acres in the fire area?", "evidence": ""}
+{"question_id": "kaggledbqa_test_128", "db_id": "USWildFires", "question": "How many missing / not specified name of the owner are there in the database?", "evidence": ""}
+{"question_id": "kaggledbqa_test_129", "db_id": "USWildFires", "question": "What\u2019s the county that contains most recorded burns in 2000 according to the database?", "evidence": ""}
+{"question_id": "kaggledbqa_test_130", "db_id": "USWildFires", "question": "How many distinct cause of the fire descriptions are there in the database?", "evidence": ""}
+{"question_id": "kaggledbqa_test_131", "db_id": "USWildFires", "question": "Sum of the acres burned in NC state in 2006?", "evidence": ""}
+{"question_id": "kaggledbqa_test_132", "db_id": "USWildFires", "question": "What was the cause of the largest wildfire in Utah in the year 1997?", "evidence": ""}
+{"question_id": "kaggledbqa_test_133", "db_id": "USWildFires", "question": "How many wildfires in Gloucester county have been larger than 10 acres?", "evidence": ""}
+{"question_id": "kaggledbqa_test_134", "db_id": "USWildFires", "question": "Which state experiences the most wildfires?", "evidence": ""}
+{"question_id": "kaggledbqa_test_135", "db_id": "USWildFires", "question": "What is the leading cause of wildfires?", "evidence": ""}
+{"question_id": "kaggledbqa_test_136", "db_id": "USWildFires", "question": "On what type of land (public or private) do more wildfires occur?", "evidence": ""}
+{"question_id": "kaggledbqa_test_137", "db_id": "USWildFires", "question": "In 2014, how many wildfires were the result of mismanaged campfires?", "evidence": ""}
+{"question_id": "kaggledbqa_test_138", "db_id": "USWildFires", "question": "How many total acres of land in Texas have seen a wildfire in the decade between 2000-2010?", "evidence": ""}
+{"question_id": "kaggledbqa_test_139", "db_id": "USWildFires", "question": "Which state has the most number of fires being recorded?", "evidence": ""}
+{"question_id": "kaggledbqa_test_140", "db_id": "USWildFires", "question": "What is the most common reason that causes a fire?", "evidence": ""}
+{"question_id": "kaggledbqa_test_141", "db_id": "USWildFires", "question": "What is the total area that has been burned until now?", "evidence": ""}
+{"question_id": "kaggledbqa_test_142", "db_id": "USWildFires", "question": "How many acres burned in 2000s and 1990s?", "evidence": ""}
+{"question_id": "kaggledbqa_test_143", "db_id": "USWildFires", "question": "How many fire cases occur on the land without any owner?", "evidence": ""}
+{"question_id": "kaggledbqa_test_144", "db_id": "USWildFires", "question": "What is the latitudinal band that is most likely to experience wildfires in the USA?", "evidence": ""}

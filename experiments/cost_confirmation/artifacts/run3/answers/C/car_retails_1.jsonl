@@ -1,0 +1,23 @@
+{"question_id": "bird_train_train_1553", "pick": "B"}
+{"question_id": "bird_train_train_1554", "pick": "NONE", "sql": "SELECT (SELECT COUNT(customerNumber) FROM customers WHERE creditLimit <= 100000 AND customerNumber IN (SELECT customerNumber FROM payments WHERE STRFTIME('%Y', paymentDate) = '2004')), T1.customerName FROM customers AS T1 INNER JOIN payments AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.creditLimit <= 100000 AND STRFTIME('%Y', T2.paymentDate) = '2004' GROUP BY T1.customerNumber, T1.customerName ORDER BY SUM(T2.amount) DESC LIMIT 1"}
+{"question_id": "bird_train_train_1555", "pick": "A"}
+{"question_id": "bird_train_train_1557", "pick": "A"}
+{"question_id": "bird_train_train_1558", "pick": "A"}
+{"question_id": "bird_train_train_1562", "pick": "NONE", "sql": "SELECT COUNT(T2.productCode) FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode WHERE T1.MSRP - T1.buyPrice > 100"}
+{"question_id": "bird_train_train_1567", "pick": "NONE", "sql": "SELECT SUM(amount) FROM payments WHERE STRFTIME('%Y', paymentDate) = '2003' AND customerNumber IN (SELECT customerNumber FROM customers WHERE creditLimit = 0)"}
+{"question_id": "bird_train_train_1569", "pick": "NONE", "sql": "SELECT COUNT(T2.country) FROM orders AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.status = 'Shipped' AND T2.country = 'France' GROUP BY T2.customerNumber HAVING COUNT(T1.status) = 2"}
+{"question_id": "bird_train_train_1575", "pick": "NONE", "sql": "SELECT T1.email FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.city = 'Sydney' AND T1.jobTitle LIKE '%Sales Manager%'"}
+{"question_id": "bird_train_train_1579", "pick": "A"}
+{"question_id": "bird_train_train_1580", "pick": "A"}
+{"question_id": "bird_train_train_1591", "pick": "A"}
+{"question_id": "bird_train_train_1593", "pick": "A"}
+{"question_id": "bird_train_train_1594", "pick": "NONE", "sql": "SELECT T2.productName, T1.quantityOrdered * T1.priceEach FROM orderdetails AS T1 INNER JOIN products AS T2 ON T1.productCode = T2.productCode INNER JOIN orders AS T3 ON T1.orderNumber = T3.orderNumber INNER JOIN customers AS T4 ON T3.customerNumber = T4.customerNumber INNER JOIN employees AS T5 ON T4.salesRepEmployeeNumber = T5.employeeNumber INNER JOIN offices AS T6 ON T5.officeCode = T6.officeCode WHERE T6.city = 'Boston' AND T5.jobTitle = 'Sales Rep' ORDER BY T1.quantityOrdered * T1.priceEach DESC LIMIT 1"}
+{"question_id": "bird_train_train_1597", "pick": "NONE", "sql": "SELECT phone FROM customers WHERE contactLastName LIKE 'M%' AND country != 'Germany'"}
+{"question_id": "bird_train_train_1598", "pick": "NONE", "sql": "SELECT AVG(amount) FROM payments WHERE paymentDate >= '2004-01-01' AND paymentDate < '2004-07-01'"}
+{"question_id": "bird_train_train_1602", "pick": "B"}
+{"question_id": "bird_train_train_1622", "pick": "NONE", "sql": "SELECT (T1.MSRP - T2.priceEach) / T1.MSRP FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode WHERE T1.productCode = 'S18_3482' AND T2.orderNumber = 10108"}
+{"question_id": "bird_train_train_1627", "pick": "A"}
+{"question_id": "bird_train_train_1637", "pick": "NONE", "sql": "SELECT COUNT(T2.customerNumber) / 12 FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber INNER JOIN products AS T3 ON T1.productCode = T3.productCode WHERE T3.productName = '1957 Chevy Pickup'"}
+{"question_id": "bird_train_train_1644", "pick": "A"}
+{"question_id": "bird_train_train_1653", "pick": "A"}
+{"question_id": "bird_train_train_1661", "pick": "B"}

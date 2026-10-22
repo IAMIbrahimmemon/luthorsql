@@ -1,0 +1,18 @@
+{"question_id": "kaggledbqa_test_22", "db_id": "GreaterManchesterCrime", "question": "What time do most of the crimes happen?", "evidence": ""}
+{"question_id": "kaggledbqa_test_23", "db_id": "GreaterManchesterCrime", "question": "What are the most likely outcome of the police investigation if the crime happen on \"street\"?", "evidence": ""}
+{"question_id": "kaggledbqa_test_24", "db_id": "GreaterManchesterCrime", "question": "Which type of crime happen the most in Salford?", "evidence": ""}
+{"question_id": "kaggledbqa_test_25", "db_id": "GreaterManchesterCrime", "question": "How many crimes are under investigation?", "evidence": ""}
+{"question_id": "kaggledbqa_test_26", "db_id": "GreaterManchesterCrime", "question": "How many crimes has been conducted?", "evidence": ""}
+{"question_id": "kaggledbqa_test_27", "db_id": "GreaterManchesterCrime", "question": "What is the top 3 area of crime conducted?", "evidence": ""}
+{"question_id": "kaggledbqa_test_28", "db_id": "GreaterManchesterCrime", "question": "Which type of crime has the highest rate of \"Investigation complete\"?", "evidence": ""}
+{"question_id": "kaggledbqa_test_29", "db_id": "GreaterManchesterCrime", "question": "How many crimes were classified as \"Drugs\"?", "evidence": ""}
+{"question_id": "kaggledbqa_test_30", "db_id": "GreaterManchesterCrime", "question": "How many crimes are still \"Under investigation\" to date?", "evidence": ""}
+{"question_id": "kaggledbqa_test_31", "db_id": "GreaterManchesterCrime", "question": "Which location has the top amount of \"Drugs\" crime conducted?", "evidence": ""}
+{"question_id": "kaggledbqa_test_32", "db_id": "GreaterManchesterCrime", "question": "What\u2019s the most common type of crime?", "evidence": ""}
+{"question_id": "kaggledbqa_test_33", "db_id": "GreaterManchesterCrime", "question": "Where is the most dangerous area?", "evidence": ""}
+{"question_id": "kaggledbqa_test_34", "db_id": "GreaterManchesterCrime", "question": "Where is the safest area?", "evidence": ""}
+{"question_id": "kaggledbqa_test_35", "db_id": "GreaterManchesterCrime", "question": "Where is the place with the largest number of sexual offenses crime events?", "evidence": ""}
+{"question_id": "kaggledbqa_test_36", "db_id": "GreaterManchesterCrime", "question": "If it is possible to increase the number of police officers, which place is with the first priority?", "evidence": ""}
+{"question_id": "kaggledbqa_test_37", "db_id": "GreaterManchesterCrime", "question": "Which type of crime has the most prosecution cases?", "evidence": ""}
+{"question_id": "kaggledbqa_test_38", "db_id": "GreaterManchesterCrime", "question": "Which type of crime has the most investigation complete cases?", "evidence": ""}
+{"question_id": "kaggledbqa_test_39", "db_id": "GreaterManchesterCrime", "question": "What is the result in case 6B:E2:54:C6:58:D2?", "evidence": ""}

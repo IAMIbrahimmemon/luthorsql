@@ -1,0 +1,7 @@
+{"question_id": "spider_realistic_437", "sql": "SELECT Name FROM conductor ORDER BY Age ASC"}
+{"question_id": "spider_realistic_438", "sql": "SELECT Name FROM conductor ORDER BY Age ASC"}
+{"question_id": "spider_realistic_439", "sql": "SELECT Name FROM conductor WHERE Nationality != 'USA'"}
+{"question_id": "spider_realistic_440", "sql": "SELECT Name FROM conductor WHERE Nationality != 'USA'"}
+{"question_id": "spider_realistic_441", "sql": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC"}
+{"question_id": "spider_realistic_442", "sql": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC"}
+{"question_id": "spider_realistic_443", "sql": "SELECT COUNT(*) FROM orchestra WHERE Major_Record_Format = 'CD' OR Major_Record_Format = 'DVD'"}

@@ -1,0 +1,17 @@
+{"question_id": "bird_train_train_909", "sql": "SELECT course_id, student_id FROM registration WHERE grade IS NULL OR grade = ''"}
+{"question_id": "bird_train_train_910", "sql": "SELECT CAST(SUM(CASE WHEN gender = 'Male' THEN 1 ELSE 0 END) AS REAL) / SUM(CASE WHEN gender = 'Female' THEN 1 ELSE 0 END) FROM prof"}
+{"question_id": "bird_train_train_914", "sql": "SELECT s.f_name, s.l_name, r.capability, s.gpa FROM RA r JOIN prof p ON r.prof_id = p.prof_id JOIN student s ON s.student_id = r.student_id WHERE p.first_name = 'Merwyn' AND p.last_name = 'Conkay'"}
+{"question_id": "bird_train_train_921", "sql": "SELECT s.f_name, s.l_name, r.capability FROM RA r JOIN prof p ON r.prof_id = p.prof_id JOIN student s ON s.student_id = r.student_id WHERE p.graduate_from = 'University of Washington'"}
+{"question_id": "bird_train_train_923", "sql": "SELECT c.name, c.credit FROM RA r JOIN prof p ON r.prof_id = p.prof_id JOIN registration g ON g.student_id = r.student_id JOIN course c ON c.course_id = g.course_id WHERE p.gender = 'Female' AND p.teachingability = (SELECT MAX(teachingability) FROM prof WHERE gender = 'Female')"}
+{"question_id": "bird_train_train_932", "sql": "SELECT r.capability FROM RA r JOIN student s ON s.student_id = r.student_id WHERE s.type = 'RPG' AND s.intelligence >= 4"}
+{"question_id": "bird_train_train_933", "sql": "SELECT COUNT(s.student_id) FROM registration g JOIN student s ON s.student_id = g.student_id WHERE g.grade = 'B' AND s.intelligence = 3"}
+{"question_id": "bird_train_train_936", "sql": "SELECT c.name FROM registration g JOIN course c ON c.course_id = g.course_id WHERE g.grade = 'D'"}
+{"question_id": "bird_train_train_939", "sql": "SELECT COUNT(r.student_id) FROM RA r JOIN student s ON s.student_id = r.student_id WHERE r.salary = 'low' AND s.gpa = 3.5"}
+{"question_id": "bird_train_train_944", "sql": "SELECT CAST(SUM(sat) AS REAL) / COUNT(course_id) FROM registration WHERE grade = 'B'"}
+{"question_id": "bird_train_train_947", "sql": "SELECT s.f_name, s.l_name, c.name FROM student s JOIN registration g ON g.student_id = s.student_id JOIN course c ON c.course_id = g.course_id WHERE s.intelligence = 5 AND s.gpa < 3"}
+{"question_id": "bird_train_train_948", "sql": "SELECT AVG(r.capability) FROM RA r JOIN student s ON s.student_id = r.student_id WHERE s.gpa < 2.5"}
+{"question_id": "bird_train_train_951", "sql": "SELECT s.f_name, s.l_name, r.capability FROM student s JOIN RA r ON r.student_id = s.student_id JOIN registration g ON g.student_id = s.student_id WHERE g.grade IS NULL"}
+{"question_id": "bird_train_train_960", "sql": "SELECT COUNT(r.student_id) FROM RA r JOIN prof p ON r.prof_id = p.prof_id WHERE r.salary = 'high' AND p.teachingability = (SELECT MAX(teachingability) FROM prof)"}
+{"question_id": "bird_train_train_962", "sql": "SELECT COUNT(s.student_id) FROM student s JOIN registration g ON g.student_id = s.student_id JOIN course c ON c.course_id = g.course_id WHERE c.name = 'Statistical Learning' AND g.sat = 4 AND s.gpa = 3.8"}
+{"question_id": "bird_train_train_963", "sql": "SELECT COUNT(s.student_id) FROM registration g JOIN course c ON c.course_id = g.course_id JOIN student s ON s.student_id = g.student_id WHERE c.diff = 3 AND s.intelligence = 2"}
+{"question_id": "bird_train_train_966", "sql": "SELECT SUM(CASE WHEN s.type = 'UG' THEN 1 ELSE 0 END) - SUM(CASE WHEN s.type = 'RPG' THEN 1 ELSE 0 END) FROM RA r JOIN student s ON s.student_id = r.student_id WHERE r.capability < 3"}

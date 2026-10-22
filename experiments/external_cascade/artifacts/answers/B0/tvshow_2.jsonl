@@ -1,0 +1,24 @@
+{"question_id": "spider_realistic_296", "sql": "SELECT Weekly_Rank FROM TV_series WHERE Episode = 'A Love of a Lifetime'"}
+{"question_id": "spider_realistic_297", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T2.Episode = 'A Love of a Lifetime'"}
+{"question_id": "spider_realistic_298", "sql": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T2.Episode = 'A Love of a Lifetime'"}
+{"question_id": "spider_realistic_299", "sql": "SELECT T2.Episode FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_300", "sql": "SELECT T2.Episode FROM TV_Channel AS T1 JOIN TV_series AS T2 ON T1.id = T2.Channel WHERE T1.series_name = 'Sky Radio'"}
+{"question_id": "spider_realistic_301", "sql": "SELECT count(*), Directed_by FROM Cartoon GROUP BY Directed_by"}
+{"question_id": "spider_realistic_302", "sql": "SELECT count(*), Directed_by FROM Cartoon GROUP BY Directed_by"}
+{"question_id": "spider_realistic_303", "sql": "SELECT Production_code, Channel FROM Cartoon ORDER BY Original_air_date DESC LIMIT 1"}
+{"question_id": "spider_realistic_304", "sql": "SELECT Production_code, Channel FROM Cartoon ORDER BY Original_air_date DESC LIMIT 1"}
+{"question_id": "spider_realistic_305", "sql": "SELECT Package_Option, series_name FROM TV_Channel WHERE Hight_definition_TV = 'yes'"}
+{"question_id": "spider_realistic_306", "sql": "SELECT Package_Option, series_name FROM TV_Channel WHERE Hight_definition_TV = 'yes'"}
+{"question_id": "spider_realistic_307", "sql": "SELECT T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Written_by = 'Todd Casey'"}
+{"question_id": "spider_realistic_308", "sql": "SELECT T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Written_by = 'Todd Casey'"}
+{"question_id": "spider_realistic_309", "sql": "SELECT Country FROM TV_Channel EXCEPT SELECT T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Written_by = 'Todd Casey'"}
+{"question_id": "spider_realistic_310", "sql": "SELECT Country FROM TV_Channel EXCEPT SELECT T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Written_by = 'Todd Casey'"}
+{"question_id": "spider_realistic_311", "sql": "SELECT T1.series_name, T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name, T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Directed_by = 'Ben Jones'"}
+{"question_id": "spider_realistic_312", "sql": "SELECT T1.series_name, T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name, T1.Country FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Directed_by = 'Ben Jones'"}
+{"question_id": "spider_realistic_313", "sql": "SELECT Pixel_aspect_ratio_PAR, Country FROM TV_Channel WHERE Language != 'English'"}
+{"question_id": "spider_realistic_314", "sql": "SELECT Pixel_aspect_ratio_PAR, Country FROM TV_Channel WHERE Language != 'English'"}
+{"question_id": "spider_realistic_315", "sql": "SELECT id FROM TV_Channel GROUP BY Country HAVING count(*) > 2"}
+{"question_id": "spider_realistic_316", "sql": "SELECT id FROM TV_Channel EXCEPT SELECT Channel FROM Cartoon WHERE Directed_by = 'Ben Jones'"}
+{"question_id": "spider_realistic_317", "sql": "SELECT id FROM TV_Channel EXCEPT SELECT Channel FROM Cartoon WHERE Directed_by = 'Ben Jones'"}
+{"question_id": "spider_realistic_318", "sql": "SELECT Package_Option FROM TV_Channel WHERE id NOT IN (SELECT Channel FROM Cartoon WHERE Directed_by = 'Ben Jones')"}
+{"question_id": "spider_realistic_319", "sql": "SELECT Package_Option FROM TV_Channel WHERE id NOT IN (SELECT Channel FROM Cartoon WHERE Directed_by = 'Ben Jones')"}

@@ -1,0 +1,19 @@
+{"question_id": "q1250", "pick": "A"}
+{"question_id": "q1261", "pick": "A"}
+{"question_id": "q1265", "pick": "A"}
+{"question_id": "q1269", "pick": "A"}
+{"question_id": "q1283", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN r.type = 'Cast' THEN 1 ELSE 0 END) AS REAL) / COUNT(i.installment_ref) FROM installment AS i INNER JOIN recognition AS r ON i.installment_ref = r.installment_ref WHERE i.franchise = 'Law and Order'"}
+{"question_id": "q1284", "pick": "A"}
+{"question_id": "q1290", "pick": "A"}
+{"question_id": "q1297", "pick": "A"}
+{"question_id": "q1301", "pick": "A"}
+{"question_id": "q1308", "pick": "NONE", "sql": "SELECT DISTINCT T1.natal_zone FROM individual AS T1 INNER JOIN recognition AS T2 ON T1.individual_ref = T2.individual_ref WHERE T2.capacity = 'assistant location manager'"}
+{"question_id": "q1319", "pick": "A"}
+{"question_id": "q1321", "pick": "A"}
+{"question_id": "q1323", "pick": "NONE", "sql": "SELECT COUNT(T1.accolade_ref) FROM accolade AS T1 INNER JOIN installment AS T2 ON T1.installment_ref = T2.installment_ref WHERE T1.annum = 1999 AND T1.body = 'Primetime Emmy Awards' AND T1.outcome = 'Nominee' AND T2.franchise = 'Law and Order' AND T2.installment_ordinal = 20"}
+{"question_id": "q1324", "pick": "A"}
+{"question_id": "q1330", "pick": "NONE", "sql": "SELECT CAST(SUM(CASE WHEN T2.natal_nation = 'USA' THEN 1 ELSE 0 END) AS REAL) / COUNT(T1.individual_ref), T1.capacity FROM recognition AS T1 INNER JOIN individual AS T2 ON T1.individual_ref = T2.individual_ref INNER JOIN installment AS T3 ON T1.installment_ref = T3.installment_ref WHERE T3.installment_ordinal = 2 AND T1.type = 'Cast'"}
+{"question_id": "q1333", "pick": "A"}
+{"question_id": "q1342", "pick": "A"}
+{"question_id": "q1346", "pick": "A"}
+{"question_id": "q1353", "pick": "A"}

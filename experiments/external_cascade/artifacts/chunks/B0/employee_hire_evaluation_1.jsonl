@@ -1,0 +1,20 @@
+{"question_id": "spider_realistic_169", "db_id": "employee_hire_evaluation", "question": "Sort employee names from youngest to oldest.", "evidence": ""}
+{"question_id": "spider_realistic_170", "db_id": "employee_hire_evaluation", "question": "List the names of employees and sort from youngest to oldest", "evidence": ""}
+{"question_id": "spider_realistic_171", "db_id": "employee_hire_evaluation", "question": "Which cities do more than one employee younger than 30 come from?", "evidence": ""}
+{"question_id": "spider_realistic_172", "db_id": "employee_hire_evaluation", "question": "Find the cities that have more than one employee under  30 year old.", "evidence": ""}
+{"question_id": "spider_realistic_173", "db_id": "employee_hire_evaluation", "question": "Find the number of shops in each place.", "evidence": ""}
+{"question_id": "spider_realistic_174", "db_id": "employee_hire_evaluation", "question": "How many shops are there in each place?", "evidence": ""}
+{"question_id": "spider_realistic_175", "db_id": "employee_hire_evaluation", "question": "Find the manager name and district of the shop with the most goods.", "evidence": ""}
+{"question_id": "spider_realistic_176", "db_id": "employee_hire_evaluation", "question": "What are the manager name and district of the shop that sells the most merchandise?", "evidence": ""}
+{"question_id": "spider_realistic_177", "db_id": "employee_hire_evaluation", "question": "Return the name, location and district of all shops odered by the amount of goods they sell from the most to the least.", "evidence": ""}
+{"question_id": "spider_realistic_178", "db_id": "employee_hire_evaluation", "question": "Sort all the shops by amount of merchandise in descending order, and return the name, location and district of each shop.", "evidence": ""}
+{"question_id": "spider_realistic_179", "db_id": "employee_hire_evaluation", "question": "Find the names of stores that have more than average goods.", "evidence": ""}
+{"question_id": "spider_realistic_180", "db_id": "employee_hire_evaluation", "question": "Which shops have more than average merchandise? Give me the shop names.", "evidence": ""}
+{"question_id": "spider_realistic_181", "db_id": "employee_hire_evaluation", "question": "Find the name of the employee who got the highest one time incentive.", "evidence": ""}
+{"question_id": "spider_realistic_182", "db_id": "employee_hire_evaluation", "question": "Which employee received the biggest incentive? Give me the employee name.", "evidence": ""}
+{"question_id": "spider_realistic_183", "db_id": "employee_hire_evaluation", "question": "What is the name of the shop that is recruiting the largest number of employees?", "evidence": ""}
+{"question_id": "spider_realistic_184", "db_id": "employee_hire_evaluation", "question": "Which shop has the most employees? Give me the shop name.", "evidence": ""}
+{"question_id": "spider_realistic_185", "db_id": "employee_hire_evaluation", "question": "Find the name of the shops that do not recruit any employee.", "evidence": ""}
+{"question_id": "spider_realistic_186", "db_id": "employee_hire_evaluation", "question": "Which shops run with no employees? Find the shop names", "evidence": ""}
+{"question_id": "spider_realistic_187", "db_id": "employee_hire_evaluation", "question": "Which district has both stores with less than 3000 goods and stores with more than 10000 goods?", "evidence": ""}
+{"question_id": "spider_realistic_188", "db_id": "employee_hire_evaluation", "question": "Find the districts in which there are both shops selling less than 3000 and more than 10000 merchandise.", "evidence": ""}

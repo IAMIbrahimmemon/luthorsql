@@ -1,0 +1,1025 @@
+{
+ "C": {
+  "USWildFires_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 78192,
+   "cache_read_input_tokens": 347148,
+   "output_tokens": 78,
+   "output_est": 957,
+   "seconds": 35.786,
+   "dollars_opus55_list": 0.479578
+  },
+  "Pesticide_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 81874,
+   "cache_read_input_tokens": 508207,
+   "output_tokens": 84,
+   "output_est": 1581,
+   "seconds": 66.395,
+   "dollars_opus55_list": 0.542695
+  },
+  "GreaterManchesterCrime_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 65054,
+   "cache_read_input_tokens": 174300,
+   "output_tokens": 64,
+   "output_est": 443,
+   "seconds": 16.867,
+   "dollars_opus55_list": 0.369022
+  },
+  "poker_player_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 40559,
+   "cache_read_input_tokens": 122054,
+   "output_tokens": 44,
+   "output_est": 150,
+   "seconds": 9.445,
+   "dollars_opus55_list": 0.23023
+  },
+  "flight_2_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 46724,
+   "cache_read_input_tokens": 250843,
+   "output_tokens": 63,
+   "output_est": 569,
+   "seconds": 30.479,
+   "dollars_opus55_list": 0.295209
+  },
+  "GeoNuclearData_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 66433,
+   "cache_read_input_tokens": 241181,
+   "output_tokens": 80,
+   "output_est": 582,
+   "seconds": 26.704,
+   "dollars_opus55_list": 0.392081
+  },
+  "battle_death_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 44167,
+   "cache_read_input_tokens": 184036,
+   "output_tokens": 52,
+   "output_est": 523,
+   "seconds": 20.502,
+   "dollars_opus55_list": 0.268134
+  },
+  "wta_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 56591,
+   "cache_read_input_tokens": 210019,
+   "output_tokens": 64,
+   "output_est": 603,
+   "seconds": 19.37,
+   "dollars_opus55_list": 0.337051
+  },
+  "TheHistoryofBaseball_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 78431,
+   "cache_read_input_tokens": 473852,
+   "output_tokens": 90,
+   "output_est": 1657,
+   "seconds": 63.006,
+   "dollars_opus55_list": 0.520129
+  },
+  "WhatCDHipHop_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 57787,
+   "cache_read_input_tokens": 267339,
+   "output_tokens": 65,
+   "output_est": 919,
+   "seconds": 34.336,
+   "dollars_opus55_list": 0.360823
+  },
+  "dog_kennels_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 46062,
+   "cache_read_input_tokens": 251151,
+   "output_tokens": 57,
+   "output_est": 777,
+   "seconds": 20.889,
+   "dollars_opus55_list": 0.29612
+  },
+  "WorldSoccerDataBase_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 45499,
+   "cache_read_input_tokens": 248946,
+   "output_tokens": 61,
+   "output_est": 468,
+   "seconds": 18.898,
+   "dollars_opus55_list": 0.286684
+  },
+  "tvshow_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 55084,
+   "cache_read_input_tokens": 192885,
+   "output_tokens": 61,
+   "output_est": 521,
+   "seconds": 19.852,
+   "dollars_opus55_list": 0.324449
+  },
+  "world_1_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 65301,
+   "cache_read_input_tokens": 418929,
+   "output_tokens": 209,
+   "output_est": 1803,
+   "seconds": 50.262,
+   "dollars_opus55_list": 0.446407
+  },
+  "voter_1_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 40878,
+   "cache_read_input_tokens": 122352,
+   "output_tokens": 46,
+   "output_est": 143,
+   "seconds": 8.744,
+   "dollars_opus55_list": 0.231744
+  },
+  "museum_visit_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 48029,
+   "cache_read_input_tokens": 191380,
+   "output_tokens": 56,
+   "output_est": 332,
+   "seconds": 14.018,
+   "dollars_opus55_list": 0.285093
+  },
+  "network_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 48102,
+   "cache_read_input_tokens": 194022,
+   "output_tokens": 61,
+   "output_est": 373,
+   "seconds": 14.976,
+   "dollars_opus55_list": 0.286806
+  },
+  "world_1_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 54907,
+   "cache_read_input_tokens": 264515,
+   "output_tokens": 79,
+   "output_est": 541,
+   "seconds": 19.191,
+   "dollars_opus55_list": 0.338298
+  },
+  "course_teach_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 44359,
+   "cache_read_input_tokens": 186618,
+   "output_tokens": 46,
+   "output_est": 329,
+   "seconds": 13.733,
+   "dollars_opus55_list": 0.265731
+  },
+  "car_1_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 59268,
+   "cache_read_input_tokens": 271089,
+   "output_tokens": 80,
+   "output_est": 956,
+   "seconds": 33.334,
+   "dollars_opus55_list": 0.369718
+  },
+  "world_1_3": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 61718,
+   "cache_read_input_tokens": 334502,
+   "output_tokens": 206,
+   "output_est": 917,
+   "seconds": 43.428,
+   "dollars_opus55_list": 0.393878
+  },
+  "pets_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 48281,
+   "cache_read_input_tokens": 194242,
+   "output_tokens": 61,
+   "output_est": 456,
+   "seconds": 15.278,
+   "dollars_opus55_list": 0.289405
+  },
+  "StudentMathScore_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 73439,
+   "cache_read_input_tokens": 461227,
+   "output_tokens": 107,
+   "output_est": 1504,
+   "seconds": 53.533,
+   "dollars_opus55_list": 0.489584
+  },
+  "car_1_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 69606,
+   "cache_read_input_tokens": 578545,
+   "output_tokens": 75,
+   "output_est": 908,
+   "seconds": 55.052,
+   "dollars_opus55_list": 0.481971
+  },
+  "flight_2_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 47833,
+   "cache_read_input_tokens": 192440,
+   "output_tokens": 52,
+   "output_est": 379,
+   "seconds": 19.711,
+   "dollars_opus55_list": 0.285265
+  },
+  "singer_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 45198,
+   "cache_read_input_tokens": 126461,
+   "output_tokens": 48,
+   "output_est": 241,
+   "seconds": 10.386,
+   "dollars_opus55_list": 0.256126
+  },
+  "student_transcripts_tracking_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 47500,
+   "cache_read_input_tokens": 191396,
+   "output_tokens": 64,
+   "output_est": 771,
+   "seconds": 20.581,
+   "dollars_opus55_list": 0.291231
+  },
+  "concert_singer_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 51634,
+   "cache_read_input_tokens": 258447,
+   "output_tokens": 61,
+   "output_est": 535,
+   "seconds": 19.194,
+   "dollars_opus55_list": 0.320599
+  },
+  "employee_hire_evaluation_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 42951,
+   "cache_read_input_tokens": 184224,
+   "output_tokens": 73,
+   "output_est": 350,
+   "seconds": 12.692,
+   "dollars_opus55_list": 0.258632
+  }
+ },
+ "B0": {
+  "student_transcripts_tracking_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 46188,
+   "cache_read_input_tokens": 248705,
+   "output_tokens": 78,
+   "output_est": 1206,
+   "seconds": 29.577,
+   "dollars_opus55_list": 0.304841
+  },
+  "flight_2_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 42982,
+   "cache_read_input_tokens": 181042,
+   "output_tokens": 48,
+   "output_est": 823,
+   "seconds": 25.502,
+   "dollars_opus55_list": 0.26761
+  },
+  "employee_hire_evaluation_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43293,
+   "cache_read_input_tokens": 182367,
+   "output_tokens": 63,
+   "output_est": 846,
+   "seconds": 21.967,
+   "dollars_opus55_list": 0.26989
+  },
+  "WhatCDHipHop_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 42796,
+   "cache_read_input_tokens": 181260,
+   "output_tokens": 45,
+   "output_est": 736,
+   "seconds": 23.02,
+   "dollars_opus55_list": 0.264984
+  },
+  "flight_2_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43254,
+   "cache_read_input_tokens": 181089,
+   "output_tokens": 26,
+   "output_est": 1063,
+   "seconds": 27.326,
+   "dollars_opus55_list": 0.27378
+  },
+  "car_1_3": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 44965,
+   "cache_read_input_tokens": 243751,
+   "output_tokens": 59,
+   "output_est": 979,
+   "seconds": 35.155,
+   "dollars_opus55_list": 0.293195
+  },
+  "world_1_3": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 44225,
+   "cache_read_input_tokens": 183629,
+   "output_tokens": 52,
+   "output_est": 803,
+   "seconds": 27.072,
+   "dollars_opus55_list": 0.273943
+  },
+  "museum_visit_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 44158,
+   "cache_read_input_tokens": 299336,
+   "output_tokens": 90,
+   "output_est": 1139,
+   "seconds": 34.231,
+   "dollars_opus55_list": 0.303485
+  },
+  "voter_1_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 40694,
+   "cache_read_input_tokens": 121408,
+   "output_tokens": 44,
+   "output_est": 453,
+   "seconds": 13.472,
+   "dollars_opus55_list": 0.236836
+  },
+  "course_teach_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 40588,
+   "cache_read_input_tokens": 121979,
+   "output_tokens": 30,
+   "output_est": 612,
+   "seconds": 15.652,
+   "dollars_opus55_list": 0.2396
+  },
+  "WhatCDHipHop_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 43944,
+   "cache_read_input_tokens": 241591,
+   "output_tokens": 65,
+   "output_est": 1019,
+   "seconds": 31.378,
+   "dollars_opus55_list": 0.288458
+  },
+  "poker_player_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 40974,
+   "cache_read_input_tokens": 178763,
+   "output_tokens": 63,
+   "output_est": 553,
+   "seconds": 14.412,
+   "dollars_opus55_list": 0.251715
+  },
+  "wta_1_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 42726,
+   "cache_read_input_tokens": 182581,
+   "output_tokens": 61,
+   "output_est": 515,
+   "seconds": 18.059,
+   "dollars_opus55_list": 0.260478
+  },
+  "world_1_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43390,
+   "cache_read_input_tokens": 182888,
+   "output_tokens": 53,
+   "output_est": 751,
+   "seconds": 21.436,
+   "dollars_opus55_list": 0.26858
+  },
+  "StudentMathScore_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 63383,
+   "cache_read_input_tokens": 283723,
+   "output_tokens": 82,
+   "output_est": 1297,
+   "seconds": 38.345,
+   "dollars_opus55_list": 0.399648
+  },
+  "network_1_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 41755,
+   "cache_read_input_tokens": 122055,
+   "output_tokens": 24,
+   "output_est": 532,
+   "seconds": 17.528,
+   "dollars_opus55_list": 0.24385
+  },
+  "concert_singer_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 42940,
+   "cache_read_input_tokens": 181914,
+   "output_tokens": 59,
+   "output_est": 699,
+   "seconds": 21.579,
+   "dollars_opus55_list": 0.265095
+  },
+  "Pesticide_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 64997,
+   "cache_read_input_tokens": 407893,
+   "output_tokens": 95,
+   "output_est": 1340,
+   "seconds": 49.903,
+   "dollars_opus55_list": 0.433428
+  },
+  "car_1_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43554,
+   "cache_read_input_tokens": 182392,
+   "output_tokens": 59,
+   "output_est": 880,
+   "seconds": 25.635,
+   "dollars_opus55_list": 0.27188
+  },
+  "world_1_5": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43461,
+   "cache_read_input_tokens": 183040,
+   "output_tokens": 65,
+   "output_est": 704,
+   "seconds": 22.831,
+   "dollars_opus55_list": 0.268025
+  },
+  "world_1_4": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 44798,
+   "cache_read_input_tokens": 185173,
+   "output_tokens": 50,
+   "output_est": 1165,
+   "seconds": 29.677,
+   "dollars_opus55_list": 0.284357
+  },
+  "singer_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 41666,
+   "cache_read_input_tokens": 179517,
+   "output_tokens": 70,
+   "output_est": 724,
+   "seconds": 16.19,
+   "dollars_opus55_list": 0.258745
+  },
+  "pets_1_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 41859,
+   "cache_read_input_tokens": 180419,
+   "output_tokens": 46,
+   "output_est": 553,
+   "seconds": 19.322,
+   "dollars_opus55_list": 0.256471
+  },
+  "battle_death_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 41251,
+   "cache_read_input_tokens": 179614,
+   "output_tokens": 57,
+   "output_est": 552,
+   "seconds": 16.405,
+   "dollars_opus55_list": 0.25325
+  },
+  "dog_kennels_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 48173,
+   "cache_read_input_tokens": 251567,
+   "output_tokens": 65,
+   "output_est": 1219,
+   "seconds": 41.536,
+   "dollars_opus55_list": 0.315598
+  },
+  "GeoNuclearData_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 64871,
+   "cache_read_input_tokens": 350441,
+   "output_tokens": 80,
+   "output_est": 1490,
+   "seconds": 43.146,
+   "dollars_opus55_list": 0.424299
+  },
+  "TheHistoryofBaseball_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 48789,
+   "cache_read_input_tokens": 374478,
+   "output_tokens": 76,
+   "output_est": 1594,
+   "seconds": 49.824,
+   "dollars_opus55_list": 0.350777
+  },
+  "USWildFires_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 64905,
+   "cache_read_input_tokens": 291881,
+   "output_tokens": 51,
+   "output_est": 1085,
+   "seconds": 47.698,
+   "dollars_opus55_list": 0.404649
+  },
+  "Pesticide_2": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 66257,
+   "cache_read_input_tokens": 535968,
+   "output_tokens": 104,
+   "output_est": 1634,
+   "seconds": 67.778,
+   "dollars_opus55_list": 0.471239
+  },
+  "pets_1_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 41787,
+   "cache_read_input_tokens": 121844,
+   "output_tokens": 46,
+   "output_est": 697,
+   "seconds": 18.024,
+   "dollars_opus55_list": 0.247268
+  },
+  "concert_singer_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 42212,
+   "cache_read_input_tokens": 180047,
+   "output_tokens": 66,
+   "output_est": 656,
+   "seconds": 16.222,
+   "dollars_opus55_list": 0.260221
+  },
+  "tvshow_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 46436,
+   "cache_read_input_tokens": 184204,
+   "output_tokens": 51,
+   "output_est": 1198,
+   "seconds": 33.013,
+   "dollars_opus55_list": 0.293013
+  },
+  "world_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43176,
+   "cache_read_input_tokens": 182694,
+   "output_tokens": 59,
+   "output_est": 711,
+   "seconds": 19.998,
+   "dollars_opus55_list": 0.266671
+  },
+  "flight_2_3": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 43100,
+   "cache_read_input_tokens": 239396,
+   "output_tokens": 63,
+   "output_est": 777,
+   "seconds": 26.254,
+   "dollars_opus55_list": 0.278959
+  },
+  "car_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 44886,
+   "cache_read_input_tokens": 182838,
+   "output_tokens": 59,
+   "output_est": 1205,
+   "seconds": 33.428,
+   "dollars_opus55_list": 0.28513
+  },
+  "wta_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43023,
+   "cache_read_input_tokens": 182537,
+   "output_tokens": 61,
+   "output_est": 684,
+   "seconds": 18.172,
+   "dollars_opus55_list": 0.265334
+  },
+  "GreaterManchesterCrime_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 62433,
+   "cache_read_input_tokens": 225272,
+   "output_tokens": 59,
+   "output_est": 1109,
+   "seconds": 32.224,
+   "dollars_opus55_list": 0.379439
+  },
+  "real_estate_properties_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 41011,
+   "cache_read_input_tokens": 122349,
+   "output_tokens": 47,
+   "output_est": 264,
+   "seconds": 9.336,
+   "dollars_opus55_list": 0.234829
+  },
+  "WorldSoccerDataBase_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 47724,
+   "cache_read_input_tokens": 372494,
+   "output_tokens": 91,
+   "output_est": 1102,
+   "seconds": 38.55,
+   "dollars_opus55_list": 0.335215
+  },
+  "tvshow_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 43134,
+   "cache_read_input_tokens": 181256,
+   "output_tokens": 59,
+   "output_est": 806,
+   "seconds": 18.851,
+   "dollars_opus55_list": 0.268073
+  },
+  "TheHistoryofBaseball_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 64264,
+   "cache_read_input_tokens": 289350,
+   "output_tokens": 75,
+   "output_est": 1204,
+   "seconds": 38.768,
+   "dollars_opus55_list": 0.403318
+  },
+  "orchestra_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 41228,
+   "cache_read_input_tokens": 180056,
+   "output_tokens": 51,
+   "output_est": 432,
+   "seconds": 14.267,
+   "dollars_opus55_list": 0.250823
+  }
+ },
+ "B1": {
+  "real_estate_properties_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 40523,
+   "cache_read_input_tokens": 179421,
+   "output_tokens": 53,
+   "output_est": 220,
+   "seconds": 11.164,
+   "dollars_opus55_list": 0.242931
+  },
+  "WorldSoccerDataBase_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 49827,
+   "cache_read_input_tokens": 196325,
+   "output_tokens": 52,
+   "output_est": 528,
+   "seconds": 19.157,
+   "dollars_opus55_list": 0.298992
+  },
+  "flight_2_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 50009,
+   "cache_read_input_tokens": 195336,
+   "output_tokens": 48,
+   "output_est": 344,
+   "seconds": 20.919,
+   "dollars_opus55_list": 0.296024
+  },
+  "wta_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 55127,
+   "cache_read_input_tokens": 207735,
+   "output_tokens": 64,
+   "output_est": 455,
+   "seconds": 16.507,
+   "dollars_opus55_list": 0.326314
+  },
+  "course_teach_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 54973,
+   "cache_read_input_tokens": 135959,
+   "output_tokens": 48,
+   "output_est": 304,
+   "seconds": 12.176,
+   "dollars_opus55_list": 0.308161
+  },
+  "world_1_3": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 65580,
+   "cache_read_input_tokens": 423051,
+   "output_tokens": 231,
+   "output_est": 1387,
+   "seconds": 42.33,
+   "dollars_opus55_list": 0.440306
+  },
+  "flight_2_3": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 51988,
+   "cache_read_input_tokens": 328948,
+   "output_tokens": 68,
+   "output_est": 965,
+   "seconds": 43.832,
+   "dollars_opus55_list": 0.345078
+  },
+  "student_transcripts_tracking_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 56524,
+   "cache_read_input_tokens": 281849,
+   "output_tokens": 63,
+   "output_est": 806,
+   "seconds": 25.042,
+   "dollars_opus55_list": 0.35515
+  },
+  "museum_visit_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 53090,
+   "cache_read_input_tokens": 134232,
+   "output_tokens": 47,
+   "output_est": 161,
+   "seconds": 16.503,
+   "dollars_opus55_list": 0.29554
+  },
+  "singer_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 54792,
+   "cache_read_input_tokens": 207817,
+   "output_tokens": 60,
+   "output_est": 243,
+   "seconds": 13.987,
+   "dollars_opus55_list": 0.320415
+  },
+  "employee_hire_evaluation_1": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 54118,
+   "cache_read_input_tokens": 263463,
+   "output_tokens": 100,
+   "output_est": 634,
+   "seconds": 18.512,
+   "dollars_opus55_list": 0.336003
+  },
+  "TheHistoryofBaseball_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 61642,
+   "cache_read_input_tokens": 436598,
+   "output_tokens": 88,
+   "output_est": 1401,
+   "seconds": 48.519,
+   "dollars_opus55_list": 0.423606
+  },
+  "concert_singer_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 54876,
+   "cache_read_input_tokens": 193400,
+   "output_tokens": 64,
+   "output_est": 402,
+   "seconds": 15.46,
+   "dollars_opus55_list": 0.321132
+  },
+  "WhatCDHipHop_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 54766,
+   "cache_read_input_tokens": 206029,
+   "output_tokens": 48,
+   "output_est": 593,
+   "seconds": 23.609,
+   "dollars_opus55_list": 0.326928
+  },
+  "tvshow_2": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 55287,
+   "cache_read_input_tokens": 327795,
+   "output_tokens": 73,
+   "output_est": 655,
+   "seconds": 27.811,
+   "dollars_opus55_list": 0.355142
+  },
+  "car_1_3": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 60163,
+   "cache_read_input_tokens": 475294,
+   "output_tokens": 97,
+   "output_est": 1412,
+   "seconds": 46.38,
+   "dollars_opus55_list": 0.424178
+  },
+  "poker_player_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 48155,
+   "cache_read_input_tokens": 129602,
+   "output_tokens": 43,
+   "output_est": 162,
+   "seconds": 11.688,
+   "dollars_opus55_list": 0.269959
+  },
+  "TheHistoryofBaseball_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 76214,
+   "cache_read_input_tokens": 194634,
+   "output_tokens": 50,
+   "output_est": 685,
+   "seconds": 31.12,
+   "dollars_opus55_list": 0.433729
+  },
+  "StudentMathScore_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 76258,
+   "cache_read_input_tokens": 404430,
+   "output_tokens": 75,
+   "output_est": 1805,
+   "seconds": 54.391,
+   "dollars_opus55_list": 0.498332
+  },
+  "GeoNuclearData_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 73354,
+   "cache_read_input_tokens": 318437,
+   "output_tokens": 86,
+   "output_est": 760,
+   "seconds": 30.824,
+   "dollars_opus55_list": 0.445705
+  },
+  "world_1_4": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 63278,
+   "cache_read_input_tokens": 416613,
+   "output_tokens": 221,
+   "output_est": 1193,
+   "seconds": 43.545,
+   "dollars_opus55_list": 0.423629
+  },
+  "Pesticide_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 75914,
+   "cache_read_input_tokens": 413405,
+   "output_tokens": 86,
+   "output_est": 811,
+   "seconds": 38.837,
+   "dollars_opus55_list": 0.478527
+  },
+  "world_1_2": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 56220,
+   "cache_read_input_tokens": 194775,
+   "output_tokens": 57,
+   "output_est": 289,
+   "seconds": 14.168,
+   "dollars_opus55_list": 0.325867
+  },
+  "orchestra_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 44894,
+   "cache_read_input_tokens": 187776,
+   "output_tokens": 49,
+   "output_est": 228,
+   "seconds": 12.759,
+   "dollars_opus55_list": 0.266617
+  },
+  "wta_1_2": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 55611,
+   "cache_read_input_tokens": 136526,
+   "output_tokens": 45,
+   "output_est": 177,
+   "seconds": 14.684,
+   "dollars_opus55_list": 0.308924
+  },
+  "voter_1_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 43185,
+   "cache_read_input_tokens": 124532,
+   "output_tokens": 44,
+   "output_est": 161,
+   "seconds": 9.06,
+   "dollars_opus55_list": 0.244075
+  },
+  "world_1_5": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 56468,
+   "cache_read_input_tokens": 265527,
+   "output_tokens": 68,
+   "output_est": 748,
+   "seconds": 34.892,
+   "dollars_opus55_list": 0.350445
+  },
+  "pets_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 50602,
+   "cache_read_input_tokens": 198507,
+   "output_tokens": 55,
+   "output_est": 429,
+   "seconds": 18.623,
+   "dollars_opus55_list": 0.301323
+  },
+  "world_1_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 57821,
+   "cache_read_input_tokens": 200700,
+   "output_tokens": 53,
+   "output_est": 376,
+   "seconds": 14.322,
+   "dollars_opus55_list": 0.336797
+  },
+  "flight_2_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 53643,
+   "cache_read_input_tokens": 203590,
+   "output_tokens": 51,
+   "output_est": 651,
+   "seconds": 24.48,
+   "dollars_opus55_list": 0.321985
+  },
+  "dog_kennels_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 57783,
+   "cache_read_input_tokens": 471180,
+   "output_tokens": 104,
+   "output_est": 1327,
+   "seconds": 45.556,
+   "dollars_opus55_list": 0.409755
+  },
+  "tvshow_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 57176,
+   "cache_read_input_tokens": 195506,
+   "output_tokens": 59,
+   "output_est": 418,
+   "seconds": 13.727,
+   "dollars_opus55_list": 0.333373
+  },
+  "car_1_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 63982,
+   "cache_read_input_tokens": 340852,
+   "output_tokens": 87,
+   "output_est": 800,
+   "seconds": 32.752,
+   "dollars_opus55_list": 0.404128
+  },
+  "car_1_2": {
+   "input_tokens": 10,
+   "cache_creation_input_tokens": 54122,
+   "cache_read_input_tokens": 262663,
+   "output_tokens": 75,
+   "output_est": 519,
+   "seconds": 20.72,
+   "dollars_opus55_list": 0.333563
+  },
+  "network_1_1": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 54291,
+   "cache_read_input_tokens": 135400,
+   "output_tokens": 43,
+   "output_est": 228,
+   "seconds": 11.742,
+   "dollars_opus55_list": 0.303119
+  },
+  "WhatCDHipHop_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 54736,
+   "cache_read_input_tokens": 205797,
+   "output_tokens": 50,
+   "output_est": 475,
+   "seconds": 26.09,
+   "dollars_opus55_list": 0.324371
+  },
+  "pets_1_2": {
+   "input_tokens": 6,
+   "cache_creation_input_tokens": 51315,
+   "cache_read_input_tokens": 132703,
+   "output_tokens": 50,
+   "output_est": 154,
+   "seconds": 9.211,
+   "dollars_opus55_list": 0.28622
+  },
+  "battle_death_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 45981,
+   "cache_read_input_tokens": 188909,
+   "output_tokens": 52,
+   "output_est": 512,
+   "seconds": 18.412,
+   "dollars_opus55_list": 0.277959
+  },
+  "Pesticide_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 77562,
+   "cache_read_input_tokens": 484347,
+   "output_tokens": 83,
+   "output_est": 1426,
+   "seconds": 64.258,
+   "dollars_opus55_list": 0.513263
+  },
+  "USWildFires_1": {
+   "input_tokens": 12,
+   "cache_creation_input_tokens": 80978,
+   "cache_read_input_tokens": 357108,
+   "output_tokens": 81,
+   "output_est": 915,
+   "seconds": 40.915,
+   "dollars_opus55_list": 0.49466
+  },
+  "concert_singer_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 55054,
+   "cache_read_input_tokens": 207986,
+   "output_tokens": 56,
+   "output_est": 356,
+   "seconds": 14.933,
+   "dollars_opus55_list": 0.324019
+  },
+  "GreaterManchesterCrime_1": {
+   "input_tokens": 8,
+   "cache_creation_input_tokens": 72451,
+   "cache_read_input_tokens": 188602,
+   "output_tokens": 53,
+   "output_est": 550,
+   "seconds": 19.672,
+   "dollars_opus55_list": 0.411007
+  }
+ }
+}

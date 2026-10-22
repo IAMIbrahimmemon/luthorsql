@@ -1,0 +1,48 @@
+{"item_id": "bird_train_train_7816", "db_id": "hockey", "question": "Who is the shortest player and state the team ID of that player from 1925 to 1936."}
+{"item_id": "bird_train_train_7818", "db_id": "hockey", "question": "In 1998, How many wins were made by team 'CAR' per game played? Who contributed the most goals? State the player ID."}
+{"item_id": "bird_train_train_7988", "db_id": "university", "question": "What is the ranking system ID of the award criteria?"}
+{"item_id": "bird_train_train_7991", "db_id": "university", "question": "How many criteria belong to ranking system ID 3?"}
+{"item_id": "bird_train_train_7993", "db_id": "university", "question": "Give the name of the country that has the most universities."}
+{"item_id": "bird_train_train_7994", "db_id": "university", "question": "What is the name of the university that had the highest number of international students for 6 consecutive years?"}
+{"item_id": "bird_train_train_8004", "db_id": "university", "question": "Between 2011 to 2016, in which countries can you find the universities where at least 50% of its students are international students?"}
+{"item_id": "bird_train_train_8007", "db_id": "university", "question": "What is the university ID of the university with the largest student staff ratio?"}
+{"item_id": "bird_train_train_8008", "db_id": "university", "question": "Give the year where a university had the lowest number of students."}
+{"item_id": "bird_train_train_8013", "db_id": "university", "question": "Provide the ranking system of the ranking criteria named Quality of Education Rank."}
+{"item_id": "bird_train_train_8017", "db_id": "university", "question": "What is the ranking criteria ID of Brown University in 2014?"}
+{"item_id": "bird_train_train_8022", "db_id": "university", "question": "Give the score and number of international students in university ID 100 in 2015."}
+{"item_id": "bird_train_train_8025", "db_id": "university", "question": "Provide the country name of universities with the number of students greater than 98% of the average student population of all universities in 2013."}
+{"item_id": "bird_train_train_8027", "db_id": "university", "question": "How many students attended universities were there in 2011?"}
+{"item_id": "bird_train_train_8034", "db_id": "university", "question": "Name the university that had the most students in 2011."}
+{"item_id": "bird_train_train_8038", "db_id": "university", "question": "In which nation is Harvard University located?"}
+{"item_id": "bird_train_train_8043", "db_id": "university", "question": "How many criteria are associated with ranking system Center for World University Rankings?"}
+{"item_id": "bird_train_train_8044", "db_id": "university", "question": "How many students at the university earned a score of 90 in 2011?"}
+{"item_id": "bird_train_train_8046", "db_id": "university", "question": "What is the difference in overall student enrollment and international student enrollment at the Harvard university from 2011 to 2012?"}
+{"item_id": "bird_train_train_8049", "db_id": "university", "question": "Provide the ranking system ID of the Center for World University Rankings."}
+{"item_id": "bird_train_train_8054", "db_id": "university", "question": "List the universities in Denmark."}
+{"item_id": "bird_train_train_8055", "db_id": "university", "question": "Provide the number of staff at the University of Auckland in 2015."}
+{"item_id": "bird_train_train_8057", "db_id": "university", "question": "How many international students attended Harvard University in 2012?"}
+{"item_id": "bird_train_train_8062", "db_id": "university", "question": "Provide the ranking system name for the \"Quality of Education Rank\" criteria."}
+{"item_id": "bird_train_train_8066", "db_id": "university", "question": "Name the university and country which had the highest number of international students in 2015."}
+{"item_id": "bird_train_train_8068", "db_id": "university", "question": "What is the ID of the university with the most students in 2011?"}
+{"item_id": "bird_train_train_8077", "db_id": "university", "question": "Which country is Harvard University in?"}
+{"item_id": "bird_train_train_8080", "db_id": "university", "question": "Among the universities with a score in teaching of over 90 in 2011, how many of them are in the United States of America?"}
+{"item_id": "bird_train_train_8082", "db_id": "university", "question": "What are the names of the universities that got 98 in teaching in 2011?"}
+{"item_id": "bird_train_train_8083", "db_id": "university", "question": "Please list the names of all the universities that scored under 60 in teaching in 2011 and are in the United States of America."}
+{"item_id": "bird_train_train_8084", "db_id": "university", "question": "Among the universities in Australia, how many of them have a student staff ratio of over 15 in 2011?"}
+{"item_id": "bird_train_train_8085", "db_id": "university", "question": "How many female students did Stanford University have in 2011?"}
+{"item_id": "bird_train_train_8091", "db_id": "university", "question": "For the university id 268, show its number of students in 2013."}
+{"item_id": "bird_train_train_8092", "db_id": "university", "question": "Show the name of country id 66."}
+{"item_id": "bird_train_train_8102", "db_id": "university", "question": "What was the score for University of Florida in \"N and S\" in 2014?"}
+{"item_id": "bird_train_train_8105", "db_id": "university", "question": "How many times more was the number of students of University of Ottawa than Joseph Fourier University in 2013?"}
+{"item_id": "bird_train_train_8108", "db_id": "university", "question": "What is the score of university ID 68 in 2015?"}
+{"item_id": "bird_train_train_8109", "db_id": "university", "question": "Provide the country ID of Cyprus."}
+{"item_id": "bird_train_train_8114", "db_id": "university", "question": "Calculate the average score of university ID 79 between year 2013 to 2015."}
+{"item_id": "bird_train_train_8119", "db_id": "university", "question": "What is the total number of ranking criteria under the ranking system called Shanghai Ranking?"}
+{"item_id": "bird_train_train_8122", "db_id": "university", "question": "List down all universities that scored below 50."}
+{"item_id": "bird_train_train_8124", "db_id": "university", "question": "Provide the name of the university with the highest number of male students."}
+{"item_id": "bird_train_train_8126", "db_id": "university", "question": "Calculate number of male students in Emory University in 2011."}
+{"item_id": "bird_train_train_8129", "db_id": "university", "question": "In what year does the Brown University score the highest?"}
+{"item_id": "bird_train_train_8131", "db_id": "university", "question": "Give the name of the university with the most number of students in 2015."}
+{"item_id": "bird_train_train_8132", "db_id": "university", "question": "What is the location and number of female students in university ID 23 in 2011?"}
+{"item_id": "bird_train_train_8133", "db_id": "university", "question": "How many universities scored 40 in teaching criteria?"}
+{"item_id": "bird_train_train_8136", "db_id": "university", "question": "List the names of universities with a score less than 28% of the average score of all universities in 2015."}

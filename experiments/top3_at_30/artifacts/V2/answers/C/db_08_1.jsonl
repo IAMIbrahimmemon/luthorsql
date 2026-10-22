@@ -1,0 +1,18 @@
+{"question_id": "q7988", "pick": "A"}
+{"question_id": "q7994", "pick": "A"}
+{"question_id": "q8008", "pick": "A"}
+{"question_id": "q8022", "pick": "A"}
+{"question_id": "q8025", "pick": "NONE", "sql": "SELECT DISTINCT n.nation_label FROM nation n JOIN college c ON c.nation_identifier=n.identifier JOIN college_annual a ON a.college_identifier=c.identifier WHERE a.annual=2013 AND a.learner_tally*100 > (SELECT AVG(learner_tally) FROM college_annual)*98"}
+{"question_id": "q8027", "pick": "C"}
+{"question_id": "q8044", "pick": "A"}
+{"question_id": "q8046", "pick": "NONE", "sql": "SELECT SUM(a.learner_tally) - SUM(CAST(a.learner_tally*a.percent_overseas_learners AS REAL)/100) FROM college_annual a JOIN college c ON c.identifier=a.college_identifier WHERE c.college_label='Harvard University' AND a.annual BETWEEN 2011 AND 2012"}
+{"question_id": "q8057", "pick": "NONE", "sql": "SELECT CAST(a.learner_tally*a.percent_overseas_learners AS REAL)/100 FROM college_annual a JOIN college c ON c.identifier=a.college_identifier WHERE c.college_label='Harvard University' AND a.annual=2012"}
+{"question_id": "q8066", "pick": "A"}
+{"question_id": "q8080", "pick": "A"}
+{"question_id": "q8083", "pick": "A"}
+{"question_id": "q8085", "pick": "NONE", "sql": "SELECT CAST(a.learner_tally*a.percent_woman_learners AS REAL)/100 FROM college_annual a JOIN college c ON c.identifier=a.college_identifier WHERE c.college_label='Stanford University' AND a.annual=2011"}
+{"question_id": "q8124", "pick": "A"}
+{"question_id": "q8126", "pick": "NONE", "sql": "SELECT a.learner_tally - CAST(a.learner_tally*a.percent_woman_learners AS REAL)/100 FROM college_annual a JOIN college c ON c.identifier=a.college_identifier WHERE c.college_label='Emory University' AND a.annual=2011"}
+{"question_id": "q8132", "pick": "NONE", "sql": "SELECT n.nation_label, CAST(a.learner_tally*a.percent_woman_learners AS REAL)/100 FROM college_annual a JOIN college c ON c.identifier=a.college_identifier JOIN nation n ON n.identifier=c.nation_identifier WHERE a.annual=2011 AND a.college_identifier=23"}
+{"question_id": "q8133", "pick": "B"}
+{"question_id": "q8136", "pick": "NONE", "sql": "SELECT DISTINCT c.college_label FROM college c JOIN college_score_annual s ON s.college_identifier=c.identifier WHERE s.annual=2015 AND s.points*100 < (SELECT AVG(points) FROM college_score_annual WHERE annual=2015)*28"}

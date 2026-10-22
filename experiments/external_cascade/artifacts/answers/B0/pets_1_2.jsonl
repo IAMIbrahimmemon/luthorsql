@@ -1,0 +1,13 @@
+{"question_id": "spider_realistic_46", "sql": "SELECT Major, Age FROM Student WHERE StuID NOT IN (SELECT H.StuID FROM Has_Pet H JOIN Pets P ON H.PetID=P.PetID WHERE P.PetType='cat')"}
+{"question_id": "spider_realistic_47", "sql": "SELECT StuID FROM Student EXCEPT SELECT H.StuID FROM Has_Pet H JOIN Pets P ON H.PetID=P.PetID WHERE P.PetType='cat'"}
+{"question_id": "spider_realistic_48", "sql": "SELECT StuID FROM Student EXCEPT SELECT H.StuID FROM Has_Pet H JOIN Pets P ON H.PetID=P.PetID WHERE P.PetType='cat'"}
+{"question_id": "spider_realistic_49", "sql": "SELECT T1.Fname, T1.Age FROM Student T1 JOIN Has_Pet T2 ON T1.StuID=T2.StuID JOIN Pets T3 ON T3.PetID=T2.PetID WHERE T3.PetType='dog' AND T1.StuID NOT IN (SELECT H.StuID FROM Has_Pet H JOIN Pets P ON H.PetID=P.PetID WHERE P.PetType='cat')"}
+{"question_id": "spider_realistic_50", "sql": "SELECT T1.Fname FROM Student T1 JOIN Has_Pet T2 ON T1.StuID=T2.StuID JOIN Pets T3 ON T3.PetID=T2.PetID WHERE T3.PetType='dog' AND T1.StuID NOT IN (SELECT H.StuID FROM Has_Pet H JOIN Pets P ON H.PetID=P.PetID WHERE P.PetType='cat')"}
+{"question_id": "spider_realistic_51", "sql": "SELECT PetType, weight FROM Pets ORDER BY pet_age LIMIT 1"}
+{"question_id": "spider_realistic_52", "sql": "SELECT PetType, weight FROM Pets ORDER BY pet_age LIMIT 1"}
+{"question_id": "spider_realistic_53", "sql": "SELECT PetID, weight FROM Pets WHERE pet_age > 1"}
+{"question_id": "spider_realistic_54", "sql": "SELECT PetID, weight FROM Pets WHERE pet_age > 1"}
+{"question_id": "spider_realistic_55", "sql": "SELECT T1.LName FROM Student T1 JOIN Has_Pet T2 ON T1.StuID=T2.StuID JOIN Pets T3 ON T3.PetID=T2.PetID WHERE T3.PetType='cat' AND T3.pet_age=3"}
+{"question_id": "spider_realistic_56", "sql": "SELECT T1.LName FROM Student T1 JOIN Has_Pet T2 ON T1.StuID=T2.StuID JOIN Pets T3 ON T3.PetID=T2.PetID WHERE T3.PetType='cat' AND T3.pet_age=3"}
+{"question_id": "spider_realistic_57", "sql": "SELECT AVG(Age) FROM Student WHERE StuID NOT IN (SELECT StuID FROM Has_Pet)"}
+{"question_id": "spider_realistic_58", "sql": "SELECT AVG(Age) FROM Student WHERE StuID NOT IN (SELECT StuID FROM Has_Pet)"}

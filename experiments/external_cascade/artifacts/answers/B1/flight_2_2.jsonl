@@ -1,0 +1,19 @@
+{"question_id": "spider_realistic_132", "pick": "A"}
+{"question_id": "spider_realistic_133", "pick": "A"}
+{"question_id": "spider_realistic_134", "pick": "A"}
+{"question_id": "spider_realistic_135", "pick": "A"}
+{"question_id": "spider_realistic_136", "pick": "A"}
+{"question_id": "spider_realistic_137", "pick": "A"}
+{"question_id": "spider_realistic_138", "pick": "A"}
+{"question_id": "spider_realistic_139", "pick": "A"}
+{"question_id": "spider_realistic_140", "pick": "A"}
+{"question_id": "spider_realistic_141", "pick": "A"}
+{"question_id": "spider_realistic_142", "pick": "A"}
+{"question_id": "spider_realistic_143", "pick": "A"}
+{"question_id": "spider_realistic_144", "pick": "A"}
+{"question_id": "spider_realistic_145", "pick": "A"}
+{"question_id": "spider_realistic_146", "pick": "A"}
+{"question_id": "spider_realistic_147", "pick": "A"}
+{"question_id": "spider_realistic_148", "pick": "A"}
+{"question_id": "spider_realistic_149", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}
+{"question_id": "spider_realistic_150", "pick": "NONE", "sql": "SELECT T1.Airline FROM airlines AS T1 JOIN flights AS T2 ON T1.uid = T2.Airline WHERE T2.DestAirport = 'AHD'"}

@@ -1,0 +1,25 @@
+{"question_id": "spider_realistic_465", "db_id": "dog_kennels", "question": "Which professionals live in Indiana or have done treatment on more than 2 treatments? List his or her id, last name and cell phone.", "evidence": ""}
+{"question_id": "spider_realistic_466", "db_id": "dog_kennels", "question": "Find the id, last name and cell phone of the professionals who live in Indiana or have performed more than two treatments.", "evidence": ""}
+{"question_id": "spider_realistic_467", "db_id": "dog_kennels", "question": "What are the names of the dogs for which the owner spent more than 1000 for treatment?", "evidence": ""}
+{"question_id": "spider_realistic_468", "db_id": "dog_kennels", "question": "Which person has the most dogs? List the id, first name and last name.", "evidence": ""}
+{"question_id": "spider_realistic_469", "db_id": "dog_kennels", "question": "Return the id, first name and last name of the person who has the most dogs.", "evidence": ""}
+{"question_id": "spider_realistic_470", "db_id": "dog_kennels", "question": "Which doctors have done at least two treatments? List theid, role, and first name.", "evidence": ""}
+{"question_id": "spider_realistic_471", "db_id": "dog_kennels", "question": "What are the id, role, and first name of the people who have performed two or more treatments?", "evidence": ""}
+{"question_id": "spider_realistic_472", "db_id": "dog_kennels", "question": "What is the description of the treatment type that is the cheapest overall?", "evidence": ""}
+{"question_id": "spider_realistic_473", "db_id": "dog_kennels", "question": "Give me the description of the treatment type that is least expensive.", "evidence": ""}
+{"question_id": "spider_realistic_474", "db_id": "dog_kennels", "question": "Who has paid the largest amount of money in total for their dogs? Show the id and zip code.", "evidence": ""}
+{"question_id": "spider_realistic_475", "db_id": "dog_kennels", "question": "Find the id and zip code of the person who spent the most money in total for his or her dogs.", "evidence": ""}
+{"question_id": "spider_realistic_476", "db_id": "dog_kennels", "question": "What are the first name and last name of the professionals who have done treatment cheaper than average?", "evidence": ""}
+{"question_id": "spider_realistic_477", "db_id": "dog_kennels", "question": "Which professionals have operated a treatment that is less expansive than the average? Give me theor first names and last names.", "evidence": ""}
+{"question_id": "spider_realistic_478", "db_id": "dog_kennels", "question": "Which dogs are owned by someone who lives in Virginia? List the owner's first name and the dog's name.", "evidence": ""}
+{"question_id": "spider_realistic_479", "db_id": "dog_kennels", "question": "Find the first names of owners living in Virginia and the names of dogs they own.", "evidence": ""}
+{"question_id": "spider_realistic_480", "db_id": "dog_kennels", "question": "List the last name of the owner owning the youngest dog.", "evidence": ""}
+{"question_id": "spider_realistic_481", "db_id": "dog_kennels", "question": "Who owns the youngest dog? Give me his or her last name.", "evidence": ""}
+{"question_id": "spider_realistic_482", "db_id": "dog_kennels", "question": "List the emails of the professionals who live in Hawaii or Wisconsin.", "evidence": ""}
+{"question_id": "spider_realistic_483", "db_id": "dog_kennels", "question": "What are the emails of the professionals living in either Hawaii or Wisconsin?", "evidence": ""}
+{"question_id": "spider_realistic_484", "db_id": "dog_kennels", "question": "How many dogs younger than average?", "evidence": ""}
+{"question_id": "spider_realistic_485", "db_id": "dog_kennels", "question": "Count the number of dogs that are younger than the average.", "evidence": ""}
+{"question_id": "spider_realistic_486", "db_id": "dog_kennels", "question": "How much is the most recent treatment?", "evidence": ""}
+{"question_id": "spider_realistic_487", "db_id": "dog_kennels", "question": "Show me the price of the most recently performed treatment.", "evidence": ""}
+{"question_id": "spider_realistic_488", "db_id": "dog_kennels", "question": "List the dog name, age and weight of the dogs who have been abandoned?", "evidence": ""}
+{"question_id": "spider_realistic_489", "db_id": "dog_kennels", "question": "What are the dog name, age and weight of the dogs that were abandoned?", "evidence": ""}

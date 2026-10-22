@@ -1,0 +1,14 @@
+{"question_id": "fresh_wc2026_15", "sql": "SELECT stage, ROUND(AVG(attendance)) FROM matches GROUP BY stage ORDER BY stage"}
+{"question_id": "fresh_wc2026_16", "sql": "SELECT referee_country, COUNT(*) AS match_count FROM matches GROUP BY referee_country ORDER BY match_count DESC, referee_country"}
+{"question_id": "fresh_wc2026_17", "sql": "SELECT ROUND(100.0 * SUM(went_to_penalties = 1) / COUNT(*), 1) FROM matches WHERE stage = 'Round of 32'"}
+{"question_id": "fresh_wc2026_18", "sql": "SELECT t.team_name, COUNT(*) AS total_goals FROM goals g JOIN matches m ON g.match_id = m.match_id JOIN teams t ON t.team_id = g.scoring_team_id WHERE m.went_to_penalties = 1 GROUP BY t.team_id, t.team_name ORDER BY total_goals DESC, t.team_name"}
+{"question_id": "fresh_wc2026_19", "sql": "SELECT match_id, home_ft + away_ft AS total_goals, RANK() OVER (ORDER BY home_ft + away_ft DESC) AS rnk FROM matches ORDER BY rnk, match_id"}
+{"question_id": "fresh_wc2026_20", "sql": "SELECT COUNT(*) FROM teams WHERE group_letter = 'J'"}
+{"question_id": "fresh_wc2026_21", "sql": "SELECT kickoff_time FROM matches WHERE match_id = 82"}
+{"question_id": "fresh_wc2026_22", "sql": "SELECT player_name FROM cards WHERE match_id = 81 ORDER BY player_name"}
+{"question_id": "fresh_wc2026_24", "sql": "SELECT s.country, SUM(m.attendance) AS total_attendance FROM matches m JOIN stadiums s ON s.stadium_id = m.stadium_id GROUP BY s.country ORDER BY total_attendance DESC, s.country"}
+{"question_id": "fresh_wc2026_25", "sql": "SELECT t.team_name, COUNT(c.card_id) FROM teams t LEFT JOIN cards c ON c.team_id = t.team_id AND c.card_type = 'Y' WHERE t.group_letter = 'J' GROUP BY t.team_id, t.team_name ORDER BY t.team_name"}
+{"question_id": "fresh_wc2026_26", "sql": "SELECT player_name, COUNT(*) FROM goals WHERE match_id = 81 GROUP BY player_name ORDER BY player_name"}
+{"question_id": "fresh_wc2026_27", "sql": "SELECT s.country, ROUND(100.0 * SUM(m.went_to_extra_time = 1) / COUNT(*), 1) AS pct FROM matches m JOIN stadiums s ON s.stadium_id = m.stadium_id GROUP BY s.country ORDER BY pct DESC, s.country"}
+{"question_id": "fresh_wc2026_28", "sql": "SELECT t.team_name, ROUND(100.0 * SUM(g.is_penalty = 1) / COUNT(*), 1) AS pct FROM goals g JOIN teams t ON t.team_id = g.scoring_team_id GROUP BY t.team_id, t.team_name ORDER BY pct DESC, t.team_name"}
+{"question_id": "fresh_wc2026_29", "sql": "SELECT t.team_name, COUNT(*) AS total_goals, RANK() OVER (ORDER BY COUNT(*) DESC) AS rnk FROM goals g JOIN matches m ON g.match_id = m.match_id JOIN stadiums s ON s.stadium_id = m.stadium_id JOIN teams t ON t.team_id = g.scoring_team_id WHERE s.stadium_name = 'Atlanta Stadium' GROUP BY t.team_id, t.team_name ORDER BY rnk, t.team_name"}

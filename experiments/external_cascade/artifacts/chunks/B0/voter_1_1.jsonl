@@ -1,0 +1,4 @@
+{"question_id": "spider_realistic_330", "db_id": "voter_1", "question": "What is last date created of votes from 'CA'?", "evidence": ""}
+{"question_id": "spider_realistic_331", "db_id": "voter_1", "question": "What are the number of votes from 'NY' or 'CA'?", "evidence": ""}
+{"question_id": "spider_realistic_332", "db_id": "voter_1", "question": "What are the create dates, states, and phone numbers of the votes that were for 'Tabatha Gehling'?", "evidence": ""}
+{"question_id": "spider_realistic_333", "db_id": "voter_1", "question": "List the area codes in which voters voted both for 'Tabatha Gehling' and 'Kelly Clauss'.", "evidence": ""}

@@ -1,0 +1,50 @@
+{"item_id": "kaggledbqa_test_0", "db_id": "GeoNuclearData", "question": "Which country has the most capacities of nuclear power plants?"}
+{"item_id": "kaggledbqa_test_1", "db_id": "GeoNuclearData", "question": "Which country has the least capacities of nuclear power plants?"}
+{"item_id": "kaggledbqa_test_2", "db_id": "GeoNuclearData", "question": "What are the top 3 countries which have the most nuclear power plants?"}
+{"item_id": "kaggledbqa_test_3", "db_id": "GeoNuclearData", "question": "Which country has the most nuclear station?"}
+{"item_id": "kaggledbqa_test_4", "db_id": "GeoNuclearData", "question": "Which county has the most nuclear station shut down?"}
+{"item_id": "kaggledbqa_test_5", "db_id": "GeoNuclearData", "question": "What nuclear station has the largest nuclear power plant capacity?"}
+{"item_id": "kaggledbqa_test_6", "db_id": "GeoNuclearData", "question": "How many operating nuclear station in France?"}
+{"item_id": "kaggledbqa_test_7", "db_id": "GeoNuclearData", "question": "How many nuclear station are under construction?"}
+{"item_id": "kaggledbqa_test_8", "db_id": "GeoNuclearData", "question": "What nuclear reactor model is the most popular?"}
+{"item_id": "kaggledbqa_test_9", "db_id": "GeoNuclearData", "question": "Which country is Chinon-A3 in?"}
+{"item_id": "kaggledbqa_test_10", "db_id": "GeoNuclearData", "question": "What are operational nuclear power plants in Japan called?"}
+{"item_id": "kaggledbqa_test_11", "db_id": "GeoNuclearData", "question": "Which country first started using nuclear power plant(s)?"}
+{"item_id": "kaggledbqa_test_12", "db_id": "GeoNuclearData", "question": "How many nuclear power plants are in preparation to be used in Japan?"}
+{"item_id": "kaggledbqa_test_13", "db_id": "GeoNuclearData", "question": "What is the current situation of the nuclear power plant in the United States with the maximum capacity?"}
+{"item_id": "kaggledbqa_test_14", "db_id": "GeoNuclearData", "question": "What is the maximum capacity of existing pressurized water reactor?"}
+{"item_id": "kaggledbqa_test_15", "db_id": "GeoNuclearData", "question": "Which nation has the most nuclear plants under construction?"}
+{"item_id": "kaggledbqa_test_16", "db_id": "GeoNuclearData", "question": "Which country has the most under constriction power plants to date?"}
+{"item_id": "kaggledbqa_test_17", "db_id": "GeoNuclearData", "question": "Where is the first BWR type power plant built and located?"}
+{"item_id": "kaggledbqa_test_18", "db_id": "GeoNuclearData", "question": "Which country lead the total capacity of the power plants it held?"}
+{"item_id": "kaggledbqa_test_19", "db_id": "GeoNuclearData", "question": "What is the main source of the information for this table?"}
+{"item_id": "kaggledbqa_test_20", "db_id": "GeoNuclearData", "question": "Which reactor type has the largest average capacity?"}
+{"item_id": "kaggledbqa_test_21", "db_id": "GeoNuclearData", "question": "Which country is Kursk-1 in?"}
+{"item_id": "kaggledbqa_test_22", "db_id": "GreaterManchesterCrime", "question": "What time do most of the crimes happen?"}
+{"item_id": "kaggledbqa_test_23", "db_id": "GreaterManchesterCrime", "question": "What are the most likely outcome of the police investigation if the crime happen on \"street\"?"}
+{"item_id": "kaggledbqa_test_24", "db_id": "GreaterManchesterCrime", "question": "Which type of crime happen the most in Salford?"}
+{"item_id": "kaggledbqa_test_25", "db_id": "GreaterManchesterCrime", "question": "How many crimes are under investigation?"}
+{"item_id": "kaggledbqa_test_26", "db_id": "GreaterManchesterCrime", "question": "How many crimes has been conducted?"}
+{"item_id": "kaggledbqa_test_27", "db_id": "GreaterManchesterCrime", "question": "What is the top 3 area of crime conducted?"}
+{"item_id": "kaggledbqa_test_28", "db_id": "GreaterManchesterCrime", "question": "Which type of crime has the highest rate of \"Investigation complete\"?"}
+{"item_id": "kaggledbqa_test_29", "db_id": "GreaterManchesterCrime", "question": "How many crimes were classified as \"Drugs\"?"}
+{"item_id": "kaggledbqa_test_30", "db_id": "GreaterManchesterCrime", "question": "How many crimes are still \"Under investigation\" to date?"}
+{"item_id": "kaggledbqa_test_31", "db_id": "GreaterManchesterCrime", "question": "Which location has the top amount of \"Drugs\" crime conducted?"}
+{"item_id": "kaggledbqa_test_32", "db_id": "GreaterManchesterCrime", "question": "What\u2019s the most common type of crime?"}
+{"item_id": "kaggledbqa_test_33", "db_id": "GreaterManchesterCrime", "question": "Where is the most dangerous area?"}
+{"item_id": "kaggledbqa_test_34", "db_id": "GreaterManchesterCrime", "question": "Where is the safest area?"}
+{"item_id": "kaggledbqa_test_35", "db_id": "GreaterManchesterCrime", "question": "Where is the place with the largest number of sexual offenses crime events?"}
+{"item_id": "kaggledbqa_test_36", "db_id": "GreaterManchesterCrime", "question": "If it is possible to increase the number of police officers, which place is with the first priority?"}
+{"item_id": "kaggledbqa_test_37", "db_id": "GreaterManchesterCrime", "question": "Which type of crime has the most prosecution cases?"}
+{"item_id": "kaggledbqa_test_38", "db_id": "GreaterManchesterCrime", "question": "Which type of crime has the most investigation complete cases?"}
+{"item_id": "kaggledbqa_test_39", "db_id": "GreaterManchesterCrime", "question": "What is the result in case 6B:E2:54:C6:58:D2?"}
+{"item_id": "kaggledbqa_test_40", "db_id": "Pesticide", "question": "which foods are captured in the data set?"}
+{"item_id": "kaggledbqa_test_41", "db_id": "Pesticide", "question": "how many samples have unknown countries of origin?"}
+{"item_id": "kaggledbqa_test_42", "db_id": "Pesticide", "question": "Which are the top 10 commodities that have the highest residue during 2015?"}
+{"item_id": "kaggledbqa_test_43", "db_id": "Pesticide", "question": "Name some imported commodities that are not found in the US."}
+{"item_id": "kaggledbqa_test_44", "db_id": "Pesticide", "question": "Tell me the average pesticide residue for each state in the US where food is grown."}
+{"item_id": "kaggledbqa_test_45", "db_id": "Pesticide", "question": "Which varieties of apple typically have higher pesticide levels?"}
+{"item_id": "kaggledbqa_test_46", "db_id": "Pesticide", "question": "Which commodities have the pesticides concentration much higher than their limit for detection?"}
+{"item_id": "kaggledbqa_test_47", "db_id": "Pesticide", "question": "Name top 5 labs with the maximum number of testing."}
+{"item_id": "kaggledbqa_test_48", "db_id": "Pesticide", "question": "Which country is the safest in terms of the pesticide concentration found in imported foods?"}
+{"item_id": "kaggledbqa_test_49", "db_id": "Pesticide", "question": "Which is the most popular state in the US in terms of commodities distribution?"}

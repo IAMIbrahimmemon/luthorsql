@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_145", "sql": "SELECT groupName, groupYear FROM torrents"}
+{"question_id": "kaggledbqa_test_146", "sql": "SELECT artist, groupName FROM torrents"}
+{"question_id": "kaggledbqa_test_147", "sql": "SELECT DISTINCT tag FROM tags"}
+{"question_id": "kaggledbqa_test_148", "sql": "SELECT DISTINCT releaseType FROM torrents"}
+{"question_id": "kaggledbqa_test_149", "sql": "SELECT groupName FROM torrents WHERE groupYear > 2000 ORDER BY totalSnatched DESC LIMIT 5"}
+{"question_id": "kaggledbqa_test_150", "sql": "SELECT DISTINCT groupName FROM torrents WHERE totalSnatched > 100 AND releaseType = 'album'"}
+{"question_id": "kaggledbqa_test_151", "sql": "SELECT T1.groupName FROM torrents AS T1 JOIN tags AS T2 ON T1.id = T2.id WHERE T2.tag = 'houston' ORDER BY T1.totalSnatched DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_152", "sql": "SELECT groupName FROM torrents WHERE artist = 'lasean camry' AND totalSnatched = (SELECT MAX(totalSnatched) FROM torrents WHERE artist = 'lasean camry') UNION SELECT groupName FROM torrents WHERE artist = 'lasean camry' AND totalSnatched = (SELECT MIN(totalSnatched) FROM torrents WHERE artist = 'lasean camry')"}
+{"question_id": "kaggledbqa_test_153", "sql": "SELECT groupName FROM torrents WHERE releaseType = 'album' ORDER BY totalSnatched DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_154", "sql": "SELECT T2.tag FROM torrents AS T1 JOIN tags AS T2 ON T1.id = T2.id WHERE T1.groupYear >= 2010 GROUP BY T2.tag ORDER BY SUM(T1.totalSnatched) DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_155", "sql": "SELECT groupYear FROM torrents GROUP BY groupYear ORDER BY COUNT(*) ASC LIMIT 1"}
+{"question_id": "kaggledbqa_test_156", "sql": "SELECT groupName FROM torrents ORDER BY totalSnatched DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_157", "sql": "SELECT artist FROM torrents WHERE groupYear = 2015 ORDER BY totalSnatched DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_158", "sql": "SELECT T2.tag, T1.groupName FROM torrents AS T1 JOIN tags AS T2 ON T1.id = T2.id"}

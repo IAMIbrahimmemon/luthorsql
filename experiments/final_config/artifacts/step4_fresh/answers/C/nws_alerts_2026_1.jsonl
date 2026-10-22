@@ -1,0 +1,17 @@
+{"question_id": "fresh_nws_alerts_2026_2", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_5", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_6", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_7", "pick": "NONE", "sql": "SELECT severity, ROUND(100.0*COUNT(*)/(SELECT COUNT(*) FROM alerts WHERE severity IS NOT NULL),2) AS percentage FROM alerts WHERE severity IS NOT NULL GROUP BY severity ORDER BY percentage DESC, severity"}
+{"question_id": "fresh_nws_alerts_2026_8", "pick": "NONE", "sql": "SELECT office_id, ROUND(AVG((julianday(expires)-julianday(sent))*24),2) AS avg_duration_hours FROM alerts WHERE office_id IS NOT NULL AND julianday(expires)>julianday(sent) GROUP BY office_id ORDER BY avg_duration_hours DESC, office_id"}
+{"question_id": "fresh_nws_alerts_2026_9", "pick": "NONE", "sql": "SELECT o.office_id, o.office_name, COUNT(*) AS alert_count, RANK() OVER (ORDER BY COUNT(*) DESC) AS alert_rank FROM offices o JOIN alerts a ON a.office_id=o.office_id GROUP BY o.office_id, o.office_name ORDER BY alert_rank, o.office_id"}
+{"question_id": "fresh_nws_alerts_2026_11", "pick": "NONE", "sql": "SELECT MAX(CAST(max_hail_size AS REAL)) FROM alerts WHERE office_id='SLC'"}
+{"question_id": "fresh_nws_alerts_2026_13", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_18", "pick": "NONE", "sql": "SELECT event, ROUND(100.0*SUM(urgency='Immediate')/COUNT(*),2) AS pct FROM alerts GROUP BY event HAVING COUNT(*)>=3 ORDER BY pct DESC, event"}
+{"question_id": "fresh_nws_alerts_2026_19", "pick": "NONE", "sql": "WITH c AS (SELECT o.region, o.office_id, o.office_name, COUNT(*) AS n, RANK() OVER (PARTITION BY o.region ORDER BY COUNT(*) DESC) AS r FROM offices o JOIN alerts a ON a.office_id=o.office_id GROUP BY o.region, o.office_id, o.office_name) SELECT region, office_id, office_name, n FROM c WHERE r=1 ORDER BY region, office_id"}
+{"question_id": "fresh_nws_alerts_2026_20", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_21", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_23", "pick": "A"}
+{"question_id": "fresh_nws_alerts_2026_24", "pick": "NONE", "sql": "SELECT event, COUNT(*), ROUND(AVG(CAST(max_hail_size AS REAL)),2) FROM alerts WHERE max_hail_size IS NOT NULL GROUP BY event ORDER BY event"}
+{"question_id": "fresh_nws_alerts_2026_27", "pick": "NONE", "sql": "SELECT o.office_id, o.office_name, ROUND(100.0*SUM(a.urgency='Immediate')/COUNT(a.urgency),2) AS p FROM offices o JOIN alerts a ON a.office_id=o.office_id WHERE a.urgency IS NOT NULL GROUP BY o.office_id, o.office_name HAVING COUNT(a.urgency)>=2 ORDER BY p DESC, o.office_id"}
+{"question_id": "fresh_nws_alerts_2026_28", "pick": "NONE", "sql": "SELECT o.region, ROUND(100.0*SUM(a.severity='Severe')/COUNT(a.severity),2) AS p FROM offices o JOIN alerts a ON a.office_id=o.office_id WHERE a.severity IS NOT NULL GROUP BY o.region HAVING COUNT(a.severity)>=3 ORDER BY p DESC, o.region"}
+{"question_id": "fresh_nws_alerts_2026_29", "pick": "NONE", "sql": "WITH d AS (SELECT office_id, alert_id, (julianday(expires)-julianday(sent))*24*60 AS m FROM alerts WHERE julianday(expires)>julianday(sent)), r AS (SELECT office_id, alert_id, ROUND(m,2) AS duration_minutes, RANK() OVER (PARTITION BY office_id ORDER BY m DESC) AS duration_rank FROM d) SELECT office_id, alert_id, duration_minutes, duration_rank FROM r WHERE duration_rank=1 ORDER BY office_id, alert_id"}

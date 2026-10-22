@@ -1,0 +1,15 @@
+{"question_id": "fresh_f1_2026_0", "sql": "SELECT driver_code, car_number FROM drivers WHERE nationality = 'British'"}
+{"question_id": "fresh_f1_2026_1", "sql": "SELECT COUNT(*) FROM races WHERE has_sprint = 1"}
+{"question_id": "fresh_f1_2026_2", "sql": "SELECT AVG(duration_seconds) FROM pit_stops WHERE round = 9 AND driver_id = 'albon'"}
+{"question_id": "fresh_f1_2026_3", "sql": "SELECT c.constructor_name, SUM(r.points) FROM results r JOIN constructors c ON r.constructor_id = c.constructor_id WHERE r.round = 9 GROUP BY c.constructor_id, c.constructor_name"}
+{"question_id": "fresh_f1_2026_4", "sql": "SELECT c.constructor_name, MIN(q.q3_time) FROM qualifying q JOIN constructors c ON q.constructor_id = c.constructor_id WHERE q.round = 9 AND q.q3_time IS NOT NULL GROUP BY c.constructor_id, c.constructor_name"}
+{"question_id": "fresh_f1_2026_5", "sql": "SELECT c.constructor_name, COUNT(*) FROM results r JOIN constructors c ON r.constructor_id = c.constructor_id WHERE r.round = 9 AND r.finish_position <= 3 GROUP BY c.constructor_id, c.constructor_name"}
+{"question_id": "fresh_f1_2026_6", "sql": "SELECT s.driver_id, s.finish_position, r.finish_position FROM sprint_results s JOIN results r ON s.round = r.round AND s.driver_id = r.driver_id WHERE s.round = 9"}
+{"question_id": "fresh_f1_2026_7", "sql": "SELECT c.constructor_name, ROUND(SUM(r.points) * 100.0 / (SELECT SUM(points) FROM results WHERE round = 9), 2) FROM results r JOIN constructors c ON r.constructor_id = c.constructor_id WHERE r.round = 9 GROUP BY c.constructor_id, c.constructor_name HAVING SUM(r.points) > 0"}
+{"question_id": "fresh_f1_2026_8", "sql": "SELECT driver_id, finish_position, ROW_NUMBER() OVER (ORDER BY grid_position - finish_position DESC, driver_id) AS gain_rank FROM results WHERE round = 9"}
+{"question_id": "fresh_f1_2026_10", "sql": "SELECT circuit_name, locality FROM circuits WHERE country = 'Hungary'"}
+{"question_id": "fresh_f1_2026_11", "sql": "SELECT COUNT(*) FROM drivers WHERE nationality = 'British'"}
+{"question_id": "fresh_f1_2026_12", "sql": "SELECT race_time_utc FROM races WHERE race_name = 'Belgian Grand Prix'"}
+{"question_id": "fresh_f1_2026_13", "sql": "SELECT d.driver_code, c.constructor_name, r.finish_position FROM results r JOIN drivers d ON r.driver_id = d.driver_id JOIN constructors c ON r.constructor_id = c.constructor_id WHERE r.round = 9 AND r.finish_position BETWEEN 1 AND 10 ORDER BY r.finish_position"}
+{"question_id": "fresh_f1_2026_14", "sql": "SELECT DISTINCT ci.circuit_name, ci.locality FROM races ra JOIN circuits ci ON ra.circuit_id = ci.circuit_id WHERE ra.has_sprint = 1"}
+{"question_id": "fresh_f1_2026_15", "sql": "SELECT c.constructor_name, ROUND(AVG(p.duration_seconds), 2) AS avg_dur FROM pit_stops p JOIN results r ON p.round = r.round AND p.driver_id = r.driver_id JOIN constructors c ON r.constructor_id = c.constructor_id WHERE p.round = 9 GROUP BY c.constructor_id, c.constructor_name ORDER BY avg_dur ASC"}

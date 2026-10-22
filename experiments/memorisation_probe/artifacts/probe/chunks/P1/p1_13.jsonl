@@ -1,0 +1,50 @@
+{"item_id": "spider_realistic_450", "db_id": "network_1", "question": "How many high schoolers are there in  9 or 10?"}
+{"item_id": "spider_realistic_451", "db_id": "network_1", "question": "Count the number of high schoolers in grades 9 or 10."}
+{"item_id": "spider_realistic_452", "db_id": "network_1", "question": "Show the number of high schoolers for each year."}
+{"item_id": "spider_realistic_453", "db_id": "network_1", "question": "How many high schoolers are in each year?"}
+{"item_id": "spider_realistic_454", "db_id": "network_1", "question": "Which year has the most high schoolers?"}
+{"item_id": "spider_realistic_455", "db_id": "network_1", "question": "Show the names of all of Kyle's friends."}
+{"item_id": "spider_realistic_456", "db_id": "network_1", "question": "Return the names of friends of  Kyle."}
+{"item_id": "spider_realistic_457", "db_id": "network_1", "question": "How many friends does Kyle have?"}
+{"item_id": "spider_realistic_458", "db_id": "network_1", "question": "Count the number of friends Kyle has."}
+{"item_id": "spider_realistic_459", "db_id": "network_1", "question": "How many likes does Kyle have?"}
+{"item_id": "spider_realistic_460", "db_id": "network_1", "question": "Return the number of likes Kyle has."}
+{"item_id": "spider_realistic_461", "db_id": "network_1", "question": "Find the average grade of all students who have some friends."}
+{"item_id": "spider_realistic_462", "db_id": "network_1", "question": "What is the average grade of students who have friends?"}
+{"item_id": "spider_realistic_463", "db_id": "network_1", "question": "Find the minimum grade of students who have no friends."}
+{"item_id": "spider_realistic_464", "db_id": "network_1", "question": "What is the lowest grade of students who do not have any friends?"}
+{"item_id": "spider_realistic_465", "db_id": "dog_kennels", "question": "Which professionals live in Indiana or have done treatment on more than 2 treatments? List his or her id, last name and cell phone."}
+{"item_id": "spider_realistic_466", "db_id": "dog_kennels", "question": "Find the id, last name and cell phone of the professionals who live in Indiana or have performed more than two treatments."}
+{"item_id": "spider_realistic_467", "db_id": "dog_kennels", "question": "What are the names of the dogs for which the owner spent more than 1000 for treatment?"}
+{"item_id": "spider_realistic_468", "db_id": "dog_kennels", "question": "Which person has the most dogs? List the id, first name and last name."}
+{"item_id": "spider_realistic_469", "db_id": "dog_kennels", "question": "Return the id, first name and last name of the person who has the most dogs."}
+{"item_id": "spider_realistic_470", "db_id": "dog_kennels", "question": "Which doctors have done at least two treatments? List theid, role, and first name."}
+{"item_id": "spider_realistic_471", "db_id": "dog_kennels", "question": "What are the id, role, and first name of the people who have performed two or more treatments?"}
+{"item_id": "spider_realistic_472", "db_id": "dog_kennels", "question": "What is the description of the treatment type that is the cheapest overall?"}
+{"item_id": "spider_realistic_473", "db_id": "dog_kennels", "question": "Give me the description of the treatment type that is least expensive."}
+{"item_id": "spider_realistic_474", "db_id": "dog_kennels", "question": "Who has paid the largest amount of money in total for their dogs? Show the id and zip code."}
+{"item_id": "spider_realistic_475", "db_id": "dog_kennels", "question": "Find the id and zip code of the person who spent the most money in total for his or her dogs."}
+{"item_id": "spider_realistic_476", "db_id": "dog_kennels", "question": "What are the first name and last name of the professionals who have done treatment cheaper than average?"}
+{"item_id": "spider_realistic_477", "db_id": "dog_kennels", "question": "Which professionals have operated a treatment that is less expansive than the average? Give me theor first names and last names."}
+{"item_id": "spider_realistic_478", "db_id": "dog_kennels", "question": "Which dogs are owned by someone who lives in Virginia? List the owner's first name and the dog's name."}
+{"item_id": "spider_realistic_479", "db_id": "dog_kennels", "question": "Find the first names of owners living in Virginia and the names of dogs they own."}
+{"item_id": "spider_realistic_480", "db_id": "dog_kennels", "question": "List the last name of the owner owning the youngest dog."}
+{"item_id": "spider_realistic_481", "db_id": "dog_kennels", "question": "Who owns the youngest dog? Give me his or her last name."}
+{"item_id": "spider_realistic_482", "db_id": "dog_kennels", "question": "List the emails of the professionals who live in Hawaii or Wisconsin."}
+{"item_id": "spider_realistic_483", "db_id": "dog_kennels", "question": "What are the emails of the professionals living in either Hawaii or Wisconsin?"}
+{"item_id": "spider_realistic_484", "db_id": "dog_kennels", "question": "How many dogs younger than average?"}
+{"item_id": "spider_realistic_485", "db_id": "dog_kennels", "question": "Count the number of dogs that are younger than the average."}
+{"item_id": "spider_realistic_486", "db_id": "dog_kennels", "question": "How much is the most recent treatment?"}
+{"item_id": "spider_realistic_487", "db_id": "dog_kennels", "question": "Show me the price of the most recently performed treatment."}
+{"item_id": "spider_realistic_488", "db_id": "dog_kennels", "question": "List the dog name, age and weight of the dogs who have been abandoned?"}
+{"item_id": "spider_realistic_489", "db_id": "dog_kennels", "question": "What are the dog name, age and weight of the dogs that were abandoned?"}
+{"item_id": "spider_realistic_490", "db_id": "singer", "question": "List the name of singers in ascending order of wealth."}
+{"item_id": "spider_realistic_491", "db_id": "singer", "question": "What are the names of singers ordered by ascending wealth?"}
+{"item_id": "spider_realistic_492", "db_id": "singer", "question": "List the name of singers whose  is not French."}
+{"item_id": "spider_realistic_493", "db_id": "singer", "question": "What are the names of the singers who are not French?"}
+{"item_id": "spider_realistic_494", "db_id": "singer", "question": "Show the name of singers who were born either 1948 or 1949?"}
+{"item_id": "spider_realistic_495", "db_id": "singer", "question": "What are the names of the singers who born in either 1948 or 1949?"}
+{"item_id": "spider_realistic_496", "db_id": "singer", "question": "What is the name of the singer with the largest wealth?"}
+{"item_id": "spider_realistic_497", "db_id": "singer", "question": "Show different nationalities of singers and the number of singers of each."}
+{"item_id": "spider_realistic_498", "db_id": "singer", "question": "how many singers are from each country?"}
+{"item_id": "spider_realistic_499", "db_id": "singer", "question": "Please show the most common nationality of singers."}

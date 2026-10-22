@@ -1,0 +1,18 @@
+{"question_id": "kaggledbqa_test_22", "pick": "A"}
+{"question_id": "kaggledbqa_test_23", "pick": "A"}
+{"question_id": "kaggledbqa_test_24", "pick": "NONE", "sql": "SELECT \"Type\" FROM \"GreaterManchesterCrime\" WHERE \"LSOA\" LIKE '%Salford%' GROUP BY \"Type\" ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_25", "pick": "A"}
+{"question_id": "kaggledbqa_test_26", "pick": "A"}
+{"question_id": "kaggledbqa_test_27", "pick": "A"}
+{"question_id": "kaggledbqa_test_28", "pick": "A"}
+{"question_id": "kaggledbqa_test_29", "pick": "A"}
+{"question_id": "kaggledbqa_test_30", "pick": "A"}
+{"question_id": "kaggledbqa_test_31", "pick": "A"}
+{"question_id": "kaggledbqa_test_32", "pick": "A"}
+{"question_id": "kaggledbqa_test_33", "pick": "A"}
+{"question_id": "kaggledbqa_test_34", "pick": "A"}
+{"question_id": "kaggledbqa_test_35", "pick": "NONE", "sql": "SELECT \"Location\" FROM \"GreaterManchesterCrime\" WHERE \"Type\" LIKE '%Sexual%' GROUP BY \"Location\" ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_36", "pick": "A"}
+{"question_id": "kaggledbqa_test_37", "pick": "A"}
+{"question_id": "kaggledbqa_test_38", "pick": "B"}
+{"question_id": "kaggledbqa_test_39", "pick": "A"}

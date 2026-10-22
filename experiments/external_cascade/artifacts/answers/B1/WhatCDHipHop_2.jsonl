@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_159", "pick": "A"}
+{"question_id": "kaggledbqa_test_160", "pick": "A"}
+{"question_id": "kaggledbqa_test_161", "pick": "A"}
+{"question_id": "kaggledbqa_test_162", "pick": "A"}
+{"question_id": "kaggledbqa_test_163", "pick": "B"}
+{"question_id": "kaggledbqa_test_164", "pick": "A"}
+{"question_id": "kaggledbqa_test_165", "pick": "A"}
+{"question_id": "kaggledbqa_test_166", "pick": "C"}
+{"question_id": "kaggledbqa_test_167", "pick": "NONE", "sql": "SELECT SUM(totalSnatched) FROM torrents WHERE groupYear BETWEEN 2000 AND 2010 UNION SELECT SUM(totalSnatched) FROM torrents WHERE groupYear < 2000"}
+{"question_id": "kaggledbqa_test_168", "pick": "NONE", "sql": "SELECT COUNT(*) FROM (SELECT groupName FROM torrents GROUP BY groupName HAVING COUNT(*) > 1)"}
+{"question_id": "kaggledbqa_test_169", "pick": "A"}
+{"question_id": "kaggledbqa_test_170", "pick": "NONE", "sql": "SELECT SUM(totalSnatched) FROM torrents WHERE releaseType = 'ep' UNION SELECT SUM(totalSnatched) FROM torrents WHERE releaseType = 'album'"}
+{"question_id": "kaggledbqa_test_171", "pick": "A"}
+{"question_id": "kaggledbqa_test_172", "pick": "A"}

@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_220", "pick": "A"}
+{"question_id": "spider_realistic_221", "pick": "A"}
+{"question_id": "spider_realistic_224", "pick": "A"}
+{"question_id": "spider_realistic_225", "pick": "A"}
+{"question_id": "spider_realistic_226", "pick": "NONE", "sql": "SELECT T1.country_code, T1.first_name FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'WTA Championships' INTERSECT SELECT T1.country_code, T1.first_name FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'Australian Open'"}
+{"question_id": "spider_realistic_227", "pick": "NONE", "sql": "SELECT T1.first_name, T1.country_code FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'WTA Championships' INTERSECT SELECT T1.first_name, T1.country_code FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'Australian Open'"}
+{"question_id": "spider_realistic_228", "pick": "A"}
+{"question_id": "spider_realistic_229", "pick": "A"}
+{"question_id": "spider_realistic_230", "pick": "A"}
+{"question_id": "spider_realistic_231", "pick": "A"}
+{"question_id": "spider_realistic_232", "pick": "A"}
+{"question_id": "spider_realistic_233", "pick": "A"}
+{"question_id": "spider_realistic_235", "pick": "A"}
+{"question_id": "spider_realistic_240", "pick": "B"}
+{"question_id": "spider_realistic_241", "pick": "B"}
+{"question_id": "spider_realistic_249", "pick": "B"}

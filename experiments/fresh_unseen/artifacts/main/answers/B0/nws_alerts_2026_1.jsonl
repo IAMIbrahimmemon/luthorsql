@@ -1,0 +1,15 @@
+{"question_id": "fresh_nws_alerts_2026_0", "sql": "SELECT COUNT(*) FROM alerts WHERE severity = 'Severe' AND category = 'Met'"}
+{"question_id": "fresh_nws_alerts_2026_1", "sql": "SELECT DISTINCT event FROM alerts WHERE office_id = 'FGZ'"}
+{"question_id": "fresh_nws_alerts_2026_2", "sql": "SELECT COUNT(*) FROM zones WHERE state = 'AK' AND zone_type = 'forecast'"}
+{"question_id": "fresh_nws_alerts_2026_3", "sql": "SELECT o.office_id, o.office_name, COUNT(a.alert_id) AS alert_count FROM offices o LEFT JOIN alerts a ON a.office_id = o.office_id GROUP BY o.office_id, o.office_name ORDER BY alert_count DESC, o.office_id"}
+{"question_id": "fresh_nws_alerts_2026_4", "sql": "SELECT o.region, COUNT(*) AS severe_count FROM offices o JOIN alerts a ON a.office_id = o.office_id WHERE a.severity = 'Severe' GROUP BY o.region ORDER BY severe_count DESC, o.region"}
+{"question_id": "fresh_nws_alerts_2026_5", "sql": "SELECT DISTINCT z.zone_code, z.zone_type, z.zone_name FROM alerts a JOIN alert_zones az ON az.alert_id = a.alert_id JOIN zones z ON z.zone_key = az.zone_key WHERE a.office_id = 'FGZ' AND z.state = 'AZ' ORDER BY z.zone_code, z.zone_type"}
+{"question_id": "fresh_nws_alerts_2026_6", "sql": "SELECT a.event, COUNT(DISTINCT az.zone_key) AS affected_zone_count FROM alerts a JOIN alert_zones az ON az.alert_id = a.alert_id GROUP BY a.event ORDER BY affected_zone_count DESC, a.event"}
+{"question_id": "fresh_nws_alerts_2026_7", "sql": "SELECT severity, ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM alerts WHERE severity IS NOT NULL), 2) AS percentage FROM alerts WHERE severity IS NOT NULL GROUP BY severity ORDER BY percentage DESC, severity"}
+{"question_id": "fresh_nws_alerts_2026_8", "sql": "SELECT office_id, ROUND(AVG((julianday(expires) - julianday(sent)) * 24), 2) AS avg_duration_hours FROM alerts WHERE office_id IS NOT NULL AND julianday(expires) > julianday(sent) GROUP BY office_id ORDER BY avg_duration_hours DESC, office_id"}
+{"question_id": "fresh_nws_alerts_2026_9", "sql": "SELECT office_id, office_name, alert_count, RANK() OVER (ORDER BY alert_count DESC) AS alert_rank FROM (SELECT o.office_id, o.office_name, COUNT(*) AS alert_count FROM offices o JOIN alerts a ON a.office_id = o.office_id GROUP BY o.office_id, o.office_name) ORDER BY alert_rank, office_id"}
+{"question_id": "fresh_nws_alerts_2026_10", "sql": "SELECT COUNT(*) FROM alerts WHERE message_type = 'Alert' AND urgency = 'Immediate'"}
+{"question_id": "fresh_nws_alerts_2026_11", "sql": "SELECT MAX(CAST(max_hail_size AS REAL)) FROM alerts WHERE office_id = 'SLC'"}
+{"question_id": "fresh_nws_alerts_2026_12", "sql": "SELECT DISTINCT response FROM alerts WHERE category = 'Met' AND severity = 'Severe' ORDER BY response"}
+{"question_id": "fresh_nws_alerts_2026_13", "sql": "SELECT zone_type, COUNT(*) AS zone_count FROM zones WHERE state = 'AK' GROUP BY zone_type ORDER BY zone_type"}
+{"question_id": "fresh_nws_alerts_2026_14", "sql": "SELECT DISTINCT o.office_id, o.office_name FROM offices o JOIN alerts a ON a.office_id = o.office_id WHERE a.event = 'Flash Flood Warning' ORDER BY o.office_id"}

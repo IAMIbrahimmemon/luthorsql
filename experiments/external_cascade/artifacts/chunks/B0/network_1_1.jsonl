@@ -1,0 +1,21 @@
+{"question_id": "spider_realistic_444", "db_id": "network_1", "question": "What grade is Kyle in?", "evidence": ""}
+{"question_id": "spider_realistic_445", "db_id": "network_1", "question": "Return the grade for Kyle.", "evidence": ""}
+{"question_id": "spider_realistic_446", "db_id": "network_1", "question": "Show the names of all high schoolers in  10.", "evidence": ""}
+{"question_id": "spider_realistic_447", "db_id": "network_1", "question": "What are the names of all high schoolers in  10?", "evidence": ""}
+{"question_id": "spider_realistic_448", "db_id": "network_1", "question": "Show the ID of Kyle.", "evidence": ""}
+{"question_id": "spider_realistic_449", "db_id": "network_1", "question": "What is Kyle's id?", "evidence": ""}
+{"question_id": "spider_realistic_450", "db_id": "network_1", "question": "How many high schoolers are there in  9 or 10?", "evidence": ""}
+{"question_id": "spider_realistic_451", "db_id": "network_1", "question": "Count the number of high schoolers in grades 9 or 10.", "evidence": ""}
+{"question_id": "spider_realistic_452", "db_id": "network_1", "question": "Show the number of high schoolers for each year.", "evidence": ""}
+{"question_id": "spider_realistic_453", "db_id": "network_1", "question": "How many high schoolers are in each year?", "evidence": ""}
+{"question_id": "spider_realistic_454", "db_id": "network_1", "question": "Which year has the most high schoolers?", "evidence": ""}
+{"question_id": "spider_realistic_455", "db_id": "network_1", "question": "Show the names of all of Kyle's friends.", "evidence": ""}
+{"question_id": "spider_realistic_456", "db_id": "network_1", "question": "Return the names of friends of  Kyle.", "evidence": ""}
+{"question_id": "spider_realistic_457", "db_id": "network_1", "question": "How many friends does Kyle have?", "evidence": ""}
+{"question_id": "spider_realistic_458", "db_id": "network_1", "question": "Count the number of friends Kyle has.", "evidence": ""}
+{"question_id": "spider_realistic_459", "db_id": "network_1", "question": "How many likes does Kyle have?", "evidence": ""}
+{"question_id": "spider_realistic_460", "db_id": "network_1", "question": "Return the number of likes Kyle has.", "evidence": ""}
+{"question_id": "spider_realistic_461", "db_id": "network_1", "question": "Find the average grade of all students who have some friends.", "evidence": ""}
+{"question_id": "spider_realistic_462", "db_id": "network_1", "question": "What is the average grade of students who have friends?", "evidence": ""}
+{"question_id": "spider_realistic_463", "db_id": "network_1", "question": "Find the minimum grade of students who have no friends.", "evidence": ""}
+{"question_id": "spider_realistic_464", "db_id": "network_1", "question": "What is the lowest grade of students who do not have any friends?", "evidence": ""}

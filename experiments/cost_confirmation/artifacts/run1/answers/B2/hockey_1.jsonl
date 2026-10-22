@@ -1,0 +1,21 @@
+{"question_id": "bird_train_train_7612", "pick": "NONE", "sql": "SELECT firstName, lastName FROM Master WHERE birthCountry != 'USA' AND birthYear = 1990"}
+{"question_id": "bird_train_train_7616", "pick": "NONE", "sql": "SELECT firstName, lastName, deathYear - birthYear FROM Master WHERE shootCatch IS NULL AND deathYear IS NOT NULL"}
+{"question_id": "bird_train_train_7618", "pick": "NONE", "sql": "SELECT AVG(weight) FROM Master WHERE height > 72"}
+{"question_id": "bird_train_train_7620", "pick": "NONE", "sql": "SELECT T2.firstName, T2.lastName FROM Goalies T1 JOIN Master T2 ON T1.playerID=T2.playerID WHERE T1.lgID IN ('PCHA','NHL') GROUP BY T1.playerID HAVING COUNT(DISTINCT T1.lgID)=2"}
+{"question_id": "bird_train_train_7627", "pick": "NONE", "sql": "SELECT T1.firstName, T1.lastName, CAST(SUM(T2.Min) AS REAL)/COUNT(T2.playerID) FROM Master T1 JOIN Goalies T2 ON T1.playerID=T2.playerID GROUP BY T2.playerID ORDER BY COUNT(T2.playerID) DESC LIMIT 1"}
+{"question_id": "bird_train_train_7630", "pick": "NONE", "sql": "SELECT nameGiven, firstNHL, firstWHA FROM Master WHERE firstNHL IS NOT NULL AND firstWHA IS NOT NULL"}
+{"question_id": "bird_train_train_7632", "pick": "NONE", "sql": "SELECT nameNick, lastNHL FROM Master ORDER BY height DESC LIMIT 1"}
+{"question_id": "bird_train_train_7635", "pick": "NONE", "sql": "SELECT DISTINCT T1.firstName, T1.lastName, T3.name FROM Master T1 JOIN Goalies T2 ON T1.playerID=T2.playerID JOIN Teams T3 ON T2.year=T3.year AND T2.tmID=T3.tmID WHERE T1.pos='G' AND T1.deathYear IS NOT NULL AND T1.birthCountry='Canada'"}
+{"question_id": "bird_train_train_7638", "pick": "NONE", "sql": "SELECT T2.nameGiven, T1.tmID, T1.year FROM Coaches T1 JOIN Master T2 ON T2.coachID=T1.coachID WHERE T2.playerID IS NOT NULL AND T2.coachID IS NOT NULL"}
+{"question_id": "bird_train_train_7644", "pick": "NONE", "sql": "SELECT T1.nameGiven, CAST(SUM(T2.Min) AS REAL)/SUM(T2.GP) FROM Master T1 JOIN Goalies T2 ON T1.playerID=T2.playerID WHERE T1.playerID='aebisda01' AND T1.pos='G'"}
+{"question_id": "bird_train_train_7647", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.playerID) FROM AwardsPlayers T1 JOIN Master T2 ON T1.playerID=T2.playerID WHERE T1.year=1983 AND T2.pos='G'"}
+{"question_id": "bird_train_train_7649", "pick": "NONE", "sql": "SELECT COUNT(*) FROM CombinedShutouts WHERE year=1977 AND \"R/P\"='R'"}
+{"question_id": "bird_train_train_7650", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT tmID) FROM Goalies WHERE year=2005 AND ENG IS NOT NULL"}
+{"question_id": "bird_train_train_7659", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.coachID) FROM Coaches T1 JOIN Master T2 ON T1.coachID=T2.coachID WHERE T1.w>30 AND T2.birthCountry='USA'"}
+{"question_id": "bird_train_train_7661", "pick": "NONE", "sql": "SELECT DISTINCT T2.award FROM Master T1 JOIN AwardsCoaches T2 ON T1.coachID=T2.coachID WHERE T1.birthYear=1952"}
+{"question_id": "bird_train_train_7662", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.coachID) FROM Master T1 JOIN AwardsCoaches T2 ON T1.coachID=T2.coachID WHERE T2.year=1940 AND T1.birthCountry='Toronto'"}
+{"question_id": "bird_train_train_7666", "pick": "NONE", "sql": "SELECT DISTINCT firstName FROM Master WHERE shootCatch IS NULL AND hofID IS NOT NULL AND pos='G'"}
+{"question_id": "bird_train_train_7668", "pick": "NONE", "sql": "SELECT DISTINCT T1.birthCity FROM Master T1 JOIN AwardsPlayers T2 ON T1.playerID=T2.playerID WHERE T2.year=1970"}
+{"question_id": "bird_train_train_7669", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.playerID) FROM Master T1 JOIN AwardsPlayers T2 ON T1.playerID=T2.playerID WHERE T1.birthCity='Toronto' AND T2.award='All-Rookie'"}
+{"question_id": "bird_train_train_7670", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.playerID) FROM Master T1 JOIN AwardsPlayers T2 ON T1.playerID=T2.playerID WHERE T1.deathYear IS NOT NULL AND T2.award='All-Rookie'"}
+{"question_id": "bird_train_train_7671", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.playerID) FROM Master T1 JOIN AwardsPlayers T2 ON T1.playerID=T2.playerID WHERE T1.deathState='Massachussets'"}

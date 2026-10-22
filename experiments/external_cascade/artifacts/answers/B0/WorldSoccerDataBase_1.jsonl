@@ -1,0 +1,12 @@
+{"question_id": "kaggledbqa_test_173", "sql": "SELECT AwayTeam FROM football_data WHERE HomeTeam = 'Omiya Ardija' AND Season LIKE '%2018%'"}
+{"question_id": "kaggledbqa_test_174", "sql": "SELECT COUNT(*) FROM betfront WHERE COUNTRY = 'spain' AND YEAR = 2010"}
+{"question_id": "kaggledbqa_test_175", "sql": "SELECT MATCH FROM betfront ORDER BY DRAW_OPENING DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_176", "sql": "SELECT YEAR FROM betfront GROUP BY YEAR ORDER BY COUNT(*) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_177", "sql": "SELECT COUNT(*) FROM football_data WHERE PSH IS NOT NULL OR PSD IS NOT NULL OR PSA IS NOT NULL"}
+{"question_id": "kaggledbqa_test_178", "sql": "SELECT COUNT(*) FROM football_data WHERE B365H > PSH"}
+{"question_id": "kaggledbqa_test_179", "sql": "SELECT COUNT(*) FROM football_data WHERE FTHG + FTAG > 5"}
+{"question_id": "kaggledbqa_test_180", "sql": "SELECT MAX(B365A) FROM football_data"}
+{"question_id": "kaggledbqa_test_181", "sql": "SELECT COUNT(*) FROM football_data WHERE FTHG = 0 AND FTAG = 0"}
+{"question_id": "kaggledbqa_test_182", "sql": "SELECT COUNT(DISTINCT Div) FROM football_data"}
+{"question_id": "kaggledbqa_test_183", "sql": "SELECT COUNT(*) FROM football_data WHERE Country != 'Scotland' AND Country != 'England' AND Referee IS NOT NULL AND Referee != ''"}
+{"question_id": "kaggledbqa_test_184", "sql": "SELECT B365D FROM football_data WHERE HomeTeam = 'Swindon' AND AwayTeam = 'Millwall' AND Season = '2016/2017'"}

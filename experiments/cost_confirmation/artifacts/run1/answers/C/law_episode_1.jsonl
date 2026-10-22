@@ -1,0 +1,19 @@
+{"question_id": "bird_train_train_1250", "pick": "A"}
+{"question_id": "bird_train_train_1261", "pick": "A"}
+{"question_id": "bird_train_train_1265", "pick": "A"}
+{"question_id": "bird_train_train_1269", "pick": "A"}
+{"question_id": "bird_train_train_1283", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.episode_id), CAST(COUNT(T2.person_id) AS REAL) / COUNT(DISTINCT T1.episode_id) FROM Episode AS T1 INNER JOIN Credit AS T2 ON T1.episode_id = T2.episode_id WHERE T1.season = 9 AND T1.series = 'Law and Order' AND T2.category = 'Cast'"}
+{"question_id": "bird_train_train_1284", "pick": "NONE", "sql": "SELECT T1.keyword FROM Keyword AS T1 INNER JOIN Episode AS T2 ON T1.episode_id = T2.episode_id WHERE T2.votes = (SELECT DISTINCT E.votes FROM Episode AS E INNER JOIN Keyword AS K ON E.episode_id = K.episode_id ORDER BY E.votes DESC LIMIT 1 OFFSET 1)"}
+{"question_id": "bird_train_train_1290", "pick": "A"}
+{"question_id": "bird_train_train_1297", "pick": "A"}
+{"question_id": "bird_train_train_1301", "pick": "A"}
+{"question_id": "bird_train_train_1308", "pick": "NONE", "sql": "SELECT DISTINCT T1.birth_region FROM Person AS T1 INNER JOIN Credit AS T2 ON T1.person_id = T2.person_id WHERE T2.role = 'assistant location manager'"}
+{"question_id": "bird_train_train_1319", "pick": "A"}
+{"question_id": "bird_train_train_1321", "pick": "NONE", "sql": "SELECT A.year, A.episode_id FROM Award AS A INNER JOIN Person AS P ON A.person_id = P.person_id WHERE P.name = 'Constantine Makris' AND A.result = 'Winner' AND A.award = 'Television' AND A.award_category = 'Silver Gavel Award' AND A.organization = 'American Bar Association Silver Gavel Awards for Media and the Arts'"}
+{"question_id": "bird_train_train_1323", "pick": "NONE", "sql": "SELECT COUNT(T1.award_id) FROM Award AS T1 INNER JOIN Episode AS T2 ON T1.episode_id = T2.episode_id WHERE T2.episode = 20 AND T1.series = 'Law and Order' AND T1.organization = 'Primetime Emmy Awards' AND T1.year = 1999 AND T1.result = 'Nominee'"}
+{"question_id": "bird_train_train_1324", "pick": "A"}
+{"question_id": "bird_train_train_1330", "pick": "A"}
+{"question_id": "bird_train_train_1333", "pick": "A"}
+{"question_id": "bird_train_train_1342", "pick": "A"}
+{"question_id": "bird_train_train_1346", "pick": "A"}
+{"question_id": "bird_train_train_1353", "pick": "A"}

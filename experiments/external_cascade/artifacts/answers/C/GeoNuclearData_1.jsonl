@@ -1,0 +1,8 @@
+{"question_id": "kaggledbqa_test_5", "pick": "A"}
+{"question_id": "kaggledbqa_test_11", "pick": "B"}
+{"question_id": "kaggledbqa_test_12", "pick": "B"}
+{"question_id": "kaggledbqa_test_13", "pick": "A"}
+{"question_id": "kaggledbqa_test_14", "pick": "NONE", "sql": "SELECT MAX(Capacity) FROM nuclear_power_plants WHERE ReactorType = 'PWR' AND Status = 'Operational'"}
+{"question_id": "kaggledbqa_test_17", "pick": "B"}
+{"question_id": "kaggledbqa_test_19", "pick": "B"}
+{"question_id": "kaggledbqa_test_20", "pick": "A"}

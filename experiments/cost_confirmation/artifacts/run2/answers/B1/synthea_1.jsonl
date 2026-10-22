@@ -1,0 +1,19 @@
+{"question_id": "bird_train_train_1361", "pick": "A"}
+{"question_id": "bird_train_train_1363", "pick": "A"}
+{"question_id": "bird_train_train_1366", "pick": "A"}
+{"question_id": "bird_train_train_1368", "pick": "A"}
+{"question_id": "bird_train_train_1373", "pick": "NONE", "sql": "SELECT T2.DESCRIPTION, T2.VALUE, T2.UNITS FROM patients T1 JOIN observations T2 ON T1.patient=T2.PATIENT WHERE T1.prefix='Mr.' AND T1.first='Vincent' AND T1.last='Wyman' AND T2.DATE='2010-08-02' AND T2.DESCRIPTION='Body Height'"}
+{"question_id": "bird_train_train_1376", "pick": "NONE", "sql": "SELECT DISTINCT T1.\"PREVALENCE PERCENTAGE\" FROM all_prevalences T1 JOIN conditions T2 ON lower(T1.ITEM)=lower(T2.DESCRIPTION) WHERE T2.CODE='64859006'"}
+{"question_id": "bird_train_train_1380", "pick": "A"}
+{"question_id": "bird_train_train_1381", "pick": "A"}
+{"question_id": "bird_train_train_1383", "pick": "A"}
+{"question_id": "bird_train_train_1384", "pick": "A"}
+{"question_id": "bird_train_train_1390", "pick": "A"}
+{"question_id": "bird_train_train_1391", "pick": "A"}
+{"question_id": "bird_train_train_1394", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T1.patient) FROM patients T1 JOIN medications T2 ON T1.patient=T2.PATIENT WHERE T2.DESCRIPTION='Ibuprofen 200 MG Oral Tablet' AND T2.START LIKE '2016%' AND T1.ethnicity='dominican' AND strftime('%m',T2.STOP)-strftime('%m',T2.START)=1"}
+{"question_id": "bird_train_train_1397", "pick": "B"}
+{"question_id": "bird_train_train_1401", "pick": "NONE", "sql": "SELECT DISTINCT T1.PATIENT FROM conditions T1 JOIN all_prevalences T2 ON lower(T2.ITEM)=lower(T1.DESCRIPTION) WHERE T2.\"PREVALENCE PERCENTAGE\"=18.8"}
+{"question_id": "bird_train_train_1402", "pick": "A"}
+{"question_id": "bird_train_train_1406", "pick": "A"}
+{"question_id": "bird_train_train_1407", "pick": "A"}
+{"question_id": "bird_train_train_1410", "pick": "A"}

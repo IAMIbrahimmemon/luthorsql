@@ -1,0 +1,14 @@
+{"question_id": "kaggledbqa_test_159", "db_id": "WhatCDHipHop", "question": "Which year has the most released song?", "evidence": ""}
+{"question_id": "kaggledbqa_test_160", "db_id": "WhatCDHipHop", "question": "Which artist/group is most productive?", "evidence": ""}
+{"question_id": "kaggledbqa_test_161", "db_id": "WhatCDHipHop", "question": "Which artist/group has the highest average download of songs?", "evidence": ""}
+{"question_id": "kaggledbqa_test_162", "db_id": "WhatCDHipHop", "question": "Which year has the most CDs released?", "evidence": ""}
+{"question_id": "kaggledbqa_test_163", "db_id": "WhatCDHipHop", "question": "Which CD has been downloaded the most times?", "evidence": ""}
+{"question_id": "kaggledbqa_test_164", "db_id": "WhatCDHipHop", "question": "Which kind of release type is the most popular?", "evidence": ""}
+{"question_id": "kaggledbqa_test_165", "db_id": "WhatCDHipHop", "question": "Whose CDs sells best?", "evidence": ""}
+{"question_id": "kaggledbqa_test_166", "db_id": "WhatCDHipHop", "question": "What are the downloaded numbers and their release types?", "evidence": ""}
+{"question_id": "kaggledbqa_test_167", "db_id": "WhatCDHipHop", "question": "What are the downloaded numbers of 2000s and before 2000?", "evidence": ""}
+{"question_id": "kaggledbqa_test_168", "db_id": "WhatCDHipHop", "question": "How many same release titles are there in the table?", "evidence": ""}
+{"question_id": "kaggledbqa_test_169", "db_id": "WhatCDHipHop", "question": "Which artist release the most CDs?", "evidence": ""}
+{"question_id": "kaggledbqa_test_170", "db_id": "WhatCDHipHop", "question": "How many downloads of ep and album respectively?", "evidence": ""}
+{"question_id": "kaggledbqa_test_171", "db_id": "WhatCDHipHop", "question": "What are the artist/groups that released only one CD?", "evidence": ""}
+{"question_id": "kaggledbqa_test_172", "db_id": "WhatCDHipHop", "question": "What are the actors who have had releases after 2010?", "evidence": ""}

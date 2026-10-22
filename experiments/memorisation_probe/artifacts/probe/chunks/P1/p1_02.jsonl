@@ -1,0 +1,50 @@
+{"item_id": "kaggledbqa_test_50", "db_id": "Pesticide", "question": "What is the maximum pesticide concentration ever found in a commodity?"}
+{"item_id": "kaggledbqa_test_51", "db_id": "Pesticide", "question": "When is sample 3763 collected?"}
+{"item_id": "kaggledbqa_test_52", "db_id": "Pesticide", "question": "Which state has the most apple collected?"}
+{"item_id": "kaggledbqa_test_53", "db_id": "Pesticide", "question": "Which state has grow the most apples?"}
+{"item_id": "kaggledbqa_test_54", "db_id": "Pesticide", "question": "How many class of products are there?"}
+{"item_id": "kaggledbqa_test_55", "db_id": "Pesticide", "question": "what's the 4 digit collection code of sample 3763?"}
+{"item_id": "kaggledbqa_test_56", "db_id": "Pesticide", "question": "If sample 6480 is imported, which country is it originally from?"}
+{"item_id": "kaggledbqa_test_57", "db_id": "Pesticide", "question": "How many number of units are there in sample 9628?"}
+{"item_id": "kaggledbqa_test_58", "db_id": "Pesticide", "question": "What's the code for test for sample 7498?"}
+{"item_id": "kaggledbqa_test_59", "db_id": "Pesticide", "question": "What's the code for confirmation for the latest sample?"}
+{"item_id": "kaggledbqa_test_60", "db_id": "Pesticide", "question": "Which lab has analyzed the most sample?"}
+{"item_id": "kaggledbqa_test_61", "db_id": "Pesticide", "question": "What's the majority of test classification result?"}
+{"item_id": "kaggledbqa_test_62", "db_id": "Pesticide", "question": "What's the unit of measure for sample 3879?"}
+{"item_id": "kaggledbqa_test_63", "db_id": "Pesticide", "question": "What's the unit of measure used for the product commodity code PO?"}
+{"item_id": "kaggledbqa_test_64", "db_id": "Pesticide", "question": "What's the mean result finding for product AP?"}
+{"item_id": "kaggledbqa_test_65", "db_id": "Pesticide", "question": "What's the most common extraction method?"}
+{"item_id": "kaggledbqa_test_66", "db_id": "Pesticide", "question": "Which lab conduct of most number of tests?"}
+{"item_id": "kaggledbqa_test_67", "db_id": "Pesticide", "question": "Which lab is used for testing for prodict AP?"}
+{"item_id": "kaggledbqa_test_68", "db_id": "Pesticide", "question": "How many samples come from other countries?"}
+{"item_id": "kaggledbqa_test_69", "db_id": "Pesticide", "question": "What kind of food has been tested 'detect' most?"}
+{"item_id": "kaggledbqa_test_70", "db_id": "Pesticide", "question": "Which state produce the most organic food?"}
+{"item_id": "kaggledbqa_test_71", "db_id": "Pesticide", "question": "Where do the US import the most food ?"}
+{"item_id": "kaggledbqa_test_72", "db_id": "Pesticide", "question": "What kind of food has been test the most?"}
+{"item_id": "kaggledbqa_test_73", "db_id": "Pesticide", "question": "Which kind of pesticide is the easiest to be tested?"}
+{"item_id": "kaggledbqa_test_74", "db_id": "StudentMathScore", "question": "Which school district receive the most of federal revenue through state in Wisconsin?"}
+{"item_id": "kaggledbqa_test_75", "db_id": "StudentMathScore", "question": "What is the average Title 1 fund in Virginia?"}
+{"item_id": "kaggledbqa_test_76", "db_id": "StudentMathScore", "question": "What are the top 10 states that have the highest average math score and federal revenue they got through different categories?"}
+{"item_id": "kaggledbqa_test_77", "db_id": "StudentMathScore", "question": "What are the schools with highest federal revenue in each federal revenue categories and what's their state average scores?"}
+{"item_id": "kaggledbqa_test_78", "db_id": "StudentMathScore", "question": "State with highest average math score"}
+{"item_id": "kaggledbqa_test_79", "db_id": "StudentMathScore", "question": "School with highest ratio of total revenue and average scores"}
+{"item_id": "kaggledbqa_test_80", "db_id": "StudentMathScore", "question": "Which state spent the most revenue towards schools and whats the state average score"}
+{"item_id": "kaggledbqa_test_81", "db_id": "StudentMathScore", "question": "School with lowest ratio of total revenue and average scores"}
+{"item_id": "kaggledbqa_test_82", "db_id": "StudentMathScore", "question": "Which state spent the least revenue towards schools and whats the state average score"}
+{"item_id": "kaggledbqa_test_83", "db_id": "StudentMathScore", "question": "Which state has the highest average score in math exam?"}
+{"item_id": "kaggledbqa_test_84", "db_id": "StudentMathScore", "question": "What is the average match score of CA?"}
+{"item_id": "kaggledbqa_test_85", "db_id": "StudentMathScore", "question": "How many unique school districts in Indiana?"}
+{"item_id": "kaggledbqa_test_86", "db_id": "StudentMathScore", "question": "What is the state code of VA?"}
+{"item_id": "kaggledbqa_test_87", "db_id": "StudentMathScore", "question": "Which state get the highest revenue?"}
+{"item_id": "kaggledbqa_test_88", "db_id": "StudentMathScore", "question": "How much funding does Colorado schools receive from Title 1 and the Child Nutrition program respectively?"}
+{"item_id": "kaggledbqa_test_89", "db_id": "StudentMathScore", "question": "How much federal funding does Pecatonia Area School district get?"}
+{"item_id": "kaggledbqa_test_90", "db_id": "StudentMathScore", "question": "What are the student scores on the NAEP math exam for 8th graders in North Carolina and South Carolina?"}
+{"item_id": "kaggledbqa_test_91", "db_id": "StudentMathScore", "question": "What are the averge score of students in NC and in NY?"}
+{"item_id": "kaggledbqa_test_92", "db_id": "StudentMathScore", "question": "How many schools get higher revenue via Child Nutrition A than revenue via child left school behind act?"}
+{"item_id": "kaggledbqa_test_93", "db_id": "TheHistoryofBaseball", "question": "Which is the most popular voting method for Hall of Fame in 2000?"}
+{"item_id": "kaggledbqa_test_94", "db_id": "TheHistoryofBaseball", "question": "How many players weigh over 200 pounds?"}
+{"item_id": "kaggledbqa_test_95", "db_id": "TheHistoryofBaseball", "question": "Who is the winner of Rookie of the Year in 2010?"}
+{"item_id": "kaggledbqa_test_96", "db_id": "TheHistoryofBaseball", "question": "Who is the highest paid player since 2010?"}
+{"item_id": "kaggledbqa_test_97", "db_id": "TheHistoryofBaseball", "question": "What are the salaries of players who have ever enter hall of fame?"}
+{"item_id": "kaggledbqa_test_98", "db_id": "TheHistoryofBaseball", "question": "What are the minimum votes needed to enter hall of fame for each year since 1871?"}
+{"item_id": "kaggledbqa_test_99", "db_id": "TheHistoryofBaseball", "question": "What are the salaries in National League?"}

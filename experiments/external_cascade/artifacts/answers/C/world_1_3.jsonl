@@ -1,0 +1,20 @@
+{"question_id": "spider_realistic_404", "pick": "B"}
+{"question_id": "spider_realistic_405", "pick": "NONE", "sql": "SELECT CountryCode FROM countrylanguage EXCEPT SELECT CountryCode FROM countrylanguage WHERE Language = 'English'"}
+{"question_id": "spider_realistic_407", "pick": "C"}
+{"question_id": "spider_realistic_408", "pick": "A"}
+{"question_id": "spider_realistic_409", "pick": "A"}
+{"question_id": "spider_realistic_410", "pick": "NONE", "sql": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')"}
+{"question_id": "spider_realistic_413", "pick": "A"}
+{"question_id": "spider_realistic_415", "pick": "F"}
+{"question_id": "spider_realistic_416", "pick": "C"}
+{"question_id": "spider_realistic_417", "pick": "C"}
+{"question_id": "spider_realistic_420", "pick": "A"}
+{"question_id": "spider_realistic_425", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Europe' AND Population = 80000"}
+{"question_id": "spider_realistic_426", "pick": "NONE", "sql": "SELECT Name FROM country WHERE Continent = 'Europe' AND Population = 80000"}
+{"question_id": "spider_realistic_427", "pick": "A"}
+{"question_id": "spider_realistic_428", "pick": "E"}
+{"question_id": "spider_realistic_431", "pick": "NONE", "sql": "SELECT Language, CountryCode, MAX(Percentage) FROM countrylanguage GROUP BY CountryCode"}
+{"question_id": "spider_realistic_432", "pick": "NONE", "sql": "SELECT Language, CountryCode, MAX(Percentage) FROM countrylanguage GROUP BY CountryCode"}
+{"question_id": "spider_realistic_433", "pick": "NONE", "sql": "SELECT COUNT(*) FROM countrylanguage cl WHERE Language = 'Spanish' AND Percentage = (SELECT MAX(Percentage) FROM countrylanguage x WHERE x.CountryCode = cl.CountryCode)"}
+{"question_id": "spider_realistic_434", "pick": "NONE", "sql": "SELECT COUNT(*) FROM countrylanguage cl WHERE Language = 'Spanish' AND Percentage = (SELECT MAX(Percentage) FROM countrylanguage x WHERE x.CountryCode = cl.CountryCode)"}
+{"question_id": "spider_realistic_436", "pick": "NONE", "sql": "SELECT CountryCode FROM countrylanguage cl WHERE Language = 'Spanish' AND Percentage = (SELECT MAX(Percentage) FROM countrylanguage x WHERE x.CountryCode = cl.CountryCode)"}

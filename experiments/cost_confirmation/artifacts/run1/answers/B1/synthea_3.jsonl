@@ -1,0 +1,17 @@
+{"question_id": "bird_train_train_1498", "pick": "A"}
+{"question_id": "bird_train_train_1499", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT T2.PATIENT), T2.DESCRIPTION FROM encounters AS T1 INNER JOIN careplans AS T2 ON T1.PATIENT = T2.PATIENT WHERE T2.REASONDESCRIPTION = 'Second degree burn'"}
+{"question_id": "bird_train_train_1500", "pick": "A"}
+{"question_id": "bird_train_train_1502", "pick": "A"}
+{"question_id": "bird_train_train_1503", "pick": "A"}
+{"question_id": "bird_train_train_1508", "pick": "NONE", "sql": "SELECT DISTINCT T2.ENCOUNTER FROM patients AS T1 INNER JOIN careplans AS T2 ON T1.patient = T2.PATIENT WHERE T1.birthplace = 'Pembroke MA US'"}
+{"question_id": "bird_train_train_1511", "pick": "NONE", "sql": "SELECT DISTINCT T1.first, T1.last FROM patients AS T1 INNER JOIN careplans AS T2 ON T1.patient = T2.PATIENT WHERE T2.DESCRIPTION = 'Diabetic diet'"}
+{"question_id": "bird_train_train_1520", "pick": "NONE", "sql": "SELECT DISTINCT T1.first, T1.last FROM patients AS T1 INNER JOIN medications AS T2 ON T1.patient = T2.PATIENT WHERE T2.DESCRIPTION = 'Penicillin V Potassium 250 MG' AND strftime('%Y', T2.START) >= '1948'"}
+{"question_id": "bird_train_train_1524", "pick": "A"}
+{"question_id": "bird_train_train_1527", "pick": "NONE", "sql": "SELECT DISTINCT T1.DESCRIPTION FROM careplans AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.first = 'Major' AND T2.last = 'D''Amore'"}
+{"question_id": "bird_train_train_1528", "pick": "A"}
+{"question_id": "bird_train_train_1529", "pick": "A"}
+{"question_id": "bird_train_train_1531", "pick": "A"}
+{"question_id": "bird_train_train_1537", "pick": "NONE", "sql": "SELECT DISTINCT T1.DESCRIPTION FROM careplans AS T1 INNER JOIN patients AS T2 ON T1.PATIENT = T2.patient WHERE T2.ssn = '999-15-3685'"}
+{"question_id": "bird_train_train_1538", "pick": "NONE", "sql": "SELECT AVG((julianday(COALESCE(T1.deathdate, substr(datetime('now'),1,10))) - julianday(T1.birthdate)) / 365) FROM patients AS T1 INNER JOIN conditions AS T2 ON T1.patient = T2.PATIENT WHERE T1.gender = 'M' AND T2.DESCRIPTION = 'Hypertension'"}
+{"question_id": "bird_train_train_1540", "pick": "B"}
+{"question_id": "bird_train_train_1541", "pick": "A"}

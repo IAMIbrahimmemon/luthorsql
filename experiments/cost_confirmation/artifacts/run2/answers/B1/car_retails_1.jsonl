@@ -1,0 +1,19 @@
+{"question_id": "bird_train_train_1544", "pick": "A"}
+{"question_id": "bird_train_train_1553", "pick": "A"}
+{"question_id": "bird_train_train_1554", "pick": "NONE", "sql": "SELECT (SELECT COUNT(customerNumber) FROM customers WHERE creditLimit <= 100000 AND customerNumber IN (SELECT customerNumber FROM payments WHERE STRFTIME('%Y', paymentDate) = '2004')), T1.customerName FROM customers AS T1 INNER JOIN payments AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.creditLimit <= 100000 AND STRFTIME('%Y', T2.paymentDate) = '2004' GROUP BY T1.customerNumber, T1.customerName ORDER BY SUM(T2.amount) DESC LIMIT 1"}
+{"question_id": "bird_train_train_1555", "pick": "A"}
+{"question_id": "bird_train_train_1557", "pick": "A"}
+{"question_id": "bird_train_train_1558", "pick": "A"}
+{"question_id": "bird_train_train_1562", "pick": "NONE", "sql": "SELECT COUNT(T1.orderNumber) FROM orderdetails T1 JOIN products T2 ON T1.productCode=T2.productCode WHERE T2.MSRP - T2.buyPrice > 100"}
+{"question_id": "bird_train_train_1565", "pick": "A"}
+{"question_id": "bird_train_train_1566", "pick": "A"}
+{"question_id": "bird_train_train_1567", "pick": "NONE", "sql": "SELECT SUM(T1.amount) FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE STRFTIME('%Y', T1.paymentDate) = '2003' AND T2.creditLimit = 0"}
+{"question_id": "bird_train_train_1569", "pick": "A"}
+{"question_id": "bird_train_train_1575", "pick": "NONE", "sql": "SELECT COUNT(T1.employeeNumber), T1.email FROM employees T1 JOIN offices T2 ON T1.officeCode=T2.officeCode WHERE T2.city='Sydney' AND T1.jobTitle LIKE '%Sales Manager%'"}
+{"question_id": "bird_train_train_1578", "pick": "A"}
+{"question_id": "bird_train_train_1579", "pick": "A"}
+{"question_id": "bird_train_train_1580", "pick": "A"}
+{"question_id": "bird_train_train_1591", "pick": "A"}
+{"question_id": "bird_train_train_1593", "pick": "A"}
+{"question_id": "bird_train_train_1594", "pick": "NONE", "sql": "SELECT T2.productName, T1.quantityOrdered * T1.priceEach FROM orderdetails T1 JOIN products T2 ON T1.productCode=T2.productCode JOIN orders T3 ON T1.orderNumber=T3.orderNumber JOIN customers T4 ON T3.customerNumber=T4.customerNumber JOIN employees T5 ON T4.salesRepEmployeeNumber=T5.employeeNumber JOIN offices T6 ON T5.officeCode=T6.officeCode WHERE T6.city='Boston' ORDER BY T1.quantityOrdered * T1.priceEach DESC LIMIT 1"}
+{"question_id": "bird_train_train_1595", "pick": "A"}

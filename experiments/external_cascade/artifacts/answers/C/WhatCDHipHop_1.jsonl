@@ -1,0 +1,19 @@
+{"question_id": "kaggledbqa_test_145", "pick": "B"}
+{"question_id": "kaggledbqa_test_146", "pick": "NONE", "sql": "SELECT \"groupName\", \"artist\" FROM \"torrents\""}
+{"question_id": "kaggledbqa_test_147", "pick": "B"}
+{"question_id": "kaggledbqa_test_149", "pick": "A"}
+{"question_id": "kaggledbqa_test_150", "pick": "A"}
+{"question_id": "kaggledbqa_test_151", "pick": "A"}
+{"question_id": "kaggledbqa_test_152", "pick": "NONE", "sql": "SELECT \"groupName\" FROM \"torrents\" WHERE \"artist\" = 'lasean camry' AND (\"totalSnatched\" = (SELECT MAX(\"totalSnatched\") FROM \"torrents\" WHERE \"artist\" = 'lasean camry') OR \"totalSnatched\" = (SELECT MIN(\"totalSnatched\") FROM \"torrents\" WHERE \"artist\" = 'lasean camry'))"}
+{"question_id": "kaggledbqa_test_153", "pick": "A"}
+{"question_id": "kaggledbqa_test_154", "pick": "NONE", "sql": "SELECT T2.\"tag\" FROM \"torrents\" AS T1 JOIN \"tags\" AS T2 ON T1.\"id\" = T2.\"id\" WHERE T1.\"groupYear\" >= 2010 GROUP BY T2.\"tag\" ORDER BY COUNT(*) DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_156", "pick": "A"}
+{"question_id": "kaggledbqa_test_157", "pick": "A"}
+{"question_id": "kaggledbqa_test_158", "pick": "A"}
+{"question_id": "kaggledbqa_test_160", "pick": "A"}
+{"question_id": "kaggledbqa_test_163", "pick": "B"}
+{"question_id": "kaggledbqa_test_166", "pick": "A"}
+{"question_id": "kaggledbqa_test_167", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN \"groupYear\" BETWEEN 2000 AND 2009 THEN \"totalSnatched\" END), SUM(CASE WHEN \"groupYear\" < 2000 THEN \"totalSnatched\" END) FROM \"torrents\""}
+{"question_id": "kaggledbqa_test_168", "pick": "NONE", "sql": "SELECT COUNT(*) FROM (SELECT \"groupName\" FROM \"torrents\" GROUP BY \"groupName\" HAVING COUNT(*) > 1)"}
+{"question_id": "kaggledbqa_test_170", "pick": "NONE", "sql": "SELECT SUM(CASE WHEN \"releaseType\" = 'ep' THEN \"totalSnatched\" END), SUM(CASE WHEN \"releaseType\" = 'album' THEN \"totalSnatched\" END) FROM \"torrents\""}
+{"question_id": "kaggledbqa_test_172", "pick": "A"}

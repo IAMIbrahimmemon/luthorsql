@@ -1,0 +1,16 @@
+{"question_id": "spider_realistic_218", "sql": "SELECT first_name, birth_date FROM players WHERE country_code = 'USA'"}
+{"question_id": "spider_realistic_219", "sql": "SELECT first_name, birth_date FROM players WHERE country_code = 'USA'"}
+{"question_id": "spider_realistic_220", "sql": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*) > 10"}
+{"question_id": "spider_realistic_221", "sql": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*) > 10"}
+{"question_id": "spider_realistic_222", "sql": "SELECT winner_name FROM matches WHERE year = 2013 INTERSECT SELECT winner_name FROM matches WHERE year = 2016"}
+{"question_id": "spider_realistic_223", "sql": "SELECT winner_name FROM matches WHERE year = 2013 INTERSECT SELECT winner_name FROM matches WHERE year = 2016"}
+{"question_id": "spider_realistic_224", "sql": "SELECT count(*) FROM matches WHERE year = 2013 OR year = 2016"}
+{"question_id": "spider_realistic_225", "sql": "SELECT count(*) FROM matches WHERE year = 2013 OR year = 2016"}
+{"question_id": "spider_realistic_226", "sql": "SELECT T1.country_code, T1.first_name FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'WTA Championships' INTERSECT SELECT T1.country_code, T1.first_name FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'Australian Open'"}
+{"question_id": "spider_realistic_227", "sql": "SELECT T1.first_name, T1.country_code FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'WTA Championships' INTERSECT SELECT T1.first_name, T1.country_code FROM players AS T1 JOIN matches AS T2 ON T1.player_id = T2.winner_id WHERE T2.tourney_name = 'Australian Open'"}
+{"question_id": "spider_realistic_228", "sql": "SELECT first_name, country_code FROM players ORDER BY birth_date LIMIT 1"}
+{"question_id": "spider_realistic_229", "sql": "SELECT first_name, country_code FROM players ORDER BY birth_date LIMIT 1"}
+{"question_id": "spider_realistic_230", "sql": "SELECT first_name, last_name FROM players ORDER BY birth_date"}
+{"question_id": "spider_realistic_231", "sql": "SELECT first_name, last_name FROM players ORDER BY birth_date"}
+{"question_id": "spider_realistic_232", "sql": "SELECT first_name, last_name FROM players WHERE hand = 'L' ORDER BY birth_date"}
+{"question_id": "spider_realistic_233", "sql": "SELECT first_name, last_name FROM players WHERE hand = 'L' ORDER BY birth_date"}

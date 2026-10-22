@@ -1,0 +1,85 @@
+{
+ "C": {
+  "wc2026_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 57214,
+   "cache_read_input_tokens": 536609,
+   "output_tokens": 87,
+   "output_est": 2287,
+   "seconds": 62.562,
+   "dollars_opus55_list": 0.439204
+  },
+  "nws_alerts_2026_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 62173,
+   "cache_read_input_tokens": 498617,
+   "output_tokens": 135,
+   "output_est": 3198,
+   "seconds": 105.845,
+   "dollars_opus55_list": 0.474612
+  },
+  "uk_house_prices_2026_1": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 63144,
+   "cache_read_input_tokens": 725611,
+   "output_tokens": 140,
+   "output_est": 3274,
+   "seconds": 110.68,
+   "dollars_opus55_list": 0.52641
+  },
+  "quakes_2026_2": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 51418,
+   "cache_read_input_tokens": 387594,
+   "output_tokens": 73,
+   "output_est": 1870,
+   "seconds": 49.47,
+   "dollars_opus55_list": 0.372065
+  },
+  "chicago_crashes_2026_1": {
+   "input_tokens": 14,
+   "cache_creation_input_tokens": 74691,
+   "cache_read_input_tokens": 392695,
+   "output_tokens": 71,
+   "output_est": 1624,
+   "seconds": 52.829,
+   "dollars_opus55_list": 0.48453
+  },
+  "fda_recalls_2026_1": {
+   "input_tokens": 16,
+   "cache_creation_input_tokens": 62979,
+   "cache_read_input_tokens": 501650,
+   "output_tokens": 107,
+   "output_est": 2971,
+   "seconds": 72.667,
+   "dollars_opus55_list": 0.474709
+  },
+  "chicago_crime_2026_1": {
+   "input_tokens": 20,
+   "cache_creation_input_tokens": 61703,
+   "cache_read_input_tokens": 628624,
+   "output_tokens": 117,
+   "output_est": 4185,
+   "seconds": 95.966,
+   "dollars_opus55_list": 0.51802
+  },
+  "f1_2026_1": {
+   "input_tokens": 22,
+   "cache_creation_input_tokens": 69187,
+   "cache_read_input_tokens": 754933,
+   "output_tokens": 133,
+   "output_est": 3397,
+   "seconds": 93.855,
+   "dollars_opus55_list": 0.56495
+  },
+  "quakes_2026_1": {
+   "input_tokens": 18,
+   "cache_creation_input_tokens": 53553,
+   "cache_read_input_tokens": 531366,
+   "output_tokens": 121,
+   "output_est": 1987,
+   "seconds": 58.791,
+   "dollars_opus55_list": 0.41385
+  }
+ }
+}

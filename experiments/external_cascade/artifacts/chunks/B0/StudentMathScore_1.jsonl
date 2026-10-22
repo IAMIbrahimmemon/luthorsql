@@ -1,0 +1,19 @@
+{"question_id": "kaggledbqa_test_74", "db_id": "StudentMathScore", "question": "Which school district receive the most of federal revenue through state in Wisconsin?", "evidence": ""}
+{"question_id": "kaggledbqa_test_75", "db_id": "StudentMathScore", "question": "What is the average Title 1 fund in Virginia?", "evidence": ""}
+{"question_id": "kaggledbqa_test_76", "db_id": "StudentMathScore", "question": "What are the top 10 states that have the highest average math score and federal revenue they got through different categories?", "evidence": ""}
+{"question_id": "kaggledbqa_test_77", "db_id": "StudentMathScore", "question": "What are the schools with highest federal revenue in each federal revenue categories and what's their state average scores?", "evidence": ""}
+{"question_id": "kaggledbqa_test_78", "db_id": "StudentMathScore", "question": "State with highest average math score", "evidence": ""}
+{"question_id": "kaggledbqa_test_79", "db_id": "StudentMathScore", "question": "School with highest ratio of total revenue and average scores", "evidence": ""}
+{"question_id": "kaggledbqa_test_80", "db_id": "StudentMathScore", "question": "Which state spent the most revenue towards schools and whats the state average score", "evidence": ""}
+{"question_id": "kaggledbqa_test_81", "db_id": "StudentMathScore", "question": "School with lowest ratio of total revenue and average scores", "evidence": ""}
+{"question_id": "kaggledbqa_test_82", "db_id": "StudentMathScore", "question": "Which state spent the least revenue towards schools and whats the state average score", "evidence": ""}
+{"question_id": "kaggledbqa_test_83", "db_id": "StudentMathScore", "question": "Which state has the highest average score in math exam?", "evidence": ""}
+{"question_id": "kaggledbqa_test_84", "db_id": "StudentMathScore", "question": "What is the average match score of CA?", "evidence": ""}
+{"question_id": "kaggledbqa_test_85", "db_id": "StudentMathScore", "question": "How many unique school districts in Indiana?", "evidence": ""}
+{"question_id": "kaggledbqa_test_86", "db_id": "StudentMathScore", "question": "What is the state code of VA?", "evidence": ""}
+{"question_id": "kaggledbqa_test_87", "db_id": "StudentMathScore", "question": "Which state get the highest revenue?", "evidence": ""}
+{"question_id": "kaggledbqa_test_88", "db_id": "StudentMathScore", "question": "How much funding does Colorado schools receive from Title 1 and the Child Nutrition program respectively?", "evidence": ""}
+{"question_id": "kaggledbqa_test_89", "db_id": "StudentMathScore", "question": "How much federal funding does Pecatonia Area School district get?", "evidence": ""}
+{"question_id": "kaggledbqa_test_90", "db_id": "StudentMathScore", "question": "What are the student scores on the NAEP math exam for 8th graders in North Carolina and South Carolina?", "evidence": ""}
+{"question_id": "kaggledbqa_test_91", "db_id": "StudentMathScore", "question": "What are the averge score of students in NC and in NY?", "evidence": ""}
+{"question_id": "kaggledbqa_test_92", "db_id": "StudentMathScore", "question": "How many schools get higher revenue via Child Nutrition A than revenue via child left school behind act?", "evidence": ""}

@@ -1,0 +1,6 @@
+{"question_id": "q743", "pick": "NONE", "sql": "SELECT CAST(MAX(t1.footage_duration) - MIN(t1.footage_duration) AS REAL) * 100 / MIN(t1.footage_duration) FROM roles AS t1 INNER JOIN film AS t2 ON t1.film_id = t2.film_id WHERE t2.heading = 'Batman'"}
+{"question_id": "q746", "pick": "A"}
+{"question_id": "q755", "pick": "A"}
+{"question_id": "q756", "pick": "NONE", "sql": "SELECT t1.label FROM performer AS t1 INNER JOIN roles AS t2 ON t1.thespian_id = t2.thespian_id INNER JOIN film AS t3 ON t2.film_id = t3.film_id WHERE t3.debut_time = '2015-10-26' AND t2.billing_rank = 1"}
+{"question_id": "q772", "pick": "A"}
+{"question_id": "q775", "pick": "A"}

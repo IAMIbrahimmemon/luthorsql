@@ -1,0 +1,16 @@
+{"question_id": "kaggledbqa_test_75", "pick": "A"}
+{"question_id": "kaggledbqa_test_76", "pick": "NONE", "sql": "SELECT T2.State, SUM(T1.t_fed_rev), SUM(T1.c14), SUM(T1.c25) FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code JOIN NDECoreExcel_Math_Grade8 T3 ON T2.State=T3.state GROUP BY T2.State ORDER BY T3.average_scale_score DESC LIMIT 10"}
+{"question_id": "kaggledbqa_test_77", "pick": "NONE", "sql": "SELECT T1.school_district, MAX(T1.c14), T3.average_scale_score FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code JOIN NDECoreExcel_Math_Grade8 T3 ON T2.State=T3.state UNION SELECT T1.school_district, MAX(T1.c25), T3.average_scale_score FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code JOIN NDECoreExcel_Math_Grade8 T3 ON T2.State=T3.state"}
+{"question_id": "kaggledbqa_test_79", "pick": "B"}
+{"question_id": "kaggledbqa_test_80", "pick": "NONE", "sql": "SELECT T2.State, T3.average_scale_score FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code JOIN NDECoreExcel_Math_Grade8 T3 ON T2.State=T3.state GROUP BY T2.State ORDER BY SUM(T1.t_fed_rev) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_81", "pick": "A"}
+{"question_id": "kaggledbqa_test_82", "pick": "NONE", "sql": "SELECT T2.State, T3.average_scale_score FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code JOIN NDECoreExcel_Math_Grade8 T3 ON T2.State=T3.state GROUP BY T2.State ORDER BY SUM(T1.t_fed_rev) ASC LIMIT 1"}
+{"question_id": "kaggledbqa_test_84", "pick": "B"}
+{"question_id": "kaggledbqa_test_85", "pick": "A"}
+{"question_id": "kaggledbqa_test_86", "pick": "NONE", "sql": "SELECT State_Code FROM FINREV_FED_KEY_17 WHERE State = 'Virginia'"}
+{"question_id": "kaggledbqa_test_87", "pick": "NONE", "sql": "SELECT T2.State FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code GROUP BY T2.State ORDER BY SUM(T1.t_fed_rev) DESC LIMIT 1"}
+{"question_id": "kaggledbqa_test_88", "pick": "NONE", "sql": "SELECT SUM(T1.c14), SUM(T1.c25) FROM FINREV_FED_17 T1 JOIN FINREV_FED_KEY_17 T2 ON T1.state_code=T2.State_Code WHERE T2.State = 'Colorado'"}
+{"question_id": "kaggledbqa_test_89", "pick": "A"}
+{"question_id": "kaggledbqa_test_90", "pick": "NONE", "sql": "SELECT average_scale_score FROM NDECoreExcel_Math_Grade8 WHERE state IN ('North Carolina','South Carolina')"}
+{"question_id": "kaggledbqa_test_91", "pick": "NONE", "sql": "SELECT average_scale_score FROM NDECoreExcel_Math_Grade8 WHERE state IN ('North Carolina','New York')"}
+{"question_id": "kaggledbqa_test_92", "pick": "NONE", "sql": "SELECT COUNT(*) FROM FINREV_FED_17 WHERE c25 > c14"}

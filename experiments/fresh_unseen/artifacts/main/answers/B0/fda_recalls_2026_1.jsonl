@@ -1,0 +1,15 @@
+{"question_id": "fresh_fda_recalls_2026_0", "sql": "SELECT firm_name, city FROM firms WHERE state = 'CA' ORDER BY firm_name, firm_id"}
+{"question_id": "fresh_fda_recalls_2026_1", "sql": "SELECT COUNT(*) FROM recalls WHERE status = 'Ongoing'"}
+{"question_id": "fresh_fda_recalls_2026_2", "sql": "SELECT product_description FROM products WHERE recall_number = 'D-0689-2026' ORDER BY product_id"}
+{"question_id": "fresh_fda_recalls_2026_3", "sql": "SELECT f.firm_name, COUNT(*) AS n FROM recalls r JOIN firms f ON r.firm_id = f.firm_id GROUP BY f.firm_id ORDER BY n DESC, f.firm_name ASC, f.firm_id ASC"}
+{"question_id": "fresh_fda_recalls_2026_4", "sql": "SELECT COUNT(*) FROM recalls r JOIN firms f ON r.firm_id = f.firm_id WHERE f.state = 'TX'"}
+{"question_id": "fresh_fda_recalls_2026_5", "sql": "SELECT r.classification, COUNT(*) FROM recalls r LEFT JOIN classifications c ON r.classification = c.classification GROUP BY r.classification ORDER BY c.severity_rank IS NULL, c.severity_rank"}
+{"question_id": "fresh_fda_recalls_2026_6", "sql": "SELECT r.recall_number, f.firm_name FROM recalls r JOIN firms f ON r.firm_id = f.firm_id WHERE LOWER(r.reason_for_recall) LIKE '%sterility%' ORDER BY r.recall_number"}
+{"question_id": "fresh_fda_recalls_2026_7", "sql": "SELECT f.firm_name, ROUND(100.0 * SUM(CASE WHEN r.classification = 'Class I' THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct FROM recalls r JOIN firms f ON r.firm_id = f.firm_id GROUP BY f.firm_id ORDER BY pct DESC, f.firm_name ASC, f.firm_id ASC"}
+{"question_id": "fresh_fda_recalls_2026_8", "sql": "SELECT recall_number, julianday(report_date) - julianday(recall_initiation_date) AS days FROM recalls WHERE classification = 'Class II' AND termination_date IS NULL ORDER BY days DESC, recall_number ASC LIMIT 1"}
+{"question_id": "fresh_fda_recalls_2026_9", "sql": "SELECT f.state, COUNT(*) AS n, ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM recalls), 1) FROM recalls r JOIN firms f ON r.firm_id = f.firm_id WHERE f.state IS NOT NULL GROUP BY f.state ORDER BY n DESC, f.state ASC"}
+{"question_id": "fresh_fda_recalls_2026_10", "sql": "SELECT COUNT(*) FROM products WHERE recall_number = 'D-0643-2026'"}
+{"question_id": "fresh_fda_recalls_2026_11", "sql": "SELECT recall_number, status FROM recalls WHERE initial_firm_notification = 'Press Release' ORDER BY recall_number"}
+{"question_id": "fresh_fda_recalls_2026_12", "sql": "SELECT MIN(recall_initiation_date) FROM recalls WHERE status = 'Ongoing'"}
+{"question_id": "fresh_fda_recalls_2026_13", "sql": "SELECT initial_firm_notification, COUNT(*) AS n FROM recalls GROUP BY initial_firm_notification ORDER BY n DESC, initial_firm_notification ASC"}
+{"question_id": "fresh_fda_recalls_2026_14", "sql": "SELECT r.classification, ROUND(AVG(julianday(r.report_date) - julianday(r.recall_initiation_date)), 1) FROM recalls r LEFT JOIN classifications c ON r.classification = c.classification GROUP BY r.classification ORDER BY c.severity_rank IS NULL, c.severity_rank"}

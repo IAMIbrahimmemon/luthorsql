@@ -1,0 +1,21 @@
+{"question_id": "q7616", "pick": "NONE", "sql": "SELECT given_label, family_label, demise_season - nativity_season FROM registry WHERE grip_side IS NULL AND demise_season IS NOT NULL"}
+{"question_id": "q7620", "pick": "NONE", "sql": "SELECT r.given_label, r.family_label FROM registry r JOIN netminders n ON r.athlete_pointer=n.athlete_pointer WHERE n.league_pointer IN ('PCHA','NHL') GROUP BY r.athlete_pointer HAVING COUNT(DISTINCT n.league_pointer)=2"}
+{"question_id": "q7627", "pick": "NONE", "sql": "SELECT T1.given_label, T1.family_label, T2.season, CAST(SUM(T2.duration) AS REAL)/COUNT(T2.athlete_pointer) FROM registry T1 JOIN netminders T2 ON T1.athlete_pointer=T2.athlete_pointer WHERE T1.athlete_pointer=(SELECT athlete_pointer FROM netminders GROUP BY athlete_pointer ORDER BY COUNT(athlete_pointer) DESC LIMIT 1) GROUP BY T2.season"}
+{"question_id": "q7630", "pick": "A"}
+{"question_id": "q7632", "pick": "A"}
+{"question_id": "q7635", "pick": "NONE", "sql": "SELECT DISTINCT t1.given_label, t1.family_label, t3.label FROM registry t1 JOIN netminders t2 ON t1.athlete_pointer=t2.athlete_pointer JOIN clubs t3 ON t2.club_pointer=t3.club_pointer AND t2.season=t3.season WHERE t1.demise_season IS NOT NULL AND t1.nativity_nation='Canada' AND t1.role='G'"}
+{"question_id": "q7638", "pick": "NONE", "sql": "SELECT DISTINCT t1.primary_label, t3.label, t2.season FROM registry t1 JOIN mentors t2 ON t1.mentor_pointer=t2.mentor_pointer JOIN clubs t3 ON t2.club_pointer=t3.club_pointer AND t2.season=t3.season WHERE t1.athlete_pointer IS NOT NULL"}
+{"question_id": "q7644", "pick": "NONE", "sql": "SELECT t1.primary_label, CAST(SUM(t2.duration) AS REAL)/SUM(t2.contests) FROM registry t1 JOIN netminders t2 ON t1.athlete_pointer=t2.athlete_pointer WHERE t1.athlete_pointer='aebisda01' GROUP BY t1.primary_label"}
+{"question_id": "q7659", "pick": "NONE", "sql": "SELECT COUNT(DISTINCT t1.mentor_pointer) FROM mentors t1 JOIN registry t2 ON t1.mentor_pointer=t2.mentor_pointer WHERE t1.victories>30 AND t2.nativity_nation='USA'"}
+{"question_id": "q7666", "pick": "NONE", "sql": "SELECT t1.given_label FROM registry t1 JOIN hall_of_fame t2 ON t1.hall_pointer=t2.hall_pointer WHERE t1.grip_side IS NULL AND t1.role='G'"}
+{"question_id": "q7676", "pick": "A"}
+{"question_id": "q7686", "pick": "NONE", "sql": "SELECT victories FROM netminders WHERE athlete_pointer='vanbijo01' AND season=1990"}
+{"question_id": "q7695", "pick": "A"}
+{"question_id": "q7688", "pick": "NONE", "sql": "SELECT t1.victories FROM mentors t1 JOIN honors_mentors t2 ON t1.mentor_pointer=t2.mentor_pointer AND t1.season=t2.season WHERE t2.season=1933 AND t2.honor='Second Team All-Star'"}
+{"question_id": "q7697", "pick": "A"}
+{"question_id": "q7701", "pick": "NONE", "sql": "SELECT contests FROM tallies_cup WHERE athlete_pointer='broadpu01' AND season=1922"}
+{"question_id": "q7722", "pick": "NONE", "sql": "SELECT sideline_infraction, label FROM clubs ORDER BY draws DESC LIMIT 1"}
+{"question_id": "q7724", "pick": "A"}
+{"question_id": "q7732", "pick": "NONE", "sql": "SELECT COUNT(athlete_pointer) FROM registry WHERE debut_elite = '2011' AND grip_side IS NULL"}
+{"question_id": "q7737", "pick": "B"}
+{"question_id": "q7740", "pick": "A"}
