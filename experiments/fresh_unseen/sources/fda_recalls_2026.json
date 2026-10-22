@@ -1,0 +1,29 @@
+{
+ "db": "fda_recalls_2026",
+ "sources": [
+  {
+   "url": "https://api.fda.gov/drug/enforcement.json",
+   "licence": "CC0 1.0 / public domain (openFDA)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://api.fda.gov/device/enforcement.json",
+   "licence": "CC0 1.0 / public domain (openFDA)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://api.fda.gov/food/enforcement.json",
+   "licence": "CC0 1.0 / public domain (openFDA)",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "report_date:[20260701+TO+20261021]",
+ "tables": {
+  "classifications": 4,
+  "firms": 453,
+  "events": 625,
+  "recalls": 1556,
+  "products": 1556
+ },
+ "notes": "report_date range 2026-07-01 to 2026-10-14. openFDA gives one product record per recall_number, so products is 1:1 with recalls. Firms deduplicated by name+address."
+}

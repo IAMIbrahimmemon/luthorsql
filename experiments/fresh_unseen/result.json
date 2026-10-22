@@ -1,0 +1,150 @@
+{
+ "n": 227,
+ "routed": 125,
+ "agent_share": 0.5507,
+ "missing": {
+  "B0": 0,
+  "C": 0
+ },
+ "ex": {
+  "S1": 63.88,
+  "B0": 97.36,
+  "C": 94.27
+ },
+ "ex_ci95_dbboot": {
+  "S1": [
+   58.77,
+   68.58
+  ],
+  "B0": [
+   95.09,
+   99.14
+  ],
+  "C": [
+   90.37,
+   97.83
+  ]
+ },
+ "routed_half": {
+  "n": 125,
+  "C_agent_ex": 92.8,
+  "ci95_dbboot": [
+   88.1,
+   97.37
+  ],
+  "S1_ex_on_routed": 37.6,
+  "B0_ex_on_routed": 95.2,
+  "compare": {
+   "RESERVED_run1": 72.32,
+   "renamed": 72.88
+  }
+ },
+ "kept_half": {
+  "n": 102,
+  "S1_ex": 96.08,
+  "B0_ex_on_kept": 100.0
+ },
+ "C_minus_B0": {
+  "delta": -3.0837004405286343,
+  "p": 0.0625,
+  "ci": [
+   -6.02000000001035,
+   -1.1013412404281553e-11
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "chicago_crashes_2026": -2.0,
+   "chicago_crime_2026": 0.0,
+   "f1_2026": -2.0,
+   "fda_recalls_2026": -1.0,
+   "nws_alerts_2026": -1.0,
+   "quakes_2026": 0.0,
+   "uk_house_prices_2026": 0.0,
+   "wc2026": -1.0
+  }
+ },
+ "per_db": {
+  "chicago_crashes_2026": {
+   "n": 25,
+   "routed": 15,
+   "S1": 17,
+   "B0": 23,
+   "C": 21
+  },
+  "chicago_crime_2026": {
+   "n": 29,
+   "routed": 16,
+   "S1": 19,
+   "B0": 29,
+   "C": 29
+  },
+  "f1_2026": {
+   "n": 29,
+   "routed": 15,
+   "S1": 15,
+   "B0": 28,
+   "C": 26
+  },
+  "fda_recalls_2026": {
+   "n": 29,
+   "routed": 17,
+   "S1": 16,
+   "B0": 27,
+   "C": 26
+  },
+  "nws_alerts_2026": {
+   "n": 29,
+   "routed": 15,
+   "S1": 18,
+   "B0": 28,
+   "C": 27
+  },
+  "quakes_2026": {
+   "n": 29,
+   "routed": 19,
+   "S1": 20,
+   "B0": 29,
+   "C": 29
+  },
+  "uk_house_prices_2026": {
+   "n": 28,
+   "routed": 11,
+   "S1": 21,
+   "B0": 28,
+   "C": 28
+  },
+  "wc2026": {
+   "n": 29,
+   "routed": 17,
+   "S1": 19,
+   "B0": 29,
+   "C": 28
+  }
+ },
+ "projection_bird_test": {
+  "fresh_measured": 94.27,
+  "fresh_routed_with_reserved_kept": 91.72,
+  "reserved_based": 81.6,
+  "note": "first: kept share/accuracy and routed accuracy all from this set; second: RESERVED's kept half (share 0.49, accuracy 90.6) with this set's routed accuracy"
+ },
+ "cost": {
+  "per_q": {
+   "B0": 0.02806,
+   "C": 0.02241
+  },
+  "saving_C_vs_B0": {
+   "point": 0.2013,
+   "ci95": [
+    0.1155,
+    0.266
+   ]
+  },
+  "chunks": {
+   "B0": 15,
+   "C": 8
+  },
+  "s1_cost_per_q": 0.001046
+ }
+}

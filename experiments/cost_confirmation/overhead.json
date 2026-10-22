@@ -1,0 +1,44 @@
+{
+ "ext_B0": {
+  "chunks": 42,
+  "fixed_per_chunk": 0.2444,
+  "per_question": 0.00318,
+  "fixed_share_of_cost": 0.823
+ },
+ "ext_B1": {
+  "chunks": 42,
+  "fixed_per_chunk": 0.2327,
+  "per_question": 0.00731,
+  "fixed_share_of_cost": 0.659
+ },
+ "ext_C": {
+  "chunks": 29,
+  "fixed_per_chunk": 0.2207,
+  "per_question": 0.00998,
+  "fixed_share_of_cost": 0.641
+ },
+ "res_B0": {
+  "chunks": 54,
+  "fixed_per_chunk": 0.4005,
+  "per_question": 0.00099,
+  "fixed_share_of_cost": 0.954
+ },
+ "res_B1": {
+  "chunks": 54,
+  "fixed_per_chunk": 0.2018,
+  "per_question": 0.01309,
+  "fixed_share_of_cost": 0.444
+ },
+ "res_B2": {
+  "chunks": 54,
+  "fixed_per_chunk": 0.4299,
+  "per_question": -3e-05,
+  "fixed_share_of_cost": 1.002
+ },
+ "res_C": {
+  "chunks": 33,
+  "fixed_per_chunk": 0.1327,
+  "per_question": 0.02158,
+  "fixed_share_of_cost": 0.277
+ }
+}

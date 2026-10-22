@@ -1,0 +1,11 @@
+{"transcript": "a0324baa9e588bc70.output", "tools": {"Bash": 7, "Read": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "C/db_08_1"}
+{"transcript": "a88a132dde4687904.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "C/db_07_2"}
+{"transcript": "a7aae6f6622d88dca.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true, "chunk": "C/db_06_2"}
+{"transcript": "ae56cbc8dc91d20b6.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "C/db_06_1"}
+{"transcript": "a4a0c2118a6bbfe57.output", "tools": {"Bash": 11, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "C/db_01_1"}
+{"transcript": "aa9c2bf543cf74466.output", "tools": {"Bash": 11, "SubagentHandback": 1}, "sql_executions": 0, "flags": [], "clean": true, "chunk": "C/db_03_1"}
+{"transcript": "af9b9cc37c8c098b9.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true, "chunk": "C/db_07_1"}
+{"transcript": "a532d5d49a6069038.output", "tools": {"Bash": 18, "SubagentHandback": 1}, "sql_executions": 15, "flags": ["pattern Gold"], "clean": false, "chunk": "C/db_03_2"}
+{"transcript": "a805beb4d350050e4.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "C/db_04_1"}
+{"transcript": "a8d7a698eb6354906.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "C/db_05_1"}
+{"transcript": "aa2501b18f8d5bbce.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "C/db_02_1"}

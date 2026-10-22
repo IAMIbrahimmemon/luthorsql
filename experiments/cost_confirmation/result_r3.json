@@ -1,0 +1,290 @@
+{
+ "n": 348,
+ "routed": 177,
+ "agent_share": 0.5086,
+ "missing": {
+  "B0": 0,
+  "B1": 0,
+  "B2": 0,
+  "C": 0
+ },
+ "ex": {
+  "B0": 78.74,
+  "B1": 80.46,
+  "B2": 79.02,
+  "C": 79.6,
+  "S1": 63.22
+ },
+ "cost_per_q": {
+  "B0": 0.0216,
+  "B1": 0.02417,
+  "B2": 0.02161,
+  "C": 0.01543
+ },
+ "tokens": {
+  "B0": {
+   "input_tokens": 310,
+   "cache_creation_input_tokens": 964269,
+   "cache_read_input_tokens": 9102209,
+   "output_tokens": 1989,
+   "output_est": 43762
+  },
+  "B1": {
+   "input_tokens": 282,
+   "cache_creation_input_tokens": 1158733,
+   "cache_read_input_tokens": 8978338,
+   "output_tokens": 2220,
+   "output_est": 26319
+  },
+  "B2": {
+   "input_tokens": 300,
+   "cache_creation_input_tokens": 976237,
+   "cache_read_input_tokens": 8642209,
+   "output_tokens": 1720,
+   "output_est": 45458
+  },
+  "C": {
+   "input_tokens": 176,
+   "cache_creation_input_tokens": 706349,
+   "cache_read_input_tokens": 5797714,
+   "output_tokens": 1137,
+   "output_est": 19114
+  }
+ },
+ "chunks": {
+  "B0": 18,
+  "B1": 18,
+  "B2": 18,
+  "C": 11
+ },
+ "saving_vs_B1": {
+  "point": 0.3617,
+  "ci95": [
+   0.2994,
+   0.4284
+  ]
+ },
+ "C_minus_B1": {
+  "delta": -0.8620689655172413,
+  "p": 0.75,
+  "ci": [
+   -3.0500000000106775,
+   0.8799999999888897
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "car_retails": 0.0,
+   "cs_semester": 0.0,
+   "hockey": 1.0,
+   "law_episode": -1.0,
+   "movie": 0.0,
+   "student_loan": -3.0,
+   "synthea": 0.0,
+   "university": 0.0
+  }
+ },
+ "saving_vs_B0": {
+  "point": 0.2858,
+  "ci95": [
+   0.2163,
+   0.3666
+  ]
+ },
+ "C_minus_B0": {
+  "delta": 0.8620689655172413,
+  "p": 0.625,
+  "ci": [
+   -1.8400000000108108,
+   3.729999999988576
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "car_retails": 2.0,
+   "cs_semester": 1.0,
+   "hockey": 2.0,
+   "law_episode": 1.0,
+   "movie": 0.0,
+   "student_loan": 0.0,
+   "synthea": -2.0,
+   "university": -1.0
+  }
+ },
+ "B1_minus_B0": {
+  "delta": 1.7241379310344827,
+  "p": 0.328125,
+  "ci": [
+   -1.630000000010834,
+   4.999999999988436
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "car_retails": 2.0,
+   "cs_semester": 1.0,
+   "hockey": 1.0,
+   "law_episode": 2.0,
+   "movie": 0.0,
+   "student_loan": 3.0,
+   "synthea": -2.0,
+   "university": -1.0
+  }
+ },
+ "B1_minus_B2": {
+  "delta": 1.4367816091954022,
+  "p": 0.5,
+  "ci": [
+   -2.200000000010771,
+   5.549999999988375
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "car_retails": 2.0,
+   "cs_semester": 0.0,
+   "hockey": 0.0,
+   "law_episode": 2.0,
+   "movie": 1.0,
+   "student_loan": 3.0,
+   "synthea": -3.0,
+   "university": 0.0
+  }
+ },
+ "B2_minus_B0": {
+  "delta": 0.28735632183908044,
+  "p": 1.0,
+  "ci": [
+   -2.020000000010791,
+   1.6899999999888005
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "car_retails": 0.0,
+   "cs_semester": 1.0,
+   "hockey": 1.0,
+   "law_episode": 0.0,
+   "movie": -1.0,
+   "student_loan": 0.0,
+   "synthea": 1.0,
+   "university": -1.0
+  }
+ },
+ "time_per_q": {
+  "B0": 3.82,
+  "B1": 3.68,
+  "B2": 3.42,
+  "C": 2.88
+ },
+ "time_saving_vs_B1": {
+  "point": 0.2173,
+  "ci95": [
+   0.1546,
+   0.2784
+  ]
+ },
+ "time_saving_vs_B0": {
+  "point": 0.2472,
+  "ci95": [
+   0.0089,
+   0.4645
+  ]
+ },
+ "split_by_right_candidate": {
+  "right_candidate_shown": {
+   "n": 253,
+   "ex": {
+    "B0": 90.91,
+    "B1": 91.7,
+    "B2": 90.51
+   },
+   "B1_vs_B0_wins_losses": [
+    6,
+    4
+   ],
+   "B1_vs_B2_wins_losses": [
+    7,
+    4
+   ]
+  },
+  "no_right_candidate": {
+   "n": 95,
+   "ex": {
+    "B0": 46.32,
+    "B1": 50.53,
+    "B2": 48.42
+   },
+   "B1_vs_B0_wins_losses": [
+    9,
+    5
+   ],
+   "B1_vs_B2_wins_losses": [
+    9,
+    7
+   ]
+  }
+ },
+ "cost_per_db": {
+  "B0": {
+   "car_retails": 0.7678,
+   "cs_semester": 0.7716,
+   "hockey": 1.644,
+   "law_episode": 0.7319,
+   "movie": 0.3962,
+   "student_loan": 1.0697,
+   "synthea": 1.4327,
+   "university": 0.7043
+  },
+  "B1": {
+   "car_retails": 0.9042,
+   "cs_semester": 0.8039,
+   "hockey": 1.8159,
+   "law_episode": 0.7908,
+   "movie": 0.4224,
+   "student_loan": 1.2456,
+   "synthea": 1.5198,
+   "university": 0.9096
+  },
+  "B2": {
+   "car_retails": 0.8398,
+   "cs_semester": 0.7505,
+   "hockey": 1.5589,
+   "law_episode": 0.7621,
+   "movie": 0.3976,
+   "student_loan": 1.0105,
+   "synthea": 1.4302,
+   "university": 0.7704
+  },
+  "C": {
+   "car_retails": 0.5597,
+   "cs_semester": 0.3743,
+   "hockey": 1.3796,
+   "law_episode": 0.4678,
+   "movie": 0.3339,
+   "student_loan": 0.7898,
+   "synthea": 0.9444,
+   "university": 0.5202
+  }
+ },
+ "questions_per_db": {
+  "car_retails": 38,
+  "cs_semester": 35,
+  "hockey": 63,
+  "law_episode": 34,
+  "movie": 15,
+  "student_loan": 62,
+  "synthea": 55,
+  "university": 46
+ },
+ "pass": {
+  "cost": true,
+  "noninferior": 0.0,
+  "time": false
+ }
+}

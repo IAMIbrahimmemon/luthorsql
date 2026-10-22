@@ -1,0 +1,36 @@
+{
+ "half": "confirm",
+ "n": 85,
+ "V0": {
+  "ex": 69.41,
+  "own_sql": 44,
+  "dollars_per_q": 0.03925
+ },
+ "s2v3c": {
+  "n": 85,
+  "ex": 63.53,
+  "minus_V0": -5.88,
+  "own_sql": 41,
+  "paired": {
+   "delta": -5.88235294117647,
+   "p": 1.0,
+   "ci": [
+    -100.0,
+    99.99999999997797
+   ],
+   "G": 4,
+   "patterns": 16,
+   "min_p": 0.125,
+   "per_db": {
+    "cs_semester": 0.0,
+    "hockey": -5.0,
+    "movie": 0.0,
+    "student_loan": 0.0
+   }
+  },
+  "dollars_per_q": 0.04476,
+  "cost_ratio_vs_V0": 1.141,
+  "projected_saving_vs_B1": 0.2635,
+  "projected_test_ex": 78.56
+ }
+}

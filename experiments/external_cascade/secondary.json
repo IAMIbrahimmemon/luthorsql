@@ -1,0 +1,47 @@
+{
+ "pooled": {
+  "share": 0.5195,
+  "margin": 85.57,
+  "vote_agreement": 81.82,
+  "question_length": 80.81,
+  "random_expected": 78.89,
+  "all_B1": 86.87,
+  "system1": 70.27
+ },
+ "kaggledbqa_test": {
+  "share": 0.627,
+  "margin": 78.92,
+  "vote_agreement": 70.27,
+  "question_length": 75.14,
+  "random_expected": 71.94,
+  "all_B1": 80.0,
+  "system1": 58.38
+ },
+ "spider_realistic": {
+  "share": 0.4803,
+  "margin": 87.99,
+  "vote_agreement": 86.02,
+  "question_length": 84.65,
+  "random_expected": 81.7,
+  "all_B1": 89.37,
+  "system1": 74.61
+ },
+ "price": {
+  "opus_list": {
+   "saving_vs_B1": 0.3167,
+   "saving_vs_B0": 0.1616
+  },
+  "opus_no_cache": {
+   "saving_vs_B1": 0.2949,
+   "saving_vs_B0": 0.1711
+  },
+  "sonnet_list": {
+   "saving_vs_B1": 0.3074,
+   "saving_vs_B0": 0.1246
+  },
+  "sonnet_no_cache": {
+   "saving_vs_B1": 0.2924,
+   "saving_vs_B0": 0.161
+  }
+ }
+}

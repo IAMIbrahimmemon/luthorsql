@@ -1,0 +1,5 @@
+{"transcript": "a23551ec13fbed38b.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "a203661d936d606f5.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a7e8f5e834bfb32b6.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a49c4807c0c948ac7.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a2f4e4779efba373f.output", "tools": {"Bash": 11, "SubagentHandback": 1}, "sql_executions": 20, "flags": [], "clean": true}

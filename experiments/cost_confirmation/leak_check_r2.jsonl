@@ -1,0 +1,65 @@
+{"transcript": "a01bb5a6090d53850.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B2/hockey_3"}
+{"transcript": "a50b01837ba4ccb48.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true, "chunk": "B2/student_loan_3"}
+{"transcript": "a0bf4a270692cc173.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true, "chunk": "B1/synthea_1"}
+{"transcript": "a7ca9e1fe8af4e8ef.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B2/university_1"}
+{"transcript": "a847c56ff9437001f.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "C/synthea_2"}
+{"transcript": "ad391102154021af7.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true, "chunk": "B1/student_loan_2"}
+{"transcript": "a9ee0bf191e110c82.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "C/movie_1"}
+{"transcript": "ade4cab73e58f0100.output", "tools": {"Bash": 6, "Read": 1, "SubagentHandback": 1}, "sql_executions": 8, "flags": [], "clean": true, "chunk": "B1/car_retails_1"}
+{"transcript": "a5413792db917060a.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B0/university_2"}
+{"transcript": "a1790b7f0ca49783d.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 9, "flags": [], "clean": true, "chunk": "C/student_loan_2"}
+{"transcript": "a96486530f9745923.output", "tools": {"Bash": 13, "SubagentHandback": 1}, "sql_executions": 8, "flags": [], "clean": true, "chunk": "C/hockey_1"}
+{"transcript": "a1818e0f7c1d9e35d.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B0/student_loan_1"}
+{"transcript": "a5ed90dfb40bc4c4a.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "B1/student_loan_1"}
+{"transcript": "a88fc98e899f77b47.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "C/student_loan_1"}
+{"transcript": "a1a14d14cbd488e8c.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "B0/university_1"}
+{"transcript": "a7563b15f96247469.output", "tools": {"Bash": 10, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B2/synthea_3"}
+{"transcript": "af638e856cee3802c.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B0/car_retails_1"}
+{"transcript": "ad1b629565be7b273.output", "tools": {"Bash": 20, "SubagentHandback": 1}, "sql_executions": 30, "flags": ["pattern /answers/"], "clean": false, "chunk": "B0/hockey_2"}
+{"transcript": "a2895f243af7c039a.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B2/movie_1"}
+{"transcript": "acc9807793795fa36.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B1/law_episode_1"}
+{"transcript": "a18bf3d1de821721e.output", "tools": {"Bash": 4, "Read": 1, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B1/student_loan_3"}
+{"transcript": "adebaf18339263ac3.output", "tools": {"Bash": 12, "SubagentHandback": 1}, "sql_executions": 9, "flags": ["pattern /answers/"], "clean": false, "chunk": "B0/synthea_2"}
+{"transcript": "aaaf3ef910b7bcf1f.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B0/synthea_3"}
+{"transcript": "a63dc0a100a701053.output", "tools": {"Bash": 10, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B2/hockey_1"}
+{"transcript": "a86c5206b9f4e40fb.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B0/synthea_1"}
+{"transcript": "a29a56480dd509177.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B2/law_episode_2"}
+{"transcript": "aafa5dd7cd58adbd1.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B0/movie_1"}
+{"transcript": "ae84fa5d8368205f7.output", "tools": {"Bash": 11, "Read": 1, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "C/hockey_2"}
+{"transcript": "a755727232384d0b0.output", "tools": {"Bash": 9, "TaskStop": 1, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B0/hockey_1"}
+{"transcript": "a0ff7317c66cdaa02.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "B2/law_episode_1"}
+{"transcript": "adb1b0127ba554fd5.output", "tools": {"Bash": 8, "Read": 1, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B1/synthea_2"}
+{"transcript": "a2cc387f3cc392425.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B2/cs_semester_2"}
+{"transcript": "a9fac6c21739a5be0.output", "tools": {"Bash": 12, "ToolSearch": 1, "TaskStop": 1, "SubagentHandback": 1}, "sql_executions": 8, "flags": ["outside path <sandbox-parent>", "outside path <sandbox-parent>/b0cs2_a", "outside path /tmp/x.py", "pattern /answers/"], "clean": false, "chunk": "B0/cs_semester_2"}
+{"transcript": "adaa95493681be80e.output", "tools": {"Bash": 15, "SubagentHandback": 1}, "sql_executions": 14, "flags": [], "clean": true, "chunk": "B2/hockey_2"}
+{"transcript": "a498915a0ae3ffd94.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 3, "flags": ["outside path /tmp/x_"], "clean": false, "chunk": "B0/car_retails_2"}
+{"transcript": "a92e89e8efe37f341.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "B1/movie_1"}
+{"transcript": "a9303783a54e6abc1.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true, "chunk": "B0/student_loan_2"}
+{"transcript": "aef1aac7232a69de0.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B1/hockey_1"}
+{"transcript": "a516e0a7fed68f7dd.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true, "chunk": "B1/car_retails_2"}
+{"transcript": "a472bd3036347ec5b.output", "tools": {"Bash": 6, "Read": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B1/synthea_3"}
+{"transcript": "afe432b10b71c4aab.output", "tools": {"Bash": 8, "Read": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B1/university_1"}
+{"transcript": "abaa92bc91a0c3a8d.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "C/university_1"}
+{"transcript": "adf37f55ea5742c4e.output", "tools": {"Bash": 8, "ToolSearch": 1, "TaskStop": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B2/car_retails_2"}
+{"transcript": "ace0b5f542ada31c7.output", "tools": {"Bash": 16, "SubagentHandback": 1}, "sql_executions": 24, "flags": [], "clean": true, "chunk": "B1/hockey_3"}
+{"transcript": "a9c7d3c5a0f659ae3.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B2/student_loan_1"}
+{"transcript": "a8f5a6ed37fba5a2b.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B0/student_loan_3"}
+{"transcript": "ac57fdea48003955c.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B2/cs_semester_1"}
+{"transcript": "a0299e9f797ebab29.output", "tools": {"Bash": 5, "Read": 2, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "C/car_retails_1"}
+{"transcript": "a4385282771a1bf38.output", "tools": {"Bash": 4, "Read": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B1/cs_semester_2"}
+{"transcript": "a7929e72aa03bc46e.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true, "chunk": "C/law_episode_1"}
+{"transcript": "a8cf2f1795df3208a.output", "tools": {"Bash": 12, "SubagentHandback": 1}, "sql_executions": 9, "flags": [], "clean": true, "chunk": "B0/hockey_3"}
+{"transcript": "a9b8dc92c27eb2c8b.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B2/car_retails_1"}
+{"transcript": "ac297975653e1e5a7.output", "tools": {"Bash": 3, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "C/cs_semester_1"}
+{"transcript": "a9c6173bbc223bbda.output", "tools": {"Bash": 8, "Read": 1, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true, "chunk": "B1/university_2"}
+{"transcript": "ab6d958970b977a76.output", "tools": {"Bash": 10, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true, "chunk": "B2/synthea_2"}
+{"transcript": "a388f671fed2e2a12.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B0/cs_semester_1"}
+{"transcript": "aa9edefefa325e390.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B2/synthea_1"}
+{"transcript": "a09575fc89c151c02.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 0, "flags": [], "clean": true, "chunk": "B2/university_2"}
+{"transcript": "ad0e16f9d996a6b58.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B0/law_episode_2"}
+{"transcript": "a8ffb78be1119f6e6.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B1/cs_semester_1"}
+{"transcript": "a3453383bb1c57a94.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "C/synthea_1"}
+{"transcript": "a1e80fa93e97ae574.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true, "chunk": "B2/student_loan_2"}
+{"transcript": "acab6f9814ce8c68b.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B1/law_episode_2"}
+{"transcript": "a4ba2d13367ab0e1a.output", "tools": {"Bash": 13, "SubagentHandback": 1}, "sql_executions": 9, "flags": [], "clean": true, "chunk": "B1/hockey_2"}
+{"transcript": "ada3f900a13bf90d2.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true, "chunk": "B0/law_episode_1"}

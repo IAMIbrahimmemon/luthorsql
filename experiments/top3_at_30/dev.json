@@ -1,0 +1,90 @@
+{
+ "half": "dev",
+ "n": 92,
+ "V0": {
+  "ex": 76.09,
+  "own_sql": 42,
+  "dollars_per_q": 0.03206
+ },
+ "s2v1": {
+  "n": 92,
+  "ex": 76.09,
+  "minus_V0": 0.0,
+  "own_sql": 36,
+  "paired": {
+   "delta": 0.0,
+   "p": 1.0,
+   "ci": [
+    -100.0,
+    99.99999999997797
+   ],
+   "G": 4,
+   "patterns": 16,
+   "min_p": 0.125,
+   "per_db": {
+    "car_retails": 0.0,
+    "law_episode": -1.0,
+    "synthea": 2.0,
+    "university": -1.0
+   }
+  },
+  "dollars_per_q": 0.03503,
+  "cost_ratio_vs_V0": 1.093,
+  "projected_saving_vs_B1": 0.2929,
+  "projected_test_ex": 81.56
+ },
+ "s2v2": {
+  "n": 92,
+  "ex": 75.0,
+  "minus_V0": -1.09,
+  "own_sql": 37,
+  "paired": {
+   "delta": -1.0869565217391304,
+   "p": 1.0,
+   "ci": [
+    -100.0,
+    99.99999999997797
+   ],
+   "G": 4,
+   "patterns": 16,
+   "min_p": 0.125,
+   "per_db": {
+    "car_retails": -1.0,
+    "law_episode": -2.0,
+    "synthea": 4.0,
+    "university": -2.0
+   }
+  },
+  "dollars_per_q": 0.02963,
+  "cost_ratio_vs_V0": 0.924,
+  "projected_saving_vs_B1": 0.3962,
+  "projected_test_ex": 81.01
+ },
+ "s2v3": {
+  "n": 92,
+  "ex": 76.09,
+  "minus_V0": 0.0,
+  "own_sql": 38,
+  "paired": {
+   "delta": 0.0,
+   "p": 1.0,
+   "ci": [
+    -100.0,
+    99.99999999997797
+   ],
+   "G": 4,
+   "patterns": 16,
+   "min_p": 0.125,
+   "per_db": {
+    "car_retails": -1.0,
+    "law_episode": -1.0,
+    "synthea": 3.0,
+    "university": -1.0
+   }
+  },
+  "dollars_per_q": 0.02841,
+  "cost_ratio_vs_V0": 0.886,
+  "projected_saving_vs_B1": 0.4195,
+  "projected_test_ex": 81.56
+ }
+}

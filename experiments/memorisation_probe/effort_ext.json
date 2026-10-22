@@ -1,0 +1,44 @@
+{
+ "B0/kaggledbqa_test": {
+  "questions": 185,
+  "chunks": 11,
+  "tool_calls_per_q": 0.38,
+  "output_tokens_per_q": 73.57,
+  "seconds_per_q": 2.49
+ },
+ "B0/spider_realistic": {
+  "questions": 508,
+  "chunks": 31,
+  "tool_calls_per_q": 0.25,
+  "output_tokens_per_q": 47.64,
+  "seconds_per_q": 1.38
+ },
+ "B1/kaggledbqa_test": {
+  "questions": 185,
+  "chunks": 11,
+  "tool_calls_per_q": 0.33,
+  "output_tokens_per_q": 53.78,
+  "seconds_per_q": 2.15
+ },
+ "B1/spider_realistic": {
+  "questions": 508,
+  "chunks": 31,
+  "tool_calls_per_q": 0.28,
+  "output_tokens_per_q": 32.91,
+  "seconds_per_q": 1.33
+ },
+ "C/kaggledbqa_test": {
+  "questions": 116,
+  "chunks": 8,
+  "tool_calls_per_q": 0.42,
+  "output_tokens_per_q": 69.92,
+  "seconds_per_q": 2.72
+ },
+ "C/spider_realistic": {
+  "questions": 244,
+  "chunks": 21,
+  "tool_calls_per_q": 0.39,
+  "output_tokens_per_q": 49.91,
+  "seconds_per_q": 1.93
+ }
+}

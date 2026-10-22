@@ -1,0 +1,585 @@
+{
+ "pooled": {
+  "n": 693,
+  "dbs": 27,
+  "routed": 360,
+  "ex": {
+   "B0": 88.31,
+   "B1": 86.87,
+   "C": 88.17,
+   "S1": 70.27
+  },
+  "cost_per_q": {
+   "B0": 0.01799,
+   "B1": 0.02207,
+   "C": 0.01508
+  },
+  "time_per_q": {
+   "B0": 1.68,
+   "B1": 2.42,
+   "C": 2.01
+  },
+  "agent_share": 0.5195,
+  "saving_vs_B1": {
+   "point": 0.3167,
+   "ci95": [
+    0.2456,
+    0.3821
+   ]
+  },
+  "time_saving_vs_B1": {
+   "point": 0.1706,
+   "ci95": [
+    0.125,
+    0.2143
+   ]
+  },
+  "C_minus_B1": {
+   "delta": 1.2987012987012987,
+   "p": 0.6029169854150729,
+   "ci": [
+    -1.9600000000107975,
+    4.909999999988446
+   ],
+   "G": 27,
+   "patterns": 200001,
+   "min_p": null,
+   "per_db": {
+    "GeoNuclearData": 1.0,
+    "GreaterManchesterCrime": -1.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 1.0,
+    "TheHistoryofBaseball": 5.0,
+    "USWildFires": -1.0,
+    "WhatCDHipHop": -3.0,
+    "WorldSoccerDataBase": 1.0,
+    "battle_death": 0.0,
+    "car_1": -1.0,
+    "concert_singer": 0.0,
+    "course_teach": 0.0,
+    "dog_kennels": 0.0,
+    "employee_hire_evaluation": 0.0,
+    "flight_2": 10.0,
+    "museum_visit": 0.0,
+    "network_1": 0.0,
+    "orchestra": 0.0,
+    "pets_1": 0.0,
+    "poker_player": 0.0,
+    "real_estate_properties": -1.0,
+    "singer": 0.0,
+    "student_transcripts_tracking": 0.0,
+    "tvshow": -2.0,
+    "voter_1": 0.0,
+    "world_1": 0.0,
+    "wta_1": 0.0
+   }
+  },
+  "C_vs_B1_wins_losses": [
+   28,
+   19
+  ],
+  "saving_vs_B0": {
+   "point": 0.1616,
+   "ci95": [
+    0.0745,
+    0.2498
+   ]
+  },
+  "time_saving_vs_B0": {
+   "point": -0.1986,
+   "ci95": [
+    -0.3458,
+    -0.0505
+   ]
+  },
+  "C_minus_B0": {
+   "delta": -0.1443001443001443,
+   "p": 1.0,
+   "ci": [
+    -3.3600000000106434,
+    3.1599999999886386
+   ],
+   "G": 27,
+   "patterns": 200001,
+   "min_p": null,
+   "per_db": {
+    "GeoNuclearData": 3.0,
+    "GreaterManchesterCrime": -1.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 1.0,
+    "TheHistoryofBaseball": 7.0,
+    "USWildFires": 0.0,
+    "WhatCDHipHop": -1.0,
+    "WorldSoccerDataBase": 1.0,
+    "battle_death": 0.0,
+    "car_1": -1.0,
+    "concert_singer": 0.0,
+    "course_teach": 0.0,
+    "dog_kennels": 0.0,
+    "employee_hire_evaluation": 0.0,
+    "flight_2": -6.0,
+    "museum_visit": -1.0,
+    "network_1": 0.0,
+    "orchestra": 0.0,
+    "pets_1": 0.0,
+    "poker_player": 0.0,
+    "real_estate_properties": -1.0,
+    "singer": 0.0,
+    "student_transcripts_tracking": -1.0,
+    "tvshow": -2.0,
+    "voter_1": 0.0,
+    "world_1": 2.0,
+    "wta_1": -1.0
+   }
+  },
+  "C_vs_B0_wins_losses": [
+   24,
+   25
+  ],
+  "B1_minus_B0": {
+   "delta": -1.443001443001443,
+   "p": 0.9414102929485353,
+   "ci": [
+    -6.250000000010325,
+    2.019999999988764
+   ],
+   "G": 27,
+   "patterns": 200001,
+   "min_p": null,
+   "per_db": {
+    "GeoNuclearData": 2.0,
+    "GreaterManchesterCrime": 0.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 0.0,
+    "TheHistoryofBaseball": 2.0,
+    "USWildFires": 1.0,
+    "WhatCDHipHop": 2.0,
+    "WorldSoccerDataBase": 0.0,
+    "battle_death": 0.0,
+    "car_1": 0.0,
+    "concert_singer": 0.0,
+    "course_teach": 0.0,
+    "dog_kennels": 0.0,
+    "employee_hire_evaluation": 0.0,
+    "flight_2": -16.0,
+    "museum_visit": -1.0,
+    "network_1": 0.0,
+    "orchestra": 0.0,
+    "pets_1": 0.0,
+    "poker_player": 0.0,
+    "real_estate_properties": 0.0,
+    "singer": 0.0,
+    "student_transcripts_tracking": -1.0,
+    "tvshow": 0.0,
+    "voter_1": 0.0,
+    "world_1": 2.0,
+    "wta_1": -1.0
+   }
+  }
+ },
+ "kaggledbqa_test": {
+  "n": 185,
+  "dbs": 8,
+  "routed": 116,
+  "ex": {
+   "B0": 76.22,
+   "B1": 80.0,
+   "C": 81.62,
+   "S1": 58.38
+  },
+  "cost_per_q": {
+   "B0": 0.02246,
+   "B1": 0.02579,
+   "C": 0.01926
+  },
+  "time_per_q": {
+   "B0": 2.49,
+   "B1": 3.02,
+   "C": 2.58
+  },
+  "agent_share": 0.627,
+  "saving_vs_B1": {
+   "point": 0.2533,
+   "ci95": [
+    0.0961,
+    0.3652
+   ]
+  },
+  "time_saving_vs_B1": {
+   "point": 0.1463,
+   "ci95": [
+    0.0638,
+    0.211
+   ]
+  },
+  "C_minus_B1": {
+   "delta": 1.6216216216216217,
+   "p": 0.765625,
+   "ci": [
+    -5.170000000010444,
+    11.469999999987724
+   ],
+   "G": 8,
+   "patterns": 256,
+   "min_p": 0.0078125,
+   "per_db": {
+    "GeoNuclearData": 1.0,
+    "GreaterManchesterCrime": -1.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 1.0,
+    "TheHistoryofBaseball": 5.0,
+    "USWildFires": -1.0,
+    "WhatCDHipHop": -3.0,
+    "WorldSoccerDataBase": 1.0
+   }
+  },
+  "C_vs_B1_wins_losses": [
+   10,
+   7
+  ],
+  "saving_vs_B0": {
+   "point": 0.1425,
+   "ci95": [
+    -0.0494,
+    0.2752
+   ]
+  },
+  "time_saving_vs_B0": {
+   "point": -0.0368,
+   "ci95": [
+    -0.2688,
+    0.1046
+   ]
+  },
+  "C_minus_B0": {
+   "delta": 5.405405405405405,
+   "p": 0.34375,
+   "ci": [
+    -2.320000000010758,
+    16.169999999987205
+   ],
+   "G": 8,
+   "patterns": 256,
+   "min_p": 0.0078125,
+   "per_db": {
+    "GeoNuclearData": 3.0,
+    "GreaterManchesterCrime": -1.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 1.0,
+    "TheHistoryofBaseball": 7.0,
+    "USWildFires": 0.0,
+    "WhatCDHipHop": -1.0,
+    "WorldSoccerDataBase": 1.0
+   }
+  },
+  "C_vs_B0_wins_losses": [
+   16,
+   6
+  ],
+  "B1_minus_B0": {
+   "delta": 3.783783783783784,
+   "p": 0.125,
+   "ci": [
+    -1.1013412404281553e-11,
+    7.269999999988186
+   ],
+   "G": 8,
+   "patterns": 256,
+   "min_p": 0.0078125,
+   "per_db": {
+    "GeoNuclearData": 2.0,
+    "GreaterManchesterCrime": 0.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 0.0,
+    "TheHistoryofBaseball": 2.0,
+    "USWildFires": 1.0,
+    "WhatCDHipHop": 2.0,
+    "WorldSoccerDataBase": 0.0
+   }
+  }
+ },
+ "spider_realistic": {
+  "n": 508,
+  "dbs": 19,
+  "routed": 244,
+  "ex": {
+   "B0": 92.72,
+   "B1": 89.37,
+   "C": 90.55,
+   "S1": 74.61
+  },
+  "cost_per_q": {
+   "B0": 0.01636,
+   "B1": 0.02072,
+   "C": 0.01356
+  },
+  "time_per_q": {
+   "B0": 1.38,
+   "B1": 2.21,
+   "C": 1.8
+  },
+  "agent_share": 0.4803,
+  "saving_vs_B1": {
+   "point": 0.3455,
+   "ci95": [
+    0.2656,
+    0.421
+   ]
+  },
+  "time_saving_vs_B1": {
+   "point": 0.1827,
+   "ci95": [
+    0.1262,
+    0.2434
+   ]
+  },
+  "C_minus_B1": {
+   "delta": 1.1811023622047243,
+   "p": 1.0,
+   "ci": [
+    -1.9000000000108042,
+    5.659999999988363
+   ],
+   "G": 19,
+   "patterns": 200001,
+   "min_p": null,
+   "per_db": {
+    "battle_death": 0.0,
+    "car_1": -1.0,
+    "concert_singer": 0.0,
+    "course_teach": 0.0,
+    "dog_kennels": 0.0,
+    "employee_hire_evaluation": 0.0,
+    "flight_2": 10.0,
+    "museum_visit": 0.0,
+    "network_1": 0.0,
+    "orchestra": 0.0,
+    "pets_1": 0.0,
+    "poker_player": 0.0,
+    "real_estate_properties": -1.0,
+    "singer": 0.0,
+    "student_transcripts_tracking": 0.0,
+    "tvshow": -2.0,
+    "voter_1": 0.0,
+    "world_1": 0.0,
+    "wta_1": 0.0
+   }
+  },
+  "C_vs_B1_wins_losses": [
+   18,
+   12
+  ],
+  "saving_vs_B0": {
+   "point": 0.1711,
+   "ci95": [
+    0.0694,
+    0.2855
+   ]
+  },
+  "time_saving_vs_B0": {
+   "point": -0.3048,
+   "ci95": [
+    -0.4519,
+    -0.1307
+   ]
+  },
+  "C_minus_B0": {
+   "delta": -2.1653543307086616,
+   "p": 0.14094929525352373,
+   "ci": [
+    -5.260000000010434,
+    -1.1013412404281553e-11
+   ],
+   "G": 19,
+   "patterns": 200001,
+   "min_p": null,
+   "per_db": {
+    "battle_death": 0.0,
+    "car_1": -1.0,
+    "concert_singer": 0.0,
+    "course_teach": 0.0,
+    "dog_kennels": 0.0,
+    "employee_hire_evaluation": 0.0,
+    "flight_2": -6.0,
+    "museum_visit": -1.0,
+    "network_1": 0.0,
+    "orchestra": 0.0,
+    "pets_1": 0.0,
+    "poker_player": 0.0,
+    "real_estate_properties": -1.0,
+    "singer": 0.0,
+    "student_transcripts_tracking": -1.0,
+    "tvshow": -2.0,
+    "voter_1": 0.0,
+    "world_1": 2.0,
+    "wta_1": -1.0
+   }
+  },
+  "C_vs_B0_wins_losses": [
+   8,
+   19
+  ],
+  "B1_minus_B0": {
+   "delta": -3.346456692913386,
+   "p": 0.4998225008874956,
+   "ci": [
+    -10.550000000009852,
+    0.6899999999889106
+   ],
+   "G": 19,
+   "patterns": 200001,
+   "min_p": null,
+   "per_db": {
+    "battle_death": 0.0,
+    "car_1": 0.0,
+    "concert_singer": 0.0,
+    "course_teach": 0.0,
+    "dog_kennels": 0.0,
+    "employee_hire_evaluation": 0.0,
+    "flight_2": -16.0,
+    "museum_visit": -1.0,
+    "network_1": 0.0,
+    "orchestra": 0.0,
+    "pets_1": 0.0,
+    "poker_player": 0.0,
+    "real_estate_properties": 0.0,
+    "singer": 0.0,
+    "student_transcripts_tracking": -1.0,
+    "tvshow": 0.0,
+    "voter_1": 0.0,
+    "world_1": 2.0,
+    "wta_1": -1.0
+   }
+  }
+ },
+ "kaggledbqa_clean130": {
+  "n": 130,
+  "dbs": 6,
+  "routed": 75,
+  "ex": {
+   "B0": 78.46,
+   "B1": 80.77,
+   "C": 81.54,
+   "S1": 59.23
+  },
+  "cost_per_q": {
+   "B0": 0.02191,
+   "B1": 0.02482,
+   "C": 0.02035
+  },
+  "time_per_q": {
+   "B0": 2.44,
+   "B1": 2.94,
+   "C": 2.55
+  },
+  "agent_share": 0.5769,
+  "saving_vs_B1": {
+   "point": 0.18,
+   "ci95": [
+    0.0361,
+    0.3292
+   ]
+  },
+  "time_saving_vs_B1": {
+   "point": 0.1306,
+   "ci95": [
+    0.0316,
+    0.2233
+   ]
+  },
+  "C_minus_B1": {
+   "delta": 0.7692307692307693,
+   "p": 1.0,
+   "ci": [
+    -5.550000000010402,
+    8.329999999988068
+   ],
+   "G": 6,
+   "patterns": 64,
+   "min_p": 0.03125,
+   "per_db": {
+    "GeoNuclearData": 1.0,
+    "GreaterManchesterCrime": -1.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 1.0,
+    "USWildFires": -1.0,
+    "WorldSoccerDataBase": 1.0
+   }
+  },
+  "C_vs_B1_wins_losses": [
+   4,
+   3
+  ],
+  "saving_vs_B0": {
+   "point": 0.0709,
+   "ci95": [
+    -0.1554,
+    0.2526
+   ]
+  },
+  "time_saving_vs_B0": {
+   "point": -0.0454,
+   "ci95": [
+    -0.3998,
+    0.1485
+   ]
+  },
+  "C_minus_B0": {
+   "delta": 3.076923076923077,
+   "p": 0.5,
+   "ci": [
+    -5.550000000010402,
+    13.629999999987486
+   ],
+   "G": 6,
+   "patterns": 64,
+   "min_p": 0.03125,
+   "per_db": {
+    "GeoNuclearData": 3.0,
+    "GreaterManchesterCrime": -1.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 1.0,
+    "USWildFires": 0.0,
+    "WorldSoccerDataBase": 1.0
+   }
+  },
+  "C_vs_B0_wins_losses": [
+   8,
+   4
+  ],
+  "B1_minus_B0": {
+   "delta": 2.307692307692308,
+   "p": 0.5,
+   "ci": [
+    -1.1013412404281553e-11,
+    9.089999999987985
+   ],
+   "G": 6,
+   "patterns": 64,
+   "min_p": 0.03125,
+   "per_db": {
+    "GeoNuclearData": 2.0,
+    "GreaterManchesterCrime": 0.0,
+    "Pesticide": 0.0,
+    "StudentMathScore": 0.0,
+    "USWildFires": 1.0,
+    "WorldSoccerDataBase": 0.0
+   }
+  }
+ },
+ "chunks": {
+  "B0": 42,
+  "B1": 42,
+  "C": 29
+ },
+ "missing": {
+  "B0": 0,
+  "B1": 0,
+  "C": 0
+ },
+ "pass": {
+  "cost": true,
+  "noninferior": true,
+  "time": false
+ }
+}

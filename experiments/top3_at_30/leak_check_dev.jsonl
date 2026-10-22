@@ -1,0 +1,15 @@
+{"transcript": "a2d82295441a16b51.output", "tools": {"Bash": 14, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a9871b8504879594b.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 18, "flags": [], "clean": true}
+{"transcript": "acda47c0172127599.output", "tools": {"Bash": 14}, "sql_executions": 10, "flags": [], "clean": true}
+{"transcript": "a8baa1d8bf3edb990.output", "tools": {"Bash": 11, "SubagentHandback": 1}, "sql_executions": 7, "flags": [], "clean": true}
+{"transcript": "a5c8fb8f4afddbcdf.output", "tools": {"Bash": 12, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a51721fcf600828e0.output", "tools": {"Bash": 10, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a7e5dac9f06c97f0c.output", "tools": {"Bash": 12, "SubagentHandback": 1}, "sql_executions": 8, "flags": [], "clean": true}
+{"transcript": "ad7dfe4c0e406b7f2.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a60f5c40897ec79e6.output", "tools": {"Bash": 12, "SubagentHandback": 1}, "sql_executions": 8, "flags": [], "clean": true}
+{"transcript": "a9ca4729e425640ba.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "ab4da43786875bfff.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "adea0704887573889.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "a86a53e2f7de986e1.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 6, "flags": [], "clean": true}
+{"transcript": "a5d4c52771b05e07b.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "a6b86b39bba8d636a.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}

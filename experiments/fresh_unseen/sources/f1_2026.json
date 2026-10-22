@@ -1,0 +1,24 @@
+{
+ "db": "f1_2026",
+ "sources": [
+  {
+   "url": "https://api.jolpi.ca/ergast/f1/2026/",
+   "licence": "Jolpica-F1 API (Ergast-compatible); data derives from Ergast, licensed CC BY-NC-SA 3.0 (non-commercial, share-alike); server code Apache-2.0. Research use only.",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "races with race_date >= 2026-07-01 and already run by 2026-10-21",
+ "tables": {
+  "circuits": 9,
+  "drivers": 23,
+  "constructors": 11,
+  "races": 9,
+  "results": 198,
+  "sprint_results": 66,
+  "qualifying": 196,
+  "pit_stops": 378,
+  "driver_standings": 204,
+  "constructor_standings": 99
+ },
+ "notes": "Main tables date range 2026-07-05 to 2026-10-11 (rounds (9, 17)). Reference tables drivers/constructors/circuits hold only entities appearing in those rounds. Standings are cumulative after each round (season-to-date, so include pre-July points). Round 16 is named 'Bahrain Grand Prix in Malaysia' by source. Rate limit ~4 req/s respected."
+}

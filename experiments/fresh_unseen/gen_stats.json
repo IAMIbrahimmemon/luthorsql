@@ -1,0 +1,94 @@
+{
+ "per_db": {
+  "chicago_crashes_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 1,
+   "nondeterministic": 0,
+   "duplicate": 0,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "chicago_crime_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 0,
+   "nondeterministic": 0,
+   "duplicate": 4,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "f1_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 0,
+   "nondeterministic": 0,
+   "duplicate": 0,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "fda_recalls_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 1,
+   "nondeterministic": 0,
+   "duplicate": 1,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "nws_alerts_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 0,
+   "nondeterministic": 0,
+   "duplicate": 0,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "quakes_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 2,
+   "nondeterministic": 0,
+   "duplicate": 2,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "uk_house_prices_2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 3,
+   "nondeterministic": 0,
+   "duplicate": 0,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  },
+  "wc2026": {
+   "generated": 40,
+   "exec_fail": 0,
+   "empty": 0,
+   "too_many_rows": 0,
+   "nondeterministic": 0,
+   "duplicate": 0,
+   "judge_no": 0,
+   "judge_error": 0,
+   "kept": 30
+  }
+ },
+ "total": 240,
+ "log": []
+}

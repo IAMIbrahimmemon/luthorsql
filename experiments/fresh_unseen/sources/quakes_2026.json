@@ -1,0 +1,19 @@
+{
+ "db": "quakes_2026",
+ "sources": [
+  {
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-01&endtime=2026-10-16&minmagnitude=2.5 (fetched monthly)",
+   "licence": "US Government public domain (USGS)",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "origin time 2026-07-01 to 2026-10-15 UTC, magnitude >= 2.5, worldwide",
+ "tables": {
+  "events": 8779,
+  "networks": 13,
+  "magnitude_types": 9,
+  "regions": 189,
+  "event_impacts": 1647
+ },
+ "notes": "events min/max event_time: 2026-07-01 00:14:00 / 2026-10-15 23:43:16. Networks names, magnitude type descriptions hand-written lookups. Regions derived from place text (suffix after last comma; US state abbreviations expanded; no-comma places treated as offshore regions with 'N km DIR of ' stripped). event_impacts holds only events with felt/cdi/mmi/alert values."
+}

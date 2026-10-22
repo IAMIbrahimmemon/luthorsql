@@ -14,11 +14,32 @@ Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM A
 | `scripts/rerank_sq2.py` | Candidate execution and validator scoring |
 | `scripts/system2/` | System 2 experiments: SQL tool for the agent, sandboxes, dev scoring, threshold rule, leak check, API loop for open-weight agents |
 | `scripts/analysis/` | Analysis scripts behind the paper's numbers (cascade threshold, latency, single-adapter evaluation, etc.) |
-| `experiments/` | Cross-agent runs (Sonnet, Haiku, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash): pre-registrations with verdicts, answers, scored results |
-| `splits/` | DECISION (796) and RESERVED (348) question ids from BIRD train, with their hashes |
+| `experiments/*_crosscheck/` | Cross-agent runs (Sonnet, Haiku, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash): pre-registrations with verdicts, answers, scored results |
+| `experiments/cost_confirmation/` | Pre-registered held-out cascade test on RESERVED (3 runs): PREREG with verdicts, scorer, result files, incident log |
+| `experiments/external_cascade/` | Pre-registered external test (KaggleDBQA test + Spider-Realistic, 693 questions) |
+| `experiments/memorisation_probe/` | Pre-registered memorisation probes of the agent (schema-free SQL, guided vs general completion), incl. BIRD Mini-Dev |
+| `experiments/renamed_routed/` | Renamed-schema test of the routed half (renamer, rewritten gold, scorer) |
+| `experiments/fresh_unseen/` | Fresh test set on 8 post-cutoff public databases: builders, sources and licences, question generator, verification record, scorer |
+| `experiments/top3_at_30/`, `experiments/final_config/` | Pre-registered attempts to raise accuracy at the same cost (none adopted), incl. a corrected scorer bug |
+| `experiments/w83/` | Exploratory (not pre-registered) search on the selection split; report and GPU ledger |
+| `scripts/chains/*_s1*.sh`, `scripts/shade/` | Gold-free System 1 GPU runs for the held-out, external and fresh tests (one rented H100, auto-destroyed) |
+| `splits/` | DECISION (796) and RESERVED (348) question ids from BIRD train, with their hashes; `fresh_unseen/items.jsonl`: the 227 verified fresh-set questions with gold SQL (databases rebuilt by `experiments/fresh_unseen/builders/`) |
 | `tests/` | Unit tests |
 
 Many other scripts are from earlier rounds of the project (described in the paper's history appendix).
+
+## Main results (details and every source file in the paper and in `experiments/`)
+
+- **System 1 alone:** 68.03% execution accuracy on BIRD's hidden test set (scored by the BIRD team), 0.84 s per question on one H100.
+- **Cascade, threshold 3.0, Claude Opus 5.5 as System 2:**
+  - Measured against Opus given System 1's candidates on every question, on held-out data with a threshold fixed in advance:
+    - Cost per question: 29.9–36.7% lower (34.3% pooled over three RESERVED runs) and 31.7% lower on 693 external questions.
+    - Accuracy: within 1.3 points in every run; no difference was significant.
+    - Total time per question: 12–24% lower.
+  - The pre-registered RESERVED run 1 narrowly missed its 30% cost bar and did not show non-inferiority. The external test met its cost and accuracy bars.
+- **Memorisation:** without a schema, Opus reproduces 48–92% of public benchmarks' gold SQL. With its tool, its accuracy did not drop when every name was rewritten.
+- **Fresh set:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower cost.
+- **Not yet measured:** the cascade has not been run on BIRD's hidden test set.
 
 ## Weights
 

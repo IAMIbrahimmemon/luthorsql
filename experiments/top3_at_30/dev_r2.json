@@ -1,0 +1,29 @@
+{
+ "half": "dev",
+ "n": 92,
+ "agent2_questions": 49,
+ "majority_decided": 45,
+ "ex": 72.83,
+ "minus_V0": -3.26,
+ "paired": {
+  "delta": -3.260869565217391,
+  "p": 0.5,
+  "ci": [
+   -100.0,
+   99.99999999997797
+  ],
+  "G": 4,
+  "patterns": 16,
+  "min_p": 0.125,
+  "per_db": {
+   "car_retails": -1.0,
+   "law_episode": -1.0,
+   "synthea": 1.0,
+   "university": -2.0
+  }
+ },
+ "dollars_per_q": 0.05468,
+ "cost_ratio_vs_V0": 1.706,
+ "projected_saving_vs_B1": -0.0831,
+ "projected_test_ex": 79.9
+}

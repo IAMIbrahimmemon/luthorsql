@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import math
 import random
 from pathlib import Path
@@ -26,7 +27,7 @@ S1 = ROOT / "runs/phase1/valhard/valhard/heldout_by_new.jsonl"
 OPUS = ROOT / "runs/analysis/hybrid/opus_s1.json"
 DEC = ROOT / "data/sys1/heldout_v2/decision.json"
 TRAIN_JSON = ROOT / "data/raw/bird_train/train.json"  # question id -> db_id for uncovered questions
-TRAIN_JSON_COPY = Path("/private/tmp/claude-501/-Users-ibrahimmemon-Documents-GitHub-luthor-general/1555fb05-f5b6-4c07-82bb-2c3833dc5ab7/scratchpad/bird_train/train.json")
+TRAIN_JSON_COPY = Path(os.environ.get("LUTHOR_TRAIN_JSON", ""))  # a copy of train.json when data/raw is unmounted
 COST_OPUS = 0.025     # $ per Opus handoff call (recomputed 2026-10-17 from usage logs at standard cache prices)
 COST_S1 = 0.00064     # $ per System 1 question (batched H100 PCIe, $2.50/h)
 DELTA = 1.0           # rule B tolerance: the documented run-to-run noise of one System 1 recipe (about 1 point)

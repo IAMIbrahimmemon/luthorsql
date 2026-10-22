@@ -1,0 +1,71 @@
+{
+ "what": "summed agent seconds per question (+ System 1 seconds for B1 and C), as scored by score.py / score_ext.py",
+ "reserved_runs_vs_B1": [
+  {
+   "point": 0.1228,
+   "ci95": [
+    0.0635,
+    0.1825
+   ]
+  },
+  {
+   "point": 0.2364,
+   "ci95": [
+    0.1905,
+    0.2888
+   ]
+  },
+  {
+   "point": 0.2173,
+   "ci95": [
+    0.1546,
+    0.2784
+   ]
+  }
+ ],
+ "reserved_runs_vs_B0": [
+  {
+   "point": -0.0242,
+   "ci95": [
+    -0.0896,
+    0.0627
+   ]
+  },
+  {
+   "point": 0.2855,
+   "ci95": [
+    0.0412,
+    0.4982
+   ]
+  },
+  {
+   "point": 0.2472,
+   "ci95": [
+    0.0089,
+    0.4645
+   ]
+  }
+ ],
+ "reserved_pooled_vs_B1": 0.1931,
+ "reserved_pooled_vs_B0": 0.1856,
+ "reserved_time_per_q_sum": {
+  "C": 8.69,
+  "B1": 10.77,
+  "B0": 10.67
+ },
+ "external_vs_B1": {
+  "point": 0.1706,
+  "ci95": [
+   0.125,
+   0.2143
+  ]
+ },
+ "external_vs_B0": {
+  "point": -0.1986,
+  "ci95": [
+   -0.3458,
+   -0.0505
+  ]
+ },
+ "note": "pooled = 1 - sum(C s/q over runs)/sum(B1 s/q over runs); no CI for the pool (per-run CIs are in the result files)"
+}

@@ -1,0 +1,23 @@
+{"transcript": "a866b10937e7d6c08.output", "tools": {"Bash": 8, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "af67d2432f77ebe74.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a69e5116991eff2a1.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a82831fb490f324fc.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "a5d695e02abbb753e.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "a7c9dd6c4f6a6e66b.output", "tools": {"Bash": 9, "Write": 1, "SubagentHandback": 1}, "sql_executions": 5, "flags": ["outside path /private/tmp/claude-501/-Users-ibrahimmemon-Documents-GitHub/1555fb05-f5b6-4c07-82bb-2c3833dc5ab7/tasks/bsfuqalw4.output", "pattern /answers/"], "clean": false}
+{"transcript": "aab8c44d895ce7098.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "a2e1d03f335066461.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "aac2aa3edc1e44f91.output", "tools": {"Bash": 4, "SubagentHandback": 1}, "sql_executions": 1, "flags": [], "clean": true}
+{"transcript": "aa046cfcad8b273ef.output", "tools": {"Bash": 7, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "ad916664ecd39b74b.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 5, "flags": [], "clean": true}
+{"transcript": "a9265dac03e4efc68.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a0d69e227a82c1bbb.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a7b91278e11b47d50.output", "tools": {"Bash": 6, "Read": 1, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a93e807a3bad7c31a.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "a9bc0ca6eee625485.output", "tools": {"Bash": 6, "Read": 1, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a5eea8dd3d91edc05.output", "tools": {"Bash": 6, "SubagentHandback": 1}, "sql_executions": 2, "flags": [], "clean": true}
+{"transcript": "a9999af3e9f6da0cb.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 2, "flags": ["pattern /answers/"], "clean": false}
+{"transcript": "a31e14ea717ab1a82.output", "tools": {"Bash": 9, "SubagentHandback": 1}, "sql_executions": 11, "flags": [], "clean": true}
+{"transcript": "a6c3703ae83e4cc9f.output", "tools": {"Bash": 5, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "a99652b4dd0249e7c.output", "tools": {"Bash": 9, "Read": 1, "SubagentHandback": 1}, "sql_executions": 3, "flags": [], "clean": true}
+{"transcript": "a17f7ab128d632bd6.output", "tools": {"Bash": 8, "Read": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}
+{"transcript": "a352e0ea4aaf0f0e8.output", "tools": {"Bash": 8, "Read": 1, "SubagentHandback": 1}, "sql_executions": 4, "flags": [], "clean": true}

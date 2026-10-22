@@ -1,0 +1,25 @@
+{
+ "db": "mlb_2026",
+ "sources": [
+  {
+   "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2026-07-01&endDate=2026-10-20&hydrate=linescore,team,venue,probablePitcher,decisions",
+   "licence": "MLB Advanced Media copyright (http://gdx.mlb.com/components/copyright.txt): only individual, non-commercial, non-bulk use permitted; no open licence. Used for research only per owner decision.",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://statsapi.mlb.com/api/v1/venues?hydrate=location",
+   "licence": "same MLBAM terms",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "officialDate >= 2026-07-01 and <= 2026-10-20; final games only; exhibition excluded",
+ "tables": {
+  "teams": 32,
+  "venues": 32,
+  "players": 559,
+  "games": 1185,
+  "linescore_innings": 10796,
+  "game_pitchers": 5359
+ },
+ "notes": "games date range 2026-07-01..2026-10-19; game types [('A', 1), ('D', 16), ('F', 9), ('L', 10), ('R', 1149)]. Attendance not in schedule endpoint so omitted. Requests ~2.5/s. Teams includes the AL/NL All-Star squads (game_type A, 1 game). One regular-season game is Final with NULL scores and NULL winning_team_id (source quirk). Rows are regular season + postseason as available."
+}

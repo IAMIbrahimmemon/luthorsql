@@ -1,0 +1,28 @@
+{
+ "db": "chicago_crashes_2026",
+ "sources": [
+  {
+   "url": "https://data.cityofchicago.org/resource/85ca-t3if.json",
+   "licence": "City of Chicago Data Portal public data (open data terms of use; Chicago Police Dept / CDOT crash reports)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://data.cityofchicago.org/resource/u6pd-qa9d.json",
+   "licence": "City of Chicago Data Portal public data (open data terms of use; Chicago Police Dept / CDOT crash reports)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://data.cityofchicago.org/resource/68nd-jvt3.json",
+   "licence": "City of Chicago Data Portal public data (open data terms of use; Chicago Police Dept / CDOT crash reports)",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "crash_date >= 2026-07-01",
+ "tables": {
+  "contributory_causes": 38,
+  "crashes": 28314,
+  "vehicles": 57523,
+  "people": 61736
+ },
+ "notes": "Primary NYC db nyc_crashes_2026 abandoned: NYC Open Data crashes/persons/vehicles max crash_date is 2026-06-11 (0 rows from 2026-07-01). Fallback Chicago used. crashes date range ('2026-07-01T00:11:00.000', '2026-10-21T01:00:00.000'). Dropped person residence (city/state/zip), licence, EMS run, carrier and commercial-vehicle ID fields. contributory_causes is a derived lookup (category column is a builder heuristic). Whole-crash deterministic ~80% sample (hash of crash_record_id) to fit 60 MB. Units with duplicate vehicle_id had the duplicate set to null."
+}

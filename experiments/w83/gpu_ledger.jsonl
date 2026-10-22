@@ -1,0 +1,4 @@
+{"ts": "2026-10-22T02:50:46Z", "job": "L2a", "event": "create", "id": "832461d9-2e5a-4e67-b9b0-79aecebd8d83", "cloud": "hyperstack", "price_h": 2.50, "max_spend": 5.0}
+{"ts": "2026-10-22T03:27:55Z", "job": "L2a", "event": "delete", "id": "832461d9-2e5a-4e67-b9b0-79aecebd8d83", "verified": true, "cost_sf_estimate": 1.41, "cost_ledger": 1.54, "note": "wall 02:50:46-03:27:38 at 2.50/h; two attempts on one instance (first failed on a smoke-assert bug, fixed by broker)", "verdict": "finished"}
+{"ts": "2026-10-22T03:30:18Z", "job": "L2b", "event": "create", "id": "de4f8015-4b98-4ca2-84c0-3d72d7c68d99", "cloud": "massedcompute", "price_h": 2.73, "max_spend": 4.0}
+{"ts": "2026-10-22T04:02:11Z", "job": "L2b", "event": "delete", "id": "de4f8015-4b98-4ca2-84c0-3d72d7c68d99", "verified": true, "cost_sf_estimate": 1.21, "cost_ledger": 1.44, "note": "wall 03:30:18-04:01:56 at 2.73/h (launcher ~$1.43)", "verdict": "finished"}

@@ -1,0 +1,850 @@
+{
+ "db_ids": {
+  "car_retails": "db_01",
+  "cs_semester": "db_02",
+  "hockey": "db_03",
+  "law_episode": "db_04",
+  "movie": "db_05",
+  "student_loan": "db_06",
+  "synthea": "db_07",
+  "university": "db_08"
+ },
+ "maps": {
+  "car_retails": {
+   "tables": {
+    "offices": "branches",
+    "employees": "staff",
+    "customers": "clients",
+    "orders": "purchases",
+    "payments": "remittances",
+    "productlines": "merchandise_groups",
+    "products": "merchandise",
+    "orderdetails": "purchase_lines"
+   },
+   "columns": {
+    "offices": {
+     "officeCode": "branch_identifier",
+     "city": "municipality",
+     "phone": "dial_number",
+     "addressLine1": "street_detail_one",
+     "addressLine2": "street_detail_two",
+     "state": "province",
+     "country": "nation",
+     "postalCode": "zip_identifier",
+     "territory": "region"
+    },
+    "employees": {
+     "employeeNumber": "staff_identifier",
+     "lastName": "family_surname",
+     "firstName": "given_appellation",
+     "extension": "dial_suffix",
+     "email": "network_address",
+     "officeCode": "branch_identifier",
+     "reportsTo": "supervisor_identifier",
+     "jobTitle": "role_designation"
+    },
+    "customers": {
+     "customerNumber": "client_identifier",
+     "customerName": "client_label",
+     "contactLastName": "liaison_family_surname",
+     "contactFirstName": "liaison_given_appellation",
+     "phone": "dial_number",
+     "addressLine1": "street_detail_one",
+     "addressLine2": "street_detail_two",
+     "city": "municipality",
+     "state": "province",
+     "postalCode": "zip_identifier",
+     "country": "nation",
+     "salesRepEmployeeNumber": "commerce_agent_staff_identifier",
+     "creditLimit": "borrowing_cap"
+    },
+    "orders": {
+     "orderNumber": "purchase_identifier",
+     "orderDate": "purchase_moment",
+     "requiredDate": "needed_moment",
+     "shippedDate": "dispatched_moment",
+     "status": "condition",
+     "comments": "remarks",
+     "customerNumber": "client_identifier"
+    },
+    "payments": {
+     "customerNumber": "client_identifier",
+     "checkNumber": "draft_identifier",
+     "paymentDate": "remittance_moment",
+     "amount": "total_value"
+    },
+    "productlines": {
+     "productLine": "merchandise_category",
+     "textDescription": "prose_summary",
+     "htmlDescription": "markup_summary",
+     "image": "picture"
+    },
+    "products": {
+     "productCode": "item_identifier",
+     "productName": "item_label",
+     "productLine": "item_category",
+     "productScale": "item_proportion",
+     "productVendor": "item_supplier",
+     "productDescription": "item_summary",
+     "quantityInStock": "inventory_count",
+     "buyPrice": "acquisition_cost",
+     "MSRP": "suggested_retail"
+    },
+    "orderdetails": {
+     "orderNumber": "purchase_identifier",
+     "productCode": "item_identifier",
+     "quantityOrdered": "requested_count",
+     "priceEach": "unit_cost",
+     "orderLineNumber": "purchase_sequence_identifier"
+    }
+   }
+  },
+  "cs_semester": {
+   "tables": {
+    "course": "module",
+    "prof": "instructor",
+    "RA": "research_assistant",
+    "registration": "enrollment",
+    "student": "learner"
+   },
+   "columns": {
+    "course": {
+     "course_id": "module_id",
+     "name": "title",
+     "credit": "units",
+     "diff": "complexity"
+    },
+    "prof": {
+     "prof_id": "instructor_id",
+     "gender": "sex",
+     "first_name": "given",
+     "last_name": "family",
+     "email": "contact",
+     "popularity": "fame",
+     "teachingability": "pedagogy",
+     "graduate_from": "institution"
+    },
+    "RA": {
+     "student_id": "learner_id",
+     "capability": "skill",
+     "prof_id": "instructor_id",
+     "salary": "wage"
+    },
+    "registration": {
+     "course_id": "module_id",
+     "student_id": "learner_id",
+     "grade": "mark",
+     "sat": "score"
+    },
+    "student": {
+     "student_id": "learner_id",
+     "f_name": "given",
+     "l_name": "family",
+     "phone_number": "mobile",
+     "email": "address",
+     "intelligence": "aptitude",
+     "gpa": "average",
+     "type": "category"
+    }
+   }
+  },
+  "hockey": {
+   "tables": {
+    "AwardsMisc": "honors_other",
+    "HOF": "hall_of_fame",
+    "Teams": "clubs",
+    "Coaches": "mentors",
+    "AwardsCoaches": "honors_mentors",
+    "Master": "registry",
+    "AwardsPlayers": "honors_athletes",
+    "CombinedShutouts": "merged_blankings",
+    "Goalies": "netminders",
+    "GoaliesSC": "netminders_cup",
+    "GoaliesShootout": "netminders_breakaway",
+    "Scoring": "tallies",
+    "ScoringSC": "tallies_cup",
+    "ScoringShootout": "tallies_breakaway",
+    "ScoringSup": "tallies_extra",
+    "SeriesPost": "bracket_results",
+    "TeamSplits": "club_breakdowns",
+    "TeamVsTeam": "club_duels",
+    "TeamsHalf": "club_halves",
+    "TeamsPost": "club_aftermath",
+    "TeamsSC": "club_cup",
+    "abbrev": "shorthand"
+   },
+   "columns": {
+    "AwardsMisc": {
+     "name": "label",
+     "ID": "identifier",
+     "award": "honor",
+     "year": "season",
+     "lgID": "league_pointer",
+     "note": "remark"
+    },
+    "HOF": {
+     "year": "season",
+     "hofID": "hall_pointer",
+     "name": "label",
+     "category": "class"
+    },
+    "Teams": {
+     "year": "season",
+     "lgID": "league_pointer",
+     "tmID": "club_pointer",
+     "franchID": "organization_pointer",
+     "confID": "group_pointer",
+     "divID": "section_pointer",
+     "rank": "standing",
+     "playoff": "postseason",
+     "G": "contests",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "OTL": "extra_defeats",
+     "Pts": "points",
+     "SoW": "shootout_victories",
+     "SoL": "shootout_defeats",
+     "GF": "goals_for",
+     "GA": "goals_against",
+     "name": "label",
+     "PIM": "penalty_minutes",
+     "BenchMinor": "sideline_infraction",
+     "PPG": "advantage_goals",
+     "PPC": "advantage_opportunities",
+     "SHA": "shorthanded_helpers",
+     "PKG": "penalty_kill_goals",
+     "PKC": "penalty_kill_chances",
+     "SHF": "shorthanded_tallies"
+    },
+    "Coaches": {
+     "coachID": "mentor_pointer",
+     "year": "season",
+     "tmID": "club_pointer",
+     "lgID": "league_pointer",
+     "stint": "tenure",
+     "notes": "remarks",
+     "g": "contests",
+     "w": "victories",
+     "l": "defeats",
+     "t": "draws",
+     "postg": "after_contests",
+     "postw": "after_victories",
+     "postl": "after_defeats",
+     "postt": "after_draws"
+    },
+    "AwardsCoaches": {
+     "coachID": "mentor_pointer",
+     "award": "honor",
+     "year": "season",
+     "lgID": "league_pointer",
+     "note": "remark"
+    },
+    "Master": {
+     "playerID": "athlete_pointer",
+     "coachID": "mentor_pointer",
+     "hofID": "hall_pointer",
+     "firstName": "given_label",
+     "lastName": "family_label",
+     "nameNote": "label_remark",
+     "nameGiven": "primary_label",
+     "nameNick": "alias_label",
+     "height": "stature",
+     "weight": "mass",
+     "shootCatch": "grip_side",
+     "legendsID": "icon_pointer",
+     "ihdbID": "archive_pointer",
+     "hrefID": "link_pointer",
+     "firstNHL": "debut_elite",
+     "lastNHL": "final_elite",
+     "firstWHA": "debut_alternate",
+     "lastWHA": "final_alternate",
+     "pos": "role",
+     "birthYear": "nativity_season",
+     "birthMon": "nativity_phase",
+     "birthDay": "nativity_date",
+     "birthCountry": "nativity_nation",
+     "birthState": "nativity_province",
+     "birthCity": "nativity_town",
+     "deathYear": "demise_season",
+     "deathMon": "demise_phase",
+     "deathDay": "demise_date",
+     "deathCountry": "demise_nation",
+     "deathState": "demise_province",
+     "deathCity": "demise_town"
+    },
+    "AwardsPlayers": {
+     "playerID": "athlete_pointer",
+     "award": "honor",
+     "year": "season",
+     "lgID": "league_pointer",
+     "note": "remark",
+     "pos": "role"
+    },
+    "CombinedShutouts": {
+     "year": "season",
+     "month": "calendar_period",
+     "date": "day",
+     "tmID": "club_pointer",
+     "oppID": "rival_pointer",
+     "R/P": "result",
+     "IDgoalie1": "netminder_pointer_first",
+     "IDgoalie2": "netminder_pointer_second"
+    },
+    "Goalies": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "stint": "tenure",
+     "tmID": "club_pointer",
+     "lgID": "league_pointer",
+     "GP": "contests",
+     "Min": "duration",
+     "W": "victories",
+     "L": "defeats",
+     "T/OL": "draws_or_extra_defeats",
+     "ENG": "empty_net_goals",
+     "SHO": "shutouts",
+     "GA": "goals_against",
+     "SA": "shots_against",
+     "PostGP": "after_contests",
+     "PostMin": "after_duration",
+     "PostW": "after_victories",
+     "PostL": "after_defeats",
+     "PostT": "after_draws",
+     "PostENG": "after_vacant_net_tallies",
+     "PostSHO": "after_blankings",
+     "PostGA": "after_goals_against",
+     "PostSA": "after_shots_against"
+    },
+    "GoaliesSC": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "tmID": "club_pointer",
+     "lgID": "league_pointer",
+     "GP": "contests",
+     "Min": "duration",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "SHO": "shutouts",
+     "GA": "goals_against"
+    },
+    "GoaliesShootout": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "stint": "tenure",
+     "tmID": "club_pointer",
+     "W": "victories",
+     "L": "defeats",
+     "SA": "shots_against",
+     "GA": "goals_against"
+    },
+    "Scoring": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "stint": "tenure",
+     "tmID": "club_pointer",
+     "lgID": "league_pointer",
+     "pos": "role",
+     "GP": "contests",
+     "G": "goals",
+     "A": "helpers",
+     "Pts": "points",
+     "PIM": "penalty_minutes",
+     "+/-": "net_rating",
+     "PPG": "advantage_goals",
+     "PPA": "advantage_helpers",
+     "SHG": "shorthanded_goals",
+     "SHA": "shorthanded_helpers",
+     "GWG": "game_winning_goals",
+     "GTG": "game_tying_goals",
+     "SOG": "shots_on_goal",
+     "PostGP": "after_contests",
+     "PostG": "after_goals",
+     "PostA": "after_helpers",
+     "PostPts": "after_points",
+     "PostPIM": "after_penalty_minutes",
+     "Post+/-": "after_net_rating",
+     "PostPPG": "after_advantage_goals",
+     "PostPPA": "after_advantage_helpers",
+     "PostSHG": "after_shorthanded_goals",
+     "PostSHA": "after_shorthanded_helpers",
+     "PostGWG": "after_decisive_tallies",
+     "PostSOG": "after_attempts_on_net"
+    },
+    "ScoringSC": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "tmID": "club_pointer",
+     "lgID": "league_pointer",
+     "pos": "role",
+     "GP": "contests",
+     "G": "goals",
+     "A": "helpers",
+     "Pts": "points",
+     "PIM": "penalty_minutes"
+    },
+    "ScoringShootout": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "stint": "tenure",
+     "tmID": "club_pointer",
+     "S": "attempts",
+     "G": "goals",
+     "GDG": "decisive_tallies"
+    },
+    "ScoringSup": {
+     "playerID": "athlete_pointer",
+     "year": "season",
+     "PPA": "advantage_helpers",
+     "SHA": "shorthanded_helpers"
+    },
+    "SeriesPost": {
+     "year": "season",
+     "round": "stage",
+     "series": "bracket",
+     "tmIDWinner": "club_pointer_champion",
+     "lgIDWinner": "league_pointer_champion",
+     "tmIDLoser": "club_pointer_runner_up",
+     "lgIDLoser": "league_pointer_runner_up",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "GoalsWinner": "tallies_champion",
+     "GoalsLoser": "tallies_runner_up",
+     "note": "remark"
+    },
+    "TeamSplits": {
+     "year": "season",
+     "lgID": "league_pointer",
+     "tmID": "club_pointer",
+     "hW": "home_victories",
+     "hL": "home_defeats",
+     "hT": "home_draws",
+     "hOTL": "home_extra_defeats",
+     "rW": "road_victories",
+     "rL": "road_defeats",
+     "rT": "road_draws",
+     "rOTL": "road_extra_defeats",
+     "SepW": "month_09_victories",
+     "SepL": "month_09_defeats",
+     "SepT": "month_09_draws",
+     "SepOL": "month_09_extra_defeats",
+     "OctW": "month_10_victories",
+     "OctL": "month_10_defeats",
+     "OctT": "month_10_draws",
+     "OctOL": "month_10_extra_defeats",
+     "NovW": "month_11_victories",
+     "NovL": "month_11_defeats",
+     "NovT": "month_11_draws",
+     "NovOL": "month_11_extra_defeats",
+     "DecW": "month_12_victories",
+     "DecL": "month_12_defeats",
+     "DecT": "month_12_draws",
+     "DecOL": "month_12_extra_defeats",
+     "JanW": "month_01_victories",
+     "JanL": "month_01_defeats",
+     "JanT": "month_01_draws",
+     "JanOL": "month_01_extra_defeats",
+     "FebW": "month_02_victories",
+     "FebL": "month_02_defeats",
+     "FebT": "month_02_draws",
+     "FebOL": "month_02_extra_defeats",
+     "MarW": "month_03_victories",
+     "MarL": "month_03_defeats",
+     "MarT": "month_03_draws",
+     "MarOL": "month_03_extra_defeats",
+     "AprW": "month_04_victories",
+     "AprL": "month_04_defeats",
+     "AprT": "month_04_draws",
+     "AprOL": "month_04_extra_defeats"
+    },
+    "TeamVsTeam": {
+     "year": "season",
+     "lgID": "league_pointer",
+     "tmID": "club_pointer",
+     "oppID": "rival_pointer",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "OTL": "extra_defeats"
+    },
+    "TeamsHalf": {
+     "year": "season",
+     "lgID": "league_pointer",
+     "tmID": "club_pointer",
+     "half": "segment",
+     "rank": "standing",
+     "G": "contests",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "GF": "goals_for",
+     "GA": "goals_against"
+    },
+    "TeamsPost": {
+     "year": "c_0",
+     "lgID": "league_pointer",
+     "tmID": "club_pointer",
+     "G": "contests",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "GF": "goals_for",
+     "GA": "goals_against",
+     "PIM": "penalty_minutes",
+     "BenchMinor": "sideline_infraction",
+     "PPG": "advantage_goals",
+     "PPC": "advantage_opportunities",
+     "SHA": "shorthanded_helpers",
+     "PKG": "penalty_kill_goals",
+     "PKC": "penalty_kill_chances",
+     "SHF": "shorthanded_tallies"
+    },
+    "TeamsSC": {
+     "year": "season",
+     "lgID": "league_pointer",
+     "tmID": "club_pointer",
+     "G": "contests",
+     "W": "victories",
+     "L": "defeats",
+     "T": "draws",
+     "GF": "goals_for",
+     "GA": "goals_against",
+     "PIM": "penalty_minutes"
+    },
+    "abbrev": {
+     "Type": "kind",
+     "Code": "token",
+     "Fullname": "complete_label"
+    }
+   }
+  },
+  "law_episode": {
+   "tables": {
+    "Episode": "installment",
+    "Keyword": "tag",
+    "Person": "individual",
+    "Award": "accolade",
+    "Credit": "recognition",
+    "Vote": "ballot"
+   },
+   "columns": {
+    "Episode": {
+     "episode_id": "installment_ref",
+     "series": "franchise",
+     "season": "cycle",
+     "episode": "installment_ordinal",
+     "number_in_series": "ordinal_within_franchise",
+     "title": "heading",
+     "summary": "synopsis",
+     "air_date": "broadcast_day",
+     "episode_image": "installment_picture",
+     "rating": "score",
+     "votes": "ballot_count"
+    },
+    "Keyword": {
+     "episode_id": "installment_ref",
+     "keyword": "label"
+    },
+    "Person": {
+     "person_id": "individual_ref",
+     "name": "moniker",
+     "birthdate": "natal_day",
+     "birth_name": "original_moniker",
+     "birth_place": "natal_location",
+     "birth_region": "natal_zone",
+     "birth_country": "natal_nation",
+     "height_meters": "stature_units",
+     "nickname": "alias"
+    },
+    "Award": {
+     "award_id": "accolade_ref",
+     "organization": "body",
+     "year": "annum",
+     "award_category": "accolade_class",
+     "award": "prize",
+     "series": "franchise",
+     "episode_id": "installment_ref",
+     "person_id": "individual_ref",
+     "role": "capacity",
+     "result": "outcome"
+    },
+    "Credit": {
+     "episode_id": "installment_ref",
+     "person_id": "individual_ref",
+     "category": "type",
+     "role": "capacity",
+     "credited": "acknowledged"
+    },
+    "Vote": {
+     "episode_id": "installment_ref",
+     "stars": "rating",
+     "votes": "ballots",
+     "percent": "share"
+    }
+   }
+  },
+  "movie": {
+   "tables": {
+    "actor": "performer",
+    "movie": "film",
+    "characters": "roles"
+   },
+   "columns": {
+    "actor": {
+     "ActorID": "thespian_id",
+     "Name": "label",
+     "Date of Birth": "natal_day",
+     "Birth City": "natal_town",
+     "Birth Country": "natal_nation",
+     "Height (Inches)": "stature_measure",
+     "Biography": "life_story",
+     "Gender": "sex",
+     "Ethnicity": "heritage",
+     "NetWorth": "wealth_amount"
+    },
+    "movie": {
+     "MovieID": "film_id",
+     "Title": "heading",
+     "MPAA Rating": "content_grade",
+     "Budget": "allocation",
+     "Gross": "revenue",
+     "Release Date": "debut_time",
+     "Genre": "category",
+     "Runtime": "duration",
+     "Rating": "score",
+     "Rating Count": "score_tally",
+     "Summary": "synopsis"
+    },
+    "characters": {
+     "MovieID": "film_id",
+     "ActorID": "thespian_id",
+     "Character Name": "role_label",
+     "creditOrder": "billing_rank",
+     "pay": "salary",
+     "screentime": "footage_duration"
+    }
+   }
+  },
+  "student_loan": {
+   "tables": {
+    "bool": "flag",
+    "person": "human",
+    "disabled": "impaired",
+    "enlist": "recruit",
+    "filed_for_bankrupcy": "insolvency_record",
+    "longest_absense_from_school": "maximum_truancy_span",
+    "male": "masculine",
+    "no_payment_due": "zero_balance",
+    "unemployed": "jobless",
+    "enrolled": "registered"
+   },
+   "columns": {
+    "bool": {
+     "name": "label"
+    },
+    "person": {
+     "name": "label"
+    },
+    "disabled": {
+     "name": "label"
+    },
+    "enlist": {
+     "name": "label",
+     "organ": "body_part"
+    },
+    "filed_for_bankrupcy": {
+     "name": "label"
+    },
+    "longest_absense_from_school": {
+     "name": "label",
+     "month": "period"
+    },
+    "male": {
+     "name": "label"
+    },
+    "no_payment_due": {
+     "name": "label",
+     "bool": "flag"
+    },
+    "unemployed": {
+     "name": "label"
+    },
+    "enrolled": {
+     "name": "label",
+     "school": "academy",
+     "month": "period"
+    }
+   }
+  },
+  "synthea": {
+   "tables": {
+    "all_prevalences": "rate_rollup",
+    "patients": "subjects",
+    "encounters": "visits",
+    "allergies": "reactions",
+    "careplans": "therapy_schedule",
+    "conditions": "diagnoses",
+    "immunizations": "shots",
+    "medications": "drugs",
+    "observations": "readings",
+    "procedures": "operations",
+    "claims": "invoices"
+   },
+   "columns": {
+    "all_prevalences": {
+     "ITEM": "element",
+     "POPULATION TYPE": "resident_kind",
+     "OCCURRENCES": "episodes",
+     "POPULATION COUNT": "resident_total",
+     "PREVALENCE RATE": "commonness_proportion",
+     "PREVALENCE PERCENTAGE": "commonness_share"
+    },
+    "patients": {
+     "patient": "person",
+     "birthdate": "natal_day",
+     "deathdate": "expiry_day",
+     "ssn": "tax_id",
+     "drivers": "license",
+     "passport": "travel_doc",
+     "prefix": "title",
+     "first": "given",
+     "last": "surname",
+     "suffix": "ending",
+     "maiden": "birth_name",
+     "marital": "union_status",
+     "race": "heritage",
+     "ethnicity": "culture",
+     "gender": "sex",
+     "birthplace": "origin",
+     "address": "location"
+    },
+    "encounters": {
+     "ID": "identifier",
+     "DATE": "day",
+     "PATIENT": "person",
+     "CODE": "token",
+     "DESCRIPTION": "narrative",
+     "REASONCODE": "cause_token",
+     "REASONDESCRIPTION": "cause_narrative"
+    },
+    "allergies": {
+     "START": "onset",
+     "STOP": "finish",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative"
+    },
+    "careplans": {
+     "ID": "identifier",
+     "START": "onset",
+     "STOP": "finish",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative",
+     "REASONCODE": "cause_token",
+     "REASONDESCRIPTION": "cause_narrative"
+    },
+    "conditions": {
+     "START": "onset",
+     "STOP": "finish",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative"
+    },
+    "immunizations": {
+     "DATE": "day",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative"
+    },
+    "medications": {
+     "START": "onset",
+     "STOP": "finish",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative",
+     "REASONCODE": "cause_token",
+     "REASONDESCRIPTION": "cause_narrative"
+    },
+    "observations": {
+     "DATE": "day",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative",
+     "VALUE": "amount",
+     "UNITS": "measures"
+    },
+    "procedures": {
+     "DATE": "day",
+     "PATIENT": "person",
+     "ENCOUNTER": "visit",
+     "CODE": "token",
+     "DESCRIPTION": "narrative",
+     "REASONCODE": "cause_token",
+     "REASONDESCRIPTION": "cause_narrative"
+    },
+    "claims": {
+     "ID": "identifier",
+     "PATIENT": "person",
+     "BILLABLEPERIOD": "invoice_window",
+     "ORGANIZATION": "company",
+     "ENCOUNTER": "visit",
+     "DIAGNOSIS": "ailment",
+     "TOTAL": "overall"
+    }
+   }
+  },
+  "university": {
+   "tables": {
+    "country": "nation",
+    "ranking_system": "score_framework",
+    "ranking_criteria": "score_standard",
+    "university": "college",
+    "university_ranking_year": "college_score_annual",
+    "university_year": "college_annual"
+   },
+   "columns": {
+    "country": {
+     "id": "identifier",
+     "country_name": "nation_label"
+    },
+    "ranking_system": {
+     "id": "identifier",
+     "system_name": "scheme_label"
+    },
+    "ranking_criteria": {
+     "id": "identifier",
+     "ranking_system_id": "score_framework_identifier",
+     "criteria_name": "standard_label"
+    },
+    "university": {
+     "id": "identifier",
+     "country_id": "nation_identifier",
+     "university_name": "college_label"
+    },
+    "university_ranking_year": {
+     "university_id": "college_identifier",
+     "ranking_criteria_id": "score_standard_identifier",
+     "year": "annual",
+     "score": "points"
+    },
+    "university_year": {
+     "university_id": "college_identifier",
+     "year": "annual",
+     "num_students": "learner_tally",
+     "student_staff_ratio": "learner_employee_proportion",
+     "pct_international_students": "percent_overseas_learners",
+     "pct_female_students": "percent_woman_learners"
+    }
+   }
+  }
+ }
+}

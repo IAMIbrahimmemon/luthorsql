@@ -1,0 +1,33 @@
+{
+ "db": "chicago_crime_2026",
+ "sources": [
+  {
+   "url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json",
+   "licence": "City of Chicago Data Portal Terms of Use (open public data, Chicago Police Department)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://data.cityofchicago.org/resource/igwz-8jzy.json",
+   "licence": "City of Chicago Data Portal Terms of Use",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://data.cityofchicago.org/resource/24zt-jpfn.json",
+   "licence": "City of Chicago Data Portal Terms of Use",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://data.cityofchicago.org/resource/c7ck-438e.json",
+   "licence": "City of Chicago Data Portal Terms of Use",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "crimes.date >= 2026-07-01",
+ "tables": {
+  "community_areas": 77,
+  "police_districts": 23,
+  "iucr_codes": 434,
+  "crimes": 69525
+ },
+ "notes": "crimes date range 2026-07-01 00:00:00 to 2026-10-13 00:00:00 (full set, no sampling). Dropped block, coordinates. Unmatched FK values set NULL (iucr/district/community_area nulls: (0, 115, 122)). Reference tables unfiltered by date."
+}

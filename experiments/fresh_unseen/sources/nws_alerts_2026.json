@@ -1,0 +1,28 @@
+{
+ "db": "nws_alerts_2026",
+ "sources": [
+  {
+   "url": "https://api.weather.gov/alerts",
+   "licence": "US Government public domain (NWS)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://api.weather.gov/zones",
+   "licence": "US Government public domain (NWS)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "https://api.weather.gov/offices",
+   "licence": "US Government public domain (NWS)",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "alerts?start=2026-07-01T00:00:00Z requested; API only returns about the last 7 days; excluded status!=Actual and Test Message",
+ "tables": {
+  "offices": 122,
+  "zones": 11651,
+  "alerts": 10352,
+  "alert_zones": 37093
+ },
+ "notes": "Fallback: NCEI Storm Events 2026 file (c20260918) has events only through 2026-06-30 (0 rows from July). alerts.sent range 2026-10-14T21:32:00Z to 2026-10-21T21:31:00Z (UTC). zones/offices are lookup tables (current). 9 office ids from zone cwa lists returned 404 (HPA NH1 NH2 ONA ONP PPG PQE PQW STU) so those zones have null office_id."
+}

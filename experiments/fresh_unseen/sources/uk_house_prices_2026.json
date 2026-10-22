@@ -1,0 +1,29 @@
+{
+ "db": "uk_house_prices_2026",
+ "sources": [
+  {
+   "url": "http://prod1.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-2026.csv",
+   "licence": "Open Government Licence v3.0 (HM Land Registry Price Paid Data)",
+   "retrieved": "2026-10-21"
+  },
+  {
+   "url": "http://prod1.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-monthly-update-new-version.csv",
+   "licence": "Open Government Licence v3.0",
+   "retrieved": "2026-10-21"
+  }
+ ],
+ "date_filter": "date_of_transfer >= 2026-07-01",
+ "tables": {
+  "transactions": 67921,
+  "properties": 65334,
+  "districts": 317,
+  "counties": 112,
+  "postcode_areas": 2244,
+  "property_types": 5,
+  "tenure_types": 2,
+  "ppd_categories": 2,
+  "record_statuses": 3,
+  "new_build_flags": 2
+ },
+ "notes": "transactions date range 2026-07-01 to 2026-08-28. No sampling: all rows kept. paon/saon dropped. Monthly file overrides yearly on transaction id. County per district = most frequent in data. postcode_areas has no area names (no open lookup used); area = leading letters."
+}

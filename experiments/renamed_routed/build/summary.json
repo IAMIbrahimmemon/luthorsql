@@ -1,0 +1,13 @@
+{
+ "routed": 177,
+ "eligible": 177,
+ "excluded": 0,
+ "exclusion_reasons": [],
+ "chunks": 11,
+ "candidates_kept": 1042,
+ "candidates_dropped": 8,
+ "columns": 575,
+ "tables": 71,
+ "column_fallbacks": 1,
+ "text_fallbacks": 7
+}

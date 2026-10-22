@@ -1,0 +1,57 @@
+{
+ "agent_share": 0.5086,
+ "routing_ex_with_B1_answers": {
+  "margin_t3": 79.6,
+  "random_expected": 71.99,
+  "vote_agreement": 74.43,
+  "question_length": 73.85,
+  "all_to_agent_B1": 80.46,
+  "system1_only": 63.22
+ },
+ "routing_note": "vote agreement = top result group's plans / plans in the shown top-8 groups",
+ "price_sensitivity": {
+  "opus_list": {
+   "per_q": {
+    "B0": 0.02146,
+    "B1": 0.02422,
+    "C": 0.01699
+   },
+   "saving_vs_B1": 0.2986,
+   "saving_vs_B0": 0.2085
+  },
+  "opus_no_cache": {
+   "per_q": {
+    "B0": 0.10563,
+    "B1": 0.10759,
+    "C": 0.08583
+   },
+   "saving_vs_B1": 0.2022,
+   "saving_vs_B0": 0.1875
+  },
+  "sonnet_list": {
+   "per_q": {
+    "B0": 0.01073,
+    "B1": 0.01253,
+    "C": 0.00892
+   },
+   "saving_vs_B1": 0.2885,
+   "saving_vs_B0": 0.1689
+  },
+  "sonnet_no_cache": {
+   "per_q": {
+    "B0": 0.05282,
+    "B1": 0.05422,
+    "C": 0.04334
+   },
+   "saving_vs_B1": 0.2007,
+   "saving_vs_B0": 0.1794
+  }
+ },
+ "agent_cost_only": {
+  "B0": 0.02146,
+  "B1": 0.02337,
+  "B2": 0.02267,
+  "C": 0.01614
+ },
+ "s1_share_of_C_cost": 0.05
+}

@@ -1,0 +1,98 @@
+{
+ "n": 177,
+ "missing_answers": 0,
+ "own_sql": 86,
+ "picked": 91,
+ "ex_renamed": 72.88,
+ "ex_renamed_ci95_dbboot": [
+  68.91,
+  78.05
+ ],
+ "ex_original_run1": 72.32,
+ "ex_original_runs": [
+  72.32,
+  70.62,
+  68.93
+ ],
+ "ex_original_mean": 70.62,
+ "renamed_minus_run1": {
+  "delta": 0.5649717514124294,
+  "p": 1.0,
+  "ci": [
+   -7.140000000010227,
+   6.019999999988324
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "car_retails": 1.0,
+   "cs_semester": 0.0,
+   "hockey": 3.0,
+   "law_episode": 1.0,
+   "movie": -1.0,
+   "student_loan": -1.0,
+   "synthea": -3.0,
+   "university": 1.0
+  }
+ },
+ "renamed_minus_mean": {
+  "delta": 2.259887005649718,
+  "p": 0.5625,
+  "ci": [
+   -4.370000000010532,
+   7.6099999999881485
+  ],
+  "G": 8
+ },
+ "per_db": {
+  "car_retails": {
+   "n": 23,
+   "renamed": 19,
+   "run1": 18
+  },
+  "cs_semester": {
+   "n": 10,
+   "renamed": 8,
+   "run1": 8
+  },
+  "hockey": {
+   "n": 42,
+   "renamed": 29,
+   "run1": 26
+  },
+  "law_episode": {
+   "n": 19,
+   "renamed": 14,
+   "run1": 13
+  },
+  "movie": {
+   "n": 6,
+   "renamed": 3,
+   "run1": 4
+  },
+  "student_loan": {
+   "n": 27,
+   "renamed": 19,
+   "run1": 20
+  },
+  "synthea": {
+   "n": 32,
+   "renamed": 22,
+   "run1": 25
+  },
+  "university": {
+   "n": 18,
+   "renamed": 15,
+   "run1": 14
+  }
+ },
+ "projection_test_ex": {
+  "point": 81.6,
+  "range": [
+   79.5,
+   84.2
+  ],
+  "assumes": "kept share 0.49, kept accuracy 90.6 (RESERVED)"
+ }
+}

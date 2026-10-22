@@ -1,0 +1,61 @@
+{
+ "P1": {
+  "kaggledbqa_test": {
+   "n": 185,
+   "answered": 185,
+   "ex": 79.46
+  },
+  "spider_realistic": {
+   "n": 508,
+   "answered": 508,
+   "ex": 94.69
+  },
+  "reserved": {
+   "n": 348,
+   "answered": 348,
+   "ex": 79.31
+  }
+ },
+ "P2": {
+  "kaggledbqa_test": {
+   "n": 100,
+   "rougeL_guided": 0.7978,
+   "rougeL_general": 0.2948,
+   "exact_guided": 66,
+   "exact_general": 4,
+   "guided_minus_general": {
+    "mean": 0.5029,
+    "p_two_sided": 0.0001
+   }
+  },
+  "spider_realistic": {
+   "n": 100,
+   "rougeL_guided": 0.6704,
+   "rougeL_general": 0.5576,
+   "exact_guided": 22,
+   "exact_general": 16,
+   "guided_minus_general": {
+    "mean": 0.1129,
+    "p_two_sided": 0.0001
+   }
+  },
+  "reserved": {
+   "n": 100,
+   "rougeL_guided": 0.895,
+   "rougeL_general": 0.3635,
+   "exact_guided": 77,
+   "exact_general": 8,
+   "guided_minus_general": {
+    "mean": 0.5315,
+    "p_two_sided": 0.0001
+   }
+  }
+ },
+ "id_mismatches": [
+  "P2g/p2g_01.jsonl: line for kaggledbqa_test_64 labelled kaggledbqa_test_49"
+ ],
+ "compliance": {
+  "transcripts": 34,
+  "violations": []
+ }
+}

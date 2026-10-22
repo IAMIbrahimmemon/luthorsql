@@ -1,0 +1,95 @@
+{
+ "n": 348,
+ "routed": 234,
+ "routed_base": 177,
+ "missing_answers": 0,
+ "ex_cstar": 80.17,
+ "ex_c_runs": [
+  81.32,
+  80.46,
+  79.6
+ ],
+ "ex_c_mean": 80.46,
+ "cstar_minus_c_mean": -0.29,
+ "cstar_vs_c_run": [
+  {
+   "delta": -1.1494252873563218,
+   "p": 0.5,
+   "ci": [
+    -3.800000000010595,
+    0.9299999999888842
+   ],
+   "G": 8,
+   "patterns": 256,
+   "min_p": 0.0078125,
+   "per_db": {
+    "car_retails": 0.0,
+    "cs_semester": 0.0,
+    "hockey": 0.0,
+    "law_episode": 1.0,
+    "movie": -1.0,
+    "student_loan": 0.0,
+    "synthea": -3.0,
+    "university": -1.0
+   }
+  },
+  {
+   "delta": -0.28735632183908044,
+   "p": 1.0,
+   "ci": [
+    -4.280000000010542,
+    3.0499999999886507
+   ],
+   "G": 8,
+   "patterns": 256,
+   "min_p": 0.0078125,
+   "per_db": {
+    "car_retails": -2.0,
+    "cs_semester": 0.0,
+    "hockey": 1.0,
+    "law_episode": 2.0,
+    "movie": -1.0,
+    "student_loan": 2.0,
+    "synthea": -2.0,
+    "university": -1.0
+   }
+  },
+  {
+   "delta": 0.5747126436781609,
+   "p": 0.75,
+   "ci": [
+    -2.000000000010793,
+    2.2699999999887366
+   ],
+   "G": 8,
+   "patterns": 256,
+   "min_p": 0.0078125,
+   "per_db": {
+    "car_retails": -1.0,
+    "cs_semester": 0.0,
+    "hockey": 2.0,
+    "law_episode": 1.0,
+    "movie": -1.0,
+    "student_loan": 1.0,
+    "synthea": 0.0,
+    "university": 0.0
+   }
+  }
+ ],
+ "cost_per_q": {
+  "cstar": 0.01972,
+  "b1_mean": 0.02437
+ },
+ "saving_vs_b1": {
+  "point": 0.191,
+  "ci95": [
+   0.0784,
+   0.3104
+  ]
+ },
+ "projected_test_ex": 81.31,
+ "pass": {
+  "saving_ge_30": false,
+  "noninferior_2pt": true
+ }
+}
