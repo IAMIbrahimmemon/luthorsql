@@ -1,6 +1,6 @@
 # LuthorSQL
 
-Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent* (paper in preparation).
+Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent* (Ibrahim Memon and Hanif Jhaveri; paper in preparation).
 
 **Status: private pre-release.** The license is not decided yet (see "License"). Please do not redistribute.
 
@@ -10,12 +10,12 @@ Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM A
 |---|---|
 | `src/luthor/sq2/` | System 1: plan grammar, slot heads, k-best plan search, compiler (`topk.py`, `targets.py`, `serialize.py`, `rerank.py`) |
 | `src/luthor/stats.py` | Paired tests (exact database-level sign-flip, McNemar) used for every comparison in the paper |
-| `scripts/bird_submit/` | The packaged System 1 that BIRD ran on its hidden test set (`README.md` there has the run commands) |
+| `scripts/bird_submit/` | The packaged System 1 that BIRD ran on its hidden test set (`README.md` there has the run commands); `cascade/`: stage 2 of the cascade submission (Claude Agent SDK runner, the paper's prompt and SQL tool, tool guard; `README_cascade.md`), built with `CASCADE=1 build_package.sh` |
 | `scripts/rerank_sq2.py` | Candidate execution and validator scoring |
 | `scripts/system2/` | System 2 experiments: SQL tool for the agent, sandboxes, dev scoring, threshold rule, leak check, API loop for open-weight agents |
 | `scripts/analysis/` | Analysis scripts behind the paper's numbers (cascade threshold, latency, single-adapter evaluation, etc.) |
 | `experiments/*_crosscheck/` | Cross-agent runs (Sonnet, Haiku, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash): pre-registrations with verdicts, answers, scored results |
-| `experiments/cost_confirmation/` | Pre-registered held-out cascade test on RESERVED (3 runs): PREREG with verdicts, scorer, result files, incident log |
+| `experiments/cost_confirmation/` | Pre-registered held-out cascade test on RESERVED (3 runs): PREREG with verdicts, scorer, result files, incident log; `harness_free.py`: cost repriced without the agent harness's per-session context (exploratory) |
 | `experiments/external_cascade/` | Pre-registered external test (KaggleDBQA test + Spider-Realistic, 693 questions) |
 | `experiments/memorisation_probe/` | Pre-registered memorisation probes of the agent (schema-free SQL, guided vs general completion), incl. BIRD Mini-Dev |
 | `experiments/renamed_routed/` | Renamed-schema test of the routed half (renamer, rewritten gold, scorer) |
@@ -37,8 +37,9 @@ Many other scripts are from earlier rounds of the project (described in the pape
     - Accuracy: within 1.3 points in every run; no difference was significant.
     - Total time per question: 12–24% lower.
   - The pre-registered RESERVED run 1 narrowly missed its 30% cost bar and did not show non-inferiority. The external test met its cost and accuracy bars.
-- **Memorisation:** without a schema, Opus reproduces 48–92% of public benchmarks' gold SQL. With its tool, its accuracy did not drop when every name was rewritten.
-- **Fresh set:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower cost.
+  - Repriced without Claude Code's per-session context (exploratory), the saving against Opus with candidates stays at 28–35%, but the saving against Opus alone (16–29% as measured) falls to −26% to +11%.
+- **Memorisation:** without a schema, Opus reproduces 48–92% of public benchmarks' gold SQL. With its tool, its accuracy on the routed questions changed by +0.6 points (95% interval −7.1 to +6.0) when every name was rewritten.
+- **Fresh set:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower measured cost.
 - **Not yet measured:** the cascade has not been run on BIRD's hidden test set.
 
 ## Re-scoring the experiments

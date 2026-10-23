@@ -1,0 +1,148 @@
+{
+ "chars_per_token": 4.0,
+ "allowance_tokens": 1500,
+ "tests": {
+  "reserved_run1": {
+   "sessions": {
+    "B0": 18,
+    "B1": 18,
+    "C": 11
+   },
+   "harness_tokens_per_session": {
+    "B0": 45904,
+    "B1": 45899,
+    "C": 45898
+   },
+   "per_q_full": {
+    "B0": 0.02146,
+    "B1": 0.02422,
+    "C": 0.01699
+   },
+   "per_q_harness_free": {
+    "B0": 0.00812,
+    "B1": 0.0112,
+    "C": 0.00809
+   },
+   "saving_vs_B1": {
+    "per_q_full": 0.2985,
+    "per_q_harness_free": 0.2777
+   },
+   "saving_vs_B0": {
+    "per_q_full": 0.2083,
+    "per_q_harness_free": 0.0037
+   }
+  },
+  "reserved_run2": {
+   "sessions": {
+    "B0": 18,
+    "B1": 18,
+    "C": 11
+   },
+   "harness_tokens_per_session": {
+    "B0": 45914,
+    "B1": 45909,
+    "C": 45908
+   },
+   "per_q_full": {
+    "B0": 0.02205,
+    "B1": 0.02473,
+    "C": 0.01565
+   },
+   "per_q_harness_free": {
+    "B0": 0.00879,
+    "B1": 0.01194,
+    "C": 0.00783
+   },
+   "saving_vs_B1": {
+    "per_q_full": 0.3672,
+    "per_q_harness_free": 0.3442
+   },
+   "saving_vs_B0": {
+    "per_q_full": 0.2902,
+    "per_q_harness_free": 0.1092
+   }
+  },
+  "reserved_run3": {
+   "sessions": {
+    "B0": 18,
+    "B1": 18,
+    "C": 11
+   },
+   "harness_tokens_per_session": {
+    "B0": 45914,
+    "B1": 45909,
+    "C": 45908
+   },
+   "per_q_full": {
+    "B0": 0.0216,
+    "B1": 0.02417,
+    "C": 0.01543
+   },
+   "per_q_harness_free": {
+    "B0": 0.00879,
+    "B1": 0.01178,
+    "C": 0.0078
+   },
+   "saving_vs_B1": {
+    "per_q_full": 0.3616,
+    "per_q_harness_free": 0.3379
+   },
+   "saving_vs_B0": {
+    "per_q_full": 0.2856,
+    "per_q_harness_free": 0.1126
+   }
+  },
+  "external": {
+   "sessions": {
+    "B0": 42,
+    "B1": 42,
+    "C": 29
+   },
+   "harness_tokens_per_session": {
+    "B0": 45911,
+    "B1": 45906,
+    "C": 45905
+   },
+   "per_q_full": {
+    "B0": 0.01799,
+    "B1": 0.02207,
+    "C": 0.01508
+   },
+   "per_q_harness_free": {
+    "B0": 0.00458,
+    "B1": 0.00858,
+    "C": 0.00554
+   },
+   "saving_vs_B1": {
+    "per_q_full": 0.3167,
+    "per_q_harness_free": 0.3543
+   },
+   "saving_vs_B0": {
+    "per_q_full": 0.1618,
+    "per_q_harness_free": -0.2096
+   }
+  },
+  "fresh": {
+   "sessions": {
+    "B0": 15,
+    "C": 8
+   },
+   "harness_tokens_per_session": {
+    "B0": 45753,
+    "C": 45745
+   },
+   "per_q_full": {
+    "B0": 0.02806,
+    "C": 0.02241
+   },
+   "per_q_harness_free": {
+    "B0": 0.00842,
+    "C": 0.01059
+   },
+   "saving_vs_B0": {
+    "per_q_full": 0.2014,
+    "per_q_harness_free": -0.2577
+   }
+  }
+ }
+}

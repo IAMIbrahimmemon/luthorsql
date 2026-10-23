@@ -63,6 +63,15 @@ assert not bad, f"imported from outside the package: {bad}"
 print("import closure ok")
 EOF
 )
+# CASCADE=1: add stage 2 (Claude Opus 5.5 on System 1's unsure questions) and use the cascade README
+if [ -n "${CASCADE:-}" ]; then
+  mkdir -p "$P/cascade"
+  cp scripts/bird_submit/cascade/{cascade.py,PROMPT_routed.md,sql_tool.py,requirement_api.txt} "$P/cascade/"
+  cp scripts/bird_submit/cascade/run_cascade.sh "$P/"
+  cp scripts/bird_submit/cascade/README_cascade.md "$P/README.md"
+  cmp -s scripts/bird_submit/cascade/PROMPT_routed.md runs/analysis/hybrid/opus_s1_raw/PROMPT_s1.md || { echo "BUILD_FAIL routed prompt differs from the paper's"; exit 1; }
+  cmp -s scripts/bird_submit/cascade/sql_tool.py scripts/system2/sql_tool.py || { echo "BUILD_FAIL SQL tool differs from the paper's"; exit 1; }
+fi
 # leak scan: every pattern key on every file (package + weights text files)
 LP=${LEAK_PATTERNS:-$HOME/.config/luthor/leak_patterns}
 SECRET='\bhf_[A-Za-z0-9]{30,}|\bsk-(ant-|proj-)?[A-Za-z0-9_-]{30,}|\bAKIA[0-9A-Z]{16}\b|\bghp_[A-Za-z0-9]{30,}|BEGIN [A-Z ]*PRIVATE KEY'
@@ -78,5 +87,6 @@ n=$(grep -rIEl --exclude='*.safetensors' --exclude='*.pt' -- "$SECRET" "$P" "$WT
 [ "$hits" = 0 ] || { echo "BUILD_FAIL leak scan"; exit 1; }
 echo "leak scan ok"
 find "$P" -name __pycache__ -prune -exec rm -rf {} +
-( cd "$B" && zip -qr -X luthorsql_submission.zip luthorsql_submission -x '*.DS_Store' )
-echo "BUILD_OK $(du -sh "$B/luthorsql_submission.zip" | cut -f1) zip, $(du -sh "$WT" | cut -f1) weights"
+ZIP=luthorsql_submission.zip; [ -n "${CASCADE:-}" ] && ZIP=luthorsql_cascade_submission.zip
+( cd "$B" && rm -f "$ZIP" && zip -qr -X "$ZIP" luthorsql_submission -x '*.DS_Store' -x '*/venv_api/*' )
+echo "BUILD_OK $(du -sh "$B/$ZIP" | cut -f1) zip, $(du -sh "$WT" | cut -f1) weights"

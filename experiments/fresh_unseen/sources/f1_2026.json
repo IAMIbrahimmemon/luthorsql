@@ -3,7 +3,7 @@
  "sources": [
   {
    "url": "https://api.jolpi.ca/ergast/f1/2026/",
-   "licence": "Jolpica-F1 API (Ergast-compatible); data derives from Ergast, licensed CC BY-NC-SA 3.0 (non-commercial, share-alike); server code Apache-2.0. Research use only.",
+   "licence": "Jolpica-F1 API (Ergast-compatible); data licensed CC BY-NC-SA 4.0 per Jolpica TERMS.md (non-commercial, share-alike); derives from Ergast, whose dumps were CC BY-NC-SA 3.0 Unported; server code Apache-2.0. Research use only.",
    "retrieved": "2026-10-21"
   }
  ],
