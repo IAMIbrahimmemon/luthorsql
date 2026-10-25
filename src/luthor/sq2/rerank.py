@@ -115,6 +115,33 @@ class Reranker(nn.Module):
         h = H[torch.arange(n, device=self.device), last].float()
         return self.score(h).squeeze(-1)
 
+    def scores_chunked(self, card: SchemaCard, items: list[tuple], tables: list[str] | None, max_rows: int,
+                       max_tok: int = 384) -> list[float]:
+        """scores() with the schema prefix encoded once and its key-value cache copied for each chunk of at most
+        max_rows candidates, instead of re-encoding the prefix per chunk. Same computation, less memory than one big
+        batch and less time than re-encoding (small machines, e.g. 24 GB of unified memory)."""
+        import copy
+        tok = self.backbone.tok
+        ids = tok(schema_text(card, tables).text, add_special_tokens=False)["input_ids"]
+        rows = [tok(candidate_text(*it), add_special_tokens=False)["input_ids"][-max_tok:] for it in items]
+        prefix = self.body(input_ids=torch.tensor([ids], device=self.device), use_cache=True).past_key_values
+        out = []
+        for i in range(0, len(rows), max_rows):
+            ch = rows[i:i + max_rows]
+            n, T = len(ch), max(len(r) for r in ch)
+            x = torch.full((n, T), tok.pad_token_id, dtype=torch.long, device=self.device)
+            for j, r in enumerate(ch):
+                x[j, :len(r)] = torch.tensor(r, device=self.device)
+            cache = expand_cache(copy.deepcopy(prefix), n)
+            pos = torch.arange(len(ids), len(ids) + T, device=self.device)[None].expand(n, -1)
+            try:
+                H = self.body(input_ids=x, past_key_values=cache, position_ids=pos, use_cache=True).last_hidden_state
+            finally:
+                release_cache(cache)
+            last = torch.tensor([len(r) - 1 for r in ch], device=self.device)
+            out += self.score(H[torch.arange(n, device=self.device), last].float()).squeeze(-1).tolist()
+        return out
+
     def head_state(self) -> dict:
         return {k: v for k, v in self.state_dict().items() if not k.startswith("backbone.")}
 

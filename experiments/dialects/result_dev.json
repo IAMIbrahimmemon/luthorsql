@@ -1,0 +1,43 @@
+{
+ "n": 1534,
+ "gold_failed_sqlite": 2,
+ "rule": "normalised row sets equal to the SQLite gold rows",
+ "sqlite": {
+  "ex": 60.17,
+  "by_difficulty": {
+   "simple": 70.16,
+   "moderate": 46.77,
+   "challenging": 39.31
+  }
+ },
+ "postgres": {
+  "ex": 57.37,
+  "candidates": 44654,
+  "candidates_ran": 36915,
+  "by_difficulty": {
+   "simple": 66.59,
+   "moderate": 45.47,
+   "challenging": 36.55
+  }
+ },
+ "mysql": {
+  "ex": 57.63,
+  "candidates": 44654,
+  "candidates_ran": 42878,
+  "by_difficulty": {
+   "simple": 67.14,
+   "moderate": 44.83,
+   "challenging": 37.93
+  }
+ },
+ "duckdb": {
+  "ex": 57.43,
+  "candidates": 44654,
+  "candidates_ran": 35655,
+  "by_difficulty": {
+   "simple": 67.68,
+   "moderate": 43.97,
+   "challenging": 35.17
+  }
+ }
+}

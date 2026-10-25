@@ -1,0 +1,32 @@
+{
+ "n": 500,
+ "rule": "set(pred rows) == set(gold rows), per dialect, official Mini-Dev gold",
+ "sqlite": {
+  "ex": 50.4,
+  "gold_failed": 2
+ },
+ "postgres": {
+  "ex": 48.4,
+  "gold_failed": 0,
+  "candidates": 14772,
+  "translate_failed": 0,
+  "candidates_ran": 11256,
+  "by_difficulty": {
+   "simple": 70.95,
+   "moderate": 42.8,
+   "challenging": 29.41
+  }
+ },
+ "mysql": {
+  "ex": 49.2,
+  "gold_failed": 0,
+  "candidates": 14772,
+  "translate_failed": 0,
+  "candidates_ran": 14152,
+  "by_difficulty": {
+   "simple": 71.62,
+   "moderate": 42.8,
+   "challenging": 32.35
+  }
+ }
+}

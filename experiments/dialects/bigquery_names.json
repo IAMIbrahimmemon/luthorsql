@@ -1,0 +1,111 @@
+{
+ "california_schools": {
+  "frpm": {
+   "Charter School (Y/N)": "Charter School _Y_N_",
+   "Enrollment (K-12)": "Enrollment _K-12_",
+   "Free Meal Count (K-12)": "Free Meal Count _K-12_",
+   "Percent (%) Eligible Free (K-12)": "Percent ___ Eligible Free _K-12_",
+   "FRPM Count (K-12)": "FRPM Count _K-12_",
+   "Percent (%) Eligible FRPM (K-12)": "Percent ___ Eligible FRPM _K-12_",
+   "Enrollment (Ages 5-17)": "Enrollment _Ages 5-17_",
+   "Free Meal Count (Ages 5-17)": "Free Meal Count _Ages 5-17_",
+   "Percent (%) Eligible Free (Ages 5-17)": "Percent ___ Eligible Free _Ages 5-17_",
+   "FRPM Count (Ages 5-17)": "FRPM Count _Ages 5-17_",
+   "Percent (%) Eligible FRPM (Ages 5-17)": "Percent ___ Eligible FRPM _Ages 5-17_"
+  },
+  "satscores": {},
+  "schools": {}
+ },
+ "card_games": {
+  "cards": {},
+  "foreign_data": {},
+  "legalities": {},
+  "sets": {},
+  "set_translations": {},
+  "rulings": {}
+ },
+ "codebase_community": {
+  "badges": {},
+  "comments": {},
+  "postHistory": {},
+  "postLinks": {},
+  "posts": {},
+  "tags": {},
+  "users": {},
+  "votes": {}
+ },
+ "debit_card_specializing": {
+  "customers": {},
+  "gasstations": {},
+  "products": {},
+  "transactions_1k": {},
+  "yearmonth": {}
+ },
+ "european_football_2": {
+  "Player_Attributes": {},
+  "Player": {},
+  "League": {},
+  "Country": {},
+  "Team": {},
+  "Team_Attributes": {},
+  "Match": {}
+ },
+ "financial": {
+  "account": {},
+  "card": {},
+  "client": {},
+  "disp": {},
+  "district": {},
+  "loan": {},
+  "order": {},
+  "trans": {}
+ },
+ "formula_1": {
+  "circuits": {},
+  "constructors": {},
+  "drivers": {},
+  "seasons": {},
+  "races": {},
+  "constructorResults": {},
+  "constructorStandings": {},
+  "driverStandings": {},
+  "lapTimes": {},
+  "pitStops": {},
+  "qualifying": {},
+  "status": {},
+  "results": {}
+ },
+ "student_club": {
+  "event": {},
+  "major": {},
+  "zip_code": {},
+  "attendance": {},
+  "budget": {},
+  "expense": {},
+  "income": {},
+  "member": {}
+ },
+ "superhero": {
+  "alignment": {},
+  "attribute": {},
+  "colour": {},
+  "gender": {},
+  "publisher": {},
+  "race": {},
+  "superhero": {},
+  "hero_attribute": {},
+  "superpower": {},
+  "hero_power": {}
+ },
+ "thrombosis_prediction": {
+  "Examination": {},
+  "Patient": {},
+  "Laboratory": {}
+ },
+ "toxicology": {
+  "atom": {},
+  "bond": {},
+  "connected": {},
+  "molecule": {}
+ }
+}

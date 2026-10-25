@@ -1,0 +1,97 @@
+{
+ "reserved_run1": {
+  "databases": 8,
+  "saving_vs_B0": {
+   "point": 0.248,
+   "ci95": [
+    0.1731,
+    0.3321
+   ]
+  },
+  "saving_vs_B1": {
+   "point": 0.3094,
+   "ci95": [
+    0.2374,
+    0.3952
+   ]
+  }
+ },
+ "reserved_run2": {
+  "databases": 8,
+  "saving_vs_B0": {
+   "point": 0.3288,
+   "ci95": [
+    0.2376,
+    0.4403
+   ]
+  },
+  "saving_vs_B1": {
+   "point": 0.3802,
+   "ci95": [
+    0.3163,
+    0.4647
+   ]
+  }
+ },
+ "reserved_run3": {
+  "databases": 8,
+  "saving_vs_B0": {
+   "point": 0.3251,
+   "ci95": [
+    0.2543,
+    0.4066
+   ]
+  },
+  "saving_vs_B1": {
+   "point": 0.3748,
+   "ci95": [
+    0.3125,
+    0.4441
+   ]
+  }
+ },
+ "reserved_pooled": {
+  "databases": 8,
+  "saving_vs_B0": {
+   "point": 0.3009,
+   "ci95": [
+    0.2263,
+    0.3939
+   ]
+  },
+  "saving_vs_B1": {
+   "point": 0.355,
+   "ci95": [
+    0.2929,
+    0.4319
+   ]
+  }
+ },
+ "external": {
+  "databases": 27,
+  "saving_vs_B0": {
+   "point": 0.1985,
+   "ci95": [
+    0.1095,
+    0.2851
+   ]
+  },
+  "saving_vs_B1": {
+   "point": 0.3265,
+   "ci95": [
+    0.2516,
+    0.3932
+   ]
+  }
+ },
+ "fresh": {
+  "databases": 8,
+  "saving_vs_B0": {
+   "point": 0.2386,
+   "ci95": [
+    0.1578,
+    0.301
+   ]
+  }
+ }
+}

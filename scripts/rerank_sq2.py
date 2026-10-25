@@ -104,9 +104,9 @@ def _exec_db(task):
 
 # ---- gen ----------------------------------------------------------------------------------------
 
-def load_slot_model(run: Path, base: str, sub: str) -> LuthorSQ2:
+def load_slot_model(run: Path, base: str, sub: str, device: str = "cuda") -> LuthorSQ2:
     from eval_sq2 import load_model  # reads the run's args.json (LoRA rank, joint head)
-    return load_model(run, base, sub, "cuda")
+    return load_model(run, base, sub, device)
 
 
 def use_run_settings(a):
@@ -356,6 +356,8 @@ def train_items(rec: dict, k: int, rnd: random.Random) -> list[dict] | None:
 @torch.no_grad()
 def score_rows(rr: Reranker, card: SchemaCard, items: list, tabs, max_rows: int) -> list[float]:
     """Scores in chunks of at most max_rows; halves the chunk on out-of-memory."""
+    if getattr(rr, "reuse_prefix", False):  # small machines: one prefix pass, candidates in chunks of max_rows
+        return rr.scores_chunked(card, items, tabs, max_rows)
     out, i = [], 0
     while i < len(items):
         chunk = items[i:i + max_rows]
@@ -1049,6 +1051,22 @@ def shared_adapter(rr_dir: Path) -> bool:
     """A single-LoRA System 1 dir (scripts/single_lora.py): the validator scores with the generator's own adapter."""
     st = rr_dir / "settings.json"
     return st.exists() and bool(json.loads(st.read_text()).get("shared_adapter"))
+
+
+def validator_on_backbone(model: LuthorSQ2, rr_dir: Path, lora_r: int) -> Reranker:
+    """The two-adapter validator (VALHARD) on the slot model's own backbone: its rerank LoRA is added as a second adapter
+    of the same PEFT model, so the 7B backbone is in memory once (about 16 GB instead of about 32 GB in bf16). The
+    weights and the computation are the same as load_validator's; score_file activates the rerank adapter, and the
+    caller must set the slot model's adapter ("default") back before generating."""
+    from peft import set_peft_model_state_dict
+    from safetensors.torch import load_file
+    rr = Reranker(model.backbone, lora_r=lora_r)
+    set_peft_model_state_dict(model.backbone.model, load_file(str(rr_dir / "rerank_lora" / "rerank" / "adapter_model.safetensors")),
+                              adapter_name="rerank")
+    rr.load_state_dict(torch.load(rr_dir / "rerank_head.pt", map_location="cpu"), strict=False)
+    model.backbone.model.to(torch.bfloat16)
+    model.backbone.model.set_adapter("default")
+    return rr.to(model.device)
 
 
 def shared_validator(model: LuthorSQ2, rr_dir: Path) -> Reranker:

@@ -1,0 +1,23 @@
+{
+ "n": 1534,
+ "gold_failed_sqlite": 2,
+ "rule": "normalised row sets equal to the SQLite gold rows",
+ "sqlite": {
+  "ex": 60.17,
+  "by_difficulty": {
+   "simple": 70.16,
+   "moderate": 46.77,
+   "challenging": 39.31
+  }
+ },
+ "snowflake": {
+  "ex": 59.32,
+  "candidates": 44654,
+  "candidates_ran": 37215,
+  "by_difficulty": {
+   "simple": 69.3,
+   "moderate": 46.12,
+   "challenging": 37.93
+  }
+ }
+}

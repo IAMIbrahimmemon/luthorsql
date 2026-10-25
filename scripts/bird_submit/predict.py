@@ -230,13 +230,28 @@ def predict(a, rows, paths, on_db_done) -> tuple[dict[str, dict], list[str]]:
     if not todo:
         return done, failed
     t = time.time()
-    m = R.load_slot_model(a.run, a.base, a.subfolder)
+    m = R.load_slot_model(a.run, a.base, a.subfolder, "cpu" if a.int8 else a.device)
     R.validator_settings(a.rr)
     shared = R.shared_adapter(a.rr)  # single-LoRA weights: generator and validator are one adapter on one backbone
     if shared and a.rr.resolve() != a.run.resolve():
         raise SystemExit(f"--rr {a.rr} is a shared-adapter dir: pass the same dir as --run")
-    rr = R.shared_validator(m, a.rr) if shared else R.load_validator(a.rr, a.base, a.subfolder, a.lora_r)
+    one_backbone = shared or a.share_backbone
+    if shared:
+        rr = R.shared_validator(m, a.rr)
+    elif a.share_backbone:  # two adapters on one backbone in memory (small machines, e.g. 24 GB unified memory)
+        rr = R.validator_on_backbone(m, a.rr, a.lora_r)
+    else:
+        rr = R.load_validator(a.rr, a.base, a.subfolder, a.lora_r)
+    if a.int8:  # 8-bit backbone weights for small machines; LoRA, embeddings and heads stay bf16
+        from luthor.sq2.int8 import quantize_backbone_
+        if not one_backbone:
+            raise SystemExit("--int8 needs --share-backbone")
+        n_q = quantize_backbone_(m.backbone.model, a.device)
+        m.to(a.device)
+        rr.to(a.device)
+        LOG.info(f"int8: {n_q} linear layers quantized")
     rr.eval()
+    rr.reuse_prefix = a.val_rows < 32  # small batches: encode the schema once per question group, not per batch
     LOG.info("one adapter (generator and validator share the LoRA)" if shared else "two adapters (R1 + VALHARD)")
     LOG.info(f"models loaded in {time.time() - t:.0f}s ({torch.cuda.memory_allocated() / 2**30:.1f} GB)")
 
@@ -250,6 +265,8 @@ def predict(a, rows, paths, on_db_done) -> tuple[dict[str, dict], list[str]]:
                     if recs is None:
                         t = time.time()
                         topk.SKIPPED.clear()
+                        if one_backbone and not shared:
+                            m.backbone.model.set_adapter("default")  # the validator left its adapter active
                         recs = _generate(a, m, cards[db], group, paths[db])
                         _save(state / f"{db}.gen.jsonl", recs)
                         LOG.info(f"  {db}: generated {len(recs)} questions in {time.time() - t:.0f}s (plans dropped "
@@ -260,7 +277,7 @@ def predict(a, rows, paths, on_db_done) -> tuple[dict[str, dict], list[str]]:
                     LOG.info(f"  {db}: executed in {time.time() - t:.0f}s "
                              f"({n_err} candidates failed to run; messages in the 'error' field of .cands.jsonl)")
                 t = time.time()
-                R.score_file(rr, recs, card_paths, a.budget_chars)
+                R.score_file(rr, recs, card_paths, a.budget_chars, max_rows=a.val_rows)
                 m.eval()  # score_file ends in train mode; with one shared backbone that would turn LoRA dropout on
                 rr.eval()
                 _save(state / f"{db}.done.jsonl", recs)
@@ -335,6 +352,13 @@ def main(argv=None) -> int:
     ap.add_argument("--budget-chars", type=int, default=9000)
     ap.add_argument("--lora-r", type=int, default=16)
     ap.add_argument("--limit", type=int, default=0, help="only the first n questions (smoke test)")
+    ap.add_argument("--device", default="cuda", help="cuda (default), or mps for Apple silicon")
+    ap.add_argument("--val-rows", type=int, default=32,
+                    help="candidates the validator scores per pass (each pass copies the schema's key-value cache once "
+                         "per candidate; lower it on small machines; the scores do not depend on it)")
+    ap.add_argument("--int8", action="store_true", help="8-bit backbone weights (about 8 GB instead of 15); needs --share-backbone")
+    ap.add_argument("--share-backbone", action="store_true",
+                    help="load the 7B backbone once for both adapters (about 16 GB instead of 32 GB)")
     a = ap.parse_args(argv)
     a.work = a.work or f"{a.out}.work"
     setup_log(a.out, a.debug)

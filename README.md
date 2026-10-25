@@ -16,6 +16,8 @@ Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM A
 | `scripts/analysis/` | Analysis scripts behind the paper's numbers (cascade threshold, latency, single-adapter evaluation, etc.) |
 | `experiments/*_crosscheck/` | Cross-agent runs (Sonnet, Haiku, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash): pre-registrations with verdicts, answers, scored results |
 | `experiments/cost_confirmation/` | Pre-registered held-out cascade test on RESERVED (3 runs): PREREG with verdicts, scorer, result files, incident log; `harness_free.py`: cost repriced without the agent harness's per-session context (exploratory) |
+| `experiments/cost_confirmation/local_s1.py` | Cascade cost with System 1 on hardware the user owns (marginal cost zero), against Opus alone and Opus with candidates |
+| `experiments/dialects/` | System 1 on MySQL, PostgreSQL, DuckDB, Snowflake and BigQuery without retraining: translation, scorers for all of BIRD dev and Mini-Dev, loaders for DuckDB, Snowflake and BigQuery (credentials stay outside the repo) |
 | `experiments/external_cascade/` | Pre-registered external test (KaggleDBQA test + Spider-Realistic, 693 questions) |
 | `experiments/memorisation_probe/` | Pre-registered memorisation probes of the agent (schema-free SQL, guided vs general completion), incl. BIRD Mini-Dev |
 | `experiments/renamed_routed/` | Renamed-schema test of the routed half (renamer, rewritten gold, scorer) |
@@ -30,14 +32,15 @@ Many other scripts are from earlier rounds of the project (described in the pape
 
 ## Main results (details and every source file in the paper and in `experiments/`)
 
-- **System 1 alone:** 68.03% execution accuracy on BIRD's hidden test set (scored by the BIRD team), 0.84 s per question on one H100.
+- **System 1 alone:** 68.03% execution accuracy on BIRD's hidden test set (scored by the BIRD team), 0.84 s per question on one H100. With 8-bit weights it needs about 9 GB at the same accuracy and runs on Apple silicon (about 30 s per question on a base 24 GB M3 laptop).
+- **Other SQL engines, no retraining (all 1,534 BIRD dev questions):** SQLite 60.17%, Snowflake 59.32%, MySQL 57.63%, DuckDB 57.43%, PostgreSQL 57.37%, BigQuery 57.11%.
 - **Cascade, threshold 3.0, Claude Opus 5.5 as System 2:**
+  - With System 1 on hardware the user owns, against Opus alone: cost per question 24.8%, 32.9% and 32.5% lower in three RESERVED runs (30.1% pooled), 19.9% lower on 693 external questions and 23.9% lower on the fresh set; about half of the questions are answered locally.
   - Measured against Opus given System 1's candidates on every question, on held-out data with a threshold fixed in advance:
     - Cost per question: 29.9–36.7% lower (34.3% pooled over three RESERVED runs) and 31.7% lower on 693 external questions.
     - Accuracy: within 1.3 points in every run; no difference was significant.
     - Total time per question: 12–24% lower.
   - The pre-registered RESERVED run 1 narrowly missed its 30% cost bar and did not show non-inferiority. The external test met its cost and accuracy bars.
-  - Repriced without Claude Code's per-session context (exploratory), the saving against Opus with candidates stays at 28–35%, but the saving against Opus alone (16–29% as measured) falls to −26% to +11%.
 - **Memorisation:** without a schema, Opus reproduces 48–92% of public benchmarks' gold SQL. With its tool, its accuracy on the routed questions changed by +0.6 points (95% interval −7.1 to +6.0) when every name was rewritten.
 - **Fresh set:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower measured cost.
 - **Not yet measured:** the cascade has not been run on BIRD's hidden test set.
@@ -74,7 +77,7 @@ hf download IAMIbrahim/luthorsql-bird --local-dir weights
 cd scripts/bird_submit && bash run_bird.sh <dev.json> <dev_tables.json> <dev_databases> predict_dev.json
 ```
 
-You need one NVIDIA GPU with at least 48 GB (tested on A100 80GB, CUDA 12.2).
+You need one NVIDIA GPU with at least 48 GB (tested on A100 80GB, CUDA 12.2). On a local GPU or an Apple-silicon Mac, `predict.py --device mps --share-backbone --int8 --val-rows 8` runs both adapters on one 8-bit backbone in about 9 GB.
 
 ## Data
 
