@@ -67,7 +67,10 @@ bash run_cascade.sh <path>/test.json <path>/test_tables.json <path>/test_databas
 
 ## Tokens and cost (the advance count BIRD asks for)
 
-- **Measured on BIRD dev with this package:** *to be filled in from `token_report.json` after our dev run*.
+- **Measured on BIRD dev with this package (2026-10-26):** 1,534 questions, 850 routed in 39 sessions; 9,284,617 prompt
+  tokens (610 uncached input, 1,410,848 cache writes, 7,873,159 cache reads), i.e. 6,053 per question and 10,923 per
+  routed question. Logged output tokens: 3,312 (the Agent SDK's usage log under-counts output; billed output is
+  higher). Dev EX of this package: 83.64% (System 1 alone 59.52%), original dev gold.
 - **Estimate from our logged runs under the same harness:** 36k to 41k prompt tokens per routed BIRD question (about
   89% of them cache reads) and about 110 output tokens.
   - Dev (850 routed): about 25M to 35M prompt tokens.

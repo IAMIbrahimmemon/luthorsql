@@ -1,0 +1,59 @@
+{
+ "prereg": "experiments/plain_api/PREREG_fresh_question_only.md",
+ "n": 227,
+ "routed": 125,
+ "missing": 0,
+ "not_submitted": 0,
+ "ex": {
+  "A0": 95.59,
+  "S1": 63.88,
+  "Q": 95.15
+ },
+ "ex_routed": {
+  "A0": 94.4,
+  "S1": 37.6
+ },
+ "ex_kept": {
+  "A0": 97.06,
+  "S1": 96.08
+ },
+ "cost_per_q": {
+  "A0": 0.01087,
+  "Q": 0.00725
+ },
+ "saving_Q_vs_A0": {
+  "point": 0.3327,
+  "ci95": [
+   0.2649,
+   0.3912
+  ]
+ },
+ "Q_minus_A0": {
+  "delta": -0.4405286343612335,
+  "p": 1.0,
+  "ci": [
+   -3.700000000010606,
+   3.4399999999886077
+  ],
+  "G": 8,
+  "patterns": 256,
+  "min_p": 0.0078125,
+  "per_db": {
+   "chicago_crashes_2026": -2.0,
+   "chicago_crime_2026": 2.0,
+   "f1_2026": 0.0,
+   "fda_recalls_2026": 0.0,
+   "nws_alerts_2026": -1.0,
+   "quakes_2026": 0.0,
+   "uk_house_prices_2026": 0.0,
+   "wc2026": 0.0
+  }
+ },
+ "tokens": {
+  "input_tokens": 19691,
+  "cache_creation_input_tokens": 120883,
+  "cache_read_input_tokens": 1896592,
+  "output_tokens": 70259
+ },
+ "dollars_total": 2.4677
+}

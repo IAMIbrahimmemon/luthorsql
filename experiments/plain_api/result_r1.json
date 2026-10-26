@@ -1,0 +1,199 @@
+{
+ "prereg": "experiments/plain_api/PREREG.md",
+ "runs": {
+  "r1": {
+   "n": 348,
+   "routed": 177,
+   "missing": {
+    "A0": 0,
+    "A1": 0
+   },
+   "not_submitted": {
+    "A0": 0,
+    "A1": 0
+   },
+   "ex": {
+    "A0": 86.49,
+    "A1": 86.21,
+    "C": 84.2,
+    "S1": 63.22
+   },
+   "cost_per_q": {
+    "A0": 0.00958,
+    "A1": 0.01806,
+    "C": 0.01133,
+    "A1_rent": 0.01891,
+    "C_rent": 0.01218
+   },
+   "saving_C_vs_A0": {
+    "point": -0.1826,
+    "ci95": [
+     -0.3129,
+     -0.0225
+    ]
+   },
+   "saving_C_vs_A1": {
+    "point": 0.3729,
+    "ci95": [
+     0.3024,
+     0.4769
+    ]
+   },
+   "saving_C_vs_A0_s1_rented": {
+    "point": -0.2714,
+    "ci95": [
+     -0.3975,
+     -0.118
+    ]
+   },
+   "saving_C_vs_A1_s1_rented": {
+    "point": 0.3561,
+    "ci95": [
+     0.2896,
+     0.4498
+    ]
+   },
+   "C_minus_A0": {
+    "delta": -2.2988505747126435,
+    "p": 0.09375,
+    "ci": [
+     -4.540000000010513,
+     -1.1013412404281553e-11
+    ],
+    "G": 8,
+    "patterns": 256,
+    "min_p": 0.0078125,
+    "per_db": {
+     "car_retails": -1.0,
+     "cs_semester": -2.0,
+     "hockey": -2.0,
+     "law_episode": -2.0,
+     "movie": 1.0,
+     "student_loan": 0.0,
+     "synthea": -2.0,
+     "university": 0.0
+    }
+   },
+   "C_minus_A1": {
+    "delta": -2.0114942528735633,
+    "p": 0.125,
+    "ci": [
+     -3.5700000000106202,
+     -1.1013412404281553e-11
+    ],
+    "G": 8,
+    "patterns": 256,
+    "min_p": 0.0078125,
+    "per_db": {
+     "car_retails": 0.0,
+     "cs_semester": -2.0,
+     "hockey": -2.0,
+     "law_episode": 0.0,
+     "movie": 0.0,
+     "student_loan": -2.0,
+     "synthea": -1.0,
+     "university": 0.0
+    }
+   },
+   "A1_minus_A0": {
+    "delta": -0.28735632183908044,
+    "p": 1.0,
+    "ci": [
+     -2.800000000010705,
+     2.139999999988751
+    ],
+    "G": 8,
+    "patterns": 256,
+    "min_p": 0.0078125,
+    "per_db": {
+     "car_retails": -1.0,
+     "cs_semester": 0.0,
+     "hockey": 0.0,
+     "law_episode": -2.0,
+     "movie": 1.0,
+     "student_loan": 2.0,
+     "synthea": -1.0,
+     "university": 0.0
+    }
+   },
+   "tokens": {
+    "A0": {
+     "input_tokens": 29901,
+     "cache_creation_input_tokens": 105878,
+     "cache_read_input_tokens": 2374189,
+     "output_tokens": 110447
+    },
+    "A1": {
+     "input_tokens": 433831,
+     "cache_creation_input_tokens": 215479,
+     "cache_read_input_tokens": 2010439,
+     "output_tokens": 153514
+    }
+   },
+   "turns_per_q": {
+    "A0": 1.68,
+    "A1": 1.39
+   },
+   "sql_per_q": {
+    "A0": 0.71,
+    "A1": 0.41
+   },
+   "routed_vs_kept_A0_cost_per_q": {
+    "routed": 0.01219,
+    "kept": 0.00688
+   },
+   "cost_per_db": {
+    "A0": {
+     "car_retails": 0.3259,
+     "cs_semester": 0.2404,
+     "hockey": 0.8711,
+     "law_episode": 0.3669,
+     "movie": 0.1525,
+     "student_loan": 0.3453,
+     "synthea": 0.7397,
+     "university": 0.291
+    },
+    "A1": {
+     "car_retails": 0.6553,
+     "cs_semester": 0.5281,
+     "hockey": 1.6425,
+     "law_episode": 0.5625,
+     "movie": 0.2505,
+     "student_loan": 0.8139,
+     "synthea": 1.2329,
+     "university": 0.5994
+    },
+    "C": {
+     "car_retails": 0.4778,
+     "cs_semester": 0.1851,
+     "hockey": 1.207,
+     "law_episode": 0.4103,
+     "movie": 0.1329,
+     "student_loan": 0.421,
+     "synthea": 0.7806,
+     "university": 0.3268
+    },
+    "A1_rent": {
+     "car_retails": 0.6876,
+     "cs_semester": 0.5579,
+     "hockey": 1.6961,
+     "law_episode": 0.5914,
+     "movie": 0.2633,
+     "student_loan": 0.8666,
+     "synthea": 1.2796,
+     "university": 0.6385
+    },
+    "C_rent": {
+     "car_retails": 0.5101,
+     "cs_semester": 0.2149,
+     "hockey": 1.2606,
+     "law_episode": 0.4392,
+     "movie": 0.1457,
+     "student_loan": 0.4737,
+     "synthea": 0.8273,
+     "university": 0.3659
+    }
+   }
+  }
+ }
+}

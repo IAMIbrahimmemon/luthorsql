@@ -1,6 +1,6 @@
 # LuthorSQL
 
-Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent* (Ibrahim Memon and Hanif Jhaveri; paper in preparation).
+Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent* (Ibrahim Memon, Armin Karamzade, Hanif Jhaveri and Roy Fox; paper in preparation).
 
 **Status: private pre-release.** The license is not decided yet (see "License"). Please do not redistribute.
 
@@ -18,10 +18,11 @@ Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM A
 | `experiments/cost_confirmation/` | Pre-registered held-out cascade test on RESERVED (3 runs): PREREG with verdicts, scorer, result files, incident log; `harness_free.py`: cost repriced without the agent harness's per-session context (exploratory) |
 | `experiments/cost_confirmation/local_s1.py` | Cascade cost with System 1 on hardware the user owns (marginal cost zero), against Opus alone and Opus with candidates |
 | `experiments/dialects/` | System 1 on MySQL, PostgreSQL, DuckDB, Snowflake and BigQuery without retraining: translation, scorers for all of BIRD dev and Mini-Dev, loaders for DuckDB, Snowflake and BigQuery (credentials stay outside the repo) |
+| `experiments/plain_api/` | Opus 5.5 through the Messages API, no Claude Code harness (`run.py`): registered tests on RESERVED (`PREREG.md`) and on the fresh set with the question-only cascade (`PREREG_fresh_question_only.md`), scorers, results, and every answer with its per-question token usage in `artifacts/` |
 | `experiments/external_cascade/` | Pre-registered external test (KaggleDBQA test + Spider-Realistic, 693 questions) |
-| `experiments/memorisation_probe/` | Pre-registered memorisation probes of the agent (schema-free SQL, guided vs general completion), incl. BIRD Mini-Dev |
+| `experiments/memorisation_probe/` | Pre-registered memorization probes of the agent (schema-free SQL, guided vs general completion), incl. BIRD Mini-Dev |
 | `experiments/renamed_routed/` | Renamed-schema test of the routed half (renamer, rewritten gold, scorer) |
-| `experiments/fresh_unseen/` | Fresh test set on 8 post-cutoff public databases: builders, sources and licences, question generator, verification record, scorer |
+| `experiments/fresh_unseen/` | Fresh test set on 8 post-cutoff public databases: builders, sources and licenses, question generator, verification record, scorer |
 | `experiments/top3_at_30/`, `experiments/final_config/` | Pre-registered attempts to raise accuracy at the same cost (none adopted), incl. a corrected scorer bug |
 | `experiments/w83/` | Exploratory (not pre-registered) search on the selection split; report and GPU ledger |
 | `scripts/chains/*_s1*.sh`, `scripts/shade/` | Gold-free System 1 GPU runs for the held-out, external and fresh tests (one rented H100, auto-destroyed) |
@@ -32,17 +33,24 @@ Many other scripts are from earlier rounds of the project (described in the pape
 
 ## Main results (details and every source file in the paper and in `experiments/`)
 
-- **System 1 alone:** 68.03% execution accuracy on BIRD's hidden test set (scored by the BIRD team), 0.84 s per question on one H100. With 8-bit weights it needs about 9 GB at the same accuracy and runs on Apple silicon (about 30 s per question on a base 24 GB M3 laptop).
+- **System 1 alone:** 68.03% execution accuracy on BIRD's hidden test set (scored by the BIRD team), 0.84 s per question on one H100. The single-adapter variant (one LoRA adapter for both generating and picking) scores 68.19% on the same test (dev 59.84%), the score BIRD's single-model leaderboard lists for the 32B Arctic-ExCoT. With 8-bit weights it needs about 9 GB at the same accuracy and runs on Apple silicon (about 30 s per question on a base 24 GB M3 laptop).
 - **Other SQL engines, no retraining (all 1,534 BIRD dev questions):** SQLite 60.17%, Snowflake 59.32%, MySQL 57.63%, DuckDB 57.43%, PostgreSQL 57.37%, BigQuery 57.11%.
-- **Cascade, threshold 3.0, Claude Opus 5.5 as System 2:**
+- **Cascade, threshold 3.0, Claude Opus 5.5 as System 2, through the API** (`experiments/plain_api/`):
+  - Registered on the fresh set (227 questions on databases published after Opus's training cutoff), forwarding only the
+    question when System 1 is unsure: **33.3% [26.5, 39.1] cheaper than Opus alone at equal accuracy** (95.15% vs
+    95.59%, p = 1.0); System 1 answers 102 of the 227 locally.
+  - Agent against agent, without System 1: Opus through the API is cheaper and more accurate than Opus as a Claude Code
+    agent on RESERVED (86.49% at $0.0096 per question vs 80.17% at $0.0215).
+  - The first registered API test on RESERVED kept the Claude Code design, which also shows the agent System 1's
+    candidates. Through the API the candidates nearly double the cost of each routed question and add no accuracy, so
+    that cascade cost 18.3% more than Opus alone. Forwarding only the question, computed afterwards on the same
+    answers, saved 35.3% at 2.0 points lower accuracy.
+- **Cascade with Opus as a Claude Code agent** (registered, `experiments/cost_confirmation/`, `experiments/external_cascade/`):
   - With System 1 on hardware the user owns, against Opus alone: cost per question 24.8%, 32.9% and 32.5% lower in three RESERVED runs (30.1% pooled), 19.9% lower on 693 external questions and 23.9% lower on the fresh set; about half of the questions are answered locally.
-  - Measured against Opus given System 1's candidates on every question, on held-out data with a threshold fixed in advance:
-    - Cost per question: 29.9–36.7% lower (34.3% pooled over three RESERVED runs) and 31.7% lower on 693 external questions.
-    - Accuracy: within 1.3 points in every run; no difference was significant.
-    - Total time per question: 12–24% lower.
+  - Against Opus given System 1's candidates on every question: 29.9–36.7% lower cost (34.3% pooled) and 31.7% lower on 693 external questions; accuracy within 1.3 points in every run (no difference significant); total time per question 12–24% lower.
   - The pre-registered RESERVED run 1 narrowly missed its 30% cost bar and did not show non-inferiority. The external test met its cost and accuracy bars.
-- **Memorisation:** without a schema, Opus reproduces 48–92% of public benchmarks' gold SQL. With its tool, its accuracy on the routed questions changed by +0.6 points (95% interval −7.1 to +6.0) when every name was rewritten.
-- **Fresh set:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower measured cost.
+- **Memorization:** without a schema, Opus reproduces 48–92% of public benchmarks' gold SQL. With its tool, its accuracy on the routed questions changed by +0.6 points (95% interval −7.1 to +6.0) when every name was rewritten.
+- **Fresh set, Claude Code agent with candidates:** on 227 questions over post-cutoff databases, the cascade scored 94.3% against 97.4% for Opus alone, at 20% lower measured cost.
 - **Not yet measured:** the cascade has not been run on BIRD's hidden test set.
 
 ## Re-scoring the experiments
@@ -66,7 +74,7 @@ Cost and time come from `usage.json`. The fresh-set databases are in the private
 
 Hugging Face (private for now):
 - `IAMIbrahim/luthorsql-bird`: the two-adapter system (generator `r1/`, validator `valhard_rr/`).
-- `IAMIbrahim/luthorsql-bird-single`: the single-adapter variant (`single/`).
+- `IAMIbrahim/luthorsql-bird-single`: the single-adapter variant (`single/`; 68.19% on BIRD's hidden test).
 
 Both are LoRA adapters plus small heads on [seeklhy/OmniSQL-7B](https://huggingface.co/seeklhy/OmniSQL-7B).
 
