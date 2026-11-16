@@ -67,12 +67,12 @@ not in it; it comes from BIRD train, KaggleDBQA, Spider-Realistic or `splits/fre
 
 To re-score, point a scorer's `--box` at the matching `artifacts/` folder. The scorers rebuild each question's SQL from
 the answer's pick label and the chunk's candidates, then execute it against the gold. Accuracy needs only the databases.
-Cost and time come from `usage.json`. The fresh-set databases are in the private Hugging Face dataset
+Cost and time come from `usage.json`. The fresh-set databases are in the Hugging Face dataset
 `IAMIbrahim/luthorsql-fresh-unseen`; BIRD-train, KaggleDBQA and Spider databases come from their official releases.
 
 ## Weights
 
-Hugging Face (private for now):
+Hugging Face:
 - `IAMIbrahim/luthorsql-bird`: the two-adapter system (generator `r1/`, validator `valhard_rr/`).
 - `IAMIbrahim/luthorsql-bird-single`: the single-adapter variant (`single/`; 68.19% on BIRD's hidden test).
 
