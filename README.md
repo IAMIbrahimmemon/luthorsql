@@ -2,8 +2,6 @@
 
 Code for *LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent* (Ibrahim Memon, Armin Karamzade, Hanif Jhaveri and Roy Fox; paper in preparation).
 
-**Status: private pre-release.** The license is not decided yet (see "License"). Please do not redistribute.
-
 ## What is here
 
 | Path | Contents |
